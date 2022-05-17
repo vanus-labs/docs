@@ -85,7 +85,7 @@ and set endpoints
 ```
 
 ## Uses
-There are some examples below that demonstrate can do.
+There are some examples below that demonstrate vanus can do.
 ### put/get
 1. create an [eventbus](#)  
 ```shell
@@ -142,7 +142,8 @@ vanus-display-74b65fcff4-pk9rm   1/1     Running   0          12s
 create subscription: 1652779545393580804 success  
 ```
 the subscription will subscribe all events from `--source` in `--eventbus`. and only events matched with `--filter`
-can be emitted to `--sink`
+can be emitted to `--sink`.
+
 3. send events to `quick-start` just created
 ```shell
 ~ > vsctl event put quick-start \
@@ -168,7 +169,7 @@ sent: 200
 
 Vance Event Display
 Server listening on port: 8080 
-receive a new event, in total: 7
+receive a new event, in total: 1
 {
   "id" : "1st",
   "source" : "quick-start-filter-section",
@@ -180,7 +181,7 @@ receive a new event, in total: 7
     "msg" : "1st event, DISPLAY: YES"
   }
 }
-receive a new event, in total: 8
+receive a new event, in total: 2
 {
   "id" : "3rd",
   "source" : "quick-start-filter-section",
