@@ -196,7 +196,50 @@ receive a new event, in total: 2
 ```
 
 ### transformation
-TODO(delu.xu)
+1. create a subscription with transformation
+```shell
+~ > vsctl subscription create \
+  --eventbus quick-start \
+  --sink 'http://vanus-display.default:3080' \
+  --input-transformer '{
+  "define": {
+    "dataMsg": "$.data.msg",
+    "dataSource": "$.source"
+  },
+  "template": "{\"transKey\": \"${dataMsg}\",\"transSource\":\"${dataSource}\"}"
+}'  
+create subscription: 1652786983757756860 success  
+```
+2. send events to `quick-start`
+```shell
+~ > vsctl event put quick-start \
+  --body '{"msg":"1st event, DISPLAY: YES"}' \
+  --id "1st" \
+  --source "quick-start-filter-section"
+sent: 200
+
+```
+3. back to display server for validation
+```shell
+~ > kubectl logs vanus-display-74b65fcff4-pk9rm
+
+Vance Event Display
+Server listening on port: 3080
+receive a new event, in total: 13                                                                                                                                                          │
+{                                                                                                                                                                                          │
+  "id" : "1st",                                                                                                                                                                            │
+  "source" : "quick-start-filter-section",                                                                                                                                                 │
+  "specversion" : "V1",                                                                                                                                                                    │
+  "type" : "cmd",                                                                                                                                                                          │
+  "datacontenttype" : "application/json",                                                                                                                                                  │
+  "time" : "2022-05-17T11:30:35.246070388Z",                                                                                                                                               │
+  "data" : {                                                                                                                                                                               │
+    "transKey" : "1st event, DISPLAY: YES",                                                                                                                                                │
+    "transSource" : "quick-start-filter-section"                                                                                                                                           │
+  }                                                                                                                                                                                        │
+}
+
+```
 
 ## Advanced
 ### use connectors
