@@ -195,6 +195,52 @@ receive a new event, in total: 2
 }
 ```
 
+### dataFilter
+1. create a subscription with data filter by cel
+```shell
+~ > vsctl subscription create \
+  --eventbus quick-start \
+  --sink 'http://vance-display.default' \
+  --filters '[
+    {
+      "cel": "$key.(string) == \"test\""
+    }
+  ]'  
+create subscription: 1652789247417517995 success  
+```
+2. send events to `quick-start`
+```shell
+~ > vsctl event put quick-start \
+  --body '{"key":"test"}' \
+  --id "1st" \
+  --source "quick-start-filter-section"
+sent: 200
+
+~ > vsctl event put quick-start \
+  --body '{"key":"no match"}' \
+  --id "2nd" \
+  --source "quick-start-filter-section"
+sent: 200  
+```
+3. back to display server for validation
+```shell
+~ > kubectl logs vanus-display-74b65fcff4-pk9rm
+
+Vance Event Display
+Server listening on port: 3080
+receive a new event, in total: 9                                                                                                                                                        │
+{                                                                                                                                                                                          │
+  "id" : "1st",                                                                                                                                                                            │
+  "source" : "quick-start-filter-section",                                                                                                                                                 │
+  "specversion" : "V1",                                                                                                                                                                    │
+  "type" : "cmd",                                                                                                                                                                          │
+  "datacontenttype" : "application/json",                                                                                                                                                  │
+     "key" : "test"                                                                                                                                                                         │
+   }                                                                                                                                                                                        │
+}
+
+```
+
 ### transformation
 1. create a subscription with transformation
 ```shell
@@ -202,12 +248,12 @@ receive a new event, in total: 2
   --eventbus quick-start \
   --sink 'http://vanus-display.default:3080' \
   --input-transformer '{
-  "define": {
-    "dataMsg": "$.data.msg",
-    "dataSource": "$.source"
-  },
-  "template": "{\"transKey\": \"${dataMsg}\",\"transSource\":\"${dataSource}\"}"
-}'  
+      "define": {
+        "dataMsg": "$.data.msg",
+        "dataSource": "$.source"
+      },
+      "template": "{\"transKey\": \"${dataMsg}\",\"transSource\":\"${dataSource}\"}"
+    }'  
 create subscription: 1652786983757756860 success  
 ```
 2. send events to `quick-start`
@@ -225,7 +271,7 @@ sent: 200
 
 Vance Event Display
 Server listening on port: 3080
-receive a new event, in total: 13                                                                                                                                                          │
+receive a new event, in total: 11                                                                                                                                                          │
 {                                                                                                                                                                                          │
   "id" : "1st",                                                                                                                                                                            │
   "source" : "quick-start-filter-section",                                                                                                                                                 │
