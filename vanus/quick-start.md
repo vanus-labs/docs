@@ -9,8 +9,8 @@
 ### vanus
 
 ```shell
-~ > curl -O http://44.242.140.28:9080/all-in-one/v0.0.2.yml
-~ > kubectl apply -f v0.0.2.yml
+~ > curl -O http://44.242.140.28:9080/all-in-one/latest.yml
+~ > kubectl apply -f latest.yml
 ```
 when all resources creating done, the result will be liking below:
 ```shell
@@ -26,8 +26,8 @@ vanus-trigger-75cb74dbbf-k8jsm      1/1     Running   0             30s
 ```
 if you want to install monitoring together, follow below:
 ```shell
-~ > curl -O http://44.242.140.28:9080/monitoring/monitor-v0.0.2.yml
-~ > kubectl apply -f monitor-v0.0.2.yml
+~ > curl -O http://44.242.140.28:9080/monitoring/monitor-latest.yml
+~ > kubectl apply -f monitor-latest.yml
 ~ > kubectl get po -n vanus
 vanus-controller-0                  1/1     Running   0             2m16s
 vanus-controller-1                  1/1     Running   0             2m16s
@@ -45,7 +45,7 @@ vanus-vsctl-69bc7dcf59-mtz8m        1/1     Running   0             2m16s
 ### vsctl
 ```shell
 # NOTE: choose a right version based your arch and os: linux-amd64, macos-arm64
-~ > curl -O http://44.242.140.28:9080/vsctl/v0.0.2/macos-arm64/vsctl
+~ > curl -O http://44.242.140.28:9080/vsctl/latest/macos-arm64/vsctl
 ~ > chmod ug+x vsctl
 ~ > sudo mv vsctl /usr/local/bin
 ~ > vsctl 
