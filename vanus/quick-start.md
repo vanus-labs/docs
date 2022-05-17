@@ -12,13 +12,13 @@
 ~ > curl -O http://44.242.140.28:9080/all-in-one/v0.0.2.yml
 ~ > kubectl apply -f v0.0.2.yml
 ```
-when all resources created done, verify it, the result will be liking below:
+when all resources creating done, the result will be liking below:
 ```shell
 ~ > kubectl get po -n vanus
 vanus-controller-0                  1/1     Running   0             30s
 vanus-controller-1                  1/1     Running   0             30s
 vanus-controller-2                  1/1     Running   0             30s
-vanus-gateway-5fd85c7c-vnzcw        1/1     Running   0             17h
+vanus-gateway-5fd85c7c-vnzcw        1/1     Running   0             30s
 vanus-store-0                       1/1     Running   0             30s
 vanus-store-1                       1/1     Running   0             30s
 vanus-store-2                       1/1     Running   0             30s
@@ -44,7 +44,7 @@ vanus-vsctl-69bc7dcf59-mtz8m        1/1     Running   0             2m16s
 
 ### vsctl
 ```shell
-# choose a right version based your arch and os: linux-amd64, macos-arm64
+# NOTE: choose a right version based your arch and os: linux-amd64, macos-arm64
 ~ > curl -O http://44.242.140.28:9080/vsctl/v0.0.2/macos-arm64/vsctl
 ~ > chmod ug+x vsctl
 ~ > sudo mv vsctl /usr/local/bin
@@ -68,25 +68,54 @@ Flags:
 
 Use "vsctl [command] --help" for more information about a command.
 ```
+and set endpoints
+```shell
+~ > minikube service list -n vanus
+|-----------|--------------------|----------------------|---------------------------|
+| NAMESPACE |        NAME        |     TARGET PORT      |            URL            |
+|-----------|--------------------|----------------------|---------------------------|
+| vanus     | vanus-controller   | No node port         |
+| vanus     | vanus-controller-0 | controller-grpc/2048 | http://192.168.49.2:32000 |
+| vanus     | vanus-controller-1 | controller-grpc/2048 | http://192.168.49.2:32100 |
+| vanus     | vanus-controller-2 | controller-grpc/2048 | http://192.168.49.2:32200 |
+| vanus     | vanus-gateway      | vanus-gateway/8080   | http://192.168.49.2:30001 |
+|-----------|--------------------|----------------------|---------------------------|
+
+~ > export VANUS_ENDPOINTS=192.168.49.2:32000,192.168.49.2:32100,192.168.49.2:32200
+```
 
 ## Uses
 There are some examples below that demonstrate can do.
 ### put/get
-1. create an [eventbus](TODO)  
+1. create an [eventbus](#)  
 ```shell
 ~ > vsctl eventbus create --name quick-start
+create eventbus: quick-start success
 ```
 2. send an event to the eventbus
 ```shell
 ~ > vsctl event put quick-start \
+  --data-format plain \
   --body "Hello Vanus" \
   --id "1" \
   --source "quick-start" \
   --type "examples"
+sent 200  
 ```
 3. get an event from eventbus
 ```shell
 ~ > vsctl event get quick-start --offset 0 --number 1
+event: 0, Context Attributes,
+  specversion: 1.0
+  type: examples
+  source: quick-start
+  id: 1
+  time: 2022-05-17T09:17:51.208428312Z
+  datacontenttype: text/plain
+Extensions,
+  xvanuseventbus: quick-start
+Data,
+  "Hello Vanus"
 ```
 
 ### filter
@@ -94,47 +123,80 @@ There are some examples below that demonstrate can do.
 ```shell
 ~ > curl -O http://44.242.140.28:9080/utils/display.yml
 ~ > kubectl apply -f display.yml
-~ > kubectl get po -n vanus | grep display
-
-~ > kubectl exec -it  
+~ > kubectl get po
+NAME                             READY   STATUS    RESTARTS   AGE
+vanus-display-74b65fcff4-pk9rm   1/1     Running   0          12s
 ```
-3. open another terminal session to create a subscription
+2. create a subscription
 ```shell
 ~ > vsctl subscription create \
-  --eventbus quick-start \  
-  --source 'quick-start-filter-section' \
-  --sink 'vanus-display:3080' \
-  --filters '' \  
+  --eventbus quick-start \
+  --sink 'http://vanus-display.default:3080' \
+  --filters '[
+    {
+      "exact": {
+          "source":"quick-start-filter-section"
+      }
+    }
+  ]'  
+create subscription: 1652779545393580804 success  
 ```
-
 the subscription will subscribe all events from `--source` in `--eventbus`. and only events matched with `--filter`
 can be emitted to `--sink`
 3. send events to `quick-start` just created
 ```shell
 ~ > vsctl event put quick-start \
-  --body "test filter, the event will be displayed." \
-  --id "2" \
-  --source "quick-start-filter-section" \
-  --type "examples"
-  
+  --body '{"msg":"1st event, DISPLAY: YES"}' \
+  --id "1st" \
+  --source "quick-start-filter-section"
+sent: 200
 ~ > vsctl event put quick-start \
-  --body "test filter, the event won't be displayed." \
-  --id "3" \
-  --source "quick-start" \
-  --type "examples"  
-  
+  --body '{"msg":"2nd event, DISPLAY: NO"}' \
+  --id "2nd" \
+  --source "quick-start"
+sent: 200  
 ~ > vsctl event put quick-start \
-  --body "test filter, the event will be displayed." \
-  --id "2" \
-  --source "quick-start-filter-section" \
-  --type "?"  
+  --body '{"msg":"3rd event, DISPLAY: YES"}' \
+  --id "3rd" \
+  --source "quick-start-filter-section"
+sent: 200  
 ```
-4. back to display server for validation, the first event we sent should be output here.
+4. back to display server for validation, the first and third event we just sent should be outputed here.
 ```shell
+# NOTE: use the POD_NAME you got from step 1.
+~ > kubectl logs vanus-display-74b65fcff4-pk9rm
 
+Vance Event Display
+Server listening on port: 8080 
+receive a new event, in total: 7
+{
+  "id" : "1st",
+  "source" : "quick-start-filter-section",
+  "specversion" : "V1",
+  "type" : "cmd",
+  "datacontenttype" : "application/json",
+  "time" : "2022-05-17T10:14:05.463206062Z",
+  "data" : {
+    "msg" : "1st event, DISPLAY: YES"
+  }
+}
+receive a new event, in total: 8
+{
+  "id" : "3rd",
+  "source" : "quick-start-filter-section",
+  "specversion" : "V1",
+  "type" : "cmd",
+  "datacontenttype" : "application/json",
+  "time" : "2022-05-17T10:16:33.561553545Z",
+  "data" : {
+    "msg" : "3rd event, DISPLAY: YES"
+  }
+}
 ```
 
 ### transformation
+TODO(delu.xu)
+
 ## Advanced
 ### use connectors
 see https://github.com/JieDing/vance-docs
