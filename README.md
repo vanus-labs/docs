@@ -72,6 +72,7 @@ vanus-store-1                       1/1     Running   0             30s
 vanus-store-2                       1/1     Running   0             30s
 vanus-trigger-75cb74dbbf-k8jsm      1/1     Running   0             30s
 ```
+**For more details, please see [Vanus core repo](https://github.com/linkall-labs/vanus).**
 
 ## Vance
 
@@ -106,6 +107,7 @@ kubectl get po -n vance
 NAME                                        READY   STATUS    RESTARTS      AGE
 vance-controller-manager-6d454547f9-lscvv   2/2     Running   4 (80s ago)   11m
 ```
+**For more details, please see [Vance repo](https://github.com/linkall-labs/vance).**
 
 # Talk to us
 
