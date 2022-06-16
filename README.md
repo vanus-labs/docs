@@ -39,19 +39,19 @@ This guide will help you get started with Vanus. We will cover:
 
 ## Vanus core
 
-**Pre-requisites**
+1. **Pre-requisites**
 
 
 install a [Kubenetes](https://kubernetes.io/docs/setup/)  cluster
 
-**Install with YAML file**
+2. **Install with YAML file**
 
 ```
 curl -O http://44.242.140.28:9080/all-in-one/latest.yml
 kubectl apply -f latest.yml
 ```
 
-**Verify the installation**
+3. **Verify the installation**
 
 The all-in-one YAML file will create all required resources and run the Vanus  in the  vanus namespace.
 
@@ -71,15 +71,15 @@ vanus-trigger-75cb74dbbf-k8jsm      1/1     Running   0             30s
 
 Vance is composed of a set of source connectors and sink connectors, as well as a serverless engine.
 
-**Pre-requisites**
+1. **Pre-requisites**
 
-1. install a [Kubenetes](https://kubernetes.io/docs/setup/) cluster
+-install a [Kubenetes](https://kubernetes.io/docs/setup/) cluster
 
-2. install [KEDA](https://keda.sh/docs/2.7/deploy/)
+-install [KEDA](https://keda.sh/docs/2.7/deploy/)
 
-3. install [KEDA-http](https://github.com/kedacore/http-add-on/blob/main/docs/install.md)
+-install [KEDA-http](https://github.com/kedacore/http-add-on/blob/main/docs/install.md)
 
-**Install with YAML file**
+2. **Install with YAML file**
 
 Use an all-in-one YAML file to simply deploy Vance.
 
@@ -87,7 +87,7 @@ Use an all-in-one YAML file to simply deploy Vance.
 kubectl apply -f deploy/vance-1.0.0.yaml
 ```
 
-**Verify the installation**
+3. **Verify the installation**
 
 The all-in-one YAML file will create vance connector Kubernetes Custom Resource Definitions (CRDs) and run the Vance controller in the vance namespace.
 
