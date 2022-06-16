@@ -114,10 +114,8 @@ There are three ways you can talk with our community about development-related t
 
 # Get involved with
 
-- [**Vanus Architecture**](https://github.com/linkall-labs/docs/blob/main/architecture)
-- [**How to Contribute to Vanus**](https://github.com/linkall-labs/docs/blob/main/how-to-contribute)
-- [**Participate in Community SIGs**]()
-
-
+- [**Vanus Architecture**](https://github.com/linkall-labs/docs/blob/main/architecture.md)
+- [**How to Contribute to Vanus**](https://github.com/linkall-labs/docs/blob/main/how-to-contribute.md)
+- [**Participate in Community SIGs**](https://github.com/linkall-labs/docs/blob/main/SIGs.md)
 
 
