@@ -53,7 +53,7 @@ kubectl apply -f latest.yml
 
 3.**Verify the installation**
 
-The all-in-one YAML file will create all required resources and run the Vanus  in the  vanus namespace.
+The all-in-one YAML file will create all required resources and run the Vanus core in the ***vanus*** namespace.
 
 ```
 kubectl get po -n vanus
@@ -89,7 +89,7 @@ kubectl apply -f deploy/vance-1.0.0.yaml
 
 3.**Verify the installation**
 
-The all-in-one YAML file will create vance connector Kubernetes Custom Resource Definitions (CRDs) and run the Vance controller in the vance namespace.
+The all-in-one YAML file will create vance connector Kubernetes Custom Resource Definitions (CRDs) and run the Vance controller in the ***vance*** namespace.
 
 ```
 kubectl get crds | grep vance
