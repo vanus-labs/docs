@@ -120,7 +120,7 @@ There are three ways you can talk with our community about development-related t
 - Participate in our [Github Discussion](https://github.com/linkall-labs/vanus/discussions), which is a collaborative communication forum of Vanus.
 
 
-# Get involved with
+# Get involved with Vanus
 
 - [**Vanus Architecture**](https://github.com/linkall-labs/docs/blob/main/architecture.md)
 - [**How to Contribute to Vanus**](https://github.com/linkall-labs/docs/blob/main/how-to-contribute.md)
