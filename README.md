@@ -28,6 +28,12 @@ The goal of **Vanus** is to help users to build responsive and Event-Driven appl
 
 - **Any Where:**  Vanus provides multi-cloud and hybrid cloud integration capabilities to deliver events wherever you want, whether it's a public cloud, on-premises, or edge cloud.
 
+---
+> **Note**
+
+> As we're just getting started, many of the capabilities mentioned above are not currently available on Vanus. For example, there are very few connectors we currently provide, and workload orchestration functions are not yet supported. But If we head the right way, we will definitely reach our goal. Everyone is welcome and encouraged to join us and make Vanus stronger!
+
+---
 
 # Quick Start
 
