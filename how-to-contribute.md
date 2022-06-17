@@ -29,7 +29,7 @@ As your first-ever contribution, you can start with the roadmap shown below.
 ![first-issue](https://user-images.githubusercontent.com/4669944/174041231-a59e16ac-95b4-482b-8992-b14871f13752.jpeg)
 
 
-1. The first contribution can start from [Creating an issue](https://github.com/linkall-labs/vanus/issues/new/choose). When you notice an issue, you can submit a New Issue. Or you can submit an issue when you have a suggestion.
+1. The first contribution can start from [Creating an issue](https://github.com/linkall-labs/vanus/issues/new/choose). When you notice an issue, you can submit a [New Issue](https://github.com/linkall-labs/vanus/issues). Or you can submit an issue when you have a suggestion.
 
 2. Contributions can be submitted as PR. If you're less experienced with git workflows, [Open a Pull Request]([https://github.com/linkall-labs/docs/blob/main/open-a-pull-request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)) would be rather helpful.  [Find an issue to contribute](https://github.com/linkall-labs/vanus/issues) helps us quickly find an issue and start contributing. 
 <!---
