@@ -48,3 +48,14 @@ The general process after PR is introduced:
 Participate in community SIGs
 The Vanus community is organized into Special Interest Groups (SIGs), and developers can choose a SIG they are interested in contributing to. You can become a member, reviewer, or approver of SIG, and different roles have different permissions and entail specific responsibilities for approving and committing changes.
 --->
+
+# Talk to us
+
+There are three ways you can talk with our community about development-related topics:
+
+- Join us on [Slack](https://join.slack.com/t/linkall-group/shared_invite/zt-1994ehs51-Yf5_EAvdfm4VH~o_djG7Sg) for a live and instant discussion with the developers of Vanus.
+
+- Join and post to our [Mailing List](https://groups.google.com/g/linkall) for questions or suggestions that require more lengthy descriptions and context.
+
+- Participate in our [Github Discussion](https://github.com/linkall-labs/vanus/discussions), which is a collaborative communication forum of Vanus.
+
