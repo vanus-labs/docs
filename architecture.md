@@ -1,4 +1,4 @@
-# Architecture
+# Vanus Architecture
 
 **Vanus** is mainly composed of Vanus core and Vance. Vanus core includes Segment Server, Trigger, and Controller, which are mainly used for event subscription/publishing, storage, computing, and triggering serverless workloads. Vance consists of Source Connector, Sink Connector, and Connector Serverless Engine, which are used to connect events from cloud services, databases, IoT, and other systems to the Vanus, and then deliver them to user workloads or SaaS systems after processing. The architecture of Vanus is illustrated as follows:
 
