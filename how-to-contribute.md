@@ -19,7 +19,7 @@ Certainly, code isn't the only way to contribute to a project. We take documenta
 
 ## Getting started
 
-Anyone can open an issue about documentation, or contribute a change with a pull request (PR) to the Vanus GitHub repository. Contributions to Vanus are expected to adhere to our Code of Conduct. For more instruction on setting up your development environment, see [Quick Start](#quick-start ). 
+Anyone can open an issue about documentation, or contribute a change with a pull request (PR) to the Vanus GitHub repository. Contributions to Vanus are expected to adhere to our Code of Conduct. For more instruction on setting up your development environment, see [Quick Start](https://github.com/linkall-labs/docs#readme.md#quick-start). 
 
 ### Make your FIRST contribution
 
