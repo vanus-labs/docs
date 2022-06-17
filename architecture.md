@@ -12,7 +12,7 @@
 
 **Controller:** It is the decision-making center of the entire system,  which is responsible for service discovery, metadata management, and resource scheduling. Regarding the metadata,  it mainly includes event storage metadata and event subscription metadata. The event storage metadata includes the distribution of the event topic Eventbus in the Segment Server, and the mapping relationship between Eventbus, Eventlog, and Segments. The event subscription metadata includes the event consumption topic, the event processing method, and the address to which the event needs to be routed. In addition, the Controller is also responsible for the resource scheduling of the entire system, including the scheduling of event storage traffic between Segment Servers and the scheduling of event distribution traffic between Trigger Workers.
 
-**Trigger Worker:** It is used to process events and route them to user workload or Sink Connector. After a user creates the subscription, the Controller assigns the subscription task to the specific Trigger Worker. The Trigger Worker acquires the events of the corresponding Eventbus, completes the even filter and even transformation, and then delivers the events.
+**Trigger Worker:** It is used to process events and route them to user workload or Sink Connector. After a user creates the subscription, the Controller assigns the subscription task to the specific Trigger Worker. The Trigger Worker captures the events of the corresponding Eventbus, completes the even filter and even transformation, and then delivers the events.
 
 ## Vance
 
