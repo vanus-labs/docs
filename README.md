@@ -78,7 +78,7 @@ vanus-trigger-75cb74dbbf-k8jsm      1/1     Running   0             30s
 
 Vance is composed of a set of source connectors and sink connectors, as well as a serverless engine.
 
-1.**Pre-requisites**
+1. **Pre-requisites**
 
 - install a [Kubenetes](https://kubernetes.io/docs/setup/) cluster
 
@@ -86,7 +86,7 @@ Vance is composed of a set of source connectors and sink connectors, as well as 
 
 - install [KEDA-http](https://github.com/kedacore/http-add-on/blob/main/docs/install.md)
 
-2.**Install with YAML file**
+2. **Install with YAML file**
 
 Use an all-in-one YAML file to simply deploy Vance.
 
@@ -94,7 +94,7 @@ Use an all-in-one YAML file to simply deploy Vance.
 kubectl apply -f deploy/vance-1.0.0.yaml
 ```
 
-3.**Verify the installation**
+3. **Verify the installation**
 
 The all-in-one YAML file will create vance connector Kubernetes Custom Resource Definitions (CRDs) and run the Vance controller in the ***vance*** namespace.
 
