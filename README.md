@@ -45,7 +45,7 @@ Install a [Kubenetes](https://kubernetes.io/docs/setup/)  cluster
 
 ### 2. Install with YAML file
 
-```shell
+```bash
 curl -O http://44.242.140.28:9080/all-in-one/latest.yml
 kubectl apply -f latest.yml
 ```
@@ -54,7 +54,7 @@ kubectl apply -f latest.yml
 
 The all-in-one YAML file will create all required resources and run the Vanus core in the ***vanus*** namespace.
 
-```text
+```bash
 ~ kubectl get po -n vanus
 vanus-controller-0                  1/1     Running   0             30s
 vanus-controller-1                  1/1     Running   0             30s
