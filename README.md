@@ -54,7 +54,7 @@ kubectl apply -f latest.yml
 
 The all-in-one YAML file will create all required resources and run the Vanus core in the ***vanus*** namespace.
 
-```bash
+```text
 ~ kubectl get po -n vanus
 vanus-controller-0                  1/1     Running   0             30s
 vanus-controller-1                  1/1     Running   0             30s
@@ -82,7 +82,7 @@ Vance is composed of a set of source connectors and sink connectors, as well as 
 
 Use an all-in-one YAML file to simply deploy Vance.
 
-```shell
+```bash
 kubectl apply -f deploy/vance-1.0.0.yaml
 ```
 
@@ -90,12 +90,12 @@ kubectl apply -f deploy/vance-1.0.0.yaml
 
 The all-in-one YAML file will create vance connector Kubernetes Custom Resource Definitions (CRDs) and run the Vance controller in the ***vance*** namespace.
 
-```shell
+```text
 ~ kubectl get crds | grep vance
 connectors.vance.io                     2022-05-15T07:50:35Z
 ```
 
-```shell
+```text
 ~ kubectl get po -n vance
 NAME                                        READY   STATUS    RESTARTS      AGE
 vance-controller-manager-6d454547f9-lscvv   2/2     Running   4 (80s ago)   11m
