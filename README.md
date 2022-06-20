@@ -80,11 +80,11 @@ Vance is composed of a set of source connectors and sink connectors, as well as 
 
 1.**Pre-requisites**
 
--install a [Kubenetes](https://kubernetes.io/docs/setup/) cluster
+- install a [Kubenetes](https://kubernetes.io/docs/setup/) cluster
 
--install [KEDA](https://keda.sh/docs/2.7/deploy/)
+- install [KEDA](https://keda.sh/docs/2.7/deploy/)
 
--install [KEDA-http](https://github.com/kedacore/http-add-on/blob/main/docs/install.md)
+- install [KEDA-http](https://github.com/kedacore/http-add-on/blob/main/docs/install.md)
 
 2.**Install with YAML file**
 
