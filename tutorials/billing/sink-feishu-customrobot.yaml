@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: feishu-bot-sink
+  namespace: default
+  labels:
+    app: feishu-bot-sink
+spec:
+  selector:
+    matchLabels:
+      app: feishu-bot-sink
+  template:
+    metadata:
+      labels:
+        app: feishu-bot-sink
+    spec:
+      containers:
+        - name: feishu-bot-sink
+          image: docker.io/vancehub/sink-feishubot
+          imagePullPolicy: IfNotPresent
+          env:
+          - name: V_TARGET
+            value: "$(BOT_WEBHOOK_ADDRESS)"
+          - name: FEISHU_SECRET
+            value: "$(BOT_SECRET)"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: feishu-bot-sink
+spec:
+  ports:
+    - port: 80
+      targetPort: 8080
+  selector:
+    app: feishu-bot-sink
+  type: ClusterIP
