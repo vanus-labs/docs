@@ -3,10 +3,13 @@
 ## Prerequisites
 
 ### OS requirements
-Linux kernel version greater than or equals 5.1 (March 2019) for io_uring
+Linux kernel version greater than or equals 5.1 (March 2019) for `io_uring`
 
 ### Machine
-This QuickStart run on AWS EC2, The OS version is `Canonical, Ubuntu, 22.04 LTS`, we suggest you use the same instance for getting the best experience.
+This QuickStart run on AWS EC2, type is `c4.2xlarge`(we only tested on this, and we will continue to test for 
+finding minimum resource required, if you tested other smaller type, welcome to submit a PR to update here).
+
+The OS version is `Canonical, Ubuntu, 22.04 LTS`, we suggest you use the same instance for getting the best experience.
 ```shell
 ubuntu@ip-172-31-34-13:~$ uname -a
 Linux ip-172-31-34-13 5.15.0-1011-aws #14-Ubuntu SMP Wed Jun 1 20:54:22 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
@@ -24,10 +27,7 @@ install docker by Google.
 Maybe you need run `sudo usermod -aG docker $USER && newgrp docker` before `minikube start`.
 
 #### kubectl
-[how to install](https://kubernetes.io/docs/tasks/tools/)
-docker: please right version based your system 
-
-
+[how to install](https://kubernetes.io/docs/tasks/tools/) 
 
 ## Installation
 
