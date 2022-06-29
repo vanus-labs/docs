@@ -2,23 +2,24 @@
 
 ## Overview
 
-Grafana is an open and composable observability and data visualization platform, have lots of event for metrics. Use Vanus can easily do the integration with Grafana, and manage events like alert and others together.
+Vanus can easily do integration with Grafana and manage events such as alerts and so on.
+Grafana is an open and composable observability and data visualization platform, which supports lots of event metrics.
 
 ![grafana](./grafana.png)
 
-In this tutorial, you will learn how to use Vanus's HTTP Source Connector with Grafana data source to aquire the alert data; How to use Vanus's Elasticsearch Sink Connector saving alert data to Elasticsearch.
+In this tutorial, you will learn how to use Vanus's HTTP Source Connector with Grafana data source to acquire the alert data; How to use Vanus's Elasticsearch Sink Connector to save alert data to Elasticsearch.
 
 ## Prerequisites
 
 - [Install Vanus](https://github.com/linkall-labs/docs/blob/main/vanus/quick-start.md)
 
-- Instll and run Grafana
+- Install and run Grafana
 
   ```bash
   kubectl apply -f install-grafana.yaml
   ```
 
-- Instll and run Elasticsearch and Kibana
+- Install and run Elasticsearch and Kibana
 
   ```bash
   kubectl apply -f install-elasticsearch.yaml
@@ -38,8 +39,6 @@ Now navigate to the `tutorials/http` directory
 cd ./docs/tutorials/http
 ```
 
-Do the following steps.
-
 ### Create HTTP Source Service
 
 Create via cli [HTTP Source](https://github.com/linkall-labs/vance/blob/main/connectors/source-http/README.md).
@@ -47,11 +46,11 @@ Create via cli [HTTP Source](https://github.com/linkall-labs/vance/blob/main/con
 kubectl apply -f source-http.yaml
 ```
 
-### Create Target End - Elasticsearch
+### Create Sink End - Elasticsearch
 
-Use the command line of Vanus create the event target: [Elasticsearch Sink](https://github.com/linkall-labs/vance/blob/main/connectors/sink-elasticsearch/README.md),
+Leveraging the command line of Vanus to create the event sink: [Elasticsearch Sink](https://github.com/linkall-labs/vance/blob/main/connectors/sink-elasticsearch/README.md),
 
-1. Modify sink-elasticsearch-grafana.yaml , attribute `env`: `ADDRESS`,`USERNAME`,`PASSWORD` are all configuration of Elasticsearch
+1. Modify sink-elasticsearch-grafana.yaml, attribute `env`: `ADDRESS`,`USERNAME`,`PASSWORD` are all configurations of Elasticsearch
 2. Then, apply that yaml using `kubectl`:
 
   ```bash
@@ -60,8 +59,7 @@ Use the command line of Vanus create the event target: [Elasticsearch Sink](http
 
 ## Step 3: Subscription
 
-Use Vanus command line create Subscription Event, here can do filter before deliver event to sink end, execute the following command:
-
+With Vanus command line, you can create Subscription Event. You can do a filter before delivering event to sink end:
 ```bash
 vsctl subscription create \
   --eventbus tutorials \
@@ -75,11 +73,11 @@ vsctl subscription create \
   ]'
 ```
 
-- `sink` Points to the target end of the event delivery.
+- `sink` the target of the event delivery.
 
-- `filters` The method of filter the events. 
+- `filters` the ways of filtering the events. 
 
-  - use keyword `exact` to do the exact match for attribute source
+- use keyword `exact` to do the exact match for the attribute source.
 
 
 ## Step 4: Event Delivery & Result Checking
@@ -88,9 +86,9 @@ vsctl subscription create \
 
 1. Login Grafana console
 
-2. In the left bar select Alerting > Contact points，then click【New Contact points】
+2. In the left menu select Alerting > Contact points， then click【New Contact points】
 
-3. In Contact points tab，fill the following parameters:
+3. In Contact points tab， fill the following parameters:
 
    - Name：give it a name
    - Contact point type：select【Webhook】
@@ -98,7 +96,7 @@ vsctl subscription create \
 
    ![grafana](./grafana-web.png)
 
-4. Click【Test】to simulate triggering the alert, sample of alert data:
+4. Click【Test】to simulate alerts, the sample of alert data is as follows:
 
    ```json
    {
@@ -129,15 +127,15 @@ vsctl subscription create \
    }
    ```
 
-### Check alert data
+### Check Alert Data
 
-Now let's connect to kibana so that we can manage data and perform data analysis.
+Now let's connect to kibana where we can manage data and do data analysis.
 
 ![grafana](./grafana-kibana.png)
 
 ## Summary
 
-In this tutorial, we have learned:
+In this tutorial, you can learn:
 
-- How to join sources and sink.
-- Of course, for tools like Jenkins,GitHub,Prometheus those who support to use Webhook to trigger event, both alert and event can be saved by this way, and manage all events together.
+- How to use sources and sink.
+- For similar tools like Jenkins, GitHub, and Prometheus which support using Webhook to trigger events,  both alert and event can be saved via Vanus.
