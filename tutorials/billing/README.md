@@ -1,4 +1,4 @@
-# Use Cloud Billing Source to retrieve bills from cloud vendors
+# Use Cloud Billing Source to retrieve bills from multiple cloud vendors
 
 ## Overview
 
