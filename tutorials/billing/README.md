@@ -2,11 +2,9 @@
 
 ## Overview
 
-Billings from cloud vendors allow users to observe the cost of resource.
-
 Vanus obtains bills by using interfaces from various cloud vendors. It uses Elasticsearch for data storage to achieve unified management of bills. It also notifies the team of abnormal expenses via Feishu-bot.
 ![billing](./billing.png)
-In this tutorial, you will learn how to use Cloud Billing Source of Vanus to aquire the billing from Cloud Service providers like AWS, AliCloud, and store the data in Elasticsearch, if any resource caused unusual billing, and would send out alret via feishu-bot.
+In this tutorial, you will learn how to use Cloud Billing Source of Vanus to acquire the billing from Cloud Service providers like AWS and AliCloud, and store the data in Elasticsearch. If any resource caused abnormal billing, alters would be sent out via feishu-bot.
 
 ## Prerequisites
 
@@ -18,7 +16,7 @@ In this tutorial, you will learn how to use Cloud Billing Source of Vanus to aqu
   kubectl apply -f install-elasticsearch.yaml
   ```
 
-- Config Feishu-bot（ [自定义机器人指南](https://open.feishu.cn/document/ukTMukTMukTM/ucTM5YjL3ETO24yNxkjN)）
+- Configure Feishu-bot（ [自定义机器人指南](https://open.feishu.cn/document/ukTMukTMukTM/ucTM5YjL3ETO24yNxkjN)）
 
 ## Step 1: Create EventBus
 
@@ -28,17 +26,15 @@ vsctl eventbus create --name tutorials
 
 ## Step 2: Create Source & Sink
 
-Now navigate to the `tutorials/billing` directory
+Navigate to the `tutorials/billing` directory
 
 ```bash
 cd ./docs/tutorials/billing
 ```
 
-Do the following steps.
-
 ### Create Data Source - bills from cloud vendors
 
-Use command line create [AWS Billing Source](https://github.com/linkall-labs/vance/blob/main/connectors/source-aws-billing/README.md) and [AliCloud Billing Source](https://github.com/linkall-labs/vance/blob/main/connectors/source-alicloud-billing/README.md),
+With command line, you create [AWS Billing Source](https://github.com/linkall-labs/vance/blob/main/connectors/source-aws-billing/README.md) and [AliCloud Billing Source](https://github.com/linkall-labs/vance/blob/main/connectors/source-alicloud-billing/README.md),
 
 1. Modify the attribute  `env` in file source-aws-billing.yaml
    - Modify `ACCESS_KEY_ID` 
@@ -53,11 +49,11 @@ kubectl apply -f source-aws-billing.yaml
 kubectl apply -f source-alicloud-billing.yaml
 ```
 
-### Create Target End - Elasticsearch
+### Create Sink End - Elasticsearch
 
-Use the command line of Vanus create the event target: [Elasticsearch Sink](https://github.com/linkall-labs/vance/blob/main/connectors/sink-elasticsearch/README.md),
+With the command line of Vanus,  you create the event sink end: [Elasticsearch Sink](https://github.com/linkall-labs/vance/blob/main/connectors/sink-elasticsearch/README.md),
 
-1. Modify sink-elasticsearch-billing.yaml, attribute `env`:`ADDRESS`,`USERNAME`,`PASSWORD` are all configuration of Elasticsearch
+1. Modify sink-elasticsearch-billing.yaml, attribute `env`:`ADDRESS`,`USERNAME`,`PASSWORD` are all configurations of Elasticsearch
 
 2. Then, apply that yaml using `kubectl`:
 
@@ -67,11 +63,11 @@ kubectl apply -f sink-elasticsearch-billing.yaml
 
 ### Create Target End  - Feishu-bot
 
-Use the command line of Vanus create the event target: [Feishu-bot](https://github.com/linkall-labs/vance/blob/main/connectors/sink-feishu-bot/README.md)
+With the command line of Vanus,  you create the event sink end: [Feishu-bot](https://github.com/linkall-labs/vance/blob/main/connectors/sink-feishu-bot/README.md)
 
 1. Modify sink-feishu-bot.yaml, attribute `env`
-   - Modify ` V_TARGET` ，this is webhook provided by feishu-bot
-   - Modify `FEISHU_SECRET` ，this is secret token provided by feishu-bot
+   - Modify ` V_TARGET` ,this is a webhook provided by feishu-bot
+   - Modify `FEISHU_SECRET` , this is a secret token provided by feishu-bot
 
 2. Then, apply that yaml using `kubectl`:
 
@@ -83,7 +79,7 @@ kubectl apply -f sink-feishu-bot.yaml
 
 ### Create Elasticsearch Subscription
 
-Create Subscription Event, here can do filter before deliver event to sink end, execute the following command:
+Create Subscription Event, you can do a filter before delivering event to the sink end:
 
 ```bash
 vsctl subscription create \
@@ -98,13 +94,13 @@ vsctl subscription create \
   ]'
 ```
 
-- `sink` Points to the target end of the event delivery.
-- `filters` The method of filter the events. 
-  - use keyword `suffix` to do the postfix match for attribute source
+- `sink` Tthe target end of the event delivery.
+- `filters` The ways of filtering the events. 
+- use keyword `suffix` to do the postfix match for attribute source
 
 ### Create Feishu-bot Subscription
 
-Create Subscription Event, here can do filter before deliver event to sink end, execute the following command:
+Create Subscription Event, you can do a filter before delivering event to the sink end:
 
 ```bash
 vsctl subscription create \
@@ -133,31 +129,31 @@ vsctl subscription create \
 ```
 
 - `sink` Points to the target end of the event delivery.
-- `filters` The method of filter the events. 
+- `filters` The method of filtering the events. 
   - `suffix` to do the postfix match for attribute source
-  - `cel`key word for filter the attributes by expression，for example to filter a resource attribute (amount)> threshold(8.013);
-- `input-transformer` attribute for event transform，redefine the content of event by template
-  - `define`, keyword for define the variable which template would need。use JSONPath get the content of the event，and save it in the defined variable;
-  - `template` , keyword，for doing the transform of event by customized format, then route to target.
+  - `cel`key word for filtering the attributes by expression， for example to filter a resource attribute (amount)> threshold(8.013);
+- `input-transformer` attribute for event transform, redefine the content of event by template
+  - `define`, the keyword for defining the variable which template would need。use JSONPath to get the content of the event, and save it in the defined variable;
+  - `template`, keyword, for doing the transform of an event by customized format, then route to target.
 
 ## Step 4: Result Checking
 
-### Check the Billing Data
+### Check Billing Data
 
-Now let's connect to kibana so that we can manage data and perform data analysis.
+Now let's connect to kibana where we can manage data and do data analysis.
 
 ![billing](./billing-kibana.png)
 
 ### Check Warning Message
 
-When certian resource in billing triggered  Feishu-bot, you would see the warning message in your group:
+When certain resource in bills triggered by Feishu-bot, you would see the warning messages:
 
 ![billing](./billing-feishu.png)
 
 ## Summary
 
-In this tutorial, we have learned:
+In this tutorial, you can learn:
 
-- How to join two sources and two sink.
-- How to use to do the event filter and content transform.
+- How to use two sources and two sinks.
+- How to do the event filter and content transform.
 
