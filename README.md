@@ -18,7 +18,7 @@ Build IoT event processing system, such as a shared power bank.
 
 The goal of **Vanus** is to help users to build responsive and Event-Driven applications. Whenever an event occurs in the real world, **Vanus** can trigger serverless workloads to react to the event.
 
-- **Any Event**: The Connector Development toolkit (CDK) can complete the development of the Connector in 1 hour, helping users to quickly accomplish event access. In the future, Vanus will provide hundreds of connectors, allowing users to get the events they want from almost any system, whether services, databases, IoT devices, or SaaS systems.
+- **Any Event**: The Connector Development toolkit (CDK) can complete the development of the Connector in 1 hour, helping users to quickly accomplish event access. In the future, Vanus will provide plentiful connectors, allowing users to get the events they want from almost any system, whether services, databases, IoT devices, or SaaS systems.
 
 - **Any Workload**: In response to events, Vanus can deliver events to any workload, whether traditional applications, serverless applications, database systems, or others.
 
