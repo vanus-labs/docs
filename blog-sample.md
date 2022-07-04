@@ -78,8 +78,7 @@ Kafka于2010年底被开源，2011年7月被LinkedIn捐献到了Apache基金会[
 
 Serverless一词是2012年由Iron公司提出[60]，如同云计算一样，Serverless形态的产品其实早已经存在。2008年谷歌就推出了Serverless形态产品Google App engine[61]。正如前文所说，任何一个技术并不是在它发明的时候被人关注，而是需要的时候。微服务如此，Serverless同样如此。2014年AWS推出Serverless产品Lamdba后，由于使用云计算的互联网企业降本诉求强烈，Lamdba被越来越多的企业所采用。之后Azure、GCP等主流云计算提供商也陆续推出相应的Serverless产品。曾经成功预测云计算时代的伯克利大学2019年再次撰写《Cloud Programming Simplified: A Berkeley View on Serverless Computing》[62]一文，预测 Serverless 是云计算下一个十年的发展方向。论文里也给出了关于 Serverless 的定义，简单来讲就是Serverless Computing，由 FaaS + BaaS（Backend as a Service）构成一个 Serverless 软件架构。特点就是能够按需弹性、按需付费。2020年AWS有一半的用户采用了Lamdba构建其业务系统。根据Datadog的调查报告，2021年Lamdba被调用的次数相比两年前增长了350%。
 
-
-        ![lambda](https://user-images.githubusercontent.com/4669944/177095957-0e647a47-642b-4c88-a594-65aea641fffa.png)
+![lambda](https://user-images.githubusercontent.com/4669944/177095957-0e647a47-642b-4c88-a594-65aea641fffa.png)
 
 ## 六   Future part：一个全新的世界
 
