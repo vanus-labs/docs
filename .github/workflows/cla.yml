@@ -19,7 +19,7 @@ jobs:
           PERSONAL_ACCESS_TOKEN : ${{ secrets.WORKFLOW_ACCESS_TOKEN }}
         with:
           path-to-signatures: 'signatures/cla.json'
-          path-to-document: 'https://github.com/linkall-labs/community/blob/main/CLA.md' # e.g. a CLA or a DCO document
+          path-to-document: 'https://gist.github.com/558bebeb9a2db723fff1b0622d239414' # e.g. a CLA or a DCO document
           # branch should not be protected
           branch: 'main'
           allowlist: bot*
