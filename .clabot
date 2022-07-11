@@ -1,0 +1,5 @@
+{
+  "contributors": "https://api.github.com/repos/linkall-labs/community/contents/.clabot",
+  "message": "Thank you for your pull request and welcome to our community. We require contributors to sign our \[Contributor License Agreement\](https://github.com/linkall-labs/community/blob/main/CLA.md), and we don't seem to have the users {{usersWithoutCLA}} on file. In order for us to review and merge your code, please sign the CLA by creating a PR in [here](https://github.com/linkall-labs/community/compare). After the PR merged, please comment `recheck` in this PR to re-run checking."
+  "recheckComment": "recheck"
+}
