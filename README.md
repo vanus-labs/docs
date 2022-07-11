@@ -1,6 +1,6 @@
 # What is Vanus?
 
-**Vanus** is a serverless event streaming system with event capture, storage, filter, and routing that can help you trigger and orchestrate serverless workloads and Kubernetes applications. **Vanus** provides hundreds of cloud services and application software connectors, enabling developers to route events from almost any data source to serverless workloads, helping enterprises to quickly build Event-Driven Architecture (EDA) applications, which is the core foundation of future digital enterprise facilities. 
+**Vanus** is a serverless event streaming system with event capture, storage, filter, and routing that can help you trigger and orchestrate serverless workloads and Kubernetes applications. **Vanus** provides hundreds of cloud services and application software connectors, enabling developers to route events from almost any data source tasdsado serverless workloads, helping enterprises to quickly build Event-Driven Architecture (EDA) applications, which is the core foundation of future digital enterprise facilities. 
 
 Developers can quickly build cloud-native intelligent digital pipelines with **Vanus**. Whether it is a public cloud, a hybrid cloud, or an edge cloud, Vanus makes it easy and convenient for enterprises to use data just like water, gas, and electricity.
 
