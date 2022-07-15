@@ -2,9 +2,6 @@
 
 ## Prerequisites
 
-### OS requirements
-Linux kernel version greater than or equals 5.1 (March 2019) for `io_uring`
-
 ### Machine
 This QuickStart run on AWS EC2, type is `c4.2xlarge`(we only tested on this, and we will continue to test for 
 finding minimum resource required, if you tested other smaller type, welcome to submit a PR to update here).
@@ -34,8 +31,8 @@ Maybe you need run `sudo usermod -aG docker $USER && newgrp docker` before `mini
 ### vanus
 
 ```shell
-~ > curl -O http://44.242.140.28:9080/all-in-one/v0.1.1.yml
-~ > kubectl apply -f v0.1.1.yml
+~ > curl -O http://44.242.140.28:9080/all-in-one/v0.1.2.yml
+~ > kubectl apply -f v0.1.2.yml
 ```
 when all resources creating done, the result will be liking below:
 ```shell
@@ -53,7 +50,7 @@ vanus-trigger-75cb74dbbf-k8jsm      1/1     Running   0             30s
 ### vsctl
 ```shell
 # NOTE: choose a right version based your arch and os: linux-amd64, macos-arm64
-~ > curl -O http://44.242.140.28:9080/vsctl/v0.1.1/linux-amd64/vsctl
+~ > curl -O http://44.242.140.28:9080/vsctl/v0.1.2/linux-amd64/vsctl
 ~ > chmod ug+x vsctl
 ~ > sudo mv vsctl /usr/local/bin
 ~ > vsctl 
