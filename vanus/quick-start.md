@@ -362,7 +362,4 @@ receive a new event, in total: 11                                               
 
 ## Advanced
 ### use connectors
-see https://github.com/JieDing/vance-docs
-#### source
-
-#### sink
+[see https://github.com/JieDing/vance-docs](https://github.com/linkall-labs/vance-docs)
