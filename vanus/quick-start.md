@@ -31,8 +31,8 @@ Maybe you need run `sudo usermod -aG docker $USER && newgrp docker` before `mini
 ### vanus
 
 ```shell
-~ > curl -O http://44.242.140.28:9080/all-in-one/v0.1.2.yml
-~ > kubectl apply -f v0.1.2.yml
+~ > curl -O http://44.242.140.28:9080/all-in-one/v0.2.0.yml
+~ > kubectl apply -f v0.2.0.yml
 ```
 when all resources creating done, the result will be liking below:
 ```shell
@@ -50,7 +50,7 @@ vanus-trigger-75cb74dbbf-k8jsm      1/1     Running   0             30s
 ### vsctl
 ```shell
 # NOTE: choose a right version based your arch and os: linux-amd64, macos-arm64
-~ > curl -O http://44.242.140.28:9080/vsctl/v0.1.2/linux-amd64/vsctl
+~ > curl -O http://44.242.140.28:9080/vsctl/v0.2.0/linux-amd64/vsctl
 ~ > chmod ug+x vsctl
 ~ > sudo mv vsctl /usr/local/bin
 ~ > vsctl 
