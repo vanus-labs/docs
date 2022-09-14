@@ -1,3 +1,9 @@
+---
+title: Quick Start
+excerpt: Update your docs automatically with `rdme`, ReadMe's official CLI and GitHub Action!
+category: vanus
+---
+
 # Quick Start
 
 ## Prerequisites

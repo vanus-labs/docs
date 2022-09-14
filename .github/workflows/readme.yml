@@ -1,0 +1,23 @@
+name: user-manual
+
+# Run workflow for every push to the `main` branch
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      README_IO_APIKEY: ${{ secrets.README_IO_APIKEY }}
+    steps:
+      - uses: actions/checkout@v3
+      # Run GitHub Action to sync docs in `documentation` directory
+      # We recommend specifying a fixed version, i.e. @7.5.0
+      # Docs: https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions#example-using-versioned-actions
+      - uses: readmeio/rdme@7.5.0
+        with:
+          rdme: docs ./user-manual --key=${README_IO_APIKEY} --version=v0.3
