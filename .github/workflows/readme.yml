@@ -1,4 +1,4 @@
-name: readme-io-documentation-sync-action
+name: user-manual
 
 # Run workflow for every push to the `main` branch
 on:
@@ -20,4 +20,4 @@ jobs:
       # Docs: https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions#example-using-versioned-actions
       - uses: readmeio/rdme@7.5.0
         with:
-          rdme: docs ./vanus --key=${README_IO_APIKEY} --version=v0.3
+          rdme: docs ./user-manual --key=${README_IO_APIKEY} --version=v0.3
