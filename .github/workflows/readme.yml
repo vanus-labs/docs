@@ -1,0 +1,24 @@
+name: readme-io-documentation-sync-action
+
+# Run workflow for every push to the `main` branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      CODECOV_TOKEN: ${{ secrets.README_IO_APIKEY }}
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v3
+
+      # Run GitHub Action to sync docs in `documentation` directory
+      - name: GitHub Action
+        # We recommend specifying a fixed version, i.e. @7.5.0
+        # Docs: https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions#example-using-versioned-actions
+        uses: readmeio/rdme@7.5.0
+        with:
+          rdme: docs ./vanus --key=${README_IO_APIKEY} --version=v0.3
