@@ -1,0 +1,101 @@
+---
+title: Using SDK
+category: 6321d3a56093c3010397e4aa
+---
+
+# Using SDK
+
+Vanus receives event data in CloudEvents format. As a producer, the user business system needs to convert the message into CE format data and send it to Vanus.
+
+## Operations
+
+**Prerequisites**
+
+1. Ensure that the eventbus named quick-start has been created.
+2. Modify the endpoint to the endpoint of the vanus controller in the test environment.
+
+**Sample code**
+
+The whole code process of synchronous transmission is as follows:
+1. **Create CloudEvents Client**.
+2. **Specify endpoint**. The endpoint is the unified port exposed by Vanus. It defaults to 127.0.0.1:30001. At the same time, the target eventbus needs to be specified.
+3. **Create an Event conforming to CloudEvents format**. And specify information such as id, source, type, and data.
+4. **Call the send interface to send messages**. The synchronization sending wait result finally returns to SendResult, and judges whether the sending is successful.
+
+The following is an example code:
+```golang
+package main
+
+import (
+	"context"
+	"fmt"
+	"strings"
+
+	ce "github.com/cloudevents/sdk-go/v2"
+	"github.com/google/uuid"
+)
+
+const (
+	httpPrefix = "http://"
+	// the endpoints of vanus controller, default: 127.0.0.1:30001.
+	endpoint   = "127.0.0.1:30001"
+	eventbus   = "quick-start"
+)
+
+func main() {
+	p, err := ce.NewHTTP()
+	if err != nil {
+		panic(fmt.Sprintf("new cloudevents protocol failed, err: %s\n", err.Error()))
+	}
+
+	client, err := ce.NewClient(p, ce.WithTimeNow(), ce.WithUUIDs())
+	if err != nil {
+		panic(fmt.Sprintf("new cloudevents client failed, err: %s\n", err.Error()))
+	}
+
+	var target string
+	if strings.HasPrefix(endpoint, httpPrefix) {
+		target = fmt.Sprintf("%s/gateway/%s", endpoint, eventbus)
+	} else {
+		target = fmt.Sprintf("%s%s/gateway/%s", httpPrefix, endpoint, eventbus)
+	}
+
+	ctx := ce.ContextWithTarget(context.Background(), target)
+	// create an event in cloudevents format.
+	event := ce.NewEvent()
+	event.SetID(uuid.NewString())
+	event.SetSource("event-source")
+	event.SetType("event-type")
+	event.SetData(ce.TextPlain, "event-body")
+
+	res := client.Send(ctx, event)
+	if ce.IsUndelivered(res) {
+		panic(fmt.Sprintf("failed to send event, err: %s\n", res.Error()))
+	}
+}
+```
+
+**Expected results**
+
+The following results indicate that the event was successfully sent to quick-start.
+```
+$ vsctl event get quick-start
++-----+--------------------------------------------+
+| NO. |                    EVENT                   |
++-----+--------------------------------------------+
+|     | Context Attributes,                        |
+|     |   specversion: 1.0                         |
+|     |   type: event-type                         |
+|     |   source: event-source                     |
+|     |   id: 299c6cbd-b3c6-4de8-8486-ef0c13d60d9e |
+|     |   time: 2022-09-20T12:42:36.992825162Z     |
+|  0  |   datacontenttype: text/plain              |
+|     | Extensions,                                |
+|     |   xvanuseventbus: quick-start              |
+|     |   xvanuslogoffset: AAAAAAAAAAA=            |
+|     |   xvanusstime: 2022-09-20T12:42:36.994Z    |
+|     | Data,                                      |
+|     |   event-body                               |
+|     |                                            |
++-----+--------------------------------------------+
+```
