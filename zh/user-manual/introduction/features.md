@@ -2,7 +2,7 @@
 
 Vanus提供了丰富的功能，包括：
 
-- 遵循CloudEvents规范，并兼容CloudEvents SDK
+- 围绕CloudEvents规范打造，深度集成CloudEvents SDK
 - 真正的推模式事件订阅模型，支持AWS Lambda、knative serving等主流Serverless计算产品
 - 强大的事件过滤、转换能力
 - 保证至少一次投递
