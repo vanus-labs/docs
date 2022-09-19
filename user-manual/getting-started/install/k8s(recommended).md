@@ -11,8 +11,8 @@ order: 1
 
 Before installing Vanus, you must meet the following prerequisites:
 
-1. you must have a k8s cluster and access to the internet from that cluster to fetch images.
-2. you have installed the [kubectl](https://kubernetes.io/docs/tasks/tools).
+1. You must have a k8s cluster and access to the internet from that cluster to fetch images.
+2. You have installed the [kubectl](https://kubernetes.io/docs/tasks/tools).
   
 ## Install Vanus
 
