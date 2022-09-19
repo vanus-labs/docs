@@ -5,7 +5,7 @@ slug: getting-started-install-minikube
 order: 0
 ---
 
-# Use minikube install vanus
+# Use minikube to install Vanus
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ kubectl apply -f http://44.242.140.28:9080/all-in-one/v0.3.0.yml
 
 ## Verify the installation
 
-Monitor the Vanus components until all of the components show a STATUS of Running or Completed.
+Monitor the Vanus components until all of the components show the STATUS Running or Completed.
 You can do this by running the following command:
 
 ```shell

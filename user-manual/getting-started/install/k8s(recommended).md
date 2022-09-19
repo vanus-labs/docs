@@ -5,13 +5,13 @@ slug: getting-started-install-k8s
 order: 1
 ---
 
-# Use k8s install vanus
+# Use k8s to install Vanus
 
 ## Prerequisites
 
 Before installing Vanus, you must meet the following prerequisites:
 
-1. you have a k8s cluster and k8s must have access to the internet to fetch images.
+1. you must have a k8s cluster and access to the internet from that cluster to fetch images.
 2. you have installed the [kubectl](https://kubernetes.io/docs/tasks/tools).
   
 ## Install Vanus
@@ -24,7 +24,7 @@ kubectl apply -f http://44.242.140.28:9080/all-in-one/v0.3.0.yml
 
 ## Verify the installation
 
-Monitor the Vanus components until all of the components show a STATUS of Running or Completed.
+Monitor the Vanus components until all of the components show the STATUS Running or Completed.
 You can do this by running the following command:
 
 ```shell
