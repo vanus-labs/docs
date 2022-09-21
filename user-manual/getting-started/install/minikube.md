@@ -11,9 +11,9 @@ order: 0
 
 Before installing Vanus, you must meet the following prerequisites:
 
-1. You have installed the [docker](https://docs.docker.com/engine/install).
-2. You have installed the [minikube](https://minikube.sigs.k8s.io/docs/start) and minikube must have access to the internet to fetch images.
-3. You have installed the [kubectl](https://kubernetes.io/docs/tasks/tools).
+1. You have installed [docker](https://docs.docker.com/engine/install).
+2. You have installed [minikube](https://minikube.sigs.k8s.io/docs/start) and minikube must have access to the internet to fetch images.
+3. You have installed [kubectl](https://kubernetes.io/docs/tasks/tools).
   
 ## Install Vanus
 
