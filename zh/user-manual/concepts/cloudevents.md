@@ -8,6 +8,8 @@ Vanus是围绕着CloudEvents规范打造的，并且深度集成了CloudEvents�
 
 ## CloudEvent
 
+![CloudEvent](images/cloudevent.jpg)
+
 “[事件](https://github.com/cloudevents/spec/blob/main/cloudevents/spec.md#event)”是用于表示已发生之事和其背景环境的数据记录。因此，CloudEvent中包含两种类型的信息：用于表示[已发生之事](https://github.com/cloudevents/spec/blob/main/cloudevents/spec.md#occurrence)（Occurrence）的[事件数据](https://github.com/cloudevents/spec/blob/main/cloudevents/spec.md#event-data)（Event Data），和用于提供背景信息的[环境](https://github.com/cloudevents/spec/blob/main/cloudevents/spec.md#context)（Context）元数据。
 
 ### 环境属性

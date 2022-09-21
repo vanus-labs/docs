@@ -15,6 +15,8 @@ Vanus build around CloudEvents specifications, and integrate with CloudEvents SD
 
 ## CloudEvent
 
+![CloudEvent](images/cloudevent.jpg)
+
 An "[event](https://github.com/cloudevents/spec/blob/main/cloudevents/spec.md#event)" is a data record expressing an
 occurrence and its context. So, the CloudEvent will contain two types of information: the
 [Event Data](https://github.com/cloudevents/spec/blob/main/cloudevents/spec.md#event-data) representing the
