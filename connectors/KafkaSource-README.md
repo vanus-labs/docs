@@ -4,12 +4,20 @@
 
 A [Vance Connector][vc] which transforms Kafka messages from topics to CloudEvents and deliver them to the target URL.
 
+### Features
+The Kafka Source connector provides the following features:
+
+- At least once delivery: The connector guarantees that records are delivered at least once.
+- Supports multiple Topics: The connector supports Listening to one or more topics.
+
 ## User Guidelines
 
 ### Connector Introduction
 
 The Kafka Source is a [Vance Connector][vc] which aims to generate CloudEvents in a way that wraps the body of the 
 original message into the `data` field of a new CloudEvent.
+
+
 ## The ideal message
 The ideal type of event for the Kafka source is a String in a JSON format. But it can handle any other type of data provided by Kafka. 
 > JSON Formatted String
@@ -37,44 +45,62 @@ A Kafka message transformed into a CloudEvent looks like:
 }
 ```
 
-## Kafka Source Configs
+## Quick Start
+
+### Prerequisites
+Before installing Kafka source, you must meet the following prerequisites:
+
+- You have installed [docker](https://www.docker.com).
+
+- You have a kafka server installed and running. 
+
+### Installing Kafka source
+
+Install Kafka source by running this command:
+
+```shell
+ docker pull vancehub/source-kafka:latest
+ ```
+### Create Configs
 
 Users can specify their configs by either setting environments variables or mounting a config.json to
 `/vance/config/config.json` when they run the connector. Find examples of setting configs [here][config].
 
-### Config Fields of the kafka Source
+Create a Json file named `config.json`.
+
+Inside the file configs.json insert:
+
+```json
+ {
+  "v_target": "http://localhost:8081",
+  "KAFKA_SERVER_URL": "localhost",
+  "KAFKA_SERVER_PORT": "9092",
+  "CLIENT_ID": "Source",
+  "TOPIC_LIST": "topic1, topic2"
+}
+
+ ```
+ 
+#### Config Fields of the kafka Source
 
 | Configs   | Description                                                                     | Example                 |
 |:----------|:--------------------------------------------------------------------------------|:------------------------|
 | v_target  | v_target is used to specify the target URL HTTP Source will send CloudEvents to | "http://localhost:8081" |
-| KAFKA_SERVER_URL    | The URL of the Kafka Cluster the Kafka Source is listening on                  | "8080"                  |
+| KAFKA_SERVER_URL    | The URL of the Kafka Cluster the Kafka Source is listening on                  | "localhost"                  |
 | KAFKA_SERVER_PORT    | v_port is used to specify the port Kafka Source is listening on                  | "8080"                  |
 | CLIENT_ID    |  An optional identifier for multiple Kafka Sources that is passed to a Kafka broker with every request.                  | "kafkaSource"                  |
 | TOPIC_LIST    | The source will listen to the topic or topics specified.                   | "topic1"  or "topic1, topic2, topic3"                 |
 
+
+### Start Kafka source
+Start the kafka connector by attaching the configs and running the docker image with this command:
+
+```shell
+ docker run -v $(pwd)/config.json:/vance/config/config.json vancehub/source-kafka:latest
+ ```
+
+and your done!
+
 ## Kafka Source Image
 
 > vancehub/source-kafka
-
-## Local Development
-
-You can run the source codes of the Kafka Source locally as well.
-
-### Building via Maven
-
-```shell
-$ cd connectors/source-Kafka
-$ mvn clean package
-```
-
-### Running via Maven
-
-```shell
-$ mvn exec:java -Dexec.mainClass="com.linkall.source.Kafka.Entrance"
-```
-
-⚠️ NOTE: For better local development and test, the connector can also read configs from `main/resources/config.json`. So, you don't need to 
-declare any environment variables or mount a config file to `/vance/config/config.json`.
-
-[vc]: https://github.com/linkall-labs/vance-docs/blob/main/docs/concept.md
-[config]: https://github.com/linkall-labs/vance-docs/blob/main/docs/connector.md
