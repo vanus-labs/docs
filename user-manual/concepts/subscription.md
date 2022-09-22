@@ -8,7 +8,7 @@ The subscription reflects the consumer's interest in receiving events and descri
 
 ## Subscription Struct
 
-A subscription struct has the following properties:
+A subscription in Vanus has the following properties:
 
 ### id
 
