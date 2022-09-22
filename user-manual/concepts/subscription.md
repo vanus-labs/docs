@@ -4,11 +4,11 @@ title: Subscription
 
 # Subscription
 
-The subscription is a relationship established between a consumer and a producer or a middleware. It describe the consumer receive events which it is interested and the method for how to deliver the events.
+The subscription reflects the consumer's interest in receiving events and describes the method for how to deliver the events.
 
 ## Subscription Struct
 
-A subscription struct has properties as below:
+A subscription struct has the following properties:
 
 ### id
 
@@ -16,19 +16,19 @@ The unique identifier of the subscription.
 
 ### source
 
-Determine which events deliver to sink by the Cloudevents `source`.
+Determine which events deliver to sink,it's value match the Cloudevents `source`.
 
 ### types
 
-Determine which events deliver to sink by the Cloudevents `type`.
-
-### config
-
-The configuration for delivery events to sink.
+Determine which events deliver to sink, it's value match the Cloudevents `type`.
 
 ### filters
 
-Determine which events deliver to sink
+Determine which events deliver to sink, it's a set of filter expressions
+
+### config
+
+The configuration that delivery events to sink.
 
 ### sink
 
