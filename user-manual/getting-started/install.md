@@ -6,10 +6,11 @@ order: 0
 ---
 
 # Installation
+Vanus design is based on [Kubernetes](https://kubernetes.io), and the installation relies on its environment.
 
-The Vanus is designed based [Kubernetes](https://kubernetes.io), so the installation totally rely on Kubernetes.
+In this section, the two pages introduce two different methods of installing Vanus into a Kubernetes environment.
 
-In this section, there are two pages introduce how to install Vanus into a Kubernetes environment.
+Below, you can find two links to install Vanus into a Kubernetes environment.
 
-- [minikube](install/minikube.md): For local environment, we recommend you use minikube to run Vanus.
-- [Kubernetes](install/k8s(recommended).md): For testing or production environment, we recommend you use a stable Kubernetes cluster to run Vanus
+- [Minikube](install/minikube.md): For local environment, we recommend you use minikube to run Vanus.
+- [Kubernetes](install/k8s(recommended).md): For testing or production environment, we recommend you use a stable kubernetes cluster to run Vanus.
