@@ -4,9 +4,7 @@ title: Subscription
 
 # Subscription
 
-The subscription reflects the consumer's interest in receiving events and describes the method for delivering the events.
-
-## Subscription Struct
+The subscription in Vanus reflects the consumer's interest in receiving events and describes the method for delivering the events.
 
 A subscription in Vanus has the following properties:
 
@@ -17,6 +15,6 @@ A subscription in Vanus has the following properties:
 - **config** - The configuration that deliver events to sink.
 - **sink** - The address to which events be sent.
 - **sinkCredential** - The credential that deliver events to the sink for authentication.
-- **protocol** - Identifier of a delivery protocol.
+- **protocol** - The protocol that deliver event to sink.
 - **eventbus** - The eventbus name which the subscription to fetch events from.
-- **transformer** - Translate events to a different format.
+- **transformer** - Customize event data before deliver to sink.
