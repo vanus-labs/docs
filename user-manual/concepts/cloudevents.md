@@ -1,17 +1,17 @@
 # CloudEvents
 
-The goal of the CloudEvents specification is to define interoperability of event systems that allow services to produce
-or consume events, where the producer and consumer are loosely coupled during development, deployed independently, and
-later can be connected to create new applications.
+The goal of the CloudEvents specification is to define the interoperability of event systems that allow services to
+produce or consume events, where the producer and consumer are loosely coupled during development, deployed
+independently, and later can be connected to create new applications.
 
 CloudEvents, at its core, is a specification for describing event data in common formats to provide interoperability
 across services, platforms and systems. And beyond the core specification, CloudEvents also contains
-[SDKs](https://github.com/cloudevents/spec/blob/main/cloudevents/SDK.md) and other specifications for other aspects in
-Eventing/Messaging, such as: [Subscription](https://github.com/cloudevents/spec/blob/main/subscriptions/spec.md),
+[SDKs](https://github.com/cloudevents/spec/blob/main/cloudevents/SDK.md) and other specifications for other aspects of
+Eventing/Messaging, such as [Subscription](https://github.com/cloudevents/spec/blob/main/subscriptions/spec.md),
 [Discovery](https://github.com/cloudevents/spec/blob/main/discovery/spec.md),
 [Schema Registry](https://github.com/cloudevents/spec/blob/main/schemaregistry/spec.md), etc.
 
-Vanus build around CloudEvents specifications, and integrate with CloudEvents SDKs.
+Vanus is built around the CloudEvents specifications and integrated with CloudEvents SDKs.
 
 ## CloudEvent
 
@@ -104,7 +104,7 @@ The following example shows a CloudEvent serialized as JSON:
 
 ## CloudEvents SDKs
 
-The CloudEvents team committed to support and maintain the following SDKs:
+The CloudEvents team is committed to supporting and maintaining the following SDKs:
 
 - [CSharp SDK](https://github.com/cloudevents/sdk-csharp)
 - [Go SDK](https://github.com/cloudevents/sdk-go)
