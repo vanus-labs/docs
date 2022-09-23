@@ -7,4 +7,4 @@ order: 0
 
 # Produce Events
 
-This document will guide you through the process of sending events from your specific application to Vanus.
+This document will guide you through the process of sending events from your application to Vanus.

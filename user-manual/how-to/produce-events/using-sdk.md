@@ -11,8 +11,8 @@ Vanus receives event data in CloudEvents format. As a producer, the user busines
 
 **Prerequisites**
 
-1. Ensure that the eventbus named quick-start has been created.
-2. Modify the endpoint to the endpoint of the vanus controller in the test environment.
+1. Ensure that the Eventbus named quick-start has been created.
+2. Modify the endpoint to the endpoint of the Vanus controller in the test environment.
 
 **Sample code**
 
@@ -20,7 +20,7 @@ The whole code process of synchronous transmission is as follows:
 1. **Create CloudEvents Client**.
 2. **Specify endpoint**. The endpoint is the unified port exposed by Vanus. It defaults to 127.0.0.1:30001. At the same time, the target eventbus needs to be specified.
 3. **Create an Event conforming to CloudEvents format**. And specify information such as id, source, type, and data.
-4. **Call the send interface to send messages**. The synchronization sending wait result finally returns to SendResult, and judges whether the sending is successful.
+4. **Call the Send interface to send messages**. The synchronization sending wait result finally returns to SendResult, and judges whether it was sent successful.
 
 The following is an example code:
 ```golang
@@ -29,6 +29,7 @@ package main
 import (
 	"context"
 	"fmt"
+	"os"
 	"strings"
 
 	ce "github.com/cloudevents/sdk-go/v2"
@@ -37,18 +38,15 @@ import (
 
 const (
 	httpPrefix = "http://"
-	// the endpoints of vanus controller, default: 127.0.0.1:30001.
-	endpoint   = "127.0.0.1:30001"
 	eventbus   = "quick-start"
 )
 
-func main() {
-	p, err := ce.NewHTTP()
-	if err != nil {
-		panic(fmt.Sprintf("new cloudevents protocol failed, err: %s\n", err.Error()))
-	}
+var (
+	endpoint = os.Getenv("VANUS_GATEWAY")
+)
 
-	client, err := ce.NewClient(p, ce.WithTimeNow(), ce.WithUUIDs())
+func main() {
+	client, err := ce.NewClientHTTP()
 	if err != nil {
 		panic(fmt.Sprintf("new cloudevents client failed, err: %s\n", err.Error()))
 	}
@@ -61,16 +59,14 @@ func main() {
 	}
 
 	ctx := ce.ContextWithTarget(context.Background(), target)
-	// create an event in cloudevents format.
 	event := ce.NewEvent()
 	event.SetID(uuid.NewString())
 	event.SetSource("event-source")
 	event.SetType("event-type")
-	event.SetData(ce.TextPlain, "event-body")
+	event.SetData(ce.ApplicationJSON, map[string]string{"hello": "world"})
 
-	res := client.Send(ctx, event)
-	if ce.IsUndelivered(res) {
-		panic(fmt.Sprintf("failed to send event, err: %s\n", res.Error()))
+	if result := client.Send(ctx, event); ce.IsUndelivered(result) {
+		panic(fmt.Sprintf("failed to send event, err: %s\n", result.Error()))
 	}
 }
 ```
@@ -95,7 +91,9 @@ $ vsctl event get quick-start
 |     |   xvanuslogoffset: AAAAAAAAAAA=            |
 |     |   xvanusstime: 2022-09-20T12:42:36.994Z    |
 |     | Data,                                      |
-|     |   event-body                               |
+|     |   {                                        |
+|     |     "hello": "world"                       |
+|     |   }                                        |
 |     |                                            |
 +-----+--------------------------------------------+
 ```

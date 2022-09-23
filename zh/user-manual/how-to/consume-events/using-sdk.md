@@ -5,20 +5,20 @@ category: 6321d3a56093c3010397e4aa
 
 # 使用 SDK
 
-Vanus Trigger 模块将符合 CloudEvent 格式的事件数据推送到 Connector Sink，转换成用户应用程序数据后，触发用户消费。
+Vanus Trigger 模块将符合 [CloudEvents](https://cloudevents.io/) 格式的事件数据推送到 Sink Connector，转换成用户应用程序数据后，触发用户消费。
 
 ## 操作
 
 **前提条件**
 
-1. 需要确保subscription存在且sink配置为用户应用程序监听的地址，subscription创建可参见[quick-start](https://github.com/linkall-labs/docs/blob/main/vanus/quick-start.md#filter)相关章节。
-2. 需要确保vanus与用户应用程序中监听的端口网络互通。
+1. 需要确保 subscription 存在且 Sink 配置为用户应用程序监听的地址，subscription 创建可参见[Manage Subscriptions](https://github.com/linkall-labs/docs/blob/main/user-manual/how-to/managing-subscription.md)相关章节。
+2. 需要确保 Vanus 与用户应用程序中监听的端口网络互通。
 
 **示例代码**
 
 整个代码流程如下：
 1. **创建一个消费端应用程序**。
-2. **启动 cloudevents 的 receiver**。receiver 接收 Trigger 模块推送过来的 event。
+2. **启动 CloudEvents 的 receiver**。receiver 接收 Trigger 模块推送过来的 event。
 3. **处理用户实际业务逻辑**。这里仅将 event 数据打印到标准输出。
 
 如下是示例代码:
@@ -43,18 +43,18 @@ func main() {
 		panic(fmt.Sprintf("failed to listen, err: %s\n", err.Error()))
 	}
 
-	c, err := client.NewHTTP(cehttp.WithListener(ls), cehttp.WithRequestDataAtContextMiddleware())
+	c, err := client.NewHTTP(cehttp.WithListener(ls))
 	if err != nil {
-		panic(fmt.Sprintf("failed to init cloudevnets client, err: %s", err.Error()))
+		panic(fmt.Sprintf("failed to init cloudevents client, err: %s", err.Error()))
 	}
 
 	fmt.Println("listen 0.0.0.0:6789...")
 
 	err = c.StartReceiver(ctx, func(event ce.Event) {
-		fmt.Printf("received a event: %s\n", event.String())
+		fmt.Printf("received an event: %s\n", event.String())
 	})
 	if err != nil {
-		panic(fmt.Sprintf("failed to start cloudevnets receiver, err: %s\n", err.Error()))
+		panic(fmt.Sprintf("failed to start cloudevents receiver, err: %s\n", err.Error()))
 	}
 }
 
@@ -62,10 +62,10 @@ func main() {
 
 **预期结果**
 
-向名称为quick-start的eventbus中发送一条消息，接收端看到以下结果表示用户应用程序接收到vanus推送的事件。
+向名称为 quick-start 的 Eventbus 中发送一条消息，如接收端显示以下结果，表示用户应用程序成功接收到 Vanus 推送的事件。
 ```
 listen 0.0.0.0:6789...
-received a event: Context Attributes,
+received an event: Context Attributes,
   specversion: 1.0
   type: event-type
   source: event-source
@@ -76,5 +76,7 @@ Extensions,
   xvanuseventbus: quick-start
   xvanusstime: 2022-09-21T02:08:42.894Z
 Data,
-  event-body
+  {
+    "hello": "world"
+  }
 ```
