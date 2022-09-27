@@ -5,7 +5,7 @@ category: 6321d3a56093c3010397e4aa
 
 # 使用 SDK
 
-Vanus Trigger 模块将符合 [CloudEvents](https://cloudevents.io/) 格式的事件数据推送到 Sink Connector，转换成用户应用程序数据后，触发用户消费。
+Vanus 可以将 Evnetbus 中的消息直接推送到符合 CloudEvents 规范的 SDK。
 
 ## 操作
 

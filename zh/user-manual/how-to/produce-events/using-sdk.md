@@ -5,7 +5,7 @@ category: 6321d3a56093c3010397e4aa
 
 # 使用 SDK
 
-Vanus 接收 CloudEvents 格式的事件数据，作为生产者的用户业务系统需要将消息转换成 CloudEvents 格式的数据并发送到 Vanus。
+使用符合 CloudEvents 规范的 SDK 可以将事件直接发送到 Vanus 的 Eventbus 中。
 
 ## 操作
 

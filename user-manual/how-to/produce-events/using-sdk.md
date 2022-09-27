@@ -5,7 +5,7 @@ category: 6321d3a56093c3010397e4aa
 
 # Using SDK
 
-Vanus receives event data in CloudEvents format. As a producer, the user business system needs to convert the message into CE format data and send it to Vanus.
+The SDK conforming to CloudEvents specification can be used to directly send events to Vanus's Eventbus.
 
 ## Operations
 

@@ -7,4 +7,4 @@ order: 1
 
 # Consume Events
 
-This document will guide you through the process of receiving events from Vanus to the Sink connector into your specific application.
+This document describes how to consume events from Vanus's Eventbus.

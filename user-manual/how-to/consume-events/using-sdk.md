@@ -5,7 +5,7 @@ category: 6321d3a56093c3010397e4aa
 
 # Using SDK
 
-The Vanus Trigger module pushes event data conforming to CloudEvent format to the Sink Connector and then converts it into user application data to trigger user consumption.
+Vanus can directly push the messages in Evnetbus to the SDK conforming to CloudEvents specification.
 
 ## Operations
 
