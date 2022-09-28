@@ -1,28 +1,24 @@
 ---
-title: Using SDK
+title: Using CloudEvents SDK
 category: 6321d3a56093c3010397e4aa
 ---
 
-# 使用 SDK
+# 使用 CloudEvents SDK 向 Vanus 发送事件
 
-使用符合 CloudEvents 规范的 SDK 可以将事件直接发送到 Vanus 的 Eventbus 中。
+本文档将展示如何使用 [CloudEvents](https://github.com/cloudevents) SDK 向 Vanus 发送事件。
 
 ## 操作
 
 **前提条件**
 
-1. 确保名称为 quick-start 的 Eventbus 已创建。
-2. 修改 endpoint 为测试环境中 Vanus Controller 的端点。
+1. 安装 [Vanus](https://github.com/linkall-labs/docs/blob/main/user-manual/getting-started/install/k8s(recommended).md) 和 [vsctl](https://github.com/linkall-labs/docs/blob/main/user-manual/how-to/vsctl.md)。
+2. 创建一个名称为 quick-start 的 [Evevtbus](https://github.com/linkall-labs/docs/blob/main/concepts/eventbus.md)。
+3. 输入以下命令配置环境变量：`export VANUS_GATEWAY=127.0.0.1:8080`。
+
+> 我们还提供了一个交互式的 [Kubernetes 环境](https://play.linkall.com/)，可以更简单地在浏览器中部署和使用 Vanus。
 
 **示例代码**
 
-同步发送的整个代码流程如下：
-1. **创建 CloudEvents Client**。
-2. **指定 endpoint**。endpoint 是 Vanus 暴露的统一端口，默认为 127.0.0.1:30001，同时需要指定目的 Eventbus。
-3. **创建一个符合 CloudEvents 格式的 event**。并指定ID、source、type、data等信息。
-4. **调用 send 接口将消息发送出去**。同步发送等待结果最后返回 SendResult，并判断发送是否成功。
-
-如下是示例代码:
 ```golang
 package main
 
@@ -46,6 +42,7 @@ var (
 )
 
 func main() {
+	// step 1: build a CloudEvents client
 	client, err := ce.NewClientHTTP()
 	if err != nil {
 		panic(fmt.Sprintf("new cloudevents client failed, err: %s\n", err.Error()))
@@ -58,24 +55,30 @@ func main() {
 		target = fmt.Sprintf("%s%s/gateway/%s", httpPrefix, endpoint, eventbus)
 	}
 
+	// step 2: specify the target
 	ctx := ce.ContextWithTarget(context.Background(), target)
+	// step 3: build a CloudEvent
 	event := ce.NewEvent()
 	event.SetID(uuid.NewString())
 	event.SetSource("event-source")
 	event.SetType("event-type")
 	event.SetData(ce.ApplicationJSON, map[string]string{"hello": "world"})
 
+	// step 4: send the CloudEvent
 	if result := client.Send(ctx, event); ce.IsUndelivered(result) {
 		panic(fmt.Sprintf("failed to send event, err: %s\n", result.Error()))
 	}
 }
 ```
 
-**预期结果**
+**预期效果**
 
-以下结果表示事件成功发送到 quick-start。
+运行以下命令，确认 producer 是否成功将事件发送到 Vanus 的 Eventbus 中。
 ```
 $ vsctl event get quick-start
+```
+预期效果如下：
+```
 +-----+--------------------------------------------+
 | NO. |                    EVENT                   |
 +-----+--------------------------------------------+

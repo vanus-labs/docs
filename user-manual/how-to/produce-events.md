@@ -7,4 +7,4 @@ order: 0
 
 # Produce Events
 
-This document describes how to send events to Vanus's Eventbus.
+This document describes how to send events to Vanus.

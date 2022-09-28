@@ -1,28 +1,26 @@
 ---
-title: Using SDK
+title: Using CloudEvents SDK
 category: 6321d3a56093c3010397e4aa
 ---
 
-# Using SDK
+# Send events to Vanus with [CloudEvents](https://github.com/cloudevents) SDK
 
-The SDK conforming to CloudEvents specification can be used to directly send events to Vanus's Eventbus.
+The following document will teach you how to build a simple producer to send events to Vanus.
 
 ## Operations
 
 **Prerequisites**
 
-1. Ensure that the Eventbus named quick-start has been created.
-2. Modify the endpoint to the endpoint of the Vanus controller in the test environment.
+To send events to Vanus, you must meet the following prerequisites:
+1. Have a running [Vanus](https://github.com/linkall-labs/docs/blob/main/user-manual/getting-started/install/k8s(recommended).md) cluster.
+2. Have [vsctl](https://github.com/linkall-labs/docs/blob/main/user-manual/how-to/vsctl.md).
+3. Have created an [Evevtbus](https://github.com/linkall-labs/docs/blob/main/concepts/eventbus.md) named quick-start.
+4. Have exported the environment variable by running this command: `export VANUS_GATEWAY=127.0.0.1:8080`.
 
-**Sample code**
+> We also provide an interactive [Kubernetes environment](https://play.linkall.com/) to simply deploy and try Vanus in your browser.
 
-The whole code process of synchronous transmission is as follows:
-1. **Create CloudEvents Client**.
-2. **Specify endpoint**. The endpoint is the unified port exposed by Vanus. It defaults to 127.0.0.1:30001. At the same time, the target eventbus needs to be specified.
-3. **Create an Event conforming to CloudEvents format**. And specify information such as id, source, type, and data.
-4. **Call the Send interface to send messages**. The synchronization sending wait result finally returns to SendResult, and judges whether it was sent successful.
+**Example code**
 
-The following is an example code:
 ```golang
 package main
 
@@ -46,6 +44,7 @@ var (
 )
 
 func main() {
+	// step 1: build a CloudEvents client
 	client, err := ce.NewClientHTTP()
 	if err != nil {
 		panic(fmt.Sprintf("new cloudevents client failed, err: %s\n", err.Error()))
@@ -58,13 +57,16 @@ func main() {
 		target = fmt.Sprintf("%s%s/gateway/%s", httpPrefix, endpoint, eventbus)
 	}
 
+	// step 2: specify the target
 	ctx := ce.ContextWithTarget(context.Background(), target)
+	// step 3: build a CloudEvent
 	event := ce.NewEvent()
 	event.SetID(uuid.NewString())
 	event.SetSource("event-source")
 	event.SetType("event-type")
 	event.SetData(ce.ApplicationJSON, map[string]string{"hello": "world"})
 
+	// step 4: send the CloudEvent
 	if result := client.Send(ctx, event); ce.IsUndelivered(result) {
 		panic(fmt.Sprintf("failed to send event, err: %s\n", result.Error()))
 	}
@@ -73,9 +75,12 @@ func main() {
 
 **Expected results**
 
-The following results indicate that the event was successfully sent to quick-start.
+By running the following command, we can ensure that the simple producer successfully sent the event to Vanus Eventbus.
 ```
 $ vsctl event get quick-start
+```
+Here is the expected result:
+```
 +-----+--------------------------------------------+
 | NO. |                    EVENT                   |
 +-----+--------------------------------------------+

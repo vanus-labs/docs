@@ -7,4 +7,4 @@ order: 1
 
 # Consume Events
 
-This document describes how to consume events from Vanus's Eventbus.
+This document describes how to consume events from Vanus.
