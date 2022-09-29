@@ -53,12 +53,12 @@ const sidebars = {
         {
           type: 'category',
           label: 'Producing',
-          items: ['how-to/producing-event/using-sdk', 'how-to/producing-event/send-delay-event'],
+          items: ['how-to/producing/using-sdk', 'how-to/producing/send-delay-event'],
         },
         {
           type: 'category',
           label: 'Consuming',
-          items: ['how-to/consuming-event/using-sdk'],
+          items: ['how-to/consuming/using-sdk'],
         },
         'how-to/managing-eventbus',
         'how-to/managing-subscription',
