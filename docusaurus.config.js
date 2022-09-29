@@ -35,6 +35,7 @@ const config = {
           routeBasePath: "/",
           path: "user-manual",
           showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -52,12 +53,10 @@ const config = {
       }),
     ],
   ],
-  // themes: ['@docusaurus/theme-search-algolia'],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       algolia: {
-        id: '111',
         appId: 'NL3TWIITE6',
         apiKey: 'fa8450ef71ea4c0887cf399af0d4eef0',
         indexName: 'vanus-docs',

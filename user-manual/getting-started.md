@@ -1,8 +1,7 @@
 ---
+title: Getting Started
 id: getting-started
-slug: getting-started
-draft: true
-sidebar_label: Getting Started
+slug: /getting-started
 ---
 
 # Getting Started

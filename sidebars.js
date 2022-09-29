@@ -28,9 +28,9 @@ const sidebars = {
       label: 'Getting Started',
       link: {
         type: 'doc',
-        id: 'concepts',
+        id: 'getting-started',
       },
-      items: ['getting-started/playground', 'getting-started/install'],
+      items: ['getting-started/quick-start','getting-started/playground', 'getting-started/installation'],
     },
     {
       type: 'category',

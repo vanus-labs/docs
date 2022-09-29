@@ -1,8 +1,7 @@
 ---
+title: Introduction
 id: introduction
 slug: /
-draft: true
-sidebar_label: Introduction
 ---
 
 # Introduction
