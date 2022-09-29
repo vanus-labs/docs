@@ -41,6 +41,10 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/linkall-labs/docs/edit/main',
         },
+        googleAnalytics: {
+          trackingID: 'G-TJL6X2XKQP',
+          anonymizeIP: true,
+        },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
