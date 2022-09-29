@@ -6,7 +6,7 @@ category: 6321d3a8dc727406c2977082
 ## Integration with External Services
 
 Vance connect provides out-of-the-box connectors that enable you to integrate with popular services or applications 
-without writing codes. With a simple configuration file, vance connectors connect to the external service and move data
+without writing codes. With a simple configuration file, Vance Connectors connect to the external service and move data
 in and out of that service on behalf of user applications, allowing you to focus on your business logic.
 
 ## Connectors List
