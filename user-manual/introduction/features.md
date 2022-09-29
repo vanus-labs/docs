@@ -1,9 +1,8 @@
 ---
-title: Features
 id: features
 ---
 
-## Features
+# Features
 
 Vanus has a vast amount of features; here are some of the key features listed below:
 
