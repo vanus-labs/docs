@@ -13,7 +13,8 @@ Before installing Vanus, you must meet the following prerequisites:
 1. Have a [Kubernetes](https://kubernetes.io/docs/setup) cluster.
 2. Have installed the [kubectl](https://kubernetes.io/docs/tasks/tools/).
 
-> If you want to run Vanus locally, we suggest that you use [minikube](https://minikube.sigs.k8s.io/docs/start). We also provide an [interactive Kubernetes environment](https://play.linkall.com) to simply deploy and try Vanus in your browser.
+> If you want to run Vanus locally, we suggest that you use [minikube](https://minikube.sigs.k8s.io/docs/start).  
+> We also provide an [interactive Kubernetes environment](https://play.linkall.com) to simply deploy and try Vanus in your browser.
 
 ## Install Vanus
 
