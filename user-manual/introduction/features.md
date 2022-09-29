@@ -4,7 +4,7 @@ id: features
 
 # Features
 
-Vanus has a vast amount of features; here are some of the key features listed below:
+Vanus has a vast amount of features to help users achieve their goals. Let us share with you some of the key features Vanus has to offer:
 
 - Built around the CloudEvents specification, and integrated with CloudEvents SDKs instead of creating a new one.
 - True push mode for event subscription, triggers mainstream serverless computing products such as AWS Lambda, knative serving, etc.
