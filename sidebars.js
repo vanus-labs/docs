@@ -30,7 +30,7 @@ const sidebars = {
         type: 'doc',
         id: 'getting-started',
       },
-      items: ['getting-started/playground', 'getting-started/install'],
+      items: ['getting-started/quick-start','getting-started/playground', 'getting-started/installation'],
     },
     {
       type: 'category',

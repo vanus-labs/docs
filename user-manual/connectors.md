@@ -1,8 +1,7 @@
 ---
+title: Connectors
 id: connectors
-slug: connectors
-draft: true
-sidebar_label: Connectors
+slug: /connectors
 ---
 
 # Connectors
