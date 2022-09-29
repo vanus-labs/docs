@@ -21,7 +21,7 @@ const sidebars = {
         type: 'doc',
         id: 'introduction',
       },
-      items: ['introduction/features', 'introduction/roadmap'],
+      items: ['introduction/what-is-vanus', 'introduction/features', 'introduction/roadmap'],
     },
     {
       type: 'category',
