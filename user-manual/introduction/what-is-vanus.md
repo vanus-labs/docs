@@ -1,6 +1,7 @@
 ---
 title: What is Vanus
 id: what-is-vanus
+slug: /
 ---
 # What is Vanus
 
@@ -12,7 +13,7 @@ FaaS Integration, built-in Connectors, Data Filtering and Transformation, and mo
 Vanus can be used not only for building **Pub/Sub systems** but especially enables you to build an **EDA(Event-driven Architecture) 
 application** with agility.
 
-## Characteristic of Vanus
+## Characteristics of Vanus
 
 ### Serverless
 
