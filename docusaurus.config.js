@@ -75,7 +75,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'introduction',
+            docId: 'introduction/what-is-vanus',
             position: 'left',
             label: 'Docs',
           },

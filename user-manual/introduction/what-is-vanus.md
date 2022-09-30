@@ -12,7 +12,7 @@ FaaS Integration, built-in Connectors, Data Filtering and Transformation, and mo
 Vanus can be used not only for building **Pub/Sub systems** but especially enables you to build an **EDA(Event-driven Architecture) 
 application** with agility.
 
-## Characteristic of Vanus
+## Characteristics of Vanus
 
 ### Serverless
 
@@ -48,4 +48,4 @@ The Vanus repository is private at this time. We are preparing to make it ready 
 :::
 Vanus is an entirely Open Source project, which is public under the Apache 2.0 License. You can find Vanus on GitHub.
 
-For more details about Vanus, you can find them in the [Concepts](../concepts) section.
+For more details about Vanus, you can find them in the [Concepts](./concepts) section.

@@ -17,10 +17,6 @@ const sidebars = {
     {
       type: 'category',
       label: 'Introduction',
-      link: {
-        type: 'doc',
-        id: 'introduction',
-      },
       items: ['introduction/what-is-vanus', 'introduction/features', 'introduction/roadmap'],
     },
     {
@@ -30,7 +26,7 @@ const sidebars = {
         type: 'doc',
         id: 'getting-started',
       },
-      items: ['getting-started/quick-start','getting-started/playground', 'getting-started/installation'],
+      items: ['getting-started/quick-start', 'getting-started/installation'],
     },
     {
       type: 'category',
