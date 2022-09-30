@@ -2,9 +2,9 @@
 
 Eventbus represents a group of pipelines that receive and dispatch events.
 
-When an event is published to an Eventbus, it will be stored permanently. You can publish more events to an Eventbus
-until filling up storage space. And you can consume it by creating a [Subscription](subscription.md) later. Every Target
-in Subscription attached to the same Eventbus can receive all events.
+When an event is published to an Eventbus, the event will be stored permanently. You can send as many events to an
+Eventbus as your storage space allows, and you can consume these events by creating a [Subscription](subscription.md)
+later. Every Sink in a Subscription attached to the specific Eventbus can receive all the events.
 
 ## Retention policy
 

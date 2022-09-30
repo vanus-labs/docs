@@ -1,8 +1,8 @@
 # Eventbus
 
-Eventbus就像一组管道，用于接收和分发事件。
+Eventbus 就像一组管道，用于接收和分发事件。
 
-所有写入 Eventbus 的事件都会被持久化存储。你可以向 Eventbus 中写入任意多的事件，直到占满全部存储空间。你可以在任意时刻创建一个 [subscription](subscription.md) 来消费 Eventbus 中的事件。写入 Eventbus 的事件可以被反复读取，每个关联到相同 Eventbus 的 subscription 对应的 Sink 都可以收到该 Eventbus 所有的事件。
+所有写入 Eventbus 的事件都会被持久化存储。你可以向 Eventbus 中写入任意多的事件，直到占满全部存储空间。你可以在任意时刻创建一个 [Subscription](subscription.md) 来消费 Eventbus 中的事件。写入 Eventbus 的事件可以被反复读取，每个关联到相同 Eventbus 的 Subscription 对应的 Sink 都可以收到该 Eventbus 所有的事件。
 
 ## 事件保留策略
 
