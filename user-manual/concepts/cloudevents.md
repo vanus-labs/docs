@@ -31,7 +31,6 @@ attributes and **MAY** include one or more extension context attributes.
 
 #### REQUIRED Attributes
 
-<!-- markdownlint-disable MD033 -->
 <dl>
   <dt>id</dt>
   <dd>Identifies the event.</dd>
@@ -48,11 +47,9 @@ attributes and **MAY** include one or more extension context attributes.
     attribute is used for routing, observability, policy enforcement, etc.
   </dd>
 </dl>
-<!-- markdownlint-enable MD033 -->
 
 #### OPTIONAL Attributes
 
-<!-- markdownlint-disable MD033 -->
 <dl>
   <dt>datacontenttype</dt>
   <dd>
@@ -68,7 +65,6 @@ attributes and **MAY** include one or more extension context attributes.
   <dt>time</dt>
   <dd>Timestamp of when the occurrence happened.</dd>
 </dl>
-<!-- markdownlint-enable MD033 -->
 
 #### Extension Context Attributes
 
