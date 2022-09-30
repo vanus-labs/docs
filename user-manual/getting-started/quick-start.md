@@ -9,6 +9,8 @@ This page shows you how to start Vanus in minutes.
 
 :::caution
 There is network issue to the China mainland users when install these prerequisites, please submit a PR if you met any problems.
+
+Or you can try this Quick Start on our online environment: https://play.linkall.com
 :::
 
 You can skip the step if you already have those.
