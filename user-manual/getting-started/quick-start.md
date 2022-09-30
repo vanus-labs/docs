@@ -14,9 +14,6 @@ There is network issue to the China mainland users when install these prerequisi
 You can skip the step if you already have those.
 
 1. Have Docker, [how to install](https://docs.docker.com/engine/install/)
-   :::tip
-   Maybe you need run `sudo usermod -aG docker $USER && newgrp docker` before `minikube start`.
-   :::
 2. Have minikube, [how to install](https://minikube.sigs.k8s.io/docs/start)
 3. Have kubectl, [how to install](https://kubernetes.io/docs/tasks/tools/)
 
@@ -29,13 +26,7 @@ curl -O http://44.242.140.28:9080/all-in-one/v0.3.0.yml
 kubectl apply -f v0.3.0.yml
 ```
 
-when all resources creating done, the result will be liking below:
-
-```shell
-kubectl get po -n vanus
-```
-
-waiting a minute, the expected output is like below,
+waiting a minute, run `kubectl get po -n vanus` to check the deployment, the expected output looks like below,
 
 ```shell
 vanus-controller-0                  1/1     Running   0             30s
@@ -62,7 +53,7 @@ chmod ug+x vsctl
 sudo mv vsctl /usr/local/bin
 ```
 
-**Secondly**, use `vsctl version` check the installation
+**Secondly**, use `vsctl version` to check the installation
 
 ```shell
 +-----------+---------------------------------+
@@ -90,22 +81,22 @@ use `minikube service list -n vanus` to get **Vanus Gateway**'s endpoint
 ```
 
 :::tip
-if you are using a normal k8s cluster, just use `kubectl get svc -n vanus` to find endpoint
+if you are using a normal k8s cluster, just use `kubectl get svc -n vanus` to find the endpoint
 :::
 
-use evn variable to tell endpoint to vsctl
+use evn variable to tell the endpoint to vsctl
 
 ```shell
 export VANUS_GATEWAY=192.168.49.2:30001
 ```
 
-**Last**, validating if it has connected to Vanus
+**Finally**, validating if it has connected to Vanus
 
 ```shell
 vsctl cluster controller topology
 ```
 
-output should like
+output should look like
 
 ```shell
 +-------------------+--------+----------------------------------------------------+
@@ -117,7 +108,7 @@ output should like
 +-------------------+--------+----------------------------------------------------+
 ```
 
-## Uses
+## Use-cases
 
 There are some examples below that demonstrate vanus can do.
 
@@ -143,10 +134,10 @@ vsctl event put quick-start \
 3. **get an event from eventbus**
 
 ```shell
-~ > vsctl event get quick-start --offset 0 --number 1
+vsctl event get quick-start --offset 0 --number 1
 ```
 
-the result should like
+the result should look like
 
 ```shell
 +-----+----------------------------------------+
@@ -167,7 +158,7 @@ the result should like
 +-----+----------------------------------------+
 ```
 
-### filter
+### Filter
 
 1. **start a display server to verify filter**
 
@@ -204,10 +195,10 @@ output should like below
 +---------------------+-------------+-----------------------------------+----------------------------------------------+-------------+
 |          ID         |   EVENTBUS  |                SINK               |                    FILTER                    | TRANSFORMER |
 +---------------------+-------------+-----------------------------------+----------------------------------------------+-------------+
-| 1656331986533051044 | quick-start | http://vanus-display.default:80 | [                                            | ""          |
+| 1656331986533051044 | quick-start | http://vanus-display.default:80   | [                                            | ""          |
 |                     |             |                                   |   {                                          |             |
 |                     |             |                                   |     "exact": {                               |             |
-|                     |             |                                   |       "source": "quick-start-filter-section" |             |
+|                     |             |                                   |       "source": "quick-start-filter-section"  |             |
 |                     |             |                                   |     }                                        |             |
 |                     |             |                                   |   }                                          |             |
 |                     |             |                                   | ]                                            |             |
@@ -248,7 +239,7 @@ NOTE: use the **POD_NAME** you got from step 1.
 kubectl logs vanus-display-74b65fcff4-pk9rm
 ```
 
-the output should like below, the two events whose source are matched are displayed.
+the output should look like below, the two events whose source are matched are displayed.
 
 ```shell
 Vance Event Display
@@ -281,9 +272,9 @@ receive a new event, in total: 2
 
 for more about `filter`, you can find in [how to manage subscription](../how-to/managing-subscription)
 
-### transformation
+### Transformer
 
-1. **create a subscription with transformation**
+1. **create a subscription with transformer**
 
 ```shell
 vsctl subscription create \
@@ -320,10 +311,10 @@ vsctl event put quick-start \
 3. **back to display server for validation**
 
 ```shell
-~ > kubectl logs vanus-display-74b65fcff4-pk9rm
+kubectl logs vanus-display-74b65fcff4-pk9rm
 ```
 
-the transformed event is displayed
+the transformed event has been displayed.
 
 ```shell
 ...                                                                                                                                                   │
@@ -344,4 +335,4 @@ the transformed event is displayed
 
 ## Next
 
-You can step to [Concepts](../concepts) and [How to use Vanus](../how-to) for learning more about Vans.
+You can go forward to [Concepts](../concepts) and [How to use Vanus](../how-to) for learning more about Vans.
