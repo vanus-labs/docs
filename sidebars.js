@@ -40,7 +40,7 @@ const sidebars = {
         id: 'concepts',
       },
       items: ['concepts/architecture', 'concepts/cloudevents', 'concepts/eventbus',
-        'concepts/subscription', 'concepts/dead-letter', 'concepts/connector'],
+        'concepts/subscription', 'concepts/special-messages', 'concepts/connector'],
     },
     {
       type: 'category',
