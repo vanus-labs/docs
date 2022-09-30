@@ -1,10 +1,10 @@
-# Managing Eventbus
+# 管理 Eventbus
 
-This page shows how to manage Eventbuses using the `vsctl eventbus` command.
+本页面将向你展示使用 `vsctl eventbus` 命令管理 Eventbus。
 
-## Create Eventbus
+## 创建 Eventbus
 
-There is a `create` sub-command in the `vsctl eventbus` command to create an Eventbus.
+`vsctl eventbus` 命令的 `create` 子命令用于创建 Eventbus。
 
 ```console
 $ vsctl eventbus create -h         
@@ -24,9 +24,9 @@ Global Flags:
       --format string     the output format of vsctl, json or table (default "table")
 ```
 
-## Detail Eventbus
+## 显示 Eventbus 的详细信息
 
-There is a `info` sub-command in the `vsctl eventbus` command to detail an Eventbus.
+`vsctl eventbus` 命令的 `info` 子命令用于显示 Eventbus 的详细信息。
 
 ```console
 $ vsctl eventbus info -h
@@ -48,9 +48,9 @@ Global Flags:
       --format string     the output format of vsctl, json or table (default "table")
 ```
 
-## List Eventbus
+## 列出 Eventbus
 
-There is a `list` sub-command in the `vsctl eventbus` command to list Eventbuses.
+`vsctl eventbus` 命令的 `list` 子命令用于列出所有 Eventbus。
 
 ```console
 $ vsctl eventbus list -h
@@ -69,9 +69,9 @@ Global Flags:
       --format string     the output format of vsctl, json or table (default "table")
 ```
 
-## Delete Eventbus
+## 删除 Eventbus
 
-There is a `delete` sub-command in the `vsctl eventbus` command to delete an Eventbus.
+`vsctl eventbus` 命令的 `delete` 子命令用于删除 Eventbus。
 
 ```console
 $ vsctl eventbus delete -h
