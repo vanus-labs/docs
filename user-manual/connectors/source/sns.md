@@ -10,10 +10,10 @@ process of running an Amazon SNS Source Connector.
 
 ## Introduction
 
-The Amazon SNS(Simple Notification Service) Source Connector subscribes to the SNS topic and SNS will push messages
-published to the topic to the SNS connector. To enable SNS subscription, you should set your endpoint, protocol and
-the Amazon Resource Name(ARN) value of the SNS topic. After messages are published to the topic, SNS will push them 
-to SNS connector using HTTP/HTTPS protocol. And then SNS connector transform event messages into CloudEvents and 
+The Amazon SNS(Simple Notification Service) Source Connector **subscribes to the SNS topic** and SNS will **push** messages
+published to the topic to the SNS connector. To enable SNS subscription, you should set your **endpoint, protocol and
+the Amazon Resource Name(ARN)** value of the SNS topic. After messages are published to the topic, SNS will push them 
+to SNS connector using **HTTP/HTTPS** protocol. And then SNS connector transform event messages into CloudEvents and 
 deliver them to the target URL.
 
 ### SNS Event Structure
@@ -88,7 +88,7 @@ configured in SNS subscription.
 - **Limited to one SNS topic**: Each SNS Source subscribes to messages from one SNS topic.
 
 - **Number of retries**: If you do not configure retry policy and dead-letter queue for your SNS subscription, Amazon SNS 
-will only attempt up to three retries with a delay between failed attempts set at 20 seconds. Then the message will be
+will only attempt up to three retries with a delay between failed attempts set at **20** seconds. Then the message will be
 dropped.
 
 ## IAM Policy for Amazon SNS Source
@@ -111,8 +111,8 @@ This quick start will guide you through the process of running an Amazon SNS Sou
 
 ### Set SNS Source Configurations
 
-You can specify your configs by either setting environments variables or mounting a config.json to 
-`/vance/config/config.json` when running the connector.
+You can specify your configs by either setting environments variables or **mounting a config.json to 
+`/vance/config/config.json`** when running the connector.
 
 Here is an example of a configuration file for the Amazon SNS Source.
 
@@ -140,8 +140,8 @@ through the public network.
 
 ### Set SNS Source Secrets
 
-Users should set their sensitive data Base64 encoded in a secret file. And mount that secret file to 
-`/vance/secret/secret.json` when running the connector.
+Users should set their sensitive data **Base64 encoded** in a secret file. And **mount that secret file to 
+`/vance/secret/secret.json`** when running the connector.
 
 Replace `MY_SECRET` with your sensitive data to get the Base64-based string.
 
@@ -166,7 +166,7 @@ $ vim secret.json
 
 ### Run the Display Connector to Print Events
 
-Before launching an Amazon SNS Source, we create a Display Connector to receive and print CloudEvents sent from the SNS Source.
+Before launching an Amazon SNS Source, we create a Display Connector to receive and **print CloudEvents** sent from the SNS Source.
 
 ```shell
 docker run -p 8081:8081 --rm vancehub/sink-display
@@ -176,7 +176,7 @@ This command run the Display container and expose its local 8081 port to the 808
 
 ### Expose your local port to the public network
 
-You can use [ngrok] to expose your local port to the public network. After you register, login and install ngrok, 
+You can use [ngrok] to **expose** your local port to the **public network**. After you register, login and install ngrok, 
 you can use the following command to get a address with specified port accessible to the public network.
 
 ```shell 
@@ -188,7 +188,7 @@ you can use the following command to get a address with specified port accessibl
 Create your `config.json` and `secret.json`, and mount them to specific paths to run the SNS source using following command.
 
 In order to send events to Display Connector, set the `v_target` value as `http://host.docker.internal:8081` in your config.json file.
-The `host.docker.internal` is docker's host ip. You can also use the ip address of container where Display Connector runs. Try following 
+The `host.docker.internal` is docker's host ip. You can also use the ip address of **container** where Display Connector runs. Try following 
 command to get the ip address of container.
 Use `docker ps` to get the Container id of Display Connector.
 ```shell 
