@@ -37,6 +37,11 @@
       "last 1 safari version"
     ]
   },
+  "overrides": {
+    "@docusaurus/core": {
+      "css-minimizer-webpack-plugin": "4.1.0"
+    }
+  },
   "engines": {
     "node": ">=16.14"
   }
