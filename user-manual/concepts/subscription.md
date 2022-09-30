@@ -4,36 +4,35 @@ title: Subscription
 
 # Subscription
 
-The subscription in Vanus reflects the consumer's interest in receiving events and describes the method for delivering the events.
+The following document will introduce the Subscription component of Vanus. A subscription will pull the events from a specific Eventbus and send them to the target.
 
-A subscription in Vanus has the following features:
+## Subscription special features
 
-## Filter
+### Filter
 
-A set of filter expressions, where each expression evaluates to either true or false for each event generated. Only all filter expression evaluate to true, the event will be delivered to sink.
+The Filter feature is a set of conditions we can set to a Subscription to filter the events we want to consume from an Eventbus. The Subscription will select all the events that meet the specification defined by the filter.
 
-Vanus support filter as follow:
-
-- **exact** :  For match Cloudevents attributes that value must all exactly match with the associated value.
-- **prefix** : For match Cloudevents attributes that value must all start with the associated value.
-- **suffix** : For match Cloudevents attributes that value must all end with the associated value.
-- **all** : All is nested filter expressions, all filter expressions evaluate to true.
-- **any** : Not is nested filter expressions, any filter expressions evaluate to true.
+- **exact** :  match Cloudevents attributes; Cloudevents attributes must match exactly with the associated value String specified (case sensitive).
+- **prefix** : match Cloudevents attributes; that value must all start with the associated value.
+- **suffix** : match Cloudevents attributes; that value must all end with the associated value.
+- **all** : all must include a nested array of filter expressions; all filter expressions evaluate to true.
+- **any** : any include a nested array of filter expressions; any filter expressions evaluate to true.
 - **not** : filter expressions evaluate to false.
 - **sql** : [CloudEvents SQL Expression](https://github.com/cloudevents/spec/blob/main/cesql/spec.md)
 
-## Transformer
+### Transformer
 
-Translate event data and deliver it to sink with a different format.
+The transformer can transform data into the desired format.
 
-## Sink
+### Sink
 
-The target to the event be sent. It may be Vance Sink, Mainstream Serverless computing products such as AWS Lambda, Cloud Functions，Knative serving, etc.
+The Sink is the target where the Subscription will send the event.  
+This Sink can be a Vance Sink, Mainstream Serverless computing products such as AWS Lambda, Cloud Function, Knative Serving, etc.
 
-## Config
+### Config
 
-The confi of event delivery to Sink.
+Below is the list of the configurations for event delivery to a Sink.
 
-- **rate limit** : The rate limit for delivery event to sink.
-- **consumeFrom** : Vanus support three consume type: latest, earliest, timestamp.
-- **retryAtttemps** : The maximum number of retries for deliver event to sink when the event did not successfully delivery at the first.
+- **rate limit** : The rate limit for delivering events to the Sink.
+- **consume from** : Vanus supports three consumption types: latest, earliest, and timestamp.
+- **retry atttemps** : The maximum number of retries for delivering an event to the Sink when the event did not successfully deliver
