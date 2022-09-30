@@ -1,5 +1,6 @@
 ---
 title: Using CloudEvents SDK
+id: using-sdk
 category: 6321d3a56093c3010397e4aa
 ---
 
