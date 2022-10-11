@@ -173,7 +173,7 @@ $ vim secret.json
 
 Before launching an Amazon SNS Source, we create a Display Connector to receive and **print CloudEvents** sent from the SNS Source.
 
-You can use following command to pull a Display Connector's image from duckerhub.
+You can use following command to get the Display sink image.
 
 ```shell 
 docker pull vancehub/sink-display:latest
@@ -197,7 +197,7 @@ you can use the following command to get a address with specified port accessibl
 
 ### Run the Amazon SNS Source with Docker
 
-You can use following command to pull the SNS Source's image.
+You can get the SNS Source by using the following command.
 
 ```shell 
 docker pull vancehub/source-aws-sns:latest
