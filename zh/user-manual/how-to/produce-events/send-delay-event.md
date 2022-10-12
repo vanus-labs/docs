@@ -3,23 +3,21 @@ title: Send Delay Event
 category: 6321d3a56093c3010397e4aa
 ---
 
-# Send an event with delay using the CloudEvents SDK
+# 使用 CloudEvents SDK 向 Vanus 发送延迟事件
 
-The following document will teach you how to build a simple producer with a timer to delay an Event. 
+本文档将指导你如何构建一个简单的生产者去发送延迟事件。
 
-## Operations
+## 操作
 
-**Prerequisites**
+**前提条件**
 
-To send events to Vanus, you must meet the following prerequisites:
-1. Have a running [Vanus](https://github.com/linkall-labs/docs/blob/main/user-manual/getting-started/install/k8s(recommended).md) cluster.
-2. Have [vsctl](https://github.com/linkall-labs/docs/blob/main/user-manual/how-to/vsctl.md).
-3. Have created an [Eventbus](https://github.com/linkall-labs/docs/blob/main/concepts/eventbus.md) named quick-start.
-4. Have exported the environment variable by running this command: `export VANUS_GATEWAY=127.0.0.1:8080`.
+1. 安装 [Vanus](https://github.com/linkall-labs/docs/blob/main/user-manual/getting-started/install/k8s(recommended).md) 和 [vsctl](https://github.com/linkall-labs/docs/blob/main/user-manual/how-to/vsctl.md)。
+2. 创建一个名称为 quick-start 的 [Eventbus](https://github.com/linkall-labs/docs/blob/main/concepts/eventbus.md)。
+3. 输入以下命令配置环境变量：`export VANUS_GATEWAY=127.0.0.1:8080`。
 
-> We also provide an interactive [Kubernetes environment](https://play.linkall.com/) to simply deploy and try Vanus in your browser.
+> 我们还提供了一个交互式的 [Kubernetes 环境](https://play.linkall.com/)，可以更简单地在浏览器中部署和使用 Vanus。
 
-**Example code**
+**示例代码**
 
 ```golang
 package main
@@ -78,12 +76,13 @@ func main() {
 }
 ```
 
-**Expected results**
-By running the following command after 10s, we can guarantee that The producer successfully sent the event to the Eventbus.
+**预期效果**
+
+等待 10s 后运行以下命令，确认 producer 是否成功将事件发送到 Eventbus 中。
 ```
 $ vsctl event get quick-start
 ```
-Here is the expected result:
+预期效果如下：
 ```
 +-----+--------------------------------------------+
 | NO. |                    EVENT                   |
