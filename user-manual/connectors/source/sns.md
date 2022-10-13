@@ -10,9 +10,9 @@ process of running an Amazon SNS Source Connector.
 
 ## Introduction
 
-The Amazon SNS(Simple Notification Service) Source Connector **subscribes to the SNS topic** and SNS will **push** messages
+The Amazon SNS (Simple Notification Service) Source Connector **subscribes to the SNS topic** and SNS will **push** messages
 published to the topic to the SNS connector. To enable SNS subscription, you should set your **endpoint, protocol and
-the Amazon Resource Name(ARN)** value of the SNS topic. After messages are published to the topic, SNS will push them 
+the Amazon Resource Name (ARN) ** value of the SNS topic. After messages are published to the topic, SNS will push them 
 to SNS connector using **HTTP/HTTPS** protocol. And then SNS connector transform event messages into CloudEvents and 
 deliver them to the target URL.
 
@@ -206,9 +206,9 @@ docker pull vancehub/source-aws-sns:latest
 Create your `config.json` and `secret.json`, and mount them to specific paths to run the SNS source using following command.
 
 In order to send events to Display Connector, set the `v_target` value as `http://host.docker.internal:8081` in your `config.json` file.
-The `host.docker.internal` indicates docker's host ip. You can also use the ip address of **container** where Display Connector runs. Try following 
-command to get the ip address of container.
-Use `docker ps` to get the Container id of Display Connector.
+The `host.docker.internal` indicates docker's host IP. You can also use the IP address of **container** where Display Connector runs. Try following 
+command to get the IP address of container.
+Use `docker ps` to get the Container ID of Display Connector.
 ```shell 
 docker ps
 ```
