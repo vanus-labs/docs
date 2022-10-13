@@ -107,13 +107,37 @@ This quick start will guide you through the process of running an Amazon SNS Sou
 
 ### Prerequisites
 
+You should prepare these prerequisites first for running SNS Source. 
+
 - A container runtime (i.e., docker).
 - An Amazon [SNS topic][sns-topic].
 - A Properly settled [IAM] policy for your AWS user account.
 - An AWS account configured with [Access Keys][access-keys].
 - A configuration of subscription to SNS topic
 
-### Set SNS Source Configurations
+### Get the docker images
+
+You can get the SNS Source by using the following command.
+
+```shell 
+docker pull vancehub/source-aws-sns:latest
+```
+
+Before launching an Amazon SNS Source, we create a Display Connector to receive and **print CloudEvents** sent from the SNS Source.
+
+You can use following command to get the Display sink image.
+
+```shell 
+docker pull vancehub/sink-display:latest
+```
+
+The following command run the Display container and expose its local 8081 port to the 8081 port of your host.
+
+```shell
+docker run -p 8081:8081 --rm vancehub/sink-display
+```
+
+### Create config file for SNS Source
 
 You can specify your configs by either setting environments variables or **mounting a config.json to 
 `/vance/config/config.json`** when running the connector.
@@ -135,6 +159,22 @@ It should be noted that `endpoint` refers to the host address and port where you
 through the public network. Therefore, `localhost` can not be used as `endpoint`, unless you transform it into a public
 network address. 
 
+In order to send events to Display Connector, set the `v_target` value as `http://host.docker.internal:8081` in your `config.json` file.
+The `host.docker.internal` indicates docker's host IP. You can also use the IP address of **container** where Display Connector runs. Try following 
+command to get the IP address of container.
+
+Use `docker ps` to get the Container ID of Display Connector.
+```shell 
+docker ps
+```
+
+Use `docker inspect` to get the container's IP Address.
+```shell 
+docker inspect [CONTAINER ID]
+```
+
+In conclusion, use `http://host.docker.internal:8081` or `http://[Container IP Address]:8081` as `v_target` in your config file.
+
 | Configs  |  Description    																  |  Example    			  |  Required    |
 |:--------:|  :----:         																  |  :----:     			  |  :----:      |
 | v_target |  v_target is used to specify the target URL HTTP Source will send CloudEvents to  |  "http://host.docker.internal:8081"  |  YES  		 |
@@ -143,7 +183,7 @@ network address.
 | TopicArn |  the arn of the SNS topic					  |  "arn:aws:sns:us-west-2:843378899134:Testxxxx"	                  |  YES         |
 | protocol |  the protocol used to subscribe SNS topic					  |  "http"	                  |  YES         |
 
-### Set SNS Source Secrets
+### Create secret file for SNS Source
 
 Users should set their sensitive data **Base64 encoded** in a secret file. And **mount that secret file to 
 `/vance/secret/secret.json`** when running the connector.
@@ -169,23 +209,6 @@ $ vim secret.json
 | awsAccessKeyID     | `awsAccessKeyID` is the Access key ID of your aws credential.        | "BASE64VALUEOFYOURACCESSKEY=" |**YES** |
 | awsSecretAccessKey | `awsSecretAccessKey` is the Secret access key of youraws credential. | "BASE64VALUEOFYOURSECRETKEY=" |**YES** |
 
-### Run the Display Connector to Print Events
-
-Before launching an Amazon SNS Source, we create a Display Connector to receive and **print CloudEvents** sent from the SNS Source.
-
-You can use following command to get the Display sink image.
-
-```shell 
-docker pull vancehub/sink-display:latest
-```
-
-The following command run the Display container and expose its local 8081 port to the 8081 port of your host.
-
-```shell
-docker run -p 8081:8081 --rm vancehub/sink-display
-```
-
-
 ### Expose your local port to the public network
 
 You can use [ngrok] to **expose** your local port to the **public network**. After you register, login and install ngrok, 
@@ -197,25 +220,8 @@ you can use the following command to get a address with specified port accessibl
 
 ### Run the Amazon SNS Source with Docker
 
-You can get the SNS Source by using the following command.
-
-```shell 
-docker pull vancehub/source-aws-sns:latest
-```
-
-Create your `config.json` and `secret.json`, and mount them to specific paths to run the SNS source using following command.
-
-In order to send events to Display Connector, set the `v_target` value as `http://host.docker.internal:8081` in your `config.json` file.
-The `host.docker.internal` indicates docker's host IP. You can also use the IP address of **container** where Display Connector runs. Try following 
-command to get the IP address of container.
-Use `docker ps` to get the Container ID of Display Connector.
-```shell 
-docker ps
-```
-Use `docker inspect` to get the container's IP Address.
-```shell 
-docker inspect [CONTAINER ID]
-```
+You can run SNS Source using docker by execute following command. The secret file and config file should be mounted to 
+`/vance/secret/` and `/vance/config`.
 
 ```shell
 docker run -v $(pwd)/secret.json:/vance/secret/secret.json -v $(pwd)/config.json:/vance/config/config.json -p 8082:8082 --rm vancehub/source-aws-sns
