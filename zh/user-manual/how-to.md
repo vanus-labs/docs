@@ -12,9 +12,9 @@
 
 ## 生产事件
 
-- [使用 CloudEvents SDK 发送事件到 Vanus](how-to/producing/using-sdk.md)
-- [使用 CloudEvents SDK 发送延迟事件](how-to/producing/send-delay-event.md)
+- [使用 CloudEvents SDK 发送事件到 Vanus](how-to/produce-events/using-sdk.md)
+- [使用 CloudEvents SDK 发送延迟事件](how-to/produce-events/send-delay-event.md)
 
 ## 消费事件
 
-- [使用 CloudEvents SDK 从 Vanus 接收事件](how-to/consuming/using-sdk.md)
+- [使用 CloudEvents SDK 从 Vanus 接收事件](how-to/consume-events/using-sdk.md)
