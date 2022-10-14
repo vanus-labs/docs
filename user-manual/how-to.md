@@ -1,20 +1,10 @@
 # How to use Vanus
 
-This section shows how to use Vanus. After learned this section, you will be able to build EDA applications using Vanus.
+The following articles will teach you how to build an EDA application with Vanus.
 
-## `vsctl`
-
-`vsctl` is a command line tool of Vanus.
-
-- [Command line tool(vsctl)](how-to/vsctl.md) - overview of `vsctl`.
-- [Manage Eventbus](how-to/managing-eventbus.md)
-- [Manage Subscription](how-to/managing-subscription.md)
-
-## Produce events
-
-- [Send events to Vanus with CloudEvents SDK](how-to/producing/using-sdk.md)
-- [Send an event with delay using the CloudEvents SDK](how-to/producing/send-delay-event.md)
-
-## Consume events
-
-- [Receive events from Vanus with CloudEvents SDK](how-to/consuming/using-sdk.md)
+- [Command line tool(vsctl)](how-to/vsctl.md): `vsctl` is a command line tool of Vanus.
+- [Manage Eventbus](how-to/managing-eventbus.md): How to manage all of your Eventbus with vsctl.
+- [Manage Subscription](how-to/managing-subscription.md): How to manage all of your Subscriptions with vsctl.
+- [Send events to Vanus with CloudEvents SDK](how-to/producing/using-sdk.md) : How to build a simple producer to send events to Vanus.
+- [Send an event with delay using the CloudEvents SDK](how-to/producing/send-delay-event.md): How to build a simple producer with a timer to delay an Event.
+- [Receive events from Vanus with CloudEvents SDK](how-to/consuming/using-sdk.md): How to build a simple consumer to consume events from Vanus.
