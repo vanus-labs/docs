@@ -39,11 +39,22 @@ It receives CloudEvents events sent by HTTP endpoints, and routes events to data
 services after performing certain processing on the events.
 
 #### SCE
+
 :::info
-Each connector can be used independently without SCE
+Each connector is constructed with Docker, so it can work independently without SCE. SEC just provides extra
+availability and scalability to connectors.
 :::
-**SCE(Serverless Connector Engine)** is the coordinator, which is responsible for the autoscaling of Source Connector and 
-Sink Connector, which supports automatically scaling up from 0 to n and scales down from n to 0 according to event 
+**SCE(Serverless Connector Engine)** is the coordinator, which is responsible for the autoscaling of Source Connector and
+Sink Connector, which supports automatically scaling up from 0 to n and scales down from n to 0 according to event
 traffic or other users' conditions.
 
 ### Vanus Workflow
+
+:::
+Vanus Workflow is working in progress.
+:::
+Vanus provides full compatible with [ServerlessWorkflow](https://github.com/serverlessworkflow/specification).
+
+Serverless Workflow focuses on defining a **vendor-neutral**, **platform-independent**, and **declarative** workflow language that
+targets the serverless computing technology domain. It can be used to significantly bridge the gap between your unique
+business domain and the target technology domain.
