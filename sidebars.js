@@ -17,7 +17,8 @@ const sidebars = {
     {
       type: 'category',
       label: 'Introduction',
-      items: ['introduction/what-is-vanus', 'introduction/features', 'introduction/roadmap'],
+      items: ['introduction/what-is-vanus', 'introduction/features', 'introduction/roadmap',
+        'introduction/architecture', ],
     },
     {
       type: 'category',
@@ -35,7 +36,7 @@ const sidebars = {
         type: 'doc',
         id: 'concepts',
       },
-      items: ['concepts/architecture', 'concepts/cloudevents', 'concepts/eventbus',
+      items: ['concepts/cloudevents', 'concepts/eventbus',
         'concepts/subscription', 'concepts/special-messages', 'concepts/connector'],
     },
     {
