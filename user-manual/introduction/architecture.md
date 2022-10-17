@@ -48,7 +48,7 @@ the corresponding Eventbus, completes the even filter and even transformation, a
 ### Timing
 
 It has implemented the Delay and Schedule Event feature, with the help of the Hierarchical Timing Wheels, Vanus supports
-precise second-grade and unlimited future time delivering. More about them, you can see[Special Event](../concepts/special-messages.md).
+precise second and unlimited future time delivering. More about them, you can see[Special Event](../concepts/special-messages.md).
 
 ## Vanus Connect
 
@@ -59,7 +59,7 @@ across services, platforms, and systems.
 
 Source Connector obtains events from event sources, converts events into CloudEvents format, and sends them to any
 HTTP endpoint that supports the CloudEvents format. It supports both pull and push event acquisition methods.
-For SaaS software or cloud services such as Github, Amazon S3, etc., that provides a webhook mechanism, events are
+For SaaS software or cloud services such as GitHub, Amazon S3, etc., that provides a webhook mechanism, events are
 pushed to the Source Connector by the event source. For data systems such as message queues and databases, events are
 pulled from the event source by the Source Connector.
 
