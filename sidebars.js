@@ -78,7 +78,8 @@ const sidebars = {
             id: 'connectors/source',
           },
           items: [
-              'connectors/source/mysql'
+              'connectors/source/mysql',
+              'connectors/source/s3'
           ],
         },
         {
