@@ -17,7 +17,7 @@ Vanus Core implements Message Queue functionalities and separates storage and co
 Computing consists of services like Trigger and Timing, which implement different features of Vanus like 
 [Subscription](../concepts/subscription.md), [Delay/Schedule Event](../concepts/special-messages.md), etc.
 
-:::hit
+:::tip
 In the above diagram, Storage and Computing are portrayed at a high level.
 :::
 
