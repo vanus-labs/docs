@@ -1,4 +1,4 @@
-# Manage Eventbus
+# Managing Eventbus
 
 The following page will teach you how to manage all of your Eventbus with `vsctl` command.
 
