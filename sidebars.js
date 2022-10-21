@@ -13,12 +13,12 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  introSidebar: [
+  vanusDoc: [
     {
       type: 'category',
       label: 'Introduction',
       items: ['introduction/what-is-vanus', 'introduction/features', 'introduction/roadmap',
-        'introduction/architecture', ],
+        'introduction/concepts', 'introduction/architecture', ],
     },
     {
       type: 'category',
@@ -28,16 +28,6 @@ const sidebars = {
         id: 'getting-started',
       },
       items: ['getting-started/quick-start', 'getting-started/installation'],
-    },
-    {
-      type: 'category',
-      label: 'Concepts',
-      link: {
-        type: 'doc',
-        id: 'concepts',
-      },
-      items: ['concepts/cloudevents', 'concepts/eventbus',
-        'concepts/subscription', 'concepts/special-messages', 'concepts/connector'],
     },
     {
       type: 'category',
@@ -95,6 +85,11 @@ const sidebars = {
           ],
         },
       ],
+    },
+    {
+      type: 'category',
+      label: 'Reference',
+      items: ['reference/cloudevents'],
     },
   ],
 };

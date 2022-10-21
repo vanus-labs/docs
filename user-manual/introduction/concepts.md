@@ -14,7 +14,7 @@ your critical business application.
 Eventbus represents a group of pipelines that receive and dispatch events.
 
 When an event is published to an Eventbus, the event will be stored permanently. You can send as many events to an
-Eventbus as your storage space allows, and you can consume these events by creating a [Subscription](subscription.md)
+Eventbus as your storage space allows, and you can consume these events by creating a [Subscription](#subscription)
 later. Every Sink in a Subscription attached to the specific Eventbus can receive all the events.
 
 ### Retention policy
@@ -49,7 +49,7 @@ The transformer can transform data into the desired format.
 
 ### Sink
 
-The Sink is the target which receives events. It may be a [Sink Connector](connector.md), Mainstream Serverless 
+The Sink is the target which receives events. It may be a [Sink Connector](#vance-connect), Mainstream Serverless 
 computing products such as AWS Lambda, Cloud Function, Knative Serving, etc.
 
 ## Special Events
