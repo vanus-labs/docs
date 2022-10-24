@@ -282,7 +282,7 @@ for more about `filter`, you can find in [how to manage subscription](../how-to/
 vsctl subscription create \
   --eventbus quick-start \
   --sink 'http://quick-display:80' \
-  --input-transformer '{
+  --transformer '{
       "define": {
         "dataMsg": "$.data.msg",
         "dataSource": "$.source"
