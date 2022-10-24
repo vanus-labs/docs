@@ -70,7 +70,8 @@ const config = {
         title: 'Vanus',
         logo: {
           alt: 'vanus log',
-          src: 'img/logo.svg',
+          // src: 'img/logo.svg',
+          src: 'img/vance-logo.png',
         },
         items: [
           {
