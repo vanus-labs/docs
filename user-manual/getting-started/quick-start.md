@@ -127,7 +127,7 @@ vsctl eventbus create --name quick-start
 ```shell
 vsctl event put quick-start \
   --data-format plain \
-  --body "Hello Vanus" \
+  --data "Hello Vanus" \
   --id "1" \
   --source "quick-start" \
   --type "examples"
@@ -216,17 +216,17 @@ sending **3** events in here
 
 ```shell
 vsctl event put quick-start \
-  --body '{"msg":"1st event, DISPLAY: YES"}' \
+  --data '{"msg":"1st event, DISPLAY: YES"}' \
   --id "1st" \
   --source "quick-start-filter-section"
   
 vsctl event put quick-start \
-  --body '{"msg":"2nd event, DISPLAY: NO"}' \
+  --data '{"msg":"2nd event, DISPLAY: NO"}' \
   --id "2nd" \
   --source "quick-start"
   
 vsctl event put quick-start \
-  --body '{"msg":"3rd event, DISPLAY: YES"}' \
+  --data '{"msg":"3rd event, DISPLAY: YES"}' \
   --id "3rd" \
   --source "quick-start-filter-section"
 ```
@@ -305,7 +305,7 @@ output looks like:
 
 ```shell
 vsctl event put quick-start \
-  --body '{"msg":"1st event, DISPLAY: YES"}' \
+  --data '{"msg":"1st event, DISPLAY: YES"}' \
   --id "1st" \
   --source "quick-start-filter-section"
 ```
