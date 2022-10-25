@@ -90,3 +90,35 @@
 pre code .token-line{
   font-size: 14px;
 }
+/*黑暗模式 右上角icon*/
+[data-theme=dark] .header-github-link:before {
+  background: url("/img/github_white.png");
+}
+[data-theme=dark] .header-slack-link:before {
+  background: url("/img/slack_white.png");
+}
+[data-theme=dark] .header-twitter-link:before {
+  background: url("/img/twitter_white.png");
+}
+/*普通模式 右上角icon*/
+.header-github-link:before {
+  background: url("/img/github.png");
+  content: "";
+  display: flex;
+  height: 32px;
+  width: 32px;
+}
+.header-slack-link:before {
+  background: url("/img/slack.png");
+  content: "";
+  display: flex;
+  height: 32px;
+  width: 32px;
+}
+.header-twitter-link:before {
+  background: url("/img/twitter.png");
+  content: "";
+  display: flex;
+  height: 32px;
+  width: 32px;
+}
