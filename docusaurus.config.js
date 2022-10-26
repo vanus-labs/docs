@@ -4,6 +4,11 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+// 链接
+const url_github = 'https://github.com/linkall-labs/docs';
+const url_slack = 'https://linkall-group.slack.com/signup#/domain-signup';
+const url_twitter = 'https://twitter.com/Vanus_labs';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Vanus Docs',
@@ -94,19 +99,19 @@ const config = {
           //   position: 'right',
           // },
           {
-            href: 'https://github.com/linkall-labs/vanus',
+            href: url_github,
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub',
           },
           {
-            href: 'https://linkall-group.slack.com/signup#/domain-signup',
+            href: url_slack,
             position: 'right',
             className: 'header-slack-link',
             'aria-label': 'Slack',
           },
           {
-            href: 'https://twitter.com/Vanus_labs',
+            href: url_twitter,
             position: 'right',
             className: 'header-twitter-link',
             'aria-label': 'Twitter',
@@ -118,15 +123,15 @@ const config = {
         links: [
           {
             label: 'GitHub',
-            href: 'https://github.com/linkall-labs/vanus',
+            href: url_github,
           },
           {
             label: 'Slack',
-            href: 'https://linkall-group.slack.com/signup#/domain-signup',
+            href: url_slack,
           },
           {
             label: 'Twitter',
-            href: 'https://twitter.com/Vanus_labs',
+            href: url_twitter,
           },
           // {
           //   title: 'Docs',
