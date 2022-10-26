@@ -77,7 +77,7 @@
   /*color: #000;*/
 }
 .menu__link.menu__link--sublist{
-  /*font-weight: var(--ifm-font-weight-bold);*/
+  font-weight: var(--ifm-font-weight-bold);
 }
 /*正文*/
 .markdown{
