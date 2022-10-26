@@ -76,8 +76,8 @@ const config = {
         title: 'Vanus',
         logo: {
           alt: 'vanus log',
-          // src: 'img/logo.svg',
           src: 'img/vance-logo.png',
+          href: 'http://www.linkall.com',
         },
         hideOnScroll: true,
         items: [

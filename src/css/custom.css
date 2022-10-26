@@ -71,13 +71,13 @@
 }
 /*左侧菜单栏*/
 .menu__link{
-  padding: 0.3rem var(--ifm-menu-link-padding-horizontal);
+  padding: 0.375rem var(--ifm-menu-link-padding-horizontal);
 }
 .menu__link--sublist{
   /*color: #000;*/
 }
 .menu__link.menu__link--sublist{
-  font-weight: var(--ifm-font-weight-bold);
+  /*font-weight: var(--ifm-font-weight-bold);*/
 }
 /*正文*/
 .markdown{
@@ -92,33 +92,58 @@ pre code .token-line{
 }
 /*黑暗模式 右上角icon*/
 [data-theme=dark] .header-github-link:before {
-  background: url("/img/github_white.png");
+  background: url("/img/github_white.png") no-repeat center;
+  background-size: 24px 24px;
 }
 [data-theme=dark] .header-slack-link:before {
-  background: url("/img/slack_white.png");
+  background: url("/img/slack_white.png") no-repeat center;
+  background-size: 24px 24px;
 }
 [data-theme=dark] .header-twitter-link:before {
-  background: url("/img/twitter_white.png");
+  background: url("/img/twitter_white.png") no-repeat center;
+  background-size: 24px 24px;
 }
 /*普通模式 右上角icon*/
 .header-github-link:before {
-  background: url("/img/github.png");
+  background: url("/img/github.png") no-repeat center;
+  background-size: 24px 24px;
   content: "";
   display: flex;
-  height: 32px;
-  width: 32px;
+  height: 24px;
+  width: 24px;
 }
 .header-slack-link:before {
-  background: url("/img/slack.png");
+  background: url("/img/slack.png") no-repeat center;
+  background-size: 24px 24px;
   content: "";
   display: flex;
-  height: 32px;
-  width: 32px;
+  height: 24px;
+  width: 24px;
 }
 .header-twitter-link:before {
-  background: url("/img/twitter.png");
+  background: url("/img/twitter.png") no-repeat center;
+  background-size: 24px 24px;
   content: "";
   display: flex;
-  height: 32px;
-  width: 32px;
+  height: 24px;
+  width: 24px;
+}
+/*顶部导航条右上角icon 悬浮*/
+a.header-github-link:hover{
+  filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5;
+}
+a.header-slack-link:hover{
+  filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5;
+}
+a.header-twitter-link:hover{
+  filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5;
+}
+/*底部版权信息*/
+.footer__copyright{
+  color: #898c8c;
+}
+/*顶部导航条logo*/
+.navbar__brand{
+  font-size: 20px;
+  line-height: 44px;
 }
