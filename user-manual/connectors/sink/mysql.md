@@ -85,7 +85,7 @@ Here is an example of a configuration file for the MySQL Sink.
 ### MySql Sink Secrets
 
 Users should set their sensitive data Base64 encoded in a secret file.
-And mount your local secret file to `/vance/secret/secret.json` when you run the connector.
+And mount your local secret file to `/vance/secret/secret.json` when you run the Connector.
 
 #### Encode your sensitive data
 Replace MY_SECRET with your sensitive data to get the Base64-based string.
