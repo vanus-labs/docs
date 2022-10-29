@@ -230,7 +230,7 @@ docker run -v $(pwd)/secret.json:/vance/secret/secret.json -v $(pwd)/config.json
 ### Verify the Amazon SNS Source
 
 You can verify if the Amazon SNS Source works properly by publishing a message to the SNS topic. To publish a message, 
-you should log in to the [AWS Management Console][aws-console] at first.Then visit the Simple Notification Service.
+you should log in to the [AWS Management Console][aws-console] at first. Then visit the Simple Notification Service.
 Choose the SNS Topics, and then you can create topics or publish messages to the topics.
 
 Here is an example output of the Display Connector when I publish a "Hello, world!" message to the 
