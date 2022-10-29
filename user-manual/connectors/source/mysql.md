@@ -4,7 +4,7 @@ title: MySQL
 
 # MySQL Source
 This document provides a brief introduction of MySQL Source.
-It is also designed to guide you through the process of running an
+It is also designed to guide you through the process of running a
 MySQL Source Connector.
 ## Introduction
 The MySQL Source is a [Vance Connector][vc] that use [Debezium][debezium] 
