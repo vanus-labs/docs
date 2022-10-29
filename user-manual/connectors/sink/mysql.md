@@ -106,7 +106,7 @@ Here is an example of a Secret file for the MySQL Sink.
 }
 ```
 
-#### Secret Fields of the Mysql Sink
+#### Secret Fields of the MySQL Sink
 
 | name               | requirement | description        |
 |--------------------|-------------|--------------------|
