@@ -11,7 +11,7 @@ The MySQL Source is a [Vance Connector][vc] that use [Debezium][debezium]
 to obtain a snapshot of the existing data in a MySql database and then 
 monitors and records all subsequent row-level changes to that data.
 
-For example, MySql database vance has table vance_test Look:
+For example, MySQL database Vance [https://docs.linkall.com/concepts/connector] has table vance_test Look:
 
 ```text
 +-------------+--------------+------+-----+---------+----------------+
