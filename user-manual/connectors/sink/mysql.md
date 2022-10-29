@@ -95,7 +95,7 @@ QUJDREVGRw==
 ```
 
 
-Here is an example of a Secret file for the MySQL Sink.
+Here is an example of a secret file for the MySQL Sink.
 ```json
 {
   "host": "TVlfU0VDUkVUTVlfU0VDUkVU",
