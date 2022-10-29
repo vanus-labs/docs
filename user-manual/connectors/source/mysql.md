@@ -9,7 +9,7 @@ MySQL Source Connector.
 ## Introduction
 The MySql Source is a [Vance Connector][vc] that use [Debezium][debezium] 
 to obtain a snapshot of the existing data in a MySql database and then 
-monitors and record all subsequent row-level changes to that data.
+monitors and records all subsequent row-level changes to that data.
 
 For example, MySql database vance has table vance_test Look:
 
