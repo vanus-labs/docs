@@ -53,7 +53,7 @@ The MySQL Sink will extract the data fields and write to the database tables in 
 ```
 
 ## Quick Start
-This quick start will guide you through the process of running an MySQL Sink connector.
+This quick start will guide you through the process of running an MySQL Sink Connector.
 
 ### Prerequisites
 - A running [MySQL][mysql] database.
