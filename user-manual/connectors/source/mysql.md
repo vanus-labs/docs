@@ -2,7 +2,7 @@
 title: MySQL
 ---
 
-# MySql Source
+# MySQL Source
 This document provides a brief introduction of the MySQL Source.
 It is also designed to guide you through the process of running an
 MySQL Source Connector.
