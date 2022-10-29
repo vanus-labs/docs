@@ -6,8 +6,8 @@ id: mysql
 This document provides a brief introduction of the MySQL Sink. 
 It is also designed to guide you through the process of running an 
 MySQL Sink Connector.
-## Introduction
 
+## Introduction
 The MySql Sink is a [Vance Connector][vc] that aims to handle
 incoming CloudEvents in a way that extracts the data part of the 
 original event and delivers these extracted data to the MySQL database 
@@ -56,7 +56,6 @@ The MySql Sink will extract the data fields and write to the database tables in 
 This quick start will guide you through the process of running an MySQL Sink connector.
 
 ### Prerequisites
-
 - A running [MySQL][mysql] database.
 - Created db and tables.
 
@@ -154,7 +153,7 @@ curl -X POST -d
 http://localhost:8081 
 ```
 :::tip
-The address and port is on the last line this is the target of the event, you can change it to your specification.
+Note that the last line contains the address and port to send the event.
 :::
 
 
