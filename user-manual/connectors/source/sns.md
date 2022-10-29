@@ -1,6 +1,6 @@
 ---
 title: Amazon SNS Source
- ---
+---
 
 # Amazon SNS Source
 This document provides a brief introduction of the Amazon SNS Source. It's also designed to guide you through the
