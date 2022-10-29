@@ -1,6 +1,5 @@
 ---
 title: Amazon SNS Source
-category: 6321d3a8dc727406c2977082
  ---
 
 # Amazon SNS Source

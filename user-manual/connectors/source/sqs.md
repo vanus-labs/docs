@@ -1,6 +1,5 @@
 ---
 title: AWS_SQS
-category: sqs
 ---
 
 # AWS-SQS Source

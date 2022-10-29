@@ -1,6 +1,5 @@
 ---
 title: MySQL
-category: mysql
 ---
 
 # MySql Source
