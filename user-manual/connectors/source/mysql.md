@@ -66,58 +66,39 @@ when running the connector.
 Here is an example of a configuration file for the MySQL Source.
 ```json
 {
-  "v_target": "http://host.docker.internal:8081",
-  "v_store_file": "/tmp/offset.dat"
+  "host": "localhost",
+  "port": "3306",
+  "username": "root",
+  "password": "123456",
+  "db_name": "dbname",
+  "include_table": "user",
+  "v_store_file": "/vance/data/offset.dat",
+  "db_history_file": "/vance/data/history.dat",
+  "v_target": "http://host.docker.internal:8081"
 }
 ```
 
 #### Config Fields of the Mysql Source
-| name               | requirement | description                                                                                                                                    |
-|--------------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| v_target           | required    | target URL will send CloudEvents to                                                                                                            |
-| v_store_file       | required    | kv store file name                                                                                                                             |
-| include_table      | optional    | comma-separated list of include table name, not include database name                                                                          |
-| exclude_table      | optional    | comma-separated list of exclude table name, not include database name. <br/>no need add system table and only no config include_table will use |
-| store_offset_key   | optional    | offset store use key, default is vance_debezium_offset                                                                                         |
-| offset_binlog_file | optional    | binlog filename, increment sync start binlog file name if not set is full sync                                                                 |
-| offset_binlog_pos  | optional    | binlog position, use with config offset_binlog_file                                                                                            |
-
-## MySql Source Secrets
-Users should set their sensitive data Base64 encoded in a secret file.
-And mount your local secret file to `/vance/secret/secret.json` when you run the connector.
-
-### Encode your sensitive data
-Replace MY_SECRET with your sensitive data to get the Base64-based string.
-```shell
-$ echo -n MY_SECRET | base64
-QUJDREVGRw==
-```
-
-Here is an example of a Secret file for the MySQL Sink.
-```jsonTVlfU0VDUkVU
-{
-  "host": "TVlfU0VDUkVUTVlfU0VDUkVU",
-  "port": "OTA4Mw==",
-  "username": "bG92ZWNob2NvbGF0ZQ==",
-  "password": "MTIzNDU2Nzg5",
-  "dbName": "SW1XYWxraW5PblN1blNoaW5l"
-}
-```
-#### Secret Fields of the Mysql Source
-
-| name               | requirement | description                                                                                                |
-|--------------------|-------------|------------------------------------------------------------------------------------------------------------|
-| host               | required    | db host                                                                                                    |
-| port               | required    | db port                                                                                                    |
-| username           | required    | db username                                                                                                |
-| password           | required    | db password                                                                                                |
-| dbName             | required    | db database name                                                                                           |
+| name                 | requirement | description                                                                    |
+|----------------------|-------------|--------------------------------------------------------------------------------|
+| host                 | required    | db host                                                                        |
+| port                 | required    | db port                                                                        |
+| username             | optional    | db username                                                                    |
+| password             | optional    | db password                                                                    |
+| db_name              | required    | db database name                                                               |
+| v_target             | required    | target URL will send CloudEvents to                                            |
+| v_store_file         | required    | save offset file name                                                          |
+| db_history_file      | required    | save db schema history file name                                               |
+| store_offset_key     | optional    | offset store use key, default is vance_debezium_offset                         |
+| offset_binlog_file   | optional    | binlog filename, increment sync start binlog file name if not set is full sync |
+| offset_binlog_pos    | optional    | binlog position, use with config offset_binlog_file                            |
+| offset_binlog_gtids  | optional    | binlog grids                                                                   |
 
 ### Run the MySQL Sink with Docker
-Create your config.json and secret.json, and mount them to
+Create your config.json and mount it with your data path to the
 specific paths to run the MySQL Source using the following command.
 
-> docker run -v $(pwd)/secret.json:/vance/secret/secret.json -v $(pwd)/config.json:/vance/config/config.json --rm vancehub/source-mysql
+> docker run -v $(pwd)/config.json:/vance/config/config.json -v $(pwd)/data:/vance/data --rm vancehub/source-mysql
 
 ### Verify the MySQL Source
 You can verify if the MySQL Source works properly by Running our Display Sink.
@@ -129,4 +110,5 @@ Set the v_target as http://host.docker.internal:8081
 
 [vc]: https://github.com/linkall-labs/vance-docs/blob/main/docs/concept.md
 [config]: https://github.com/linkall-labs/vance-docs/blob/main/docs/connector.md
-[debezium]: https://debezium.io/documentation/reference/1.9/connectors/mysql.html
+[debezium]: https://debezium.io/documentation/reference/1.9/connectors/mysql.html\
+[mysql]: https://www.mysql.com
