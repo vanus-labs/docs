@@ -125,6 +125,7 @@ specific paths to run the MySQL Source using the following command.
 ### Verify the MySQL Source
 You can verify if the MySQL Source works properly by Running our Display Sink.
 > docker run -p 8081:8081 --rm vancehub/sink-display
+
 :::tip
 Set the v_target as http://host.docker.internal:8081
 :::
