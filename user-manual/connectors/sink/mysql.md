@@ -4,7 +4,7 @@ title: MySQL
 
 # MySQL Sink
 This document provides a brief introduction of the MySQL Sink. 
-It is also designed to guide you through the process of running an 
+It is also designed to guide you through the process of running a
 MySQL Sink Connector.
 
 ## Introduction
