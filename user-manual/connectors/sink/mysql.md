@@ -96,7 +96,7 @@ QUJDREVGRw==
 
 
 Here is an example of a Secret file for the MySQL Sink.
-```jsonTVlfU0VDUkVU
+```json
 {
   "host": "TVlfU0VDUkVUTVlfU0VDUkVU",
   "port": "OTA4Mw==",
