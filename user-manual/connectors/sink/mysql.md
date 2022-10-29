@@ -8,7 +8,7 @@ It is also designed to guide you through the process of running an
 MySQL Sink Connector.
 
 ## Introduction
-The MySql Sink is a [Vance Connector][vc] that aims to handle
+The MySQL Sink is a [Vance Connector][vc] that aims to handle
 incoming CloudEvents in a way that extracts the data part of the 
 original event and delivers these extracted data to the MySQL database 
 by using JDBC. You will need to create a database and the tables before using 
