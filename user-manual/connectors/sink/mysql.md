@@ -59,7 +59,7 @@ This quick start will guide you through the process of running an MySQL Sink Con
 - A running [MySQL][mysql] database.
 - Created db and tables.
 
-### Set MySql Sink Configurations
+### Set MySQL Sink Configurations
 You can specify your configs by either setting environments 
 variables or mounting a config.json to `/vance/config/config.json` 
 when running the connector.
