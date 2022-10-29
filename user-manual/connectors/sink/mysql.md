@@ -82,7 +82,7 @@ Here is an example of a configuration file for the MySQL Sink.
 | insert_mode      | optional    | insert mode: insert or upsert, default insert                              |
 | commit_interval  | optional    | batch data commit to db interval, unit is millisecond default 1000         |
 
-### MySql Sink Secrets
+### MySQL Sink Secrets
 
 Users should set their sensitive data Base64 encoded in a secret file.
 And mount your local secret file to `/vance/secret/secret.json` when you run the Connector.
