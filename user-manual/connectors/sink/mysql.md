@@ -123,7 +123,7 @@ specific paths to run the MySQL Sink using the following command.
 > docker run -v $(pwd)/secret.json:/vance/secret/secret.json -v $(pwd)/config.json:/vance/config/config.json --rm vancehub/sink-mysql
 
 ### Verify the MySQL Sink 
-You can verify if the MySQL Sink works properly by Sending a CloudEvent with the post command for example.
+You can verify if the MySQL Sink works properly by sending a CloudEvent with the post command, for example.
 
 ```shell
 curl -X POST -d 
