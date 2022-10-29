@@ -93,7 +93,7 @@ Replace MY_SECRET with your sensitive data to get the Base64-based string.
 $ echo -n MY_SECRET | base64
 QUJDREVGRw==
 ```
-Replace 'MY_SECRET' with your sensitive data.
+
 
 Here is an example of a Secret file for the MySQL Sink.
 ```jsonTVlfU0VDUkVU

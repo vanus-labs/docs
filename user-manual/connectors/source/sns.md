@@ -111,7 +111,7 @@ when running the connector.
 
 Here is an example of a configuration file for the Amazon SNS Source.
 
- ```shell
+ ```json
  $ vim config.json
  {
    "topic_arn": "arn:aws:sns:us-west-2:123456789012:MyTopic",
@@ -148,10 +148,8 @@ Replace `MY_SECRET` with your sensitive data to get the Base64-based string.
  TVlfU0VDUkVU
  ```
 
-Replace 'MY_SECRET' with your sensitive data.
-
 Here is an example of a Secret file for the SNS Source.
- ```shell
+ ```json
  $ vim secret.json
  {
    "awsAccessKeyID": "TVlfU0VDUkVU",
