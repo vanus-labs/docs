@@ -43,7 +43,7 @@ For example, if the incoming CloudEvent looks like:
   }
 }
 ```
-The MySql Sink will extract the data fields and write to the database tables in the following way:
+The MySQL Sink will extract the data fields and write to the database tables in the following way:
 ```text
 +----+---------+---------------------+------------+
 | id | name    | description         | date       |
