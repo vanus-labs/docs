@@ -7,7 +7,7 @@ This document provides a brief introduction of the MySQL Source.
 It is also designed to guide you through the process of running an
 MySQL Source Connector.
 ## Introduction
-The MySql Source is a [Vance Connector][vc] that use [Debezium][debezium] 
+The MySQL Source is a [Vance Connector][vc] that use [Debezium][debezium] 
 to obtain a snapshot of the existing data in a MySql database and then 
 monitors and records all subsequent row-level changes to that data.
 
