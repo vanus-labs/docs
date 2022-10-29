@@ -58,7 +58,7 @@ This quick start will guide you through the process of running an MySQL Sink con
 ### Prerequisites
 - A running [MySQL][mysql] database.
 
-### Set MySql Source Configurations
+### Set MySQL Source Configurations
 You can specify your configs by either setting environments
 variables or mounting a config.json to `/vance/config/config.json`
 when running the connector.
