@@ -62,7 +62,7 @@ This quick start will guide you through the process of running an MySQL Sink Con
 ### Set MySQL Sink Configurations
 You can specify your configs by either setting environments 
 variables or mounting a config.json to `/vance/config/config.json` 
-when running the connector.
+when running the Connector.
 
 Here is an example of a configuration file for the MySQL Sink.
 
