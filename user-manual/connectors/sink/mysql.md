@@ -15,7 +15,7 @@ by using JDBC. You will need to create a database and the tables before using
 this Sink.
 
 ## Handling incoming CloudEvent 
-For example, if the incoming CloudEvent looks like:
+For example, if the incoming CloudEvent looks like this:
 ```json
 {
   "id" : "vance.vance_test:binlog.000010:2515",
