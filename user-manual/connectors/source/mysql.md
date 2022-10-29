@@ -63,7 +63,7 @@ You can specify your configs by either setting environments
 variables or mounting a config.json to `/vance/config/config.json`
 when running the connector.
 
-Here is an example of a configuration file for the MySQL Source.
+Here is an example of a configuration file for MySQL Source.
 ```json
 {
   "host": "localhost",
