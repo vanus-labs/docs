@@ -74,7 +74,7 @@ Here is an example of a configuration file for the MySQL Sink.
   "commit_interval": "100" 
 }
 ```
- #### Config Fields of the MySql Sink
+ #### Config Fields of the MySQL Sink
 | name             | requirement | description                                                                |
 |------------------|-------------|----------------------------------------------------------------------------|
 | v_port           | optional    | v_port is used to specify the port MySql Sink is listening on,default 8080 |
