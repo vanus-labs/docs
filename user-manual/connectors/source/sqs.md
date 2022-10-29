@@ -1,5 +1,5 @@
 ---
-title: AWS_SQS
+title: Amazon SQS
 ---
 
 # AWS-SQS Source

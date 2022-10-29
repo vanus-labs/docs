@@ -1,5 +1,5 @@
 ---
-title: MongoDB Sink
+title: MongoDB
 ---
 
 # MongoDB Sink 

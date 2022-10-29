@@ -1,5 +1,5 @@
 ---
-title: Amazon SNS Source
+title: Amazon SNS 
 ---
 
 # Amazon SNS Source
