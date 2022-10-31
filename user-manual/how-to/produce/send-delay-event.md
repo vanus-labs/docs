@@ -1,6 +1,5 @@
 ---
-title: Send Delay Event
-category: 6321d3a56093c3010397e4aa
+title: Use Delay Event
 ---
 
 # Send an event with delay using the CloudEvents SDK

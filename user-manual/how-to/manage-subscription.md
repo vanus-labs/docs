@@ -1,4 +1,8 @@
-# Managing Subscriptions
+---
+title: Manage Subscriptions
+---
+
+# Manage Subscriptions
 
 The following page will teach you how to manage all of your Subsciptions with `vsctl` command.
 

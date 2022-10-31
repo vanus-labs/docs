@@ -1,5 +1,5 @@
 ---
-title: Using Connector Sink
+title: Use Connector Sink
 ---
 
 # Using Connector Sink

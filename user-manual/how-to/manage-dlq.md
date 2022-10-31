@@ -1,5 +1,5 @@
 ---
-title: Managing Dead Letter
+title: Manage Dead Letter
 ---
 
 # Managing Dead Letter
