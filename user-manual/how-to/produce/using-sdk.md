@@ -1,7 +1,5 @@
 ---
-title: Using CloudEvents SDK
-id: using-sdk
-category: 6321d3a56093c3010397e4aa
+title: Use CloudEvents SDK
 ---
 
 # Send events to Vanus with [CloudEvents](https://github.com/cloudevents) SDK
