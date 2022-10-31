@@ -8,11 +8,11 @@ It is also designed to guide you through the process of running a
 MySQL Source Connector.
 ## Introduction
 The MySQL Source is a [Vance Connector][vc] that use [Debezium][debezium] 
-to obtain a snapshot of the existing data in a MySql database and then 
+to obtain a snapshot of the existing data in a MySQL database and then 
 monitors and records all subsequent row-level changes to that data.
 
-For example, MySQL database Vance [https://docs.linkall.com/concepts/connector] has table vance_test Look:
-
+## MySQL Event Structure
+For example, a MySQL database.
 ```text
 +-------------+--------------+------+-----+---------+----------------+
 | Field       | Type         | Null | Key | Default | Extra          |
@@ -23,8 +23,7 @@ For example, MySQL database Vance [https://docs.linkall.com/concepts/connector] 
 | date        | date         | YES  |     | NULL    |                |
 +-------------+--------------+------+-----+---------+----------------+
 ```
-
-## MySQL Event Structure
+The MySQL Source will transform the MySQL database event above into a CloudEvent with the following structure:
 ```json
 {
   "id": "vance.vance_test:binlog.000010:2515",
@@ -53,7 +52,7 @@ For example, MySQL database Vance [https://docs.linkall.com/concepts/connector] 
 }
 ```
 ## Quick Start
-This quick start will guide you through the process of running an MySQL Sink connector.
+This quick start will guide you through the process of running an MySQL Source connector.
 
 ### Prerequisites
 - A running [MySQL][mysql] database.
@@ -94,7 +93,7 @@ Here is an example of a configuration file for MySQL Source.
 | offset_binlog_pos    | optional    | binlog position, use with config offset_binlog_file                            |
 | offset_binlog_gtids  | optional    | binlog grids                                                                   |
 
-### Run the MySQL Sink with Docker
+### Run the MySQL Source with Docker
 Create your config.json and mount it with your data path to the
 specific paths to run the MySQL Source using the following command.
 
