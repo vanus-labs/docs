@@ -48,4 +48,4 @@ The Vanus repository is private at this time. We are preparing to make it ready 
 :::
 Vanus is an entirely Open Source project, which is public under the Apache 2.0 License. You can find Vanus on GitHub.
 
-For more details about Vanus, you can find it in our [Concepts](../concepts) section.
+For more details about Vanus, you can find it in our [Concepts](concepts) section.

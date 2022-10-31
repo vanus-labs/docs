@@ -12,10 +12,12 @@ or scaling burden. Its principle of design follows the Service Oriented Architec
 challenges, such as predictable behaviors, high availability, scalability, etc.
 
 ## Vanus Core
+
 Vanus Core implements Message Queue functionalities and separates storage and computing. Its storage services support
-[long-term retention](../concepts/eventbus.md#retention-policy) and tier storage (SSD->HDD->S3) for event streaming. 
-Computing consists of services like Trigger and Timer, which implement different features of Vanus like 
-[Subscription](../concepts/subscription.md), [Delay/Schedule Event](../concepts/special-messages.md), etc.
+
+[long-term retention](concepts#eventbus-retention-policy) and tier storage (SSD->HDD->S3) for event streaming. 
+Computing consists of services like Trigger and Timing, which implement different features of Vanus like 
+[Subscription](concepts#subscription), [Delay/Schedule Event](concepts#special-events), etc.
 
 :::tip
 In the above diagram, Storage and Computing are portrayed at a high level.
@@ -43,8 +45,10 @@ and then delivers the events.
 
 ### Timer
 
-The Timer service implements the Delay and Schedule Event feature with the help of the Hierarchical Timing Wheels.
-Vanus supports seconds-precision and unlimited future-time delivery. For more information, visit our [Special Messages](../concepts/special-messages.md).
+
+The Timing service implements the Delay and Schedule Event feature with the help of the Hierarchical Timing Wheels.
+Vanus supports seconds-precision and unlimited future-time delivery. For more information, visit our [Special Events](concepts#special-events).
+
 
 ## Vanus Connect
 

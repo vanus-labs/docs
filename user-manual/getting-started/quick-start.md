@@ -116,7 +116,7 @@ There are some examples below that demonstrate vanus can do.
 
 ### Put/Get Event
 
-1. **create an [eventbus](../concepts/eventbus)**
+1. **create an [eventbus](../introduction/concepts.md#eventbus)**
 
 ```shell
 vsctl eventbus create --name quick-start
@@ -272,7 +272,7 @@ receive a new event, in total: 2
 }
 ```
 
-for more about `filter`, you can find in [how to manage subscription](../how-to/managing-subscription)
+for more about `filter`, you can find in [how to manage subscription](../how-to/managing-subscription.md)
 
 ### Transformer
 
@@ -337,4 +337,4 @@ the transformed event has been displayed.
 
 ## Next
 
-You can go forward to [Concepts](../concepts) and [How to use Vanus](../how-to) for learning more about Vans.
+You can go forward to [How to use Vanus](../how-to) for learning more about Vans.
