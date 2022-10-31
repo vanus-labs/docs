@@ -1,11 +1,10 @@
 ---
-title: Send Delay Event
-category: 6321d3a56093c3010397e4aa
+title: Use CloudEvents SDK
 ---
 
-# Send an event with delay using the CloudEvents SDK
+# Send events to Vanus with [CloudEvents](https://github.com/cloudevents) SDK
 
-The following document will teach you how to build a simple producer with a timer to delay an Event. 
+The following document will teach you how to build a simple producer to send events to Vanus.
 
 ## Operations
 
@@ -14,7 +13,7 @@ The following document will teach you how to build a simple producer with a time
 To send events to Vanus, you must meet the following prerequisites:
 1. Have a running [Vanus](https://github.com/linkall-labs/docs/blob/main/user-manual/getting-started/install/k8s(recommended).md) cluster.
 2. Have [vsctl](https://github.com/linkall-labs/docs/blob/main/user-manual/how-to/vsctl.md).
-3. Have created an [Eventbus](https://github.com/linkall-labs/docs/blob/main/concepts/eventbus.md) named quick-start.
+3. Have created an [Evevtbus](https://github.com/linkall-labs/docs/blob/main/concepts/eventbus.md) named quick-start.
 4. Have exported the environment variable by running this command: `export VANUS_GATEWAY=127.0.0.1:8080`.
 
 > We also provide an interactive [Kubernetes environment](https://play.linkall.com/) to simply deploy and try Vanus in your browser.
@@ -29,16 +28,14 @@ import (
 	"fmt"
 	"os"
 	"strings"
-	"time"
 
 	ce "github.com/cloudevents/sdk-go/v2"
 	"github.com/google/uuid"
 )
 
 const (
-	httpPrefix           = "http://"
-	eventbus             = "quick-start"
-	xceVanusDeliveryTime = "xvanusdeliverytime"
+	httpPrefix = "http://"
+	eventbus   = "quick-start"
 )
 
 var (
@@ -67,9 +64,6 @@ func main() {
 	event.SetSource("event-source")
 	event.SetType("event-type")
 	event.SetData(ce.ApplicationJSON, map[string]string{"hello": "world"})
-	// set delivery time of delay event
-	timeOfRFC3339Nano := time.Now().Add(10 * time.Second).Format(time.RFC3339Nano)
-	event.SetExtension(xceVanusDeliveryTime, timeOfRFC3339Nano)
 
 	// step 4: send the CloudEvent
 	if result := client.Send(ctx, event); ce.IsUndelivered(result) {
@@ -79,7 +73,8 @@ func main() {
 ```
 
 **Expected results**
-By running the following command after 10s, we can guarantee that The producer successfully sent the event to the Eventbus.
+
+By running the following command, we can ensure that the simple producer successfully sent the event to Vanus Eventbus.
 ```
 $ vsctl event get quick-start
 ```
@@ -96,7 +91,6 @@ Here is the expected result:
 |     |   time: 2022-09-20T12:42:36.992825162Z     |
 |  0  |   datacontenttype: text/plain              |
 |     | Extensions,                                |
-|     |   xvanusdeliverytime: 2022-09-20T13:00:00Z |
 |     |   xvanuseventbus: quick-start              |
 |     |   xvanuslogoffset: AAAAAAAAAAA=            |
 |     |   xvanusstime: 2022-09-20T12:42:36.994Z    |

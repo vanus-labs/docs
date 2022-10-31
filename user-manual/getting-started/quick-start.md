@@ -272,7 +272,7 @@ receive a new event, in total: 2
 }
 ```
 
-for more about `filter`, you can find in [how to manage subscription](../how-to/managing-subscription.md)
+for more about `filter`, you can find in [how to manage subscription](../how-to/manage-subscription.md)
 
 ### Transformer
 

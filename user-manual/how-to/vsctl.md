@@ -1,5 +1,5 @@
 ---
-title: vsctl
+title: Use vsctl
 ---
 
 # Command line tool(vsctl)
