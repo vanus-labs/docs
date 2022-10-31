@@ -14,6 +14,7 @@ challenges, such as predictable behaviors, high availability, scalability, etc.
 ## Vanus Core
 
 Vanus Core implements Message Queue functionalities and separates storage and computing. Its storage services support
+
 [long-term retention](concepts#eventbus-retention-policy) and tier storage (SSD->HDD->S3) for event streaming. 
 Computing consists of services like Trigger and Timing, which implement different features of Vanus like 
 [Subscription](concepts#subscription), [Delay/Schedule Event](concepts#special-events), etc.
@@ -42,10 +43,12 @@ subscription, the Controller assigns the subscription with a trigger to a specif
 runs Triggers. The Trigger fetches the events in the specified Eventbus, completes the events filter and transformation, 
 and then delivers the events.
 
-### Timing
+### Timer
+
 
 The Timing service implements the Delay and Schedule Event feature with the help of the Hierarchical Timing Wheels.
 Vanus supports seconds-precision and unlimited future-time delivery. For more information, visit our [Special Events](concepts#special-events).
+
 
 ## Vanus Connect
 

@@ -24,7 +24,7 @@ You can skip the step if you already have those.
 ### Vanus
 
 ```shell
-curl -O http://44.242.140.28:9080/all-in-one/v0.3.0.yml
+curl -O https://download.linkall.com/all-in-one/v0.3.0.yml
 kubectl apply -f v0.3.0.yml
 ```
 
@@ -50,7 +50,7 @@ choose a right version based your arch and os: **linux-amd64**, **macos-arm64**
 **Firstly**, download **vsctl**, the command line tool of Vanus.
 
 ```shell
-curl -O http://44.242.140.28:9080/vsctl/v0.3.0/linux-amd64/vsctl
+curl -O https://download.linkall.com/vsctl/v0.3.0/linux-amd64/vsctl
 chmod ug+x vsctl
 sudo mv vsctl /usr/local/bin
 ```
@@ -165,7 +165,7 @@ the result should look like
 1. **start a display server to verify filter**
 
 ```shell
-curl -O http://44.242.140.28:9080/utils/display.yml
+curl -O https://download.linkall.com/utils/display.yml
 kubectl apply -f display.yml
 ```
 
@@ -282,7 +282,7 @@ for more about `filter`, you can find in [how to manage subscription](../how-to/
 vsctl subscription create \
   --eventbus quick-start \
   --sink 'http://quick-display:80' \
-  --input-transformer '{
+  --transformer '{
       "define": {
         "dataMsg": "$.data.msg",
         "dataSource": "$.source"

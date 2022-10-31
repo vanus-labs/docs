@@ -116,7 +116,7 @@ vsctl subscription create \
             "cel":"$amount.(double) >= 8.013"
         }
     ]' \
-  --input-transformer '{
+  --transformer '{
       "define": {
         "date": "$.data.date",
         "amount": "$.data.amount",

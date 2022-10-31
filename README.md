@@ -46,7 +46,7 @@ Install a [Kubenetes](https://kubernetes.io/docs/setup/)  cluster
 ### 2. Install with YAML file
 
 ```bash
-curl -O http://44.242.140.28:9080/all-in-one/latest.yml
+curl -O https://download.linkall.com/all-in-one/latest.yml
 kubectl apply -f latest.yml
 ```
 

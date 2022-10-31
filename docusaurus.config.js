@@ -4,6 +4,11 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+// 链接
+const url_github = 'https://github.com/linkall-labs/docs';
+const url_slack = 'https://join.slack.com/t/vanusworkspace/shared_invite/zt-1i4va49hd-EYdsnaiKjtAz4tQK4MgDdA';
+const url_twitter = 'https://twitter.com/Vanus_labs';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Vanus Docs',
@@ -12,7 +17,8 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  // favicon: 'img/favicon.ico',
+  favicon: 'img/vance-favicon.png',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'linkall-labs', // Usually your GitHub org/user name.
@@ -66,12 +72,19 @@ const config = {
         indexName: 'vanus-docs',
         contextualSearch: true,
       },
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
       navbar: {
         title: 'Vanus',
         logo: {
           alt: 'vanus log',
-          src: 'img/logo.svg',
+          src: 'img/vance-logo.png',
+          href: 'http://www.linkall.com',
         },
+        hideOnScroll: true,
         items: [
           {
             type: 'doc',
@@ -80,16 +93,46 @@ const config = {
             label: 'Docs',
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
+          // {
+          //   href: 'https://github.com/linkall-labs/vanus',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
           {
-            href: 'https://github.com/linkall-labs/vanus',
-            label: 'GitHub',
+            href: url_github,
             position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub',
+          },
+          {
+            href: url_slack,
+            position: 'right',
+            className: 'header-slack-link',
+            'aria-label': 'Slack',
+          },
+          {
+            href: url_twitter,
+            position: 'right',
+            className: 'header-twitter-link',
+            'aria-label': 'Twitter',
           },
         ],
       },
       footer: {
         style: 'dark',
         links: [
+          {
+            label: 'GitHub',
+            href: url_github,
+          },
+          {
+            label: 'Slack',
+            href: url_slack,
+          },
+          {
+            label: 'Twitter',
+            href: url_twitter,
+          },
           // {
           //   title: 'Docs',
           //   items: [
@@ -116,19 +159,15 @@ const config = {
           //     },
           //   ],
           // },
-          {
-            title: 'More',
-            items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/linkall-labs/vanus',
-              },
-            ],
-          },
+          // {
+          //   title: 'More',
+          //   items: [
+          //     {
+          //       label: 'Blog',
+          //       to: '/blog',
+          //     },
+          //   ],
+          // },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Linkall Inc. Built with Docusaurus.`,
       },

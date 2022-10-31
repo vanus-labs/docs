@@ -22,7 +22,7 @@ Before installing Vanus, you must meet the following prerequisites:
 Install Vanus by running the command:
 
 ```shell
-kubectl apply -f http://44.242.140.28:9080/all-in-one/v0.3.0.yml
+kubectl apply -f https://download.linkall.com/all-in-one/v0.3.0.yml
 ```
 
 After the installation is finished, we will need to monitor the components until the status of each component shows Running. You can monitor the status of the components by running the following command:
