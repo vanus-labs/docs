@@ -2,5 +2,5 @@
 title: Manage Dead Letter
 ---
 
-# Managing Dead Letter
+# Manage Dead Letter
 Coming soon
