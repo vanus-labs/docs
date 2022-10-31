@@ -64,7 +64,7 @@ func main() {
 ```bash
 ~ > vsctl event put quick-start \
   --data-format plain \
-  --body "Hello Vanus" \
+  --data "Hello Vanus" \
   --id "1" \
   --source "quick-start" \
   --type "examples"
