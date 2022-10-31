@@ -18,7 +18,7 @@ To consume events from Vanus, you must meet the following prerequisites:
 > We also provide an interactive [Kubernetes environment](https://play.linkall.com/) to simply deploy and try Vanus in your browser.
 
 **Example code**
-
+gitgit 
 ```golang
 package main
 
