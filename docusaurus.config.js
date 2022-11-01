@@ -16,6 +16,10 @@ const config = {
   url: 'https://docs.linkall.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
+  scripts: [
+    // Object format.
+    {src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'docs.linkall.com'}
+  ],
   onBrokenMarkdownLinks: 'warn',
   // favicon: 'img/favicon.ico',
   favicon: 'img/vance-favicon.png',
