@@ -72,6 +72,8 @@ const sidebars = {
               'connectors/source/mysql',
               'connectors/source/s3',
             'connectors/source/sns',
+            'connectors/source/http',
+            'connectors/source/github',
             'connectors/source/sqs'
           ],
         },
