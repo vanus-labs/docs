@@ -3,14 +3,19 @@ title: Amazon SNS
 ---
 
 # Amazon SNS Source
-This document provides a brief introduction of the Amazon SNS Source. It's also designed to guide you through the
+This document provides a brief introduction of the Amazon SNS Source. 
+It's also designed to guide you through the
 process of running an Amazon SNS Source Connector.
 
 ## Introduction
-The Amazon SNS (Simple Notification Service) Source Connector **subscribes to the SNS topic** and SNS will **push** messages
-published to the topic to the SNS connector. To enable SNS subscription, you should set your **endpoint, protocol and
-the Amazon Resource Name (ARN) ** value of the SNS topic. After messages are published to the topic, SNS will push them
-to SNS connector using **HTTP/HTTPS** protocol. And then SNS connector transform event messages into CloudEvents and
+The Amazon SNS (Simple Notification Service) Source Connector 
+**subscribes to the SNS topic** and SNS will **push** messages
+published to the topic to the SNS connector. To enable
+SNS subscription, you should set your **endpoint, protocol and
+the Amazon Resource Name (ARN) ** value of the SNS topic. 
+After messages are published to the topic, SNS will push them
+to SNS connector using **HTTP/HTTPS** protocol. And then 
+SNS connector transform event messages into CloudEvents and
 deliver them to the target URL.
 
 ## SNS Event Structure
@@ -88,7 +93,7 @@ configured in SNS subscription.
 - sns:Write:Subscribe
 - sns:Write:ConfirmSubscription
 - sns:Write:Unsubscribe
-
+---
 ## Quick Start
 This quick start will guide you through the process of running an Amazon SNS Source connector.
 
@@ -105,7 +110,7 @@ You should prepare these prerequisites first for running SNS Source.
 ### Set AWS SNS Source configurations
 You can specify your configs by either setting environments
 variables or mounting a config.json to /vance/config/config.json
-when running the connector.
+when running the Connector.
 
 
 Here is an example of a configuration file for the Amazon SNS Source.
@@ -161,15 +166,6 @@ Here is an example of a Secret file for the SNS Source.
 | awsAccessKeyID     | `awsAccessKeyID` is the Access key ID of your aws credential.        | "BASE64VALUEOFYOURACCESSKEY=" |**YES** |
 | awsSecretAccessKey | `awsSecretAccessKey` is the Secret access key of youraws credential. | "BASE64VALUEOFYOURSECRETKEY=" |**YES** |
 
-### Expose your local port to the public network
-
-You can use [ngrok] to **expose** your local port to the **public network**. After you register, login and install ngrok,
-you can use the following command to get a address with specified port accessible to the public network.
-
- ```shell 
- [user@localhost]$ ngrok http 8082
- ``` 
-
 ### Run the Amazon SNS Source with Docker
 
 You can run SNS Source using docker by execute following command. The secret file and config file should be mounted to
@@ -181,8 +177,10 @@ You can run SNS Source using docker by execute following command. The secret fil
 
 ### Verify the Amazon SNS Source
 
-You can verify if the Amazon SNS Source works properly by running our Display Sink and by publishing a message to the SNS topic. To publish a message,
-you should log in to the [AWS Management Console][aws-console] at first. Then visit the Simple Notification Service.
+You can verify if the Amazon SNS Source works properly by running our Display Sink 
+and by publishing a message to the SNS topic. To publish a message,
+you should log in to the [AWS Management Console][aws-console] first. 
+Then visit the Simple Notification Service.
 Choose the SNS Topics, and then you can create topics or publish messages to the topics.
 
 > docker run -p 8081:8081 --rm vancehub/sink-display

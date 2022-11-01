@@ -3,11 +3,12 @@ title: MySQL
 ---
 
 # MySQL Source
-This document provides a brief introduction of MySQL Source.
+This document provides a brief introduction to MySQL Source.
 It is also designed to guide you through the process of running a
 MySQL Source Connector.
+
 ## Introduction
-The MySQL Source is a [Vance Connector][vc] that use [Debezium][debezium] 
+The MySQL Source is a [Vance Connector][vc] that uses [Debezium][debezium] 
 to obtain a snapshot of the existing data in a MySQL database and then 
 monitors and records all subsequent row-level changes to that data.
 
@@ -23,7 +24,9 @@ For example, a MySQL database.
 | date        | date         | YES  |     | NULL    |                |
 +-------------+--------------+------+-----+---------+----------------+
 ```
-The MySQL Source will transform the MySQL database event above into a CloudEvent with the following structure:
+###
+The MySQL Source will transform the MySQL database event above into
+a CloudEvent with the following structure:
 ```json
 {
   "id": "vance.vance_test:binlog.000010:2515",
@@ -51,10 +54,14 @@ The MySQL Source will transform the MySQL database event above into a CloudEvent
   }
 }
 ```
+---
+
 ## Quick Start
 This quick start will guide you through the process of running an MySQL Source connector.
 
 ### Prerequisites
+
+- Have container runtime (i.e., docker).
 - A running [MySQL][mysql] database.
 
 ### Set MySQL Source Configurations
@@ -62,7 +69,7 @@ You can specify your configs by either setting environments
 variables or mounting a config.json to `/vance/config/config.json`
 when running the connector.
 
-Here is an example of a configuration file for MySQL Source.
+Here is an example of a configuration file for a MySQL Source.
 ```json
 {
   "host": "localhost",
@@ -100,7 +107,7 @@ specific paths to run the MySQL Source using the following command.
 > docker run -v $(pwd)/config.json:/vance/config/config.json -v $(pwd)/data:/vance/data --rm vancehub/source-mysql
 
 ### Verify the MySQL Source
-You can verify if the MySQL Source works properly by Running our Display Sink.
+You can verify if the MySQL Source works properly by Running our Display Sink and entering some new data in your database.
 > docker run -p 8081:8081 --rm vancehub/sink-display
 
 :::tip
