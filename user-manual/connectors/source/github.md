@@ -81,7 +81,7 @@ a GitHub Source Connector.
 - Have a GitHub [WebHook][webhook].
 
 ### Set GitHub Source Configurations
-You can specify your configs by either setting environments variables or mounting a config.json to
+ when running the Connector, you can specify your configs by either setting environments variables or mounting a config.json to
 `/vance/config/config.json`.
 
 Here is an example of a configuration file for the Amazon S3 Source.
