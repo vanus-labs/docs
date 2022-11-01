@@ -9,7 +9,7 @@ GitHub Source Connector.
 
 ## Introduction
 The GitHub Source is a [Vance Connector](https://github.com/linkall-labs/vance-docs/blob/main/docs/concept.md) designed to retrieve
-GitHub webhooks events in various format, transform them into CloudEvents based on [CloudEvents Adapter specification](https://github.com/cloudevents/spec/blob/main/cloudevents/adapters/github.md) and wrap the body of the original request into the data of CloudEvents.
+GitHub webhooks events in various format, transform them into CloudEvents based on [CloudEvents Adapter Specification](https://github.com/cloudevents/spec/blob/main/cloudevents/adapters/github.md), and wrap the body of the original request into the data of CloudEvents.
 
 ## GitHub Event Structure
 
