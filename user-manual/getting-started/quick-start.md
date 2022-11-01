@@ -171,7 +171,7 @@ use `kubectl get po` to validate
 
 ```shell
 NAME                             READY   STATUS    RESTARTS   AGE
-vanus-display-74b65fcff4-pk9rm   1/1     Running   0          12s
+vanus-display-**************     1/1     Running   0          12s
 ```
 
 2. **create a subscription**
@@ -236,7 +236,7 @@ NOTE: use the **POD_NAME** you got from step 1.
 :::
 
 ```shell
-kubectl logs vanus-display-74b65fcff4-pk9rm
+kubectl logs vanus-display-**************
 ```
 
 the output should look like below, the two events whose source are matched are displayed.
