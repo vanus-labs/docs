@@ -57,7 +57,7 @@ The original GitHub webhooks events look like:
   }
 }
 ```
-This GitHub star event will be transformed into a CloudEvents like:
+This GitHub star event will be transformed into a CloudEvent like:
 ```JSON
 CloudEvent:{
 	id:"4ef226c0-08c7-11ed-998d-93772adf8abb", 
