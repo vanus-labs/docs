@@ -73,7 +73,7 @@ CloudEvent:{
 
 ## Quick Start
 This quick start will guide you through the process of running
-an GitHub Source connector.
+a GitHub Source Connector.
 
 ### Prerequisites
 - Have container runtime (i.e., docker).
