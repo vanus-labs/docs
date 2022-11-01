@@ -24,8 +24,7 @@ You can skip the step if you already have those.
 ### Vanus
 
 ```shell
-curl -O https://download.linkall.com/all-in-one/v0.4.0.yml
-kubectl apply -f v0.4.0.yml
+kubectl apply -f https://download.linkall.com/all-in-one/v0.4.0.yml
 ```
 
 waiting a minute, run `kubectl get po -n vanus` to check the deployment, the expected output looks like below,
@@ -165,8 +164,7 @@ the result should look like
 1. **start a display server to verify filter**
 
 ```shell
-curl -O https://download.linkall.com/utils/display.yml
-kubectl apply -f display.yml
+kubectl apply -f https://download.linkall.com/utils/display.yml
 ```
 
 use `kubectl get po` to validate
