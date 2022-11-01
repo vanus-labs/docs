@@ -100,7 +100,7 @@ $ vim config.json
 
 ### Set GitHub Source Secrets
 Users should set their sensitive data Base64 encoded in a secret file. And mount that secret file to
-`/vance/secret/secret.json` when running the connector.
+`/vance/secret/secret.json` when running the GitHub Source Connector.
 
 Replace `MY_SECRET` with your sensitive data to get the Base64-based string.
 
