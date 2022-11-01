@@ -24,8 +24,8 @@ You can skip the step if you already have those.
 ### Vanus
 
 ```shell
-curl -O https://download.linkall.com/all-in-one/v0.3.0.yml
-kubectl apply -f v0.3.0.yml
+curl -O https://download.linkall.com/all-in-one/v0.4.0.yml
+kubectl apply -f v0.4.0.yml
 ```
 
 waiting a minute, run `kubectl get po -n vanus` to check the deployment, the expected output looks like below,
@@ -50,7 +50,7 @@ choose a right version based your arch and os: **linux-amd64**, **macos-arm64**
 **Firstly**, download **vsctl**, the command line tool of Vanus.
 
 ```shell
-curl -O https://download.linkall.com/vsctl/v0.3.0/linux-amd64/vsctl
+curl -O https://download.linkall.com/vsctl/v0.4.0/linux-amd64/vsctl
 chmod ug+x vsctl
 sudo mv vsctl /usr/local/bin
 ```
@@ -59,11 +59,11 @@ sudo mv vsctl /usr/local/bin
 
 ```shell
 +-----------+---------------------------------+
-|  Version  | v0.3.0                          |
-|  Platform | darwin/arm64                    |
-| GitCommit | 28ffea0                         |
-| BuildDate | 2022-09-16_02:13:36+0000        |
-| GoVersion | go version go1.17.5 linux/amd64 |
+|  Version  | v0.4.0                          |
+|  Platform | linux/amd64                     |
+| GitCommit | 0e2d371                         |
+| BuildDate | 2022-11-01_03:47:49+0000        |
+| GoVersion | go version go1.18.7 linux/amd64 |
 +-----------+---------------------------------+
 ```
 
