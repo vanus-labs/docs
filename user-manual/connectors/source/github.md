@@ -122,7 +122,7 @@ $ cat secret.json
 |  githubWebHookSecret   |  The githubWebHookSecret is used to verify your webhook secret key		      |  "YWJjZGU="				  |  YES  		 |
 
 ### Run the GitHub Source with Docker
-Create your `config.json` and `secret.json`, and mount them to specific paths to run the GitHub source using following command.
+Create your `config.json` and `secret.json`, and mount them to specific paths to run the GitHub Source using the following command.
 
 ```shell
 docker run -v $(pwd)/secret.json:/vance/secret/secret.json -v $(pwd)/config.json:/vance/config/config.json -p 8082:8082 --rm vancehub/source-github
