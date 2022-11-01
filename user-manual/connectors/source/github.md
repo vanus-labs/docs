@@ -128,7 +128,7 @@ Create your `config.json` and `secret.json`, and mount them to specific paths to
 docker run -v $(pwd)/secret.json:/vance/secret/secret.json -v $(pwd)/config.json:/vance/config/config.json -p 8082:8082 --rm vancehub/source-github
 ```
 
-You can verify if theA GitHub Source works properly by running the Display Sink connector and by uploading a file to the S3 bucket you specified in your config.json file.
+You can verify if the GitHub Source works properly by running the Display Sink Connector and by uploading a file to the S3 bucket you specified in your config.json file.
 > docker run -p 8081:8081 --rm vancehub/sink-display
 
 :::tip
