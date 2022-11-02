@@ -122,7 +122,7 @@ With the following HTTP request:
  http://localhost:8081 
  ```
 
-The result in Display sink.
+The result in Display Sink.
  ``` json
  {
    "id" : "42d5b039-daef-4071-8584-e61df8fc1354",
