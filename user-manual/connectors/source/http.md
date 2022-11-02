@@ -3,7 +3,7 @@ title: HTTP
 ---
 
 # HTTP Source
-This document provides a brief introduction of the HTTP Source. It's also 
+This document provides a brief introduction to the HTTP Source. It's also 
 designed to guide you through the
 process of running an HTTP Source Connector.
 
