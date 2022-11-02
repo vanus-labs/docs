@@ -3,16 +3,15 @@ title: MySQL
 ---
 
 # MySQL Sink
-This document provides a brief introduction of the MySQL Sink. 
+This document provides a brief introduction to the MySQL Sink.
 It is also designed to guide you through the process of running a
 MySQL Sink Connector.
 
 ## Introduction
-The MySQL Sink is a [Vance Connector][vc] that aims to handle
-incoming CloudEvents in a way that extracts the data part of the 
-original event and delivers these extracted data to the MySQL database 
-by using JDBC. You will need to create a database and the tables before using 
-this Sink.
+The MySQL Sink is a [Vance Connector][vc] that aims to handle incoming CloudEvents 
+in a way that extracts the data part of the original event and delivers these 
+extracted data to a MySQL database using JDBC. Before using this Sink, you will 
+need to create a database and a table.
 
 ## Handling incoming CloudEvent 
 For example, if the incoming CloudEvent looks like this:
@@ -43,7 +42,8 @@ For example, if the incoming CloudEvent looks like this:
   }
 }
 ```
-The MySQL Sink will extract the data fields and write to the database tables in the following way:
+###
+The MySQL Sink will extract the data fields and write to the database table in the following way:
 ```text
 +----+---------+---------------------+------------+
 | id | name    | description         | date       |
@@ -51,13 +51,14 @@ The MySQL Sink will extract the data fields and write to the database tables in 
 | 18 | xdl     | Development Manager | 2022-07-06 |
 +----+---------+---------------------+------------+
 ```
-
+---
 ## Quick Start
 This quick start will guide you through the process of running an MySQL Sink Connector.
 
 ### Prerequisites
-- A running [MySQL][mysql] database.
-- Created db and tables.
+- Have container runtime (i.e., docker).
+- Have running [MySQL][mysql] database.
+- Have a database and table created.
 
 ### Set MySQL Sink Configurations
 You can specify your configs by either setting environments 
@@ -65,7 +66,6 @@ variables or mounting a config.json to `/vance/config/config.json`
 when running the Connector.
 
 Here is an example of a configuration file for the MySQL Sink.
-
 ```json
 {
   "v_port": "8081",
@@ -74,6 +74,7 @@ Here is an example of a configuration file for the MySQL Sink.
   "commit_interval": "100" 
 }
 ```
+
  #### Config Fields of the MySQL Sink
 | name             | requirement | description                                                                |
 |------------------|-------------|----------------------------------------------------------------------------|
@@ -83,17 +84,16 @@ Here is an example of a configuration file for the MySQL Sink.
 | commit_interval  | optional    | batch data commit to db interval, unit is millisecond default 1000         |
 
 ### MySQL Sink Secrets
-
 Users should set their sensitive data Base64 encoded in a secret file.
 And mount your local secret file to `/vance/secret/secret.json` when you run the Connector.
 
 #### Encode your Sensitive Data
 Replace MY_SECRET with your sensitive data to get the Base64-based string.
+
 ```shell
 $ echo -n MY_SECRET | base64
 QUJDREVGRw==
 ```
-
 
 Here is an example of a secret file for the MySQL Sink.
 ```json
@@ -123,7 +123,8 @@ specific paths to run the MySQL Sink using the following command.
 > docker run -v $(pwd)/secret.json:/vance/secret/secret.json -v $(pwd)/config.json:/vance/config/config.json --rm vancehub/sink-mysql
 
 ### Verify the MySQL Sink 
-You can verify if the MySQL Sink works properly by sending a CloudEvent with the post command, for example.
+You can verify if the MySQL Sink works properly by 
+sending a CloudEvent with the POST terminal command, for example.
 
 ```shell
 curl -X POST -d 
@@ -155,7 +156,7 @@ curl -X POST -d
 http://localhost:8081 
 ```
 :::tip
-Note that the last line contains the address and port to send the event.
+Note that the last line contains the address and port targeted.
 :::
 
 

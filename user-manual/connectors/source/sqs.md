@@ -5,12 +5,11 @@ title: Amazon SQS
 # AWS-SQS Source
 This document provides a brief introduction of the SQS Source.
 It is also designed to guide you through the process of running an
-MySQL Sink Connector.
+SQS Source Connector.
+
 ## Introduction
 A [Vance Connector][vc] which retrieves SQS messages, transform them into CloudEvents
 and deliver CloudEvents to the target URL.
-
-
 
 ## SQS Event Structure
 
@@ -36,17 +35,16 @@ with the following structure:
 }
 ```
 
+---
 ## Quick Start
-This quick start will guide you through the process of running an MySQL Sink connector.
-
-
+This quick start will guide you through the process of running an SQS Source Connector.
 
 ### Set SQS Source Configurations
 You can specify your configs by either setting environments
 variables or mounting a config.json to `/vance/config/config.json`
-when running the connector.
+when running the Connector.
 
-Here is an example of a configuration file for the MySQL Sink.
+Here is an example of a configuration file for the SQS Source.
 ```json
 config.json
 {
@@ -55,8 +53,6 @@ config.json
 }
 ```
 
-#### Config Fields of the AWS-SQS Source
-
 | Configs   | Description                                                                     | Example                 | Required                 |
 |:----------|:--------------------------------------------------------------------------------|:------------------------|:------------------------|
 | v_target  | `v_target` is used to specify the target URL HTTP Source will send CloudEvents to. | "http://localhost:8081" |**YES** |
@@ -64,7 +60,7 @@ config.json
 
 ### AWS-SQS Source Secrets
 Users should set their sensitive data Base64 encoded in a secret file.
-And mount your local secret file to `/vance/secret/secret.json` when you run the connector.
+And mount your local secret file to `/vance/secret/secret.json` when you run the Connector.
 
 #### Encode your sensitive data
 Replace MY_SECRET with your sensitive data to get the Base64-based string.
@@ -90,7 +86,7 @@ $ cat secret.json
 
 ### Run the SQS Source with Docker
 Create your config.json and secret.json, and mount them to
-specific paths to run the MySQL Sink using the following command.
+specific paths to run the SQS Source using the following command.
 
 > docker run -v $(pwd)/secret.json:/vance/secret/secret.json -v $(pwd)/config.json:/vance/config/config.json --rm vancehub/soure-aws-sqs
 docker pull 
