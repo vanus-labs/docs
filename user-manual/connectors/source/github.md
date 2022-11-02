@@ -3,7 +3,7 @@ title: GitHub
 ---
 
 # GitHub Source
-This document provides a brief introduction of GitHub Source.
+This document provides a brief introduction to GitHub Source.
 It is also designed to guide you through the process of running a
 GitHub Source Connector.
 
