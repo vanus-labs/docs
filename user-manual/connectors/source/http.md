@@ -78,7 +78,7 @@ Here is an example of a configuration file for the HTTP Source.
 | v_port    | v_port is used to specify the port HTTP Source is listening on                  | "8080"                  |
 
 ### Run the HTTP Source with Docker
-Create your `config.json`, and mount it to specific paths to run the HTTP Source using following command.
+Create your `config.json`, and mount it to specific paths to run the HTTP Source using the following command.
 
  ```shell
  docker run -v $(pwd)/config.json:/vance/config/config.json -p 8080:8080 --rm vancehub/source-http
