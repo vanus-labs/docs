@@ -85,7 +85,7 @@ Create your `config.json`, and mount it to specific paths to run the HTTP Source
  ```
 
 ### Verify the HTTP Source
-You can verify if the HTTP Source works properly by running the Display Sink connector and by sending a HTTP request.
+You can verify if the HTTP Source works properly by running the Display Sink Connector and by sending an HTTP request.
 
 :::tip
 Set the v_target as http://host.docker.internal:8081
