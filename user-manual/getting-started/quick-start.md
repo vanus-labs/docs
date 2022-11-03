@@ -167,11 +167,11 @@ the result should look like
 kubectl apply -f https://download.linkall.com/utils/display.yml
 ```
 
-use `kubectl get po` to validate
+use `kubectl get po -n vanus` to validate
 
 ```shell
 NAME                             READY   STATUS    RESTARTS   AGE
-vanus-display-**************     1/1     Running   0          12s
+quick-display-**************     1/1     Running   0          12s
 ```
 
 2. **create a subscription**
@@ -195,7 +195,7 @@ output should like below
 +---------------------+-------------+-----------------------------------+----------------------------------------------+-------------+
 |          ID         |   EVENTBUS  |                SINK               |                    FILTER                    | TRANSFORMER |
 +---------------------+-------------+-----------------------------------+----------------------------------------------+-------------+
-| 1656331986533051044 | quick-start | http://vanus-display.default:80   | [                                            | ""          |
+| 1656331986533051044 | quick-start | http://quick-display:80           | [                                            | ""          |
 |                     |             |                                   |   {                                          |             |
 |                     |             |                                   |     "exact": {                               |             |
 |                     |             |                                   |       "source": "quick-start-filter-section"  |             |
@@ -335,4 +335,4 @@ the transformed event has been displayed.
 
 ## Next
 
-You can go forward to [How to use Vanus](../how-to) for learning more about Vans.
+You can go forward to [How to use Vanus](../how-to) for learning more about Vanus.
