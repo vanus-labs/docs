@@ -171,7 +171,7 @@ use `kubectl get po -n vanus` to validate
 
 ```shell
 NAME                             READY   STATUS    RESTARTS   AGE
-vanus-display-**************     1/1     Running   0          12s
+quick-display-**************     1/1     Running   0          12s
 ```
 
 2. **create a subscription**
@@ -195,7 +195,7 @@ output should like below
 +---------------------+-------------+-----------------------------------+----------------------------------------------+-------------+
 |          ID         |   EVENTBUS  |                SINK               |                    FILTER                    | TRANSFORMER |
 +---------------------+-------------+-----------------------------------+----------------------------------------------+-------------+
-| 1656331986533051044 | quick-start | http://vanus-display:80           | [                                            | ""          |
+| 1656331986533051044 | quick-start | http://quick-display:80           | [                                            | ""          |
 |                     |             |                                   |   {                                          |             |
 |                     |             |                                   |     "exact": {                               |             |
 |                     |             |                                   |       "source": "quick-start-filter-section"  |             |
