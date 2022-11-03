@@ -335,4 +335,4 @@ the transformed event has been displayed.
 
 ## Next
 
-You can go forward to [How to use Vanus](../how-to) for learning more about Vans.
+You can go forward to [How to use Vanus](../how-to) for learning more about Vanus.
