@@ -167,7 +167,7 @@ the result should look like
 kubectl apply -f https://download.linkall.com/utils/display.yml
 ```
 
-use `kubectl get po` to validate
+use `kubectl get po -n vanus` to validate
 
 ```shell
 NAME                             READY   STATUS    RESTARTS   AGE
@@ -179,7 +179,7 @@ vanus-display-**************     1/1     Running   0          12s
 ```shell
 vsctl subscription create \
   --eventbus quick-start \
-  --sink 'http://quick-display.vanus:80' \
+  --sink 'http://quick-display:80' \
   --filters '[
     {
       "exact": {
@@ -195,7 +195,7 @@ output should like below
 +---------------------+-------------+-----------------------------------+----------------------------------------------+-------------+
 |          ID         |   EVENTBUS  |                SINK               |                    FILTER                    | TRANSFORMER |
 +---------------------+-------------+-----------------------------------+----------------------------------------------+-------------+
-| 1656331986533051044 | quick-start | http://vanus-display.vanus:80   | [                                            | ""          |
+| 1656331986533051044 | quick-start | http://vanus-display:80           | [                                            | ""          |
 |                     |             |                                   |   {                                          |             |
 |                     |             |                                   |     "exact": {                               |             |
 |                     |             |                                   |       "source": "quick-start-filter-section"  |             |
