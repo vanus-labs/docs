@@ -1,12 +1,12 @@
 # Use Cloud Functions
 
-Vanus support direct send events to [Cloud Functions][cloud functions]. The following page will teach you how to use Cloud Functions with `vsctl` command in Vanus.
+Vanus supports direct sending events to [Cloud Functions][cloud functions]. The following page will teach you how to use Cloud Functions with vsctl commands in Vanus.
 
-> Vanus only support Cloud Funtions(2nd gen) HTTP triggers.
+> Vanus only support Cloud Functions(2nd gen) HTTP triggers.
 
 ## Prerequisites
 
-Before using Cloud Function, you must meet the following prerequisites.
+Before using Cloud Functions, you must meet the following prerequisites.
 
 1. Have a running [Vanus](https://github.com/linkall-labs/docs/blob/main/user-manual/getting-started/install/k8s(recommended).md) cluster.
 2. Have [vsctl](https://github.com/linkall-labs/docs/blob/main/user-manual/how-to/vsctl.md).
@@ -16,7 +16,9 @@ Before using Cloud Function, you must meet the following prerequisites.
 
 ## Create Subscription Use Cloud Functions
 
-When you create a subscription `protocol` use "gcloud-functions", then Vanus will send events to your function. for example:
+When you create a subscription setting the `protocol` flag as "gcloud-functions", Vanus will send all available events to your Google Cloud function.
+
+ Use the command below to create your Subscription：
 
 ```bash
 vsctl subscription create \
@@ -29,7 +31,7 @@ vsctl subscription create \
 
 The following params are also required:
 
-1. `sink`: your Cloud Function URL.
+1. `sink`: your cloud function URL.
 2. `credential-type` is must be "gcloud".
 3. `credential` is a file which save your gcloud [service account].
 
