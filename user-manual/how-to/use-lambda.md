@@ -1,6 +1,6 @@
 # Use Lambda
 
-Vanus supports direct sending events to [AWS Lambda][lambda]. The following page will teach you how to use Lambda with vsctl command in Vanus.
+Vanus supports sending direct events to  [AWS Lambda][lambda]. The following page will teach you how to use Lambda with vsctl command in Vanus.
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@ Before using Lambda, you must meet the following prerequisites:
 4. Have a [Lambda function][lambda function]
 5. The "lambda:InvokeFunction" [permission] grant for your AWS user account
 
-## Create Subscription Use Lambda
+## Create a Subscription to Use with Lambda
 
 When you create a subscription setting the `protocol` flag as "aws-lambda", Vanus will send all available events to your aws-lambda.
 
