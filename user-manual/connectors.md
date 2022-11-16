@@ -12,8 +12,8 @@ in and out of that service on behalf of user applications, allowing you to focus
 
 Vance Connect consists of the following content:
 
-- [**Source**][connectors-source] - A source connector obtains data from an underlying data producer and delivers it to targets, after original data has been transformed into CloudEvents. Vance doesn't limit the way how a source retrieves data. (e.g., A source may pull data from a message queue or act as an HTTP server waiting for data sent to it).
-- [**Sink**][connectors-sink] - A sink connector receives CloudEvents and does some specific business logics. (e.g., A MySQL Sink extracts useful data from CloudEvents and writes them to a MySQL database).
+- [**Source**][connectors-source]
+- [**Sink**][connectors-sink]
 
 
 
