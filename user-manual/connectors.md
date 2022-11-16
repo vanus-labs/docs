@@ -13,7 +13,6 @@ in and out of that service on behalf of user applications, allowing you to focus
 Vance Connect consists of the following content:
 
 - [**Source**][connectors-source]
-
 - [**Sink**][connectors-sink]
 
 
