@@ -51,6 +51,8 @@ const sidebars = {
         'how-to/manage-subscription',
         'how-to/manage-dlq',
         'how-to/vsctl',
+        'how-to/use-lambda',
+        'how-to/use-gcloud-functions'
       ],
     },
     {
