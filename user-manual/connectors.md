@@ -12,10 +12,6 @@ in and out of that service on behalf of user applications, allowing you to focus
 
 Vanus Connect consists of the following content:
 
-- [**Source Connector**][connectors-source]
-- [**Sink Connector**][connectors-sink]
+- [**Source Connector**](connectors/source.md)
+- [**Sink Connector**](connectors/sink.md)
 
-
-[connectors-source]: connectors/source.md
-
-[connectors-sink]: connectors/sink.md
