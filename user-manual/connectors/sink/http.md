@@ -77,7 +77,7 @@ Here is an example of a configuration file for the HTTP Sink.
 Create your config.json and secret.json, and mount them to
 specific paths to run the HTTP Sink using the following command.
 
->  docker run -v $(pwd)/secret.json:/vance/secret/secret.json -v $(pwd)/config.json:/vance/config/config.json -p 8080:8080 --rm vancehub/sink-http
+>  docker run -v $(pwd)/config.json:/vance/config/config.json -p 8080:8080 --rm vancehub/sink-http
 
 ### Verify the HTTP Sink
 
