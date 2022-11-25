@@ -88,7 +88,8 @@ const sidebars = {
           },
           items: [
             'connectors/sink/mysql',
-            'connectors/sink/s3'
+            'connectors/sink/s3',
+            'connectors/sink/http'
           ],
         },
       ],
