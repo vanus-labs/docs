@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // 链接
 const url_github = 'https://github.com/linkall-labs/docs';
 const url_slack = 'https://join.slack.com/t/vanusworkspace/shared_invite/zt-1jilbbfo2-NxiFG0VOo8ABGCCNaeNfcA';
-const url_twitter = 'https://twitter.com/Vanus_labs';
+const url_twitter = 'https://twitter.com/Vanus_dev';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -43,7 +43,7 @@ const config = {
       ({
         docs: {
           routeBasePath: "/",
-          path: "user-manual",
+          path: "content",
           showLastUpdateTime: false,
           showLastUpdateAuthor: false,
           sidebarPath: require.resolve('./sidebars.js'),
