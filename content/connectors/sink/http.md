@@ -74,7 +74,7 @@ Here is an example of a configuration file for the HTTP Sink.
 | v_port    | v_port is used to specify the port HTTP Sink is listening on           | "8080"                  |
 
 ### Run the HTTP Sink with Docker
-Create your config.json and secret.json, and mount them to
+Create your config.json, and mount it to the
 specific paths to run the HTTP Sink using the following command.
 
 >  docker run -v $(pwd)/config.json:/vance/config/config.json -p 8080:8080 --rm vancehub/sink-http
