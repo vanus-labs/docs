@@ -31,7 +31,7 @@ the website.
 
 ### Code of Conduct
 
-Before start contributing, you should take a moment to read the [Vanus code of conduct](CODE_OF_CONDUCT.md).
+Before starting your contribution, you should take a moment to read the [Vanus code of conduct](CODE_OF_CONDUCT.md).
 
 ### Contributing guide
 
