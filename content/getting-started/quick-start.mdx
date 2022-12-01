@@ -1,6 +1,6 @@
----
-title: Quick Start
----
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Quick Start
 
 This page shows you how to start Vanus in minutes.
@@ -23,69 +23,112 @@ You can skip the step if you already have those.
 
 ### Vanus
 
-```shell
-kubectl apply -f https://download.linkall.com/all-in-one/v0.4.0.yml
+<Tabs >
+
+<TabItem label="Default" value="default">
+
+```bash
+kubectl apply -f https://download.linkall.com/all-in-one/v0.5.0.yml
 ```
 
-waiting a minute, run `kubectl get po -n vanus` to check the deployment, the expected output looks like below,
+</TabItem>
+
+<TabItem label="China" value="china">
+
+```bash
+kubectl apply -f https://download.linkall.com/all-in-one/v0.5.0.cn.yml
+```
+
+</TabItem>
+
+</Tabs>
+
+waiting a minute, and check the deployment
 
 ```shell
-vanus-controller-0                  1/1     Running   0             30s
-vanus-controller-1                  1/1     Running   0             30s
-vanus-controller-2                  1/1     Running   0             30s
-vanus-gateway-5fd85c7c-vnzcw        1/1     Running   0             30s
-vanus-store-0                       1/1     Running   0             30s
-vanus-store-1                       1/1     Running   0             30s
-vanus-store-2                       1/1     Running   0             30s
-vanus-trigger-75cb74dbbf-k8jsm      1/1     Running   0             30s
+kubectl get po -n vanus
+```
+the expected output looks like below,
+```shell
+NAME                             READY   STATUS    RESTARTS   AGE
+vanus-controller-0               1/1     Running   0          52s
+vanus-controller-1               1/1     Running   0          44s
+vanus-controller-2               1/1     Running   0          40s
+vanus-gateway-6b59dfbd47-wtxx2   1/1     Running   0          52s
+vanus-store-0                    1/1     Running   0          52s
+vanus-store-1                    1/1     Running   0          43s
+vanus-store-2                    1/1     Running   0          40s
+vanus-timer-5c4d475c58-4trnd     1/1     Running   0          52s
+vanus-timer-5c4d475c58-l222k     1/1     Running   0          52s
+vanus-trigger-69bf59658-jbb82    1/1     Running   0          52s
 ```
 
 ### Command Line Tool
 
-:::tip
-choose a right version based your arch and os: **linux-amd64**, **macos-arm64**
-:::
-
 **Firstly**, download **vsctl**, the command line tool of Vanus.
 
-```shell
-curl -O https://download.linkall.com/vsctl/v0.4.0/linux-amd64/vsctl
+<Tabs>
+<TabItem label="Linux" value="linux">
+
+```bash
+curl -O https://download.linkall.com/vsctl/v0.5.0/linux-amd64/vsctl
 chmod ug+x vsctl
-sudo mv vsctl /usr/local/bin
+mv vsctl /usr/local/bin
 ```
 
-**Secondly**, use `vsctl version` to check the installation
+</TabItem>
+
+<TabItem label="macOS" value="macos">
+
+```bash
+curl -O https://download.linkall.com/vsctl/v0.5.0/macos-arm64/vsctl
+chmod ug+x vsctl
+mv vsctl /usr/local/bin
+```
+
+</TabItem>
+</Tabs>
+
+
+**Secondly**, verify installation
 
 ```shell
+vsctl version
+```
+
+```buttonless
 +-----------+---------------------------------+
-|  Version  | v0.4.0                          |
+|  Version  | v0.5.0                          |
 |  Platform | linux/amd64                     |
-| GitCommit | 0e2d371                         |
-| BuildDate | 2022-11-01_03:47:49+0000        |
-| GoVersion | go version go1.18.7 linux/amd64 |
+| GitCommit | 4b3b4d0                         |
+| BuildDate | 2022-11-29_15:10:22+0000        |
+| GoVersion | go version go1.19.3 linux/amd64 |
 +-----------+---------------------------------+
 ```
 
 ### Set Vanus Endpoint
 
-use `minikube service list -n vanus` to get **Vanus Gateway**'s endpoint
+get **Vanus Gateway**'s endpoint
 
 ```shell
-|-----------|------------------|-----------------|---------------------------|
-| NAMESPACE |       NAME       |   TARGET PORT   |            URL            |
-|-----------|------------------|-----------------|---------------------------|
-| vanus     | vanus-controller | No node port    |
-| vanus     | vanus-gateway    | put/8080        | http://192.168.49.2:30001 |
-|           |                  | get/8081        | http://192.168.49.2:30002 |
-|           |                  | ctrl-proxy/8082 | http://192.168.49.2:30003 |
-|-----------|------------------|-----------------|---------------------------|
+minikube service list -n vanus
+```
+
+```buttonless
+|-----------|------------------|------------------|---------------------------|
+| NAMESPACE |       NAME       |   TARGET PORT    |            URL            |
+|-----------|------------------|------------------|---------------------------|
+| vanus     | vanus-controller | No node port     |
+| vanus     | vanus-gateway    | proxy/8080       | http://192.168.49.2:30001 |
+|           |                  | cloudevents/8081 | http://192.168.49.2:30002 |
+|-----------|------------------|------------------|---------------------------|
 ```
 
 :::tip
 if you are using a normal k8s cluster, just use `kubectl get svc -n vanus` to find the endpoint
 :::
 
-use evn variable to tell the endpoint to vsctl
+use env variable to tell the endpoint to vsctl
 
 ```shell
 export VANUS_GATEWAY=192.168.49.2:30001
@@ -100,13 +143,13 @@ vsctl cluster controller topology
 output should look like
 
 ```shell
-+-------------------+--------+----------------------------------------------------+
-|        NAME       | LEADER |                      ENDPOINT                      |
-+-------------------+--------+----------------------------------------------------+
-| Leader-controller |  TRUE  | vanus-controller-1.vanus-controller.vanus.svc:2048 |
-+-------------------+--------+----------------------------------------------------+
-|      Gateway      |    -   |                                                    |
-+-------------------+--------+----------------------------------------------------+
++-----------------------+--------------------+
+|          NAME         |      ENDPOINT      |
++-----------------------+--------------------+
+|   Gateway Endpoints   | 192.168.49.2:30001 |
++-----------------------+--------------------+
+| CloudEvents Endpoints |  192.168.49.2:8081 |
++-----------------------+--------------------+
 ```
 
 ## Use-cases
@@ -192,17 +235,11 @@ vsctl subscription create \
 output should like below
 
 ```shell
-+---------------------+-------------+-----------------------------------+----------------------------------------------+-------------+
-|          ID         |   EVENTBUS  |                SINK               |                    FILTER                    | TRANSFORMER |
-+---------------------+-------------+-----------------------------------+----------------------------------------------+-------------+
-| 1656331986533051044 | quick-start | http://quick-display:80           | [                                            | ""          |
-|                     |             |                                   |   {                                          |             |
-|                     |             |                                   |     "exact": {                               |             |
-|                     |             |                                   |       "source": "quick-start-filter-section"  |             |
-|                     |             |                                   |     }                                        |             |
-|                     |             |                                   |   }                                          |             |
-|                     |             |                                   | ]                                            |             |
-+---------------------+-------------+-----------------------------------+----------------------------------------------+-------------+
++------------------+------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
+|        ID        | NAME | DISABLE |   EVENTBUS  |           SINK          | DESCRIPTION | PROTOCOL | SINKCREDENTIAL | CONFIG | OFFSETS | FILTER | TRANSFORMER |      CREATED_AT      |      UPDATED_AT      |
++------------------+------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
+| 0000004644000010 |      |  false  | quick-start | http://quick-display:80 |             |   http   |      null      |   {}   |   null  | ...    | null        | 2022-12-01T04:19:05Z | 2022-12-01T04:19:05Z |
++------------------+------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
 ```
 
 the subscription will subscribe all events from `--source` in `--eventbus`. and only events matched with `--filter`
@@ -236,7 +273,7 @@ NOTE: use the **POD_NAME** you got from step 1.
 :::
 
 ```shell
-kubectl logs vanus-display-**************
+kubectl logs vanus-display-************** -n vanus
 ```
 
 the output should look like below, the two events whose source are matched are displayed.
@@ -285,18 +322,18 @@ vsctl subscription create \
         "dataMsg": "$.data.msg",
         "dataSource": "$.source"
       },
-      "template": "{\"transKey\": \"${dataMsg}\",\"transSource\":\"${dataSource}\"}"
+      "template": "{\"transKey\": \"<dataMsg>\",\"transSource\":\"<dataSource>\"}"
     }'  
 ```
 
 output looks like:
 
 ```shell
-+---------------------+-------------+-------------------------+--------+---------------
-|          ID         |   EVENTBUS  |           SINK          | FILTER |  TRANSFORMER |
-+---------------------+-------------+-------------------------+--------+---------------
-| 1656334253024543243 | quick-start | http://quick-display:80 | null   |   "{ ... }"   |
-+---------------------+-------------+-------------------------+--------+---------------  
++------------------+------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
+|        ID        | NAME | DISABLE |   EVENTBUS  |           SINK          | DESCRIPTION | PROTOCOL | SINKCREDENTIAL | CONFIG | OFFSETS | FILTER | TRANSFORMER |      CREATED_AT      |      UPDATED_AT      |
++------------------+------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
+| 0000007DB8000010 |      |  false  | quick-start | http://quick-display:80 |             |   http   |      null      |   {}   |   null  | null   | ...         | 2022-12-01T04:21:27Z | 2022-12-01T04:21:27Z |
++------------------+------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
 ```
 
 2. **send events to `quick-start`**
@@ -311,7 +348,7 @@ vsctl event put quick-start \
 3. **back to display server for validation**
 
 ```shell
-kubectl logs vanus-display-74b65fcff4-pk9rm
+kubectl logs vanus-display-************** -n vanus
 ```
 
 the transformed event has been displayed.
