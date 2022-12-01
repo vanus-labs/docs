@@ -11,7 +11,7 @@ The following document will teach you how to build a simple consumer to consume 
 **Prerequisites**
 
 To consume events from Vanus, you must meet the following prerequisites:
-1. Have a running [Vanus](../../getting-started/installation.md) cluster.
+1. Have a running [Vanus](../../getting-started/installation) cluster.
 2. Have [vsctl](../vsctl.md).
 3. Have created a subscription in Vanus. Please refer to this section of [Manage Subscriptions](../manage-subscription.md) to create a subscription.
 
