@@ -4,7 +4,7 @@ title: Manage Subscriptions
 
 # Manage Subscriptions
 
-The following page will teach you how to manage all of your Subsciptions with `vsctl` command.
+The following page will teach you how to manage all of your Subscriptions with `vsctl` command.
 
 ## Create Subscription
 
@@ -27,11 +27,14 @@ vsctl subscription create --eventbus test --sink http://localhost:8080
       --credential-file string     sink credential file
       --credential-type string     sink credential type: aws or gcloud
       --delivery-timeout int32     event delivery to sink timeout, unit millisecond
+      --description string         subscription description
+      --disable                    whether disable the subscription (just create if disable=true)
       --eventbus string            eventbus name to consuming
       --filters string             filter event you interested, JSON format required
       --from string                consume events from, latest,earliest or RFC3339 format time
   -h, --help                       help for create
       --max-retry-attempts int32   event delivery fail max retry attempts
+      --name string                subscription name
       --protocol string            protocol,http or aws-lambda or gcloud-functions (default "http")
       --rate-limit int32           rate limit
       --sink string                the event you want to send to
@@ -49,7 +52,7 @@ vsctl subscription info
 ### Example
 
 ```shell
-vsctl subscription detail --id 1660283211867739000
+vsctl subscription info --id 1660283211867739000
 ```
 
 ### Options
