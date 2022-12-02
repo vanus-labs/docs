@@ -43,9 +43,7 @@ challenge to build a large-scale EDA application, and Vanus provides **plenty of
 **transformation mechanisms** to make the process of building an EDA Application easier.
 
 ### Open Source
-:::info
-The Vanus repository is private at this time. We are preparing to make it ready for the public; you can track it on [Roadmap](./roadmap).
-:::
-Vanus is an entirely Open Source project, which is public under the Apache 2.0 License. You can find Vanus on GitHub.
+
+Vanus is an entirely Open Source project, which is public under the Apache 2.0 License. You can find Vanus on [GitHub](https://github.com/linkall-labs/vanus).
 
 For more details about Vanus, you can find it in our [Concepts](concepts) section.
