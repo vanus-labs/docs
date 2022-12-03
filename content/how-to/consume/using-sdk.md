@@ -38,7 +38,7 @@ func main() {
 		panic(fmt.Sprintf("failed to listen, err: %s\n", err.Error()))
 	}
 
-	// step 2: Create a clouedevents client
+	// step 2: Create a cloudevents client
 	ceClient, err := ce.NewClientHTTP(ce.WithListener(ls))
 	if err != nil {
 		panic(fmt.Sprintf("failed to init cloudeevents client, err: %s", err.Error()))
