@@ -28,27 +28,25 @@ import (
 	"net"
 
 	ce "github.com/cloudevents/sdk-go/v2"
-	"github.com/cloudevents/sdk-go/v2/client"
-	cehttp "github.com/cloudevents/sdk-go/v2/protocol/http"
 )
 
 func main() {
 	ctx := context.Background()
 	// step 1: Create a tcp listener
-	ls, err := net.Listen("tcp", "0.0.0.0:6789")
+	ls, err := net.Listen("tcp", ":6789")
 	if err != nil {
 		panic(fmt.Sprintf("failed to listen, err: %s\n", err.Error()))
 	}
 
-	// step 2: Create a http client connected to the tcp listener
-	c, err := client.NewHTTP(cehttp.WithListener(ls))
+	// step 2: Create a cloudevents client
+	ceClient, err := ce.NewClientHTTP(ce.WithListener(ls))
 	if err != nil {
 		panic(fmt.Sprintf("failed to init cloudevents client, err: %s", err.Error()))
 	}
 
-	fmt.Println("listen 0.0.0.0:6789...")
+	fmt.Println("start event receiver")
 	// step 3: Start the receiver and do business logic
-	err = c.StartReceiver(ctx, func(event ce.Event) {
+	err = ceClient.StartReceiver(ctx, func(event ce.Event) {
 		fmt.Printf("received an event: %s\n", event.String())
 	})
 	if err != nil {
