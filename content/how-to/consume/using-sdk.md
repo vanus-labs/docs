@@ -41,7 +41,7 @@ func main() {
 	// step 2: Create a cloudevents client
 	ceClient, err := ce.NewClientHTTP(ce.WithListener(ls))
 	if err != nil {
-		panic(fmt.Sprintf("failed to init cloudeevents client, err: %s", err.Error()))
+		panic(fmt.Sprintf("failed to init cloudevents client, err: %s", err.Error()))
 	}
 
 	fmt.Println("start event receiver")
