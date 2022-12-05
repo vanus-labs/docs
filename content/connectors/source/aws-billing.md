@@ -41,23 +41,22 @@ You should prepare these prerequisites first for running AWS billing Source.
 - A Properly settled [IAM] policy for your AWS user account.
 - An AWS account configured with [Access Keys][access-keys].
 
-## AWS Billing Source Configs
+### Step 1: Create a Config.json file
+Create a new file name config.json with the following command.
+> vim config.json
+or
+> vi config.json
 
-Users can specify their configs by either setting environments variables or mount a config.json to
-`/vance/config/config.json` when they run the connector. Find examples of setting configs [here][config].
-
-Here is an example of a configuration file for the AWS billing Source.
-
+### Step 2: Insert the configurations.
+Press `I` to modify the file and add the following configurations. Use the chart bellow to modify the configs.
  ```json
- $ vim config.json
  {
-   "v_target": "http://host.docker.internal:8081",
-   "access_key_id": "AKIAIOSFODNN7EXAMPLE",
-   "secret_access_Key": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
- }
+  "v_target": "http://host.docker.internal:8081",
+  "access_key_id": "AKIAIOSFODNN7EXAMPLE",
+  "secret_access_Key": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+}
  ```
-
-### Config Fields of the AWS Billing Source
+### Config Fields of the Source Connector
 
 | name              | requirement | description                                                                     |
 |-------------------|-------------|---------------------------------------------------------------------------------|
@@ -67,21 +66,25 @@ Here is an example of a configuration file for the AWS billing Source.
 | endpoint          | optional    | the aws cost explorer api endpoint,default <https://ce.us-east-1.amazonaws.com> |
 | pull_hour         | optional    | aws billing source pull billing data time(unit hour),default 2                  |
 
-### Run the AWS billing Source with Docker
-> docker run -v $(pwd)/config.json:/vance/config/config.json -p 8082:8082 --rm vancehub/source-aws-billing
-
-### Verify the AWS billing Source
-You can verify if the AWS billing Source works properly by running our Display Sink
-
-> docker run -p 8081:8081 --rm vancehub/sink-display
-
 :::tip
-Set the v_target as http://host.docker.internal:8081
+Exit `vim` and `vi` press `ESC` and `shift` + `:` afterwards `wq` and `ENTER`.
 :::
 
-Here is the example output from Display Sink.
+### Step 3: Run the docker image
+Run The connector with the following command.
+> docker run -v $(pwd)/config.json:/vance/config/config.json --rm vancehub/source-aws-billing
 
-```shell 
+
+### (Optional) Verify the Source connector
+**step 1**
+
+Start display Sink with the following command:
+> docker run -p 8081:8081 --rm vancehub/sink-display
+
+### Result
+
+ ```shell
+ $ vim config.json
  [08:11:35:719] [INFO] - com.linkall.sink.display.DisplaySink.lambda$start$0(DisplaySink.java:21) - receive a new event, in total: 1
  [08:11:35:770] [INFO] - com.linkall.sink.display.DisplaySink.lambda$start$0(DisplaySink.java:23) - {
    "id": "4395ffa3-f6de-443c-bf0e-bb9798d26a1d",
@@ -99,7 +102,6 @@ Here is the example output from Display Sink.
    "unit": "USD"
   }
  }
-
  ```
 
 [vc]: https://github.com/linkall-labs/vance-docs/blob/main/docs/concept.md
