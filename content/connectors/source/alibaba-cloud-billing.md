@@ -59,22 +59,22 @@ a AliCloud Billing Source Connector.
 - Have container runtime (i.e., docker).
 - Have a AliCloud account.
 
-### Set AliCloud billing Source Configurations
-When running the Connector, you can specify your configs by either setting
-environments variables or mounting a config.json to `/vance/config/config.json`.
+### Step 1: Create a Config.json file
+Create a new file name config.json with the following command.
+> vim config.json
+or
+> vi config.json
 
-Here is an example of a configuration file for the AliCloud billing Source.
-
- ```shell
- $ vim config.json
+### Step 2: Insert the configurations.
+Press `I` to modify the file and add the following configurations. Use the chart bellow to modify the configs.
+ ```json
  {
-   "v_target": "http://host.docker.internal:8081",
-   "access_key_id": "YOUR_ACCESS_KEY",
-   "secret_access_Key": "YOUR_SECRET_KEY"
- }
+  "v_target": "http://host.docker.internal:8081",
+  "access_key_id": "YOUR_ACCESS_KEY",
+  "secret_access_Key": "YOUR_SECRET_KEY"
+}
  ```
-
-### Config Fields of AliCloud Billing Source
+### Config Fields of the Source Connector
 
 | name              | requirement | description                                                         |
 |-------------------|-------------|---------------------------------------------------------------------|
@@ -84,25 +84,27 @@ Here is an example of a configuration file for the AliCloud billing Source.
 | endpoint          | optional    | the AliCloud business api endpoint,default business.aliyuncs.com    |
 | pull_hour         | optional    | AliCloud billing source pull billing data time(unit hour),default 2 |
 
-### Run the AliCloud billing Source with Docker
-Create your `config.json`, and mount it to specific
-paths to run the AliCloud billing Source using the following command.
-
- ```shell
- docker run -v $(pwd)/config.json:/vance/config/config.json -p 8082:8082 --rm vancehub/source-alicloud-billing
- ```
-
-You can verify if the AliCloud billing Source works properly by running the Display Sink Connector
-and by triggering a event.
-> docker run -p 8081:8081 --rm vancehub/sink-display
-
 :::tip
-Set the v_target as http://host.docker.internal:8081
+Exit `vim` and `vi` press `ESC` and `shift` + `:` afterwards `wq` and `ENTER`.
 :::
 
-The result in Display Sink.
- ``` json
- {
+### Step 3: Run the docker image
+Run The connector with the following command.
+> docker run -v $(pwd)/config.json:/vance/config/config.json -p 8082:8082 --rm vancehub/source-alicloud-billing
+
+
+### (Optional) Verify the Source connector
+**step 1**
+
+Start display Sink with the following command:
+> docker run -p 8081:8081 --rm vancehub/sink-display
+
+### Result
+
+ ```shell
+
+{
+  {
    "id" : "42d5b039-daef-4071-8584-e61df8fc1354",
    "source": "cloud.alicloud.billing",
    "specversion" : "V1",
@@ -136,6 +138,8 @@ The result in Display Sink.
     "SubscriptionType": "PayAsYouGo"
    }
  }
+ ```
+
 
 [vc]: https://github.com/linkall-labs/vance-docs/blob/main/docs/concept.md
 [config]: https://github.com/linkall-labs/vance-docs/blob/main/docs/connector.md
