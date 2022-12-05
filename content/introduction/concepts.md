@@ -66,7 +66,7 @@ Once it arrives in the Eventbus, the event will wait for the timer to finish bef
 
 ## Vanus Connect
 
-Connect allows you to skip the complex integration with external services by offering out-of-the-box connectors.
+Vanus Connect allows you to skip the complex integration with external services by offering out-of-the-box connectors.
 Each connector acts as a proxy between outside services and your system, enabling you to have faster integrations with
 no codes.
 All data produced or processed by our connectors conforms to the CloudEvents specification, which helps enterprises
