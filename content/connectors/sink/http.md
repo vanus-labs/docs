@@ -82,7 +82,7 @@ Run The connector with the following command.
 To verify the HTTP Sink, you should send a CloudEvents to the HTTP Sink with the following `curl` command.
  > curl -X POST -d '{"specversion":"0.3","id":"b25e2717-a470-45a0-8231-985a99aa9416","type":"com.github.pull.create","source":"https://github.com/cloudevents/spec/pull/123","time":"2019-07-04T17:31:00.000Z","datacontenttype":"application/json","data":{"Quick-Start":"This is a CloudEvent"}}' -H'Content-Type:application/cloudevents+json' http://localhost:8080 
 
-### result
+### Result
 
  ```shell
 {
