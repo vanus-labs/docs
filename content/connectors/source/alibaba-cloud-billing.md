@@ -90,7 +90,7 @@ Exit `vim` and `vi` press `ESC` and `shift` + `:` afterwards `wq` and `ENTER`.
 
 ### Step 3: Run the docker image
 Run The connector with the following command.
-> docker run -v $(pwd)/config.json:/vance/config/config.json -p 8082:8082 --rm vancehub/source-alicloud-billing
+> docker run -v $(pwd)/config.json:/vance/config/config.json --rm vancehub/source-alicloud-billing
 
 
 ### (Optional) Verify the Source connector
