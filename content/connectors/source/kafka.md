@@ -45,24 +45,24 @@ This quick start will guide you through the process of running an Kafka Source C
 - Have a [kafka server](https://kafka.apache.org/quickstart).
 - have a or multiple topics. `bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092`
 
-### Set Kafka Source Configurations
-Users can specify their configs by either setting environments variables or mounting a config.json to
-`/vance/config/config.json` when they run the connector. Find examples of setting configs [here][config].
+### Step 1: Create a Config.json file
+Create a new file name config.json with the following command.
+> vim config.json
+or
+> vi config.json
 
-Here is an example of the configuration file.
- ```shell
- $ vim config.json
+### Step 2: Insert the configurations.
+Press `I` to modify the file and add the following configurations. Use the chart bellow to modify the configs.
+ ```json
  {
    "v_target": "http://host.docker.internal:8081",
-   "KAFKA_SERVER_URL": "localhost",
+   "KAFKA_SERVER_URL": "host.docker.internal",
    "KAFKA_SERVER_PORT": "8082",
    "CLIENT_ID": "KafkaSource",
    "TOPIC_LIST": "topic1"
  }
  ```
-
 ### Config Fields of the kafka Source
-
 | Configs   | Description                                                                     | Example                               |
 |:----------|:--------------------------------------------------------------------------------|:--------------------------------------|
 | v_target  | v_target is used to specify the target URL HTTP Source will send CloudEvents to | "http://localhost:8081"               |
@@ -70,21 +70,40 @@ Here is an example of the configuration file.
 | KAFKA_SERVER_PORT    | v_port is used to specify the port Kafka Source is listening on                  | "8082"                                |
 | CLIENT_ID    |  An optional identifier for multiple Kafka Sources that is passed to a Kafka broker with every request.                  | "kafkaSource"                         |
 | TOPIC_LIST    | The source will listen to the topic or topics specified.                   | "topic1"  or "topic1, topic2, topic3" |
+:::tip
+Exit `vim` and `vi` press `ESC` and `shift` + `:` afterwards `wq` and `ENTER`.
+:::
 
-### Run the Kafka Source with Docker
-Create your `config.json`, and mount it to specific paths to run the Kafka Source using the following command.
-
+### Step 3: Run the docker image
+Run The connector with the following command.
  > docker run -v $(pwd)/config.json:/vance/config/config.json --rm vancehub/source-kafka
 
-### Verify the Kafka Source
-You can verify if the Kafka Source works properly by running the Display Sink Connector and by sending a message directly to the kafka broker.
+
+### (Optional) Verify the Source connector
+**step 1** 
 
 Start display Sink with the following command:
-> docker run -v $(pwd)/config.json:/vance/config/config.json -p 8081:8081 --rm vancehub/source-kafka
+> docker run -p 8081:8081 --rm vancehub/sink-display
 
-Send a message in Kafka with the following command:
-> bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
+**step 2**
 
-:::tip
-Set the v_target as http://host.docker.internal:8081
-:::
+Send a message to the Kafka broker with the following command:
+> bin/kafka-console-producer.sh --topic topic1 --bootstrap-server localhost:9092
+
+**step 3** 
+Send the message hello world!
+> Hello world!
+### result
+
+ ```shell
+ $ vim config.json
+{
+  "id" : "ef26ed7b-9377-4bf5-b8d4-4fc6347e4fa2",
+  "source" : "kafka.host.docker.internal.topic1",
+  "specversion" : "V1",
+  "type" : "kafka.message",
+  "datacontenttype" : "plain/text",
+  "time" : "2022-12-05T09:00:42.618Z",
+  "data" : "Hello world!"
+}
+ ```
