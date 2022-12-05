@@ -76,7 +76,7 @@ Vanus Connect consists of the following terms:
 
 - **Connector** - A connector is an image that interacts with a specific external service or underlying data source
   (e.g., Databases) on behalf of user applications.
-  In Connect, a connector is either a Source or a Sink.
+  In Vanus Connect, a connector is either a Source or a Sink.
 - **Source** - A source connector obtains data from an underlying data producer and delivers it to targets, after
   original data has been transformed into CloudEvents. It doesn't limit the way how a source retrieves data.
   (e.g., A source may pull data from a message queue or act as an HTTP server waiting for data sent to it).
