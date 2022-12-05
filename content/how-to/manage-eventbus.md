@@ -11,13 +11,15 @@ The following page will teach you how to manage all of your Eventbus with `vsctl
 The `create` sub-command from `vsctl eventbus` lets you create an Eventbus in Vanus.
 
 ```console
-$ vsctl eventbus create -h         
+$ vsctl eventbus create -h
 create a eventbus
 
 Usage:
   vsctl eventbus create [flags]
 
 Flags:
+      --description string   subscription description
+      --name string          eventbus name to deleting
   -h, --help          help for create
       --name string   eventbus name to deleting
 

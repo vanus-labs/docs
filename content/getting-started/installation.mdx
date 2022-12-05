@@ -1,7 +1,3 @@
----
-title: Installation
----
-
 # Installation
 
 The document will teach you how to install Vanus in a Kubernetes environment.
@@ -11,6 +7,8 @@ The document will teach you how to install Vanus in a Kubernetes environment.
 If you want to run Vanus locally, we suggest that you use [minikube](https://minikube.sigs.k8s.io/docs/start).
 We also provide an [interactive Kubernetes environment](https://play.linkall.com) to simply deploy and try Vanus in your browser.
 :::
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 Before installing Vanus, you must meet the following prerequisites:
 
@@ -21,9 +19,25 @@ Before installing Vanus, you must meet the following prerequisites:
 
 Install Vanus by running the command:
 
-```shell
-kubectl apply -f https://download.linkall.com/all-in-one/v0.4.0.yml
+<Tabs >
+
+<TabItem label="Default" value="default">
+
+```bash
+kubectl apply -f https://download.linkall.com/all-in-one/v0.5.0.yml
 ```
+
+</TabItem>
+
+<TabItem label="China" value="china">
+
+```bash
+kubectl apply -f https://download.linkall.com/all-in-one/v0.5.0.cn.yml
+```
+
+</TabItem>
+
+</Tabs>
 
 After the installation is finished, we will need to monitor the components until the status of each component shows Running. You can monitor the status of the components by running the following command:
 
