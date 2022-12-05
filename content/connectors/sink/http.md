@@ -48,48 +48,47 @@ This quick start will guide you through the process of running an HTTP Sink conn
 ### Prerequisites
 - A container runtime (i.e., docker).
 
+### Step 1: Create a Config.json file
+Create a new file name config.json with the following command.
+> vim config.json
+or
+> vi config.json
 
-## HTTP Sink Configs
-
-Users can specify their configs by either setting environments variables or mount a config.json to
-`/vance/config/config.json` when they run the connector. Find examples of setting configs [here][config].
-
-### Set HTTP Sink Configurations
-You can specify your configs by either setting environments
-variables or mounting a config.json to `/vance/config/config.json`
-when running the connector.
-
-Here is an example of a configuration file for the HTTP Sink.
- ```json 
- $ vim config.json
+### Step 2: Insert the configurations.
+Press `I` to modify the file and add the following configurations. Use the chart bellow to modify the configs.
+ ```json
  {
-   "v_target": "http://localhost:8081",
-   "v_port": "8080",
- }
+  "v_target": "http://localhost:8081",
+  "v_port": "8080"
+}
  ```
 
+### Config Fields of the HTTP Sink
 | Configs   | Description                                                            | Example                 |
 |:----------|:-----------------------------------------------------------------------|:------------------------|
 | v_target  | v_target is used to specify the target URL HTTP Sink will send data to | "http://localhost:8081" |
 | v_port    | v_port is used to specify the port HTTP Sink is listening on           | "8080"                  |
 
-### Run the HTTP Sink with Docker
-Create your config.json, and mount it to the
-specific paths to run the HTTP Sink using the following command.
+:::tip
+Exit `vim` and `vi` press `ESC` and `shift` + `:` afterwards `wq` and `ENTER`.
+:::
 
->  docker run -v $(pwd)/config.json:/vance/config/config.json -p 8080:8080 --rm vancehub/sink-http
+### Step 3: Run the docker image
+Run The connector with the following command.
+> docker run -v $(pwd)/config.json:/vance/config/config.json -p 8080:8080 --rm vancehub/sink-http
 
-### Verify the HTTP Sink
 
-To verify the HTTP Sink, you should send CloudEvents to the address of HTTP Sink. Try to use the  following `curl` command.
+### (Optional) Verify the Source connector
+To verify the HTTP Sink, you should send a CloudEvents to the HTTP Sink with the following `curl` command.
+ > curl -X POST -d '{"specversion":"0.3","id":"b25e2717-a470-45a0-8231-985a99aa9416","type":"com.github.pull.create","source":"https://github.com/cloudevents/spec/pull/123","time":"2019-07-04T17:31:00.000Z","datacontenttype":"application/json","data":{"Quick-Start":"This is a CloudEvent"}}' -H'Content-Type:application/cloudevents+json' http://localhost:8080 
 
-```shell 
- > curl -X POST 
- > -d '{"specversion":"0.3","id":"b25e2717-a470-45a0-8231-985a99aa9416","type":"com.github.pull.create","source":"https://github.com/cloudevents/spec/pull/123","time":"2019-07-04T17:31:00.000Z","datacontenttype":"application/json","data":{"Quick-Start":"This is a CloudEvent"}}' 
- > -H'Content-Type:application/cloudevents+json' 
- > http://localhost:8080 
- ``` 
+### result
 
+ ```shell
+{
+  "Quick-Start" : "This is a CloudEvent"
+}
+ ```
 
 [vc]: https://github.com/linkall-labs/vance-docs/blob/main/docs/concept.md
 [config]: https://github.com/linkall-labs/vance-docs/blob/main/docs/connector.md
