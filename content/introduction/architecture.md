@@ -57,7 +57,7 @@ Vanus Connect is a set of producers and consumers out-of-box to provide interope
 ### Source Connector
 
 A source connector obtains data from an underlying data producer and delivers it to targets, after the original data 
-has been transformed into CloudEvents. Vance doesn't limit the way a source retrieves data. (e.g., A source may pull 
+has been transformed into CloudEvents. It doesn't limit the way a source retrieves data. (e.g., A source may pull 
 data from a message queue or act as an HTTP server waiting for data to be sent to it).
 
 ### Sink Connector
