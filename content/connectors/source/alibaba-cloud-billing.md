@@ -70,27 +70,50 @@ Press `I` to modify the file and add the following configurations. Use the chart
  ```json
  {
   "v_target": "http://host.docker.internal:8081",
-  "access_key_id": "YOUR_ACCESS_KEY",
-  "secret_access_Key": "YOUR_SECRET_KEY"
+  "endpoint": "business.aliyuncs.com",
+  "pull_hour": "2"
 }
  ```
 ### Config Fields of the Source Connector
 
-| name              | requirement | description                                                         |
-|-------------------|-------------|---------------------------------------------------------------------|
-| v_target          | required    | target URL will send CloudEvents to                                 |
-| access_key_id     | required    | the AliCloud account [accessKeyID][accessKey]                       |
-| secret_access_Key | required    | the AliCloud account [secretAccessKey][accessKey]                   |
-| endpoint          | optional    | the AliCloud business api endpoint,default business.aliyuncs.com    |
-| pull_hour         | optional    | AliCloud billing source pull billing data time(unit hour),default 2 |
+| name              | requirement | default               | description                                               |
+|-------------------|-------------|-----------------------|-----------------------------------------------------------|
+| v_target          | required    |                       | target URL will send CloudEvents to                       |
+| endpoint          | optional    | business.aliyuncs.com | the AliCloud business api endpoint                        |
+| pull_hour         | optional    | 2                     | AliCloud billing source pull billing data time(unit hour) |
+
+:::tip
+Exit `vim` and `vi` press `ESC` and `shift` + `:` afterwards `wq` and `ENTER`.
+:::
+### Step 3: Create a secret file
+Create a new file name secret.json with the following command.
+> vim secret.json
+or
+> vi secret.json
+
+### Step 4: Insert the secret configurations.
+Press `I` to modify the file and add the following configurations. Use the chart bellow to modify the configs.
+ ```json
+ {
+  "access_key_id": "YOUR_ACCESS_KEY",
+  "secret_access_Key": "YOUR_SECRET_KEY"
+}
+ ```
+
+### Secret Config Fields of the Source Connector
+| name              | requirement | default  | description                                       |
+|-------------------|-------------|----------|---------------------------------------------------|
+| access_key_id     | required    |          | the AliCloud account [accessKeyID][accessKey]     |
+| secret_access_Key | required    |          | the AliCloud account [secretAccessKey][accessKey] |
+
 
 :::tip
 Exit `vim` and `vi` press `ESC` and `shift` + `:` afterwards `wq` and `ENTER`.
 :::
 
-### Step 3: Run the docker image
+### Step 5: Run the docker image
 Run The connector with the following command.
-> docker run -v $(pwd)/config.json:/vance/config/config.json --rm vancehub/source-alicloud-billing
+> docker run -v $(pwd)/secret.json:/vance/secret/secret.json -v $(pwd)/config.json:/vance/config/config.json --rm vancehub/source-alicloud-billing
 
 
 ### (Optional) Verify the Source connector
