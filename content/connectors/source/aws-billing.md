@@ -53,7 +53,7 @@ Press `I` to modify the file and add the following configurations. Use the chart
  {
   "v_target": "http://host.docker.internal:8081",
   "access_key_id": "AKIAIOSFODNN7EXAMPLE",
-  "secret_access_Key": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+  "secret_access_Key": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 }
  ```
 ### Config Fields of the Source Connector
@@ -70,10 +70,28 @@ Press `I` to modify the file and add the following configurations. Use the chart
 Exit `vim` and `vi` press `ESC` and `shift` + `:` afterwards `wq` and `ENTER`.
 :::
 
-### Step 3: Run the docker image
+### Step 3: Create a Config.json file
+Create a new file name secret.json with the following command.
+> vim config.json
+or
+> vi config.json
+
+### Step 4: Insert the secret configurations.
+Press `I` to modify the file and add the following configurations. Use the chart bellow to modify the configs.
+ ```json
+ {
+  "access_key_id": "AKIAIOSFODNN7EXAMPLE",
+  "secret_access_Key": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+}
+ ```
+
+:::tip
+Exit `vim` and `vi` press `ESC` and `shift` + `:` afterwards `wq` and `ENTER`.
+:::
+
+### Step 5: Run the docker image
 Run The connector with the following command.
 > docker run -v $(pwd)/config.json:/vance/config/config.json --rm vancehub/source-aws-billing
-
 
 ### (Optional) Verify the Source connector
 **step 1**
