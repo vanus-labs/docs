@@ -19,4 +19,8 @@ Feel free to contact Vanus Community if you encounter any issues during the even
 - Email: contact@linkall.com
 - Twitter: [@VanusConmmunity](https://twitter.com/VanusConmmunity)
 
+## Status
+
+**The event is closed at 12/09/2022. Welcome to join other events.**
+
 **NOTE:** The final interpretation right of this activity belongs to the Vanus Community.
