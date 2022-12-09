@@ -89,6 +89,13 @@ Press `I` to modify the file and add the following configurations. Use the chart
 Exit `vim` and `vi` press `ESC` and `shift` + `:` afterwards `wq` and `ENTER`.
 :::
 
+### Secret Config Fields of the Source Connector
+| name              | requirement | default  | description                                  |
+|-------------------|-------------|----------|----------------------------------------------|
+| access_key_id     | required    |          | the aws account [accessKeyID][accessKey]     |
+| secret_access_Key | required    |          | the aws account [secretAccessKey][accessKey] |
+
+
 ### Step 5: Run the docker image
 Run The connector with the following command.
 > docker run -v $(pwd)/config.json:/vance/config/config.json --rm vancehub/source-aws-billing
