@@ -1,8 +1,22 @@
 # Function reference
 
+Function is used by [transformer](transformer.md#function) in Vanus. Every function is a map which key use command and value is an array which it's first param as function name, following as function param.
+
+The functon param support follow type:
+
+- Event JSON Path - support event attribute such as "\$.id" and event data such as "\$.data.service".
+- Define Variable - in [define](transformed.md#define) defined varialbe such as "\<variable>".
+- Constant - cunstant value such as "123".
+
+For example:
+
+```json
+    {"command":["create","$.data.source","$.source"]}
+```
+
 The following sections describe the functions, organized by what they do.
 
-**Topics**
+## Topics
 
 - [Structure](function-reference/structure.md)
   - create

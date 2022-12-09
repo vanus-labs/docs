@@ -1,3 +1,3 @@
 # Array functions
 
-Coming soon
+Coming soon.

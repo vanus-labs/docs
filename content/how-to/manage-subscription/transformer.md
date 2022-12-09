@@ -8,7 +8,7 @@ Because define variables that use JSON path, so if you define variables use Clou
 
 ## Use And Example
 
-When create a subscription,option param `transformer` has three param define, pipeline and template.
+When create a subscription,option param `transformer` has three param `define`, `pipeline` and `template`.
 
 For example:
 
@@ -31,8 +31,8 @@ vsctl subscription create \
 
 ## Define
 
-The param define is used to define variables. Use JSON path to reference items in the CloudEvent and store those values in variables.
-The following is an example Vanus Amazon Billing Source event.
+The param `define` is used to define variables. Use JSON path to reference items in the CloudEvent and store those values in variables.
+The following is an example event.
 
 ```json
 {
@@ -55,7 +55,7 @@ The following is an example Vanus Amazon Billing Source event.
 For instance, you can define variables like:
 
 ```json
-{
+"define": {
   "source": "$.source",
   "date": "$.data.date",
   "amount": "$.data.amount",
@@ -66,11 +66,13 @@ For instance, you can define variables like:
 
 ## Function
 
-The param pipeline is used to define Function. It syntax is use `command` as key which value is an array and it first param is function name, following is function param. For more about Function and Vanus support please refer to [Function](function-reference.md).
+The param `pipeline` is used to define function. pipeline is a nested array which every item is a function as a map which key use command and value is an array which it's first param as function name, following as function param.
+
+For more about and Vanus support function please go to [function reference](function-reference.md).
 
 For example:
 
-```shell
+```json
 "pipeline":[
     {"command":["create","$.data.source","$.source"]},
     {"command":["delete","$.vanuskey"]}

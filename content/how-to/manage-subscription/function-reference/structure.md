@@ -2,99 +2,99 @@
 
 ## create
 
-Creates a new object
+Create a new event attribute or event data path.
 
-**definition**
+### definition
 
 ["create", path, value]
 
-**Parameters**
+### Parameters
 
 - `"create"` – The name of the function.
-- `path` – The name of an new JSON key. If the key exist, an error is reported.
-- `value` – The data of the JSON key's. support constant、json value.
+- `path` – The name of event attribute or event data path. If the key exist, an error will be reported. The param must be event json path.
+- `value` – The value of event attribute or event data path. The param support all param types.
 
-**Example**
+### Example
 
-```
+```json
 {"command":["create","$.data.name","abc"]}
 ```
 
 ## delete
 
-Delete CE keys or objects.
+Delete a event attribue or event data path.
 
-**definition**
+### definition
 
 ["delete", path]
 
-**Parameters**
+### Parameters
 
 - `"delete"` – The name of the function.
-- `path` – The name of an existing JSON key. If the key nonexist, an error is reported.
+- `path` – The name of event attribue or event data path. If the key no exist, an error will be reported. The param must be event json path.
 
-**Example**
+### Example
 
-```
+```json
 {"command":["delete","$.data.name"]}
 ```
 
 ## move
 
-Move existing CE values to new keys.
+Move the existing event attribe or event data path.
 
-**definition**
+### definition
 
 ["move", fromPath, toPath]
 
-**Parameters**
+### Parameters
 
 - `"move"` – The name of the function.
-- `fromPath` – The name of an existing JSON key. If the key nonexist, an error is reported.
-- `toPath` – The name of an new JSON key. If the key exist, an error is reported.
+- `fromPath` – The name of event attribe or event data path. If the key no exist, an error will be reported. The param must be event json path.
+- `toPath` – The target name of event attribe or event data path. If the key exist, an error will be reported. The param must be event json path.
 
-**Example**
+### Example
 
-```
-{"command":["move","$.data.name","$.data.target.name"]}
+```json
+{"command":["move","$.data.first.name1","$.data.second.name2"]}
 ```
 
 ## rename
 
-Creates a new key with the different name, but with all of the same value. The old key is then removed from the CE keys.
+Rename the existing event attribe or event data path.
 
-**definition**
+### definition
 
 ["rename",oldPath, newPath]
 
-**Parameters**
+### Parameters
 
 - `"rename"` – The name of the function.
-- `oldPath` – The name of an existing JSON key. If the key nonexist, an error is reported.
-- `newPath` – The name of an new JSON key. If the key exist, an error is reported.
+- `oldPath` – The name of an existing event attribe or event data path. If the key no exist, an error will be reported. The param must be event json path.
+- `newPath` – The name of an new event attribe or event data path. If the key exist, an error will be reported. The param must be event json path.
 
-**Example**
+### Example
 
-```
-{"command":["rename","$.data.name","$.data.target.name"]}
+```json
+{"command":["rename","$.data.name1","$.data.name2"]}
 ```
 
 ## replace
 
-Replaces a specified characters with another for CE keys.
+Replaces the value of event attribe or event data path.
 
-**definition**
+### definition
 
 ["replace", path, value]
 
-**Parameters**
+### Parameters
 
 - `"replace"` – The name of the function.
-- `path` – The name of an existing JSON key. If the key nonexist, an error is reported.
-- `value` – The data for the JSON key's. support constant、json value.
+- `path` – The name of an existing event attribe or event data path. If the key no exist, an error will be reported. The param must be event json path.
+- `value` – The new value of event attribe or event data path. The param support all param types.
 
-**Example**
+### Example
 
-```
-{"command":["replace","$.data.name","newname"]}
+```json
+{"command":["replace","$.data.name","newValue"]}
 ```

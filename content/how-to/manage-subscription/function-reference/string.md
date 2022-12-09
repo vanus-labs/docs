@@ -4,18 +4,18 @@
 
 Changes each string in a value to uppercase.
 
-**definition**
+### definition
 
 ["upper_case", path]
 
-**Parameters**
+### Parameters
 
 - `"upper_case"` – The name of the function.
-- `path` – The name of an existing JSON key.
+- `path` – The name of an existing event attribute or event data path.
 
-**Example**
+### Example
 
-```
+```json
 {"command":["upper_case","$.data.name"]}
 ```
 
@@ -23,18 +23,18 @@ Changes each string in a value to uppercase.
 
 Changes each string in a value to lowercase.
 
-**definition**
+### definition
 
 ["lower_case", path]
 
-**Parameters**
+### Parameters
 
 - `"lower_case"` – The name of the function.
-- `path` – The name of an existing JSON key.
+- `path` – The name of an existing event attribute or event data path.
 
-**Example**
+### Example
 
-```
+```josn
 {"command":["lower_case","$.data.name"]}
 ```
 
@@ -42,19 +42,19 @@ Changes each string in a value to lowercase.
 
 Adds one or more characters, concatenating them as a prefix to the beginning of a value.
 
-**definition**
+### definition
 
 ["add_prefix", path, value]
 
-**Parameters**
+### Parameters
 
 - `"add_prefix"` – The name of the function.
-- `path` – The name of an existing JSON key.
-- `value` – Prefix string to append
+- `path` – The name of an existing event attribute or event data path.
+- `value` – The prefix string value to append; The param support all param types.
 
-**Example**
+### Example
 
-```
+```json
 {"command":["add_prefix","$.data.name","btest_"]}
 ```
 
@@ -62,19 +62,19 @@ Adds one or more characters, concatenating them as a prefix to the beginning of 
 
 Adds one or more characters, concatenating them as a suffix to the end of a value.
 
-**definition**
+### definition
 
 ["add_suffix", path, value]
 
-**Parameters**
+### Parameters
 
 - `"add_suffix"` – The name of the function.
-- `path` – The name of an existing JSON key.
-- `value` – Suffix string to append
+- `path` – The name of an existing event attribute or event data path.
+- `value` – The suffix string value to append; The param support all param types.
 
-**Example**
+### Example
 
-```
+```json
 {"command":["add_suffix","$.data.name","_ntest"]}
 ```
 
@@ -82,41 +82,41 @@ Adds one or more characters, concatenating them as a suffix to the end of a valu
 
 Replaces the part that satisfies the regex with the specified value.
 
-**definition**
+### definition
 
 ["replace_with_regex", path, regex, value]
 
-**Parameters**
+### Parameters
 
 - `"replace_with_regex"` – The name of the function.
-- `path` – The name of an existing JSON key. 
-- `regex` – Regular expression to match. 
-- `value` – The string value.
+- `path` – The name of an existing event attribute or event data path.
+- `regex` – Regular expression to match. The param must be constant value.
+- `value` – The string value. The param support all param types.
 
-**Example**
+### Example
 
-```
+```json
 {"command":["replace_with_regex","$.data.name","ab?","test"]}
 ```
 
 ## join
 
-Merges two values into a new key.
+Merge two or more values into an event attribute or event data path
 
-**definition**
+### definition
 
 ["join", toPath, separator,value1,value2,...]
 
-**Parameters**
+### Parameters
 
 - `"join"` – The name of the function.
-- `toPath` – The name of an existing JSON key. 
-- `separator` – Regular expression to match. 
-- `value1` –  Support constant、json path.
-- `value2` –  Support constant、json path.
+- `toPath` – The name of an existing event attribute or event data path.
+- `separator` – The separator. The param must be constant value.
+- `value1` – The value to merged. The param support all param types.
+- `value2` –  The value to merged. The param support all param types.
 
-**Example**
+### Example
 
-```
+```json
 {"command":["join","$.data.desc","-","$.data.name","abc"]}
 ```
