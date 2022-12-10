@@ -78,10 +78,20 @@ mv vsctl /usr/local/bin
 
 </TabItem>
 
-<TabItem label="macOS" value="macos">
+<TabItem label="macOS M Chip" value="macos-m-serials">
 
 ```bash
 curl -O https://download.linkall.com/vsctl/v0.5.1/macos-arm64/vsctl
+chmod ug+x vsctl
+mv vsctl /usr/local/bin
+```
+
+</TabItem>
+
+<TabItem label="macOS Intel" value="macos-intel">
+
+```bash
+curl -O https://download.linkall.com/vsctl/v0.5.1/macos-amd64/vsctl
 chmod ug+x vsctl
 mv vsctl /usr/local/bin
 ```
