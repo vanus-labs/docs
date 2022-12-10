@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.vanusDoc.category.Introduction": {
+    "message": "Introduction",
+    "description": "The label for category Introduction in sidebar vanusDoc"
+  },
+  "sidebar.vanusDoc.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar vanusDoc"
+  },
+  "sidebar.vanusDoc.category.How to": {
+    "message": "How to",
+    "description": "The label for category How to in sidebar vanusDoc"
+  },
+  "sidebar.vanusDoc.category.Produce": {
+    "message": "Produce",
+    "description": "The label for category Produce in sidebar vanusDoc"
+  },
+  "sidebar.vanusDoc.category.Consume": {
+    "message": "Consume",
+    "description": "The label for category Consume in sidebar vanusDoc"
+  },
+  "sidebar.vanusDoc.category.Connectors": {
+    "message": "Connectors",
+    "description": "The label for category Connectors in sidebar vanusDoc"
+  },
+  "sidebar.vanusDoc.category.Source": {
+    "message": "Source",
+    "description": "The label for category Source in sidebar vanusDoc"
+  },
+  "sidebar.vanusDoc.category.Sink": {
+    "message": "Sink",
+    "description": "The label for category Sink in sidebar vanusDoc"
+  },
+  "sidebar.vanusDoc.category.Reference": {
+    "message": "Reference",
+    "description": "The label for category Reference in sidebar vanusDoc"
+  }
+}
