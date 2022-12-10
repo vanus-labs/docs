@@ -2,67 +2,57 @@
 title: Use CloudEvents SDK
 ---
 
-# Receive events from Vanus with [CloudEvents](https://github.com/cloudevents) SDK
+# 使用 [CloudEvents](https://github.com/cloudevents) SDK 消费来自 Vanus 的事件
 
-The following document will teach you how to build a simple consumer to consume events from Vanus.
+本文档将展示如何使用 [CloudEvents](https://github.com/cloudevents) SDK 消费来自 Vanus 的事件。
 
-## Operations
+## 操作
 
-**Prerequisites**
+**前提条件**
 
-To consume events from Vanus, you must meet the following prerequisites:
-1. Have a running [Vanus](../../getting-started/installation) cluster.
-2. Have [vsctl](../vsctl.md).
-3. Have created a subscription in Vanus. Please refer to this section of [Manage Subscriptions](../manage-subscription.md) to create a subscription.
+1. 安装 [Vanus](https://github.com/linkall-labs/docs/blob/main/user-manual/getting-started/install/k8s(recommended).md) 和 [vsctl](https://github.com/linkall-labs/docs/blob/main/user-manual/how-to/vsctl.md)。
+2. 创建一个名称为 quick-start 的 [Evevtbus](https://github.com/linkall-labs/docs/blob/main/concepts/eventbus.md)。
+3. 创建一个 subscription。subscription 创建可参见[Manage Subscriptions](https://github.com/linkall-labs/docs/blob/main/user-manual/how-to/managing-subscription.md)相关章节。
 
-> We also provide an interactive [Kubernetes environment](https://play.linkall.com/) to simply deploy and try Vanus in your browser.
+> 我们还提供了一个交互式的 [Kubernetes 环境](https://play.linkall.com/)，可以更简单地在浏览器中部署和使用 Vanus。
+**示例代码**
 
-**Example code**
-gitgit 
-```golang
+```go
 package main
-
 import (
 	"context"
 	"fmt"
 	"net"
-
 	ce "github.com/cloudevents/sdk-go/v2"
+	"github.com/cloudevents/sdk-go/v2/client"
+	cehttp "github.com/cloudevents/sdk-go/v2/protocol/http"
 )
-
 func main() {
 	ctx := context.Background()
 	// step 1: Create a tcp listener
-	ls, err := net.Listen("tcp", ":6789")
+	ls, err := net.Listen("tcp", "0.0.0.0:6789")
 	if err != nil {
 		panic(fmt.Sprintf("failed to listen, err: %s\n", err.Error()))
 	}
-
-	// step 2: Create a cloudevents client
-	ceClient, err := ce.NewClientHTTP(ce.WithListener(ls))
+	// step 2: Create a http client connected to the tcp listener
+	c, err := client.NewHTTP(cehttp.WithListener(ls))
 	if err != nil {
 		panic(fmt.Sprintf("failed to init cloudevents client, err: %s", err.Error()))
 	}
-
-	fmt.Println("start event receiver")
+	fmt.Println("listen 0.0.0.0:6789...")
 	// step 3: Start the receiver and do business logic
-	err = ceClient.StartReceiver(ctx, func(event ce.Event) {
+	err = c.StartReceiver(ctx, func(event ce.Event) {
 		fmt.Printf("received an event: %s\n", event.String())
 	})
 	if err != nil {
 		panic(fmt.Sprintf("failed to start cloudevents receiver, err: %s\n", err.Error()))
 	}
 }
-
 ```
+> 注意：确保 Vanus 与 consumer 网络互通。
+**向 Vanus 发送一条事件**
 
-> Note: Vanus must communicate with the consumer.
-
-**Send an event to Vanus**
-
-Send an event to the Eventbus
-
-```shell
+```bash
 ~ > vsctl event put quick-start \
   --data-format plain \
   --data "Hello Vanus" \
@@ -71,7 +61,7 @@ Send an event to the Eventbus
   --type "examples"
 ```
 
-**Expected results**
+**预期结果**
 
 ```
 listen 0.0.0.0:6789...

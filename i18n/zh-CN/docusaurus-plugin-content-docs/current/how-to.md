@@ -1,10 +1,10 @@
-# How to use Vanus
+# 使用 Vanus
 
-The following articles will teach you how to build an EDA application with Vanus.
+本节列出了如何使用 Vanus 构建 EDA 应用程序的一系列文章。
 
-- [**Command line tool(vsctl)**](how-to/vsctl.md): `vsctl` is a command line tool of Vanus.
-- [**Manage Eventbus**](how-to/manage-eventbus.md): How to manage all of your Eventbus with vsctl.
-- [**Manage Subscription**](how-to/manage-subscription.md): How to manage all of your Subscriptions with vsctl.
-- [**Send events to Vanus with CloudEvents SDK**](how-to/produce/using-sdk.md) : How to build a simple producer to send events to Vanus.
-- [**Send an event with delay using the CloudEvents SDK**](how-to/produce/send-delay-event.md): How to build a simple producer with a timer to delay an Event.
-- [**Receive events from Vanus with CloudEvents SDK**](how-to/consume/using-sdk.md): How to build a simple consumer to consume events from Vanus.
+- [**命令行工具（vsctl）**](how-to/vsctl.md)：`vsctl` 是 Vanus 的命令行工具
+- [**管理 Eventbus**](how-to/managing-eventbus.md)：使用 `vsctl` 管理 Eventbus
+- [**管理 Subscription**](how-to/managing-subscription.md)：使用 `vsctl` 管理 Subscription
+- [**使用 CloudEvents SDK 发送事件到 Vanus**](how-to/produce-events/using-sdk.md)：构建一个生产者来发送事件
+- [**使用 CloudEvents SDK 发送延迟事件**](how-to/produce-events/send-delay-event.md)：构建一个生产者来发送延迟事件
+- [**使用 CloudEvents SDK 从 Vanus 接收事件**](how-to/consume-events/using-sdk.md)：构建一个消费者来消费事件

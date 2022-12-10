@@ -1,99 +1,90 @@
 ---
-title: Use vsctl
+title: vsctl
 ---
 
-# Command line tool(vsctl)
+# 命令行工具(vsctl)
 
-Vsctl is a command line tool of Vanus. The goal of this document is to describe how to use vsctl.
+vsctl 是 Vanus 的命令行工具。本文档将展示如何使用 vsctl 命令行工具。
 
-## Prerequisites
+## 准备
 
-Before Using vsctl, you must meet the following prerequisites.
-1. Have a running [Vanus](https://github.com/linkall-labs/docs/blob/main/user-manual/getting-started/install/k8s(recommended).md) cluster.
-2. Have [vsctl](https://github.com/linkall-labs/docs/blob/main/user-manual/how-to/vsctl.md).
-3. Have exported the environment variable by running this command: `export VANUS_GATEWAY=127.0.0.1:8080`
+在使用vsctl之前，必须满足以下条件。
+1. 安装 [Vanus](https://github.com/linkall-labs/docs/blob/main/user-manual/getting-started/install/k8s(recommended).md) 和 [vsctl](https://github.com/linkall-labs/docs/blob/main/user-manual/how-to/vsctl.md)。
+2. 创建一个名称为 quick-start 的 [Evevtbus](https://github.com/linkall-labs/docs/blob/main/concepts/eventbus.md)。
+3. 输入以下命令配置环境变量：`export VANUS_GATEWAY=127.0.0.1:8080`。
 
-> Note: vsctl communicates with Vanus through the VANUS_GATEWAY environment variable.
+> 注意：vsctl 通过 VANUS_GATEWAY 环境变量与 Vanus 集群交互。
+## 语法
 
-## Syntax
-
-The following is the syntax to run vsctl commands from your terminal.
+使用以下语法从终端窗口运行 vsctl 命令：
 ```shell
 vsctl [TYPE] [command] [NAME] [flags]
 ```
-* `TYPE`：Specifies the resource type. for example `event`, `eventbus`, `subscription`.
-* `command`：Specifies the operation that you want to perform resources, for example `create`, `put`, `get`, `delete`.
-* `NAME`：Specifies the name of the resource. Names are case-sensitive. for example `vsctl eventbus create quick-start`.
-* `flags`：Specifies optional flags.
+* `TYPE`：指定资源类型。例如 `event`、`eventbus`、`subscription`。
+* `command`：指定对资源执行的操作，例如 `create`、`put`、`get`、`delete`。
+* `NAME`：指定资源名称。名称区分大小写。例如：`vsctl eventbus create quick-start`。
+* `flags`：指定可选的参数。
 
-> **Caution: The flags you specify from the command line can override default values and any corresponding environment variables.**
+> **注意：从命令行指定的参数会覆盖默认值和任何相应的环境变量。**
+如果你需要帮助，在终端窗口中运行 `vsctl help` 。
 
-For more help, you can run `vsctl help`.
+## 选项
 
-## Options
-
-> -C, --config string   Default: "~/.vanus/vanus.yml"
-
-    Specifies the config file of vsctl
+> -C, --config string   默认值: "~/.vanus/vanus.yml"
+指定 vsctl 配置文件
 
 > -D, --debug
+开启 debug 模式
 
-    Enable debug
+> --endpoint string   默认值: "127.0.0.1:8080"
+指定 vanus controller 端点
 
-> --endpoint string   Default: "127.0.0.1:8080"
-
-    Specifies the endpoint of vanus controller
-
-> --format string   Default: "table"
-
-    Specify the output format of vsctl. One of (json|table)
+> --format string   默认值: "table"
+指定 vsctl 输出格式，可取 (json|table) 其中之一。
 
 > -h, --help
+vsctl 操作的帮助命令
 
-    help for vsctl
-
-## Environment variables
+## 环境变量
 
 > VANUS_GATEWAY
+vsctl 集群网关入口地址。默认值: "127.0.0.1:8080"
 
-    Vanus cluster gateway entry address. Default: "127.0.0.1:8080"
-
-You can change VANUS_GATEWAY to your own Vanus cluster gateway address with the following command.
+您可以使用以下命令将 Vanus_Gateway 更改为自己的 Vanus 网关地址。
 ```
 export VANUS_GATEWAY=[yourAddress:port]
 ```
 
-## Operations
+## 操作
 
-The following table includes short descriptions and the general syntax for all of the vsctl operations:
+下表包含所有 vsctl 操作的简短描述和普通语法：
 
-|  Operation  |      Syntax      |   Description   |
+|   操作       |       语法       |   描述           |
 |-------------|------------------|-----------------|
-| put         | vsctl event put [eventbus] [flags] | send event to eventbus |
-| get         | vsctl event get [eventbus] [flags] | get events from the specified eventbus |
-| create      | vsctl eventbus create [flags] | create eventbus |
-| delete      | vsctl eventbus delete [flags] | delete eventbus |
-| info        | vsctl eventbus info [flags] | get eventbus info |
-| list        | vsctl eventbus list | list eventbus |
-| create      | vsctl subscription create [flags] | create subscription |
-| delete      | vsctl subscription delete [flags] | delete subscription |
-| info        | vsctl subscription info [flags] | get subscription info |
-| list        | vsctl subscription list | list subscription |
-| get         | vsctl cluster controller topology | get the topology information of the controller cluster |
-| get         | vsctl version [flags] | get vsctl version information |
+| put         | vsctl event put [eventbus] [flags] | 发送事件到eventbus |
+| get         | vsctl event get [eventbus] [flags] | 从指定eventbus中获取事件 |
+| create      | vsctl eventbus create [flags] | 创建eventbus |
+| delete      | vsctl eventbus delete [flags] | 删除eventbus |
+| info        | vsctl eventbus info [flags] | 获取eventbus详细信息 |
+| list        | vsctl eventbus list | 列举eventbus |
+| create      | vsctl subscription create [flags] | 创建subscription |
+| delete      | vsctl subscription delete [flags] | 删除subscription |
+| info        | vsctl subscription info [flags] | 获取subscription详细信息 |
+| list        | vsctl subscription list | 列举subscription |
+| get         | vsctl cluster controller topology | 获取controller集群拓扑信息 |
+| get         | vsctl version [flags] | 获取vsctl版本信息 |
 ||||
 
-## Output options
+## 输出选项
 
-The default output format of all vsctl commands is a readable table format. To output details in the terminal window in a specific format, you can specify the format output type through the `--format` parameter.
+所有 vsctl 命令的默认输出格式都是可读的表格格式。要以特定格式在终端窗口输出详细信息， 可以通过 --format 参数指定格式化输出类型。
 
-### Syntax
+### 语法
 
 > vsctl [TYPE] [command] [NAME] --format <json|table>
+### 示例
 
-### Example
-
-In this example, the following command outputs the details of event as an object in table format:
+在此示例中，以下命令将 event 的详细信息输出为 table 格式的对象：
 
 ```
 $ vsctl event get quick-start --format table
@@ -117,60 +108,53 @@ $ vsctl event get quick-start --format table
 +-----+--------------------------------------------+
 ```
 
-### Example
+### 示例
 
-In this example, the following command outputs the details of event as an object in JSON format:
+在此示例中，以下命令将 event 的详细信息输出为 JSON 格式的对象：
 
 ```
 $ vsctl event get quick-start --format json
 {"Event":"Context Attributes,\n  specversion: 1.0\n  type: event-type\n  source: event-source\n  id: 299c6cbd-b3c6-4de8-8486-ef0c13d60d9e\n  time: 2022-09-20T12:42:36.992825162Z\n  datacontenttype: text/plain\nExtensions,\n  xvanuseventbus: quick-start\n  xvanuslogoffset: AAAAAAAAAAA=\n  xvanusstime: 2022-09-20T12:42:36.994Z\nData,\n  event-body\n","No.":0}
 ```
 
-## Examples: Common operations
+## 示例：常用操作
 
-Use the following set of examples to help you familiarize yourself with running the commonly used vsctl operations:
+使用以下示例集来帮助你熟悉运行常用 vsctl 操作：
 
-`vsctl event` - Execute commands on events in Eventbus.
+`vsctl event` - 对 Eventbus 中的事件执行命令。
 ```
-# get events from the specified eventbus <eventbus-name>.
+# 从指定 eventbus <eventbus-name> 中获取 event。
 vsctl event get <eventbus-name>
-
-# send event to eventbus <eventbus-name>.
+# 向指定 eventbus <eventbus-name> 中写入 event。
 vsctl event put <eventbus-name>
 ```
 
-`vsctl eventbus` - Execute the command on the specified Eventbus.
+`vsctl eventbus` - 对指定 Eventbus 执行命令。
 ```
-# create eventbus <eventbus-name>.
+# 创建 eventbus <eventbus-name> 。
 vsctl eventbus create --name <eventbus-name>
-
-# delete eventbus <eventbus-name>.
+# 删除 eventbus <eventbus-name> 。
 vsctl eventbus delete --name <eventbus-name>
-
-# show eventbus <eventbus-name> info.
+# 打印 eventbus <eventbus-name> 详细信息。
 vsctl eventbus info <eventbus-name>
-
-# list eventbus <eventbus-name> 。
+# 列举所有 eventbus <eventbus-name> 。
 vsctl eventbus list
 ```
 
-`vsctl subscription` - Execute the command on the specified subscription.
+`vsctl subscription` - 对指定 subscription 执行命令。
 ```
-# create subscription <subscription-name>.
+# 创建 subscription <subscription-name> 。
 vsctl subscription create --name <subscription-name>
-
-# delete subscription <subscription-name>.
+# 删除 subscription <subscription-name> 。
 vsctl subscription delete --name <subscription-name>
-
-# show subscription <subscription-name> info.
+# 打印 subscription <subscription-name> 详细信息。
 vsctl subscription info <subscription-name>
-
-# list subscription <subscription-name>.
+# 列举所有 subscription <subscription-name> 。
 vsctl subscription list
 ```
 
-`vsctl cluster` - Execute the command on the specified cluster.
+`vsctl cluster` - 对 cluster 执行命令。
 ```
-# get the topology information of the controller cluster.
+# 获取 controller 集群拓扑信息。
 vsctl cluster controller topology
 ```
