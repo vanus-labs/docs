@@ -18,7 +18,6 @@ CloudEvent 中**必须**包括全部的必需环境属性，**可能**包括任�
 
 #### 必需属性
 
-<!-- markdownlint-disable MD033 -->
 <dl>
   <dt>id</dt>
   <dd>标识该事件。</dd>
@@ -32,7 +31,6 @@ CloudEvent 中**必须**包括全部的必需环境属性，**可能**包括任�
 
 #### 可选属性
 
-<!-- markdownlint-disable MD033 -->
 <dl>
   <dt>datacontenttype</dt>
   <dd><code>data</code>值的类型。该属性使<code>data</code>能够携带任何格式或编码的内容，而不是受事件的格式限制。</dd>
@@ -43,7 +41,6 @@ CloudEvent 中**必须**包括全部的必需环境属性，**可能**包括任�
   <dt>time</dt>
   <dd>事件发生时刻的时间戳。</dd>
 </dl>
-<!-- markdownlint-enable MD033 -->
 
 #### 扩展环境属性
 
