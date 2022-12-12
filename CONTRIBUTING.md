@@ -14,9 +14,31 @@ You can improve Vanus documentation from multiple aspects:
 
 ## Before you contribute
 
-### Sign the CLA
+### Sign your work
 
-Your Pull Requests can only be merged after you sign the [Contributor License Agreement](https://cla-assistant.io/linkall-labs/) (CLA). Please sign the CLA before contributing.
+Our project uses [Developer Certificate of Origin](https://developercertificate.org/) (DCO) to ensure that contributors are allowed to make the contribution and the project has the right to distribute it under its license.
+
+1. Set your user.name and user.email git configs (the email address must match your primary GitHub email).
+```bash
+$ git config --global user.name "Joe Smith" 
+$ git config --global user.email "joe.smith@email.com"
+```
+2. Sign your commit with `git commit -s`
+```bash
+$ git commit -sm "chore: this is my commit message"
+```
+3. If your git config information is set properly, then use `git log` to check your commit information, it will look something like this:
+```
+Author: Joe Smith <joe.smith@email.com>
+Date:   Mon Oct 31 14:26:42 2022 +0800
+
+    chore: this is my commit message
+    
+    Signed-off-by: Joe Smith <joe.smith@email.com>
+```
+Note: the Author and Signed-off-by lines should match. Otherwise, your PR will be rejected by the automated DCO check.
+
+
 
 ### Commit message style
 
