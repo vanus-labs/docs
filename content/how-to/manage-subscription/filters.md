@@ -4,7 +4,7 @@ title: Vanus Filters
 
 # Vanus Filters
 
-Filters allows you to filter events from an Eventbus when creating a subscription, enabling you to receive only the specific events needed.
+Filters allow you to filter events from an Eventbus when creating a subscription, enabling you to receive only the specific events needed.
 
 ## Uses And Example
 

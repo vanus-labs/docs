@@ -39,6 +39,17 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Manage subscriptions',
+          items: [
+              'how-to/manage-subscription',
+              'how-to/manage-subscription/filters',
+              'how-to/manage-subscription/function-reference',
+              'how-to/manage-subscription/transformer'
+                 ],
+        },
+
+        {
+          type: 'category',
           label: 'Produce',
           items: ['how-to/produce/using-sdk', 'how-to/produce/send-delay-event'],
         },
