@@ -41,7 +41,7 @@ const sidebars = {
           {
             type: 'category',
             label: 'Manage Subscriptions',
-            items: ['how-to/manage-subscription', 'how-to/manage-subscription/filter'],
+            items: ['how-to/manage-subscription', 'how-to/manage-subscription/filters'],
           },
 
         {
