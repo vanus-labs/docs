@@ -1,14 +1,14 @@
 # Vanus Transformer
 
-you can use transformer in vanus to customize data from a CloudEvent before send to sink. Using the transformer in `vsctl` or the API, you define variables that use JSON path to reference values in the original CloudEvent source. The transformed CloudEvent is sent to a sink instead of the original CloudEvent. You can define variables, assigning each a value from the CloudEvent attribute or data. Then you can use those variables in the Template or Function as `<variable-name>`.
+The transformer feature from Vanus lets you customize data from a CloudEvent before sending it to the Sink connector. With this feature, you can create Variables according to JSON values. Once you've created variables for all the desired data, you can create a template. You can make the Variables from the CloudEvent attributes and data.
+:::notice
+The transforming tool uses JSON format, so the receiving data must be in a JSON format to use it.
+Although it is still possible to partially use the transformer tool to get the CloudEvent attributes.
+:::
 
-## Prerequisites
+## Uses And Example
 
-Because define variables that use JSON path, so if you define variables use CloudEvent data, data must be JSON format.
-
-## Use And Example
-
-When create a subscription,option param `transformer` has three param `define`, `pipeline` and `template`.
+When creating a subscription, you will have three parameter options: `define, pipeline and template`.
 
 For example:
 
@@ -31,8 +31,7 @@ vsctl subscription create \
 
 ## Define
 
-The param `define` is used to define variables. Use JSON path to reference items in the CloudEvent and store those values in variables.
-The following is an example event.
+The parameter `define` is used to define variables. Using JSON path to reference items in the CloudEvent and store those values in variables. The following is an example event.
 
 ```json
 {
@@ -66,14 +65,14 @@ For instance, you can define variables like:
 
 ## Function
 
-The param `pipeline` is used to define function. pipeline is a nested array which every item is a function as a map which key use command and value is an array which it's first param as function name, following as function param.
+The parameter pipeline helps you define functions. These functions create, delete, move, rename, etc. They can give you the ability to make specific changes to your data.
 
-For more about and Vanus support function please go to [function reference](function-reference.md).
+Refer to the [function reference](function-reference.md) document for more information.
 
 For example:
 
 ```json
-"pipeline":[
+"pipeline": [
     {"command":["create","$.data.source","$.source"]},
     {"command":["delete","$.vanuskey"]}
 ]
@@ -81,9 +80,7 @@ For example:
 
 ## Template
 
-The param template is the CloudEvent data you want to send to sink.
-You can create a template that either a string or JSON format.
-Using the previous define variables, the following template examples will transform the event data to the example data.
+The parameter template is where you can structure events with the variables created in define, which will be sent to the Sink connector in the format created. You can create a template either in a string or a JSON format.
 
 | description                | template                                                     | CloudEvent data                                                                           |
 |----------------------------|--------------------------------------------------------------|-------------------------------------------------------------------------------------------|
@@ -91,4 +88,4 @@ Using the previous define variables, the following template examples will transf
 | string with escaped quotes | Billing `<date>` service `<service>` amount `<amount>` `<unit>` | Billing 2022-06-13 "Amazon Elastic Compute Cloud - Compute" amount 12.194 USD           |
 | simple JSON                | {<br/>  "service": `<service>`,<br/>  "amount":`<amount>`<br/>} | {<br/>  "service": "Amazon Elastic Compute Cloud - Compute",<br/>  "amount": "12.194"<br/>} |
 
-> the tempplate will replace event data, so functon will be no effect if it changes data.
+> The template will replace the variables with the data for each event.
