@@ -13,7 +13,7 @@ const url_twitter = 'https://twitter.com/Vanus_dev';
 const config = {
   title: 'An open-source, cloud-native, Serverless message queue for building EDA applications with Ease.',
   tagline: 'How to use Vanus',
-  url: 'https://www.vanus.tech',
+  url: 'https://vanus.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   plugins: ['docusaurus-plugin-sass',
@@ -115,9 +115,9 @@ const config = {
       navbar: {
         title: 'Vanus',
         logo: {
-          alt: 'vanus log',
+          alt: 'vanus logo',
           src: 'img/vance-logo.png',
-          href: 'http://www.vanus.tech',
+          href: 'https://vanus.dev',
         },
         hideOnScroll: true,
         items: [
