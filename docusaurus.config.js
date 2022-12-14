@@ -29,7 +29,7 @@ const config = {
           }
           return [];
         },
-        redirects: [
+        /*redirects: [
           {
             from: ['/docs/support', '/docs/next/support'],
             to: '/community/support',
@@ -42,7 +42,7 @@ const config = {
             from: ['/docs/resources', '/docs/next/resources'],
             to: '/community/resources',
           },
-        ],
+        ],*/
       }),
     ]
   ],
