@@ -36,12 +36,20 @@ const sidebars = {
         type: 'doc',
         id: 'how-to',
       },
+
       items: [
+          {
+            type: 'category',
+            label: 'Manage Subscriptions',
+            items: ['how-to/manage-subscription', 'how-to/manage-subscription/filter'],
+          },
+
         {
           type: 'category',
           label: 'Produce',
           items: ['how-to/produce/using-sdk', 'how-to/produce/send-delay-event'],
         },
+
         {
           type: 'category',
           label: 'Consume',
