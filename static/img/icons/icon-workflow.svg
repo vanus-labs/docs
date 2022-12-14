@@ -1,0 +1,14 @@
+<svg id="Componente_41_1" data-name="Componente 41 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88.357" height="77.882" viewBox="0 0 88.357 77.882">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#75e5e1"/>
+      <stop offset="1" stop-color="#5e85c9"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_1752" data-name="Rectángulo 1752" width="88.357" height="77.882" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_3622" data-name="Grupo 3622" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <path id="Trazado_38286" data-name="Trazado 38286" d="M87.246,37.941H66.591V30.464a1,1,0,0,0-1-1H29.251a1,1,0,0,0-1,1v7.425H2.111V10.424H8v7.529a1,1,0,0,0,1,1H45.34a1,1,0,0,0,1-1V10.424H69.688a9.362,9.362,0,1,0,0-2H46.34V1a1,1,0,0,0-1-1H9A1,1,0,0,0,8,1V8.424H1.111a1,1,0,0,0-1,1V38.889a1,1,0,0,0,1,1h27.14v7.529a1,1,0,0,0,1,1h36.34a1,1,0,0,0,1-1V39.942H86.246V67.4H80.357V59.929a1,1,0,0,0-1-1H43.018a1,1,0,0,0-1,1V67.4H18.669a9.363,9.363,0,1,0,0,2H42.018v7.477a1,1,0,0,0,1,1H79.357a1,1,0,0,0,1-1V69.4h6.889a1,1,0,0,0,1-1V38.941a1,1,0,0,0-1-1M79,2.062a7.362,7.362,0,1,1-7.362,7.362A7.37,7.37,0,0,1,79,2.062M10,2H44.34V16.953H10ZM64.591,46.418H30.251V31.464h34.34ZM9.362,75.768A7.362,7.362,0,1,1,16.725,68.4a7.371,7.371,0,0,1-7.363,7.363m69,.114H44.017V60.929h34.34Z" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

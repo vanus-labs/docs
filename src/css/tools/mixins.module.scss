@@ -1,0 +1,114 @@
+@mixin transition($duration:200){
+	-webkit-transition: all $duration ease-in;
+	-moz-transition: all $duration ease-in;
+	-ms-transition: all $duration ease-in;
+	-o-transition: all $duration ease-in;
+	transition: all $duration ease-in;
+}
+@mixin transition-attr($attr, $duration:200){
+	-webkit-transition: $attr $duration ease-in;
+	-moz-transition: $attr $duration ease-in;
+	-ms-transition: $attr $duration ease-in;
+	-o-transition: $attr $duration ease-in;
+	transition: $attr $duration ease-in;
+}
+
+@mixin full_content_pseudo($background_color:transparent, $opacity:0.6){
+	@if ($background_color) {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: $opacity;
+		background: $background_color;
+	}
+}
+@mixin border-radius($radius:50%) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin border-radius-imp($radius:50%) {
+	-webkit-border-radius: $radius !important;
+	-moz-border-radius: $radius !important;
+	border-radius: $radius !important;
+}
+@mixin clear(){
+	&:after{
+		content: "";
+		clear: both;
+		display: block;
+	}
+}
+
+//Rotate
+
+@mixin rotate($deg) {
+	transform: rotate($deg) ;
+	-webkit-transform: rotate($deg) ;
+	-moz-transform: rotate($deg) ;
+	-o-transform: rotate($deg) ;
+	-ms-transform: rotate($deg) ;
+}
+
+//Flex
+
+@mixin flex() {
+	display: -webkit-box; 
+	display: -moz-box;    
+	display: -ms-flexbox; 
+	display: -webkit-flex;
+	display: flex;    
+}
+
+@mixin flex-vertical-center() {
+	display: -webkit-box; 
+	display: -moz-box;    
+	display: -ms-flexbox; 
+	display: -webkit-flex;
+	display: flex;  
+	flex-direction: column;  
+	justify-content: center;
+}
+
+@mixin flex-order($order) {
+	-webkit-box-ordinal-group: $order;   
+	-moz-box-ordinal-group: $order;      
+	-ms-flex-order: $order;              
+	-webkit-order: $order;               
+	order: $order;
+}
+
+@mixin input-placeholder($color:inherit) {
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: $color;	  
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+	  color: $color;	  
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+	  color: $color;	  
+	}
+	&:-moz-placeholder { /* Firefox 18- */
+	  color: $color;	  
+	}
+}
+
+//Responsive
+
+@mixin responsive() {
+	.desktop{
+		display: block;
+		@include breakpoint(sm) {
+			display: none;
+		}
+	}
+	.mobile{
+		display: none;
+		@include breakpoint(sm) {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.homeIntro {
+  margin: 120px 0;
+}
+
+.homeIntro .homeIntroWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.homeIntro .homeIntroWrapper > div {
+  width: 50%;
+}
+
+.homeIntro .homeIntroWrapper .content h1 {
+  font-size: 82px;
+  background: #75E5E1;
+  background: linear-gradient(to right, #75E5E1 0%, #5E85C9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.homeIntro .homeIntroWrapper .content h2 {
+  font-size: 36px;
+  line-height: 46px;
+  margin: 0;
+  color: #5E85C9;
+}
+
+.homeIntro .homeIntroWrapper .content p {
+  font-size: 20px;
+  line-height: 1.3em;}
+
+.homeIntro .homeIntroWrapper .image canvas {
+  width: 100%;
+}
+
+.homeIntro .homeIntroWrapper .content > img {
+  width: 300px;
+  margin-bottom: 30px;
+}

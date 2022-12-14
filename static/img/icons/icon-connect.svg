@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="122.641" height="76.771" viewBox="0 0 122.641 76.771">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1.764" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#75e5e1"/>
+      <stop offset="1" stop-color="#5e85c9"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_2427" data-name="Rectángulo 2427" width="122.641" height="76.771" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_4823" data-name="Grupo 4823" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <path id="Trazado_39891" data-name="Trazado 39891" d="M67.047,74.771A36.386,36.386,0,1,1,67.047,2a1,1,0,0,0,0-2A38.422,38.422,0,0,0,28.686,37.385H1a1,1,0,0,0,0,2H28.686A38.422,38.422,0,0,0,67.047,76.771a1,1,0,0,0,0-2" fill="url(#linear-gradient)"/>
+    <path id="Trazado_39892" data-name="Trazado 39892" d="M121.641,37.386H93.954a24.093,24.093,0,1,0,0,2h27.687a1,1,0,0,0,0-2M69.887,60.479A22.094,22.094,0,1,1,91.98,38.386,22.118,22.118,0,0,1,69.887,60.479" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

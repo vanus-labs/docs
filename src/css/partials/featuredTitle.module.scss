@@ -1,0 +1,40 @@
+@import "../tools/variables";
+@import "../tools/breakpoints";
+
+.featuredTitle {
+  text-align: center;
+	.title { 
+    &.blue-bright{
+      h2{
+        color: $blue-bright;
+      }
+    }
+		h2 { 
+      font-size: 44px;
+      color: $blue;
+      margin: 0;
+      margin-bottom: 30px;
+      @include breakpoint(xs) {
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+		}
+	}
+
+	.subtitle { 
+    &.white{
+      p{
+        color: white;
+      }
+    }
+		p { 
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.3em;
+      @include breakpoint(xs) {
+        font-size: 18px;
+        line-height: 1.3em;
+      }
+		} 
+	}
+}

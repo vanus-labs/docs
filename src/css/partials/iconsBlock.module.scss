@@ -1,0 +1,48 @@
+@import "../tools/breakpoints";
+@import "../tools/variables";
+
+.iconsBlock {
+  padding: 100px 0;
+  .iconBlockHeader{
+
+  }
+	.iconsBlockWrapper {
+    display: flex;    
+    margin-top: 90px;
+    flex-wrap: wrap;
+		.iconBlock {
+      width: 33.333%;
+      text-align: center;
+      margin-bottom: 60px;           
+      @include breakpoint(md) {
+        width: 50%;
+      }
+      @include breakpoint(xs) {
+        width: 100%;
+      }
+      .image{
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img { 
+          margin-bottom: 45px;
+        }  
+      }
+			
+
+			h3 { 
+        color: $blue;
+        font-size: 24px;
+        margin-top: 0;
+			}
+
+			p { 
+        font-size: 15px;
+        line-height: 1.3em;
+        width: 250px;
+        margin: 0px auto;
+			}
+		}
+	}
+}

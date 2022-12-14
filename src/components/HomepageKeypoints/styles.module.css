@@ -1,0 +1,26 @@
+.iconsBackground {
+  padding: 90px 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.iconsBackground .iconsBackgroundWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconsBackground .iconsBackgroundWrapper .icon {
+  width: 33.333%;
+  text-align: center;
+}
+
+.iconsBackground .iconsBackgroundWrapper .icon img {
+  margin-bottom: 50px;
+}
+
+.iconsBackground .iconsBackgroundWrapper .icon p {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+}

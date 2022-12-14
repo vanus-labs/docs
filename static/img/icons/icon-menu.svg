@@ -1,0 +1,11 @@
+<svg id="Componente_62_3" data-name="Componente 62 – 3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="26" viewBox="0 0 31 26">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="0.984" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#75e5e1"/>
+      <stop offset="1" stop-color="#5e85c9"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rectángulo_2445" data-name="Rectángulo 2445" width="31" height="4" rx="2" fill="url(#linear-gradient)"/>
+  <rect id="Rectángulo_2446" data-name="Rectángulo 2446" width="31" height="4" rx="2" transform="translate(0 11)" fill="url(#linear-gradient)"/>
+  <rect id="Rectángulo_2447" data-name="Rectángulo 2447" width="31" height="4" rx="2" transform="translate(0 22)" fill="url(#linear-gradient)"/>
+</svg>

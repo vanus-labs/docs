@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109.115" height="77.687" viewBox="0 0 109.115 77.687">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.602" x2="1" y2="0.602" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#75e5e1"/>
+      <stop offset="1" stop-color="#5e85c9"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <path id="Trazado_38263" data-name="Trazado 38263" d="M2,38.875A36.934,36.934,0,0,1,74.615,29.4a1,1,0,0,0,1.29.688,23.46,23.46,0,1,1,7.664,45.6H38.938A36.918,36.918,0,0,1,2,38.875M38.938,0a38.844,38.844,0,1,0,0,77.687H83.569a25.433,25.433,0,1,0-7.307-49.815A38.965,38.965,0,0,0,38.938,0Z" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Trazado_38264" data-name="Trazado 38264" d="M38.939,17.234c7.663,6.236,14.832,6.216,17.636,5.9.01,3.26.039,12.416.039,15.629,0,13.282-14.915,21.606-17.646,23.02-2.734-1.411-17.645-9.72-17.645-23.02,0-3.164-.016-12.012-.022-15.368a11.894,11.894,0,0,0,2.155.187c3.2,0,8.473-1.11,15.483-6.348m-.583-2.072C27.148,23.814,20.771,21.2,20.714,21.173a1,1,0,0,0-1.416.91s.025,12.743.025,16.68c0,6.579,3.341,13.005,9.661,18.583a44.938,44.938,0,0,0,9.558,6.461,1.012,1.012,0,0,0,.852,0,44.938,44.938,0,0,0,9.558-6.461c6.321-5.578,9.661-12,9.661-18.583,0-3.938-.042-16.805-.042-16.805a1,1,0,0,0-1.235-.969c-.085.02-8.664,1.955-17.718-5.794a.993.993,0,0,0-.649-.241,1.017,1.017,0,0,0-.613.208" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="Trazado_38265" data-name="Trazado 38265" d="M47.327,35.272,38.02,44.581l-5.346-5.346a1,1,0,1,0-1.414,1.412L37.312,46.7a1,1,0,0,0,1.415,0L48.741,36.687a1,1,0,1,0-1.414-1.415" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_4803" data-name="Grupo 4803" transform="translate(-316.443 -1555)">
+    <g id="Componente_37_1" data-name="Componente 37 – 1" transform="translate(316.443 1555)">
+      <g id="Grupo_3599" data-name="Grupo 3599" transform="translate(0 -0.001)">
+        <g id="Grupo_3598" data-name="Grupo 3598" clip-path="url(#clip-path)">
+          <rect id="Rectángulo_1739" data-name="Rectángulo 1739" width="109.115" height="77.687" transform="translate(0 0.001)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Grupo_3601" data-name="Grupo 3601" transform="translate(0 -0.001)">
+        <g id="Grupo_3600" data-name="Grupo 3600" clip-path="url(#clip-path-2)">
+          <rect id="Rectángulo_1740" data-name="Rectángulo 1740" width="39.316" height="48.947" transform="translate(19.297 14.954)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Grupo_3603" data-name="Grupo 3603" transform="translate(0 -0.001)">
+        <g id="Grupo_3602" data-name="Grupo 3602" clip-path="url(#clip-path-3)">
+          <rect id="Rectángulo_1741" data-name="Rectángulo 1741" width="18.263" height="12.014" transform="translate(30.869 34.98)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

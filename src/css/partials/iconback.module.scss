@@ -1,0 +1,40 @@
+@import "../tools/variables";
+@import "../tools/breakpoints";
+.iconsBackground {
+  position: relative;
+  background: $blue;
+  padding: 90px 0;
+  background-size: cover;
+  background-position: center;
+  .iconsBackgroundWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint(xs) {
+      flex-wrap: wrap;
+    }
+    .icon {
+      width: 33.333%;
+      text-align: center;
+
+      @include breakpoint(xs) {
+        &:not(:last-child){
+          margin-bottom: 60px;
+        }
+      }
+      @include breakpoint(xs) {
+        width: 100%;
+      }
+      img {
+        margin-bottom: 50px;
+      }
+
+      p {
+        margin: 0;
+        color: white;
+        font-size: 20px;
+        line-height: 1.3em;
+      }
+    }
+  }
+}
