@@ -1,3 +1,7 @@
+---
+title: Function reference
+---
+
 # Function reference
 
 Function is used by [transformer](transformer.md#function) in Vanus. Every function is a map which key use command and value is an array which it's first param as function name, following as function param.

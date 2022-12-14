@@ -1,3 +1,7 @@
+---
+title: Date and time functions
+---
+
 # Date and time functions
 
 ## format_date

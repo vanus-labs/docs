@@ -1,3 +1,7 @@
+---
+title: Structure functions
+---
+
 # Structure functions
 
 ## create

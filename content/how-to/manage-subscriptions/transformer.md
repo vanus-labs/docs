@@ -1,3 +1,7 @@
+---
+title: Vanus Transformer
+---
+
 # Vanus Transformer
 
 you can use transformer in vanus to customize data from a CloudEvent before send to sink. Using the transformer in `vsctl` or the API, you define variables that use JSON path to reference values in the original CloudEvent source. The transformed CloudEvent is sent to a sink instead of the original CloudEvent. You can define variables, assigning each a value from the CloudEvent attribute or data. Then you can use those variables in the Template or Function as `<variable-name>`.

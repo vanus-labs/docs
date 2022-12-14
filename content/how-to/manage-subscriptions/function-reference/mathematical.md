@@ -1,3 +1,7 @@
+---
+title: Mathematical functions
+---
+
 # Mathematical functions
 
 ## math_add
