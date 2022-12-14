@@ -10,7 +10,7 @@ export default function Home() {
     const {siteConfig} = useDocusaurusContext();
     return (
         <Layout
-            title={`Vanus | ${siteConfig.title}`}
+            title={`Vanus `}
             description="Start your EDA journey with Vanus.">
             <HomepageHeader />
             <HomepageKeypoints/>
