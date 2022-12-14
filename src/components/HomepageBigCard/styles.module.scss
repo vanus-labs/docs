@@ -1,0 +1,14 @@
+@import "../../css/tools/breakpoints";
+
+.backCardBlock{
+  padding: 130px;
+  background: #F5F5F5;
+  background-size: cover;
+  background-position: center;
+  @include breakpoint(md) {
+    padding: 45px 30px;
+  }
+  &.white{
+    background: white;
+  }
+}

@@ -11,11 +11,12 @@ const url_twitter = 'https://twitter.com/Vanus_dev';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Vanus Docs',
+  title: 'An open-source, cloud-native, Serverless message queue for building EDA applications with Ease.',
   tagline: 'How to use Vanus',
   url: 'https://docs.linkall.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
+  plugins: ['docusaurus-plugin-sass'],
   scripts: [
     // Object format.
     {src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'docs.linkall.com'}
@@ -62,7 +63,8 @@ const config = {
           editUrl: 'https://github.com/linkall-labs/docs/edit/main',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [require.resolve('./src/css/custom.scss')
+          ]
         },
       }),
     ],
@@ -102,10 +104,10 @@ const config = {
           //   label: 'GitHub',
           //   position: 'right',
           // },
-          {
+          /*{
             type: 'localeDropdown',
             position: 'right',
-          },
+          },*/
           {
             href: url_github,
             position: 'right',

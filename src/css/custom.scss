@@ -6,6 +6,11 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  --bg-gradient: linear-gradient(
+                  to bottom,
+                  hsl(225, 71%, 25%),
+                  hsl(225, 71%, 25%)
+  );
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
