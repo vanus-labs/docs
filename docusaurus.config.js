@@ -13,10 +13,39 @@ const url_twitter = 'https://twitter.com/Vanus_dev';
 const config = {
   title: 'An open-source, cloud-native, Serverless message queue for building EDA applications with Ease.',
   tagline: 'How to use Vanus',
-  url: 'https://docs.linkall.com',
+  url: 'https://www.vanus.tech',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: ['docusaurus-plugin-sass',
+    [
+      'client-redirects',
+      /** @type {import('@docusaurus/plugin-client-redirects').Options} */
+      ({
+        fromExtensions: ['html'],
+        createRedirects(routePath) {
+          // Redirect to /docs from /docs/introduction (now docs root doc)
+          if (routePath === '/docs' || routePath === '/docs/') {
+            return [`${routePath}/introduction/what-is-vanus`];
+          }
+          return [];
+        },
+        /*redirects: [
+          {
+            from: ['/docs/support', '/docs/next/support'],
+            to: '/community/support',
+          },
+          {
+            from: ['/docs/team', '/docs/next/team'],
+            to: '/community/team',
+          },
+          {
+            from: ['/docs/resources', '/docs/next/resources'],
+            to: '/community/resources',
+          },
+        ],*/
+      }),
+    ]
+  ],
   scripts: [
     // Object format.
     {src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'docs.linkall.com'}
@@ -88,7 +117,7 @@ const config = {
         logo: {
           alt: 'vanus log',
           src: 'img/vance-logo.png',
-          href: 'http://www.linkall.com',
+          href: 'http://www.vanus.tech',
         },
         hideOnScroll: true,
         items: [
