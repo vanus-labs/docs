@@ -4,8 +4,8 @@ Function is used by [transformer](transformer.md#function) in Vanus. Every funct
 
 The functon param support follow type:
 
-- Event JSON Path - support event attribute such as "\$.id" and event data such as "\$.data.service".
-- Define Variable - in [define](transformer.md#define) defined varialbe such as "\<variable>".
+- Event JSON Path - support event attribute such as `$.id` and event data such as `$.data.service`.
+- Define Variable - in [define](transformer.md#define) defined varialbe such as `<variable>`.
 - Constant - cunstant value such as "123".
 
 For example:
