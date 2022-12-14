@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <Layout
             title={`Vanus | ${siteConfig.title}`}
-            description="Description will go into a meta tag in <head />">
+            description="Start your EDA journey with Vanus.">
             <HomepageHeader />
             <HomepageKeypoints/>
             <HomepageIconsBlock/>
