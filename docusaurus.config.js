@@ -29,20 +29,20 @@ const config = {
           }
           return [];
         },
-        /*redirects: [
+        redirects: [
           {
-            from: ['/docs/support', '/docs/next/support'],
-            to: '/community/support',
+            from: ['/docs'],
+            to: '/introduction/what-is-vanus',
           },
-          {
+          /*{
             from: ['/docs/team', '/docs/next/team'],
             to: '/community/team',
           },
           {
             from: ['/docs/resources', '/docs/next/resources'],
             to: '/community/resources',
-          },
-        ],*/
+          },*/
+        ],
       }),
     ]
   ],
