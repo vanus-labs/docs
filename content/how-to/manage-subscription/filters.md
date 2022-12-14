@@ -1,11 +1,14 @@
+---
+title: Vanus Filters
+---
+
 # Vanus Filters
 
-You can use filters in vanus to filter events are to be delivered to the sink.
+Filters allow you to filter events from an Eventbus when creating a subscription, enabling you to receive only the specific events you need.
 
 ## Use And Example
 
-When create a subscription, option param `filters` which is used to filer events is an array.
-For example:
+When creating a subscription, you can use the optional parameter --filters. See the following example:
 
 ```shell
 vsctl subscription create \
@@ -17,14 +20,11 @@ vsctl subscription create \
     ]'
 ```
 
-Vanus support follow filters:
+Vanus supports the following filter types:
 
 ### Exact
 
-Exact is a map which the keys are the names of the CloudEvents attributes, and their values are the String values to use in the comparison.
-The values of the matching CloudEvents attributes MUST all exactly match with the associated value String specified (case sensitive).
-The attribute name and value specified in the filter express MUST NOT be empty strings.
-For example:
+Exact is a map which the keys are the names of the CloudEvents attributes, and their values are the String values to use in the comparison. The values of the matching CloudEvents attributes MUST all exactly match with the associated value String specified (case sensitive). The attribute name and value specified in the filter express MUST NOT be empty strings. For example:
 
 ```json
 { "exact": { "source": "vanus.source", "type": "vanus.type" } }
@@ -32,10 +32,7 @@ For example:
 
 ### Prefix
 
-Prefix is a map which the keys are the names of the CloudEvents attributes, and their values are the String values to use in the comparison.
-The values of the matching CloudEvents attributes MUST all start with the associated value String specified (case sensitive).
-The attribute name and value specified in the filter express MUST NOT be empty strings.
-For example:
+Prefix is a map which the keys are the names of the CloudEvents attributes, and their values are the String values to use in the comparison. The values of the matching CloudEvents attributes MUST all start with the associated value String specified (case sensitive). The attribute name and value specified in the filter express MUST NOT be empty strings. For example:
 
 ```json
 { "prefix": { "source": "vanus.source", "type": "vanus.type" } }
@@ -43,10 +40,7 @@ For example:
 
 ### Suffix
 
-Suffix is a map which the keys are the names of the CloudEvents attributes, and their values are the String values to use in the comparison.
-The values of the matching CloudEvents attributes MUST all end witch the associated value String specified (case sensitive).
-The attribute name and value specified in the filter express MUST NOT be empty strings.
-For example:
+Suffix is a map which the keys are the names of the CloudEvents attributes, and their values are the String values to use in the comparison. The values of the matching CloudEvents attributes MUST all end with the associated value String specified (case sensitive). The attribute name and value specified in the filter express MUST NOT be empty strings. For example:
 
 ```json
 { "suffix": { "source": "vanus.source", "type": "vanus.type" } }
@@ -54,8 +48,7 @@ For example:
 
 ### Not
 
-Not is a filter, it means the inverse of the result of filter.
-For example:
+Not is a filter that will not extract the events specified in it. All the events that do not have the specification mentioned will be extracted.
 
 ```json
 {
@@ -65,8 +58,7 @@ For example:
 
 ### All
 
-All is a nested array which every item is a filter,it means all item must match.
-For example:
+All can have multiple filter types, and the events must meet all the requirements in the list.
 
 ```json
 {
@@ -79,8 +71,7 @@ For example:
 
 ### Any
 
-Any is a nested array which every item is a filter,it means al least one of item match.
-For example:
+Any can have multiple filter types, and the events will be extracted if they meet any of the requirements in the list.
 
 ```json
 {
@@ -93,10 +84,7 @@ For example:
 
 ### SQL
 
-SQL is a string value, representing [CloudEvents SQL Expression](https://github.com/cloudevents/spec/blob/main/cesql/spec.md).
-The result value of the expression must be boolean, otherwise if an error occurred while evaluating the expression or the result is not boolean will be as FALSE .
-The filter key are the names of the CloudEvents attributes.
-For example:
+SQL is a string value, representing CloudEvents SQL Expression. The result value of the expression must be boolean, otherwise if an error occurred while evaluating the expression or the result is not boolean will be as FALSE . The filter key are the names of the CloudEvents attributes. For example:
 
 ```json
 { "sql": "source LIKE '%vanus%'" }
