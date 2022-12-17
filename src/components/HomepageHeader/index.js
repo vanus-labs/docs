@@ -6,14 +6,13 @@ import mainStyles from '@site/src/pages/index.module.css';
 let canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
     canvas = document.getElementById("canvas");
-    anim_container = document.getElementById("animation_container_src-components-HomepageHeader-styles-module");
+    anim_container = document.getElementById("animationContainer");
     dom_overlay_container = document.getElementById("dom_overlay_container");
     var comp = AdobeAn.getComposition("B475E12A96D145F2B81341DCB704FEDE");
     var lib = comp.getLibrary();
     var loader = new createjs.LoadQueue(false);
     loader.addEventListener("fileload", function (evt) { handleFileLoad(evt, comp) });
     loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
-    var lib = comp.getLibrary();
     loader.loadManifest(lib.properties.manifest);
 }
 function handleFileLoad(evt, comp) {
@@ -65,7 +64,7 @@ export default function HomepageHeader() {
                         <p>Vanus provides an innovative platform for collecting, storing, distributing, and processing events at scale.</p>
                     </div>
                     <div className={styles.image}>
-                        <div id={"animation_container_src-components-HomepageHeader-styles-module"} style={{backgroundColor:"rgba(255, 255, 255, 1.00)"}}>
+                        <div className={styles.animationContainer} id="animationContainer" style={{backgroundColor:"rgba(255, 255, 255, 1.00)"}}>
                             <canvas id="canvas" style={{display: "block", backgroundColor: "rgba(255, 255, 255, 1.00)"}}></canvas>
                             <div id="dom_overlay_container"
                                  style={{pointerEvents:"none", overflow:"hidden", position: "absolute", left: "0px", top: "0px", display: "block"}}>
