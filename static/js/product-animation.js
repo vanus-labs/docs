@@ -2491,8 +2491,8 @@
 		color: "#FFFFFF",
 		opacity: 1.00,
 		manifest: [
-			{src:"images/atlas_1.png?1663053428132", id:"atlas_1"},
-			{src:"images/atlas_2.png?1663053428133", id:"atlas_2"}
+			{src:"img/atlas_1.png?1663053428132", id:"atlas_1"},
+			{src:"img/atlas_2.png?1663053428133", id:"atlas_2"}
 		],
 		preloads: []
 	};
@@ -2549,7 +2549,7 @@
 	}
 	
 	
-	an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers) {		
+	an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers, stage) {
 		var lastW, lastH, lastS=1;		
 		window.addEventListener('resize', resizeCanvas);		
 		resizeCanvas();		
