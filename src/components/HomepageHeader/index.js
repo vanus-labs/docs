@@ -46,14 +46,14 @@ function handleComplete(evt, comp) {
 
 export default function HomepageHeader() {
     const {siteConfig} = useDocusaurusContext();
-    /*useEffect(() => {
+    useEffect(() => {
         init();
 
-    }, []);*/
-    window.addEventListener('load', function () {
+    }, []);
+    /*window.addEventListener('load', function () {
         // do something here ...
         init();
-    }, false);
+    }, false);*/
 
     return (
         <div className={mainStyles.container}>
