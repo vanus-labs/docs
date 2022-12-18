@@ -48,7 +48,7 @@ const config = {
   ],
   scripts: [
     // Object format.
-    {src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'docs.linkall.com'},
+    {src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'vanus.dev'},
     {src: "https://code.createjs.com/1.0.0/createjs.min.js"},
     {src: "/js/product-animation.js"}
   ],
@@ -88,10 +88,16 @@ const config = {
           anonymizeIP: true,
         },
         blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          // routeBasePath: '/',
+          path: 'blog',
           editUrl: 'https://github.com/linkall-labs/docs/edit/main',
+          postsPerPage: 5,
+          feedOptions: {
+            type: 'all',
+           // copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
+          },
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: 'All our posts',
         },
         theme: {
           customCss: [require.resolve('./src/css/custom.scss')
@@ -119,7 +125,6 @@ const config = {
         logo: {
           alt: 'vanus logo',
           src: 'img/vance-logo.png',
-          href: 'https://vanus.dev',
         },
         hideOnScroll: true,
         items: [
@@ -129,6 +134,7 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
+          {to: 'blog', label: 'Blog', position: 'left'},
           // {to: '/blog', label: 'Blog', position: 'left'},
           // {
           //   href: 'https://github.com/linkall-labs/vanus',
