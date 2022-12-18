@@ -48,7 +48,7 @@ const config = {
   ],
   scripts: [
     // Object format.
-    {src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'docs.linkall.com'},
+    {src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'vanus.dev'},
     {src: "https://code.createjs.com/1.0.0/createjs.min.js"},
     {src: "/js/product-animation.js"}
   ],
