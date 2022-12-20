@@ -24,7 +24,7 @@ vsctl subscription create \
       "pipeline":[
         {"command":["create","$.data.source","$.source"]},
         {"command":["delete","$.data.date"]}
-      ]
+      ],
       "template": "source is <source>, amount is <amount>"
     }'
 ```
