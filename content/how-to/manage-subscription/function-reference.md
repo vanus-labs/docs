@@ -5,7 +5,7 @@ The [transformer](transformer.md#function) uses functions in Vanus. Every functi
 The function parameters support the following type:
 
 - Event JSON Path - support event attribute such as `$.id` and event data such as `$.data.service`.
-- Define Variable - in [define](transformer.md#define) defined varialbe such as `<variable>`.
+- Define Variable - in [define](transformer.md#define) defined variable such as `<variable>`.
 - Constant - cunstant value such as "123".
 
 For example:
