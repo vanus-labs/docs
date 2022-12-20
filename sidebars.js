@@ -89,7 +89,8 @@ const sidebars = {
             'connectors/source/sns',
             'connectors/source/http',
             'connectors/source/github',
-            'connectors/source/sqs'
+            'connectors/source/sqs',
+            'connectors/source/kafka'
           ],
         },
         {
@@ -101,7 +102,9 @@ const sidebars = {
           },
           items: [
             'connectors/sink/mysql',
-            'connectors/sink/s3'
+            'connectors/sink/s3',
+            'connectors/sink/display',
+            'connectors/sink/http'
           ],
         },
       ],
