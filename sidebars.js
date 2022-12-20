@@ -39,6 +39,20 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Manage subscriptions',
+          link: {
+            type: 'doc',
+            id: 'how-to/manage-subscription',
+          },
+          items: [
+              'how-to/manage-subscription/filters',
+              'how-to/manage-subscription/function-reference',
+              'how-to/manage-subscription/transformer'
+                 ],
+        },
+
+        {
+          type: 'category',
           label: 'Produce',
           items: ['how-to/produce/using-sdk', 'how-to/produce/send-delay-event'],
         },
@@ -48,7 +62,6 @@ const sidebars = {
           items: ['how-to/consume/using-sdk'],
         },
         'how-to/manage-eventbus',
-        'how-to/manage-subscription',
         'how-to/manage-dlq',
         'how-to/vsctl',
         'how-to/use-lambda',
