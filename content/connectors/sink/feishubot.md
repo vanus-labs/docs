@@ -1,5 +1,5 @@
 ---
-title: Kafka
+title: Feishu
 ---
 
 # Feishu Sink
@@ -53,66 +53,26 @@ Please keep this webhook address properly. Do not publish it on GitHub, blogs, a
 Lastly You need to set a signature like the picture bellow.
 ![bot-config](https://github.com/linkall-labs/vance-docs/raw/main/resources/connectors/sink-feishu-bot/feishu-config.png)
 
-### Step 4: Create a Config.json file
-> vim config.json
-or
-> vi config.json
-
-### Step 5: Insert the configurations.
-Press `I` to modify the file and add the following configurations. Use the chart bellow to modify the configs.
- ```json
- {
-   "secret.bot_signature": "EySRmaqb7SPbkDHjhHd9ah",
-   "enable": "bot",
-   "bot.webhook": "https://open.feishu.cn/open-apis/bot/v2/hook/72d7b506-bd47-45a8-99fd-3af64ae01a96"
- }
- ```
-
-:::tip
-Exit `vim` and `vi` press `ESC` and `shift` + `:` afterwards `wq` and `ENTER`.
-:::
-
-### Add a bot to your group chat
-
-Go to your target group, click Chat Settings > Group Bots > Add Bot, and select Custom Bot to add the bot to the group chat.
-
-Enter a name and description for your bot, or set up an avatar for the bot, and then click "Add".
-
-![add-a-bot](https://github.com/linkall-labs/vance-docs/raw/main/resources/connectors/sink-feishu-bot/add-a-bot.gif)
-
-You will get the webhook address of the bot in the following format:
-
-```
-https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxxxxxxxxxxx
-```
-
-
-![bot-config](https://github.com/linkall-labs/vance-docs/raw/main/resources/connectors/sink-feishu-bot/feishu-config.png)
-
-> ⚠️ You must set your signature verification to make sure push messages work.
-
-### Create Config file
+### Step 4: Create a Config.yaml file by running the following
 
 ```shell
 cat << EOF > config.yml
-# change the webhook and bot_signature to your.
-secret:
-  bot_signature: "xxxxxx"
 enable: ["bot"]
 bot:
-  webhook: "https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxxxxxxxxxxx"
+  webhooks:
+    - chat_group: "bot1"
+      signature: "xxxxxxx"
+      address: "https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxx"
 EOF
 ```
 
-### Start Using Docker
+###  Step 5: Run the docker image
 
 ```shell
 docker run -d -p 31080:8080 --rm \
   -v ${PWD}:/vance/config \
   --name sink-feishu public.ecr.aws/vanus/connector/sink-feishu:latest
 ```
-> docker run -v $(pwd)/config.json:/vance/config/config.json -p 31080:8080 --rm vancehub/sink-feishubot
-
 
 ### Test
 
@@ -131,114 +91,11 @@ curl --location --request POST '127.0.0.1:31080' \
 }'
 ```
 
-now, you cloud see a notice in your chat group.
+now, you should see a notice in your chat group.
 ![received-notification](received-message.png)
 
 ### Clean
 
 ```shell
 docker stop sink-feishu
-```
-
-## Configuration
-
-The default path is `/vance/config/config.yml`. if you want to change the default path, you can set env `CONNECTOR_CONFIG` to
-tell Feishu Sink.
-
-
-| Name                 | Required | Default | Description                                                                              |
-| :--------------------- | :--------: | :-------: | ------------------------------------------------------------------------------------------ |
-| secret.bot_signature | **YES** |    -    | Feishu Bot signature.                                                                    |
-| enable               | **YES** |    -    | which services you want Feishu Sink are enabled                                          |
-| bot.webhook          | **YES** |    -    | HTTP endpoint of Feishu Bot, looks like https://open.feishu.cn/open-apis/bot/v2/hook/... |
-
-### Separate Secret(Optional)
-
-If you want separate secret information to an independent file, you could create a file like:
-
-```shell
-cat << EOF > secret.yml
-bot_signature: "xxxxxx"
-EOF
-```
-
-then mount it into your container. The default path of it is `/vance/config/secret.yml`. if you want to change the default path,
-you can set env `CONNECTOR_SECRET` to tell Feishu Sink.
-
-This feature is very useful when you want to use [Secrets](https://kubernetes.io/docs/concepts/configuration/secret/) in Kubernetes
-> curl -X POST -d '{"id": "53d1c340-551a-11ed-96c7-8b504d95037c", "source": "sink-feishu-quickstart", "specversion": "1.0", "type": "hello", "datacontenttype": "application/json", "time": "2022-10-26T10:38:29.345Z", "vancefeishusinkservice": "bot", "data": "Hello Feishu!"}' -H'Content-Type:application/cloudevents+json' http://localhost:8080
-
-
-## Run in Kubernetes
-
-```yaml
-apiVersion: v1
-kind: Service
-metadata:
-  name: sink-feishu
-  namespace: vanus
-spec:
-  selector:
-    app: sink-feishu
-  type: ClusterIP
-  ports:
-    - port: 8080
-      name: sink-feishu
----
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: sink-feishu
-  namespace: vanus
-data:
-  config.yml: |-
-    enable: ["bot"]
-    bot:
-      # write right webook
-      webhook: "https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxx"
-    secret:
-      # write right bot_signature
-      bot_signature: "xxxxx"
-
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: sink-feishu
-  namespace: vanus
-  labels:
-    app: sink-feishu
-spec:
-  selector:
-    matchLabels:
-      app: sink-feishu
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: sink-feishu
-    spec:
-      containers:
-        - name: sink-feishu
-#          For China mainland
-#          image: linkall.tencentcloudcr.com/vanus/connector/sink-feishu:latest
-          image: public.ecr.aws/vanus/connector/sink-feishu:latest
-          resources:
-            requests:
-              memory: "128Mi"
-              cpu: "100m"
-            limits:
-              memory: "512Mi"
-              cpu: "500m"
-          imagePullPolicy: Always
-          ports:
-            - name: http
-              containerPort: 8080
-          volumeMounts:
-            - name: config
-              mountPath: /vance/config
-      volumes:
-        - name: config
-          configMap:
-            name: sink-feishu
 ```
