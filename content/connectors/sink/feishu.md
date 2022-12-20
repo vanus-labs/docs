@@ -14,6 +14,7 @@ original event and deliver these extracted `data` to  Feishu APIs.
 ## Handling incoming CloudEvents
 
 For example, if the incoming CloudEvent looks like:
+
 ```http
 {
   "id" : "42d5b039-daef-4071-8584-e61df8fc1354",
@@ -92,10 +93,12 @@ curl --location --request POST '127.0.0.1:31080' \
 ```
 
 now, you should see a notice in your chat group.
-![received-notification](received-message.png)
+![received-notification](https://github.com/linkall-labs/vance/blob/main/connectors/sink-feishu/received-message.png)
 
 ### Clean
 
 ```shell
 docker stop sink-feishu
 ```
+
+Find the official docs of [Feishu](https://open.feishu.cn/document/ukTMukTMukTM/ucTM5YjL3ETO24yNxkjN?lang=zh-CN#132a114c.) bot.
