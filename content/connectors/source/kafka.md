@@ -51,17 +51,7 @@ Create a new file name config.json with the following command.
 or
 > vi config.json
 
-### Step 2: Insert the configurations.
-Press `I` to modify the file and add the following configurations. Use the chart bellow to modify the configs.
- ```json
- {
-   "v_target": "http://host.docker.internal:8081",
-   "KAFKA_SERVER_URL": "host.docker.internal",
-   "KAFKA_SERVER_PORT": "8082",
-   "CLIENT_ID": "KafkaSource",
-   "TOPIC_LIST": "topic1"
- }
- ```
+
 ### Config Fields of the kafka Source
 | Configs   | Description                                                                     | Example                               |
 |:----------|:--------------------------------------------------------------------------------|:--------------------------------------|
