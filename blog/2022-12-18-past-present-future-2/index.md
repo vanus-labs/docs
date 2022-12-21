@@ -6,7 +6,7 @@ tags: ['Serverless', 'Message Queue', 'Kafka']
 
 # The Past, Present and Future of Message Queue 2
 **Abstract**：
-Second part of "The Past, Present and Future of Message Queue". See first part [here](blog/2022/12/18/past-present-future).
+Second part of "The Past, Present and Future of Message Queue". See previous articles.
 
 <!--truncate-->
 

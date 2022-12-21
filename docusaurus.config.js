@@ -44,11 +44,21 @@ const config = {
           },*/
         ],
       }),
+    ],
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'community',
+        path: 'community',
+        routeBasePath: 'community',
+        sidebarPath: require.resolve('./sidebarsCommunity.js'),
+      }),
     ]
   ],
   scripts: [
     // Object format.
-    {src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'vanus.dev'},
+    {src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'linkall.com'},
     {src: "https://code.createjs.com/1.0.0/createjs.min.js"},
     {src: "/js/product-animation.js"}
   ],
@@ -135,6 +145,12 @@ const config = {
             label: 'Docs',
           },
           {to: 'blog', label: 'Blog', position: 'left'},
+          {
+            to: '/community/support',
+            label: 'Community',
+            position: 'left',
+            activeBaseRegex: `/community/`,
+          },
           // {to: '/blog', label: 'Blog', position: 'left'},
           // {
           //   href: 'https://github.com/linkall-labs/vanus',
