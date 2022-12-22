@@ -1,10 +1,9 @@
 # Vanus Transformer
 
 The transformer feature from Vanus lets you customize data from a CloudEvent before sending it to the Sink connector. With this feature, you can create Variables according to JSON values. Once you've created variables for all the desired data, you can create a template. You can make the Variables from the CloudEvent attributes and data.
-:::notice
-The transforming tool uses JSON format, so the receiving data must be in a JSON format to use it.
-Although it is still possible to partially use the transformer tool to get the CloudEvent attributes.
-:::
+
+:::tip The transforming tool uses JSON format, so the receiving data must be in a JSON format to use it.
+Although it is still possible to partially use the transformer tool to get the CloudEvent attributes.:::
 
 ## Uses And Example
 
