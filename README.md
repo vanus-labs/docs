@@ -1,6 +1,6 @@
 # Vanus Documentation
 
-Welcome to Vanus documentation!👋
+Welcome to Vanus documentation!👋 Hello world
 
 [Vanus](https://github.com/linkall-labs/vanus/) is an open-source, cloud-native, Serverless message queue for building EDA applications with Ease.
 
