@@ -6,7 +6,7 @@ title: Slack
 
 ## Introduction
 
-The Slack Sink is a [Vance Connector](../README.md) which aims to handle incoming CloudEvents in a way that extracts the `data` part of the
+The Slack Sink is a [Vance Connector](https://github.com/linkall-labs/vance/blob/main/connectors/README.md) which aims to handle incoming CloudEvents in a way that extracts the `data` part of the
 original event and deliver these extracted `data` to Slack channels.
 
 For example, if the incoming CloudEvent looks like:
