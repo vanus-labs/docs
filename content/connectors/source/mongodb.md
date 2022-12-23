@@ -13,11 +13,11 @@ This connector captures mongodb [Change Event](https://www.mongodb.com/docs/manu
 ## Quickstart
 
 ### Prerequisites
-- Have container runtime (i.e., docker).
+- Have a container runtime (i.e., docker).
 - have a Mongodb database.
 
 ### Step 1: Create a Config.yaml file
-Create a new file name config.yaml with the following command.
+Create a new file name config.yaml with the following command:
 
 ```shell
 cat << EOF > config.yml
@@ -29,7 +29,7 @@ EOF
 For full configuration, you can see [config](#Configuration) section.
 
 ### Step 2: Run the docker image
-Run The connector with the following command.
+Run The connector with the following command:
 
 ```shell
 docker run -d --rm \
@@ -41,7 +41,7 @@ docker run -d --rm \
 
 ### (Optional) Verify the Source connector
 
-Answer a new document in your database with the following command.
+insert a new document in your database with the following command.
 ```shell
 db.mongo_source.insert({"test":"demo"})
 ```
@@ -84,7 +84,6 @@ and you will receive an event like this:
 ```shell
 docker stop source-mongodb
 ```
-
 
 
 ### Configuration
