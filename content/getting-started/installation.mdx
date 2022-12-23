@@ -39,18 +39,17 @@ kubectl apply -f https://download.linkall.com/all-in-one/v0.5.3.cn.yml
 
 </Tabs>
 
-After using kubectl apply, “vanus” namespace is created
+After using kubectl apply, vanus namespace is created
 
 ```bash
 kubectl get ns
 ```
-```text
+```bash
 NAME 			        STATUS		AGE
 default			      Active		6m35s
 kube-node-lease	  Active		6m36s
 kube-public		    Active		6m36s
 kube-system		    Active		46s
-
 ```
 ### Switch Default Namespace to Vanus
 To switch default namespace to vanus use:
