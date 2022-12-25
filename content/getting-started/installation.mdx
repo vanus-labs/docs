@@ -81,3 +81,15 @@ vanus-store-2                    1/1     Running   0           12s
 vanus-timer-88bc6885-fst27       1/1     Running   0           10s
 vanus-trigger-8668cd4659-l9lgp   1/1     Running   0           10s
 ```
+
+You can also access the pods without changing the default namespace. To do this, use:
+
+```shell
+kubectl get pods -n vanus
+```
+
+This can be done after installing Vanus with:
+
+```bash
+kubectl apply -f https://download.linkall.com/all-in-one/v0.5.3.yml
+```
