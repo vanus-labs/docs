@@ -39,11 +39,33 @@ kubectl apply -f https://download.linkall.com/all-in-one/v0.5.3.cn.yml
 
 </Tabs>
 
-After the installation is finished, we will need to monitor the components until the status of each component shows Running. You can monitor the status of the components by running the following command:
+After using kubectl apply, vanus namespace is created
+
+```bash
+kubectl get ns
+```
+```bash
+NAME 			STATUS		AGE
+default			Active		6m35s
+kube-node-lease	         Active		6m36s
+kube-public		Active		6m36s
+kube-system		Active		6m36s
+vanus			Active		46s
+
+```
+### Switch Default Namespace to Vanus
+To switch default namespace to vanus use:
+
+```bash
+kubectl config set-context --current --namespace=vanus
+```
+
+Now, you can easily see the pods in the namespace
 
 ```shell
-kubectl get pods -n vanus
+kubectl get pods
 ```
+
 
 The output:
 
