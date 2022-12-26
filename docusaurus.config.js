@@ -24,7 +24,7 @@ const config = {
         name: "source", // used by CLI, must be path safe
         sourceBaseUrl: "https://raw.githubusercontent.com/linkall-labs/vance/main/connectors/", // the base url for the markdown (gets prepended to all of the documents when fetching)
         outDir: "content/connectors/source/", // the base directory to output to.
-        documents: ["source-alicloud-billing/README.md", "source-aws-billing/README.md", "source-aws-sns/README.md", "source-aws-sqs/README.md", "source-github/README.md", "source-http/README.md", "source-kafka/README.md", "source-mongodb/README.md", "source-mysql/README.md", "source-postgres/README.md", "source-tencentcloud-cos/README.md"], // the file names to download
+        documents: ["source-alicloud-billing/README.md", "source-aws-billing/README.md", "source-aws-sns/README.md", "source-aws-sqs/README.md", "source-github/README.md", "source-http/README.md", "source-kafka/README.md", "source-mongodb/README.md", "source-mysql/README.md", "source-postgres/README.md"], // the file names to download
       },
     ],
     [

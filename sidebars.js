@@ -94,8 +94,7 @@ const sidebars = {
             'connectors/source/source-alicloud-billing/README',
             'connectors/source/source-aws-billing/README',
             'connectors/source/source-mongodb/README',
-            'connectors/source/source-postgres/README',
-            'connectors/source/source-tencentcloud-cos/README'
+            'connectors/source/source-postgres/README'
           ],
         },
         {
