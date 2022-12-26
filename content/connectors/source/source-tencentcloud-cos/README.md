@@ -2,7 +2,8 @@
 title: Tencent COS
 ---
 
-# Tencent COS Source
+
+# Tencent COS Source Connector
 
 ## Introduction
 
