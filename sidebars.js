@@ -84,13 +84,17 @@ const sidebars = {
             id: 'connectors/source',
           },
           items: [
-              'connectors/source/mysql',
+              'connectors/source/source-mysql/README',
               'connectors/source/s3',
             'connectors/source/sns',
-            'connectors/source/http',
+            'connectors/source/source-http/README',
             'connectors/source/github',
             'connectors/source/sqs',
-            'connectors/source/kafka'
+            'connectors/source/kafka',
+            'connectors/source/source-alicloud-billing/README',
+            'connectors/source/source-aws-billing/README',
+            'connectors/source/source-mongodb/README',
+            'connectors/source/source-postgres/README'
           ],
         },
         {
@@ -103,8 +107,17 @@ const sidebars = {
           items: [
             'connectors/sink/mysql',
             'connectors/sink/s3',
-            'connectors/sink/display',
-            'connectors/sink/http'
+            'connectors/sink/sink-display/README',
+            'connectors/sink/sink-http/README',
+            'connectors/sink/sink-doris/README',
+            'connectors/sink/sink-elasticsearch/README',
+            'connectors/sink/sink-email/README',
+            'connectors/sink/sink-feishu/README',
+            'connectors/sink/sink-k8s/README',
+            'connectors/sink/sink-mongodb/README',
+            'connectors/sink/sink-slack/README',
+            'connectors/sink/sink-tencentcloud-scf/README'
+
           ],
         },
       ],
