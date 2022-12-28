@@ -43,4 +43,4 @@ You can Contact us with the following channels:
 
 - [Slack](https://join.slack.com/t/vanusworkspace/shared_invite/zt-1jilbbfo2-NxiFG0VOo8ABGCCNaeNfcA)
 - [@Vanus_dev](https://twitter.com/Vanus_dev) on Twitter
-- [GitHub Issues](https://github.com/linkall-labs/docs/issues)
+- [GitHub Issues](https://github.com/linkall-labs/docs/issues) 
