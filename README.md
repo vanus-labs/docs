@@ -28,7 +28,7 @@ Thank you for your interest in contributing!
 If you want to contribute to the documentation, you can
 open an issue or use the `Edit this page` pencil icon on the bottom of each page of
 the website.
-<a href="![vanus_edit_pagee](https://user-images.githubusercontent.com/64489317/209808259-7f29b8c0-97de-4405-9735-f0d31a92159c.png)" onclick="edit()"><img src="../template/edit.png" id="edit-save" alt="Edit" /></a>
+<a href="![vanus_edit_pagee](https://user-images.githubusercontent.com/64489317/209808259-7f29b8c0-97de-4405-9735-f0d31a92159c.png)" onclick="edit()"><img src="static/img/vanus_edit_pagee.png" id="edit-save" alt="Edit" /></a>
 
 
 ### Code of Conduct
