@@ -29,6 +29,9 @@ If you want to contribute to the documentation, you can
 open an issue or use the `Edit this page` pencil icon on the bottom of each page of
 the website.
 
+![vanus_edit_pagee](static/img/vanus_edit_pagee.png)
+
+
 ### Code of Conduct
 
 Before starting your contribution, you should take a moment to read the [Vanus code of conduct](CODE_OF_CONDUCT.md).
