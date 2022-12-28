@@ -35,11 +35,11 @@ Before starting your contribution, you should take a moment to read the [Vanus c
 
 ### Contributing guide
 
-Read our [contributing guide](CONTRIBUTING.md) to learn about how to contribute to Vanus documentation.
+Read our [contributing guide](CONTRIBUTING.md) to learn how to contribute to Vanus documentation.
 
 ## Community
 
-We have a few channels for contact:
+You can Contact us with the following channels:
 
 - [Slack](https://join.slack.com/t/vanusworkspace/shared_invite/zt-1jilbbfo2-NxiFG0VOo8ABGCCNaeNfcA)
 - [@Vanus_dev](https://twitter.com/Vanus_dev) on Twitter
