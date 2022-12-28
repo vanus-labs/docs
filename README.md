@@ -25,6 +25,9 @@ The Vanus documentation website is built using [Docusaurus 2](https://docusaurus
 
 Thank you for your interest in contributing!
 
+![vanus_edit_pagee](https://user-images.githubusercontent.com/64489317/209808259-7f29b8c0-97de-4405-9735-f0d31a92159c.png)
+
+
 If you want to contribute to the documentation, you can
 open an issue or use the `Edit this page` pencil icon on the bottom of each page of
 the website.
