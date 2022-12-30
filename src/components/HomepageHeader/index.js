@@ -64,7 +64,7 @@ export default function HomepageHeader() {
                         <p>Vanus provides an innovative platform for collecting, storing, distributing, and processing events at scale.</p>
                     </div>
                     <div className={styles.image}>
-                        <div className={styles.animationContainer} id="animationContainer" style={{backgroundColor:"rgba(255, 255, 255, 1.00)"}}>
+                        <div className={styles.animationContainer} id="animationContainer">
                             <canvas id="canvas" style={{display: "block", backgroundColor: "rgba(255, 255, 255, 1.00)"}}></canvas>
                             <div id="dom_overlay_container"
                                  style={{pointerEvents:"none", overflow:"hidden", position: "absolute", left: "0px", top: "0px", display: "block"}}>
