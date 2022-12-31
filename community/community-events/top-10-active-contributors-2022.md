@@ -20,13 +20,12 @@ Check out our good-first-time issues for each repo, and start contributing today
 
 - [Vanus functions good-first-time issues](https://github.com/linkall-labs/vanus/issues/355)
 - [Vanus documentation good-first-time issues](https://github.com/linkall-labs/docs/issues/124)
+- [Vanus Connect good-first-time issues](https://github.com/linkall-labs/vance/issues/131)
 
-Each PR of `Vanus functions good-first-time issues` will be counted 10 points.
+Each PR of `Vanus functions good-first-time issues` will be counted from 5 to 10 points.
 
-Each PR of `Vanus documentation good-first-time issues` will be counted 1-4 points by the community depending on what sort of
-changes you made. For example, typos or format errors(punctuation, space, indentation, code block, etc.) will be counted 1 point.
-Update inappropriate content might be counted as 2-4 points based on how many changes you've made, You can even suggest a brand-new
-documentation which Vanus currently lacks.
+Each PR of `Vanus documentation good-first-time issues` will be counted 1-4 points by the community depending on what sort of changes you made. For example, typos or format errors(punctuation, space, indentation, code block, etc.) will be counted 1 point.
+Update inappropriate content might be counted as 2-4 points based on how many changes you've made, You can even suggest a brand-new documentation which Vanus currently lacks.
 
 Active discussions on [Vanus Slack](https://vanusworkspace.slack.com/archives/C0494Q1V0EA) will also give you some points.
 
