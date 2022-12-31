@@ -32,8 +32,8 @@ The following sections describe the functions, organized by what they do.
   - replace_with_regex
   - join
 - [Date and time](function-reference/date-time.md)
-  - format_date
-  - format_unix_time
+  - date_format
+  - unix_time_format
 - [Mathematical](function-reference/mathematical.md)
   - math_add
   - math_sub
