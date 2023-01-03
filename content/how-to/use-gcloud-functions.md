@@ -9,7 +9,7 @@ Vanus supports sending direct events to [Cloud Functions][cloud functions]. The 
 Before using Cloud Functions, you must meet the following prerequisites.
 
 1. Have a running  [Vanus](https://github.com/linkall-labs/docs/blob/main/content/getting-started/installation.mdx)  cluster.
-2. Have <a href ="https://github.com/linkall-labs/docs/blob/main/content/how-to/vsctl.md"> vsctl </a>.
+2. Have  [vsctl](https://github.com/linkall-labs/docs/blob/main/content/how-to/vsctl.md) .
 3. Have a Cloud account and create a [service account].
 4. Have a [Cloud Function][function].
 5. The "cloudfunctions.functions.invoke" [permission] grant for your gcloud account
