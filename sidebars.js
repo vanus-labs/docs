@@ -98,17 +98,19 @@ const sidebars = {
             id: 'connectors/source',
           },
           items: [
-            'connectors/source/source-mysql/README',
-            'connectors/source/source-aws-s3/README',
-            'connectors/source/source-aws-sns/README',
-            'connectors/source/source-http/README',
-            'connectors/source/source-github/README',
-            'connectors/source/source-aws-sqs/README',
-            'connectors/source/source-kafka/README',
             'connectors/source/source-alicloud-billing/README',
             'connectors/source/source-aws-billing/README',
+            'connectors/source/source-aws-s3/README',
+            'connectors/source/source-aws-sns/README',
+            'connectors/source/source-aws-sqs/README',
+            'connectors/source/source-github/README',
+            'connectors/source/source-http/README',
+            'connectors/source/source-kafka/README',
             'connectors/source/source-mongodb/README',
-            'connectors/source/source-postgres/README'
+            'connectors/source/source-mysql/README',
+            'connectors/source/source-postgres/README',
+            'connectors/source/source-tencentcloud-cos/README.md'
+
           ],
         },
         {
@@ -119,16 +121,16 @@ const sidebars = {
             id: 'connectors/sink',
           },
           items: [
-            'connectors/sink/sink-mysql/README',
             'connectors/sink/sink-aws-s3/README',
             'connectors/sink/sink-display/README',
-            'connectors/sink/sink-http/README',
             'connectors/sink/sink-doris/README',
             'connectors/sink/sink-elasticsearch/README',
             'connectors/sink/sink-email/README',
             'connectors/sink/sink-feishu/README',
+            'connectors/sink/sink-http/README',
             'connectors/sink/sink-k8s/README',
             'connectors/sink/sink-mongodb/README',
+            'connectors/sink/sink-mysql/README',
             'connectors/sink/sink-slack/README',
             'connectors/sink/sink-tencentcloud-scf/README'
 
