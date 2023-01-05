@@ -109,7 +109,7 @@ const sidebars = {
             'connectors/source/source-mongodb/README',
             'connectors/source/source-mysql/README',
             'connectors/source/source-postgres/README',
-            'connectors/source/source-tencentcloud-cos/README.md'
+            'connectors/source/source-tencentcloud-cos/README'
 
           ],
         },

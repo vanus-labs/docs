@@ -22,7 +22,7 @@ const config = {
       {
         // options here
         name: "source", // used by CLI, must be path safe
-        sourceBaseUrl: "https://raw.githubusercontent.com/linkall-labs/vance/main/connectors/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+        sourceBaseUrl: "https://raw.githubusercontent.com/linkall-labs/vanus-connect/main/connectors/", // the base url for the markdown (gets prepended to all of the documents when fetching)
         outDir: "content/connectors/source/", // the base directory to output to.
         documents: ["source-alicloud-billing/README.md", "source-aws-billing/README.md", "source-aws-sns/README.md", "source-aws-sqs/README.md", "source-github/README.md", "source-http/README.md", "source-kafka/README.md", "source-mongodb/README.md", "source-mysql/README.md", "source-postgres/README.md", "source-aws-s3/README.md", "source-tencentcloud-cos/README.md"], // the file names to download
       },
@@ -32,7 +32,7 @@ const config = {
       {
         // options here
         name: "sink", // used by CLI, must be path safe
-        sourceBaseUrl: "https://raw.githubusercontent.com/linkall-labs/vance/main/connectors/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+        sourceBaseUrl: "https://raw.githubusercontent.com/linkall-labs/vanus-connect/main/connectors/", // the base url for the markdown (gets prepended to all of the documents when fetching)
         outDir: "content/connectors/sink/", // the base directory to output to.
         documents: ["sink-aws-s3/README.md", "sink-display/README.md", "sink-doris/README.md", "sink-elasticsearch/README.md", "sink-email/README.md", "sink-feishu/README.md", "sink-http/README.md", "sink-k8s/README.md", "sink-mongodb/README.md", "sink-mysql/README.md", "sink-slack/README.md", "sink-tencentcloud-scf/README.md"], // the file names to download
       },
