@@ -58,7 +58,22 @@ const sidebars = {
           items: [
               'how-to/manage-subscription/filters',
               'how-to/manage-subscription/transformer',
-              'how-to/manage-subscription/function-reference'
+              {
+                type: 'category',
+                label: 'Function reference',
+                link: {
+                  type: 'doc',
+                  id: 'how-to/manage-subscription/function-reference',
+                },
+                items: [
+                    'how-to/manage-subscription/function-reference/structure',
+                    'how-to/manage-subscription/function-reference/string',
+                    'how-to/manage-subscription/function-reference/date-time',
+                    'how-to/manage-subscription/function-reference/mathematical',
+                    'how-to/manage-subscription/function-reference/conditional',
+                    'how-to/manage-subscription/function-reference/array'
+                ],
+              },
           ],
         },
         'how-to/manage-dlq',
