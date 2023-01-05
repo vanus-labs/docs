@@ -1,5 +1,5 @@
 ---
-title: Tencent COS
+title: Tencent-COS
 ---
 
 # Tencent COS Source Connector

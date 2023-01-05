@@ -110,7 +110,6 @@ const sidebars = {
             'connectors/source/source-mysql/README',
             'connectors/source/source-postgres/README',
             'connectors/source/source-tencentcloud-cos/README'
-
           ],
         },
         {
@@ -133,7 +132,6 @@ const sidebars = {
             'connectors/sink/sink-mysql/README',
             'connectors/sink/sink-slack/README',
             'connectors/sink/sink-tencentcloud-scf/README'
-
           ],
         },
       ],
