@@ -82,7 +82,7 @@ services can be triggered by an event sent from the event broker.
 
 Log-based brokers like Apache Kafka use partitioning of topics to support scale out. Each partition is only accessed by a single consumer per subscriber group.
 The subscriber group can have no more consumers than there are partitions. And number of partitions is not recommended to be changed dynamically after the topic is created.
-So, even if Serverless platform horizontally scales your services out, only services with the same number of partitions can obtain messages from the broker. Other scaled
+So, even if Serverless platform horizontally scales your consumers out, only consumers with the same number of partitions can obtain messages from the broker. Other scaled
 instances can never work.
 
 ## How to solve challenges above
@@ -149,6 +149,6 @@ request-response communication patterns to minimize coupling, enable asynchronic
 However, challenges to build an event-driven architecture in Serverless computing are even more than there are in microservices.
 
 The event broker is pivotal to the design and implementation of an EDA in Serverless computing. Choose a suitable event broker is essential for building an event-driven architecture.
-[Vanus](https://github.com/linkall-labs/vanus) is an open-source, cloud-native, subscription-based message queue for building EDA applications in Serverless with Ease.
+**[Vanus](https://github.com/linkall-labs/vanus) is an open-source, cloud-native, subscription-based message queue for building EDA applications in Serverless with Ease.**
 
-Not familiar with Vanus yet? Go to our online playground to experience it now: https://play.linkall.com!
+**Not familiar with Vanus yet? Go to our online playground to experience it now: https://play.linkall.com!**
