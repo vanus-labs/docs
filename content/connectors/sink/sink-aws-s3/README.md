@@ -3,7 +3,7 @@ title: Amazon S3
 ---
 
 # Amazon S3 Source
-This document provides a brief introduction to the Amazon S3 Source. It's also designed to guide you through the 
+This document provides a brief introduction to the Amazon S3 Source. It's also designed to guide you through the
 process of running an Amazon S3 Source Connector.
 
 ## Introduction
@@ -90,7 +90,7 @@ The Amazon S3 Source will transform the S3 event above into a CloudEvent with th
   }
 }
 ```
-The process to convert AWS S3 events into CloudEvents conforms to the [CloudEvents S3 Adapter specification][s3-adapter]. 
+The process to convert AWS S3 events into CloudEvents conforms to the [CloudEvents S3 Adapter specification][s3-adapter].
 
 ## Features
 - **At least once delivery**: Events sent from the S3 Source are designed to be delivered at least once.
@@ -116,7 +116,7 @@ This quick start will guide you through the process of running an Amazon S3 Sour
 - An AWS account configured with [Access Keys][access-keys].
 
 ### Set S3 Source Configurations
-You can specify your configs by either setting environments variables or mounting a config.json to 
+You can specify your configs by either setting environments variables or mounting a config.json to
 `/vance/config/config.json` when running the connector.
 
 Here is an example of a configuration file for the Amazon S3 Source.
@@ -140,7 +140,7 @@ $ vim config.json
 
 ### Set S3 Source Secrets
 
-Users should set their sensitive data Base64 encoded in a secret file. And mount that secret file to 
+Users should set their sensitive data Base64 encoded in a secret file. And mount that secret file to
 `/vance/secret/secret.json` when running the connector.
 
 #### Encode your Sensitive Data

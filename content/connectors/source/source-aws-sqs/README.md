@@ -89,10 +89,10 @@ Create your config.json and secret.json, and mount them to
 specific paths to run the SQS Source using the following command.
 
 > docker run -v $(pwd)/secret.json:/vance/secret/secret.json -v $(pwd)/config.json:/vance/config/config.json --rm vancehub/soure-aws-sqs
-docker pull 
+docker pull
 
 
 
 
 [vc]: https://github.com/linkall-labs/vance-docs/blob/main/docs/concept.md
-[config]: https://github.com/linkall-labs/vance-docs/blob/main/docs/connector.md
+[config]: https://github.com/linkall-labs/vance-docs/blob/main/docs/connector.mdub.com/linkall-labs/vance-docs/blob/main/docs/connector.md

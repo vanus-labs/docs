@@ -8,12 +8,12 @@ It is also designed to guide you through the process of running a
 MySQL Sink Connector.
 
 ## Introduction
-The MySQL Sink is a [Vance Connector][vc] that aims to handle incoming CloudEvents 
-in a way that extracts the data part of the original event and delivers these 
-extracted data to a MySQL database using JDBC. Before using this Sink, you will 
+The MySQL Sink is a [Vance Connector][vc] that aims to handle incoming CloudEvents
+in a way that extracts the data part of the original event and delivers these
+extracted data to a MySQL database using JDBC. Before using this Sink, you will
 need to create a database and a table.
 
-## Handling incoming CloudEvent 
+## Handling incoming CloudEvent
 For example, if the incoming CloudEvent looks like this:
 ```json
 {
@@ -61,8 +61,8 @@ This quick start will guide you through the process of running an MySQL Sink Con
 - Have a database and table created.
 
 ### Set MySQL Sink Configurations
-You can specify your configs by either setting environments 
-variables or mounting a config.json to `/vance/config/config.json` 
+You can specify your configs by either setting environments
+variables or mounting a config.json to `/vance/config/config.json`
 when running the Connector.
 
 Here is an example of a configuration file for the MySQL Sink.
@@ -75,7 +75,7 @@ Here is an example of a configuration file for the MySQL Sink.
 }
 ```
 
- #### Config Fields of the MySQL Sink
+#### Config Fields of the MySQL Sink
 | name             | requirement | description                                                                |
 |------------------|-------------|----------------------------------------------------------------------------|
 | v_port           | optional    | v_port is used to specify the port MySql Sink is listening on,default 8080 |
@@ -122,8 +122,8 @@ specific paths to run the MySQL Sink using the following command.
 
 > docker run -v $(pwd)/secret.json:/vance/secret/secret.json -v $(pwd)/config.json:/vance/config/config.json --rm vancehub/sink-mysql
 
-### Verify the MySQL Sink 
-You can verify if the MySQL Sink works properly by 
+### Verify the MySQL Sink
+You can verify if the MySQL Sink works properly by
 sending a CloudEvent with the POST terminal command, for example.
 
 ```shell
