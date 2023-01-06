@@ -20,6 +20,7 @@ there are 5 services in the chain, then you have to set the timeout of service A
 In this article, we will introduce an alternative communication pattern (**Event Driven Architecture**) to build your microservices.
 Then we'll dive into the concepts of event-driven architecture and how you can better build it in the next generation cloud computing - **Serverless computing**.
 
+![img_1.png](eda-serverless.png)
 <!--truncate-->
 
 ## EDA Overview
