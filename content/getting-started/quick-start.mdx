@@ -318,18 +318,19 @@ the transformed event has been displayed.
 
 ```shell
 ...                                                                                                                                                   │
-time="2022-12-15T16:39:15.368524581Z" level=info msg="receive a new event" in_total=3
+time="2023-01-06T18:15:16.153678086Z" level=info msg="receive a new event" in_total=4
 {
   "specversion": "1.0",
   "id": "1st",
   "source": "quick-start-filter-section",
   "type": "cmd",
   "datacontenttype": "application/json",
-  "time": "2022-12-15T16:39:12.361856014Z",
+  "time": "2023-01-06T18:15:13.123033Z",
   "data": {
-    "msg": "1st event, DISPLAY: YES"
+    "transKey": "1st event, DISPLAY: YES",
+    "transSource": "quick-start-filter-section"
   },
-  "xvanusstime": "2022-12-15T16:39:12.362Z",
+  "xvanusstime": "2023-01-06T18:15:13.124Z",
   "xvanuseventbus": "quick-start"
 }
 ```
