@@ -8,3 +8,4 @@ sink connector receives CloudEvents and does some specific business logics. (e.g
 
 ## Connectors List
 
+- Amazon S3 [Documentation](sink/sink-aws-s3/README.md) [Repository](https://github.com/linkall-labs/vanus-connect/tree/main/connectors/sink-aws-s3)
