@@ -14,6 +14,13 @@ You can skip the step if you already have those.
 ## Installation
 
 ### Vanus
+1. create Docker network for Quick Start.
+
+```bash
+docker network create --driver bridge vanus-quickstart
+```
+
+2. start Vanus **all-in-one** container.
 
 <Tabs >
 
@@ -34,7 +41,7 @@ docker run -d --rm \
 
 ### Command Line Tool
 
-**Firstly**, download **vsctl**, the command line tool of Vanus.
+Download **vsctl**, the command line tool of Vanus.
 
 <Tabs>
 <TabItem label="Linux" value="linux">
@@ -69,7 +76,7 @@ mv vsctl /usr/local/bin
 </Tabs>
 
 
-**Secondly**, verify installation
+verify installation
 
 ```shell
 vsctl version
