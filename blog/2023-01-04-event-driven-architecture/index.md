@@ -17,7 +17,7 @@ requests and responses, service A calls service B, service B calls service C, an
 there are 5 services in the chain, then you have to set the timeout of service A as 2500ms, while the service B needs 2000ms and
 500ms for the last service in the chain.
 
-In this article, we will introduce an alternative communication pattern(**Event Driven Architecture**) to build your microservices.
+In this article, we will introduce an alternative communication pattern (**Event Driven Architecture**) to build your microservices.
 Then we'll dive into the concepts of event-driven architecture and how you can better build it in the next generation cloud computing - **Serverless computing**.
 
 <!--truncate-->
@@ -34,7 +34,7 @@ All these events exist no matter if you use them to trigger your services or not
 ### Producer and Consumer
 
 The instance who generates an event is called a producer. On the other side, A consumer receives the event and acts upon it.
-In an event-driven architecture, producers won't directly send an event to a consumer(otherwise that will be a request-response pattern). 
+In an event-driven architecture, producers won't directly send an event to a consumer (otherwise that will be a request-response pattern). 
 Instead, to functionally decouple producers and consumers, we **import an intermediary** so that producers can send events without
 any knowledge about the consumer, meanwhile consumers are completely unaware of who will send events to them. 
 
