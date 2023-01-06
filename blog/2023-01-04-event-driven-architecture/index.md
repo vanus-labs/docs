@@ -17,8 +17,8 @@ requests and responses, service A calls service B, service B calls service C, an
 there are 5 services in the chain, then you have to set the timeout of service A as 2500ms, while the service B needs 2000ms and
 500ms for the last service in the chain.
 
-In this article, we will introduce an alternative communication pattern (**Event Driven Architecture**) to build your microservices.
-Then we'll dive into the concepts of event-driven architecture and how you can better build it in the next generation cloud computing - **Serverless computing**.
+In this article, we will introduce an alternative communication pattern (**Event Driven Architecture**) which enables asynchronous communication to avoid synchronous request chains.
+Then dive into the concepts of event-driven architecture and how you can better build it in the next generation cloud computing - **Serverless computing**.
 
 ![img_1.png](eda-serverless.png)
 <!--truncate-->
