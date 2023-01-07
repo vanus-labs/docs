@@ -25,6 +25,11 @@ limited.
 
 Each Eventbus has its own retention policy. The default event retention policy is to expire after 3 days.
 
+### Sink
+
+The Sink is the target which receives events. It may be a [Sink Connector](#vance-connect), Mainstream Serverless 
+computing products such as AWS Lambda, Cloud Function, Knative Serving, etc.
+
 ## Subscription
 
 The Subscription is a relationship established between a Sink and an Eventbus. The Subscription reflects the Sink's 
@@ -45,17 +50,11 @@ The Subscription will select all the events that meet the specification defined 
 
 ### Transformer
 
-The transformer can transform data into the desired format.
-
-### Sink
-
-The Sink is the target which receives events. It may be a [Sink Connector](#vance-connect), Mainstream Serverless 
-computing products such as AWS Lambda, Cloud Function, Knative Serving, etc.
+  The transformer can transform data into the desired format.
 
 ## Special Events
 
 ### Timing Event
-
 Vanus provides a timing feature to allow users to set a precise moment in time. This feature enables you to attach a 
 time point (e.g. 2022-01-01T08:00:00Z). Once it arrives in the Eventbus, the event will wait for the specific time point 
 before being available for consumption.
@@ -73,14 +72,17 @@ All data produced or processed by our connectors conforms to the CloudEvents spe
 leverage event-driven architecture to do business in the age of events.
 
 Vanus Connect consists of the following terms:
+- **CloudEvents** - A specification for describing event data in common formats to provide interoperability across
+    services, platforms and systems.
+  
+- **Sink** - A sink connector receives CloudEvents and does some specific business logics.
+    (e.g., A MySQL Sink extracts useful data from CloudEvents and writes them to a MySQL database).
+
+- **Source** - A source connector obtains data from an underlying data producer and delivers it to targets, after
+  original data has been transformed into CloudEvents. It doesn't limit the way how a source retrieves data.
+  (e.g., A source may pull data from a message queue or act as an HTTP server waiting for data sent to it).
 
 - **Connector** - A connector is an image that interacts with a specific external service or underlying data source
   (e.g., Databases) on behalf of user applications.
   In Vanus Connect, a connector is either a Source or a Sink.
-- **Source** - A source connector obtains data from an underlying data producer and delivers it to targets, after
-  original data has been transformed into CloudEvents. It doesn't limit the way how a source retrieves data.
-  (e.g., A source may pull data from a message queue or act as an HTTP server waiting for data sent to it).
-- **Sink** - A sink connector receives CloudEvents and does some specific business logics.
-  (e.g., A MySQL Sink extracts useful data from CloudEvents and writes them to a MySQL database).
-- **CloudEvents** - A specification for describing event data in common formats to provide interoperability across
-  services, platforms and systems.
+ 
