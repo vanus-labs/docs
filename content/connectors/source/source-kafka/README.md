@@ -21,7 +21,7 @@ The ideal type of event for the Kafka source is a String in a JSON format. But i
 >
 
 For example, if an original message looks like:
-... json
+``` json
 > { "name": "Jason", "age": "30" }
 ```
 
