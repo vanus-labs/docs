@@ -17,7 +17,7 @@ sink connector receives CloudEvents and does some specific business logics. (e.g
 [HTTP](https://www.linkall.com/sink/sink-http/)
 [Kubernetes](https://www.linkall.com/sink/sink-k8s/)
 [MongoDB](https://www.linkall.com/sink/sink-mongodb/)
-[MySQL（JDBC](https://www.linkall.com/sink/sink-mysql/)
+[MySQL (JDBC)](https://www.linkall.com/sink/sink-mysql/)
 [Slack](https://www.linkall.com/sink/sink-slack/)
 [Tencent Cloud SCF](https://www.linkall.com/sink/sink-tencentcloud-scf/)
 
