@@ -17,7 +17,7 @@ source connector obtains data from an underlying data producer and delivers it t
 [HTTP](https://www.linkall.com/source/source-http/)
 [Kafka](https://www.linkall.com/source/source-kafka/)
 [MongoDB](https://www.linkall.com/source/source-mongodb/)
-[MySQL CDC（Debezium](https://www.linkall.com/source/source-mysql/)
+[MySQL CDC (Debezium)](https://www.linkall.com/source/source-mysql/)
 [PostgreSQL CDC（Debezium](https://www.linkall.com/source/source-postgres/)
 [Tencent Cloud COS](https://www.linkall.com/source/source-tencentcloud-cos/)
 
