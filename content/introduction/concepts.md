@@ -45,7 +45,11 @@ The Subscription will select all the events that meet the specification defined 
 
 ### Transformer
 
-The transformer can transform data into the desired format.
+The transformer is a feature that allows for the modification of data from a CloudEvent before it is sent to the Sink connector.
+
+- **Function** : Functions are pre-built methods that perform certain actions in Vanus Transformer and are group into categories(strings, mathematical, etc). Actions that can be performed include concatenation of strings, capitalization of sentence, etc.
+- **Define** : Define is a parameter used to create variable. Variables such as source of the event, date, etc.
+- **Template** : Template refers to a predefined format for data that is being sent to the Sink connector. It's created using variables derieved from the attributes and data of a CloudEvent.
 
 ### Sink
 
