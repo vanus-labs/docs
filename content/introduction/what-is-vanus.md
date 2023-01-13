@@ -16,7 +16,7 @@ application** with agility.
 
 ### Serverless
 
-The idea of Vanus is create **a fully serverless system**, that can automatically and transparently 
+The idea of Vanus is to create **a fully serverless system**, that can automatically and transparently 
 scale up or down, which lets you only pay for the actual resources needed and up to a 10x reduction in your cost. 
 Moreover, Vanus provides high availability with near to zero administration, maintenance, or scaling burden, even on-premises.
 
@@ -33,7 +33,7 @@ That's why **Vanus takes CloudEvents as its message envelope** instead of re-inv
 ### FaaS Integration
 
 We believe the future of businesses will run in FaaS and communicate through Message Queue. Vanus has integrated
-FaaS Runtimes such as **AWS Lambda**, **Knative**, and much more in the future.
+FaaS Runtimes such as **AWS Lambda**, **Knative**, and much more.
 
 ### Event-driven Architecture
 
