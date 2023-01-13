@@ -7,65 +7,41 @@ This page shows you how to start Vanus in minutes.
 
 ## Prerequisites
 
-:::caution
-There is network issue to the China mainland users when install these prerequisites, please submit a PR if you met any problems.
-
-Or you can try this Quick Start on our online environment: https://play.linkall.com
-:::
-
 You can skip the step if you already have those.
 
 1. Have Docker, [how to install](https://docs.docker.com/engine/install/)
-2. Have minikube, [how to install](https://minikube.sigs.k8s.io/docs/start)
-3. Have kubectl, [how to install](https://kubernetes.io/docs/tasks/tools/)
 
 ## Installation
 
 ### Vanus
+1. Create Docker network for Quick Start.
+
+```bash
+docker network create --driver bridge vanus-quickstart
+```
+
+2. Start Vanus **all-in-one** container.
 
 <Tabs >
 
 <TabItem label="Default" value="default">
 
 ```bash
-kubectl apply -f https://download.linkall.com/all-in-one/v0.5.7.yml
-```
-
-</TabItem>
-
-<TabItem label="China Mainland" value="china">
-
-```bash
-kubectl apply -f https://download.linkall.com/all-in-one/v0.5.7.cn.yml
+docker run -d --rm \
+    --network vanus-quickstart \
+    --pull always \
+    -p 8080:8080 \
+    -p 8081:8081 \
+    --name vanus-all-in-one public.ecr.aws/vanus/all-in-one:latest
 ```
 
 </TabItem>
 
 </Tabs>
 
-waiting a minute, and check the deployment
-
-```shell
-kubectl get po -n vanus
-```
-the expected output looks like below,
-```shell
-NAME                             READY   STATUS    RESTARTS   AGE
-vanus-controller-0               1/1     Running   0          52s
-vanus-controller-1               1/1     Running   0          44s
-vanus-controller-2               1/1     Running   0          40s
-vanus-gateway-6b59dfbd47-wtxx2   1/1     Running   0          52s
-vanus-store-0                    1/1     Running   0          52s
-vanus-store-1                    1/1     Running   0          43s
-vanus-store-2                    1/1     Running   0          40s
-vanus-timer-5c4d475c58-4trnd     1/1     Running   0          52s
-vanus-timer-5c4d475c58-l222k     1/1     Running   0          52s
-vanus-trigger-69bf59658-jbb82    1/1     Running   0          52s
-```
-
 ### Command Line Tool
 
-**Firstly**, download **vsctl**, the command line tool of Vanus.
+Download **vsctl**, the command line tool for Vanus.
 
 <Tabs>
 <TabItem label="Linux" value="linux">
@@ -100,7 +76,7 @@ mv vsctl /usr/local/bin
 </Tabs>
 
 
-**Secondly**, verify installation
+Verify the installation
 
 ```shell
 vsctl version
@@ -118,33 +94,13 @@ vsctl version
 
 ### Set Vanus Endpoint
 
-get **Vanus Gateway**'s endpoint
-
-```shell
-minikube service list -n vanus
-```
-
-```buttonless
-|-----------|------------------|------------------|---------------------------|
-| NAMESPACE |       NAME       |   TARGET PORT    |            URL            |
-|-----------|------------------|------------------|---------------------------|
-| vanus     | vanus-controller | No node port     |
-| vanus     | vanus-gateway    | proxy/8080       | http://192.168.49.2:30001 |
-|           |                  | cloudevents/8081 | http://192.168.49.2:30002 |
-|-----------|------------------|------------------|---------------------------|
-```
-
-:::tip
-if you are using a normal k8s cluster, just use `kubectl get svc -n vanus` to find the endpoint
-:::
-
 use env variable to tell the endpoint to vsctl
 
 ```shell
-export VANUS_GATEWAY=192.168.49.2:30001
+export VANUS_GATEWAY=127.0.0.1:8080
 ```
 
-**Finally**, validating if it has connected to Vanus
+Valide if `vsctl` is connected to Vanus
 
 ```shell
 vsctl cluster controller topology
@@ -156,9 +112,9 @@ output should look like
 +-----------------------+--------------------+
 |          NAME         |      ENDPOINT      |
 +-----------------------+--------------------+
-|   Gateway Endpoints   | 192.168.49.2:30001 |
+|   Gateway Endpoints   |   127.0.0.1:8080   |
 +-----------------------+--------------------+
-| CloudEvents Endpoints |  192.168.49.2:8081 |
+| CloudEvents Endpoints |   127.0.0.1:8081   |
 +-----------------------+--------------------+
 ```
 
@@ -217,14 +173,10 @@ the result should look like
 1. **start a display server to verify filter**
 
 ```shell
-kubectl apply -f https://download.linkall.com/utils/display.yml
-```
-
-use `kubectl get po -n vanus` to validate
-
-```shell
-NAME                             READY   STATUS    RESTARTS   AGE
-quick-display-**************     1/1     Running   0          12s
+docker run -d --rm \
+  --network vanus-quickstart \
+  --pull always \
+  --name display public.ecr.aws/vanus/connector/sink-display:latest
 ```
 
 2. **create a subscription**
@@ -232,7 +184,7 @@ quick-display-**************     1/1     Running   0          12s
 ```shell
 vsctl subscription create \
   --eventbus quick-start \
-  --sink 'http://sink-display:8080' \
+  --sink 'http://display:8080' \
   --filters '[
     {
       "exact": {
@@ -278,12 +230,8 @@ vsctl event put quick-start \
 
 4. **back to display server for validation**, the first and third event we just sent should be displayed.
 
-:::tip
-NOTE: use the **POD_NAME** you got from step 1.
-:::
-
 ```shell
-kubectl logs vanus-display-************** -n vanus
+docker logs display
 ```
 
 the output should look like below, the two events whose source are matched are displayed.
@@ -331,7 +279,7 @@ for more about `filter`, you can find in [how to manage subscription](../how-to/
 ```shell
 vsctl subscription create \
   --eventbus quick-start \
-  --sink 'http://quick-display:80' \
+  --sink 'http://display:8080' \
   --transformer '{
       "define": {
         "dataMsg": "$.data.msg",
@@ -363,27 +311,32 @@ vsctl event put quick-start \
 3. **back to display server for validation**
 
 ```shell
-kubectl logs vanus-display-************** -n vanus
+docker logs display
 ```
 
 the transformed event has been displayed.
 
 ```shell
 ...                                                                                                                                                   │
-time="2022-12-15T16:39:15.368524581Z" level=info msg="receive a new event" in_total=3
+time="2023-01-06T18:15:16.153678086Z" level=info msg="receive a new event" in_total=4
 {
   "specversion": "1.0",
   "id": "1st",
   "source": "quick-start-filter-section",
   "type": "cmd",
   "datacontenttype": "application/json",
-  "time": "2022-12-15T16:39:12.361856014Z",
+  "time": "2023-01-06T18:15:13.123033Z",
   "data": {
-    "msg": "1st event, DISPLAY: YES"
+    "transKey": "1st event, DISPLAY: YES",
+    "transSource": "quick-start-filter-section"
   },
-  "xvanusstime": "2022-12-15T16:39:12.362Z",
+  "xvanusstime": "2023-01-06T18:15:13.124Z",
   "xvanuseventbus": "quick-start"
 }
+```
+## Clean
+```shell
+docker stop vanus-all-in-one display && docker network rm vanus-quickstart
 ```
 
 ## Next
