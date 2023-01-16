@@ -37,6 +37,19 @@ docker run -d --rm \
 
 </TabItem>
 
+<TabItem label="Linux" value="linux">
+
+```
+docker run -d --rm \
+    --network vanus-quickstart \
+    --pull always \
+    -p 8080:8080 \
+    -p 8081:8081 \
+    --name vanus-all-in-one linkall.tencentcloudcr.com/vanus/all-in-one:latest
+```
+
+</TabItem>
+
 </Tabs>
 
 ### Command Line Tool
@@ -47,9 +60,9 @@ Download **vsctl**, the command line tool for Vanus.
 <TabItem label="Linux" value="linux">
 
 ```bash
-curl -O https://download.linkall.com/vsctl/v0.5.7/linux-amd64/vsctl
+curl -O https://download.linkall.com/vsctl/latest/linux-amd64/vsctl
 chmod ug+x vsctl
-mv vsctl /usr/local/bin
+sudo mv vsctl /usr/local/bin
 ```
 
 </TabItem>
@@ -57,9 +70,9 @@ mv vsctl /usr/local/bin
 <TabItem label="macOS M Chip" value="macos-m-serials">
 
 ```bash
-curl -O https://download.linkall.com/vsctl/v0.5.7/macos-arm64/vsctl
+curl -O https://download.linkall.com/vsctl/latest/macos-arm64/vsctl
 chmod ug+x vsctl
-mv vsctl /usr/local/bin
+sudo mv vsctl /usr/local/bin
 ```
 
 </TabItem>
@@ -67,9 +80,9 @@ mv vsctl /usr/local/bin
 <TabItem label="macOS Intel" value="macos-intel">
 
 ```bash
-curl -O https://download.linkall.com/vsctl/v0.5.7/macos-amd64/vsctl
+curl -O https://download.linkall.com/vsctl/latest/macos-amd64/vsctl
 chmod ug+x vsctl
-mv vsctl /usr/local/bin
+sudo mv vsctl /usr/local/bin
 ```
 
 </TabItem>
@@ -84,10 +97,10 @@ vsctl version
 
 ```buttonless
 +-----------+---------------------------------+
-|  Version  | v0.5.7                          |
-|  Platform | darwin/arm64                    |
-| GitCommit | 6b23e5a                         |
-| BuildDate | 2023-01-06_09:48:52+0000        |
+|  Version  | v0.6.0                          |
+|  Platform | linux/amd64                     |
+| GitCommit | b762f1e                         |
+| BuildDate | 2023-01-16_10:09:26+0000        |
 | GoVersion | go version go1.19.3 linux/amd64 |
 +-----------+---------------------------------+
 ```
@@ -100,7 +113,7 @@ use env variable to tell the endpoint to vsctl
 export VANUS_GATEWAY=127.0.0.1:8080
 ```
 
-Valide if `vsctl` is connected to Vanus
+validate if `vsctl` is connected to Vanus
 
 ```shell
 vsctl cluster controller topology
@@ -183,6 +196,7 @@ docker run -d --rm \
 
 ```shell
 vsctl subscription create \
+  --name quick-start-filter \
   --eventbus quick-start \
   --sink 'http://display:8080' \
   --filters '[
@@ -197,11 +211,11 @@ vsctl subscription create \
 output should like below
 
 ```shell
-+------------------+------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
-|        ID        | NAME | DISABLE |   EVENTBUS  |           SINK          | DESCRIPTION | PROTOCOL | SINKCREDENTIAL | CONFIG | OFFSETS | FILTER | TRANSFORMER |      CREATED_AT      |      UPDATED_AT      |
-+------------------+------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
-| 0000004644000010 |      |  false  | quick-start | http://quick-display:80 |             |   http   |      null      |   {}   |   null  | ...    | null        | 2022-12-01T04:19:05Z | 2022-12-01T04:19:05Z |
-+------------------+------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
++------------------+-------------------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
+|        ID        |        NAME       | DISABLE |   EVENTBUS  |           SINK          | DESCRIPTION | PROTOCOL | SINKCREDENTIAL | CONFIG | OFFSETS | FILTER | TRANSFORMER |      CREATED_AT      |      UPDATED_AT      |
++------------------+-------------------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
+| 0000004644000010 | quick-start-filter |  false  | quick-start | http://quick-display:80 |             |   http   |      null      |   {}   |   null  | ...    | null        | 2022-12-01T04:19:05Z | 2022-12-01T04:19:05Z |
++------------------+-------------------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
 ```
 
 the subscription will subscribe all events from `--source` in `--eventbus`. and only events matched with `--filter`
@@ -278,6 +292,7 @@ for more about `filter`, you can find in [how to manage subscription](../how-to/
 
 ```shell
 vsctl subscription create \
+  --name quick-start-transformer \
   --eventbus quick-start \
   --sink 'http://display:8080' \
   --transformer '{
@@ -292,11 +307,11 @@ vsctl subscription create \
 output looks like:
 
 ```shell
-+------------------+------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
-|        ID        | NAME | DISABLE |   EVENTBUS  |           SINK          | DESCRIPTION | PROTOCOL | SINKCREDENTIAL | CONFIG | OFFSETS | FILTER | TRANSFORMER |      CREATED_AT      |      UPDATED_AT      |
-+------------------+------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
-| 0000007DB8000010 |      |  false  | quick-start | http://quick-display:80 |             |   http   |      null      |   {}   |   null  | null   | ...         | 2022-12-01T04:21:27Z | 2022-12-01T04:21:27Z |
-+------------------+------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
++------------------+-------------------------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
+|        ID        |           NAME          | DISABLE |   EVENTBUS  |           SINK          | DESCRIPTION | PROTOCOL | SINKCREDENTIAL | CONFIG | OFFSETS | FILTER | TRANSFORMER |      CREATED_AT      |      UPDATED_AT      |
++------------------+-------------------------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
+| 0000007DB8000010 | quick-start-transformer |  false  | quick-start | http://quick-display:80 |             |   http   |      null      |   {}   |   null  | ...    | null        | 2022-12-01T04:19:05Z | 2022-12-01T04:19:05Z |
++------------------+-------------------------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
 ```
 
 2. **send events to `quick-start`**
@@ -318,7 +333,7 @@ the transformed event has been displayed.
 
 ```shell
 ...                                                                                                                                                   │
-time="2023-01-06T18:15:16.153678086Z" level=info msg="receive a new event" in_total=4
+time="2023-01-06T18:15:16.153678086Z" level=info msg="receive a new event" in_total=..
 {
   "specversion": "1.0",
   "id": "1st",
@@ -333,7 +348,9 @@ time="2023-01-06T18:15:16.153678086Z" level=info msg="receive a new event" in_to
   "xvanusstime": "2023-01-06T18:15:13.124Z",
   "xvanuseventbus": "quick-start"
 }
+...
 ```
+
 ## Clean
 ```shell
 docker stop vanus-all-in-one display && docker network rm vanus-quickstart
