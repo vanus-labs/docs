@@ -8,7 +8,7 @@ tags: ['message queue', 'notification', 'event-driven']
 
 OpenAI released an Optimizing Language Model for Dialogue named ChatGPT at the end of 2022. Once it was released, ChatGPT gained great attention and traffic, causing much discussion on online platforms. 
 
-An AI unicorn start-up company is committed to becoming an infrastructure builder and content application creator in the era of AIGC. The virtual robot is the main business direction of this company.  Alexis is the infrastructure leader of the AI company, and his team is mainly responsible for developing online platforms, hyper-scale offline training tasks, and big data engines. A key feature of their product is the ability to intelligently answer questions in real-time, making online platforms' real-time nature extremely important.
+An AI unicorn start-up company is committed to becoming an infrastructure builder and content application creator in the era of AIGC. The virtual robot is the main business direction of this company.  Alexis is the infrastructure leader of the AI company, and his team is mainly responsible for developing online platforms, hyper-scale offline training tasks, and big data engines. A key feature of their product is the ability to intelligently answer questions in real-time, making online platforms real-time nature extremely important.
 
 
 
