@@ -7,11 +7,11 @@ tags: ['AWS', 'Billing', 'Slack']
 # How to use Vanus to receive AWS Billing reports on Slack
 
 # Introduction
-As a developer or company, have you ever felt the need to have just another simpler way of monitoring your AWS Billings aside from Email notifications? Well, in this article, I will show you you can easily use Vanus and two connectors (AWS Billing Source & Slack Sink) to receive your AWS Billing reports on a Slack channel. This is made possible using Vanus Connect.
+As a developer or company, have you ever felt the need to have just another simpler way of monitoring your AWS Billings aside from Email notifications? Well, in this article, I will show you how it is easy to use Vanus and two connectors (AWS Billing Source & Slack Sink) to receive your AWS Billing reports on a Slack channel. This is made possible using Vanus Connect.
 
 Vanus Connect is a set of producers and consumers to provide interoperability across services, systems, and platforms.
 
-![img_1.png](img_1.png)
+![img/img_1.png](img/img_1.png)
 
 
 Vanus Connect has two kinds of connectors; Source connector and Sink Connector. The Source Connector obtains data from an underlying data producer (e.g. AWS Billing) and delivers the data to its target after the data has been transformed into CloudEvents. The Sink Connector receives the events with CloudEvent formats, processes the events, and sends them downstream to a consumer(e.g. Slack)
@@ -26,7 +26,7 @@ The Slack sink connector handles incoming CloudEvents in a way that extracts the
 
 # Setting Up AWS Billing Source & Slack Sink using Vanus Connect
 In this demo, we will be using the [Vanus Playground](https://play.linkall.com/); A cloud Kubernetes environment.
-We will create the Slack sink connector first. The reason behind this is that the Source connector can only try to send CloudEvents 3 times only. If there is no Sink to receive the event, the operation fails.
+We will create the Slack sink connector first to receive incoming CloudEvents before setting up the AWS Billing Source connector.
 
 To begin, we will install Vanus with the command:
 
@@ -81,14 +81,14 @@ Our directory name is called slack, you can call it what you want. Next, we will
 ```shell
 cd slack
 ```
-![img_2.png](img_2.png)
+![img/img_2.png](img/img_2.png)
 
 
 Inside the slack directory, create a file called config.yml
 ```shell
 touch config.yml 
 ```
-![img_3.png](img_3.png)
+![img/img_3.png](img/img_3.png)
 
 To set up Slack sink, we will need to set up our Slack App first and obtain the necessary credentials to receive our Billing report. To set up our Slack App, we will follow these steps:
 
@@ -178,13 +178,13 @@ spec:
 NOTE: The default and app name **MUST** be the same.
 
 Now, run **kubectl apply -f config.yml** to set up the Slack Sink
-![img_4.png](img_4.png)
+![img/img_4.png](img/img_4.png)
 
 Verify Slack sink is running
 ```shell
 kubectl get pods -n vanus
 ```
-![img_5.png](img_5.png)
+![img/img_5.png](img/img_5.png)
 
 
 We want to export our slack sink as an environmental variable so we can easily use it later on
@@ -200,7 +200,7 @@ mkdir billing
 
 Change to the new directory and create two files; config.yml and secret.yml. The config.yml will take the configuration of our billing reports such as our target URL and the secret.yml will contain the access key and secret key obtained from your AWS console (IAM - Programmatic access)
 
-![img_6.png](img_6.png)
+![img/img_6.png](img/img_6.png)
 
 Before updating our config.yml and secret.yml file. We need to create an [Eventbus](https://www.vanus.dev/introduction/concepts). An Eventbus represents a group of pipelines that receive and dispatch events. To create the eventbus,
 ```shell 
@@ -252,7 +252,7 @@ vsctl subscription create \
       "template": "{\"subject\": \"AWS Billing Report\",\"message\":\"Hello, Your AWS Billing Report on ${dataDate} for ${dataService} is ${dataAmt} ${dataUnit}\"}"
     }'
 ```
-![img_7.png](img_7.png)
+![img/img_7.png](img/img_7.png)
 
 You should see some outputs like the one above. Now we have created a subscription for our Slack sink and also have transformed our data to be compatible with our Slack sink. We can now send CloudEvents from our AWS Billing Source and we will receive the output on our Slack Sink.
 
@@ -269,7 +269,7 @@ To see the output of your billing.log use
 
 Finally, you can check your Slack App to see the Billing report
 
-![img_8.png](img_8.png)
+![img/img_8.png](img/img_8.png)
 
 Conclusion
 
