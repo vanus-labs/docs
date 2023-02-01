@@ -10,7 +10,8 @@ OpenAI released an Optimizing Language Model for Dialogue named ChatGPT at the e
 
 An AI unicorn start-up company is committed to becoming an infrastructure builder and content application creator in the era of AIGC. The virtual robot is the main business direction of this company.  Alexis is the infrastructure leader of the AI company, and his team is mainly responsible for developing online platforms, hyper-scale offline training tasks, and big data engines. A key feature of their product is the ability to intelligently answer questions in real-time, making online platforms real-time nature extremely important.
 
-![img_v2_bf784c67-771a-476c-bc24-d5f98c3b63fg](/Users/gaoyang/Library/Application Support/LarkShell/sdk_storage/31fb1a4fdc41f74af9d35e748a280406/resources/images/img_v2_bf784c67-771a-476c-bc24-d5f98c3b63fg.png)
+![img_v2_bf784c67-771a-476c-bc24-d5f98c3b63fg](./img/blog.png)
+
 
 ## Problems Encountered During Rapid Development
 
