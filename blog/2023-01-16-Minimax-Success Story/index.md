@@ -16,7 +16,7 @@ An AI unicorn start-up company is committed to becoming an infrastructure builde
 
 #### The surge in users brings more fault alerts
 
-As expected,  the trend AI company saw a surge in users in a short time, and the demand for cloud products has also increased accordingly. They chose three cloud vendors to adopt Hybrid Cloud solutions. Cloud product failures are inevitable; the GPU failure rate in large scenarios is the highest for the infrastructure team, and many of these failures are repeated.
+As expected,  the trend of AI companies saw a surge in users in a short time, and the demand for cloud products has also increased accordingly. They chose three cloud vendors to adopt Hybrid Cloud solutions. Cloud product failures are inevitable; the GPU failure rate in large scenarios is the highest for the infrastructure team, and many of these failures are repeated.
 
 The standard process is that when a failure occurs, the developer will receive an alert from the cloud product by email, and the developer needs to get in touch with the corresponding cloud vendor Customer Service as soon as possible to notify the cloud vendor quickly solve the problem.
 
