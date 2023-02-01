@@ -38,7 +38,7 @@ The mainstream message queues on the market run on physical servers or virtual m
 
 #### The original alarm data requires additional code transformation
 
-The original alarm data is a large JSON file, requiring developers to write a lot of code to convert the JSON file into human-readable information, and then send it to the cloud vendor's Customer Service. Different alarm data and different functions require different codes. As alarms change and increase, developers need to continuously write codes and put them into applications. This increases development costs and later operation and maintenance costs.
+The original alarm data is a large JSON file, requiring developers to write a lot of code to convert the JSON file into human-readable information, and then send it to the cloud vendor's Customer Service. Different alarm data and different functions require additional codes. As alarms change and increase, developers must write codes continuously and put them into applications, raising development costs and later operation and maintenance costs.
 
 
 
