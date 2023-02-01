@@ -62,7 +62,7 @@ Vanus is a message queue with built-in event processing capabilities. Through th
 
 ## How does it feel to use Vanus?
 
-With Vauns, my team and I rebuilt the alarm notification system to achieve fully automated notifications with simple configuration. Rich Connectors make the system extremely scalable. If you need to add new data sources or receiving channels, you can use your other Connectors, which is equivalent to systematically solving the problem of alarm notification automation.
+With Vanus, my team and I rebuilt the alarm notification system to achieve fully automated notifications with simple configuration. Rich Connectors make the system extremely scalable. If you need to add new data sources or receiving channels, you can use your other Connectors, which is equivalent to systematically solving the problem of alarm notification automation.
 
 "What attracts me most about Vanus is that it can be used as a base for us to build an event-driven system. The event-driven architecture can provide our system with excellent scalability and improve the speed of our business iteration. In addition, Vanus' fully k8s-oriented design is very useful to us, because all our business runs on k8s, saving us many maintenance costs.
 
