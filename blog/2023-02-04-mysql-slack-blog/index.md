@@ -21,7 +21,7 @@ Luckily, Vanus has already provided many ***out-of-the-box Connectors*** that en
 - Have a Slack account.
 
 Here is how to do this in only 10 mins.
-1. Go to Vanus [Playground](play.linkall.com) (an online K8s playground)
+1. Go to Vanus [Playground](https://play.linkall.com) (an online K8s playground)
 
 2. Click “Continue with GitHub” to prepare an interactive K8s environment(Use your GitHub account to sign in).
 3. Wait for the preparation of the K8s environment (usually less than 1 min). The terminal is ready when you see something like this:
