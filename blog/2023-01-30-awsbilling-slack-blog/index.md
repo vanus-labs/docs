@@ -13,6 +13,7 @@ Vanus Connect is a set of producers and consumers to provide interoperability ac
 
 ![img/img_1.png](img/img_1.png)
 
+<!--truncate-->
 
 Vanus Connect has two kinds of connectors; Source connector and Sink Connector. The Source Connector obtains data from an underlying data producer (e.g. AWS Billing) and delivers the data to its target after the data has been transformed into CloudEvents. The Sink Connector receives the events with CloudEvent formats, processes the events, and sends them downstream to a consumer(e.g. Slack)
 

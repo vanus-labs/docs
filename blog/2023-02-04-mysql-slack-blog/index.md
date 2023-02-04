@@ -96,7 +96,7 @@ docker run -it --rm --network=host \
   --name source-mysql public.ecr.aws/vanus/connector/source-mysql &
 ```
 
-12. Create an app on Slack. Visit Slack Website
+12. Create an app on Slack. [Slack Website](https://api.slack.com)
 
 ![slack ](img/clickcreate.gif)
 
