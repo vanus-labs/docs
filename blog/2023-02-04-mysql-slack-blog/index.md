@@ -21,7 +21,7 @@ Luckily, Vanus has already provided many ***out-of-the-box Connectors*** that en
 - Have a Slack account.
 
 Here is how to do this in only 10 mins.
-1. Go to Vanus Playground (an online K8s playground)
+1. Go to Vanus [Playground](play.linkall.com) (an online K8s playground)
 
 2. Click “Continue with GitHub” to prepare an interactive K8s environment(Use your GitHub account to sign in).
 3. Wait for the preparation of the K8s environment (usually less than 1 min). The terminal is ready when you see something like this:
@@ -204,7 +204,13 @@ vi slack-sink.yml
 ```
 ![slack yml](img/ymlupdateslack.gif)
 
-22. Create a subscription.
+22. Run slack sink in kubernetes.
+
+```shell
+kubectl apply -f slack-sink.yml
+```
+
+23. Create a subscription.
 
     You can define your variable according to your own table structure or follow my structure below.
     For example, username will be defined this way -> "user": "$.data.username", note that you need to add data. before your column.
@@ -231,7 +237,7 @@ vsctl subscription create --name mysql-sub \
   --eventbus mysql-to-slack \
   --sink 'http://sink-slack:8080' \
   --transformer '{
-      "define": { # define your own veriable
+      "define": { 
         "username": "$.data.username",
         "email": "$.data.email",
         "subscription_plan": "$.data.subscription_plan",
