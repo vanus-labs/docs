@@ -8,6 +8,10 @@ Often, the sales team or marketing needs database information about buyers, memb
 
 Today I will show you how we can automatically and safely take the data entries in real-time from a MySQL database, transform the messages in a way that makes sense to the team, and send them directly to a Slack channel without needing physical input each time.
 
+
+
+<!--truncate-->
+
 To achieve that, we need one program to receive database events and transform them into custom messages and another to receive transformed messages and send them to our Slack channel.
 
 Luckily, Vanus has already provided many ***out-of-the-box Connectors*** that enable you to integrate with popular services or applications without writing code.
