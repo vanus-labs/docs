@@ -8,7 +8,7 @@ Often, the sales team or marketing needs database information about buyers, memb
 
 Today I will show you how we can automatically and safely take the data entries in real-time from a MySQL database, transform the messages in a way that makes sense to the team, and send them directly to a Slack channel without needing physical input each time.
 
-
+![playground loading](img/mysqltoslack.jpg)
 
 <!--truncate-->
 
