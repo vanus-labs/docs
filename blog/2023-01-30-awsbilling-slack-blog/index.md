@@ -31,7 +31,7 @@ We will create the Slack sink connector first to receive incoming CloudEvents be
 To begin, we will install Vanus with the command:
 
 ```shell
-kubectl apply -f https://vanus.s3.us-west-2.amazonaws.com/releases/v0.4.0/vanus.yaml
+kubectl apply -f https://vanus.s3.us-west-2.amazonaws.com/releases/v0.6.0/vanus.yaml
 ```
 
 Confirm that you have it installed:
@@ -58,7 +58,7 @@ vanus-trigger-7685d6cc69-8jgsl   1/1     Running   0          97s
 Next, we will install vsctl, the command line tool for Vanus
 
 ```shell
-curl -O https://vsctl.s3.us-west-2.amazonaws.com/releases/v0.4.0/linux-amd64/vsctl
+curl -O https://download.linkall.com/vsctl/latest/linux-amd64/vsctl
 chmod ug+x vsctl
 mv vsctl /usr/local/bin
 ```
@@ -152,8 +152,6 @@ spec:
     spec:
       containers:
         - name: sink-slack
-          #          For China mainland
-          #          image: linkall.tencentcloudcr.com/vanus/connector/sink-slack:latest
           image: public.ecr.aws/vanus/connector/sink-slack:latest
           resources:
             requests:
@@ -192,53 +190,41 @@ We want to export our slack sink as an environmental variable so we can easily u
 export SLACK_SINK=$(kubectl get pods -n vanus | grep slack | awk '{ print $1 }')
 ```
 
-# Setting Up AWS Billing Source
-Just as we set up our Slack sink in a directory, we will also create a directory for our AWS Billing
-```shell
-mkdir billing
-```
-
-Change to the new directory and create two files; config.yml and secret.yml. The config.yml will take the configuration of our billing reports such as our target URL and the secret.yml will contain the access key and secret key obtained from your AWS console (IAM - Programmatic access)
-
-![img/img_6.png](img/img_6.png)
-
-Before updating our config.yml and secret.yml file. We need to create an [Eventbus](https://www.vanus.dev/introduction/concepts). An Eventbus represents a group of pipelines that receive and dispatch events. To create the eventbus,
+Before running our Amazon Billing Source, we will need to create an [Eventbus](https://www.vanus.dev/introduction/concepts). An Eventbus represents a group of pipelines that receive and dispatch events. To create the eventbus,
+Here, for simplicity, I have named the eventbus **billing**
 ```shell 
 vsctl eventbus create --name billing
 ```
 
-Here, for simplicity, I have named the eventbus **billing**
+# Setting Up AWS Billing Source
+Create a config file for Amazon Billing Source, don't forget the update the access key and secret key obtained from your AWS console (IAM - Programmatic access)
 
-Our target URL is the URL where we want to send cloud events to. For this, we will use our Vanus Gateway (192.168.49.2:30001). The target URL follows a specific pattern which is 
-
-```shell
-http://<ip_address>:<port>/gateway/<eventbus>
+```shell 
+cat << EOF > config.yml
+target: http://192.168.49.2:30001/gateway/billing
+secret:
+  access_key_id: AKIAIOSFODNN7EXAMPLE # <- Your access key
+  secret_access_key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY <- Your secret key
+EOF
 ```
 
-Use vim editor to update our config.yml file. Add to the file this line of code:
-```shell
-"target": "http://192.168.49.2:30001/gateway/billing"
-```
+Note: The target is the endpoint that will receive our Events in this case Vanus. For this, we will use our Vanus Gateway (192.168.49.2:30001). The target URL follows a specific pattern which is
 
-Next, we create our secret.yml file
-We need our access key and secret key for this. Open your secret.yml file with vim text editor and paste this code
+Now we will run the Billing Source connector.
 
 ```shell
-"access_key_id": "xxxxxx"
-"secret_access_key": "xxxxxx"
+docker run -it --rm --network=host \
+  -v ${PWD}:/vanus-connect/config \
+  --name source-aws-billing public.ecr.aws/vanus/connector/source-aws-billing > billing.log &
 ```
 
-Replace the "xxxxxx" with your credentials obtained from your AWS account.
-
-Just before we run our config.yml and secret.yml to receive our billing report on our Slack channel, we need first to create a [subscription](https://www.vanus.dev/introduction/concepts) which will help us [transform](https://www.vanus.dev/introduction/concepts) the data coming from the AWS Billing report source to data that can be accepted by our Slack sink
-
-Move out of your current directory and be on the root directory, use **cd ..**
+Just before we can receive the report on our slack channel, we need first to create a [subscription](https://www.vanus.dev/introduction/concepts) which will help us [transform](https://www.vanus.dev/introduction/concepts) the data coming from the AWS Billing report source to data that can be accepted by our Slack sink.
 
 # Creating a Subscription
 To create a subscription, paste this line of code
 
 ```shell
-vsctl subscription create \
+vsctl subscription create --name billing \
   --eventbus billing \
   --sink 'http://sink-slack:8080' \
   --transformer '{
@@ -254,15 +240,8 @@ vsctl subscription create \
 ```
 ![img/img_7.png](img/img_7.png)
 
-You should see some outputs like the one above. Now we have created a subscription for our Slack sink and also have transformed our data to be compatible with our Slack sink. We can now send CloudEvents from our AWS Billing Source and we will receive the output on our Slack Sink.
-
-To do that, move back to our AWS Billing directory with cd and run this code:
-
-```shell
-nohup docker run --network=host --rm -v ${PWD}:/vance/config -v ${PWD}:/vance/secret public.ecr.aws/vanus/connector/source-aws-billing > billing.log &
-```
-
-The above code will run a docker command to launch your config and secret file and output your response to a billing.log file
+You should see some outputs like the one above. Now we have created a subscription for our Slack sink and also have transformed our data to be compatible with our Slack sink.
+We can now send CloudEvents from our AWS Billing Source and we will receive the output on our Slack Sink.
 
 To see the output of your billing.log use
 **cat billing.log**
