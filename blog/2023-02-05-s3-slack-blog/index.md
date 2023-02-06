@@ -31,7 +31,7 @@ Luckily, Vanus has already provided many **[out-of-the-box Connectors](https://w
 4. Install Vanus.
 
 ```shell
-kubectl apply -f https://vanus.s3.us-west-2.amazonaws.com/releases/v0.4.0/vanus.yaml
+kubectl apply -f https://download.linkall.com/all-in-one/v0.6.0.yml
 ```
 
 5. Install vsctl (the command line tool).
