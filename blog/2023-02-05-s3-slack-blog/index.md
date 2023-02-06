@@ -37,7 +37,7 @@ kubectl apply -f https://download.linkall.com/all-in-one/v0.6.0.yml
 5. Install vsctl (the command line tool).
 
 ```shell
-curl -O https://vsctl.s3.us-west-2.amazonaws.com/releases/v0.4.0/linux-amd64/vsctl
+curl -O https://download.linkall.com/vsctl/latest/linux-amd64/vsctl
 chmod ug+x vsctl
 mv vsctl /usr/local/bin
 ```
