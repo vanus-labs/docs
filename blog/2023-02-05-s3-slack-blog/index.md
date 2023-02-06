@@ -62,7 +62,7 @@ mkdir -p s3-slack-scenario/slack-sink;
 cd s3-slack-scenario/s3-source;
 
 cat << EOF > config.yml
-target: http://192.168.49.2:30001/gateway/s3-slack-scenario
+target: http://192.168.49.2:30002/gateway/s3-slack-scenario
 aws:
   access_key_id: AKIAIOSFODNN7EXAMPLE
   secret_access_key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
