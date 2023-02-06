@@ -212,7 +212,7 @@ Note: The target is the endpoint that will receive our Events in this case Vanus
 Run Amazon billing with the following command: 
 
 ```shell
-docker run -it --rm --network=host \
+nohup docker run -it --rm --network=host \
   -v ${PWD}:/vanus-connect/config \
   --name source-aws-billing public.ecr.aws/vanus/connector/source-aws-billing > billing.log &
 ```
