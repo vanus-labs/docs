@@ -12,6 +12,7 @@ An AI unicorn start-up company is committed to becoming an infrastructure builde
 
 ![blog](./img/blog.png)
 
+<!--truncate-->
 
 ## Problems Encountered During Rapid Development
 
