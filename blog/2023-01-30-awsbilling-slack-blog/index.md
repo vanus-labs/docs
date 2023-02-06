@@ -204,7 +204,7 @@ cat << EOF > config.yml
 target: http://192.168.49.2:30001/gateway/billing
 secret:
   access_key_id: AKIAIOSFODNN7EXAMPLE # <- Your access key
-  secret_access_key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY <- Your secret key
+  secret_access_key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY # <- Your secret key
 EOF
 ```
 Note: The target is the endpoint that will receive our Events in this case Vanus. 
