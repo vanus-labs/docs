@@ -184,14 +184,14 @@ kubectl get pods -n vanus
 ```
 ![img/img_5.png](img/img_5.png)
 
+Let us go back with the following command:
 
-We want to export our slack sink as an environmental variable so we can easily use it later on
-```shell
-export SLACK_SINK=$(kubectl get pods -n vanus | grep slack | awk '{ print $1 }')
+```shell 
+cd ..
 ```
-
 Before running our Amazon Billing Source, we will need to create an [Eventbus](https://www.vanus.dev/introduction/concepts). An Eventbus represents a group of pipelines that receive and dispatch events. To create the eventbus,
 Here, for simplicity, I have named the eventbus **billing**
+
 ```shell 
 vsctl eventbus create --name billing
 ```
@@ -207,10 +207,9 @@ secret:
   secret_access_key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY <- Your secret key
 EOF
 ```
+Note: The target is the endpoint that will receive our Events in this case Vanus. 
 
-Note: The target is the endpoint that will receive our Events in this case Vanus. For this, we will use our Vanus Gateway (192.168.49.2:30001). The target URL follows a specific pattern which is
-
-Now we will run the Billing Source connector.
+Run Amazon billing with the following command: 
 
 ```shell
 docker run -it --rm --network=host \
