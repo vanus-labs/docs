@@ -151,7 +151,7 @@ vsctl subscription create --name s3-slack-subscription \
         "subject" : "$.subject",
         "bucket": "$.data.bucket.name"
       },
-      "template": "{\"subject\": \"AWS S3 Notifications\",\"message\":\"Hello, a new file <${subject}> has been uploaded to your bucket <${bucket}>.\"}"
+      "template": "{\"subject\": \"AWS S3 Notifications\",\"message\":\"Hello, a new file <subject> has been uploaded to your bucket <bucket>.\"}"
     }'
 ```
 
