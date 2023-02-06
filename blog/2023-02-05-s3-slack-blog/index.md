@@ -136,7 +136,7 @@ kubectl apply -f slack-sink.yaml
 19. Create a subscription
 
 ```shell
-vsctl subscription create \
+vsctl subscription create --name s3-slack-subscription \
   --eventbus s3-slack-scenario \
   --sink 'http://sink-slack:8080' \
   --filters '[
