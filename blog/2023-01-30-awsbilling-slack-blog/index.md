@@ -6,7 +6,6 @@ tags: ['AWS', 'Billing', 'Slack']
 
 # How to use Vanus to receive AWS Billing reports on Slack
 
-# Introduction
 As a developer or company, have you ever felt the need to have just another simpler way of monitoring your AWS Billings aside from Email notifications? Well, in this article, I will show you how it is easy to use Vanus and two connectors (AWS Billing Source & Slack Sink) to receive your AWS Billing reports on a Slack channel. This is made possible using Vanus Connect.
 
 Vanus Connect is a set of producers and consumers to provide interoperability across services, systems, and platforms.
@@ -249,7 +248,6 @@ Finally, you can check your Slack App to see the Billing report
 
 ![img/img_8.png](img/img_8.png)
 
-Conclusion
 
-In this article, we have been able to successfully receive our AWS Billing reports on our Slack Channel. This will help you as a developer or Company to have just another simpler way of receiving AWS Billing reports.
+We successfully receive our AWS Billing reports on our Slack Channel. This will help you as a developer or Company to have just another simpler way of receiving AWS Billing reports.
 
