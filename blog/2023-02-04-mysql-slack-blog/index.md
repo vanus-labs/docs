@@ -232,7 +232,7 @@ CREATE TABLE IF NOT EXISTS dataBaseName.tableName
 ```
 
 ```shell
-Create a subscription ->
+# Create a subscription ->
 vsctl subscription create --name mysql-sub \
   --eventbus mysql-to-slack \
   --sink 'http://sink-slack:8080' \
