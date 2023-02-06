@@ -201,7 +201,7 @@ Create a config file for Amazon Billing Source, don't forget the update the acce
 
 ```shell 
 cat << EOF > config.yml
-target: http://192.168.49.2:30001/gateway/billing
+target: http://192.168.49.2:30002/gateway/billing
 secret:
   access_key_id: AKIAIOSFODNN7EXAMPLE # <- Your access key
   secret_access_key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY # <- Your secret key
