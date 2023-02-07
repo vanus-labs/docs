@@ -20,6 +20,7 @@ When you create a subscription setting the `protocol` flag as "aws-lambda", Vanu
 
 ```bash
 vsctl subscription create \
+  --name=test-lambda \
   --eventbus=test-lambda \
   --sink "arn:aws:lambda:us-west-2:843378899134:function:eventecho" \
   --protocol aws-lambda \

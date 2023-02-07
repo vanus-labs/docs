@@ -15,6 +15,7 @@ For example:
 
 ```shell
 vsctl subscription create \
+  --name testeb \
   --eventbus testeb \
   --sink 'http://localhost:8080' \
   --transformer '{

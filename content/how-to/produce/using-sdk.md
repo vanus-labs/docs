@@ -39,7 +39,7 @@ const (
 )
 
 var (
-	endpoint = os.Getenv("VANUS_GATEWAY")
+	endpoint = "localhost:8081" // Vanus port for HTTP
 )
 
 func main() {

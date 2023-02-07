@@ -22,6 +22,7 @@ When you create a subscription setting the `protocol` flag as "gcloud-functions"
 
 ```bash
 vsctl subscription create \
+  --name=test-function \
   --eventbus=test-function \
   --sink "https://function-1-tvm6jmwz6a-uc.a.run.app" \
   --protocol gcloud-functions \
