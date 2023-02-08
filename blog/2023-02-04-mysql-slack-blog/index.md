@@ -69,7 +69,7 @@ GRANT SELECT, RELOAD, SHOW DATABASES, REPLICATION SLAVE, REPLICATION CLIENT ON *
 
 ```shell
 cat << EOF > mysql/config.yml
-target: http://192.168.49.2:30001/gateway/mysql-to-slack # Vanus in Playground
+target: http://192.168.49.2:30002/gateway/mysql-to-slack # Vanus in Playground
 name: "quick_start"
 db:
   host: "MYSQL_HOST" # IP address of MySQL server
