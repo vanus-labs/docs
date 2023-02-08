@@ -97,7 +97,7 @@ $ vsctl eventbus create  GitHub-slack
 
 ```Plain
 {
-  "v_target": "http://192.168.49.2:30001/gateway/github-slack",
+  "v_target": "http://192.168.49.2:30002/gateway/github-slack",
   "v_port": "8082"
 }
 ```
