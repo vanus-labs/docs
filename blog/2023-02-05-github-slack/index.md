@@ -110,21 +110,13 @@ docker run --network=host -v $(pwd)/config.json:/vance/config/config.json  --rm 
 
 ## Part 3: Creating a Slack app
 
-10 Create a slack app
+9 Create a slack app
 
-First, log in to slack, and click Create New APP,then select From Scrath, And fill in the App Name, select the corresponding Workspace
+First, log in to slack, and click Create New APP,then select From Scrath, and fill in the App Name, select the corresponding Workspace
 
 ![create-slack-app](./img/create-slack-app.jpeg)
 
-11 Select Incoming webhook，and click on
-
-![set-webhook-1](./img/set-webhook-1.jpeg)
-
-![set-webhook-2](./img/set-webhook-2.jpeg)
-
-![set-webhook-3](./img/set-webhook-3.jpeg)
-
-13 Setting permissions
+10 Setting permissions
 
 Select  **[OAuth & Permissions](https://api.slack.com/apps/A04L5D8QJ0Y/oauth?)** **,**  click Add an OAuth Scope in the Bot Token Scopes section of the Scope tab, and add chat:write and chat:write.public two types of permissions
 
@@ -138,7 +130,7 @@ The slack app is created
 
 ## Part 4: Deploy the slack link connector
 
-14 Create config.yml in any directory, the content is as follows
+11 Create config.yml in any directory, the content is as follows
 
 ```Plain
 default: "$app-name"
@@ -158,7 +150,7 @@ slack:
     default_channel: "#vanus-channel"
 ```
 
-15 Deploy the slack sink connector
+12 Deploy the slack sink connector
 
 ```Plain
  docker run  -p 31080:8080 --rm -v ${PWD}:/vance/config --name sink-slack public.ecr.aws/vanus/connector/sink-slack:latest > a.log & 
