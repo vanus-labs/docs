@@ -25,7 +25,7 @@ If you have an open-source project on GitHub, you definitely need to know who is
 ​    This article will show how to do this in 5 minutes on Playground with Vanus and Vanus Connect， the results are shown below:
 
 ![GitHub-to-Slack-Result](./img/GitHub-to-Slack-Result.gif)
-
+<!--truncate-->
 ## Prerequisites：
 
 - Playground： An online k8s environment where Vanus can be deployed.
