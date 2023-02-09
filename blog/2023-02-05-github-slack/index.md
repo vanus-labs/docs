@@ -45,7 +45,7 @@ If you have an open-source project on GitHub, you definitely need to know who is
 3 Deploy Vanus to the terminal on the right side of the web page
 
 ```Shell
-kubectl apply -f https://vanus.s3.us-west-2.amazonaws.com/releases/v0.4.0/vanus.yaml
+kubectl apply -f https://download.linkall.com/all-in-one/v0.6.0.yml
 ```
 
  Verify: watch -n2 kubectl get po -n Vanus，
