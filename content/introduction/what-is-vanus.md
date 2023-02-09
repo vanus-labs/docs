@@ -2,47 +2,25 @@
 title: What is Vanus
 id: what-is-vanus
 ---
-# What is Vanus
+**Vanus is an open source serverless event streaming platform with built-in event processing capabilities.**  It connects SaaS, cloud services, and databases to help users build next-generation event-driven applications.Vanus separates storage and computing resources and offers modern development features such as CloudEvents native,FaaS Integration, built-in Connectors, Data Filtering and Transformation, etc. 
 
-## Overview
-**Vanus** is a Serverless Message Queue made for global developers with many innovative features beyond traditional message queues.
-Vanus separates storage and computing resources and offers modern development features such as CloudEvents native,
-FaaS Integration, built-in Connectors, Data Filtering and Transformation, and more.
+#### Build the event-driven application
+* Send SaaS-generated events to the data lake for analysis.
+* Deliver cloud services events  to cloud functions for processing.
+* Real-time transmission of events between SaaS.
+* Synchronize data between databases in real time.
 
-Vanus can be used not only for building **Pub/Sub systems** but especially enables you to build an **EDA(Event-driven Architecture) 
-application** with agility.
+#### Out-of-the-box event computing capabilities
+* Provides 100+ built-in functions to help developers process events in real time.
+* Provides general and flexible filtering rules, developers can easily filter events.
+* Supports event processing through cloud functions such as aws lambda.
 
-## Characteristics of Vanus
+#### Serverless, super easy to use
+* Automatically scale up or down clusters based on event traffic, reducing costs by up to 90%.
+* Seamlessly integrate mainstream cloud functions and open source FaaS platforms.
+* One-click deployment, the installation is completed within 1 minute, 0 operation
 
-### Serverless
-
-The principle of Vanus design is to create **a fully serverless system**, that can automatically and transparently 
-scale up or down, which lets you only pay for the actual resources needed and up to a 10x reduction in your cost. 
-Moreover, Vanus provides high availability with near to zero administration, maintenance, or scaling burden, even on-premises.
-
-### CloudEvents
-
-The absent of a common way for describing events means developers must constantly re-learn how to consume events. 
-The portability and productivity we can achieve from event data are hindered overall.
-
-CloudEvents is a specification for describing event data in common formats to provide interoperability across services, 
-platforms, and systems.
-
-That's why **Vanus takes CloudEvents as its message envelope** instead of inventing another messaging wried protocol.
-
-### FaaS Integration
-
-We believe the future of businesses will run in FaaS and communicate through Message Queue. Vanus has integrated
-FaaS Runtimes such as **AWS Lambda**, **Knative**, and much more to be included.
-
-### Event-driven Architecture
-
-Many organizations have chosen Event-driven Architecture to build their applications in the Cloud because of 
-the benefit of EDA, such as being **highly scalable**, **extremely loosely coupled**, and **highly composable**. But it's still a 
-challenge to build a large-scale EDA application, and Vanus provides **plenty of connectors**, **data filtering**, and
-**transformation mechanisms** to make the process of building an EDA Application easier.
-
-### Open Source
+#### Open source
 
 Vanus is fully an Open Source project, which is publicly available under the Apache 2.0 License. You can find Vanus on [GitHub](https://github.com/linkall-labs/vanus).
 
