@@ -67,7 +67,7 @@ vanus-trigger-7685d6cc69-8jgsl   1/1     Running   0          97s
 4 Install vsctl (the command line tool)
 
 ```Plain
-curl -O https://vsctl.s3.us-west-2.amazonaws.com/releases/v0.4.0/linux-amd64/vsctl
+curl -O https://download.linkall.com/vsctl/latest/linux-amd64/vsctl
 chmod ug+x vsctl
 mv vsctl /usr/local/bin
 ```
