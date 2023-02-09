@@ -38,7 +38,7 @@ If you have an open-source project on GitHub, you definitely need to know who is
 
 ![playground-login](./img/playground-login.jpeg)
 
-2  Wait for the automatic deployment of Kubernetes to complete, about the 30s.
+2  Wait for the automatic deployment of Kubernetes to complete, about 30 sec.
 
 ![playground](./img/playground.jpeg)
 
