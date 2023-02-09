@@ -155,7 +155,10 @@ slack:
 12 Deploy the slack sink connector
 
 ```Plain
- docker run  -p 31080:8080 --rm -v ${PWD}:/vance/config --name sink-slack public.ecr.aws/vanus/connector/sink-slack:latest > a.log & 
+ docker run -it --rm \
+  -p 31080:8080 \
+  -v ${PWD}:/vanus-connect/config \
+  --name sink-slack public.ecr.aws/vanus/connector/sink-slack > a.log & 
 ```
 
 ## Part V: Test Results
