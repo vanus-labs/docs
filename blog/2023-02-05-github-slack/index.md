@@ -81,7 +81,7 @@ export VANUS_GATEWAY=192.168.49.2:30001
 6 Create eventbus
 
 ```Plain
-$ vsctl eventbus create  GitHub-slack
+$ vsctl eventbus create --name GitHub-slack
 +----------------+-------------+
 |     RESULT     |   EVENTBUS  |
 +----------------+-------------+
