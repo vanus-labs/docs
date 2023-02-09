@@ -134,7 +134,7 @@ $ vsctl eventbus create  GitHub-slack
 
 ### Step 2: Deploy the GitHub source connector
 
-7 Create webhook in GitHub repo
+1 Create webhook in GitHub repo
 
  **Payload URL** *
 
@@ -154,7 +154,7 @@ application/json
 Send me everything.
 ```
 
-8 Set config file
+2 Set config file
 
  Create config.yml in any directory, the content is as follows
 
@@ -165,7 +165,7 @@ Send me everything.
 }
 ```
 
-9 Deploy the GitHub source connector and run the following command in the same directory:
+3 Deploy the GitHub source connector and run the following command in the same directory:
 
 ```Plain
 docker run --network=host -v $(pwd)/config.json:/vance/config/config.json  --rm vancehub/source-github > a.log &
@@ -173,13 +173,13 @@ docker run --network=host -v $(pwd)/config.json:/vance/config/config.json  --rm 
 
 ### Step 3: Creating a Slack app
 
-10 Create a slack app
+1 Create a slack app
 
 First, log in to slack, and click Create New APP,then select From Scrath, and fill in the App Name, select the corresponding Workspace
 
 ![create-slack-app](./img/create-slack-app.jpeg)
 
-11 Setting permissions
+2 Setting permissions
 
 Select  **[OAuth & Permissions](https://api.slack.com/apps/A04L5D8QJ0Y/oauth?)** **,**  click Add an OAuth Scope in the Bot Token Scopes section of the Scope tab, and add chat:write and chat:write.public two types of permissions
 
@@ -193,16 +193,16 @@ The slack app is created
 
 ### Step 4: Deploy the slack sink connector on kubernetes
 
-12 Create config.yml in any directory, the content is as follows
+1 Create config.yml in any directory, the content is as follows
 
 ```Plain
 curl -O https://scenario-utils.s3.us-west-2.amazonaws.com/sink-slack.yaml 
 ```
-13 Open config.yml, replace values of default , app_name, token, default_channel with yours.
+2 Open config.yml, replace values of default , app_name, token, default_channel with yours.
 
 ![slink-slack](./img/sink-slack.jpeg)
 
-14 Deploy the slack sink connector
+3 Deploy the slack sink connector
 
 ```Plain
  kubectl apply -f sink-slack.yaml
