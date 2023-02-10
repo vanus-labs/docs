@@ -81,7 +81,7 @@ A Slack workspace is your team's home, similar to a dashboard.A Slack workspace 
 
 ![playground-login](./img/playground-login.jpeg)
 
-2  Wait for the automatic deployment of Kubernetes to complete, about the 30s.
+2  Wait for the automatic deployment of Kubernetes to complete, about 30 sec.
 
 ![playground](./img/playground.jpeg)
 
