@@ -88,7 +88,7 @@ A Slack workspace is your team's home, similar to a dashboard.A Slack workspace 
 3 Deploy Vanus to the terminal on the right side of the web page
 
 ```Shell
-kubectl apply -f https://vanus.s3.us-west-2.amazonaws.com/releases/v0.4.0/vanus.yaml
+kubectl apply -f https://download.linkall.com/all-in-one/v0.6.0.yml
 ```
 
  Verify: watch -n2 kubectl get po -n Vanus，
