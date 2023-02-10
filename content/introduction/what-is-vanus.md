@@ -2,7 +2,7 @@
 title: What is Vanus
 id: what-is-vanus
 ---
-**Vanus is an open-source serverless event streaming platform with built-in event processing capabilities.**  It connects SaaS, cloud services, and databases to help users build next-generation event-driven applications.Vanus separates storage and computing resources and offers modern development features such as CloudEvents native,FaaS Integration, built-in Connectors, data filtering, and transformation, etc. 
+**Vanus is an open-source serverless event streaming platform with built-in event processing capabilities.**  It connects SaaS, cloud services, and databases to help users build next-generation event-driven applications. Vanus separates storage and computing resources and offers modern development features such as CloudEvents native, FaaS Integration, built-in Connectors, data filtering, and transformation, etc. 
 
 #### Build the event-driven application
 * Send SaaS-generated events to the data lake for analysis.
@@ -22,3 +22,17 @@ id: what-is-vanus
 
 Vanus is fully an Open Source project, which is publicly available under the Apache 2.0 License. You can find Vanus on [GitHub](https://github.com/linkall-labs/vanus).
 
+<p align='center'>
+    <a href="https://github.com/linkall-labs/vanus"><img src="https://img.shields.io/github/stars/linkall-labs/vanus.svg?style=flat&logo=github&colorB=blueviolet&label=stars" height=23></a> 
+    &nbsp;
+    <a href="https://play.linkall.com"><img src="https://img.shields.io/badge/Playground-Try%20it%20%20free-red)" height=23></a> 
+     &nbsp;
+    <a href="https://join.slack.com/t/vanusworkspace/shared_invite/zt-1jilbbfo2-NxiFG0VOo8ABGCCNaeNfcA"><img src="https://img.shields.io/badge/slack-join-3CC798?style=social&logo=slack" height=23></a>    
+    &nbsp;
+    <a href="https://twitter.com/Vanus_dev"><img src="https://img.shields.io/badge/-Twitter-red?style=social&logo=twitter" height=23></a>
+   <!-- <a href="https://twitter.com/Vanus_dev"><img src="https://img.shields.io/twitter/follow/vanus_dev?style=social" height=23></a> -->
+    &nbsp;
+    <a href="https://www.youtube.com/channel/UC7rd6IgjfNYTOXf2FerFNyA"><img src="https://img.shields.io/badge/-Youtube-red?style=social&logo=youtube" height=23></a>
+   <!-- <a href="https://www.youtube.com/channel/UC7rd6IgjfNYTOXf2FerFNyA"><img src="https://img.shields.io/youtube/channel/views/UC7rd6IgjfNYTOXf2FerFNyA?style=social" height=23></a>  -->
+    &nbsp;
+</p>
