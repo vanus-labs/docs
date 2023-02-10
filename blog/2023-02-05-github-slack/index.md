@@ -198,7 +198,7 @@ The slack app is created
 ```Plain
 curl -O https://scenario-utils.s3.us-west-2.amazonaws.com/sink-slack.yaml 
 ```
-2 Open config.yml, replace values of default , app_name, token, default_channel with yours.
+2 Open sink-slack.yml, replace values of default , app_name, token, default_channel with yours.
 
 ![slink-slack](./img/sink-slack.jpeg)
 
