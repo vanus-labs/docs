@@ -31,7 +31,7 @@ This article will show how to do this in 5 minutes on Playground with Vanus and 
   - [Step 4: Deploy the slack sink connector on Kubernetes](# Step 4: Deploy the slack sink connector on kubernetes)
 - Test result
 - [Summarize](# Summarize)
-
+<!--truncate-->
 ## What is GitHub
 ### About GitHub
 
