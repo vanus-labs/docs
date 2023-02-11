@@ -136,6 +136,8 @@ $ vsctl eventbus create  github-slack
 
 1 Create webhook in GitHub repo
 
+![create-webhook](./img/create-webhook.jpeg)
+
  **Payload URL** *
 
 ```
