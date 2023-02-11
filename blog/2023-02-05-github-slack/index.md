@@ -20,7 +20,7 @@ This article will show how to do this in 5 minutes on Playground with Vanus and 
 
 - What is GitHub
   - About GitHub
-  - What GitHub events
+  - What are GitHub events
   - Why need GitHub events
   - How to get github events
 - What is Slack?
