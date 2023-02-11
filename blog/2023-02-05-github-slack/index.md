@@ -187,7 +187,7 @@ Select  **[OAuth & Permissions](https://api.slack.com/apps/A04L5D8QJ0Y/oauth?)**
 
 ![setting-permissions](./img/setting-permissions.jpeg)
 
-Reinstall to Workspace
+Install to Workspace
 
 ![reinstall](./img/reinstall.jpeg)
 
