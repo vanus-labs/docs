@@ -8,7 +8,7 @@ tags: ['GitHub', 'Message Queue', 'slack', 'notification']
 
 If you have an open-source project on GitHub, you definitely need to know who is attracted to your project in real-time. For example, whether someone has starred the project or submitted an Issue or a PR. How can we get the status of open-source projects in real-time? It is obviously not a good way to keep checking the GitHub page.
 
- This article will help open-source enthusiasts deliver any Github events to Slack through Vanus in real-time. In this way, developers can know the status of open source projects in real-time without logging in to GitHub, so that developers can quickly respond to the following GitHub events:
+ This article will help open-source enthusiasts to deliver any Github events to Slack through Vanus in real-time. In this way, developers can know the status of open source projects in real-time without logging in to GitHub, so that developers can quickly respond to the following GitHub events:
 
 This article will show how to do this in 5 minutes on Playground with Vanus and Vanus Connect， the results are shown below:
 
