@@ -170,7 +170,9 @@ Send me everything.
 3 Deploy the GitHub source connector and run the following command in the same directory:
 
 ```Plain
-docker run --network=host -v $(pwd)/config.json:/vance/config/config.json  --rm vancehub/source-github > a.log &
+docker run -it --rm --network=host \
+  -v ${PWD}:/vanus-connect/config \
+  --name source-github public.ecr.aws/vanus/connector/source-github > a.log &
 ```
 
 ### Step 3: Creating a Slack app
