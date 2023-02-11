@@ -63,7 +63,6 @@ Through github events, you can learn a lot in real time, such as who starred the
 
 ## What is Slack
 Slack is an all-purpose communication platform and collaboration hub. It includes instant messaging, voice and video calls, and a suite of tools to help groups share information and work together.
-<!--truncate-->
 A Slack workspace is your team's home, similar to a dashboard.A Slack workspace is your team's home, similar to a dashboard.Slack Channels are shared group chat rooms for members of a workspace. Users can communicate with the entire team or certain team members in various channels.
 ## How to Connect GitHub to Slack?
 
