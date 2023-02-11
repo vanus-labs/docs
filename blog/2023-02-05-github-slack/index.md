@@ -138,7 +138,8 @@ $ vsctl eventbus create  github-slack
  **Payload URL** *
 
 ```
-http://ip10-1-53-4-cfie9skinko0oisrvrq0-8082.direct.play.linkall.com
+Get your payload URL in the GitHub to Twitter scenario under Payload URL.
+Example: http://ip10-1-53-4-cfie9skinko0oisrvrq0-8082.direct.play.linkall.com
 ```
 
 **Content type**
