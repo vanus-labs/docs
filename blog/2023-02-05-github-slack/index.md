@@ -237,7 +237,7 @@ vsctl subscription create  \
         "stargazers_count": "$.data.repository.stargazers_count",
         "repo": "$.data.repository.html_url"
       },
-      "template": "{\"subject\": \"${repo}\",\"message\":\"Hi Team, GitHub user < ${user} > just stared Vanus repository at  ${time} . Check out his GitHub home page here:${homepage}. We have ${stargazers_count} stars now !\"}"
+      "template": "{\"subject\": \"<repo>\",\"message\":\"Hi Team, GitHub user < <user> > just stared Vanus repository at  <time> . Check out his GitHub home page here: <homepage>. We have <stargazers_count> stars now !\"}"
     }'
 ```
 
