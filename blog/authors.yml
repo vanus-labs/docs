@@ -20,3 +20,12 @@ Veda:
   image_url: https://github.com/VedaGao.png
   email: Vedagao2022@gmail.com
   twitter: vedagao2022
+<<<<<<< HEAD
+=======
+Michael:
+  name: Michael Giroux
+  image_url: https://pbs.twimg.com/profile_images/1592779669736067072/TIiLuHTj_400x400.jpg
+  url: https://twitter.com/MikeAsia5
+  email: michael.giroux@gmail.com
+  twitter: \MikeAsia5
+>>>>>>> 5ab81766baf837a08fdf6d3059e2557696c3ee41

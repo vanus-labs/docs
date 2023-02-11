@@ -231,6 +231,7 @@ quick-display-**************     1/1     Running   0          12s
 
 ```shell
 vsctl subscription create \
+  --name quick-start \
   --eventbus quick-start \
   --sink 'http://quick-display:80' \
   --filters '[
@@ -325,6 +326,7 @@ for more about `filter`, you can find in [how to manage subscription](../how-to/
 
 ```shell
 vsctl subscription create \
+  --name quick-start \
   --eventbus quick-start \
   --sink 'http://quick-display:80' \
   --transformer '{
