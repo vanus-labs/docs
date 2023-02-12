@@ -311,7 +311,7 @@ Explain：
 
 
 
-## Analyze GitHub star data
+## Analyze GitHub data
 Since an event pipeline has been established between GitHub and MySQL. Over time, event data from GitHub will be continuously stored in MySQL. We can analyze based on the GitHub data in MySQL at any time to grasp the situation of open-source projects in real time. The following are some examples of our commonly used analysis of GitHub data
 
 1  **Which organizations have developers most interested in our open source projects ?**
