@@ -17,7 +17,7 @@ vsctl subscription create
 ### Example
 
 ```shell
-vsctl subscription create --eventbus test --sink http://localhost:8080
+vsctl subscription create --name test --eventbus test --sink http://localhost:8080
 ```
 
 ### Options
