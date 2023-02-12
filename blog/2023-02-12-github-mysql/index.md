@@ -37,7 +37,7 @@ This blog will use Vanus to build a data pipeline from GitHub to MySQL, so as to
   - [Step 3:Deploy MySQL on Docker](#Step-3-Deploy-MySQL-on-Docker)
   - [Step 4: Deploy the MySQL sink connector](#Step-4-Deploy-the-MySQL-sink-connector )
 - [Store Github star events to MySQL](#Store-Github-star-events-to-MySQL)
-- [Analyze GitHub data](#Analyze-GitHub-data])
+- [Analyze GitHub data](#Analyze-GitHub-data)
 - [Conclusion](#Conclusion)
 
 ## What is GitHub
