@@ -50,7 +50,7 @@ Currently, Amazon S3 can publish notifications for the following events:
 - Object tagging events
 - Object ACL PUT events
 
-## Why we need AWS events
+### Why we need AWS events
 
 With S3 events, you can create event-driven workflows, where changes to objects in your S3 bucket trigger specific actions, such as automatically processing images, sending alerts, or triggering workflows in other AWS services.
 
