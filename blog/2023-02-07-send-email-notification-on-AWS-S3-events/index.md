@@ -27,7 +27,7 @@ This article introduces an **open-source solution** to set email notifications o
 
 ## About AWS S3
 
-## What is AWS S3
+### What is AWS S3
 
 Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. This means customers of all sizes and industries can use it to store and protect any amount of data for a range of use cases, such as websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics.
 
