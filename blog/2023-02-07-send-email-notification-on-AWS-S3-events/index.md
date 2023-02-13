@@ -33,7 +33,7 @@ Amazon Simple Storage Service (Amazon S3) is an object storage service that offe
 
 With Amazon S3, you can store your data in a highly durable manner, as it automatically stores multiple copies of data across multiple devices in multiple facilities, as well as automatically detecting and repairing any lost redundancy. Additionally, it integrates with other AWS services, making it easy to use as the foundation of your application's data architecture.
 
-## What is AWS events
+### What is AWS events
 
 Amazon S3 events refer to changes or updates to objects stored in an Amazon S3 bucket. S3 events can trigger a variety of actions, such as sending a notification, starting an AWS Lambda function, or triggering an Amazon SNS message.
 
