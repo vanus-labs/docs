@@ -82,7 +82,7 @@ To download a file from GitHub, you can follow these steps:
 
 ## How to Download a GitHub Repository？
 
-If you want to download the files of a repository and not clone it, you can download the repository as a zip archive from GitHub. Here's how:
+If you want to download the whole repository instead of a specific file, you can download the repository as a zip archive from GitHub. Here's how:
 
 ### Step 1: Find the GitHub repository
 
