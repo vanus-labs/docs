@@ -12,7 +12,6 @@ An AI unicorn start-up company is committed to becoming an infrastructure builde
 
 ![blog](./img/blog.png)
 
-<<<<<<< HEAD
 =======
 <!--truncate-->
 >>>>>>> 5ab81766baf837a08fdf6d3059e2557696c3ee41
