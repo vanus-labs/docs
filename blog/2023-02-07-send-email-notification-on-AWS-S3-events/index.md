@@ -247,7 +247,7 @@ We also created a transformer which did two things:
 1. Added two [CloudEvents attributes](https://github.com/cloudevents/spec/blob/main/cloudevents/spec.md#context-attributes) `xvemailrecipients` to specify the email recipient and `xvemailsubject` to specify the email subject.
 2. Assigned values from the original event to two defined variables `subject` and `bucket`.And use them to generate the content which will be sent to our email recipient.
 
-Now, we can upload a file to see if an email notification can be sent.
+Now, we can upload a file to see if an email notification will be sent correctly.
 
 - Upload a file to your bucket.
 
