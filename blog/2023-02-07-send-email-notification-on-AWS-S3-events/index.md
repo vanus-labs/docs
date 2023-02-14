@@ -217,7 +217,7 @@ The Email Sink also doesn't know what content it should send.
 The missing **key-point** here is a `subscription`. It can be used to grab data from specific `EventBus` and send data to the sink targets (in our case the sink is the Email Sink Connector).
 
 Also, in a `subscription`, you can create `filters` to select data which meet your requirements, and create `transformers` to
-convert original CloudEvents into any format you need, before them sent to target.
+convert original CloudEvents into any format you need, before before sending them to the target.
 
 Now let's create a subscription for this tutorial.
 
