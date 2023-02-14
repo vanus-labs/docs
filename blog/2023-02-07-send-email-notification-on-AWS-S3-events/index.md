@@ -211,7 +211,7 @@ Step 2: We deployed a S3 Source Connector to receive S3 events.
 
 Step 3: We deployed an Email Sink Connector waiting to send emails to some contacts.
 
-You may notice that we didn't specify the contact email address in Email Sink. So how the sink connector can know who it should send emails to ?
+You may notice that we didn't specify the contact email address in Email Sink, so how will the Sink Connector know the recipient's email address?
 The Email Sink also doesn't know what content it should send.
 
 The missing **key-point** here is a `subscription`. It can be used to grab data from specific `EventBus` and send data to the sink targets (in our case the sink is the Email Sink Connector).
