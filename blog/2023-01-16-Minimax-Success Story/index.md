@@ -30,7 +30,6 @@ Even if the staff is on call 24 hours a day, it is difficult to ensure the timel
 
 "If the cloud vendor's server storage fails, the entire platform business will be shut down, which means that all users cannot use the product. After the problem is resolved, we need to apologize to all individual users and business users, and even compensate them."
 
-<<<<<<< HEAD
 For an emerging product, the stability of the product is extremely important. If the user experience is not good, you may lose the user permanently.
 =======
 For an emerging product, the stability of the product is extremely important. If the user experience is good, you may retain the user permanently.
