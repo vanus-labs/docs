@@ -24,13 +24,13 @@ This article will show how to do this in 5 minutes on playground with Vanus and 
   - [Why need GitHub events](#Why-need-GitHub-events)
 - [What is Slack](#What-is-Slack)
 - [How to Connect GitHub to Slack](#How-to-Connect-GitHub-to-Slack)
-  - [Prerequisites](# Prerequisites)
-  - [Step 1: Deploying Vanus in the playground](#Step-1:-Deploying-Vanus-in-the-playground)
+  - [Prerequisites](#Prerequisites)
+  - [Step 1: Deploying Vanus in the playground](#Step-1-Deploying-Vanus-in-the-playground)
   - [Step 2: Deploy the GitHub source connector](#Step-2-Deploy-the-GitHub-source-connector)
   - [Step 3: Creating a Slack app](#Step-3-Creating-a-Slack-app)
   - [Step 4: Deploy the Slack sink connector on Kubernetes](#Step-4-Deploy-the-Slack-sink-connector-on-kubernetes)
 - [Test result](#Test-Result)
-- [Conclusion](# Conclusion)
+- [Conclusion](#Conclusion)
 ## What is GitHub
 ### About GitHub
 
@@ -260,7 +260,9 @@ Explain：
 
 ![result](./img/result.jpeg)
 
-## **Conclusion**
+
+
+## Conclusion
 
 This article describes how to build a notification system that pushes any GitHub event to Slack through Vanus. And an example is given: get the event of Github star, extract the key information of the event through Vanus, and re-edit the information and post it to Slack. Developers can also refer to examples to obtain and process any GitHub events, such as Issue events, comments events, WIKI update events, and so on. Through the construction of this system, developers can perceive real-time status changes in GitHub repo in real time.
 
