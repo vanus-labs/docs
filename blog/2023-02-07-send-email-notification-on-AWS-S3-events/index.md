@@ -214,7 +214,7 @@ Step 3: We deployed an Email Sink Connector waiting to send emails to some conta
 You may notice that we didn't specify the contact email address in Email Sink. So how the sink connector can know who it should send emails to ?
 The Email Sink also doesn't know what content it should send.
 
-The missing **key-point** here is a `subscription`. It can be used to grab data from specific `EventBus` and send data to sink targets (in our case the sink is Email Sink Connector).
+The missing **key-point** here is a `subscription`. It can be used to grab data from specific `EventBus` and send data to the sink targets (in our case the sink is the Email Sink Connector).
 
 Also, in a `subscription`, you can create `filters` to select data which meet your requirements, and create `transformers` to
 convert original CloudEvents into any format you need, before them sent to target.
