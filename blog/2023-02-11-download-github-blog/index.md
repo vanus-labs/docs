@@ -44,7 +44,7 @@ If you are new to using GitHub and Git, learning how to download open-source cod
 
 ## What is GitHub?
 
-<img src="./img/what-is-github.png" alt="what-is-github" style="zoom:67%;" />
+![github](img/what-is-github.png)
 
 GitHub is a web-based platform that provides hosting and collaboration services for Git version control repositories.
 
