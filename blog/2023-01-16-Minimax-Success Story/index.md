@@ -34,7 +34,6 @@ Even if the staff is on call 24 hours a day, it is difficult to ensure the timel
 For an emerging product, the stability of the product is extremely important. If the user experience is not good, you may lose the user permanently.
 =======
 For an emerging product, the stability of the product is extremely important. If the user experience is good, you may retain the user permanently.
->>>>>>> 5ab81766baf837a08fdf6d3059e2557696c3ee41
 
 #### Traditional message queues are not friendly to Kubernetes
 
