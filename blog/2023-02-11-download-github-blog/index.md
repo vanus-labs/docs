@@ -9,7 +9,7 @@ tags: ['GitHub', 'download', 'GitHub file']
 
 
 
-![github](./img/github.jpeg)
+![github](img/github.jpeg)
 
 GitHub is a robust platform that enables developers to manage their software development projects efficiently, collaborates with others, and maintain a complete history of changes and versions. 
 
