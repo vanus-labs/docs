@@ -13,7 +13,7 @@ const url_twitter = 'https://twitter.com/Vanus_dev';
 const config = {
   title: 'An open-source, cloud-native, Serverless message queue for building EDA applications with Ease.',
   tagline: 'How to use Vanus',
-  url: 'https://vanus.dev',
+  url: 'https://vanus.ai',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   plugins: ['docusaurus-plugin-sass',

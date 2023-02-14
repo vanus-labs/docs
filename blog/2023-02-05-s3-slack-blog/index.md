@@ -14,7 +14,7 @@ This article shows how to automatically get notified in a Slack channel whenever
 
 To achieve that, we need one program to receive S3 events and transform them into custom notifications and we also need another program to receive transformed notifications and send them to our Slack channel.
 
-Luckily, Vanus has already provided many **[out-of-the-box Connectors](https://www.vanus.dev/connectors)** that enable you to integrate with popular services or applications without writing any codes.
+Luckily, Vanus has already provided many **[out-of-the-box Connectors](https://www.vanus.ai/connectors)** that enable you to integrate with popular services or applications without writing any codes.
 
 **Here is how we can do this within 5 mins.**
 

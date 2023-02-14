@@ -189,7 +189,7 @@ Let us go back with the following command:
 ```shell 
 cd ..
 ```
-Before running our Amazon Billing Source, we will need to create an [Eventbus](https://www.vanus.dev/introduction/concepts). An Eventbus represents a group of pipelines that receive and dispatch events. To create the eventbus,
+Before running our Amazon Billing Source, we will need to create an [Eventbus](https://www.vanus.ai/introduction/concepts). An Eventbus represents a group of pipelines that receive and dispatch events. To create the eventbus,
 Here, for simplicity, I have named the eventbus **billing**
 
 ```shell 
@@ -217,7 +217,7 @@ nohup docker run -it --rm --network=host \
   --name source-aws-billing public.ecr.aws/vanus/connector/source-aws-billing > billing.log &
 ```
 
-Just before we can receive the report on our slack channel, we need first to create a [subscription](https://www.vanus.dev/introduction/concepts) which will help us [transform](https://www.vanus.dev/introduction/concepts) the data coming from the AWS Billing report source to data that can be accepted by our Slack sink.
+Just before we can receive the report on our slack channel, we need first to create a [subscription](https://www.vanus.ai/introduction/concepts) which will help us [transform](https://www.vanus.ai/introduction/concepts) the data coming from the AWS Billing report source to data that can be accepted by our Slack sink.
 
 # Creating a Subscription
 To create a subscription, paste this line of code
