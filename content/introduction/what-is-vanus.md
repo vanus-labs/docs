@@ -21,15 +21,3 @@ id: what-is-vanus
 * One-click deployment, the installation is completed within 1 minute, 0 operation
 
 Vanus is fully an Open Source project, which is publicly available under the Apache 2.0 License. You can find Vanus on [GitHub](https://github.com/linkall-labs/vanus).
-
-
-
-<div align='center'>
-    <a href="https://github.com/linkall-labs/vanus"><img src="https://img.shields.io/github/stars/linkall-labs/vanus.svg?style=flat&logo=github&colorB=blueviolet&label=stars" height=23></a> 
-    <a href="https://play.linkall.com"><img src="https://img.shields.io/badge/Playground-Try%20it%20%20free-red)" height=23></a> 
-    <a href="https://join.slack.com/t/vanusworkspace/shared_invite/zt-1jilbbfo2-NxiFG0VOo8ABGCCNaeNfcA"><img src="https://img.shields.io/badge/slack-join-3CC798?style=social&logo=slack" height=23></a>    
-    <a href="https://twitter.com/Vanus_dev"><img src="https://img.shields.io/badge/-Twitter-red?style=social&logo=twitter" height=23></a>
-   <!-- <a href="https://twitter.com/Vanus_dev"><img src="https://img.shields.io/twitter/follow/vanus_dev?style=social" height=23></a> -->
-    <a href="https://www.youtube.com/channel/UC7rd6IgjfNYTOXf2FerFNyA"><img src="https://img.shields.io/badge/-Youtube-red?style=social&logo=youtube" height=23></a>
-</div>
-
