@@ -18,6 +18,6 @@ id: what-is-vanus
 #### Serverless, a simple and effortless process
 * Automatically scale up or down clusters based on event traffic, reducing costs by up to 90%.
 * Seamlessly integrate mainstream cloud functions and open-source FaaS platforms.
-* One-click deployment, the installation is completed within 1 minute, 0 operation
+* One-click deployment, the installation is done in seconds with 0 operations needed.
 
 Vanus is fully an Open Source project, which is publicly available under the Apache 2.0 License. You can find Vanus on [GitHub](https://github.com/linkall-labs/vanus).
