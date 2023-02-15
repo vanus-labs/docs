@@ -1,7 +1,7 @@
 ---
 title: How to download from GitHub
 authors: Veda
-tags: ['GitHub', 'download', 'GitHub file']
+tags: ['GitHub', 'download', 'GitHub file', 'clone github', 'repositiory']
 
 ---
 
@@ -61,22 +61,22 @@ To download a file from GitHub, you can follow these steps:
 - Go to the GitHub repository that contains the file you want to download.
 - Navigate to the file you want to download, and click **Go to file** to view its contents.
 
-![github-file-download](./img/github-file-download.png)
+![github-file-download](img/github-file-download.png)
 
 ### Step 2: Open the file in the browser
 
 -  Click the file you want to download. This will open the file in GitHub.
 
-![open the file in GitHub](./img/open the file in GitHub.png)
+![open the file in GitHub](img/open-the-file-in-GitHub.png)
 
 - Click on the **Raw** button to open the raw code in your browser.
-  - ![raw button in GitHub](./img/raw button in GitHub.png)
+  - ![raw button in GitHub](img/raw-button-in-GitHub.png)
 
 ### Step 3: Download the contents of the file to the local
 
 - Select **Save Link As** (or equivalent option) to download the file to your local machine.
 
-![Download the code for the GitHub file](./img/Download the code for the GitHub file.png)
+![Download the code for the GitHub file](img/Download-the-code-for-the-GitHub-file.png)
 
 
 
@@ -93,7 +93,7 @@ If you want to download the whole repository instead of a specific file, you can
 
 The repository will be downloaded as a zip archive, which you can extract to access the files.
 
-![Download ZIP GitHub](./img/Download ZIP GitHub.png)
+![Download ZIP GitHub](img/Download-ZIP-GitHub.png)
 
 **Note:** Keep in mind that downloading a repository as a zip archive will not include the Git history, so you won't be able to view the changes made to the files over time.  You'll need to clone the repository if you need to access the Git history.
 
@@ -110,14 +110,14 @@ Repositories can put out releases that are packaged versions of the project. You
 - Go to the repository on GitHub where the release was published.
 - Click on the "Releases" tab.
 
-![download release from GitHub](./img/download release from GitHub.png)
+![download release from GitHub](img/download-release-from-GitHub.png)
 
 ### Step 2: Find the Assets section
 
 - After clicking, you will see a page listing the versions from newest to oldest. 
 - Find the **Assets** section under the version you want to download. Click on the file under this section to download it.
 
-![Assets section in Github](./img/Assets section in Github.png)
+![Assets section in Github](img/Assets-section-in-Github.png)
 
 ### Step 3: Download a release from GitHub
 
