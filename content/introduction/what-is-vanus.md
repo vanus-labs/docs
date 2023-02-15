@@ -15,7 +15,7 @@ id: what-is-vanus
 * Provides general and flexible filtering rules, and developers can easily filter events.
 * Supports event processing through cloud functions such as aws lambda.
 
-#### Serverless, super easy to use
+#### Serverless, a simple and effortless process
 * Automatically scale up or down clusters based on event traffic, reducing costs by up to 90%.
 * Seamlessly integrate mainstream cloud functions and open-source FaaS platforms.
 * One-click deployment, the installation is completed within 1 minute, 0 operation
