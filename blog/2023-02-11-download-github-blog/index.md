@@ -1,7 +1,7 @@
 ---
 title: How to download from GitHub
 authors: Veda
-tags: ['GitHub', 'download', 'GitHub file', 'clone github', 'repositiory']
+tags: ['GitHub', 'download', 'GitHub file']
 
 ---
 
