@@ -44,6 +44,10 @@ For more help, you can run `vsctl help`.
 
     Specifies the endpoint of vanus controller
 
+> --operator-endpoint string   Default: "127.0.0.1:8089"
+
+    Specifies the endpoint of vanus operator
+
 > --format string   Default: "table"
 
     Specify the output format of vsctl. One of (json|table)
@@ -63,6 +67,15 @@ You can change VANUS_GATEWAY to your own Vanus cluster gateway address with the 
 export VANUS_GATEWAY=[yourAddress:port]
 ```
 
+> VANUS_OPERATOR
+
+    Vanus operator entry address. Default: "127.0.0.1:8089"
+
+You can change VANUS_OPERATOR to your own Vanus operator address with the following command.
+```
+export VANUS_OPERATOR=[yourAddress:port]
+```
+
 ## Operations
 
 The following table includes short descriptions and the general syntax for all of the vsctl operations:
@@ -79,7 +92,15 @@ The following table includes short descriptions and the general syntax for all o
 | delete      | vsctl subscription delete [flags] | delete subscription |
 | info        | vsctl subscription info [flags] | get subscription info |
 | list        | vsctl subscription list | list subscription |
-| get         | vsctl cluster controller topology | get the topology information of the controller cluster |
+| create      | vsctl cluster create [flags] | create cluster |
+| delete      | vsctl cluster delete [flags] | delete cluster |
+| update      | vsctl cluster upgrade [flags] | upgrade cluster version |
+| update      | vsctl cluster scale | scale cluster spec |
+| get         | vsctl cluster status | get cluster status |
+| install     | vsctl connector install | install connector |
+| uninstall   | vsctl connector uninstall | uninstall connector |
+| info        | vsctl connector info | get connector info |
+| list        | vsctl connector list | list connector |
 | get         | vsctl version [flags] | get vsctl version information |
 ||||
 
@@ -171,6 +192,33 @@ vsctl subscription list
 
 `vsctl cluster` - Execute the command on the specified cluster.
 ```
-# get the topology information of the controller cluster.
-vsctl cluster controller topology
+# create cluster
+vsctl cluster create --config-file <config-file>
+
+# delete cluster
+vsctl cluster delete
+
+# upgrade cluster version
+vsctl cluster upgrade --version <version>
+
+# scale cluster component replicas
+vsctl cluster scale <component> --replicas <replicas>
+
+# status cluster
+vsctl cluster status
+```
+
+`vsctl connector` - Execute the command on the specified connector.
+```
+# install connector
+vsctl connector install --kind <source|sink> --name <name> --type <type> --config-file <config-file>
+
+# delete connector
+vsctl connector uninstall --name <name>
+
+# upgrade connector info
+vsctl connector info --name <name>
+
+# list connector
+vsctl connector list
 ```
