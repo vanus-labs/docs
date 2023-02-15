@@ -117,7 +117,8 @@ Repositories can put out releases that are packaged versions of the project. You
 - After clicking, you will see a page listing the versions from newest to oldest. 
 - Find the **Assets** section under the version you want to download. Click on the file under this section to download it.
 
-![Assets section in Github](img/Assets-section-in-Github.png)
+![Assets section in Github](img/Assets-section-in-GitHub.png)
+
 
 ### Step 3: Download a release from GitHub
 
