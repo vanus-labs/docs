@@ -20,4 +20,4 @@ id: what-is-vanus
 * Seamlessly integrate mainstream cloud functions and open-source FaaS platforms.
 * One-click deployment, the installation is done in seconds with 0 operations needed.
 
-Vanus is an Open-Source project publicly available under the Apache 2.0 License. You can find Vanus on [GitHub](https://github.com/linkall-labs/vanus).
+Vanus is an open-source project publicly available under the Apache 2.0 License. You can find Vanus on [GitHub](https://github.com/linkall-labs/vanus).
