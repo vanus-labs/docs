@@ -67,13 +67,13 @@ Slack is an all-purpose communication platform and collaboration hub. It include
 
 ### Prerequisites
 
-- Playground: an online k8s environment where Vanus can be deployed.
+- [Playground](https://play.linkall.com/): an online k8s environment where Vanus can be deployed.
 - GitHub: your open-source repository.
 - Slack: a working Slack account.
 
 ### Step 1: Deploying Vanus in the playground
 
-1 Enter the login page and click the continue with Github button to log in with the GitHub account.
+1 Enter the [login page](https://play.linkall.com/) and click the continue with Github button to log in with the GitHub account.
 
 ![playground-login](./img/playground-login.jpeg)
 
