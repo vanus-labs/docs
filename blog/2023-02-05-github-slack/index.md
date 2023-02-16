@@ -160,10 +160,8 @@ Send me everything.
  Create config.yml in any directory, the content is as follows:
 
 ```Plain
-{
-  "v_target": "http://192.168.49.2:30002/gateway/github-slack",
-  "v_port": "8082"
-}
+"target": "http://192.168.49.2:30002/gateway/github-slack"
+"port": 8082
 ```
 
 3 Deploy the GitHub source connector and run the following command in the same directory.
