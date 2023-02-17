@@ -32,7 +32,7 @@ Vanus has a vast amount of features to help users achieve their goals. Let us sh
 
 * Provide event filtering and transformation capabilities.
 
-* Provide 30+ out-of-the-box event conversion functions.
+* Provide 100+ out-of-the-box event conversion functions.
 * Support custom event calculation based on cloud functions.
 * Support for window-based event computing (come soon).
 
