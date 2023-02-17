@@ -2,6 +2,9 @@
 title: What is Vanus
 id: what-is-vanus
 ---
+
+# What is Vanus
+
 **Vanus is an open-source serverless event streaming platform with built-in event processing capabilities.**  It connects SaaS, cloud services, and databases to help users build next-generation event-driven applications. Vanus separates storage and computing resources and offers modern development features such as CloudEvents Specification, FaaS Integration, built-in Connectors, data filtering, and transformation.
 
 #### Build the event-driven application
