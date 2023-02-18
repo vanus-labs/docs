@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // 链接
 const url_github = 'https://github.com/linkall-labs/vanus';
 const url_slack = 'https://join.slack.com/t/vanusworkspace/shared_invite/zt-1jilbbfo2-NxiFG0VOo8ABGCCNaeNfcA';
-const url_twitter = 'https://twitter.com/Vanus_dev';
+const url_twitter = 'https://twitter.com/vanus_ai';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -45,7 +45,7 @@ const config = {
     {src: "/js/product-animation.js"}
   ],
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/vanus-favicon.png',
+  favicon: 'img/vanus-favicon.svg',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'linkall-labs', // Usually your GitHub org/user name.
@@ -103,7 +103,7 @@ const config = {
         title: 'Vanus',
         logo: {
           alt: 'vanus logo',
-          src: 'img/vanus-logo.png',
+          src: 'img/vanus-logo.svg',
         },
         hideOnScroll: true,
         items: [
