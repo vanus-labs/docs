@@ -45,5 +45,5 @@ Read our [contributing guide](CONTRIBUTING.md) to learn about how to contribute 
 We have a few channels for contact:
 
 - [Slack](https://join.slack.com/t/vanusworkspace/shared_invite/zt-1jilbbfo2-NxiFG0VOo8ABGCCNaeNfcA)
-- [@Vanus_dev](https://twitter.com/Vanus_dev) on Twitter
+- [@vanus_ai](https://twitter.com/vanus_ai) on Twitter
 - [GitHub Issues](https://github.com/linkall-labs/docs/issues)
