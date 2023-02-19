@@ -1,5 +1,5 @@
 ---
-title: How to receive the entries of a MySQL database to a Slack channel in real-time
+title: Build a Notification Pipeline from MySQL to Email in Seconds
 authors: Michael
 tags: ['MySQL', 'Database', 'Email', 'real-time']
 ---
