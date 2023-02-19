@@ -25,7 +25,6 @@ Using Vanus, we can automatically send customized messages to multiple email rec
     - Step 3: Deploy the Email Sink Connector
 - Check out the results
 - Conclusion
-  About MySQL
 
 ## What is MySQL?
 
