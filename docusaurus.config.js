@@ -7,13 +7,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // 链接
 const url_github = 'https://github.com/linkall-labs/vanus';
 const url_slack = 'https://join.slack.com/t/vanusworkspace/shared_invite/zt-1jilbbfo2-NxiFG0VOo8ABGCCNaeNfcA';
-const url_twitter = 'https://twitter.com/Vanus_dev';
+const url_twitter = 'https://twitter.com/vanus_ai';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'An open-source, cloud-native, Serverless message queue for building EDA applications with Ease.',
   tagline: 'How to use Vanus',
-  url: 'https://vanus.ai',
+  url: 'https://docs.vanus.ai',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   plugins: ['docusaurus-plugin-sass',
@@ -37,46 +37,6 @@ const config = {
         documents: ["sink-aws-s3/README.md", "sink-display/README.md", "sink-doris/README.md", "sink-elasticsearch/README.md", "sink-email/README.md", "sink-feishu/README.md", "sink-http/README.md", "sink-k8s/README.md", "sink-mongodb/README.md", "sink-mysql/README.md", "sink-slack/README.md", "sink-tencentcloud-scf/README.md"], // the file names to download
       },
     ],
-    [
-      'client-redirects',
-      /** @type {import('@docusaurus/plugin-client-redirects').Options} */
-      ({
-        fromExtensions: ['html'],
-        createRedirects(routePath) {
-          // Redirect to /docs from /docs/introduction (now docs root doc)
-          if (routePath === '/docs' || routePath === '/docs/') {
-            return [`${routePath}/introduction/what-is-vanus`];
-          }
-          return [];
-        },
-        redirects: [
-          {
-            from: ['/docs'],
-            to: '/introduction/what-is-vanus',
-          },
-          /*{
-            from: ['/docs/team', '/docs/next/team'],
-            to: '/community/team',
-          },
-          {
-            from: ['/docs/resources', '/docs/next/resources'],
-            to: '/community/resources',
-          },*/
-        ],
-      }),
-    ],
-
-
-    [
-      'content-docs',
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      ({
-        id: 'community',
-        path: 'community',
-        routeBasePath: 'community',
-        sidebarPath: require.resolve('./sidebarsCommunity.js'),
-      }),
-    ]
   ],
   scripts: [
     // Object format.
@@ -85,8 +45,7 @@ const config = {
     {src: "/js/product-animation.js"}
   ],
   onBrokenMarkdownLinks: 'warn',
-  // favicon: 'img/favicon.ico',
-  favicon: 'img/vance-favicon.png',
+  favicon: 'img/vanus-favicon.svg',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'linkall-labs', // Usually your GitHub org/user name.
@@ -119,18 +78,6 @@ const config = {
           trackingID: 'G-TJL6X2XKQP',
           anonymizeIP: true,
         },
-        blog: {
-          // routeBasePath: '/',
-          path: 'blog',
-          editUrl: 'https://github.com/linkall-labs/docs/edit/main',
-          postsPerPage: 5,
-          feedOptions: {
-            type: 'all',
-           // copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
-          },
-          blogSidebarCount: 'ALL',
-          blogSidebarTitle: 'All our posts',
-        },
         theme: {
           customCss: [require.resolve('./src/css/custom.scss')
           ]
@@ -156,7 +103,7 @@ const config = {
         title: 'Vanus',
         logo: {
           alt: 'vanus logo',
-          src: 'img/vance-logo.png',
+          src: 'img/vanus-logo.svg',
         },
         hideOnScroll: true,
         items: [
@@ -166,23 +113,6 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: 'blog', label: 'Blog', position: 'left'},
-          {
-            to: '/community/support',
-            label: 'Community',
-            position: 'left',
-            activeBaseRegex: `/community/`,
-          },
-          // {to: '/blog', label: 'Blog', position: 'left'},
-          // {
-          //   href: 'https://github.com/linkall-labs/vanus',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
-          /*{
-            type: 'localeDropdown',
-            position: 'right',
-          },*/
           {
             href: url_github,
             position: 'right',
@@ -218,41 +148,6 @@ const config = {
             label: 'Twitter',
             href: url_twitter,
           },
-          // {
-          //   title: 'Docs',
-          //   items: [
-          //     {
-          //       label: 'Tutorial',
-          //       to: '/docs/intro',
-          //     },
-          //   ],
-          // },
-          // {
-          //   title: 'Community',
-          //   items: [
-          //     {
-          //       label: 'Stack Overflow',
-          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-          //     },
-          //     {
-          //       label: 'Discord',
-          //       href: 'https://discordapp.com/invite/docusaurus',
-          //     },
-          //     {
-          //       label: 'Twitter',
-          //       href: 'https://twitter.com/docusaurus',
-          //     },
-          //   ],
-          // },
-          // {
-          //   title: 'More',
-          //   items: [
-          //     {
-          //       label: 'Blog',
-          //       to: '/blog',
-          //     },
-          //   ],
-          // },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Linkall Inc. Built with Docusaurus.`,
       },

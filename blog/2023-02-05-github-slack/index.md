@@ -18,19 +18,19 @@ This article will show how to do this in 5 minutes on playground with Vanus and 
 
 ## Table of Contents
 
-- [What is GitHub](#What-is-GitHub)
-  - [About GitHub](#About-GitHub)
-  - [What are GitHub events](#What-are-GitHub-events)
-  - [Why need GitHub events](#Why-need-GitHub-events)
-- [What is Slack](#What-is-Slack)
-- [How to Connect GitHub to Slack](#How-to-Connect-GitHub-to-Slack)
-  - [Prerequisites](#Prerequisites)
-  - [Step 1: Deploying Vanus in the playground](#Step-1-Deploying-Vanus-in-the-playground)
-  - [Step 2: Deploy the GitHub source connector](#Step-2-Deploy-the-GitHub-source-connector)
-  - [Step 3: Creating a Slack app](#Step-3-Creating-a-Slack-app)
-  - [Step 4: Deploy the Slack sink connector on Kubernetes](#Step-4-Deploy-the-Slack-sink-connector-on-kubernetes)
-- [Test result](#Test-Result)
-- [Conclusion](#Conclusion)
+- [What is GitHub](#what-is-github)
+  - [About GitHub](#about-github)
+  - [What are GitHub events](#what-are-github-events)
+  - [Why need GitHub events](#why-need-github-events)
+- [What is Slack](#what-is-slack)
+- [How to Connect GitHub to Slack](#how-to-connect-github-to-slack)
+  - [Prerequisites](#prerequisites)
+  - [Step 1: Deploying Vanus in the playground](#step-1-deploying-vanus-in-the-playground)
+  - [Step 2: Deploy the GitHub source connector](#step-2-deploy-the-github-source-connector)
+  - [Step 3: Creating a Slack app](#step-3-creating-a-slack-app)
+  - [Step 4: Deploy the Slack sink connector on Kubernetes](#step-4-deploy-the-slack-sink-connector-on-kubernetes)
+- [Test result](#test-result)
+- [Conclusion](#conclusion)
 ## What is GitHub
 ### About GitHub
 
@@ -42,14 +42,14 @@ Since its founding in 2008, GitHub has acquired millions of users and establishe
 
 When developers operate on GitHub, events will be generated, such as submitting Issues, submitting PR, committing code, etc. Common GitHub event types are as follows:
 
-- Issue event： create, delete, closed, as signed, unsigned, labeled, unlabeled, etc.
-- PR event， create, delete, closed, merged, edited, review requested, commit, etc.
-- Comments event, PR comments, Issue comments, commit comments.
+- Issue event: create, delete, closed, as signed, unsigned, labeled, unlabeled, etc.
+- PR event: create, delete, closed, merged, edited, review requested, commit, etc.
+- Comments event: PR comments, Issue comments, commit comments.
 - Stars event: a star is created or deleted from the repository.
-- Version releases event:  release created, edited, published, unpublished, or deleted.
+- Version releases event: release created, edited, published, unpublished, or deleted.
 - Wiki events: Wiki page updated.
 - The team adds: team added or modified on a repository.
-- Discussions event:  created, edited, pinned, unpinned, locked, unlocked, transferred, answered, etc.
+- Discussions event: created, edited, pinned, unpinned, locked, unlocked, transferred, answered, etc.
 - Labels event: label created, edited, or deleted.
 - Milestone event: milestone created, closed, opened, edited, or deleted.
 - Code scanning alerts: code scanning alerts are created, fixed in a branch, or closed.
@@ -67,13 +67,13 @@ Slack is an all-purpose communication platform and collaboration hub. It include
 
 ### Prerequisites
 
-- Playground: an online k8s environment where Vanus can be deployed.
+- [Playground](https://play.linkall.com/): an online k8s environment where Vanus can be deployed.
 - GitHub: your open-source repository.
 - Slack: a working Slack account.
 
 ### Step 1: Deploying Vanus in the playground
 
-1 Enter the login page and click the continue with Github button to log in with the GitHub account.
+1 Enter the [login page](https://play.linkall.com/) and click the continue with Github button to log in with the GitHub account.
 
 ![playground-login](./img/playground-login.jpeg)
 
@@ -87,7 +87,7 @@ Slack is an all-purpose communication platform and collaboration hub. It include
 kubectl apply -f https://download.linkall.com/all-in-one/v0.6.0.yml
 ```
 
- Verify: watch -n2 kubectl get po -n vanus
+ Verify: 
 
 ```Plain
  $ watch -n2 kubectl get po -n vanus
@@ -160,10 +160,8 @@ Send me everything.
  Create config.yml in any directory, the content is as follows:
 
 ```Plain
-{
-  "v_target": "http://192.168.49.2:30002/gateway/github-slack",
-  "v_port": "8082"
-}
+"target": "http://192.168.49.2:30002/gateway/github-slack"
+"port": 8082
 ```
 
 3 Deploy the GitHub source connector and run the following command in the same directory.
@@ -176,19 +174,19 @@ docker run -it --rm --network=host \
 
 ### Step 3: Creating a Slack app
 
-1 Create a Slack app
+1 Create a Slack app.
 
-First, log in to Slack and click **Create New APP**, then select **From Scrath**, and fill in the **App Name**, select the corresponding **Workspace**
+First, log in to Slack and click **Create New APP**, then select **From Scrath**, and fill in the **App Name**, select the corresponding **Workspace**.
 
 ![create-slack-app](./img/create-slack-app.jpeg)
 
-2 Setting permissions
+2 Setting permissions.
 
 Select  **OAuth & Permissions** **,**  click add an **OAuth Scope** in the **Bot Token Scopes** section of the **Scope tab**, and add chat:write and chat:write.public two types of permissions.
 
 ![setting-permissions](./img/setting-permissions.jpeg)
 
-Reinstall to Workspace
+Reinstall to Workspace.
 
 ![reinstall](./img/reinstall.jpeg)
 
@@ -252,7 +250,7 @@ Explain：
 
 • Line 7: Declare time, and get the time of clicking star from the GitHub event.
 
-• Line 8:Declare the homepage, and get the GitHub home page address of the developer who clicked star from the GitHub event.
+• Line 8: Declare the homepage, and get the GitHub home page address of the developer who clicked star from the GitHub event.
 
 • Line 12: Edit the specific content of the delivery: Hi Team, GitHub user < xxx > just stared the Vanus repository at 2023-0x-xxTxx:18:03Z . Check out his GitHub home page here: https://github.com/xxxx . We have xxx stars now!
 
