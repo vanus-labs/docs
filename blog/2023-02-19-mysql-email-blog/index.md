@@ -11,6 +11,8 @@ Welcome to my blog on how to get notifications from MySQL to email. For business
 Thankfully, Vanus provides a solution for this problem by allowing users to set up an event pipeline that automatically sends email notifications whenever a particular event occurs in the database. In this blog, I will provide a step-by-step guide on how to set up this feature and customize it to fit your specific needs.
 Whether you are a MySQL user who wants to streamline their database management, or a database administrator who needs to stay informed about updates, this blog will provide you with the knowledge and tools you need to set up email notifications for your MySQL database. So let's dive in and learn how to get notifications from MySQL to email!
 
+<!--truncate-->
+
 Using Vanus, we can automatically send customized messages to multiple email recipients without a single line of code.
 
 **Table of content**
