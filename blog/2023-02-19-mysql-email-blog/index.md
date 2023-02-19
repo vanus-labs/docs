@@ -203,7 +203,7 @@ CREATE TABLE IF NOT EXISTS dataBaseName.tableName(
 PRIMARY KEY (`id`)
 ) ENGINE=InnoDB;
 ```
-After you define your table structure, you can use the variable to create your own template message with <variable>.
+After you define your table structure, you can use the variable to create your own template message with \<variable\>.
 ```shell
 vsctl subscription create --name s3-email-subscription \
 --eventbus s3-email-scenario \
