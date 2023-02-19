@@ -1,4 +1,4 @@
-# Best 6 Message Queues Most Suitable for Cloud Native Applications
+# Best 8 Message Queues Most Suitable for Cloud Native Applications
 
 
 
@@ -15,18 +15,13 @@ Message queues can be used for a variety of purposes, such as load balancing, ta
 The following blog articles will help you focus on the **message queues* that are most suitable for cloud-native applications in 2023. The first three are currently the most influential message queues, and the last four are the latest and popular next-generation message queues in the past two years
 
 * Apache Kafka   
-
 * RabbitMQ
-
 * Pulsar
-
 * Nats
-
 * Redpanda
-
 * Vanus
-
-  
+* KubeMQ
+* Memphis
 
 
 
@@ -93,23 +88,38 @@ Pulsar also provides a rich set of client libraries for a variety of programming
 
 
 
-## 2 latest popular message queues
+## 4 latest popular message queues
 
 Like 2010, 2020 is also a very important year. Let's take a look at some background information around 2020:
 
-* Global recession：Although we don't want to see it, we have to admit that the global economy is now in a massive recession. The spread of the epidemic around the world is one of the most important reasons. The recession has made business extremely difficult. Saving costs has become an important topic for many business executives.
+* Cloud becomes the infrastructure of society: Digitalization has become an important driving force driving the development of enterprises.More and more enterprises choose to build their digital business based on public cloud.In the 10 years from 2010 to 2020, the global cloud computing market size ranged from $41 billion to $312 billion. Even during the epidemic, the market growth rate in 2020 will still be as high as 33%.
+* Global economy enters recession: Although we don't want to see it, we have to admit that the global economy is now in a massive recession. The spread of the epidemic around the world is one of the most important reasons. The recession has made business extremely difficult. Saving costs has become an important topic for many business executives.
+* Cloud native is becoming more and more popular: Modern enterprises demand better agility and flexibility and lower costs from their digital businesses. This has given birth to the rapid development of cloud native technology. For example, C I/CD technology can provide the ability of rapid delivery, and Serverless technology can provide the ability of fast elasticity and on-demand operation.
+* kubertenes is becoming the infra of cloud native apps：Kubernetes provides a powerful ability to automatically expand and shrink applications, and dynamically adjust resources according to the load of the application, thereby achieving higher resource utilization and faster application response time.his helps enterprises save costs and improve efficiency, so more and more enterprises deploy their software on k8s.
 
-* Enterprise cloud has become a global trend
+Around 2010, due to the surge of mobile Internet users, a large amount of data needs to be processed, which gave birth to the emergence of message queues such as Kafka. In 2020, due to the large number of cloud technologies adopted by enterprises and the emergence of cloud-native technologies such as kubernetes and serverless, enterprises have new needs. This time, they need a message queue with a cloud-native architecture that is truly suitable for the new infrastructure. However, message queues, which were born around 2010, are obviously powerless in the face of new infrastructure and new applications such as serverless due to different technical architectures and application scenarios. For example, kafka obviously has many problems running on kubertenes:
 
-* Kubernetes becomes the new infrastructure
+* StatefulSet requirement: Kafka is a distributed system that requires each node to maintain state, which can make it difficult to run on Kubernetes. In particular, running Kafka on Kubernetes requires using StatefulSets, which can be more complex to manage than Deployments.
 
-* Serverless is becoming popular
+* Resource consumption: Kafka requires significant resources to run, including CPU, memory, and storage. This can make it challenging to run Kafka in a scalable way on Kubernetes, where resources are typically shared among many different applications.
 
-If 2010 was the era of big data, then the application of 2020 is the era of cloud native. The new era has new requirements for message middleware. It is also for this reason that there will be a new message queue around 2020.
+* Networking complexity: Kafka requires a well-defined network topology in order to work properly, and this can be difficult to achieve on Kubernetes. In particular, Kafka requires that each node have a unique hostname and IP address, which can be challenging to achieve in a containerized environment.
 
-### 1 Redpanda
+* Data locality: Kafka performs best when data is stored on the same node as the consumer that will be reading it. However, Kubernetes does not provide strong guarantees about where pods are scheduled, which can make it difficult to ensure that data is stored on the same node as the consumer.
 
-Redpanda is an open source distributed streaming platform that can be used as a high-performance message queue. Redpanda message queue is based on Apache Kafka's design but provides several improvements such as faster performance, lower latency, and better scalability.
+Different from virtual machines and traditional microservice architecture applications, new infrastructure such as k8s and cloud-native applications such as serverless have significantly different requirements for message queues:
+
+Fully elastic: It can make full use of the capabilities of kubernetes and automatically expand or contract as needed. Kafka can only be expanded or contracted manually, and data migration for replication is required.
+
+Lightweight & K8s native: It needs to be lightweight enough, with very little resource dependence, and can run in pods.
+
+Friendly to serverless cloud-native applications: Cloud-native applications usually have strong elasticity, such as cloud functions. When traffic comes, hundreds of instances may need to be expanded to process requests within 1 second. The new message queue needs to support rapid scaling of large-scale applications.
+
+The following introduces four popular message queues born around 2020. Compared with Kafka, they are obviously more suitable for k8s and new cloud-native applications.
+
+### 1 [Redpanda](#https://redpanda.com/)
+
+[Redpanda](#https://redpanda.com/) is an open source distributed streaming platform that can be used as a high-performance message queue. Redpanda message queue is based on Apache Kafka's design but provides several improvements such as faster performance, lower latency, and better scalability.
 
 Redpanda message queue allows multiple producers to write messages to a single topic, and multiple consumers to read messages from that topic in parallel. Messages can be buffered in memory for fast delivery and can be persisted to disk for durability. Redpanda also provides a number of features such as replication, partitioning, and compression to help manage large amounts of data.
 
@@ -117,23 +127,49 @@ One of the key benefits of using Redpanda message queue is its ability to handle
 
 Overall, Redpanda message queue is a powerful and flexible tool for building real-time streaming applications that require reliable and high-performance message processing.
 
-### 2 Vanus
+### 2 [Vanus](#https://www.vanus.ai/)
 
-**Vanus is an open-source serverless event streaming platform with built-in event processing capabilities.** It connects SaaS, cloud services, and databases to help users build next-generation event-driven applications. Vanus separates storage and computing resources and offers modern development features such as CloudEvents Specification, FaaS Integration, built-in Connectors, data filtering, and transformation.
-Build the event-driven application
-Send SaaS-generated events to the data lake for analysis.
-Deliver cloud services events to cloud functions for processing.
-Real-time transmission of events between SaaS.
-Synchronize data between databases in real-time.
-Out-of-the-box event computing capabilities
-Provides 100+ built-in functions to help developers process events in real-time.
-Provides general and flexible filtering rules, and developers can easily filter events.
-Supports event processing through cloud functions such as aws lambda.
-Serverless, a simple and effortless process
-Automatically scale up or down clusters based on event traffic, reducing costs by up to 90%.
-Seamlessly integrate mainstream cloud functions and open-source FaaS platforms.
-One-click deployment, the installation is done in seconds with 0 operations needed.
-Vanus is an open-source project publicly available under the Apache 2.0 License. You can find Vanus on GitHub.
+[Vanus](#https://www.vanus.ai/) is an open-source serverless event streaming platform with built-in event processing capabilities. It connects SaaS, cloud services, and databases to help users build next-generation event-driven applications. Vanus separates storage and computing resources and offers modern development features such as CloudEvents Specification, FaaS Integration, built-in Connectors, data filtering, and transformation.
+
+* Build the event-driven application
+
+  * Send SaaS-generated events to the data lake for analysis.
+  * Deliver cloud services events to cloud functions for processing.
+  * Real-time transmission of events between SaaS.
+
+  * Synchronize data between databases in real-time.
+
+* Out-of-the-box event computing capabilities
+
+  * Provides 100+ built-in functions to help developers process events in real-time.
+  * Provides general and flexible filtering rules, and developers can easily filter events.
+  * Supports event processing through cloud functions such as aws lambda.
+
+* Serverless, a simple and effortless process
+
+  * Automatically scale up or down clusters based on event traffic, reducing costs by up to 90%.
+  * Seamlessly integrate mainstream cloud functions and open-source FaaS platforms.
+  * One-click deployment, the installation is done in seconds with 0 operations needed.
+
+### 3 [KubeMQ](#https://kubemq.io/)
+
+[KubeMQ](#https://kubemq.io/) is a Kubernetes-native message queue and messaging system that provides a reliable, scalable, and high-performance messaging infrastructure for distributed applications. It is designed to be easy to deploy, operate, and use within a Kubernetes environment.
+
+KubeMQ is built as a set of microservices that can be deployed as containers on a Kubernetes cluster. It includes features such as message queuing, publish/subscribe messaging, request/reply messaging, and event-driven messaging. KubeMQ also supports multiple messaging protocols, including REST, gRPC, and WebSocket, and provides client libraries for several programming languages, including Go, Java, Python, and .NET.
+
+One of the key benefits of KubeMQ is that it is designed to be highly available and fault-tolerant. It includes features such as automatic sharding, data replication, and data backup and recovery, which help to ensure that messages are reliably delivered even in the event of node failures or network disruptions.
+
+KubeMQ is also designed to be scalable, allowing users to add or remove nodes from the cluster as needed to handle changing message volumes or application requirements. Additionally, it provides monitoring and analytics capabilities that allow users to track message flow, monitor system health, and troubleshoot issues.
+
+ KubeMQ is a powerful and flexible messaging system that is well-suited for distributed applications running in a Kubernetes environment.
 
 
+
+### 4 [Memphis](#https://memphis.dev/)
+
+[Memphis](https://memphis.dev/) is an open-source, cloud-native message queue and streaming platform. It is designed to provide a reliable and scalable messaging infrastructure for distributed applications. Memphis can be deployed on Kubernetes, and it supports multiple messaging patterns, including publish/subscribe, request/reply, and stream processing.
+
+Memphis is built using Rust, which is known for its performance, reliability, and safety. The platform uses a distributed architecture, which allows for horizontal scaling and high availability. It also includes features such as message persistence, message filtering, and message batching, which help to ensure that messages are reliably delivered and processed.
+
+One of the key benefits of Memphis is its simplicity and ease of use. It provides a simple and intuitive API that can be used with several programming languages, including Rust, Python, and Java. Additionally, it includes a web-based management console that allows users to monitor message traffic, view statistics, and manage the messaging infrastructure.
 
