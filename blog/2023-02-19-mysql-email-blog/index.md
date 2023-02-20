@@ -17,7 +17,7 @@ Using Vanus, we can automatically send customized messages to multiple email rec
 
 **Table of content**
 - About MySQL
-    - What is MySQL?
+    - [What is MySQL?](#what-is-mysql)
     - What is Binlog?
     - Why do we need Binlogs?
 - Pre-requisite
