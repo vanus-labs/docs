@@ -135,7 +135,7 @@ Before getting started, you need to choose an open-source GitHub project you wan
 
 - Press Enter to clone the repository.
 
-![img](clone-the-repository.png)
+![img](img/clone-the-repository.png)
 
 ## How to push to GitHub
 
