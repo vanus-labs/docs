@@ -1,10 +1,15 @@
 ---
 title: Build a Notification Pipeline from MySQL to Email in Seconds
+dscription: We will explore how to use Vanus to build a pipeline that sends email notifications based on changes in a MySQL database. We will cover the necessary steps to set up Vanus, configure it to monitor a MySQL database, and send email notifications when changes are detected.
+type: blog
+category: tutorials
+layout: single
+lastmod: 2023-02-20
 authors: Michael
 tags: ['MySQL', 'Database', 'Email', 'real-time']
 ---
 
-# Get notifications from Mysql to your email
+# Get notifications from Mysql to your Email
 
 Welcome to my blog on how to get notifications from MySQL to email. For businesses and organizations that rely on MySQL to manage their data, staying informed about changes to the database is essential. However, manually monitoring the database for updates can be time-consuming and prone to human error.
 
@@ -64,12 +69,12 @@ stays secure.
 ## How to send customized events from Email to MySQL
 
 Here are the steps you can follow to send email notifications from any MySQL event.
-- Step 1: Deploy Vanus on the Playground
-- Step 2: Deploy the MySQL Source Connector
-- Step 3: Deploy the Email Sink Connector
+- Step 1: [Deploy Vanus on the Playground](#step-1-deploy-vanus-on-the-playground)
+- Step 2: [Deploy the MySQL Source Connector](#step-2-deploy-the-mysql-source-connector)
+- Step 3: [Deploy the Email Sink Connector](#step-3-deploy-the-email-sink-connector)
 
 ### Step 1: Deploy Vanus on the Playground
-- Go to Vanus Playground, and click “Continue with GitHub”
+- Go to [Vanus Playground](https://www.play.linkall.com), and click “Continue with GitHub”
 
  ![](img/img.png) 
 
