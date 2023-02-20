@@ -34,12 +34,12 @@ templates to write a connector.
     - [Step 2: Submit your connector proposal](#step-2-submit-your-connector-proposal)
     - [Step 3: Implement your connector logic](#step-3-implement-your-connector-logic)
 - [How to use Golang Source Template](#how-to-use-golang-source-template)
-    - [Project Structure of the Golang source template](#project-structure-of-the-golang-source-templatehttpsgithubcomlinkall-labsvanus-connecttreemaintemplatessource-go)
+    - [Project Structure of the Golang source template](#project-structure-of-the-golang-source-template)
     - [How to add custom configs in the source template](#how-to-add-custom-configs-in-the-source-template)
     - [How to Generate a CloudEvent in the template](#how-to-generate-a-cloudevent-in-the-template)
     - [How to deliver a CloudEvent to the target in the template](#how-to-deliver-a-cloudevent-to-the-target-in-the-template)
 - [How to use Golang Sink Template](#how-to-use-golang-sink-template)
-  - [Project Structure of the Golang sink template](#project-structure-of-the-golang-sink-templatehttpsgithubcomlinkall-labsvanus-connecttreemaintemplatessink-go)
+  - [Project Structure of the Golang sink template](#project-structure-of-the-golang-sink-template)
   - [How to add custom configs in the sink template](#how-to-add-custom-configs-in-the-sink-template)
   - [How to deal with the incoming CloudEvents](#how-to-deal-with-the-incoming-cloudevents)
 - [Conclusion](#conclusion)
@@ -110,7 +110,7 @@ You can choose a code template according to the type of connector you'd like to 
 
 ## How to use Golang Source Template
 
-### Project Structure of the [Golang Source Template](https://github.com/linkall-labs/vanus-connect/tree/main/templates/source-go)
+### Project structure of the Golang source template
 
 Below is the structure of the Golang Source Template.
 
@@ -195,7 +195,7 @@ send it to the target.
 
 ## How to use Golang Sink Template
 
-### Project Structure of the [Golang Sink Template](https://github.com/linkall-labs/vanus-connect/tree/main/templates/sink-go)
+### Project structure of the Golang sink template
 
 Same as the [source template](#project-structure-of-the-golang-source-templatehttpsgithubcomlinkall-labsvanus-connecttreemaintemplatessource-go).
 
