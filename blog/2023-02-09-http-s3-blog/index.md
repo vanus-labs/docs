@@ -1,15 +1,13 @@
 ---
-title: Persistent Log Stream with Amazon S3 Bucket 
+title: Persistent Log Stream with Amazon S3 Bucket
 description: We will learn how to build a Persistent Log Stream to store logs requests made to a Web Server in an Amazon S3 Bucket
-type: Blog
-category: Tutorials
-layout:Single
+type: blog
+category: tutorials
+layout: single
 lastmod: 2023-02-20
 authors: Ehis
-tags: ['S3', 'AWS', 'HTTP', 'Real-time']
+tags: ["S3", "AWS", "HTTP", "Real-time"]
 ---
-
-# How to build a Persistent Log Stream to store logs requests made to a Web Server in an Amazon S3 Bucket
 
 ## Table of Contents
 
@@ -30,18 +28,20 @@ tags: ['S3', 'AWS', 'HTTP', 'Real-time']
 
 Storing Logs on your web server may seem pretty okay for Low traffic websites like a personal blog but what about an e-commerce website which is a good example of a website that can receive millions of requests in a day? Storing such a high volume of logs may lead to more resources being needed to handle such logs. Also, if there is an issue with the server, the log files cannot be accessed. So then, what can we do?
 
-- What is Amazon S3
+- ### What is Amazon S3
+
   Amazon Simple Storage Service (Amazon S3) provides is an object storage service that provides performance, security, and scalability that are unmatched in the market. For a variety of use cases, including data lakes, websites, mobile applications, backup and restore, archives, business applications, IoT devices, and big data analytics, customers of all sizes and sectors may use Amazon S3 to store and preserve any quantity of data. To meet your unique business, organizational, and compliance needs, Amazon S3 offers management options that allow you to optimize, organize, and configure access to your data.
 
-- What is HTTP Request
+- ### What is HTTP Request
+
   A client sends an HTTP request to a named host on a server. Accessing a server resource is the purpose of the request.
 
-The client uses parts of a URL (Uniform Resource Locator), which contains the information required to access the resource, to submit the request. URLs are explained by looking at their constituent parts.
+  The client uses parts of a URL (Uniform Resource Locator), which contains the information required to access the resource, to submit the request. URLs are explained by looking at their constituent parts.
 
-The following components are found in a properly constructed HTTP request:
-A line for requests. A number of header fields or HTTP headers. A message body, if required.
+  The following components are found in a properly constructed HTTP request:
+  A line for requests. A number of header fields or HTTP headers. A message body, if required.
 
-In this tutorial, I will show you how you can use Vanus connect to build a highly available and persistent log stream from HTTP requests made to your web server and store them in Amazon S3 bucket.
+  In this tutorial, I will show you how you can use Vanus connect to build a highly available and persistent log stream from HTTP requests made to your web server and store them in Amazon S3 bucket.
 
 ## Pre-requisite
 
