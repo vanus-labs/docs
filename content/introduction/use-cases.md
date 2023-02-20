@@ -23,7 +23,7 @@ Vanus makes it easy for developers to build data pipelines from event sources to
 
 Vanus offers a variety of ways for developers to quickly establish connections between SaaS applications. including:
 
-- **GitHub event notification**: Easily deliver any event generated on GitHub to Slack.
+- **GitHub event notification**: Easily deliver any event generated on GitHub.
 - **Salesforce leads**: Synchronize potential users acquired on LinkedIn to Salesforce.
 - **Sheet record ad leads**: Automatically create Google Sheet records for new Facebook ad leads.
 - **Send email with Webhook**: Set up a webhook to send a Gmail email after receiving a request.
