@@ -1,6 +1,6 @@
 ---
 title: Build a Notification Pipeline from MySQL to Email in Seconds
-dscription: We will explore how to use Vanus to build a pipeline that sends email notifications based on changes in a MySQL database. We will cover the necessary steps to set up Vanus, configure it to monitor a MySQL database, and send email notifications when changes are detected.
+description: We will explore how to use Vanus to build a pipeline that sends email notifications based on changes in a MySQL database. We will cover the necessary steps to set up Vanus, configure it to monitor a MySQL database, and send email notifications when changes are detected.
 type: blog
 category: tutorials
 layout: single
