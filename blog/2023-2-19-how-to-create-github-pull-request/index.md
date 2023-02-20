@@ -162,7 +162,7 @@ git commit -m "12345"
 
 ### Step 3: Push changes to the remote repository
 
-- Push your changes to the remote repository on GitHub using the command `git push`.  If you haven't set the upstream branch, you may need to specify the remote and branch name using git push <remote>  <branch>.  For example, git push origin main.
+- Push your changes to the remote repository on GitHub using the command `git push`.  If you haven't set the upstream branch, you may need to specify the remote and branch name using git push \<remote\>  \<branch\>.  For example, git push origin main.
 
 ```undefined
 git push origin main
