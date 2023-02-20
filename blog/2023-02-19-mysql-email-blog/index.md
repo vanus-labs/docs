@@ -69,19 +69,25 @@ stays secure.
 ## How to send customized events from Email to MySQL
 
 Here are the steps you can follow to send email notifications from any MySQL event.
+
 - Step 1: [Deploy Vanus on the Playground](#step-1-deploy-vanus-on-the-playground)
+
 - Step 2: [Deploy the MySQL Source Connector](#step-2-deploy-the-mysql-source-connector)
+
 - Step 3: [Deploy the Email Sink Connector](#step-3-deploy-the-email-sink-connector)
 
 ### Step 1: Deploy Vanus on the Playground
+
 - Go to [Vanus Playground](https://www.play.linkall.com), and click “Continue with GitHub”
 
  ![](img/img.png) 
 
 - Wait until the K8s environment is ready (usually less than 1 min).
-  img
+  ![](img/img_1.png)
 - Install Vanus by typing the following command:
-  kubectl apply -f https://download.linkall.com/all-in-one/v0.6.0.yml
+
+  `kubectl apply -f https://download.linkall.com/all-in-one/v0.6.0.yml`
+
 - Verify if Vanus is deployed successfully:
   
 ```shell
@@ -153,11 +159,13 @@ EOF
 ```
 
 - Run MySQL Source in the background
+
+```shell
   docker run -it --rm --network=host \
   -v ${PWD}:/vanus-connect/config \
   -v ${PWD}:/vanus-connect/data \
   --name source-mysql public.ecr.aws/vanus/connector/source-mysql &
-
+```
 ### Step 3: Deploy the Email Sink Connector
 You can choose any mail provider to send an email by the Email Sink. In this tutorial, I will go with Gmail.
 - Enable 2-Step Verification in your Google Account.
