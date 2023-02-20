@@ -7,7 +7,6 @@ layout: single
 lastmod: 2023-02-19
 author: Veda
 tags: ['GitHub', 'Pull Request', 'Git']
-​---
 ---
 
 #  How to create a GitHub Pull Request
