@@ -135,7 +135,7 @@ Before getting started, you need to choose an open-source GitHub project you wan
 
 - Press Enter to clone the repository.
 
-![img](https://xjxt2gkbqf.feishu.cn/space/api/box/stream/download/asynccode/?code=YTYyMDI3M2FkYzgxNWY3YWIxNjQ4ZmRmMjEyNjUxOWVfODVzaDI2a0dJMXBKYVl2OE0xczR1cUVSMmxKN2xWZ2RfVG9rZW46Ym94Y25LaWVkSTRGNjhPZlBkUnY4em00SGNmXzE2NzY4MjExMzM6MTY3NjgyNDczM19WNA)
+![img](clone-the-repository.png)
 
 ## How to push to GitHub
 
