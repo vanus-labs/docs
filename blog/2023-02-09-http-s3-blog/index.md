@@ -12,8 +12,8 @@ tags: ["S3", "AWS", "HTTP", "Real-time"]
 ## Table of Contents
 
 - [Introduction](#introduction)
-  - [What is Amazon S3](#what-is-amazon-s3)
-  - [What is HTTP Request](#what-is-http-request)
+  - [What is Amazon S3?](#what-is-amazon-s3)
+  - [What is HTTP Request?](#what-is-http-request)
 - [Pre-requisite](#pre-requisite)
 - [How to Log HTTP Requests to S3 Bucket](#how-to-log-http-requests-to-s3-bucket)
   - [Step 1: Deploy Vanus on the Playground](#step-1-deploy-vanus-on-the-playground)
@@ -26,13 +26,13 @@ tags: ["S3", "AWS", "HTTP", "Real-time"]
 
 ## Introduction
 
-Storing Logs on your web server may seem pretty okay for Low traffic websites like a personal blog but what about an e-commerce website which is a good example of a website that can receive millions of requests in a day? Storing such a high volume of logs may lead to more resources being needed to handle such logs. Also, if there is an issue with the server, the log files cannot be accessed. So then, what can we do?
+Storing Logs on your web server may seem pretty okay for Low traffic websites like a personal blog but what about an e-commerce website which is a good example of a website that can receive millions of requests in a day? Storing such a high volume of logs may lead to more resources being needed to handle such logs. Also, if there is an issue with the server, the log files cannot be accessed. So then, what can we do? Before we begin, I will explain some terminologies to us.
 
-- ### What is Amazon S3
+- ### What is Amazon S3?
 
   Amazon Simple Storage Service (Amazon S3) provides is an object storage service that provides performance, security, and scalability that are unmatched in the market. For a variety of use cases, including data lakes, websites, mobile applications, backup and restore, archives, business applications, IoT devices, and big data analytics, customers of all sizes and sectors may use Amazon S3 to store and preserve any quantity of data. To meet your unique business, organizational, and compliance needs, Amazon S3 offers management options that allow you to optimize, organize, and configure access to your data.
 
-- ### What is HTTP Request
+- ### What is HTTP Request?
 
   A client sends an HTTP request to a named host on a server. Accessing a server resource is the purpose of the request.
 
