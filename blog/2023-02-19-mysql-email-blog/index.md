@@ -16,32 +16,34 @@ Whether you are a MySQL user who wants to streamline their database management, 
 Using Vanus, we can automatically send customized messages to multiple email recipients without a single line of code.
 
 **Table of content**
-- About MySQL
+- [About MySQL](#about-mysql)
     - [What is MySQL?](#what-is-mysql)
-    - What is Binlog?
-    - Why do we need Binlogs?
-- Pre-requisite
-- How to send customized events from Email to MySQL
-    - Step 1: Deploy Vanus on the Playground
-    - Step 2: Deploy the MySQL Source Connector
-    - Step 3: Deploy the Email Sink Connector
-- Check out the results
-- Conclusion
+    - [What is Binlog?](#what-is-binlog)
+    - [Why do we need Binlogs?](#why-do-we-need-binlogs)
+- [Pre-requisite](#pre-requisite)
+- [How to send customized events from Email to MySQL](#how-to-send-customized-events-from-email-to-mysql)
+    - Step 1: [Deploy Vanus on the Playground](#step-1-deploy-vanus-on-the-playground)
+    - Step 2: [Deploy the MySQL Source Connector](#step-2-deploy-the-mysql-source-connector)
+    - Step 3: [Deploy the Email Sink Connector](#step-3-deploy-the-email-sink-connector)
+- [Check out the results](#check-out-the-result)
+- [Conclusion](#conclusion)
 
-## What is MySQL?
+## About MySQL
+
+### What is MySQL?
 
 MySQL is a popular open-source relational database management system (RDBMS) that is used to store and manage data in various applications. It is a powerful and flexible tool that can be used for a wide range of applications, from small personal databases to large-scale enterprise-level systems.
 MySQL uses Structured Query Language (SQL) to manage and manipulate data. It is designed to handle large amounts of data with high performance and reliability. MySQL supports a wide range of operating systems, programming languages, and development tools, making it a popular choice for web applications, e-commerce systems, and other types of software.
 MySQL was originally developed by MySQL AB, which was later acquired by Sun Microsystems and then Oracle Corporation. However, it remains an open-source project, and the MySQL Community Edition is freely available for download and use.
 
-## What is Binlog?
+### What is Binlog?
 
 Binlogs (short for binary logs) are a feature of MySQL that provide a record of all changes to a database. Whenever a transaction or query modifies data in a MySQL database, a record of that change is written to the binary log.
 Binlogs are used primarily for replication and recovery purposes. Replication is the process of copying data from one MySQL server to another, and binlogs are used to transfer the changes made to the data from the source server to the destination server. Binlogs can also be used for point-in-time recovery, which involves restoring a database to a specific point in time by replaying the transactions recorded in the binary log.
 Binlogs can be configured to record different types of changes, such as statements, row-based changes, or a combination of both. The binary log files are stored on disk and can be rotated based on various criteria, such as file size or time.
 It is important to note that binlogs may contain sensitive information, such as user passwords or other confidential data. Therefore, it is essential to protect binlogs with appropriate security measures, such as encryption and access controls.
 
-## Why do we need Binlog?
+### Why do we need Binlog?
 
 The binlog (short for binary log) in MySQL is used for a variety of purposes, including:
 1. Replication: Binlogs are commonly used to replicate data from a primary MySQL server to one or more secondary servers. In replication, the primary server writes changes to the binlog, and the secondary server(s) read the binlog and apply the changes to their own copy of the data. This is a common way to achieve high availability and scalability in MySQL systems.
@@ -54,6 +56,10 @@ The binlog (short for binary log) in MySQL is used for a variety of purposes, in
 Overall, binlogs notifications provide a powerful tool for monitoring, analyzing, and managing a MySQL database. By
 receiving notifications of changes made to the database, you can ensure that it stays in sync, stays compliant, and 
 stays secure.
+
+## Pre-requisite
+
+- Have a MySQL database
 
 ## How to send customized events from Email to MySQL
 
