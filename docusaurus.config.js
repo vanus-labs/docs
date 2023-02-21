@@ -27,7 +27,7 @@ const config = {
         // options here
         name: "source", // used by CLI, must be path safe
         sourceBaseUrl:
-          "https://raw.githubusercontent.com/linkall-labs/vanus-connect/main/connectors/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+          "https://raw.githubusercontent.com/vanus-labs/vanus-connect/main/connectors/", // the base url for the markdown (gets prepended to all of the documents when fetching)
         outDir: "content/connectors/source/", // the base directory to output to.
         documents: [
           "source-alicloud-billing/README.md",
