@@ -10,9 +10,9 @@ title: Use CloudEvents SDK
 
 **前提条件**
 
-1. 安装 [Vanus](https://github.com/linkall-labs/docs/blob/main/user-manual/getting-started/install/k8s(recommended).md) 和 [vsctl](https://github.com/linkall-labs/docs/blob/main/user-manual/how-to/vsctl.md)。
-2. 创建一个名称为 quick-start 的 [Evevtbus](https://github.com/linkall-labs/docs/blob/main/concepts/eventbus.md)。
-3. 创建一个 subscription。subscription 创建可参见[Manage Subscriptions](https://github.com/linkall-labs/docs/blob/main/user-manual/how-to/managing-subscription.md)相关章节。
+1. 安装 [Vanus](https://github.com/vanus-labs/docs/blob/main/user-manual/getting-started/install/k8s(recommended).md) 和 [vsctl](https://github.com/linkall-labs/docs/blob/main/user-manual/how-to/vsctl.md)。
+2. 创建一个名称为 quick-start 的 [Evevtbus](https://github.com/vanus-labs/docs/blob/main/concepts/eventbus.md)。
+3. 创建一个 subscription。subscription 创建可参见[Manage Subscriptions](https://github.com/vanus-labs/docs/blob/main/user-manual/how-to/managing-subscription.md)相关章节。
 
 > 我们还提供了一个交互式的 [Kubernetes 环境](https://play.linkall.com/)，可以更简单地在浏览器中部署和使用 Vanus。
 **示例代码**

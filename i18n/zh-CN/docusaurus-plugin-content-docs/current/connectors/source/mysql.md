@@ -114,7 +114,7 @@ You can verify if the MySQL Source works properly by Running our Display Sink an
 Set the v_target as http://host.docker.internal:8081
 :::
 
-[vc]: https://github.com/linkall-labs/vance-docs/blob/main/docs/concept.md
-[config]: https://github.com/linkall-labs/vance-docs/blob/main/docs/connector.md
+[vc]: https://github.com/vanus-labs/vance-docs/blob/main/docs/concept.md
+[config]: https://github.com/vanus-labs/vance-docs/blob/main/docs/connector.md
 [debezium]: https://debezium.io/documentation/reference/1.9/connectors/mysql.html\
 [mysql]: https://www.mysql.com

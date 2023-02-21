@@ -9,8 +9,8 @@ vsctl 是 Vanus 的命令行工具。本文档将展示如何使用 vsctl 命令
 ## 准备
 
 在使用vsctl之前，必须满足以下条件。
-1. 安装 [Vanus](https://github.com/linkall-labs/docs/blob/main/user-manual/getting-started/install/k8s(recommended).md) 和 [vsctl](https://github.com/linkall-labs/docs/blob/main/user-manual/how-to/vsctl.md)。
-2. 创建一个名称为 quick-start 的 [Evevtbus](https://github.com/linkall-labs/docs/blob/main/concepts/eventbus.md)。
+1. 安装 [Vanus](https://github.com/vanus-labs/docs/blob/main/user-manual/getting-started/install/k8s(recommended).md) 和 [vsctl](https://github.com/linkall-labs/docs/blob/main/user-manual/how-to/vsctl.md)。
+2. 创建一个名称为 quick-start 的 [Evevtbus](https://github.com/vanus-labs/docs/blob/main/concepts/eventbus.md)。
 3. 输入以下命令配置环境变量：`export VANUS_GATEWAY=127.0.0.1:8080`。
 
 > 注意：vsctl 通过 VANUS_GATEWAY 环境变量与 Vanus 集群交互。
