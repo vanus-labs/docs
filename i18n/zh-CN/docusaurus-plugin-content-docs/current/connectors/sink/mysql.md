@@ -160,5 +160,5 @@ Note that the last line contains the address and port targeted.
 :::
 
 
-[vc]: https://docs.linkall.com/concepts/connector
+[vc]: https://docs.vanus.ai/concepts/connector
 [mysql]: https://www.mysql.com

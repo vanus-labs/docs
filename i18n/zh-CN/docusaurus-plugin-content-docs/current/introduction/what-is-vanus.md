@@ -44,6 +44,6 @@ challenge to build a large-scale EDA application, and Vanus provides **plenty of
 
 ### Open Source
 
-Vanus is an entirely Open Source project, which is public under the Apache 2.0 License. You can find Vanus on [GitHub](https://github.com/linkall-labs/vanus).
+Vanus is an entirely Open Source project, which is public under the Apache 2.0 License. You can find Vanus on [GitHub](https://github.com/vanus-labs/vanus).
 
 For more details about Vanus, you can find it in our [Concepts](concepts) section.

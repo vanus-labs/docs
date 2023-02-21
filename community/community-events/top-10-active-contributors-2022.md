@@ -14,13 +14,13 @@ At the end of 2022, we would like to show our gratitude to the top-10 active con
 
 ### Details
 
-All contributions among [Vanus](https://github.com/linkall-labs/vanus) and [Vanus Docs](https://github.com/linkall-labs/docs) will be counted for the event.
+All contributions among [Vanus](https://github.com/vanus-labs/vanus) and [Vanus Docs](https://github.com/linkall-labs/docs) will be counted for the event.
 
 Check out our good-first-time issues for each repo, and start contributing today.
 
-- [Vanus functions good-first-time issues](https://github.com/linkall-labs/vanus/issues/355)
-- [Vanus documentation good-first-time issues](https://github.com/linkall-labs/docs/issues/124)
-- [Vanus Connect good-first-time issues](https://github.com/linkall-labs/vance/issues/131)
+- [Vanus functions good-first-time issues](https://github.com/vanus-labs/vanus/issues/355)
+- [Vanus documentation good-first-time issues](https://github.com/vanus-labs/docs/issues/124)
+- [Vanus Connect good-first-time issues](https://github.com/vanus-labs/vance/issues/131)
 
 Each PR of `Vanus functions good-first-time issues` will be counted from 5 to 10 points.
 

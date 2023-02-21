@@ -98,7 +98,7 @@ docker run --network=host -v $(pwd)/config.json:/vance/config/config.json  --rm 
 
 ![img_11.png](img/img_11.png)
 
-Now, you’ve successfully received GitHub notifications in your Twitter account. Actually, you can receive any outside services in anywhere with Vanus and its’ filter and transformer. Learn more about Vanus [here](https://github.com/linkall-labs/vanus).
+Now, you’ve successfully received GitHub notifications in your Twitter account. Actually, you can receive any outside services in anywhere with Vanus and its’ filter and transformer. Learn more about Vanus [here](https://github.com/vanus-labs/vanus).
 
 **Vanus is an open-source, cloud-native, Serverless message queue for building EDA applications with Ease.**
 
