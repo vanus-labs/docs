@@ -25,7 +25,7 @@ Vanus offers an extensive range of features that help users accomplish their obj
 * Provide event filtering and transformation capabilities.
 * Provide 100+ out-of-the-box event conversion functions.
 * Support custom event calculation based on cloud functions.
-* Support for window-based event computing (come soon).
+* Support for window-based event computing (coming soon).
 
 ## Cloud function friendly:
 * Real push mode.
