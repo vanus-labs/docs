@@ -4,7 +4,7 @@ id: features
 
 # Vanus Features
 
-Vanus has a vast amount of features to help users achieve their goals. Let us share with you some of the key features Vanus has to offer.
+Vanus offers an extensive range of features that help users accomplish their objectives. We'd like to highlight some of the key features that Vanus provides.
 
 ## Entirely elastic:
 * No need to manually scale up or down the cluster.
