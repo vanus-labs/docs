@@ -84,7 +84,7 @@ const config = {
   favicon: "img/vanus-favicon.svg",
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "linkall-labs", // Usually your GitHub org/user name.
+  organizationName: "vanus-labs", // Usually your GitHub org/user name.
   projectName: "vanus", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
