@@ -5,7 +5,7 @@ type: blog
 category: tutorials
 layout: single
 lastmod: 2023-02-20
-authors: Ehis
+author: Ehis
 tags: ["S3", "AWS", "HTTP", "Real-time"]
 ---
 
