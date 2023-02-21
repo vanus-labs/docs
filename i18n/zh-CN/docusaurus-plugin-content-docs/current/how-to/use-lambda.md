@@ -6,8 +6,8 @@ Vanus supports sending direct events to  [AWS Lambda][lambda]. The following pag
 
 Before using Lambda, you must meet the following prerequisites:
 
-1. Have a running [Vanus](https://github.com/linkall-labs/docs/blob/main/user-manual/getting-started/install/k8s(recommended).md) cluster.
-2. Have [vsctl](https://github.com/linkall-labs/docs/blob/main/user-manual/how-to/vsctl.md).
+1. Have a running [Vanus](https://github.com/vanus-labs/docs/blob/main/user-manual/getting-started/install/k8s(recommended).md) cluster.
+2. Have [vsctl](https://github.com/vanus-labs/docs/blob/main/user-manual/how-to/vsctl.md).
 3. An AWS account configured with [Access Keys][access-keys].
 4. Have a [Lambda function][lambda function]
 5. The "lambda:InvokeFunction" [permission] grant for your AWS user account

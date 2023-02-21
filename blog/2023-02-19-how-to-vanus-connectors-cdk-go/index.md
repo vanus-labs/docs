@@ -87,7 +87,7 @@ Here are the steps you can follow to write a connector for Vanus.
 
 Before start contributing, you should determine the system or application that you want to integrate with Vanus, and the type of connector that you want to write. 
 
-Find the connector you are most interested in from [vanus connect issues](https://github.com/linkall-labs/vanus-connect/issues?q=is%3Aissue+is%3Aopen+label%3A%22vanus+connect%22).
+Find the connector you are most interested in from [vanus connect issues](https://github.com/vanus-labs/vanus-connect/issues?q=is%3Aissue+is%3Aopen+label%3A%22vanus+connect%22).
 
 ### Step 2: Submit your connector proposal
 

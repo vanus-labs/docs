@@ -8,7 +8,7 @@ tags: ['S3', 'Email', 'events']
 
 One of the most common scenarios when working with Amazon S3 is to perform specific actions whenever changes (e.g., file uploaded or file deleted) happen in the S3 buckets.
 
-This article introduces an **open-source solution** to set email notifications on any S3 events with an **open-source event streaming platform** [Vanus](https://github.com/linkall-labs/vanus).
+This article introduces an **open-source solution** to set email notifications on any S3 events with an **open-source event streaming platform** [Vanus](https://github.com/vanus-labs/vanus).
 
 <!--truncate-->
 
@@ -58,7 +58,7 @@ With S3 events, you can create event-driven workflows, where changes to objects 
 
 - [A sandbox environment](https://play.linkall.com) where you can try everything for free.
 - [An Amazon Web Service account](https://www.vanus.ai/connectors/source/source-aws-s3/#prerequisites) with permissions for specific services.
-- [An open-source event streaming platform - Vanus](https://github.com/linkall-labs/vanus)
+- [An open-source event streaming platform - Vanus](https://github.com/vanus-labs/vanus)
 - An Email account
 
 ## How to Send email notification on AWS S3 events

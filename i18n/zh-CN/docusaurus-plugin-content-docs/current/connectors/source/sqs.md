@@ -94,5 +94,5 @@ docker pull
 
 
 
-[vc]: https://github.com/linkall-labs/vance-docs/blob/main/docs/concept.md
-[config]: https://github.com/linkall-labs/vance-docs/blob/main/docs/connector.md
+[vc]: https://github.com/vanus-labs/vance-docs/blob/main/docs/concept.md
+[config]: https://github.com/vanus-labs/vance-docs/blob/main/docs/connector.md

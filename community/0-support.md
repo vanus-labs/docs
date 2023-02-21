@@ -10,7 +10,7 @@ Let us know if you encounter issues and we will try our best to fix timely!
 
 ## GitHub Issues {#github-issues}
 
-[Open an issue](https://github.com/linkall-labs/vanus/issues/new/choose) to tell us what do you need.
+[Open an issue](https://github.com/vanus-labs/vanus/issues/new/choose) to tell us what do you need.
 
 ## Vanus Slack {#discussion-forums}
 
