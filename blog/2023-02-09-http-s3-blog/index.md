@@ -2,7 +2,7 @@
 title: Persistent Log Stream with Amazon S3 Bucket
 description: We will learn how to build a Persistent Log Stream to store logs requests made to a Web Server in an Amazon S3 Bucket
 type: blog
-category: tutorials
+category: tutorial
 layout: single
 lastmod: 2023-02-20
 author: Ehis
