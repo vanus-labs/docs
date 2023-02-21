@@ -26,7 +26,7 @@ tags: ["S3", "AWS", "HTTP", "Real-time"]
 
 ## Introduction
 
-Storing Logs on your web server may seem pretty okay for Low traffic websites like a personal blog but what about an e-commerce website which is a good example of a website that can receive millions of requests in a day? Storing such a high volume of logs may lead to more resources being needed to handle such logs. Also, if there is an issue with the server, the log files cannot be accessed. So then, what can we do? Before we begin, I will explain some terminologies to us.
+Storing Logs on your web server may seem pretty okay for Low traffic websites like a personal blog but what about an e-commerce website which is a good example of a website that can receive millions of requests in a day? Storing such a high volume of logs may lead to more resources being needed to handle such logs. Also, the log files cannot be accessed if there is an issue with the server. So then, what can we do? Before we begin, I will explain some terminologies to us.
 
 - ### What is Amazon S3?
 
