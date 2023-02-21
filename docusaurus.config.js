@@ -75,7 +75,7 @@ const config = {
     {
       src: "https://plausible.io/js/script.js",
       defer: true,
-      "data-domain": "linkall.com",
+      "data-domain": "docs.vanus.ai",
     },
     { src: "https://code.createjs.com/1.0.0/createjs.min.js" },
     { src: "/js/product-animation.js" },
