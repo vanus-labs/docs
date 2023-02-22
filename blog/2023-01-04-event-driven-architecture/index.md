@@ -88,14 +88,14 @@ instances can never work.
 
 ## How to solve challenges above
 
-**Try out this open-source message queue - [Vanus](https://github.com/linkall-labs/vanus)**. It adopts [CloudEvents](https://cloudevents.io/) to solve the inconsistency of events across platforms. 
+**Try out this open-source message queue - [Vanus](https://github.com/vanus-labs/vanus)**. It adopts [CloudEvents](https://cloudevents.io/) to solve the inconsistency of events across platforms. 
 
 > CloudEvents is a specification for describing event data in common formats to provide interoperability across services, platforms and systems.
 It has been approved as an incubator project in Cloud Native Computing Foundation (CNCF) on Oct 24, 2019.
 
 ![img_1.png](img.png)
 
-To skip the complex integration with external services, Vanus provides plenty of **out-of-the-box [connectors](https://github.com/linkall-labs/vanus-connect)** so that you can have faster integrations with no codes.
+To skip the complex integration with external services, Vanus provides plenty of **out-of-the-box [connectors](https://github.com/vanus-labs/vanus-connect)** so that you can have faster integrations with no codes.
 
 To avoid consumers work as long run apps, Vanus adopts push-delivery-mode to proactively send events to consumers via HTTP requests. Unlike pull-based message queues (Kafka), Vanus consumers
 don't need to maintain the connection with the broker to obtain messages. They can be down all the time until events coming to pull them up.
@@ -150,6 +150,6 @@ request-response communication patterns to minimize coupling, enable asynchronic
 However, challenges to build an event-driven architecture in Serverless computing are even more than there are in microservices.
 
 The event broker is pivotal to the design and implementation of an EDA in Serverless computing. Choose a suitable event broker is essential for building an event-driven architecture.
-**[Vanus](https://github.com/linkall-labs/vanus) is an open-source, cloud-native, subscription-based message queue for building EDA applications in Serverless with Ease.**
+**[Vanus](https://github.com/vanus-labs/vanus) is an open-source, cloud-native, subscription-based message queue for building EDA applications in Serverless with Ease.**
 
 **Not familiar with Vanus yet? Go to our online playground to experience it now: https://play.linkall.com!**

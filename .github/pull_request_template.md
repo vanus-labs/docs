@@ -2,7 +2,7 @@
 Thank you for contributing to Vanus Documentation!
 PR Title Format: 
 style/docs/ci/chore/...: what's changed
-Note: see https://github.com/linkall-labs/docs/blob/main/CONTRIBUTING.md#commit-message-style to know more about title format
+Note: see https://github.com/vanus-labs/docs/blob/main/CONTRIBUTING.md#commit-message-style to know more about title format
 -->
 
 ### Related Issue

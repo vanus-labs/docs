@@ -73,7 +73,7 @@ EOF
 ```
 
 **NOTE**: Remember to replace values of `access_key_id`, `secret_access_key`, `s3_bucket_arn` and `region` with yours.
-You also need to ensure the IAM user behind the `access_key_id` and `secret_access_key` have [certain permissions](https://www.linkall.com/connectors/source/source-aws-s3/#prerequisites) to allow S3 Source work properly.
+You also need to ensure the IAM user behind the `access_key_id` and `secret_access_key` have [certain permissions](https://www.vanus.ai/connectors/source/source-aws-s3/#prerequisites) to allow S3 Source work properly.
 
 9. Run the S3 Source.
 
@@ -163,7 +163,7 @@ vsctl subscription create --name s3-slack-subscription \
 
 ![img_11.png](img/img_10.png)
 
-Now, you’ve successfully received S3 notifications in your Slack channel. Actually, you can integrate with any external services with Vanus and its’ filter and transformer. Learn more about Vanus [here](https://github.com/linkall-labs/vanus).
+Now, you’ve successfully received S3 notifications in your Slack channel. Actually, you can integrate with any external services with Vanus and its’ filter and transformer. Learn more about Vanus [here](https://github.com/vanus-labs/vanus).
 
 **Vanus is an open-source, cloud-native, Serverless message queue for building EDA applications with Ease.**
 
