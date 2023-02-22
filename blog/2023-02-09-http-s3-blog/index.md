@@ -187,19 +187,20 @@ vsctl subscription create --name http \
 The sink URL (http://ip10-1-39-4-cecpi79ajm80o97dfdug-8082.direct.play.linkall.com) is different for different users. To obtain your unique URL, you have to follow these steps:
 
 1. Go to [Vanus Playground](https://play.linkall.com), and click “Continue with GitHub”
-   ![img.png](img/img.png)
+
+   - ![img.png](img/img.png)
 
 2. Click on the GitHub-Twitter Scenario Tab
-   ![img_4.png](img/img_4.png)
+
+   - ![img_4.png](img/img_4.png)
 
 3. Scroll down and look for Payload URL
-   ![img_5.png](img/img_5.png)
+
+   - ![img_5.png](img/img_5.png)
 
 4. Copy the Payload URL and paste it into the Sink URL
 
 ### Step 5: Make a request using CURL
-
--
 
 ```shell
 curl --location --request POST 'localhost:31081' \
