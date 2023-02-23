@@ -1,12 +1,12 @@
 ---
-title: Build a Notification Pipeline from MySQL to Email in Seconds
-description: We will explore how to use Vanus to build a pipeline that sends email notifications based on changes in a MySQL database. We will cover the necessary steps to set up Vanus, configure it to monitor a MySQL database, and send email notifications when changes are detected.
+title: Streamlining Your Data Backup Strategy: Setting up a MySQL to S3 Pipeline with Vanus
+description: A guide to automating the process of backing up MySQL data to S3 using Vanus, with step-by-step instructions for configuration and subscription setup.
 type: blog
 category: tutorial
 layout: single
-lastmod: 2023-02-20
+lastmod: 2023-02-22
 author: Michael
-tags: ['MySQL', 'Database', 'Email', 'real-time']
+tags: ['MySQL', 'Database', 'S3']
 ---
 
 # Get notifications from Mysql to your s3 bucket
