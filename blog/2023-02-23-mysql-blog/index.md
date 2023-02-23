@@ -118,7 +118,7 @@ After launching an EC2 instance, you can connect to it using SSH. To do this, se
 - Download the SSH key pair. This is a file that you will use to authenticate when connecting to the instance.
 - Open a terminal and navigate to the directory where you saved the SSH key pair.
 - Change the permissions on the SSH key pair file by running the command "chmod 400 key-pair.pem" (replace "key-pair.pem" with the name of your key pair file).
-- Connect to the instance by running the command "ssh -i key-pair.pem ec2-user@<public-ip>" (replace "key-pair.pem" with the name of your key pair file and "<public-ip>" with the public IP address of your instance).
+- Connect to the instance by running the command `ssh -i key-pair.pem ec2-user@<public-ip>` (replace `key-pair.pem` with the name of your key pair file and `<public-ip>` with the public IP address of your instance).
 6. Install MySQL Server:
 Now that you are connected to the EC2 instance, you can install the MySQL server. Follow these steps:
 - Update the package index by running the command "sudo yum update".
