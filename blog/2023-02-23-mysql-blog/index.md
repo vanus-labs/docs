@@ -21,7 +21,7 @@ Whether you are a small business owner, a developer, or an administrator, MySQL 
     - [Top 15 real life scenario to MySQL](#top-15-real-life-scenario-to-mysql)
     - [Why is MySQL important?](#why-is-mysql-important)
 - [Setting up a MySQL server in AWS](#setting-up-a-mysql-server-in-aws)
-- [MySQl best practices and security](#mysql-best-practices-and-security)
+- [MySQL best practices and security](#mysql-best-practices-and-security)
 - [Conclusion](#conclusion)
 
 
@@ -49,7 +49,6 @@ Many resources are also available for learning MySQL, including online tutorials
 
 In recent years, MySQL has faced competition from other database management systems, including PostgreSQL, MongoDB, and Microsoft SQL Server. However, it remains one of the most widely used and trusted database management systems in the world, with a strong reputation for reliability, scalability, and ease of use.
 
-In conclusion, MySQL is a powerful and flexible relational database management system widely used in the web development industry and other software applications. It is easy to use, highly scalable and has a wide range of tools and resources available for developers. Whether you are building a small web application or a large-scale enterprise system, MySQL is a great choice for managing your data.
 
 ### Top 15 real life scenario to MySQL
 
@@ -91,18 +90,27 @@ MySQL also provides a wide range of advanced features and functionalities, such 
 detailed step-by-step guide on how to build a MySQL server in AWS online:
 
 1. Sign up for AWS: 
-Go to the AWS website and click on the "Create an AWS Account" button. Follow the prompts to create a new account.
+Go to the [AWS website](https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=header_signup&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start/email) and click on the "Create an AWS Account" button. Follow the prompts to create a new account.
+
+![](img/img1.png)
+
 2. Create a Virtual Private Cloud (VPC):
 Once you have signed up for AWS, go to the AWS Management Console and click on the "VPC" service. Click on the "Create VPC" button and follow these steps:
 - Give your VPC a name and a CIDR block. The CIDR block is the range of IP addresses that will be used by your VPC.
 - Choose an Availability Zone for your VPC. An Availability Zone is a separate physical location within a region that is isolated from other Availability Zones.
 - Leave the rest of the settings at their default values and click "Create VPC."
+
+![](img/img2.png)
+
 3. Create a Subnet:
 After creating a VPC, you can create a subnet within the VPC. To create a subnet, click on the "Subnets" option in the VPC dashboard and then click on the "Create Subnet" button. Follow these steps:
 - Give your subnet a name and choose the VPC that you created in step 2.
 - Choose an Availability Zone for your subnet. This should be the same Availability Zone that you chose for your VPC.
 - Enter a CIDR block for your subnet. This should be a subset of the CIDR block that you entered for your VPC.
 - Leave the rest of the settings at their default values and click "Create Subnet."
+
+![](img/img3.png)
+
 4. Launch an EC2 Instance:
 After creating a subnet, you can launch an EC2 instance in the subnet. To do this, click on the "EC2" service in the AWS Management Console and then click on the "Launch Instance" button. Follow these steps:
 - Choose an Amazon Machine Image (AMI) for your instance. You can choose the default Amazon Linux AMI.
@@ -113,17 +121,26 @@ After creating a subnet, you can launch an EC2 instance in the subnet. To do thi
 - Add tags to your instance. This is optional but can be useful for organization.
 - Configure the security group. You will need to create a new security group or use an existing one. Make sure to allow inbound traffic on port 22 (SSH) and port 3306 (MySQL).
 - Review your settings and click "Launch."
+
+![](img/img4.gif)
+
 5. Connect to the Instance:
 After launching an EC2 instance, you can connect to it using SSH. To do this, select the instance in the EC2 dashboard and click on the "Connect" button. Follow these steps:
 - Download the SSH key pair. This is a file that you will use to authenticate when connecting to the instance.
 - Open a terminal and navigate to the directory where you saved the SSH key pair.
 - Change the permissions on the SSH key pair file by running the command "chmod 400 key-pair.pem" (replace "key-pair.pem" with the name of your key pair file).
 - Connect to the instance by running the command `ssh -i key-pair.pem ec2-user@<public-ip>` (replace `key-pair.pem` with the name of your key pair file and `<public-ip>` with the public IP address of your instance).
+
+![](img/img5.jpg)
+
 6. Install MySQL Server:
 Now that you are connected to the EC2 instance, you can install the MySQL server. Follow these steps:
 - Update the package index by running the command "sudo yum update".
 - Install the MySQL server by running the command "sudo yum install mysql57-server".
 - Start the MySQL service by running the command "sudo service mysqld start".
+
+![](img/img6.png)
+
 7. Secure the MySQL Server:
 By default, the MySQL server is not secured, so you need to set a root password and remove some default settings. Follow these steps:
 - Run the command "sudo mysql_secure_installation" to launch the MySQL Secure Installation Wizard.
@@ -143,7 +160,7 @@ You can now test the MySQL server to make sure that it is working properly. Foll
 
 Congratulations! You have successfully built a MySQL server in AWS. You can now use this server for your applications or projects.
 
-## MySQl best practices and security
+## MySQL best practices and security
 
 MySQL security is an essential aspect of any application or project that involves sensitive data. The security of your MySQL server is crucial in safeguarding your data from unauthorized access, theft, or malicious attacks. MySQL provides several features that can help you enhance the security of your database, and there are several best practices you should follow to ensure that your MySQL server is secure.
 
