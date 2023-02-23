@@ -1,5 +1,5 @@
 ---
-title: Streamlining Your Data Backup Strategy: Setting up a MySQL to S3 Pipeline with Vanus
+title: Streamlining Your Data Backup Strategy Setting up a MySQL to S3 Pipeline with Vanus
 description: A guide to automating the process of backing up MySQL data to S3 using Vanus, with step-by-step instructions for configuration and subscription setup.
 type: blog
 category: tutorial
