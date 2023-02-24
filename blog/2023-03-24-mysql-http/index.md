@@ -13,14 +13,14 @@ As a developer for a popular e-commerce website, you know that integrating with 
 
 **Table of content**
 - [Event Streaming](#event-streaming)
-- [MySQL](#what-is-mysql)
-  - [Setting up a MySQL database](#what-is-binlog)
-  - [MySQL to HTTP scenarios](#why-do-we-need-binlogs)
+- [MySQL](#mysql)
+  - [Setting up a MySQL database](#setting-up-a-mysql-database)
+  - [MySQL to HTTP scenarios](#mysql-to-http-scenarios)
 - [Pre-requisite](#pre-requisite)
-- [How to send customized events from MySQL to HTTP](#how-to-send-customized-events-from-email-to-mysql)
+- [How to send customized events from MySQL to HTTP](#how-to-send-customized-events-from-mysql-to-http)
     - Step 1: [Deploy Vanus on the Playground](#step-1-deploy-vanus-on-the-playground)
     - Step 2: [Deploy the MySQL Source Connector](#step-2-deploy-the-mysql-source-connector)
-    - Step 3: [Deploy the HTTP Sink Connector](#step-3-deploy-the-email-sink-connector)
+    - Step 3: [Deploy the HTTP Sink Connector](#step-3-deploy-the-http-sink-connector)
 - [Check out the results](#check-out-the-result)
 - [Conclusion](#conclusion)
 
