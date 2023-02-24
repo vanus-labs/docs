@@ -97,7 +97,7 @@ here are 10 real-life scenarios where you might need to set up a MySQL to HTTP p
 ## Pre-requisite
 
 - A MySQL Server
-- A Kubernetes cluster (We will use the [playground](play.linkall.com))
+- A Kubernetes cluster (We will use the [playground](https://www.play.linkall.com))
 - A webhook server (For testing use [webhook](https://webhook.site/) for a free endpoint)
 
 ## How to send customized events from MySQL to HTTP
