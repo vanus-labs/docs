@@ -19,7 +19,7 @@ Vanus makes it easy for developers to build data pipelines from event sources to
 - **Optimize User Experience**: Send emails based on specific events: registration, birthday, or product trial ends.
 - **Slack Data Analysis**: Obtain messages in Slack customer community and sync them to BigQuery.
 
-## Connection
+## Integration
 
 Vanus offers a variety of ways for developers to quickly establish connections between SaaS applications. including:
 
