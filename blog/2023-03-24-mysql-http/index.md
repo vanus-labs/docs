@@ -300,7 +300,7 @@ spec:
             name: sink-http
 EOF
 ```
-![](![](img/img3.png))
+![](img/img3.png)
 
 - Edit the configuration in it.
 ```shell
