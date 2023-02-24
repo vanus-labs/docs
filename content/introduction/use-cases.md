@@ -12,7 +12,7 @@ Here are some popular use cases for Vanus; please refer to the blogs for detaile
 
 Vanus makes it easy for developers to build data pipelines from event sources to data lakes, enabling real-time data analysis for a wide range of use cases, including:
 
-- **Ad Campaign Optimization**: Sync customer data from Snowflake to Google Ads in real-time to optimize campaigns and improve ROI.
+- **Optimize Ad Campaign**: Sync customer data from snowflake to google ads to optimize campaigns.
 - **Dynamic Customer 360**: Capture data in real-time from websites and social media to build dynamic, comprehensive customer 360 views.
 - **Business Opportunity Mining**: Sync customer leads obtained from LinkedIn and Twitter to Snowflake for mining and analysis, helping identify new business opportunities.
 - **User Behavior Analysis**: Sync user website click data to Snowflake for analysis, optimizing the user journey and improving engagement.
