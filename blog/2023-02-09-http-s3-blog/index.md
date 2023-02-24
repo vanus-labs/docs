@@ -17,16 +17,14 @@ tags: ["S3", "AWS", "HTTP", "Real-time"]
 - [Pre-requisite](#pre-requisite)
 - [How to Log HTTP Requests to S3 Bucket](#how-to-log-http-requests-to-s3-bucket)
   - [Step 1: Deploy Vanus on the Playground](#step-1-deploy-vanus-on-the-playground)
-  - [Step 2: Make directory for S3 Sink Connector and Create Config file](#step-2-make-directory-for-s3-sink-connector-and-create-config-file)
-  - [Step 3: Make directory for HTTP Source Connector and Create Config file](#step-3-make-directory-for-http-source-connector-and-create-config-file)
-  - [Step 4: Create Subscription](#step-4-create-subscription)
-  - [Step 5: Make a request using CURL](#step-5-make-a-request-using-curl)
+  - [Step 2: Make directory for HTTP Source Connector & S3 Sink Connector and Create Config file](#step-2-make-directory-for-http-source-connector-s3-sink-connector-and-create-config-file)
+  - [Step 3: Create Subscription & Make a request using CURL](#step-4-create-subscription-make-request-using-curl)
 - [Check out the result](#check-out-the-result)
 - [Conclusion](#conclusion)
 
 ## Introduction
 
-Storing Logs on your web server may seem pretty okay for Low traffic websites like a personal blog but what about an e-commerce website which is a good example of a website that can receive millions of requests in a day? Storing such a high volume of logs may lead to more resources being needed to handle such logs. Also, the log files cannot be accessed if there is an issue with the server. So then, what can we do? Before we begin, I will explain some terminologies to us.
+When it comes to low-traffic websites, storing logs on the web server may not cause any issues. However, for high-traffic websites such as e-commerce sites that receive millions of requests per day, storing such a massive amount of logs can pose some challenges. Firstly, it can require more resources to handle the logs, which can increase the cost of maintaining the website. Additionally, if there is a problem with the server, the log files may not be accessible, which can make troubleshooting difficult.
 
 - ### What is Amazon S3?
 
@@ -114,7 +112,32 @@ vsctl eventbus create --name http-s3
 +----------------+------------------+
 ```
 
-### Step 2: Make directory for S3 Sink Connector and Create Config file
+### Step 2: Make directory for HTTP Source Connector & S3 Sink Connector and Create Config file
+
+- Make HTTP Source Directory
+
+```shell
+mkdir http-source
+```
+
+- Create Config file
+
+```shell
+cat << EOF > config.yml
+target: http://192.168.49.2:30002/gateway/http-to-s3
+port: 31081
+EOF
+```
+
+- Use **docker run** to run the HTTP Source config.yml file
+
+```shell
+docker run -it --rm --network=host \
+  -v ${PWD}:/vanus-connect/config \
+  --name source-http public.ecr.aws/vanus/connector/source-http &
+```
+
+**Note: I ran this in the Background of my terminal, if you wish to see the outputs, remove the ampersand (&) at the end**
 
 - Make S3 Sink Directory
 
@@ -147,34 +170,7 @@ docker run -it --rm \
 
 **Note: I ran this in the Background of my terminal, if you wish to see the outputs, remove the ampersand (&) at the end**
 
-### Step 3: Make directory for HTTP Source Connector and Create Config file
-
-- Make HTTP Source Directory
-
-```shell
-mkdir http-source
-```
-
-- Create Config file
-
-```shell
-cat << EOF > config.yml
-target: http://192.168.49.2:30002/gateway/http-to-s3
-port: 31081
-EOF
-```
-
-- Use **docker run** to run the HTTP Source config.yml file
-
-```shell
-docker run -it --rm --network=host \
-  -v ${PWD}:/vanus-connect/config \
-  --name source-http public.ecr.aws/vanus/connector/source-http &
-```
-
-**Note: I ran this in the Background of my terminal, if you wish to see the outputs, remove the ampersand (&) at the end**
-
-### Step 4: Create Subscription
+### Step 3: Create Subscription & Make a request using CURL
 
 - The Subscription is a relationship established between a Sink and an Eventbus. The Subscription reflects the Sink's interest in receiving events and describes the method for how to deliver those events. To create a subcription, use
 
@@ -200,7 +196,7 @@ The sink URL (http://ip10-1-39-4-cecpi79ajm80o97dfdug-8082.direct.play.linkall.c
 
 4. Copy the Payload URL and paste it into the Sink URL
 
-### Step 5: Make a request using CURL
+5. Make a request using CURL
 
 ```shell
 curl --location --request POST 'localhost:31081' \
