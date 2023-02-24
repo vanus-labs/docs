@@ -5,7 +5,7 @@ id: use-cases
 
 # Vanus Use Cases
 
-Here are some popular use cases for Vanus, please refer to the blog for detailed cases.
+Here are some popular use cases for Vanus; please refer to the blogs for detailed cases.
 
 
 ## Data Pipeline
