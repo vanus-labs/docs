@@ -49,7 +49,7 @@ Developers can utilize Vanus for job scheduling and automation, including:
 - **Cloud function**: Regularly trigger cloud functions (AWS Lambda or GCP Functions).
 - **Webhook**: Regularly trigger a Webhook request.
 - **Send Gmail**: Send Gmails periodically.
-- **Slack Automation**: Schedule regular messages to be sent to Slack channels.
+- **Slack Message**: Regularly send messages to a Slack channel.
 - **Amazon SQS**: Periodically send events to Amazon SQS.
 
 In conclusion, Vanus provides developers with a powerful platform to build a variety of event-driven systems, including
