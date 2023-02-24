@@ -28,7 +28,7 @@ Vanus offers a variety of ways for developers to quickly establish connections b
 - **Facebook Ads to Google Sheets**: Create a new row on Google Sheets for each Facebook Ads lead.
 - **Connect the Webhook to Email**: Send emails with newly caught webhooks.
 - **MySQL to Google Sheets**: Create a new row on Google Sheets for each MySQL record.
-- **User login reminder**: Send Gmail emails to users when they log in through Auth0.
+- **Google Calendar to Slack**: Send a message on Slack Channel when Google Calendar events begin.
 - **meeting Reminder**: Set up a Slack notification to remind participants before a Google Calendar meeting starts.
 
 ## Cloud Services
