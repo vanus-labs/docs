@@ -38,7 +38,7 @@ Vanus enables developers to easily build event-driven systems using cloud servic
 - **Illegal image identification**: Identify sensitive images uploaded to s3 and send notifications to Gmail.
 - **Webhook triggers function**: Trigger an AWS Lambda with newly caught webhooks.
 - **Cloud bill reminder**: Set up Slack messages or Gmail reminders for Amazon bills.
-- **Prometheus alarm notifications**: Get Prometheus alarm information and receive notifications via Slack or Gmail.
+- **Prometheus alarm**: Send Prometheus alarm information in Slack or Gmail.
 - **CDC trigger function**: Get database change events and trigger AWS Lambda or Google Cloud Function.
 
 ## Scheduling
