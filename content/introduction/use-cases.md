@@ -55,5 +55,5 @@ Developers can utilize Vanus for job scheduling and automation, including:
 In conclusion, Vanus provides developers with a powerful platform to build a variety of event-driven systems, including
 data pipelines, connections between SaaS, cloud services, and job scheduling. With Vanus, you can streamline your
 workflow and automate repetitive tasks to save time and increase productivity. To learn more about these and other
-use cases, please visit [our blog](https://www.vanus.ai/blog/). We are constantly updating our blog with new use cases and best practices to help
+use cases, please visit [our blogs](https://www.vanus.ai/blog/). We are constantly updating our blogs with new use cases and best practices to help
 you get the most out of [Vanus](https://www.Vanus.ai).
