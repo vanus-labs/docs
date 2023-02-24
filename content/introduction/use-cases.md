@@ -36,7 +36,7 @@ Vanus enables developers to easily build event-driven systems using cloud servic
 
 - **Identify electronic invoices**: Upload S3 invoices to identify information and sync results to Salesforce.
 - **Illegal image identification**: Identify sensitive images uploaded to s3 and send notifications to Gmail.
-- **Webhook trigger function**: Trigger AWS Lambda when a new webhook request is received.
+- **Webhook triggers function**: Trigger an AWS Lambda with newly caught webhooks.
 - **Cloud bill reminder**: Set up Slack or Gmail reminders for Amazon cloud bills.
 - **Prometheus alarm notifications**: Get Prometheus alarm information and receive notifications via Slack or Gmail.
 - **CDC trigger function**: Get database change events and trigger AWS Lambda or Google Cloud Function.
