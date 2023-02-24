@@ -112,7 +112,7 @@ vsctl eventbus create --name http-s3
 +----------------+------------------+
 ```
 
-### Step 2: Make directory for HTTP Source Connector & S3 Sink Connector and Create Config file
+### Step 2: Make directory for HTTP Source Connector and S3 Sink Connector and Create Config file
 
 - Make HTTP Source Directory
 
@@ -170,7 +170,7 @@ docker run -it --rm \
 
 **Note: I ran this in the Background of my terminal, if you wish to see the outputs, remove the ampersand (&) at the end**
 
-### Step 3: Create Subscription & Make a request using CURL
+### Step 3: Create Subscription and Make a request using CURL
 
 - The Subscription is a relationship established between a Sink and an Eventbus. The Subscription reflects the Sink's interest in receiving events and describes the method for how to deliver those events. To create a subcription, use
 
