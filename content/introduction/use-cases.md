@@ -45,7 +45,7 @@ Vanus enables developers to easily build event-driven systems using cloud servic
 
 Developers can utilize Vanus for job scheduling and automation, including:
 
-- **Kubernetes Job**: Schedule regular triggers for Kubernetes jobs.
+- **Kubernetes Job**: Regularly trigger a Kubernetes job.
 - **Cloud Function**: Schedule regular triggers for cloud functions like AWS Lambda and Google Cloud Functions.
 - **Webhook**: Schedule regular webhook calls.
 - **Email Automation**: Schedule regular Gmail messages to be sent.
