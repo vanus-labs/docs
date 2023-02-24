@@ -41,7 +41,7 @@ Vanus enables developers to easily build event-driven systems using cloud servic
 - **Prometheus alarm notifications**: Get Prometheus alarm information and receive notifications via Slack or Gmail.
 - **CDC trigger function**: Get database change events and trigger AWS Lambda or Google Cloud Function.
 
-## Job Scheduling
+## Scheduling
 
 Developers can utilize Vanus for job scheduling and automation, including:
 
