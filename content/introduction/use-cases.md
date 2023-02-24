@@ -27,7 +27,7 @@ Vanus offers a variety of ways for developers to quickly establish connections b
 - **LinkedIn to Salesforce**: Synchronize potential users data on LinkedIn to Salesforce.
 - **Facebook Ads to Google Sheets**: Create a new row on Google Sheets for each Facebook Ads lead.
 - **Connect the Webhook to Email**: Send emails with newly caught webhooks.
-- **Store change data**: Automatically synchronize new records added to MySQL to Google Sheets.
+- **MySQL to Google Sheets**: Create a new row on Google Sheets for each MySQL record.
 - **User login reminder**: Send Gmail emails to users when they log in through Auth0.
 - **meeting Reminder**: Set up a Slack notification to remind participants before a Google Calendar meeting starts.
 
