@@ -18,7 +18,7 @@ tags: ["S3", "AWS", "HTTP", "Real-time"]
 - [How to Log HTTP Requests to S3 Bucket](#how-to-log-http-requests-to-s3-bucket)
   - [Step 1: Deploy Vanus on the Playground](#step-1-deploy-vanus-on-the-playground)
   - [Step 2: Make directory for HTTP Source Connector and S3 Sink Connector and Create Config file](#step-2-make-directory-for-http-source-connector-and-s3-sink-connector-and-create-config-file)
-  - [Step 3: Create Subscription and Make a request using CURL](#step-3-create-subscription-and-make-request-using-curl)
+  - [Step 3: Create Subscription and Make a request using CURL](#step-3-create-subscription-and-make-a-request-using-curl)
 - [Check out the result](#check-out-the-result)
 - [Conclusion](#conclusion)
 
