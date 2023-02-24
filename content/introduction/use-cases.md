@@ -15,7 +15,7 @@ Vanus makes it easy for developers to build data pipelines from event sources to
 - **Optimize Ad Campaign**: Sync customer data from snowflake to google ads to optimize campaigns.
 - **Dynamic Customer 360**: Get data from websites and social media to build dynamic customer 360.
 - **Business Opportunity Mining**: Sync customer leads obtained from Linkedin and Twitter to Snowflake.
-- **User Behavior Analysis**: Sync user website click data to Snowflake for analysis, optimizing the user journey and improving engagement.
+- **User Behavior Analysis**: Sync user websites' click data to Snowflake to optimize user journeys.
 - **Optimize User Experience**: Send emails based on specific events: registration, birthday, or product trial ends.
 - **Slack Data Analysis**: Obtain information from the Slack customer community and sync it to BigQuery for mining, gaining valuable insights into customer needs and preferences.
 
