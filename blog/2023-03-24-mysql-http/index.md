@@ -68,12 +68,12 @@ CREATE TABLE <table_name> (
 );
 ```
 
-7. Replace <table_name> with the name you want to give your table. <column_name> represents the name of the column you want to create, and <data_type> represents the data type of the column. <constraint> is an optional parameter that sets constraints on the column.
+7. Replace \<table_name\> with the name you want to give your table. \<column_name\> represents the name of the column you want to create, and \<data_type\> represents the data type of the column. \<constraint\> is an optional parameter that sets constraints on the column.
 Insert Data: After creating a table, you can insert data into it using the following command:
 ```php
 INSERT INTO <table_name> (<column_name>, <column_name>, ...) VALUES (<value>, <value>, ...);
 ```
-Replace <table_name> with the name of your table, <column_name> with the name of the column you want to insert data into, and <value> with the value you want to insert.
+Replace \<table_name\> with the name of your table, \<column_name\> with the name of the column you want to insert data into, and \<value\> with the value you want to insert.
 
 
 With these steps, you have set up a MySQL database and created a table with data. Now you can move on to building your custom MySQL pipeline that can send HTTP requests to an external API.
