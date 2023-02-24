@@ -39,7 +39,7 @@ Vanus enables developers to easily build event-driven systems using cloud servic
 - **Webhook triggers function**: Trigger an AWS Lambda with newly caught webhooks.
 - **Cloud bill reminder**: Set up Slack messages or Gmail reminders for Amazon bills.
 - **Prometheus alarm**: Send Prometheus alarm information in Slack or Gmail.
-- **CDC trigger function**: Get database change events and trigger AWS Lambda or Google Cloud Function.
+- **CDC trigger function**: Trigger an AWS Lambda with a Database changing event.
 
 ## Scheduling
 
