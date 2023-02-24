@@ -35,7 +35,7 @@ Vanus offers a variety of ways for developers to quickly establish connections b
 Vanus enables developers to easily build event-driven systems using cloud services, including:
 
 - **Automatic identification of electronic invoices**: Upload invoices to an S3 bucket, automatically identify the relevant information and sync it with Salesforce.
-- **Illegal image identification**: Identify offending images uploaded to S3 and receive a notification via Gmail.
+- **Illegal image identification**: Identify sensitive images uploaded to s3 and send notifications to Gmail.
 - **Webhook trigger function**: Trigger AWS Lambda when a new webhook request is received.
 - **Cloud bill reminder**: Set up Slack or Gmail reminders for Amazon cloud bills.
 - **Prometheus alarm notifications**: Get Prometheus alarm information and receive notifications via Slack or Gmail.
