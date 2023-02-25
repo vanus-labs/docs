@@ -35,7 +35,7 @@ Next, we will talk about AWS Budgets, and why we need it
 
 ![](img/img_1.jpg)
 
-`Source: https://www.reddit.com/r/ProgrammerHumor/comments/qbx03g/better_turn_off_aws_before_you_get_a_huge_bill/`
+**Source: https://www.reddit.com/r/ProgrammerHumor/comments/qbx03g/better_turn_off_aws_before_you_get_a_huge_bill/**
 
 Most times, we accidentally run some services like an EC2 instance and forget to turn it back off. It could even run for a month or months before we realize we have incurred a huge cost. This is why Budgets are very important. With AWS Budgets, you can set a threshold for your expenses and when it gets to that limit, AWS will alert you about it. You can then log in to your AWS Console and shut down such services.
 
