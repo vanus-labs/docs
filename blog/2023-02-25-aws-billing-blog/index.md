@@ -53,8 +53,9 @@ Most times, we accidentally run some services like an EC2 instance and forget to
 
    ![](img/img_4.png)
 
-4. In the next step, - Set your Budget name,
+4. In the next step,
 
+   - Set your Budget name,
    - The budget period (Daily, Monthly, Quarterly, Yearly),
    - Select the Budget renewal type you prefer (Recurring budget, Fixed budget),
    - Set your start month,
