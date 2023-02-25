@@ -42,22 +42,36 @@ Most times, we accidentally run some services like an EC2 instance and forget to
 ## How To Set Up AWS Budgets
 
 1. Log in to your AWS Console and search for Billing, Click on it and it will open the AWS Billing Page
+
    ![](img/img_2.png)
 
 2. On the Tab to the left, select Budgets and then click Create Budget
+
    ![](img/img_3.png)
 
 3. Select your budget type. Select Customize and in the next section, select Cost Budget, scroll down and click Next
+
    ![](img/img_4.png)
 
-4. In the next step, - Set your Budget name, - The budget period (Daily, Monthly, Quarterly, Yearly), - Select the Budget renewal type you prefer (Recurring budget, Fixed budget), - Set your start month, - Set the budgeting method (Fixed, Planned, Auto-Adjusting) - Select your budget amount which will prompt a notification when it is exceeded - Finally, select All AWS Services in Budget scope
+4. In the next step, - Set your Budget name,
+
+   - The budget period (Daily, Monthly, Quarterly, Yearly),
+   - Select the Budget renewal type you prefer (Recurring budget, Fixed budget),
+   - Set your start month,
+   - Set the budgeting method (Fixed, Planned, Auto-Adjusting)
+   - Select your budget amount which will prompt a notification when it is exceeded
+   - Finally, select All AWS Services in Budget scope
+
    You should see a page like the screenshot below
+
    ![](img/img_5.png)
 
 5. Now, we will configure our alert system according to our set budget. We can set our alert based on percentage or actual value. If set as percentage, we can set a certain percentage level has to reached before we receive an alert. For actual value, we can set the actual amount for an alert trigger. In this example, I have set a budget of $5 and 80% threshold before I receive an alert. Next, I will set an email to receive the notification. AWS also offers other means of notification like Amazon SNS Alerts and AWS Chatbot Alerts.
-   ![](img/img_6.png)
+
+![](img/img_6.png)
 
 6. Review your configurations and click Create Budget. If successful, you will see your budget created in the Budget Home
+
    ![](img/img_7.png)
 
 If you see this, congrats! You have successfully set up a budget to notify you when you exceed the threshold of budgeted amount.
