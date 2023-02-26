@@ -172,4 +172,3 @@ KubeMQ is also designed to be scalable, allowing users to add or remove nodes fr
 Memphis is built using Rust, which is known for its performance, reliability, and safety. The platform uses a distributed architecture, which allows for horizontal scaling and high availability. It also includes features such as message persistence, message filtering, and message batching, which help to ensure that messages are reliably delivered and processed.
 
 One of the key benefits of Memphis is its simplicity and ease of use. It provides a simple and intuitive API that can be used with several programming languages, including Rust, Python, and Java. Additionally, it includes a web-based management console that allows users to monitor message traffic, view statistics, and manage the messaging infrastructure.
-
