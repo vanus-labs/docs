@@ -72,8 +72,8 @@ Vanus’s open source connection allows you to integrate Vanus with your GitHub 
 1. Set config file. Create config.yml in any directory, the content is as follows:
 
    ```
-   "target": "http://192.168.49.2:30002/gateway/github-snowflake",
-   "port": "8082"
+   target: http://192.168.49.2:30002/gateway/github-snowflake
+   port: 8082
    ```
    
 2. Run the GitHub Source
