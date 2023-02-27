@@ -113,7 +113,7 @@ Fully elastic: It can make full use of the capabilities of kubernetes and automa
 
 Lightweight & K8s native: It needs to be lightweight enough, with very little resource dependence, and can run in pods.
 
-Friendly to serverless cloud-native applications: Cloud-native applications usually have strong elasticity, such as cloud functions. When traffic comes, hundreds of instances may need to be expanded to process requests within 1 second. The new message queue needs to support rapid scaling of large-scale applications.
+Friendly to serverless cloud-native applications: Cloud-native applications, such as cloud functions, usually have strong elasticity. When traffic comes, hundreds of instances may need to be expanded to process requests within 1 second. The new message queue needs to support the rapid scaling of large-scale applications.
 
 The following introduces four popular message queues born around 2020. Compared with Kafka, they are more suitable for k8s and new cloud-native applications.
 
