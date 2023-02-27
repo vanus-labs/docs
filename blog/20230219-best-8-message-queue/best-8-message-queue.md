@@ -45,7 +45,7 @@ The following is an introduction to the currently well-known open-source message
 
 ### 1 Apache Kafka
 
-[Apache Kafka](#https://kafka.apache.org/) is a distributed streaming platform that is designed to handle high volumes of data in real-time. It was originally developed by LinkedIn in 2010 and later became an open-source project under the Apache Software Foundation in 2011.
+[Apache Kafka](#https://kafka.apache.org/) is a distributed streaming platform designed to handle high volumes of data in real time. It was originally developed by LinkedIn in 2010 and later became an open-source project under the Apache Software Foundation in 2011.
 
 Kafka is a publish-subscribe messaging system that enables applications to send and receive large amounts of data in real-time, using a message broker architecture. It provides a fast, scalable, and fault-tolerant way to process and store streams of data.
 
