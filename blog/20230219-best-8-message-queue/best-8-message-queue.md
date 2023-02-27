@@ -41,7 +41,7 @@ There are roughly three applications that make 2010 the era of the birth of mess
 
 * The Rise of Cloud Computing: Around 2010, cloud computing became increasingly popular. Cloud computing needs an efficient, scalable, and reliable message delivery mechanism, which also promotes the development of message middleware.
 
-The following is an introduction to the currently well-known open source message queues：
+The following is an introduction to the currently well-known open-source message queues：
 
 ### 1 Apache Kafka
 
