@@ -35,7 +35,7 @@ There are roughly three applications that make 2010 the era of the birth of mess
 
 * Development of internet technology：Around 2010, thanks to the rapid development of the mobile Internet, users of Internet applications experienced an explosive growth. In 2008 Facebook had only 50 million users, and in 2010 it had 545 million users. Also in 2008, LinkedIn had 23 million users, compared to 161 million in 2011. With the rapid increase in the number of users, people increasingly need to process a large amount of real-time data streams, which greatly promotes the rapid development of Internet technology. As these demands cannot be met by traditional means of data transmission, storage and processing, there is a need for new solutions. Message queuing technology has also been greatly developed in this context.
 
-* Popularity of distributed systems: Distributed systems became more and more popular around 2010, and distributed systems need an efficient, scalable, and reliable way to deliver messages. Message middleware was born to meet these needs.
+* Popularity of distributed systems: Distributed systems became increasingly popular around 2010, and distributed systems need an efficient, scalable, and reliable way to deliver messages. Message middleware was born to meet these needs.
 
 * The Rise of Open Source Software：Around 2010, open source software started to become more and more popular. Open source software allows developers to use, modify and distribute the code freely, so many developers start to build their own solutions and share these solutions with other developers. Kafka, Pulsar, and NATS are all open source software, so they can be widely used and improved easily.
 
