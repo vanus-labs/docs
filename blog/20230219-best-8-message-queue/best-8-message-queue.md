@@ -39,7 +39,7 @@ There are roughly three applications that make 2010 the era of the birth of mess
 
 * The Rise of Open Source Software：Around 2010, open source software started to become more and more popular. Open source software allows developers to use, modify and distribute the code freely, so many developers start to build their own solutions and share these solutions with other developers. Kafka, Pulsar, and NATS are all open source software, so they can be widely used and improved easily.
 
-* The Rise of Cloud Computing: Around 2010, cloud computing started to become more and more popular. Cloud computing needs an efficient, scalable and reliable message delivery mechanism, which also promotes the development of message middleware.
+* The Rise of Cloud Computing: Around 2010, cloud computing became increasingly popular. Cloud computing needs an efficient, scalable, and reliable message delivery mechanism, which also promotes the development of message middleware.
 
 The following is an introduction to the currently well-known open source message queues：
 
