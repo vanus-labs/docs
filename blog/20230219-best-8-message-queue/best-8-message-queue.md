@@ -55,7 +55,7 @@ Kafka is commonly used for a variety of use cases such as:
 - Log aggregation: Kafka can collect logs from various sources and store them in a central location, making it easier to manage and analyze logs.
 - Event streaming: Kafka can stream events such as clicks, searches, and user interactions to various applications for real-time processing.
 
-There is no doubt that Kafka is the most influential message queue today. In fact, it has become the de facto standard for big data transmission, and 80% of the Fortune 100 are using Kafka。Kafka is often used in combination with other tools in the big data ecosystem such as Apache Spark, Apache Flink, and Apache Storm for data processing and analysis.
+There is no doubt that Kafka is the most influential message queue today. It has become the de facto standard for significant data transmission, and 80% of the Fortune 100 are using Kafka; Kafka is often used with other tools in the extensive data ecosystem, such as Apache Spark, Apache Flink, and Apache Storm, for data processing and analysis.
 
 ### 2 RabbitMQ
 
