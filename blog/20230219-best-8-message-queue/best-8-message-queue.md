@@ -4,7 +4,7 @@
 
 ## What is Message Queue
 
-Message Queue is a common communication pattern used in software architecture to enable asynchronous communication between different components of a system. It allows one component of a system to send a message or task to another component, which may be running on a different server or in a different process or thread.
+Message Queue is a common communication pattern used in software architecture to enable asynchronous communication between system components. It allows one component of a system to send a message or task to another component, which may be running on a different server or in a different process or thread.
 
 The message queue acts as a buffer between the sender and the receiver, holding messages until the receiver is ready to process them. This allows the sender to continue its work without having to wait for the receiver to process the message immediately. When the receiver is ready, it can pull messages from the queue and process them.
 
