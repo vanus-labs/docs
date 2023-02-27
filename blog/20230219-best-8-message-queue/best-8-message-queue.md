@@ -79,7 +79,7 @@ NATS is designed to be simple and easy to use, with a small footprint and low la
 
 Pulsar supports multiple messaging patterns, including publish-subscribe and message queuing, and provides a rich set of features, including:
 
-- Multi-tenancy: Pulsar allows multiple applications to share a single cluster, with each application isolated from others.
+- Multi-tenancy: Pulsar allows multiple applications to share a single cluster, with each application isolated.
 - Geo-replication: Pulsar can replicate data across multiple clusters in different geographic regions, providing high availability and disaster recovery capabilities.
 - Message TTL: Pulsar allows messages to expire automatically after a certain amount of time, which can be useful for implementing time-based workflows or cleaning up old data.
 - Tiered storage: Pulsar can store messages in multiple tiers of storage, ranging from high-performance storage to cold storage, which can help reduce costs and improve performance.
