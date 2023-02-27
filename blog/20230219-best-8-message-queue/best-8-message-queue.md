@@ -84,7 +84,7 @@ Pulsar supports multiple messaging patterns, including publish-subscribe and mes
 - Message TTL: Pulsar allows messages to expire automatically after a certain amount of time, which can be useful for implementing time-based workflows or cleaning up old data.
 - Tiered storage: Pulsar can store messages in multiple storage tiers, ranging from high-performance storage to cold storage, which can help reduce costs and improve performance.
 
-Pulsar also provides a rich set of client libraries for a variety of programming languages, making it easy to build messaging and streaming applications using Pulsar. Apache Pulsar is a popular choice for real-time data processing and messaging in large-scale data processing applications, such as those used in the financial, telecommunications, and internet-of-things industries.
+Pulsar also provides a rich set of client libraries for various programming languages, making it easy to build messaging and streaming applications using Pulsar. Apache Pulsar is a popular choice for real-time data processing and messaging in large-scale data processing applications, such as those used in the financial, telecommunications, and internet-of-things industries.
 
 
 
