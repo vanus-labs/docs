@@ -153,7 +153,7 @@ Overall, Redpanda message queue is a powerful and flexible tool for building rea
 
 ### 3 [KubeMQ](#https://kubemq.io/)
 
-[KubeMQ](#https://kubemq.io/) is a Kubernetes-native message queue and messaging system that provides a reliable, scalable, and high-performance messaging infrastructure for distributed applications. It is designed to be easy to deploy, operate, and use within a Kubernetes environment.
+[KubeMQ](#https://kubemq.io/) is a Kubernetes-native message queue and messaging system providing a reliable, scalable, high-performance messaging infrastructure for distributed applications. It is designed to be easy to deploy, operate, and use within a Kubernetes environment.
 
 KubeMQ is built as a set of microservices that can be deployed as containers on a Kubernetes cluster. It includes features such as message queuing, publish/subscribe messaging, request/reply messaging, and event-driven messaging. KubeMQ also supports multiple messaging protocols, including REST, gRPC, and WebSocket, and provides client libraries for several programming languages, including Go, Java, Python, and .NET.
 
