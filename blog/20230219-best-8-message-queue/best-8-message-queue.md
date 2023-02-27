@@ -99,7 +99,7 @@ Like 2010, 2020 is also a very important year. Let's take a look at some backgro
 
 Around 2010, due to the surge of mobile Internet users, a large amount of data needs to be processed, which gave birth to the emergence of message queues such as Kafka. In 2020, due to the large number of cloud technologies adopted by enterprises and the emergence of cloud-native technologies such as kubernetes and serverless, enterprises have new needs. This time, they need a message queue with a cloud-native architecture that is truly suitable for the new infrastructure. However, message queues, which were born around 2010, are obviously powerless in the face of new infrastructure and new applications such as serverless due to different technical architectures and application scenarios. For example, kafka obviously has many problems running on kubertenes:
 
-* StatefulSet requirement: Kafka is a distributed system that requires each node to maintain state, which can make it difficult to run on Kubernetes. In particular, running Kafka on Kubernetes requires using StatefulSets, which can be more complex to manage than Deployments.
+* StatefulSet requirement: Kafka is a distributed system that requires each node to maintain its state, which can make it difficult to run on Kubernetes. In particular, running Kafka on Kubernetes requires using StatefulSets, which can be more complex to manage than Deployments.
 
 * Resource consumption: Kafka requires significant resources to run, including CPU, memory, and storage. This can make it challenging to run Kafka in a scalable way on Kubernetes, where resources are typically shared among many different applications.
 
