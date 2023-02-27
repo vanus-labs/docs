@@ -103,7 +103,7 @@ Around 2010, due to the surge of mobile Internet users, a large amount of data n
 
 * Resource consumption: Kafka requires significant resources to run, including CPU, memory, and storage. This can make it challenging to run Kafka in a scalable way on Kubernetes, where resources are typically shared among many different applications.
 
-* Networking complexity: Kafka requires a well-defined network topology in order to work properly, and this can be difficult to achieve on Kubernetes. In particular, Kafka requires that each node have a unique hostname and IP address, which can be challenging to achieve in a containerized environment.
+* Networking complexity: Kafka requires a well-defined network topology in order to work correctly, and this cannot be easy to achieve on Kubernetes. In particular, Kafka requires that each node have a unique hostname and IP address, which can be challenging to achieve in a containerized environment.
 
 * Data locality: Kafka performs best when data is stored on the same node as the consumer that will be reading it. However, Kubernetes does not provide strong guarantees about where pods are scheduled, which can make it difficult to ensure that data is stored on the same node as the consumer.
 
