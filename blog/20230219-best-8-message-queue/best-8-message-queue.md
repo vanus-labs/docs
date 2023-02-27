@@ -67,7 +67,7 @@ RabbitMQ is one of the most popular Message Queue today. It is widely used in en
 
 ### 3 Nats
 
-[NATS](#https://nats.io/) is an open-source, high-performance messaging system for distributed systems, cloud-native applications, and microservices architectures.It was initially developed by Derek Collison in 2010.  Derek Collison started developing NATS while working as the CTO of  Apcera, a cloud computing company.
+[NATS](#https://nats.io/) is an open-source, high-performance messaging system for distributed systems, cloud-native applications, and microservices architectures. Derek Collison initially developed it in 2010.  Derek Collison started developing NATS while working as the CTO of  Apcera, a cloud computing company.
 
 NATS provides a lightweight and efficient messaging protocol for communication between different applications and services. It has a client-server architecture and supports various messaging patterns, including point-to-point, request-reply, and publish-subscribe.
 
