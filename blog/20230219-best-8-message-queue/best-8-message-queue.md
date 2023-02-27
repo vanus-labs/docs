@@ -1,17 +1,6 @@
 ---
 title:  Best message queue for cloud-native apps
-description: 
-type: blog
-category: learning
-layout: single
-lastmod: 2023-2-27
-author: Lucas
-tags: ['Serverless', 'Message Queue']
----
-
----
-title:  Best message queue for cloud-native apps
-description: 
+description: The following blog articles will help you focus on the **message queues* most suitable for cloud-native applications in 2023
 type: blog
 category: learning
 layout: single
@@ -21,8 +10,6 @@ tags: ['Serverless', 'Message Queue']
 ---
 
 # Best 8 Message Queues Most Suitable for Cloud Native Applications
-
-
 
 ## What is Message Queue
 
