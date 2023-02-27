@@ -75,7 +75,7 @@ NATS is designed to be simple and easy to use, with a small footprint and low la
 
 ### 4 Apache Pulsar
 
-[Apache Pulsar](#https://pulsar.apache.org/) is an open-source distributed pub-sub messaging system that was originally developed by Yahoo.It was born in 2012, and its original purpose was to replace other message systems within Yahoo and build a message platform with a unified logical large cluster. 
+[Apache Pulsar](#https://pulsar.apache.org/) is an open-source distributed pub-sub messaging system originally developed by Yahoo. It was born in 2012, and its original purpose was to replace other message systems within Yahoo and build a messaging platform with a unified logical large cluster. 
 
 Pulsar supports multiple messaging patterns, including publish-subscribe and message queuing, and provides a rich set of features, including:
 
