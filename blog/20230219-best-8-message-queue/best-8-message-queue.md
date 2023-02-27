@@ -109,7 +109,7 @@ Around 2010, due to the surge of mobile Internet users, a large amount of data n
 
 Different from virtual machines and traditional microservice architecture applications, new infrastructure such as k8s and cloud-native applications such as serverless have significantly different requirements for message queues:
 
-Fully elastic: It can make full use of the capabilities of kubernetes and automatically expand or contract as needed. Kafka can only be expanded or contracted manually, and data migration for replication is required.
+Fully elastic: It can make full use of the capabilities of Kubernetes and automatically expand or contract as needed. Kafka can only be expanded or contracted manually, and data migration for replication is required.
 
 Lightweight & K8s native: It needs to be lightweight enough, with very little resource dependence, and can run in pods.
 
