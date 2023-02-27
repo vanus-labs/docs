@@ -27,7 +27,7 @@ The following blog articles will help you focus on the **message queues* most su
 
 ##  4 of the most well-known open source message queues
 
-If you want to deeply understand a piece of software, you may want to pay attention to their birth background. To understand a person's character, one needs to know his family, because the family determines a person's genes. Similarly, if you want to understand a message queue, you may want to pay attention to the background of its birth, because the background will determine the DNA of a message queue.
+If you want to understand a piece of software deeply, you may want to pay attention to its birth background. To understand a person's character, one needs to know his family, because the family determines a person's genes. Similarly, if you want to understand a message queue, you may want to pay attention to the background of its birth, because the background will determine the DNA of a message queue.
 
 If you take the time to sort out the history of message queues, you will find a very interesting phenomenon. Most of the currently popular message queues were born around 2010. For example, Apache Kafka was born at LinkedIn in 2010, Nats was developed by Derek Collison in 2010, and Apache Pulsar was born at Yahoo in 2012. What is the reason for this?
 
