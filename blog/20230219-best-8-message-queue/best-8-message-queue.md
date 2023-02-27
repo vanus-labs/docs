@@ -71,7 +71,7 @@ RabbitMQ is one of the most popular Message Queue today. It is widely used in en
 
 NATS provides a lightweight and efficient messaging protocol for communication between different applications and services. It has a client-server architecture and supports various messaging patterns, including point-to-point, request-reply, and publish-subscribe.
 
-NATS is designed to be simple and easy to use, with a small footprint and low latency. It is often used in cloud-native environments to connect different components of a distributed system or to enable communication between microservices. NATS also has support for message persistence, security, and clustering, making it a robust messaging system for building scalable and resilient applications.
+NATS is designed to be simple and easy to use, with a small footprint and low latency. It is often used in cloud-native environments to connect different components of a distributed system or to enable communication between microservices. NATS also supports message persistence, security, and clustering, making it a robust messaging system for building scalable and resilient applications.
 
 ### 4 Apache Pulsar
 
