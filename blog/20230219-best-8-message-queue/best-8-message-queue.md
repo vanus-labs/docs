@@ -12,7 +12,7 @@ The message queue acts as a buffer between the sender and the receiver, holding 
 
 Message queues can be used for a variety of purposes, such as load balancing, task distribution, and decoupling components. They can be implemented in many different ways, such as using in-memory data structures or external message brokers like RabbitMQ or Apache Kafka.
 
-The following blog articles will help you focus on the **message queues* that are most suitable for cloud-native applications in 2023. The first three are currently the most influential message queues, and the last four are the latest and popular next-generation message queues in the past two years
+The following blog articles will help you focus on the **message queues* most suitable for cloud-native applications in 2023. The first three are currently the most influential message queues, and the last four are the latest and most popular next-generation message queues in the past two years
 
 * Apache Kafka   
 * RabbitMQ
