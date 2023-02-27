@@ -51,7 +51,7 @@ Kafka is a publish-subscribe messaging system that enables applications to send 
 
 Kafka is commonly used for a variety of use cases such as:
 
-- Real-time data processing: Kafka can be used to process and analyze large volumes of data in real-time, making it useful for use cases such as fraud detection, stock trading, and online advertising.
+- Real-time data processing: Kafka can be used to process and analyze large volumes of data in real time, making it useful for use cases such as fraud detection, stock trading, and online advertising.
 - Log aggregation: Kafka can collect logs from various sources and store them in a central location, making it easier to manage and analyze logs.
 - Event streaming: Kafka can be used to stream events such as clicks, searches, and user interactions to various applications for real-time processing.
 
