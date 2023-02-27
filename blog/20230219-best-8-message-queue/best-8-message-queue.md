@@ -121,7 +121,7 @@ The following introduces four popular message queues born around 2020. Compared 
 
 [Redpanda](#https://redpanda.com/) is an open-source distributed streaming platform that can be used as a high-performance message queue. Redpanda message queue is based on Apache Kafka's design but provides several improvements, such as faster performance, lower latency, and better scalability.
 
-Redpanda message queue allows multiple producers to write messages to a single topic, and multiple consumers to read messages from that topic in parallel. Messages can be buffered in memory for fast delivery and can be persisted to disk for durability. Redpanda also provides a number of features such as replication, partitioning, and compression to help manage large amounts of data.
+Redpanda message queue allows multiple producers to write messages to a single topic, and multiple consumers to read messages from that topic in parallel. Messages can be buffered in memory for fast delivery and persist to disk for durability. Redpanda also provides a number of features, such as replication, partitioning, and compression, to help manage large amounts of data.
 
 One of the key benefits of using Redpanda message queue is its ability to handle large volumes of data in real-time. This makes it a popular choice for applications that require high throughput and low latency, such as streaming analytics, real-time monitoring, and online gaming.
 
