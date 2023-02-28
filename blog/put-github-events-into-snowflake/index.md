@@ -12,9 +12,9 @@ postImage: img/logo.png
 
 Using the events in GitHub for analysis can help you better understand the behavior of developer on GitHub. By analyzing data, you can draw various useful conclusions to support your business needs.
 
-# Concept
+## Concept
 
-## About events in GitHub
+### About events in GitHub
 
 GitHub is a web-based hosting service that provides version control and collaboration features for software development projects. It allows users to create and store repositories for their projects, track changes to code, collaborate with others on coding projects, and contribute to open source software projects.
 
@@ -31,7 +31,7 @@ GitHub also allows you to configure webhooks, which can be used to send notifica
 
 Overall, GitHub provides a comprehensive set of features for tracking events related to your projects and collaborating with others on coding projects.
 
-## About Snowflake
+### About Snowflake
 
 Snowflake is a cloud-based data warehousing and analytics platform that allows organizations to store, manage, and analyze large amounts of data in a scalable and cost-effective way.
 
@@ -41,17 +41,17 @@ Snowflake also provides a number of built-in features and services for data ware
 
 Overall, Snowflake provides a modern and flexible solution for data warehousing and analytics in the cloud, with a focus on scalability, performance, and security.
 
-# Easy GitHub to Snowflake integration with Vanus
+## Easy GitHub to Snowflake integration with Vanus
 
 Vanus’s open source connection allows you to integrate Vanus with your GitHub events to track event data and automatically send it to Snowflake.
 
-## Prerequisites
+### Prerequisites
 
 - GitHub: your open-source repository.
 - Snowflake: a working Snowflake account.
 - Go to [Vanus Playground](https://play.linkall.com/) :an online K8s environment where Vanus can be deployed.
 
-## Step 1: Deploying Vanus
+### Step 1: Deploying Vanus
 
 1. Login [Vanus Playground](https://play.linkall.com/).
 2. Refer to the `Quick Start` document to complete the `Install Vanus` & `Install vsctl`.
@@ -67,7 +67,7 @@ Vanus’s open source connection allows you to integrate Vanus with your GitHub 
    +----------------+------------------+
    ```
 
-## Step 2: Deploy the GitHub Source
+### Step 2: Deploy the GitHub Source
 
 1. Set config file. Create config.yml in any directory, the content is as follows:
 
@@ -108,7 +108,7 @@ Vanus’s open source connection allows you to integrate Vanus with your GitHub 
    Send me everything.
    ```
 
-## Step 3: Deploy the Snowflake Sink
+### Step 3: Deploy the Snowflake Sink
 
 1. Create a yml file named sink-snowflake.yml in the playground with the following command:
 
@@ -205,7 +205,7 @@ Vanus’s open source connection allows you to integrate Vanus with your GitHub 
    kubectl apply -f sink-snowflake.yaml
    ```
 
-## Step 4: Create subscription
+### Step 4: Create subscription
 
 Through the deployment of the above parts, the components required to push GitHub events to Snowflake have been deployed. And GitHub events can be filtered and processed through the filter and transformer capabilities of Vanus.
 
@@ -231,7 +231,7 @@ vsctl subscription create  \
     }'
 ```
 
-## Step 5: Test
+### Step 5: Test
 
 Open the Snowflake console and use the following command to make sure Snowflake has the data.
 
@@ -239,7 +239,7 @@ Open the Snowflake console and use the following command to make sure Snowflake 
 select * from public.vanus_test;
 ```
 
-# Summary
+## Summary
 
 Snowflake provide a powerful platform for analyzing GitHub event data. By loading the data into Snowflake, creating tables, cleaning data, analyzing data, visualizing data, and drawing conclusions, you can get deep insights about the value of GitHub events and use those insights to optimize your business decisions.
 
