@@ -10,7 +10,7 @@ tags: ['Subscription', 'Filter', 'Message Queue']
 postImage: img/logo.png
 ---
 
-The traditional message queue requires subscribers to do the message filter/process at client end after they get the full message from Topics, this would take extra resources and need additional codes/scripts to finish all the work, largely increased the complexity. By adding the filter ability into the messaging infrastructure, it would benefit user a lot.
+The traditional message queue requires subscribers to do the message filter/process on the client end or after receiving messages from Topics. This approach takes extra resources and needs additional codes/scripts, largely increasing complexity. Adding the filtering ability into the messaging infrastructure would greatly benefit the user.
 
 # Benefits of filtering
 
