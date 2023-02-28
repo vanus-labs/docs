@@ -10,7 +10,7 @@ tags: ['AWS Billing']
 postImage: img/logo.png
 ---
 
-# Overview
+## Overview
 
 Billings from cloud vendors allow users to observe the cost of resource. 
 
@@ -18,9 +18,9 @@ Vanus obtains bills by using api from various cloud vendors. It uses Elasticsear
 ![aws-billing](./img/aws-billing.png)
 In this tutorial, you will learn how to use Cloud Billing Source of Vanus to aquire the billing from Cloud Service providers like AWS, and store the data in Elasticsearch.
 
-# AWS Billing to Elasticsearch integration
+## AWS Billing to Elasticsearch integration
 
-## Prerequisites
+### Prerequisites
 
 - AWS IAM [Access Key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html).
 
@@ -29,7 +29,7 @@ In this tutorial, you will learn how to use Cloud Billing Source of Vanus to aqu
 
 - Go to [Vanus Playground](https://play.linkall.com/) :an online K8s environment where Vanus can be deployed.
 
-## Step 1: Deploying Vanus
+### Step 1: Deploying Vanus
 
 1. Login [Vanus Playground](https://play.linkall.com/).
 
@@ -46,7 +46,7 @@ In this tutorial, you will learn how to use Cloud Billing Source of Vanus to aqu
    +----------------+-------------+
    ```
 
-## Step 2: Deploy the AWS Billing Source
+### Step 2: Deploy the AWS Billing Source
 
 Use command line create [AWS Billing Source](https://docs.vanus.ai/connectors/source/source-aws-billing/)
 
@@ -69,7 +69,7 @@ Use command line create [AWS Billing Source](https://docs.vanus.ai/connectors/so
      --name source-aws-billing public.ecr.aws/vanus/connector/source-aws-billing
    ```
 
-## Step 3: Deploy the Elasticsearch Sink
+### Step 3: Deploy the Elasticsearch Sink
 
 Use the command line of Vanus create the event target: [Elasticsearch Sink](https://docs.vanus.ai/connectors/sink/sink-elasticsearch/)
 
@@ -154,7 +154,7 @@ Use the command line of Vanus create the event target: [Elasticsearch Sink](http
    kubectl apply -f sink-es.yaml
    ```
 
-## Step 4: Create Subscription
+### Step 4: Create Subscription
 
 Create Subscription Event, here can do filter before deliver event to sink end, execute the following command:
 
@@ -175,7 +175,7 @@ vsctl subscription create \
 - `filters` The method of filter the events. 
   - use keyword `suffix` to do the postfix match for attribute source
 
-## Step 4: Result Checking
+### Step 5: Result Checking
 
 Check the Billing Data. Now let's connect to kibana so that we can manage data and perform data analysis.
 
