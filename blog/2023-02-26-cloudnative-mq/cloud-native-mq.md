@@ -1,4 +1,4 @@
-# What is Cloud Events（1）
+# What is Cloud Native（1）
 
 Cloud-native has been mentioned countless times in technical speeches and articles in recent years and has almost become a synonym for cloud computing technology. However, many developers do not have a clear understanding of the value of cloud native and the challenges that may arise when implementing cloud native applications. I would like to explain the meaning, value, and implementation challenges of cloud native through two articles. The first article, which is this one, will share what cloud native is, the characteristics of cloud native applications, and the huge value that cloud native brings to enterprises. The second article will analyze the technologies and challenges involved in building cloud native applications.
 
