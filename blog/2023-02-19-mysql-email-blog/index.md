@@ -166,6 +166,7 @@ EOF
   -v ${PWD}:/vanus-connect/data \
   --name source-mysql public.ecr.aws/vanus/connector/source-mysql &
 ```
+
 ### Step 3: Deploy the Email Sink Connector
 You can choose any mail provider to send an email by the Email Sink. In this tutorial, I will go with Gmail.
 - Enable 2-Step Verification in your Google Account.
