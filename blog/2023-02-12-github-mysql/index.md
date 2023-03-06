@@ -18,7 +18,7 @@ If you are running an open-source project, I believe you must be interested in t
 
 Analyzing GitHub data can not only answer the above questions. And it can help you gain insight into important trends in more open-source projects. For example, it can help open source operators gain real-time insight into the trends of project developers, the latest trends of contributors, which organizations pay attention to your project, and so on.
 
-This blog will use Vanus to build a data pipeline from GitHub to MySQL, so as to help developers store GitHub data in MySQL in real time. At the same time, some examples are given to help developers analyze GitHub data to gain insight into trends. The results are shown below:
+This blog will use Vanus to build a data pipeline from GitHub to MySQL to help developers store GitHub data in MySQL in real-time. At the same time, some examples are given to help developers analyze GitHub data to gain insight into trends. The results are shown below:
 
 ![githubdata-mysql](./img/githubdata-mysql.jpeg)
 
