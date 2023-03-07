@@ -84,7 +84,7 @@ Slack is an all-purpose communication platform and collaboration hub. It include
 3 Deploy Vanus to the terminal on the right side of the web page.
 
 ```Shell
-kubectl apply -f https://download.linkall.com/all-in-one/v0.6.0.yml
+kubectl apply -f https://dl.vanus.ai/all-in-one/v0.6.0.yml
 ```
 
  Verify: 
@@ -106,7 +106,7 @@ vanus-trigger-7685d6cc69-8jgsl   1/1     Running   0          97s
 4 Install vsctl (the command line tool).
 
 ```Plain
-curl -O https://download.linkall.com/vsctl/latest/linux-amd64/vsctl
+curl -O https://dl.vanus.ai/vsctl/latest/linux-amd64/vsctl
 chmod ug+x vsctl
 mv vsctl /usr/local/bin
 ```

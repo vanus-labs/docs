@@ -68,7 +68,7 @@ For this tutorial, we will be using the Vanus Playground; An online Kubernetes e
 - Install Vanus by typing following command:
 
 ```shell
-kubectl apply -f https://download.linkall.com/all-in-one/v0.6.0.yml
+kubectl apply -f https://dl.vanus.ai/all-in-one/v0.6.0.yml
 ```
 
 - Verify if Vanus is deployed successfully:
@@ -90,7 +90,7 @@ vanus-trigger-7685d6cc69-8jgsl   1/1     Running   0          97s
 - Install vsctl (the command line tool).
 
 ```shell
-curl -O https://download.linkall.com/vsctl/latest/linux-amd64/vsctl
+curl -O https://dl.vanus.ai/vsctl/latest/linux-amd64/vsctl
 chmod ug+x vsctl
 mv vsctl /usr/local/bin
 ```

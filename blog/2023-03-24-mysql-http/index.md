@@ -120,7 +120,7 @@ Here are the steps you can follow to send email notifications from any MySQL eve
   ![](img/img_1.png)
 - Install Vanus by typing the following command:
 
-  `kubectl apply -f https://download.linkall.com/all-in-one/v0.6.0.yml`
+  `kubectl apply -f https://dl.vanus.ai/all-in-one/v0.6.0.yml`
 
 - Verify if Vanus is deployed successfully:
 
@@ -141,7 +141,7 @@ $ watch -n2 kubectl get po -n vanus
 - Install vsctl (the command line tool).
 
   ```shell
-  curl -O https://download.linkall.com/vsctl/latest/linux-amd64/vsctl
+  curl -O https://dl.vanus.ai/vsctl/latest/linux-amd64/vsctl
   chmod ug+x vsctl
   mv vsctl /usr/local/bin
   ```
