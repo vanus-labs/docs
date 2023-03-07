@@ -9,7 +9,7 @@ Although it is still possible to partially use the transformer tool to get the C
 
 ## Uses And Example
 
-When creating a subscription, you can use paramter --transformer which have three parameter options: `define`, `pipeline` and `template`.
+When creating a subscription, you can use parameter --transformer which have three parameter options: `define`, `pipeline` and `template`.
 
 For example:
 
