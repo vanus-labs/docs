@@ -8,50 +8,50 @@ Filters allow you to filter events from an Eventbus when creating a subscription
 
 ## Uses And Example
 
-When creating a subscription, Use the optional parameter --filters. 
+When creating a subscription, Use the optional parameter --filters.
 See the following example:
 
 ```shell
 vsctl subscription create \
-  --name testeb \
-  --eventbus testeb \
+  --name quick-start \
+  --eventbus quick-start \
   --sink 'http://localhost:8080' \
   --filters '[
-      { "exact": { "source": "vanus.source" } }
+      { "exact": { "source": "vanus.source", "data.action": "created" } }
       { "prefix": { "type": "vanus.type" } }
     ]'
 ```
 
-Vanus supports the following filter types
+Vanus filters is fully compatible with [CloudEvents filters][ce-filters], and it's also extended to support the filtering of CloudEvents data that format must be JSON. The parameter filters is an array of filter expressions. Each element of the array is an object which only has one key which is filter types as following.
 
 ### Exact
 
-Exact is a map which the keys are the names of the CloudEvents attributes, and their values are the String values to use in the comparison.
-The values of the matching CloudEvents attributes MUST all exactly match with the associated value String specified (case sensitive).
-The attribute name and value specified in the filter express MUST NOT be empty strings.
+Exact is a map which the keys are the names of the CloudEvents attributes or data path, and their values are the String values to use in the comparison.
+The values of the matching CloudEvents attributes or data path MUST all exactly match with the associated value String specified (case sensitive).
+The name and value specified in the filter express MUST NOT be empty strings.
 
 ```json
-{ "exact": { "source": "vanus.source", "type": "vanus.type" } }
+{ "exact": { "source": "vanus.source", "type": "vanus.type", "data.action": "created" } }
 ```
 
 ### Prefix
 
-Prefix is a map which the keys are the names of the CloudEvents attributes, and their values are the String values to use in the comparison.
-The values of the matching CloudEvents attributes MUST all start with the associated value String specified (case sensitive).
-The attribute name and value specified in the filter express MUST NOT be empty strings.
+Prefix is a map which the keys are the names of the CloudEvents attributes or data path, and their values are the String values to use in the comparison.
+The values of the matching CloudEvents attributes or data path MUST all start with the associated value String specified (case sensitive).
+The name and value specified in the filter express MUST NOT be empty strings.
 
 ```json
-{ "prefix": { "source": "vanus.source", "type": "vanus.type" } }
+{ "prefix": { "source": "vanus.source", "type": "vanus.type", "data.action": "created" } }
 ```
 
 ### Suffix
 
-Suffix is a map which the keys are the names of the CloudEvents attributes, and their values are the String values to use in the comparison.
-The values of the matching CloudEvents attributes MUST all end witch the associated value String specified (case sensitive).
-The attribute name and value specified in the filter express MUST NOT be empty strings.
+Suffix is a map which the keys are the names of the CloudEvents attributes or data path, and their values are the String values to use in the comparison.
+The values of the matching CloudEvents attributes or data path MUST all end witch the associated value String specified (case sensitive).
+The name and value specified in the filter express MUST NOT be empty strings.
 
 ```json
-{ "suffix": { "source": "vanus.source", "type": "vanus.type" } }
+{ "suffix": { "source": "vanus.source", "type": "vanus.type", "data.action": "created" } }
 ```
 
 ### Not
@@ -92,8 +92,11 @@ Any can have multiple filter types, and the events will be extracted if they mee
 
 ### SQL
 
-SQL is a string value, representing CloudEvents SQL Expression. The result value of the expression must be boolean, otherwise if an error occurred while evaluating the expression or the result is not boolean will be as FALSE . The filter key are the names of the CloudEvents attributes.
+SQL is a string value, representing a [CloudEvents SQL Expression][ce-sql]. The result value of the expression must be boolean, otherwise if an error occurred while evaluating the expression or the result is not boolean will be as FALSE . The filter key are the names of the CloudEvents attributes, not support data path.
 
 ```json
-{ "sql": "source LIKE '%vanus%'" }
+{ "sql": "(source LIKE '%vanus%' AND numvalue > 10) OR subject = 'vanus.subject'" }
 ```
+
+[ce-filters]: https://github.com/cloudevents/spec/blob/main/subscriptions/spec.md#324-filters
+[ce-sql]: https://github.com/cloudevents/spec/blob/main/cesql/spec.md
