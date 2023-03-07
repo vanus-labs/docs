@@ -31,13 +31,13 @@ Here is how to do this in only 10 mins.
 4. Install Vanus
 
 ```shell
-kubectl apply -f https://download.linkall.com/all-in-one/v0.6.0.yml
+kubectl apply -f https://dl.vanus.ai/all-in-one/v0.6.0.yml
 ```
 
 5. Install vsctl (the command line tool)
 
 ```shell
-curl -O https://download.linkall.com/vsctl/latest/linux-amd64/vsctl
+curl -O https://dl.vanus.ai/vsctl/latest/linux-amd64/vsctl
 chmod ug+x vsctl
 mv vsctl /usr/local/bin
 ```

@@ -28,7 +28,7 @@ You can skip the step if you already have those.
 <TabItem label="Default" value="default">
 
 ```bash
-kubectl apply -f https://download.linkall.com/all-in-one/v0.5.7.yml
+kubectl apply -f https://dl.vanus.ai/all-in-one/v0.5.7.yml
 ```
 
 </TabItem>
@@ -36,7 +36,7 @@ kubectl apply -f https://download.linkall.com/all-in-one/v0.5.7.yml
 <TabItem label="China Mainland" value="china">
 
 ```bash
-kubectl apply -f https://download.linkall.com/all-in-one/v0.5.7.cn.yml
+kubectl apply -f https://dl.vanus.ai/all-in-one/v0.5.7.cn.yml
 ```
 
 </TabItem>
@@ -71,7 +71,7 @@ vanus-trigger-69bf59658-jbb82    1/1     Running   0          52s
 <TabItem label="Linux" value="linux">
 
 ```bash
-curl -O https://download.linkall.com/vsctl/v0.5.7/linux-amd64/vsctl
+curl -O https://dl.vanus.ai/vsctl/v0.5.7/linux-amd64/vsctl
 chmod ug+x vsctl
 mv vsctl /usr/local/bin
 ```
@@ -81,7 +81,7 @@ mv vsctl /usr/local/bin
 <TabItem label="macOS M Chip" value="macos-m-serials">
 
 ```bash
-curl -O https://download.linkall.com/vsctl/v0.5.7/macos-arm64/vsctl
+curl -O https://dl.vanus.ai/vsctl/v0.5.7/macos-arm64/vsctl
 chmod ug+x vsctl
 mv vsctl /usr/local/bin
 ```
@@ -91,7 +91,7 @@ mv vsctl /usr/local/bin
 <TabItem label="macOS Intel" value="macos-intel">
 
 ```bash
-curl -O https://download.linkall.com/vsctl/v0.5.7/macos-amd64/vsctl
+curl -O https://dl.vanus.ai/vsctl/v0.5.7/macos-amd64/vsctl
 chmod ug+x vsctl
 mv vsctl /usr/local/bin
 ```
@@ -217,7 +217,7 @@ the result should look like
 1. **start a display server to verify filter**
 
 ```shell
-kubectl apply -f https://download.linkall.com/utils/display.yml
+kubectl apply -f https://dl.vanus.ai/utils/display.yml
 ```
 
 use `kubectl get po -n vanus` to validate
