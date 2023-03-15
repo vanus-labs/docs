@@ -182,7 +182,7 @@ Reference [vanus-operator](https://github.com/vanus-labs/vanus-operator）to dep
 Execute the following command to deploy the Vanus Operator:
 
 ```shell
-kubectl apply -f https://dl.vanus.ai/vanus/operator/latest.yml
+kubectl apply -f https://dl.vanus.ai/vanus/operator/latest/vanus-operator.yml
 ```
 
 ### View the Vanus Operator status
@@ -233,17 +233,28 @@ After the command is executed successfully, the Vanus cluster default topology f
 
 ```
 version: v0.7.0
+etcd:
+  # etcd replicas is 3 by default, modification not supported
+  replicas: 3
+  storage_size: 10Gi
+  # specify the pvc storageclass of the etcd, use the cluster default storageclass by default
+  # storage_class: gp3
 controller:
-    replicas: 3
+  # controller replicas is 2 by default, modification not supported
+  replicas: 2
 store:
-    replicas: 3
-    storage_size: 10Gi
+  replicas: 3
+  storage_size: 10Gi
+  # specify the pvc storageclass of the store, use the cluster default storageclass by default
+  # storage_class: io2
 gateway:
-    replicas: 1
+  # gateway replicas is 1 by default, modification not supported
+  replicas: 1
 trigger:
-    replicas: 1
+  replicas: 1
 timer:
-    replicas: 2
+  # timer replicas is 2 by default, modification not supported
+  replicas: 2
 ```
 
 The default deployed Vanus cluster version is v0.7.0. You can also modify the version field to deploy a lower version. You can adjust the initial number of replicas of the cluster by modifying the replicas field of each component, or expand the number of replicas by using the `vsctl cluster scale` subcommand after deployment. The default size of the PV attached to the storage component is 10Gi. It is recommended that you adjust it according to the actual business data volume.
@@ -259,19 +270,21 @@ vsctl cluster create --config-file cluster.yaml.example
 After executing the above command, the cluster topology will be printed for you to reconfirm. If it meets the expectations, you can continue to deploy, as shown below:
 
 ```
-+---------+--------------+------------+----------+-------------+
-| CLUSTER |    VERSION   |  COMPONENT | REPLICAS | STORAGESIZE |
-+---------+--------------+------------+----------+-------------+
-|  vanus  |    v0.7.0    | controller |     3    |      -      |
-|         |              +------------+----------+-------------+
-|         |              |    store   |     3    |     10Gi    |
-|         |              +------------+----------+-------------+
-|         |              |   gateway  |     1    |      -      |
-|         |              +------------+----------+-------------+
-|         |              |   trigger  |     1    |      -      |
-|         |              +------------+----------+-------------+
-|         |              |    timer   |     2    |      -      |
-+---------+--------------+------------+----------+-------------+
++---------+---------+------------+----------+-------------+--------------+
+| CLUSTER | VERSION |  COMPONENT | REPLICAS | STORAGESIZE | STORAGECLASS |
++---------+---------+------------+----------+-------------+--------------+
+|  vanus  |  v0.7.0 |    etcd    |     3    |     10Gi    |       -      |
+|         |         +------------+----------+-------------+--------------+
+|         |         |    store   |     3    |     10Gi    |       -      |
+|         |         +------------+----------+-------------+--------------+
+|         |         | controller |     2    |      -      |       -      |
+|         |         +------------+----------+-------------+--------------+
+|         |         |   gateway  |     1    |      -      |       -      |
+|         |         +------------+----------+-------------+--------------+
+|         |         |   trigger  |     1    |      -      |       -      |
+|         |         +------------+----------+-------------+--------------+
+|         |         |    timer   |     2    |      -      |       -      |
++---------+---------+------------+----------+-------------+--------------+
 The cluster specifications are shown in the above table. Please confirm whether you want to create the cluster(y/n):y
 +------------------------+
 |         RESULT         |
@@ -294,12 +307,13 @@ When all the Pods are in the Running state, the Vanus cluster is successfully st
 NAME                              READY   STATUS    RESTARTS   AGE
 vanus-controller-0                1/1     Running   0          54s
 vanus-controller-1                1/1     Running   0          51s
-vanus-controller-2                1/1     Running   0          49s
 vanus-etcd-0                      1/1     Running   0          2m17s
 vanus-etcd-1                      1/1     Running   0          2m17s
 vanus-etcd-2                      1/1     Running   0          2m17s
 vanus-gateway-79c98459c6-sx572    1/1     Running   0          54s
 vanus-operator-579954766c-9jdsh   2/2     Running   0          40m
+vanus-root-controller-0           1/1     Running   0          51s
+vanus-root-controller-1           1/1     Running   0          51s
 vanus-store-0                     1/1     Running   0          54s
 vanus-store-1                     1/1     Running   0          42s
 vanus-store-2                     1/1     Running   0          27s
