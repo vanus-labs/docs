@@ -148,7 +148,45 @@ const sidebars = {
     {
       type: 'category',
       label: 'User Guides',
-      items: ['vanus-cloud/core-concepts'],
+      items: [
+        {
+          type: 'category',
+          label: 'How-to Guides',
+          link: {
+            type: 'doc',
+            id: 'user-guides/how-to-guides',
+          },
+          items: [
+            'how-to/use-gcloud-functions'
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Template Guides',
+          link: {
+            type: 'doc',
+            id: 'user-guides/template-guides',
+          },
+          items: [
+            {
+              type: 'doc',
+              id: 'user-guides/template-guides/github-issue-created-feishu',
+              label: 'GitHub issue event triggers a Feishu message',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Connector Guides',
+          link: {
+            type: 'doc',
+            id: 'user-guides/connector-guides',
+          },
+          items: [
+            'how-to/use-gcloud-functions'
+          ],
+        },
+      ],
     },
     {
       type: 'category',
