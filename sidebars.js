@@ -170,9 +170,34 @@ const sidebars = {
           items: [
             {
               type: 'doc',
+              id: 'user-guides/template-guides/gitHub-starred-feishu',
+              label: 'GitHub star event triggers a Feishu message',
+            },
+            {
+              type: 'doc',
               id: 'user-guides/template-guides/github-issue-created-feishu',
               label: 'GitHub issue event triggers a Feishu message',
             },
+            {
+              type: 'doc',
+              id: 'user-guides/template-guides/gthub-star-event-slack',
+              label: 'GitHub star event triggers a Slack message',
+            },
+              {
+              type: 'doc',
+              id: 'user-guides/template-guides/gitHub-issue-event-slack',
+              label: 'GitHub issue event triggers a Slack message',
+            },
+              {
+              type: 'doc',
+              id: 'user-guides/template-guides/gitHub-comment-slack',
+              label: 'GitHub comment event triggers a Slack message',
+            },
+              {
+              type: 'doc',
+              id: 'user-guides/template-guides/gitHub-pull-request-opened-slack',
+              label: 'GitHub open pull request event triggers a Slack message',
+            }
           ],
         },
         {
