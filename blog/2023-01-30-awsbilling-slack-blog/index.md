@@ -58,7 +58,7 @@ vanus-trigger-7685d6cc69-8jgsl   1/1     Running   0          97s
 Next, we will install vsctl, the command line tool for Vanus
 
 ```shell
-curl -O https://download.linkall.com/vsctl/latest/linux-amd64/vsctl
+curl -O https://dl.vanus.ai/vsctl/latest/linux-amd64/vsctl
 chmod ug+x vsctl
 mv vsctl /usr/local/bin
 ```

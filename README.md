@@ -2,9 +2,9 @@
 
 Welcome to Vanus documentation!👋
 
-[Vanus](https://github.com/linkall-labs/vanus/) is an open-source, cloud-native, Serverless message queue for building EDA applications with Ease.
+[Vanus](https://github.com/vanus-labs/vanus/) is an open-source, cloud-native, Serverless message queue for building EDA applications with Ease.
 
-This repository contains all assets required to build the [Vanus documentation website](https://docs.linkall.com).
+This repository contains all assets required to build the [Vanus documentation website](https://docs.vanus.ai).
 
 ## Website
 
@@ -46,4 +46,4 @@ We have a few channels for contact:
 
 - [Slack](https://join.slack.com/t/vanusworkspace/shared_invite/zt-1jilbbfo2-NxiFG0VOo8ABGCCNaeNfcA)
 - [@vanus_ai](https://twitter.com/vanus_ai) on Twitter
-- [GitHub Issues](https://github.com/linkall-labs/docs/issues)
+- [GitHub Issues](https://github.com/vanus-labs/docs/issues)
