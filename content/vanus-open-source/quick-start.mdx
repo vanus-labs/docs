@@ -70,7 +70,7 @@ sudo mv vsctl /usr/local/bin
 <TabItem label="macOS M Chip" value="macos-m-serials">
 
 ```bash
-curl -O https://dl.vanus.ai/vsctl/latest/macos-arm64/vsctl
+curl -O https://dl.vanus.ai/vsctl/latest/darwin-arm64/vsctl
 chmod ug+x vsctl
 sudo mv vsctl /usr/local/bin
 ```
@@ -80,7 +80,7 @@ sudo mv vsctl /usr/local/bin
 <TabItem label="macOS Intel" value="macos-intel">
 
 ```bash
-curl -O https://dl.vanus.ai/vsctl/latest/macos-amd64/vsctl
+curl -O https://dl.vanus.ai/vsctl/latest/darwin-amd64/vsctl
 chmod ug+x vsctl
 sudo mv vsctl /usr/local/bin
 ```
@@ -96,13 +96,13 @@ vsctl version
 ```
 
 ```buttonless
-+-----------+---------------------------------+
-|  Version  | v0.6.0                          |
-|  Platform | linux/amd64                     |
-| GitCommit | b762f1e                         |
-| BuildDate | 2023-01-16_10:09:26+0000        |
-| GoVersion | go version go1.19.3 linux/amd64 |
-+-----------+---------------------------------+
++-----------+----------------------------------+
+|  Version  | v0.7.0                           |
+|  Platform | linux/amd64                      |
+| GitCommit | 0f7b4f71                         |
+| BuildDate | 2023-03-23_11:31:20+0800         |
+| GoVersion | go version go1.18.3 darwin/arm64 |
++-----------+----------------------------------+
 ```
 
 ### Set Vanus Endpoint
@@ -111,24 +111,6 @@ use env variable to tell the endpoint to vsctl
 
 ```shell
 export VANUS_GATEWAY=127.0.0.1:8080
-```
-
-validate if `vsctl` is connected to Vanus
-
-```shell
-vsctl cluster controller topology
-```
-
-output should look like
-
-```shell
-+-----------------------+--------------------+
-|          NAME         |      ENDPOINT      |
-+-----------------------+--------------------+
-|   Gateway Endpoints   |   127.0.0.1:8080   |
-+-----------------------+--------------------+
-| CloudEvents Endpoints |   127.0.0.1:8081   |
-+-----------------------+--------------------+
 ```
 
 ## Use-cases
