@@ -14,12 +14,12 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   vanusDoc: [
-    {
+    /*{
       type: 'category',
       label: 'Home',
       type: 'doc',
       id: 'home',
-    },
+    },*/
     {
       type: 'category',
       label: 'Getting Started',
