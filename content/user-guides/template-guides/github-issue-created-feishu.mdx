@@ -12,7 +12,7 @@ This guide will help you get a FeiShu notification whenever an issue is opened i
 
 ### Step 1: Configure the Source - Authorize GitHub and select a GitHub repo
 
-- Log in to Vanus Cloud and choose the **GitHub issue event triggers a Feishu message** template.
+- Log in to  [Vanus Cloud](https://cloud.vanus.ai/)  and choose the **GitHub issue event triggers a Feishu message** template.
 - Find the **Sign in with GitHub** button and authorize GitHub. Then, select the repo you want to configure.
 
 ![1.png](./imgs/github-issue-created-feishu-1.png)
