@@ -180,6 +180,16 @@ const sidebars = {
             },
             {
               type: 'doc',
+              id: 'user-guides/template-guides/github-comment-feishu',
+              label: 'GitHub issue comment event triggers a Feishu message',
+            },
+            {
+              type: 'doc',
+              id: 'user-guides/template-guides/github-open-pr-feishu',
+              label: 'GitHub opened pull-request event triggers a Feishu message',
+            },
+            {
+              type: 'doc',
               id: 'user-guides/template-guides/github-star-event-slack',
               label: 'GitHub star event triggers a Slack message',
             },
@@ -205,11 +215,6 @@ const sidebars = {
             },
             {
               type: 'doc',
-              id: 'user-guides/template-guides/github-comment-feishu',
-              label: 'GitHub issue comment event triggers a Feishu message',
-            },
-            {
-              type: 'doc',
               id: 'user-guides/template-guides/github-open-issue-discord',
               label: 'GitHub issue event triggers a Discord message',
             },
@@ -217,11 +222,6 @@ const sidebars = {
               type: 'doc',
               id: 'user-guides/template-guides/github-open-pr-discord',
               label: 'GitHub opened pull-request event triggers a Discord message',
-            },
-            {
-              type: 'doc',
-              id: 'user-guides/template-guides/github-open-pr-feishu',
-              label: 'GitHub opened pull-request event triggers a Feishu message',
             },
             {
               type: 'doc',
