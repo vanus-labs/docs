@@ -153,14 +153,14 @@ a.header-twitter-link:hover{
   line-height: 44px;
 }
 
-.codeBlockContent_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module,
-.theme-code-block {
+// .codeBlockContent_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module,
+.theme-code-block div[class^="codeBlockContent"] {
   display: flex;
   justify-content: space-between;
 }
 
-.buttonGroup_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module,
-.theme-code-block div[class^=“buttonGroup”] {
+// .buttonGroup_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module,
+.theme-code-block div[class^="buttonGroup"] {
   display: block !important; 
   position: relative !important;
   margin-top: 5px;
