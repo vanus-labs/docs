@@ -233,12 +233,32 @@ const sidebars = {
         {
           type: 'category',
           label: 'Connector Guides',
-          link: {
-            type: 'doc',
-            id: 'user-guides/connector-guides',
-          },
           items: [
-            'how-to/use-gcloud-functions'
+            {
+              type: 'category',
+              label: 'Source',
+              items: [
+                {
+                  type: 'category',
+                  label: 'GitHub',
+                  link: {
+                    type: 'doc',
+                    id: 'user-guides/connector-guides/source/github-setup',
+                  },
+                  items: [
+                    'user-guides/connector-guides/source/github-events'
+                  ],
+                },
+
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Sink',
+              items: [
+                'user-guides/connector-guides/sink/http-setup'
+              ],
+            }
           ],
         },
       ],
