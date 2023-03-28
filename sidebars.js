@@ -278,7 +278,7 @@ const sidebars = {
               type: 'category',
               label: 'Sink',
               items: [
-                'user-guides/connector-guides/sink/http/setup',
+                'user-guides/connector-guides/sink/http-setup',
                 'user-guides/connector-guides/sink/feishu-setup'
               ],
             }
