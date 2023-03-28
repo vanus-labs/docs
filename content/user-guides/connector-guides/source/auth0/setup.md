@@ -40,22 +40,22 @@ To obtain all Auth0 events using the Streams menu and Webhook option in Vanus Cl
 ### Authentication event filters
 Login:
 - [Login - Failure](events.md#login_failure)
-- [Login - Notification]()
-- [Login - Success]()
+- Login - Notification
+- Login - Success
 
 Logout:
-- [Logout - Failure]()
-- [Logout - Success]()
+- Logout - Failure
+- Logout - Success
 
 Signup:
-- [Signup - Failure]()
-- [Signup - Success]()
+- Signup - Failure
+- Signup - Success
 
 Silent Authentication:
-- [Silent Authentication - Failure]()
-- [Silent Authentication - Success]()
+- Silent Authentication - Failure
+- Silent Authentication - Success
 
 Token Exchange:
-- [Token Exchange - Failure]()
-- [Token Exchange - Success]()
+- Token Exchange - Failure
+- Token Exchange - Success
 
