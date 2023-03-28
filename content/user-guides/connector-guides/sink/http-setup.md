@@ -44,7 +44,6 @@ POST /test?debug=true&type=curl
 > User-Agent:   Go-http-client/1.1
 > Content-Length: 23
 > connect-name: sink-http
-
 > simulation event data 1
 
 ```
