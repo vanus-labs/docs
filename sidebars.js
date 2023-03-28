@@ -270,6 +270,17 @@ const sidebars = {
                     },
                   ],
                 },
+                {
+                  type: 'category',
+                  label: 'Webhook',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/webhook/setup',
+                      label: 'Setup Guide',
+                    }
+                  ],
+                },
 
                 /// add new connectors here
               ],
