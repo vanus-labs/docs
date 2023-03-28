@@ -27,7 +27,7 @@ GitHub Source supports all [GitHub Webhook events](https://docs.github.com/webho
 Here is a list of event types you can obtain from the GitHub Source.
 Click it to see output CloudEvents corresponding to each event type.
 
-- [check_run](github-events.md#sample-event-of-check_run)
+- [check_run](events.md#sample-event-of-check_run)
 - check_suite
 - code_scanning_alert
 - commit_comment

@@ -241,12 +241,17 @@ const sidebars = {
                 {
                   type: 'category',
                   label: 'GitHub',
-                  link: {
-                    type: 'doc',
-                    id: 'user-guides/connector-guides/source/github-setup',
-                  },
                   items: [
-                    'user-guides/connector-guides/source/github-events'
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/github/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/github/events',
+                      label: 'Output Events',
+                    },
                   ],
                 },
 
