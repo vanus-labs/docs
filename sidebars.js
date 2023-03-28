@@ -254,7 +254,24 @@ const sidebars = {
                     },
                   ],
                 },
+                {
+                  type: 'category',
+                  label: 'Auth0',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/auth0/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/auth0/events',
+                      label: 'Output Events',
+                    },
+                  ],
+                },
 
+                /// add new connectors here
               ],
             },
             {
