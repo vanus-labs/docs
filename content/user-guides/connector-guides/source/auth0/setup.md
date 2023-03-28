@@ -1,6 +1,6 @@
 # Auth0
 
-This guide contains information to set up a GitHub Source in Vanus Cloud.
+This guide contains information to set up a Auth0 Source in Vanus Cloud.
 
 ## Introduction
 
