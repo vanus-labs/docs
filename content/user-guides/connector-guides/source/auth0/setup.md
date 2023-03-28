@@ -22,15 +22,14 @@ To obtain all Auth0 events using the Streams menu and Webhook option in Vanus Cl
 2. From the list of sources, choose **Auth0**.
 3. Click next and finish the configurations.
 4. Select your connection and get the payload from the Auth0 information.
-![The page to get the payload](/images/payload.png)
-5. 
+![](images/payload.png)
 ### Configuring Auth0 to Send Webhook Events
 
 1. Log in to your Auth0 account.
 2. Navigate to the **Streams** menu under **Monitoring**.
 3. Click on the **Create Stream** button.
 4. Name your stream and select the **Webhook** option.
-5. ![Webhook option](/images/auth0_webhook.png)
+![](images/webhook.png)
 5. Provide the payload URL of your Auth0 source connector in Vanus Cloud.
 6. Select json line under **Content Format**.
 6. Select the event you want to receive notifications for.
