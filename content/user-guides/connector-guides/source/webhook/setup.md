@@ -39,30 +39,54 @@ To test the Webhook source, we can use [Auth0](https://auth0.com/) Cloud Events 
 
 ## Supported Events
 
-### Authentication event filters for Webook (Auth0) Source
+The Webhook source supports different kind of Cloud Events from different sources such as GitHub, Auth0, HTTP requests using a Webhook URL.
 
-Login:
+A simple CURL from an HTTP request can produce Cloud Events
 
-- [Login - Failure](events.md#login_failure)
-- Login - Notification
-- Login - Success
+### HTTP Request
 
-Logout:
+```
+curl --location --request POST 'https://webhook.site/4ccfb03d-0015-4533-aa70-ac181ebe98b5' \
+--header 'Content-Type: text/plain' \
+--data-raw '{
+    "test":"Hello World!"
+}'
 
-- Logout - Failure
-- Logout - Success
+```
 
-Signup:
+### Cloud Events Output
 
-- Signup - Failure
-- Signup - Success
+```
+{
+  "specversion": "1.0",
+  "id": "35dfb46d-a9a5-48d3-89d2-de0135c09031",
+  "source": "102.89.34.215",
+  "type": "http-request",
+  "subject": "test",
+  "datacontenttype": "application/json",
+  "time": "2023-01-29T03:25:26.229114Z",
+  "data": {
+    "body": {
+      "test": "Hello World"
+    },
+    "headers": {
+      "Accept": "*/*",
+	  "Connection": "close"
+      "Content-Length": "29",
+      "Content-Type": "text/plain",
+      "Host": "webhook.site",
+      "User-Agent": "curl/7.78.0"
+    },
+    "method": "POST",
+    "path": "/webhook",
+    "query_args": {
+      "id": "35dfb46d-a9a5-48d3-89d2-de0135c09031",
+      "source": "102.89.34.215",
+      "subject": "test",
+      "test": "Hello World",
+      "type": "http-request"
+    }
+  }
+}
 
-Silent Authentication:
-
-- Silent Authentication - Failure
-- Silent Authentication - Success
-
-Token Exchange:
-
-- Token Exchange - Failure
-- Token Exchange - Success
+```
