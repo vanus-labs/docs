@@ -279,7 +279,8 @@ const sidebars = {
               label: 'Sink',
               items: [
                 'user-guides/connector-guides/sink/http-setup',
-                'user-guides/connector-guides/sink/feishu-setup'
+                'user-guides/connector-guides/sink/feishu-setup',
+                'user-guides/connector-guides/sink/google-sheet-setup'
               ],
             }
           ],
