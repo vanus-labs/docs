@@ -45,7 +45,7 @@ A simple CURL from an HTTP request can produce Cloud Events
 
 ### HTTP Request
 
-```
+```bash
 curl --location --request POST 'https://webhook.site/4ccfb03d-0015-4533-aa70-ac181ebe98b5' \
 --header 'Content-Type: text/plain' \
 --data-raw '{
@@ -56,7 +56,7 @@ curl --location --request POST 'https://webhook.site/4ccfb03d-0015-4533-aa70-ac1
 
 ### Cloud Events Output
 
-```
+```json
 {
   "specversion": "1.0",
   "id": "35dfb46d-a9a5-48d3-89d2-de0135c09031",
