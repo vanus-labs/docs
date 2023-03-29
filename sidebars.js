@@ -291,7 +291,8 @@ const sidebars = {
               items: [
                 'user-guides/connector-guides/sink/http-setup',
                 'user-guides/connector-guides/sink/feishu-setup',
-                'user-guides/connector-guides/sink/google-sheet-setup'
+                'user-guides/connector-guides/sink/google-sheet-setup',
+                'user-guides/connector-guides/sink/display-setup'
               ],
             }
           ],
