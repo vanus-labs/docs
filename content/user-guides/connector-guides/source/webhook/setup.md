@@ -19,31 +19,17 @@ To obtain a unique Webhook URL in Vanus Cloud, follow these steps:
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
 3. From the list of sources, choose **Webhook**.
-4. Click next and finish the configurations.
+4. Click next and complete sink connection and subscription to finish the configurations.
 5. Select your connection and get the payload from the Webhook information.
    ![](images/payload.png)
 
-### How to use Webhook Source
-
-To test the Webhook source, we can use [Auth0](https://auth0.com/) Cloud Events streams. To do this,
-
-1. Log in to Auth0 account if you already have one or create one if you do not have an Auth0 account.
-2. Navigate to the **Streams** menu under **Monitoring**.
-3. Click on the **Create Stream** button.
-4. Name your stream and select the **Webhook** option.
-   ![](images/webhook.png)
-5. Provide the payload URL of your Webhook source connector in Vanus Cloud.
-6. Select json line under **Content Format**.
-7. Select the event you want to receive notifications for.
-8. and Save your settings.
-
 ## Supported Events
 
-The Webhook source supports different kind of Cloud Events from different sources such as GitHub, Auth0, HTTP requests using a Webhook URL.
+The Webhook source supports different kind of requests that does not require a response.
+
+### Event Type
 
 A simple CURL from an HTTP request can produce Cloud Events
-
-### HTTP Request
 
 ```bash
 curl --location --request POST 'https://webhook.site/4ccfb03d-0015-4533-aa70-ac181ebe98b5' \
@@ -59,34 +45,31 @@ curl --location --request POST 'https://webhook.site/4ccfb03d-0015-4533-aa70-ac1
 ```json
 {
   "specversion": "1.0",
-  "id": "35dfb46d-a9a5-48d3-89d2-de0135c09031",
-  "source": "102.89.34.215",
-  "type": "http-request",
-  "subject": "test",
+  "id": "ace872fa-21f8-40ce-8e99-fce6fd452a98",
+  "source": "vanus-http-source",
+  "type": "naive-http-request",
   "datacontenttype": "application/json",
-  "time": "2023-01-29T03:25:26.229114Z",
+  "time": "2023-03-28T07:49:08.892354632Z",
   "data": {
     "body": {
       "test": "Hello World"
     },
     "headers": {
       "Accept": "*/*",
-	  "Connection": "close"
+      "Connection": "close",
       "Content-Length": "29",
       "Content-Type": "text/plain",
       "Host": "webhook.site",
       "User-Agent": "curl/7.78.0"
     },
     "method": "POST",
-    "path": "/webhook",
-    "query_args": {
-      "id": "35dfb46d-a9a5-48d3-89d2-de0135c09031",
-      "source": "102.89.34.215",
-      "subject": "test",
-      "test": "Hello World",
-      "type": "http-request"
-    }
-  }
+    "path": "/",
+    "query_args": {}
+  },
+  "xvhttpremoteip": "172.17.0.1",
+  "xvhttpremoteaddr": "172.17.0.1:57734",
+  "xvhttpbodyisjson": "true"
 }
-
 ```
+
+The body of the request is extracted from `data.body` in the cloud event and the headers are extracted from `data.headers` in the cloud event.
