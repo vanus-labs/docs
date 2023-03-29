@@ -15,6 +15,24 @@ To set up HTTP Sink, you must have:
 
 ## Getting Started
 
-In Vanus Cloud, select HTTP Sink and paste the payload URL into the "URL" field. You can also select the URL Method (POST, GET, PATCH, DELETE, PUT). Click "Next" to continue.
+In Vanus Cloud,
+
+1. Select HTTP Sink and
+2. Get a Payload URL from your app
+3. Paste the payload URL into the "URL" field and press Next
+
+You can also select the URL Method (POST, GET, PATCH, DELETE, PUT)
 
 ![](images/http.png)
+
+## Required Data Format
+
+The event data must be JSON format, here a simple message, example:
+
+```json
+{
+  "body": {
+    "test": "Hello World!"
+  }
+}
+```
