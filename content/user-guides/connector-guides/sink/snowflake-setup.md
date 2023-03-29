@@ -10,8 +10,8 @@ Snowflake is a cloud-based data warehousing platform that enables businesses to 
 
 Before forwarding events to Snowflake, you must have:
 
-- A Snowflake account with administrative privileges
-- A Vanus Cloud account
+- A [Snowflake](https://www.snowflake.com/) account with administrative privileges
+- A [Vanus Cloud](https://cloud.vanus.ai) account
 - A Snowflake table to which you want to send the events
 
 You will also need the following information from your Snowflake account:
@@ -28,15 +28,15 @@ You will also need the following information from your Snowflake account:
 
 To set up a Snowflake Sink in Vanus Cloud:
 
-1. In Vanus Cloud, go to "Sinks" and select "Snowflake".
+1. In Vanus Cloud, select "Snowflake" as your Sink Connector.
 2. Enter the required Snowflake account details: Account URL, Role, Warehouse, Database, Schema, Username, and Password.
-    - Account URL: This is the URL for your Snowflake account. You can find this in your Snowflake account homepage.
-    - Role: This is the name of the role that has the necessary privileges to perform operations on the Snowflake table. You can find this in the Snowflake web UI or by querying the Snowflake database.
-    - Warehouse: This is the name of the warehouse that will execute queries for the Snowflake table. You can find this in the Snowflake web UI or by querying the Snowflake database.
-    - Database: This is the name of the database that contains the Snowflake table. You can find this in the Snowflake web UI or by querying the Snowflake database.
-    - Schema: This is the name of the schema that contains the Snowflake table. You can find this in the Snowflake web UI or by querying the Snowflake database.
-    - Username: This is the username for your Snowflake account.
-    - Password: This is the password for your Snowflake account.
+    - **Account URL**: This is the URL for your Snowflake account. You can find this in your Snowflake account homepage.
+    - **Role**: This is the name of the role that has the necessary privileges to perform operations on the Snowflake table. You can find this in the Snowflake web UI or by querying the Snowflake database.
+    - **Warehouse**: This is the name of the warehouse that will execute queries for the Snowflake table. You can find this in the Snowflake web UI or by querying the Snowflake database.
+    - **Database**: This is the name of the database that contains the Snowflake table. You can find this in the Snowflake web UI or by querying the Snowflake database.
+    - **Schema**: This is the name of the schema that contains the Snowflake table. You can find this in the Snowflake web UI or by querying the Snowflake database.
+    - **Username**: This is the username for your Snowflake account.
+    - **Password**: This is the password for your Snowflake account.
 3. Enter the name of the table where you want to store the data.
 4. Click "Next" to continue.
 
