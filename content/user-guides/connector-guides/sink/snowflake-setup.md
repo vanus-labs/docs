@@ -30,11 +30,15 @@ To set up a Snowflake Sink in Vanus Cloud:
 
 1. In Vanus Cloud, select "Snowflake" as your Sink Connector.
 2. Enter the required Snowflake account details: Account URL, Role, Warehouse, Database, Schema, Username, and Password.
-    - **Account URL**: This is the URL for your Snowflake account. You can find this in your Snowflake account homepage.
-    - **Role**: This is the name of the role that has the necessary privileges to perform operations on the Snowflake table. You can find this in the Snowflake web UI or by querying the Snowflake database.
-    - **Warehouse**: This is the name of the warehouse that will execute queries for the Snowflake table. You can find this in the Snowflake web UI or by querying the Snowflake database.
-    - **Database**: This is the name of the database that contains the Snowflake table. You can find this in the Snowflake web UI or by querying the Snowflake database.
-    - **Schema**: This is the name of the schema that contains the Snowflake table. You can find this in the Snowflake web UI or by querying the Snowflake database.
+    - **Account URL**: This is the URL for your Snowflake account. 
+   ![](images/snowflakeurl.png)
+    - **Role**: This is the name of the role that has the necessary privileges to perform operations on the Snowflake table.
+   ![](images/rolesnowflake.png)
+    - **Warehouse**: This is the name of the warehouse that will execute queries for the Snowflake table.
+   ![](images/snowflakewarehouse.png)
+    - **Database**: This is the name of the database that contains the Snowflake table. 
+   ![](images/snowflakedatabase.png)
+    - **Schema**: This is the name of the schema that contains the Snowflake table.
     - **Username**: This is the username for your Snowflake account.
     - **Password**: This is the password for your Snowflake account.
 3. Enter the name of the table where you want to store the data.
