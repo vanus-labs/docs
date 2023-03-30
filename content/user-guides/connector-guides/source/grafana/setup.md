@@ -30,7 +30,7 @@ To obtain all Grafana events using the Streams menu and Webhook option in Vanus 
 5. Name your contact point and select the **Webhook** option.
    ![](images/webhook.png)
 6. Provide the payload URL of your Grafana source connector in Vanus Cloud.
-7. and Save your settings.
+7. Save your settings.
 
 ## Supported Events
 
