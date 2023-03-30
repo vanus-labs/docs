@@ -293,6 +293,7 @@ const sidebars = {
                 'user-guides/connector-guides/sink/feishu-setup',
                 'user-guides/connector-guides/sink/google-sheet-setup',
                 'user-guides/connector-guides/sink/snowflake-setup'
+                'user-guides/connector-guides/sink/display-setup'
               ],
             }
           ],
