@@ -281,6 +281,22 @@ const sidebars = {
                     }
                   ],
                 },
+                {
+                  type: 'category',
+                  label: 'Shopify',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/shopify/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/shopify/events',
+                      label: 'Output Events',
+                    },
+                  ],
+                },
 
                 /// add new connectors here
               ],
