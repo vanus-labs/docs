@@ -283,7 +283,7 @@ const sidebars = {
                 },
                 {
                   type: 'category',
-                  label: 'shopify',
+                  label: 'Shopify',
                   items: [
                     {
                       type: 'doc',
