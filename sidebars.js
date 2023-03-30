@@ -297,6 +297,22 @@ const sidebars = {
                     },
                   ],
                 },
+                {
+                  type: 'category',
+                  label: 'Grafana',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/grafana/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/grafana/events',
+                      label: 'Output Events',
+                    },
+                  ],
+                },
 
                 /// add new connectors here
               ],
