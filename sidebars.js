@@ -297,7 +297,22 @@ const sidebars = {
                     },
                   ],
                 },
-
+                {
+                  type: 'category',
+                  label: 'S3',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/s3/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/s3/events',
+                      label: 'Output Events',
+                    },
+                  ],
+                },
                 /// add new connectors here
               ],
             },
