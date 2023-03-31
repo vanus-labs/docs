@@ -8,6 +8,7 @@ Grafana is a powerful open-source data visualization and monitoring tool that ca
 
 ## Prerequisites
 
+- A [Vanus Cloud account](https://cloud.vanus.ai)
 - Grafana installed on your machine or an Account in Grafana Cloud
 
 ## Getting Started
@@ -21,7 +22,7 @@ To obtain all Grafana events using the Streams menu and Webhook option in Vanus 
 5. Select your connection and get the payload from the Grafana information.
    ![](images/payload.png)
 
-### Configuring Auth0 to Send Webhook Events
+### Configuring Grafana to Send Webhook Events
 
 1. Log in to your Grafana account.
 2. Navigate to the **Alerting** menu in the **Menu** Tab.
