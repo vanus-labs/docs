@@ -297,6 +297,22 @@ const sidebars = {
                     },
                   ],
                 },
+                {
+                  type: 'category',
+                  label: 'Amazon Billing',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/amazon-billing/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/amazon-billing/events',
+                      label: 'Output Events',
+                    },
+                  ],
+                },
 
                 /// add new connectors here
               ],
