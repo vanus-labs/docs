@@ -297,9 +297,9 @@ const sidebars = {
                     },
                   ],
                 },
-                {
+                 {
                   type: 'category',
-                  label: 'Amazon Billing',
+                  label: 'AWS Billing',
                   items: [
                     {
                       type: 'doc',
@@ -315,13 +315,29 @@ const sidebars = {
                 },
                  {
                   type: 'category',
-                 label: 'Grafana',
+                  label: 'AWS S3',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/s3/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/s3/events',
+                      label: 'Output Events',
+                    },
+                  ],
+                },
+                 {
+                  type: 'category',
+                  label: 'Grafana',
                   items: [
                     {
                       type: 'doc',
                       id: 'user-guides/connector-guides/source/grafana/setup',
-                       label: 'Setup Guide',
-                       },
+                      label: 'Setup Guide',
+                    },
                     {
                       type: 'doc',
                       id: 'user-guides/connector-guides/source/grafana/events',
