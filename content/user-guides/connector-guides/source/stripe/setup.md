@@ -33,8 +33,8 @@ To obtain all Stripe events using the Webhook option in Vanus Cloud, follow thes
 
 ## Supported Events
 
-- Charge Succeded
+- [Charge Succeded](events.md#charge-succeded)
 
-- Invoice Paid
+- [Invoice Paid](events.md#invoice-paid)
 
-- Customer Subscription Update
+- [Customer Subscription Update](events.md#customer-subscription-updated)
