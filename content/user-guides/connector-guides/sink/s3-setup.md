@@ -1,4 +1,4 @@
-# Google Sheets
+# S3
 
 This guide contains information to set up S3 Sink in Vanus Cloud.
 
