@@ -346,6 +346,23 @@ const sidebars = {
                   ],
                 },
 
+                {
+                  type: 'category',
+                  label: 'Stripe',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/stripe/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/stripe/events',
+                      label: 'Output Events',
+                    },
+                  ],
+                },
+
                 /// add new connectors here
               ],
             },
