@@ -120,7 +120,7 @@ For example, you can create template in the following way:
 "template": "user <login> at <$.time> stared the repository <$.data.source>"
 ```
 
-The event will became:
+The event will become:
 
 ```json
 {
