@@ -8,7 +8,7 @@ Amazon S3 (Simple Storage Service) is a highly scalable and durable object stora
 
 ## Prerequisites
 
-Before forwarding events to Google Sheets, you must have:
+Before forwarding events to an S3 bucket, you must have:
 
 - A [Vanus Cloud account](https://cloud.vanus.ai)
 - An Amazon S3 bucket.
