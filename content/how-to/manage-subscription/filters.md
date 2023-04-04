@@ -22,7 +22,7 @@ vsctl subscription create \
     ]'
 ```
 
-Vanus filters are fully compatible with [CloudEvents filters][ce-filters]. It also supports the filtering of the data part when it is in a JSON format. The parameter 'filters' is an array of filter expressions. Each element is an object with only one key. Here are some filtering types.
+Vanus filters are fully compatible with [CloudEvents filters][ce-filters]. Filters also support filtering of the data part when it is in a JSON format. The parameter 'filters' is an array of filter expressions, and each element is an object with only one key. Here are some filtering types.
 
 ### Exact
 
