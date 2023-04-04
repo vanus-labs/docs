@@ -363,6 +363,23 @@ const sidebars = {
                   ],
                 },
 
+                {
+                  type: 'category',
+                  label: 'Amazon Eventbridge',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/amazon-eventbridge/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/amazon-eventbridge/events',
+                      label: 'Output Events',
+                    },
+                  ],
+                },
+
                 /// add new connectors here
               ],
             },
