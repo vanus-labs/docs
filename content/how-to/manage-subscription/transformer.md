@@ -9,14 +9,14 @@ Although it is still possible to partially use the transformer tool to get the C
 
 ## Uses And Example
 
-When creating a subscription, you will have three parameter options: `define, pipeline and template`.
+When creating a subscription, you can use parameter --transformer which have three parameter options: `define`, `pipeline` and `template`.
 
 For example:
 
 ```shell
 vsctl subscription create \
-  --name testeb \
-  --eventbus testeb \
+  --name quick-start \
+  --eventbus quick-start \
   --sink 'http://localhost:8080' \
   --transformer '{
       "define": {
@@ -31,63 +31,130 @@ vsctl subscription create \
     }'
 ```
 
-## Define
-
-The parameter `define` is used to define variables. Using JSON path to reference items in the CloudEvent and store those values in variables. The following is an example event.
+The original event:
 
 ```json
 {
-  "specversion": "1.0",
-  "id": "4395ffa3-f6de-443c-bf0e-bb9798d26a1d",
-  "source": "cloud.aws.billing",
-  "type": "aws.service.daily",
-  "datacontenttype": "application/json",
-  "time": "2022-06-14T07:05:55.777689Z",
-  "vanuskey": "vanusValue",
-  "data": {
-    "date": "2022-06-13",
-    "service": "Amazon Elastic Compute Cloud - Compute",
-    "amount": "12.294",
-    "unit": "USD"
-  }
+    "id": "080e28a0-b437-11ed-9250-18275c0cc45b",
+    "source": "https://api.github.com/repos/vanus-demo/test-repo",
+    "type": "com.github.star.created",
+    "datacontenttype": "application/json",
+    "time": "2022-02-21T07:32:44.190Z",
+    "vanusattr": "vanus"
+    "data": {
+        "action": "created",
+        "sender": {
+            "login": "vanus-demo",
+            "type": "User"
+        }
+    }
 }
 ```
 
-For instance, you can define variables like:
+## Define
+
+The parameter `define` is used to define variables. Using JSON path to reference items in the CloudEvent and store those values in variables.
+
+For example, you can define variables like:
 
 ```json
 "define": {
   "source": "$.source",
-  "date": "$.data.date",
-  "amount": "$.data.amount",
-  "unit": "$.data.unit",
-  "service": "$.data.service"
+  "vanusattr": "$.vanusattr",
+  "login": "$.data.sender.login",
+  "sender": "$.data.sender",
+  "action": "$.data.action"
 }
 ```
 
-## Function
+## Pipeline
 
-The parameter pipeline helps you define functions. These functions create, delete, move, rename, etc. They can give you the ability to make specific changes to your data.
+The parameter `pipeline` helps you define functions. These functions create, delete, move, rename, etc. They can give you the ability to make specific changes to your data.
 
 Refer to the [function reference](function-reference.md) document for more information.
 
-For example:
+For example, you can create pipelines in the following way:
 
 ```json
 "pipeline": [
     {"command":["create","$.data.source","$.source"]},
-    {"command":["delete","$.vanuskey"]}
+    {"command":["create","$.login","<login>"]},
+    {"command":["move","$.data.sender.type","$.data.type"]},
+    {"command":["delete","$.vanusattr"]},
+    {"command":["delete","$.data.sender"]},
+    {"command":["upper_case","$.data.action"]}
 ]
+```
+
+The the event will became:
+
+```json
+{
+    "id": "080e28a0-b437-11ed-9250-18275c0cc45b",
+    "source": "https://api.github.com/repos/vanus-demo/test-repo",
+    "type": "com.github.star.created",
+    "datacontenttype": "application/json",
+    "time": "2022-02-21T07:32:44.190Z",
+    "login": "vanus-demo",
+    "data": {
+        "source": "https://api.github.com/repos/vanus-demo/test-repo",
+        "type": "User",
+        "action": "CREATED"
+    }
+}
 ```
 
 ## Template
 
-The parameter template is where you can structure events with the variables created in define, which will be sent to the Sink connector in the format created. You can create a template either in a string or a JSON format.
+The parameter `template` is where you can structure events with the variables created in define which grammar like `<source>`  or in JSON path which's grammar like `<$.data.source>`, which will be sent to the Sink connector in the format created. You can create a template either in a string or a JSON format.
 
-| description                | template                                                     | CloudEvent data                                                                           |
-|----------------------------|--------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| simple string              | Billing `<date>` amount `<amount>` `<unit>`                  | Billing 2022-06-13 amount 12.194 USD                                                    |
-| string with escaped quotes | Billing `<date>` service `<service>` amount `<amount>` `<unit>` | Billing 2022-06-13 "Amazon Elastic Compute Cloud - Compute" amount 12.194 USD           |
-| simple JSON                | {<br/>  "service": `<service>`,<br/>  "amount":`<amount>`<br/>} | {<br/>  "service": "Amazon Elastic Compute Cloud - Compute",<br/>  "amount": "12.194"<br/>} |
+:::tip
+The template will replace the event data.
+:::
 
-> The template will replace the variables with the data for each event.
+### String
+
+For example, you can create template in the following way:
+
+```json
+"template": "user <login> at <$.time> stared the repository <$.data.source>"
+```
+
+The event will become:
+
+```json
+{
+    "id": "080e28a0-b437-11ed-9250-18275c0cc45b",
+    "source": "https://api.github.com/repos/vanus-demo/test-repo",
+    "type": "com.github.star.created",
+    "datacontenttype": "text/plain",
+    "time": "2022-02-21T07:32:44.190Z",
+    "login": "vanus-demo",
+    "data": "user vanus-demo at 2022-02-21T07:32:44.190Z stared the repository https://api.github.com/repos/vanus-demo/test-repo"
+}
+```
+
+### JSON
+
+For example, you can create a template in the following way:
+
+```json
+"template": "{\"user\": \"<login>\",\"content\": \"stared the repository <$.data.source>\"}"
+```
+
+The event will become:
+
+```json
+{
+    "id": "080e28a0-b437-11ed-9250-18275c0cc45b",
+    "source": "https://api.github.com/repos/vanus-demo/test-repo",
+    "type": "com.github.star.created",
+    "datacontenttype": "text/plain",
+    "time": "2022-02-21T07:32:44.190Z",
+    "login": "vanus-demo",
+    "data": {
+        "user": "vanus-demo",
+        "content": "stared the repository https://api.github.com/repos/vanus-demo/test-repo"
+    }
+}
+```
