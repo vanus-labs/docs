@@ -73,7 +73,7 @@ The parameter `pipeline` helps you define functions. These functions create, del
 
 Refer to the [function reference](function-reference.md) document for more information.
 
-For example, you can create pipeline like:
+For example, you can create pipelines in the following way:
 
 ```json
 "pipeline": [
