@@ -114,7 +114,7 @@ The template will replace the event data.
 
 ### String
 
-For example, you can create template like:
+For example, you can create template in the following way:
 
 ```json
 "template": "user <login> at <$.time> stared the repository <$.data.source>"
