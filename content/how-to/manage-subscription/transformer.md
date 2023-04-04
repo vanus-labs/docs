@@ -142,7 +142,7 @@ For example, you can create a template in the following way:
 "template": "{\"user\": \"<login>\",\"content\": \"stared the repository <$.data.source>\"}"
 ```
 
-The event will became:
+The event will become:
 
 ```json
 {
