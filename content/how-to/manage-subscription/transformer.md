@@ -136,7 +136,7 @@ The event will become:
 
 ### JSON
 
-For example, you can create template like:
+For example, you can create a template in the following way:
 
 ```json
 "template": "{\"user\": \"<login>\",\"content\": \"stared the repository <$.data.source>\"}"
