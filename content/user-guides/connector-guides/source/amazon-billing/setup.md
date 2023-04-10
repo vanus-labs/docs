@@ -25,6 +25,53 @@ To obtain all Billing events using the Streams menu and Webhook option in Vanus 
 
 ## Supported Events
 
+
+- CreateBudget
+
+- CreateBudgetAction
+
+- CreateNotification
+
+- CreateSubscriber
+
+- DeleteBudget
+
+- DeleteBudgetAction
+
+- DeleteNotification
+
+- DeleteSubscriber
+
+- DescribeBudget
+
+- DescribeBudgetAction
+
+- DescribeBudgetActionHistories
+
+- DescribeBudgetActionsForAccount
+
+- DescribeBudgetActionsForBudget
+
+- DescribeBudgetNotificationsForAccount
+
+- DescribeBudgetPerformanceHistory
+
+- DescribeBudgets
+
+- DescribeNotificationsForBudget
+
+- DescribeSubscribersForNotification
+
+- ExecuteBudgetAction
+
+- UpdateBudget
+
+- UpdateBudgetAction
+
+- UpdateNotification
+
+- UpdateSubscriber
+
 - Billing alerts
 
 - Budget notifications
@@ -32,3 +79,4 @@ To obtain all Billing events using the Streams menu and Webhook option in Vanus 
 - Cost and usage reports
 
 - Payment and refund events
+

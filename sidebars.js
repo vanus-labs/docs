@@ -331,13 +331,29 @@ const sidebars = {
                 },
                  {
                   type: 'category',
-                  label: 'Grafana',
+                  label: 'Amazon Billing',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/amazon-billing/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/amazon-billing/events',
+                      label: 'Output Events',
+                    },
+                  ],
+                },
+                 {
+                  type: 'category',
+                 label: 'Grafana',
                   items: [
                     {
                       type: 'doc',
                       id: 'user-guides/connector-guides/source/grafana/setup',
-                      label: 'Setup Guide',
-                    },
+                       label: 'Setup Guide',
+                       },
                     {
                       type: 'doc',
                       id: 'user-guides/connector-guides/source/grafana/events',
