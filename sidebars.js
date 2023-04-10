@@ -297,7 +297,39 @@ const sidebars = {
                     },
                   ],
                 },
-                {
+                 {
+                  type: 'category',
+                  label: 'AWS Billing',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/amazon-billing/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/amazon-billing/events',
+                      label: 'Output Events',
+                    },
+                  ],
+                },
+                 {
+                  type: 'category',
+                  label: 'AWS S3',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/s3/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/s3/events',
+                      label: 'Output Events',
+                    },
+                  ],
+                },
+                 {
                   type: 'category',
                   label: 'Amazon Billing',
                   items: [
@@ -330,6 +362,40 @@ const sidebars = {
                   ],
                 },
 
+                {
+                  type: 'category',
+                  label: 'Stripe',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/stripe/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/stripe/events',
+                      label: 'Output Events',
+                    },
+                  ],
+                },
+
+                {
+                  type: 'category',
+                  label: 'Amazon Eventbridge',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/amazon-eventbridge/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/amazon-eventbridge/events',
+                      label: 'Output Events',
+                    },
+                  ],
+                },
+
                 /// add new connectors here
               ],
             },
@@ -341,7 +407,8 @@ const sidebars = {
                 'user-guides/connector-guides/sink/feishu-setup',
                 'user-guides/connector-guides/sink/google-sheet-setup',
                 'user-guides/connector-guides/sink/snowflake-setup',
-                'user-guides/connector-guides/sink/display-setup'
+                'user-guides/connector-guides/sink/display-setup',
+                'user-guides/connector-guides/sink/s3-setup'
               ],
             }
           ],
