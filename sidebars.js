@@ -392,7 +392,8 @@ const sidebars = {
                 'user-guides/connector-guides/sink/google-sheet-setup',
                 'user-guides/connector-guides/sink/snowflake-setup',
                 'user-guides/connector-guides/sink/display-setup',
-                'user-guides/connector-guides/sink/s3-setup'
+                'user-guides/connector-guides/sink/s3-setup',
+                'user-guides/connector-guides/sink/slack-setup'
               ],
             }
           ],
