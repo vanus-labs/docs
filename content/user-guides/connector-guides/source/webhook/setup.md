@@ -20,7 +20,7 @@ To obtain a unique Webhook URL in Vanus Cloud, follow these steps:
 2. Click on the **create connection** button under connections.
 3. From the list of sources, choose **Webhook**.
 4. Click next and complete sink connection and subscription to finish the configurations.
-5. Select your connection and get the payload from the Webhook information.
+5. After creating your connection, select your connection and get the payload from the Webhook information.
    ![](images/payload.png)
 
 ## Supported Events

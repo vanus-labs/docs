@@ -18,8 +18,8 @@ To obtain all Amazon Eventbridge events in Vanus Cloud, follow these steps:
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
 3. From the list of sources, choose **Amazon Eventbridge**.
-4. Click next and finish the configurations.
-   ![](images/eventbridge.png)
+4. Click **`Next`** to save the Amazon EventBridge Source
+5. [](images/eventbridge.png)
 
 ## Supported Events
 
