@@ -31,13 +31,13 @@ To set up a Snowflake Sink in Vanus Cloud:
 1. In Vanus Cloud, select "Snowflake" as your Sink Connector.
 2. Enter the required Snowflake account details: Account URL, Role, Warehouse, Database, Schema, Username, and Password.
     - **Account URL**: This is the URL for your Snowflake account. 
-   ![](content/user-guides/connector-guides/sink/images/snowflakeurl.png)
+   ![](images/snowflakeurl.png)
     - **Role**: This is the name of the role that has the necessary privileges to perform operations on the Snowflake table.
-   ![](content/user-guides/connector-guides/sink/images/rolesnowflake.png)
+   ![](images/rolesnowflake.png)
     - **Warehouse**: This is the name of the warehouse that will execute queries for the Snowflake table.
-   ![](content/user-guides/connector-guides/sink/images/snowflakewarehouse.png)
+   ![](images/snowflakewarehouse.png)
     - **Database**: This is the name of the database that contains the Snowflake table. 
-   ![](content/user-guides/connector-guides/sink/images/snowflakedatabase.png)
+   ![](images/snowflakedatabase.png)
     - **Schema**: This is the name of the schema that contains the Snowflake table.
     - **Username**: This is the username for your Snowflake account.
     - **Password**: This is the password for your Snowflake account.

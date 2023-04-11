@@ -23,7 +23,7 @@ In Vanus Cloud,
 
 You can also select the URL Method (POST, GET, PATCH, DELETE, PUT)
 
-![](content/user-guides/connector-guides/sink/images/http.png)
+![](images/http.png)
 
 ## Required Data Format
 

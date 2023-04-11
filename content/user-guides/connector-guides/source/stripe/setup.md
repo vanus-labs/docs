@@ -20,7 +20,7 @@ To obtain all Stripe events using the Webhook option in Vanus Cloud, follow thes
 3. From the list of sources, choose **Stripe**.
 4. Click next and finish the configurations.
 5. After creating your connection, select your connection and get the payload from the Grafana information.
-   ![](content/user-guides/connector-guides/source/stripe/images/stripe.png)
+   ![](images/stripe.png)
 
 ### Configuring Stripe to Send Webhook Events
 
@@ -33,8 +33,8 @@ To obtain all Stripe events using the Webhook option in Vanus Cloud, follow thes
 
 ## Supported Events
 
-- [Charge Succeded](content/user-guides/connector-guides/source/stripe/events.md#charge-succeded)
+- [Charge Succeded](events.md#charge-succeded)
 
-- [Invoice Paid](content/user-guides/connector-guides/source/stripe/events.md#invoice-paid)
+- [Invoice Paid](events.md#invoice-paid)
 
-- [Customer Subscription Update](content/user-guides/connector-guides/source/stripe/events.md#customer-subscription-updated)
+- [Customer Subscription Update](events.md#customer-subscription-updated)

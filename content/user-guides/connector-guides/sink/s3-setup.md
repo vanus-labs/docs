@@ -21,12 +21,12 @@ Before forwarding events to an S3 bucket, you must have:
 Create a new user and set the proper IAM policy.
 1. Log in to the AWS Management Console using your root account credentials.
 2. Navigate to the IAM service by clicking on the Services menu and selecting IAM.
-   ![](content/user-guides/connector-guides/sink/img-aws/findIAM.png)
+   ![](img-aws/findIAM.png)
 3. Click on the Users tab in the left navigation menu, and then click the Add user button.
-   ![](content/user-guides/connector-guides/sink/img-aws/AddUser.png)
+   ![](img-aws/AddUser.png)
 4. Write the name for your user and click next.
 5. select attach policy directly, and Create policy.
-   ![](content/user-guides/connector-guides/sink/img-aws/permissionoption.png)
+   ![](img-aws/permissionoption.png)
 6. select the Service 's3' and give it the following policy
     - "s3:PutObject",
     - "s3:GetObject",
@@ -39,10 +39,10 @@ Create a new user and set the proper IAM policy.
 10. Review and press create user.
 11. Now click on the user you just created.
 12. Go to 'Access Key' Click Create access key.
-    ![](content/user-guides/connector-guides/sink/img-aws/createAccesskey.png)
+    ![](img-aws/createAccesskey.png)
 13. Select Command line interface CLI, and press next.
 14. Save your access key and secret key safely.
-    ![](content/user-guides/connector-guides/sink/img-aws/img.png)
+    ![](img-aws/img.png)
 
 ### Config your connection
 **To set up S3 Sink in Vanus Cloud:**
