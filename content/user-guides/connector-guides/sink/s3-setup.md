@@ -17,7 +17,34 @@ Before forwarding events to an S3 bucket, you must have:
   - s3:PutObject
 
 ## Getting Started
+### Create a new AWS user
+Create a new user and set the proper IAM policy.
+1. Log in to the AWS Management Console using your root account credentials.
+2. Navigate to the IAM service by clicking on the Services menu and selecting IAM.
+   ![](content/user-guides/connector-guides/sink/img-aws/findIAM.png)
+3. Click on the Users tab in the left navigation menu, and then click the Add user button.
+   ![](content/user-guides/connector-guides/sink/img-aws/AddUser.png)
+4. Write the name for your user and click next.
+5. select attach policy directly, and Create policy.
+   ![](content/user-guides/connector-guides/sink/img-aws/permissionoption.png)
+6. select the Service 's3' and give it the following policy
+    - "s3:PutObject",
+    - "s3:GetObject",
+    - "s3:GetObjectVersion",
+    - "s3:DeleteObject",
+    - "s3:DeleteObjectVersion"
+7. press next and review.
+8. Name your policy and click create policy.
+9. search for your custom policy and add it to your account, and press next.
+10. Review and press create user.
+11. Now click on the user you just created.
+12. Go to 'Access Key' Click Create access key.
+    ![](content/user-guides/connector-guides/sink/img-aws/createAccesskey.png)
+13. Select Command line interface CLI, and press next.
+14. Save your access key and secret key safely.
+    ![](content/user-guides/connector-guides/sink/img-aws/img.png)
 
+### Config your connection
 **To set up S3 Sink in Vanus Cloud:**
 
 1. In Vanus Cloud, go to "Sinks" and select "S3".
@@ -26,7 +53,7 @@ Before forwarding events to an S3 bucket, you must have:
    - Secret Access Key
    - Region
    - Bucketname
-     ![](images/s3-sink.png)
+     ![](img-aws/s3-sink.png)
 3. Select the interval you want the files uploaded; `HOURLY` or `DAILY`
 4. Click next and finish the configurations.
 5. Click "Next" to continue.

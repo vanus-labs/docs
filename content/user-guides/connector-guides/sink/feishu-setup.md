@@ -22,7 +22,7 @@ Before forwarding events to Feishu, you must have:
 2. Click on "Add Bot" and select "From Scratch".
 3. Enter a name for your bot and click "Continue".
 4. Copy the payload URL for your bot.
-![](images/payload-feishu.png)
+![](content/user-guides/connector-guides/sink/images/payload-feishu.png)
 5. In Vanus Cloud, select Feishu Sink and paste the payload URL into the "URL" field.
 Click "Next" to continue.
 

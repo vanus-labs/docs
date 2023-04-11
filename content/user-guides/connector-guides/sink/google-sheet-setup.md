@@ -20,10 +20,10 @@ Before forwarding events to Google Sheets, you must have:
 
 1. In Vanus Cloud, go to "Sinks" and select "Google Sheets".
 2. Click on "Sign in with Google" and follow the process to sign in to your Google account.
-![](images/google-sign-in.png)
+![](content/user-guides/connector-guides/sink/images/google-sign-in.png)
 3. Go to [Google Docs](https://docs.google.com) and create a new Google Sheet.
 4. Obtain the Google Sheet ID from the URL. The ID is the long string of characters that comes after the "/spreadsheets/d/" in the URL.
-![](images/google-fields.png)
+![](content/user-guides/connector-guides/sink/images/google-fields.png)
 5. Obtain the name of the sheet where you want to store the data.
 6. In Vanus Cloud, paste the Google Sheet ID and sheet name into the corresponding fields.
 7. Click "Next" to continue.

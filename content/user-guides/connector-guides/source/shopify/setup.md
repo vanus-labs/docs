@@ -21,14 +21,14 @@ To obtain Shopify events using the Shopify source connector in Vanus Cloud, foll
 2. Click on the **create connection** button under connections.
 2. From the list of sources, choose **Shopify**.
 3. Provide the name of your shop.
-   ![](images/shopify.png)
+   ![](content/user-guides/connector-guides/source/shopify/images/shopify.png)
 3. Click next and finish the configurations.
 
 
 ## Supported Events
 
 Customers: 
-- [Customer creation](events.md#customer-creation)
+- [Customer creation](content/user-guides/connector-guides/source/shopify/events.md#customer-creation)
 - Customer update 
 - Customer deletion
 
