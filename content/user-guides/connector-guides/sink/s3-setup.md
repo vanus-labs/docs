@@ -53,7 +53,7 @@ Create a new user and set the proper IAM policy.
    - Secret Access Key
    - Region
    - Bucketname
-     ![](img-aws/s3-sink.png)
+     ![](s3-sink.png)
 3. Select the interval you want the files uploaded; `HOURLY` or `DAILY`
 4. Click next and finish the configurations.
 5. Click "Next" to continue.
