@@ -393,12 +393,9 @@ const sidebars = {
                 'user-guides/connector-guides/sink/snowflake-setup',
                 'user-guides/connector-guides/sink/display-setup',
                 'user-guides/connector-guides/sink/s3-setup',
-<<<<<<< HEAD
-                'user-guides/connector-guides/sink/doris-setup'
-=======
-                'user-guides/connector-guides/sink/mysql-setup'
+                'user-guides/connector-guides/sink/doris-setup',
+                'user-guides/connector-guides/sink/mysql-setup',
                 'user-guides/connector-guides/sink/slack-setup'
->>>>>>> bcf002b71d0e89a7b64dcab859c3a4203a9036a9
               ],
             }
           ],
