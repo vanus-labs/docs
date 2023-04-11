@@ -299,22 +299,6 @@ const sidebars = {
                 },
                  {
                   type: 'category',
-                  label: 'AWS Billing',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/amazon-billing/setup',
-                      label: 'Setup Guide',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/amazon-billing/events',
-                      label: 'Output Events',
-                    },
-                  ],
-                },
-                 {
-                  type: 'category',
                   label: 'AWS S3',
                   items: [
                     {
@@ -331,13 +315,29 @@ const sidebars = {
                 },
                  {
                   type: 'category',
-                  label: 'Grafana',
+                  label: 'Amazon Billing',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/amazon-billing/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/amazon-billing/events',
+                      label: 'Output Events',
+                    },
+                  ],
+                },
+                 {
+                  type: 'category',
+                 label: 'Grafana',
                   items: [
                     {
                       type: 'doc',
                       id: 'user-guides/connector-guides/source/grafana/setup',
-                      label: 'Setup Guide',
-                    },
+                       label: 'Setup Guide',
+                       },
                     {
                       type: 'doc',
                       id: 'user-guides/connector-guides/source/grafana/events',
@@ -391,7 +391,10 @@ const sidebars = {
                 'user-guides/connector-guides/sink/feishu-setup',
                 'user-guides/connector-guides/sink/google-sheet-setup',
                 'user-guides/connector-guides/sink/snowflake-setup',
-                'user-guides/connector-guides/sink/display-setup'
+                'user-guides/connector-guides/sink/display-setup',
+                'user-guides/connector-guides/sink/s3-setup',
+                'user-guides/connector-guides/sink/mysql-setup'
+                'user-guides/connector-guides/sink/slack-setup'
               ],
             }
           ],

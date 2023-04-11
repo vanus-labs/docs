@@ -9,7 +9,7 @@ Source connector obtains data from an underlying data producer and delivers it t
 
 ## Connectors List
 
-- [Alibaba Cloud Billing](connectors/source/source-alicloud-billing)
+- [Alibaba Cloud Billing](source/source-alicloud-billing)
 - [Amazon Billing](source/source-aws-billing)
 - [Amazon S3](source/source-aws-s3)
 - [Amazon SNS](source/source-aws-sns)

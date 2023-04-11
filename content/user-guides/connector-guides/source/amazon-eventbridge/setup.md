@@ -13,7 +13,9 @@ Amazon EventBridge is a serverless service that uses events to connect applicati
 
 ## Getting Started
 
+
 To obtain all Amazon Eventbridge events using Webhook in Vanus Cloud, follow these steps:
+
 
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
@@ -32,6 +34,7 @@ To obtain all Amazon Eventbridge events using Webhook in Vanus Cloud, follow the
 4. Enter the name of endpoint, the API destination endpoint, and HTTP method
 5. Click on Create to Create an API endpoint
    ![](images/eventbridge-apidestinations.png)
+
 
 ## Supported Events
 

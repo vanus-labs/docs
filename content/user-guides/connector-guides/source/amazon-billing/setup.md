@@ -14,16 +14,87 @@ AWS Billing is a service provided by Amazon Web Services (AWS) that allows you t
 
 ## Getting Started
 
-To obtain all Billing events using the Streams menu and Webhook option in Vanus Cloud, follow these steps:
+### Create a new AWS user
+Create a new user and set the proper IAM policy.
+1. Log in to the AWS Management Console using your root account credentials.
+2. Navigate to the IAM service by clicking on the Services menu and selecting IAM.
+![](images/findIAM.png)
+3. Click on the Users tab in the left navigation menu, and then click the Add user button.
+![](images/AddUser.png)
+4. Write the name for your user and click next.
+5. select attach policy directly, and Create policy.
+![](images/permissionoption.png)
+6. select the Service 'Cost Explore Service' and give it the following policy.
+   - "ce:GetCostAndUsage",
+7. press next and review.
+8. Name your policy and click create policy.
+9. search for your custom policy and add it to your account, and press next.
+10. Review and press create user.
+11. Now click on the user you just created.
+12. Go to 'Access Key' Click Create access key.
+![](images/createAccesskey.png)
+13. Select Command line interface CLI, and press next.
+14. Save your access key and secret key safely.
+![](images/img.png)
+### Config your connection
+To obtain all Billing events in Vanus Cloud, follow these steps:
 
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
 3. From the list of sources, choose **Amazon Billing**.
-4. Fill in your Acess Key ID and your Secret Key and click next
-5. Select Sink and Configure Subscription, and click Submit button
+4. Fill in your Access Key ID and your Secret Key and click next
+   - To get a new access and secret key, go to the IAM console, select your username under Users, open the Security credentials tab, click Create access key, and then choose Show to view your new credentials.
+5. Click **`Next`** to save the Amazon Billing Source
    ![](images/aws-billing.png)
 
 ## Supported Events
+
+
+- CreateBudget
+
+- CreateBudgetAction
+
+- CreateNotification
+
+- CreateSubscriber
+
+- DeleteBudget
+
+- DeleteBudgetAction
+
+- DeleteNotification
+
+- DeleteSubscriber
+
+- DescribeBudget
+
+- DescribeBudgetAction
+
+- DescribeBudgetActionHistories
+
+- DescribeBudgetActionsForAccount
+
+- DescribeBudgetActionsForBudget
+
+- DescribeBudgetNotificationsForAccount
+
+- DescribeBudgetPerformanceHistory
+
+- DescribeBudgets
+
+- DescribeNotificationsForBudget
+
+- DescribeSubscribersForNotification
+
+- ExecuteBudgetAction
+
+- UpdateBudget
+
+- UpdateBudgetAction
+
+- UpdateNotification
+
+- UpdateSubscriber
 
 - Billing alerts
 
@@ -32,3 +103,4 @@ To obtain all Billing events using the Streams menu and Webhook option in Vanus 
 - Cost and usage reports
 
 - Payment and refund events
+

@@ -19,9 +19,9 @@ To obtain all Auth0 events using the Streams menu and Webhook option in Vanus Cl
 
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
-2. From the list of sources, choose **Auth0**.
-3. Click next and finish the configurations.
-4. Select your connection and get the payload from the Auth0 information.
+3. From the list of sources, choose **Auth0**. 
+4. Click **`Next`** to save the Auth0 Source.
+5. After creating your connection, select your connection and get the payload from the Auth0 information.
 ![](images/payload.png)
 ### Configuring Auth0 to Send Webhook Events
 
