@@ -19,24 +19,24 @@ Before forwarding events to Feishu, you must have:
 
 1. In Vanus Cloud, go to "Sinks" and select "Doris".
 2. Provide the following credentials
-   - Fenodes
-   - Database Name
-   - Table Name
-   - Username
-   - Password
+
+   - Fenodes: Enter the comma-separated list of FQDNs or IP addresses of the nodes that make up your Doris cluster.
+   - Database Name: Enter the name of the database that you want to use for the sink.
+   - Table Name: Enter the name of the table that you want to use for the sink.
+   - Username: Enter the username that you want to use to connect to your Doris database.
+   - Password: Enter the password that corresponds to the username you entered in the previous step.
      ![](images/doris.png)
-3. Click Next and finish the configurations.
 
-## Required Data Format
+3. Click Next
 
-The event data must be JSON format, here a simple message, example:
+## Custom Connection
+
+Create your template following the structure of your database, an example:
 
 ```json
 {
-  "data": {
-    "id": 1,
-    "username": "name",
-    "birthday": "2022-11-20"
-  }
+  "title": "value",
+  "date": "value",
+  "ect...": "value"
 }
 ```
