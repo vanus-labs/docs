@@ -1,6 +1,6 @@
 # Doris
 
-This guide contains information to set up a Feishu Sink in Vanus Cloud.
+This guide contains information to set up a Doris Sink in Vanus Cloud.
 
 ## Introduction
 
