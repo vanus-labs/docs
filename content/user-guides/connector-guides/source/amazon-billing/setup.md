@@ -20,7 +20,8 @@ To obtain all Billing events using the Streams menu and Webhook option in Vanus 
 2. Click on the **create connection** button under connections.
 3. From the list of sources, choose **Amazon Billing**.
 4. Fill in your Acess Key ID and your Secret Key and click next
-5. Select Sink and Configure Subscription, and click Submit button
+   - To get a new access and secret key, go to the IAM console, select your user name under Users, open the Security credentials tab, click Create access key, and then choose Show to view your new credentials.
+5. Click **`Next`** to save the Amazon Billing Source
    ![](images/aws-billing.png)
 
 ## Supported Events

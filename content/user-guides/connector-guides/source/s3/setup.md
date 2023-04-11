@@ -30,11 +30,8 @@ To obtain S3 Bucket events using the S3 source connector in Vanus Cloud, follow 
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
 3. From the list of sources, choose **S3**.
-4. Provide the following credentials
-   - Access Key ID
-   - Secret Access Key
-   - Bucket ARN
-   - SQS ARN
+4. Provide the following credentials Access Key ID, Secret Access Key, Bucket ARN, and SQS ARN.
+    - To get a new access and secret key, go to the IAM console, select your user name under Users, open the Security credentials tab, click Create access key, and then choose Show to view your new credentials.
      ![](images/s3.png)
 5. Select the kind of event you want to receive from the list
 6. Click next and finish the configurations.
