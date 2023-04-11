@@ -20,7 +20,7 @@ Before forwarding events to MySQL, you must have:
 
 1. In Vanus Cloud, go to "Sinks" and select "MySQL".
 2. Provide the following credentials
-   - Host
+   - Host: Enter the hostname or IP address of your MySQL server
    - Port
    - Username
    - Password
@@ -29,17 +29,14 @@ Before forwarding events to MySQL, you must have:
      ![](images/mysql.png)
 3. Click Next and finish the configurations.
 
-## Required Data Format
+## Custom Connection
 
-The event data must be JSON format, here a simple message, example:
+Create your template following the structure of your database, an example:
 
 ```json
 {
-  "data": {
-    "id": 1,
-    "name": "xdl",
-    "description": "Development Manager",
-    "date": "2023-03-06"
-  }
+  "title": "value",
+  "date": "value",
+  "ect...": "value"
 }
 ```
