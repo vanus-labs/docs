@@ -6,7 +6,7 @@ AWS Billing Source generates **[CloudEvents](https://docs.vanus.ai/reference/clo
 
 ## Sample Event
 
-- Get Cost And Usage
+### Get Cost And Usage
 
 ```json
 {
