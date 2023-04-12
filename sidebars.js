@@ -395,6 +395,7 @@ const sidebars = {
                 'user-guides/connector-guides/sink/s3-setup',
                 'user-guides/connector-guides/sink/doris-setup',
                 'user-guides/connector-guides/sink/mysql-setup',
+                'user-guides/connector-guides/sink/mongodb-setup',
                 'user-guides/connector-guides/sink/slack-setup',
                 'user-guides/connector-guides/sink/elasticsearch-setup'
               ],
