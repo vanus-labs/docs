@@ -59,7 +59,7 @@ curl --location --request POST 'https://hu7xxxxxxxxx.connector.vanustest.com' \
    "datacontenttype": "application/json",
    "time": "2023-03-28T09:15:10.70413Z",
    "data": {
-      "content": "vanus is a message queue"
+      "content": "Vanus is a Serverless, event streaming system with processing capabilities. It connects SaaS, Cloud Services, and Databases to help users build next-gen event-driven Apps."
    }
 }
 ```
