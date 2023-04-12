@@ -32,9 +32,6 @@ Before forwarding events to MongoDB, you must have:
 
 Create your template following the structure of your database, an example:
 
-```shell
-{
-    _id: ObjectId("63a56b176dcdb253ae4924f0"),
-    scenario: 'quick-start'
-  }
+```yaml
+{ _id: ObjectId("63a56b176dcdb253ae4924f0"), scenario: "quick-start" }
 ```
