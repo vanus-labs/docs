@@ -40,7 +40,7 @@ The ChatGPT requires a text/plain payload from the incoming HTTP request.
 
 ### HTTP request sample
 
-A simple CURL from an HTTP request to send requests to ChatGPT Source
+Use `curl` to send an HTTP request to ChatGPT Source
 
 ```bash
 curl --location --request POST 'https://hu7xxxxxxxxx.connector.vanustest.com' \
