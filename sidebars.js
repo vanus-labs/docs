@@ -283,6 +283,17 @@ const sidebars = {
                 },
                 {
                   type: 'category',
+                  label: 'ChatGPT',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/chatgpt/setup',
+                      label: 'Setup Guide',
+                    }
+                  ],
+                },
+                {
+                  type: 'category',
                   label: 'Shopify',
                   items: [
                     {
