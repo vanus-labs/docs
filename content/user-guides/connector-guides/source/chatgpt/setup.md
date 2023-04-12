@@ -11,7 +11,7 @@ and deliver responses to endpoints in the CloudEvents HTTP format.
 
 ## Prerequisites
 
-Before obtaining Webhook events, you must have:
+Before obtaining ChatGPT events, you must have:
 
 - A [Vanus Cloud account](https://cloud.vanus.ai)
 
