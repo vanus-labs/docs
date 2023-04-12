@@ -6,8 +6,8 @@ This guide contains information to set up a ChatGPT Source in Vanus Cloud.
 
 ChatGPT is a large language model developed by OpenAI, based on the GPT-3.5 architecture.
 
-ChatGPT Source is a Vanus-hosted ChatGPT service which works as an HTTP server to generates human-like responses to textual content from incoming HTTP requests,
-and delivers responses to endpoints in the CloudEvents HTTP format.
+ChatGPT Source is a Vanus-hosted ChatGPT service which works as an HTTP server to generate human-like responses to textual content from incoming HTTP requests,
+and deliver responses to endpoints in the CloudEvents HTTP format.
 
 ## Prerequisites
 
