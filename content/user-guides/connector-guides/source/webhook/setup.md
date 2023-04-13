@@ -40,7 +40,6 @@ curl --location --request POST 'https://webhook.site/4ccfb03d-0015-4533-aa70-ac1
 --data-raw '{
     "test":"Hello World!"
 }'
-
 ```
 
 ### Cloud Events Output

@@ -44,6 +44,6 @@ This Vanus Cloud Source connector offers support for various events. Below is a 
 
 - [Delete Bucket](events.md#delete-bucket)
 
----
+
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

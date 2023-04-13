@@ -324,14 +324,14 @@ const sidebars = {
                     },
                   ],
                 },
-                 {
+                {
                   type: 'category',
                   label: 'Amazon Billing',
                   items: [
                     {
                       type: 'doc',
                       id: 'user-guides/connector-guides/source/amazon-billing/setup',
-                      label: 'Setup Guide'
+                      label: 'Setup Guide',
                     }
                   ],
                 },

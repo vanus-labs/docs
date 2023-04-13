@@ -26,14 +26,14 @@ Create a new user and set the proper IAM policy.
 4. Write the name for your user and click **next**.
 5. select attach policy directly, and Create policy.
 ![](images/permissionoption.png)
-6. select the Service 'Cost Explore Service' and give it the following policy.
+6. select the Service `Cost Explore Service` and give it the following policy.
    - "ce:GetCostAndUsage",
 7. press **next** and review.
 8. Name your policy and click **create policy**.
 9. search for your custom policy and add it to your account, and press **next**.
 10. Review and press **create user**.
 11. Now click on the user you just created.
-12. Scroll down the page to 'Access Key', and Click **Create access key**.
+12. Scroll down the page to `Access Key`, and Click **Create access key**.
 ![](images/createAccesskey.png)
 13. Select Command line interface CLI, and press **next**.
 14. Save your access key and secret key safely.
@@ -71,6 +71,6 @@ This Vanus Cloud Source connector offers support for only the following event:
 }
 ```
 
----
+
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

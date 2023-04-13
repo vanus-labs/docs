@@ -37,7 +37,7 @@ Create a new user and set the proper IAM policy.
 4. Write the name for your user and click next.
 5. select attach policy directly, and Create policy.
    ![](images/permissionoption.png)
-6. select the Service 's3' and give it the following policy
+6. select the Service `s3` and give it the following policy
    - "s3:PutObject",
    - "s3:GetObject",
    - "s3:GetObjectVersion",
@@ -48,7 +48,7 @@ Create a new user and set the proper IAM policy.
 9. search for your custom policy and add it to your account, and press next.
 10. Review and press create user.
 11. Now click on the user you just created.
-12. Go to 'Access Key' Click Create access key.
+12. Go to `Access Key` Click Create access key.
     ![](images/createAccesskey.png)
 13. Select Command line interface CLI, and press next.
 14. Save your access key and secret key safely.

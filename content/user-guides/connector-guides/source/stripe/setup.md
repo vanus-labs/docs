@@ -35,7 +35,7 @@ To obtain all Stripe events in Vanus Cloud, follow these steps:
 4. Enter the URL you previously saved for your webhook endpoint from Vanus Cloud.
 5. Select the events you want to receive notifications for. Stripe offers a wide range of events, such as `charge.succeeded`, `invoice.paid`, and `customer.subscription.updated`.
 ![img_3.png](images/img_3.png)
-7. Click on the **Create endpoint** button to save your webhook.
+6. Click on the **Create endpoint** button to save your webhook.
 
 ## Supported Events
 This Vanus Cloud Source connector offers support for various events. Below is a list of the supported events:
@@ -44,7 +44,6 @@ This Vanus Cloud Source connector offers support for various events. Below is a 
 
 - [Invoice Paid](events.md#invoice-paid)
 
-- [Customer Subscription Update](events.md#customer-subscription-updated)
 
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
