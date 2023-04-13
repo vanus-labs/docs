@@ -4,7 +4,9 @@ This guide contains information to set up a Amazon Billing Source in Vanus Cloud
 
 ## Introduction
 
-AWS Billing is a service provided by Amazon Web Services (AWS) that allows you to track and manage your usage and costs within the AWS cloud environment. It provides detailed information about your usage and expenses, allowing you to optimize your resources and control your costs.
+AWS Billing is an AWS service for monitoring and managing your cloud usage and costs. It provides comprehensive usage and expense data to help you optimize resources and control spending.
+
+Amazon Billing Source is a connector provided by Vanus that retrieves daily or hourly spending information from Amazon Cloud Services and converts it into CloudEvents. To use cloud billing, you need to provide a user access key and secret key, which are required to authenticate and authorize access to your AWS account. By providing these keys, the Amazon Billing Source connector can access your billing information and retrieve the spending data from your AWS account.
 
 ## Prerequisites
 
@@ -47,60 +49,23 @@ To obtain all Billing events in Vanus Cloud, follow these steps:
 5. Click **`Next`** to save the Amazon Billing Source
    ![](images/aws-billing.png)
 
-## Supported Events
+### Amazon Billing Source Output
 
-
-- CreateBudget
-
-- CreateBudgetAction
-
-- CreateNotification
-
-- CreateSubscriber
-
-- DeleteBudget
-
-- DeleteBudgetAction
-
-- DeleteNotification
-
-- DeleteSubscriber
-
-- DescribeBudget
-
-- DescribeBudgetAction
-
-- DescribeBudgetActionHistories
-
-- DescribeBudgetActionsForAccount
-
-- DescribeBudgetActionsForBudget
-
-- DescribeBudgetNotificationsForAccount
-
-- DescribeBudgetPerformanceHistory
-
-- DescribeBudgets
-
-- DescribeNotificationsForBudget
-
-- DescribeSubscribersForNotification
-
-- ExecuteBudgetAction
-
-- UpdateBudget
-
-- UpdateBudgetAction
-
-- UpdateNotification
-
-- UpdateSubscriber
-
-- Billing alerts
-
-- Budget notifications
-
-- Cost and usage reports
-
-- Payment and refund events
-
+```json
+{
+  "specversion": "1.0",
+  "id": "026046e2-3cb0-4116-895e-c77877072dd2",
+  "source": "cloud.amazon.billing",
+  "type": "amazon.billing.daily",
+  "datacontenttype": "application/json",
+  "time": "2023-01-28T06:11:10.012579049Z",
+  "data": {
+    "date": "2023-01-27",
+    "service": "Amazon Relational Database Service",
+    "amortizedCost": {
+      "amount": "0.2672917174",
+      "unit": "USD"
+    }
+  }
+}
+```
