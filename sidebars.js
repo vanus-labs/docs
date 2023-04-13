@@ -333,11 +333,6 @@ const sidebars = {
                       id: 'user-guides/connector-guides/source/amazon-billing/setup',
                       label: 'Setup Guide',
                     },
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/amazon-billing/events',
-                      label: 'Output Events',
-                    },
                   ],
                 },
                  {
