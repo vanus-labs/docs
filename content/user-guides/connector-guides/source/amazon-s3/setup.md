@@ -1,10 +1,12 @@
-# S3
+# Amazon S3
 
 This guide contains information to set up a S3 Source in Vanus Cloud.
 
 ## Introduction
 
-Amazon S3 (Simple Storage Service) is a highly scalable and durable object storage service provided by Amazon Web Services (AWS). It is designed to store and retrieve any amount of data from anywhere on the internet, making it ideal for a wide range of use cases such as backup and restore, disaster recovery, data archiving, content delivery, and big data analytics.
+S3 is Amazon's cloud storage service that offers scalable and durable storage for various data types. It provides easy management and retrieval of data from anywhere with high availability and low latency.
+
+Vanus Cloud provides the Amazon S3 Source connector, which retrieves S3 events from a designated bucket and converts them into CloudEvents. With this connector, users can also set up an SQS queue to receive S3 event notifications. If a queue isn't specified, the connector will create one automatically.
 
 ## Prerequisites
 
@@ -56,14 +58,22 @@ To obtain S3 Bucket events using the S3 source connector in Vanus Cloud, follow 
 
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
-3. From the list of sources, choose **S3**.
-4. Provide the following credentials Access Key ID, Secret Access Key, Bucket ARN, and SQS ARN.
-    - To get a new access and secret key, go to the IAM console, select your user name under Users, open the Security credentials tab, click Create access key, and then choose Show to view your new credentials.
-     ![](images/s3.png)
-5. Select the kind of event you want to receive from the list
-6. Click next and finish the configurations.
+3. From the list of sources, choose **Amazon S3**.
+4. Enter your Access Key and Secret Key in Vanus Cloud.
+![img.png](images/s33.png)
+5. Now let go back to Amazon Web Services under the Amazon S3 service.
+![img_1.png](images/img_1.png)
+6. At this point you can either create a new bucket or select a existent bucket.
+7. Once selected or created go to your bucket property and copy and paste the ARN to Vanus Cloud.
+![img_2.png](images/img_2.png)
+8. Specify the kind of event you want to receive from the list
+![img_3.png](images/img_3.png)
+9. Under SQS config you can choose to create a new SQS by selecting Region or if you already have a SQS provide the ARN.
+10. Click next to continue.
+![img_4.png](images/img_4.png)
 
 ## Supported Events
+This Vanus Cloud Source connector offers support for various events. Below is a list of the supported events:
 
 S3:ObjectCreated:
 
@@ -82,3 +92,5 @@ S3:ObjectRestore:
 - S3:ObjectRestore:Post
 - S3:ObjectRestore:Complete
 - S3:ObjectRestore:Delete
+
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

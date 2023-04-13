@@ -5,6 +5,7 @@ This guide contains information to set up a GitHub Source in Vanus Cloud.
 ## Introduction
 
 GitHub is the largest web-based platform that provides developers with a place to host and manage their software projects.
+
 The GitHub Source enables you to get specific CloudEvents when particular events take place on your repositories.
 
 ## Prerequisites
@@ -80,3 +81,5 @@ Click it to see output CloudEvents corresponding to each event type.
 - watch
 - workflow_dispatch
 - workflow_run
+
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

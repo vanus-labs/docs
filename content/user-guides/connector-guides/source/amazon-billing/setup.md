@@ -16,26 +16,26 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 
 ## Getting Started
 
-### Create a new AWS user
+### How to create a new AWS user
 Create a new user and set the proper IAM policy.
 1. Log in to the AWS Management Console using your root account credentials.
 2. Navigate to the IAM service by clicking on the Services menu and selecting IAM.
 ![](images/findIAM.png)
-3. Click on the Users tab in the left navigation menu, and then click the Add user button.
+3. Click on the **Users tab** in the left navigation menu, and then click the **Add user** button.
 ![](images/AddUser.png)
-4. Write the name for your user and click next.
+4. Write the name for your user and click **next**.
 5. select attach policy directly, and Create policy.
 ![](images/permissionoption.png)
 6. select the Service 'Cost Explore Service' and give it the following policy.
    - "ce:GetCostAndUsage",
-7. press next and review.
-8. Name your policy and click create policy.
-9. search for your custom policy and add it to your account, and press next.
-10. Review and press create user.
+7. press **next** and review.
+8. Name your policy and click **create policy**.
+9. search for your custom policy and add it to your account, and press **next**.
+10. Review and press **create user**.
 11. Now click on the user you just created.
-12. Go to 'Access Key' Click Create access key.
+12. Scroll down the page to 'Access Key', and Click **Create access key**.
 ![](images/createAccesskey.png)
-13. Select Command line interface CLI, and press next.
+13. Select Command line interface CLI, and press **next**.
 14. Save your access key and secret key safely.
 ![](images/img.png)
 ### Config your connection
@@ -50,6 +50,7 @@ To obtain all Billing events in Vanus Cloud, follow these steps:
    ![](images/aws-billing.png)
 
 ### Amazon Billing Source Output
+This Vanus Cloud Source connector offers support for only the following event:
 
 ```json
 {
@@ -69,3 +70,7 @@ To obtain all Billing events in Vanus Cloud, follow these steps:
   }
 }
 ```
+
+---
+
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

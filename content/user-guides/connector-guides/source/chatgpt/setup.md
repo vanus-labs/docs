@@ -48,7 +48,7 @@ curl --location --request POST 'https://hu7xxxxxxxxx.connector.vanustest.com' \
 --data-raw 'what is vanus'
 ```
 
-### ChatGPT Source Output
+### ChatGPT Source Output\
 
 ```json
 {
@@ -63,3 +63,5 @@ curl --location --request POST 'https://hu7xxxxxxxxx.connector.vanustest.com' \
    }
 }
 ```
+
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
