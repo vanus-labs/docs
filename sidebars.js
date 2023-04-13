@@ -331,8 +331,8 @@ const sidebars = {
                     {
                       type: 'doc',
                       id: 'user-guides/connector-guides/source/amazon-billing/setup',
-                      label: 'Setup Guide',
-                    },
+                      label: 'Setup Guide'
+                    }
                   ],
                 },
                  {
