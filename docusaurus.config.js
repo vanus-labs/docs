@@ -84,7 +84,6 @@ const config = {
     { src: "https://code.jquery.com/jquery-3.3.1.min.js" },
     { src: "/js/jquery.imgbox.min.js" },
     { src: "/js/product-animation.js" },
-    { src: "/js/imgbox.js"}
   ],
   stylesheets: [
     { href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
