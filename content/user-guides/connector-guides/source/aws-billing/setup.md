@@ -17,17 +17,19 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 ## Getting Started
 
 ### How to create a new AWS user
+
 Create a new user and set the proper IAM policy.
+
 1. Log in to the AWS Management Console using your root account credentials.
 2. Navigate to the IAM service by clicking on the Services menu and selecting IAM.
-![](images/findIAM.png)
+   ![](images/findIAM.png)
 3. Click on the **Users tab** in the left navigation menu, and then click the **Add user** button.
-![](images/AddUser.png)
+   ![](images/AddUser.png)
 4. Write the name for your user and click **next**.
 5. select attach policy directly, and Create policy.
-![](images/permissionoption.png)
+   ![](images/permissionoption.png)
 6. select the Service `Cost Explore Service` and give it the following policy.
-![img.png](images/search.png)
+   ![img.png](images/search.png)
    - "ce:GetCostAndUsage",
 7. press **next** and review.
 8. Name your policy and click **create policy**.
@@ -35,12 +37,13 @@ Create a new user and set the proper IAM policy.
 10. Review and press **create user**.
 11. Now click on the user you just created.
 12. Scroll down the page to `Access Key`, and Click **Create access key**.
-![](images/createAccesskey.png)
+    ![](images/createAccesskey.png)
 13. Select Command line interface CLI, and press **next**.
 14. Save your access key and secret key safely.
-![](images/img.png)
+    ![](images/img.png)
 
 ### Config your connection
+
 To obtain all Billing events in Vanus Cloud, follow these steps:
 
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
@@ -52,6 +55,7 @@ To obtain all Billing events in Vanus Cloud, follow these steps:
    ![](images/aws-billing.png)
 
 ### Amazon Billing Source Output
+
 This Vanus Cloud Source connector offers support for only the following event:
 
 ```json
@@ -73,6 +77,10 @@ This Vanus Cloud Source connector offers support for only the following event:
 }
 ```
 
+Here are templates for this connector:
 
+- [Send Amazon bills to Google Sheets](https://cloud.vanustest.com/connections/wizard?source=aws-billing&sink=google-sheets&id=20230404_1)
+- [AWS Billing event triggers a Slack message](https://cloud.vanustest.com/connections/wizard?source=aws-billing&sink=slack&id=20230406_1)
+- [AWS Billing event triggers a Discord message](https://cloud.vanustest.com/connections/wizard?source=aws-billing&sink=discord&id=20230410_1)
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
