@@ -27,9 +27,7 @@ Before obtaining ChatGPT events, you must have:
 ChatGPT Source works as an HTTP server. You can obtain its webhook url after creating your connection.
 
 1. Click the connection you just created.
-
 ![img.png](images/img.png)
-
 2. Click the copy icon to copy the webhook url to use.
 
 ![img.png](images/img_1.png)
@@ -63,3 +61,5 @@ curl --location --request POST 'https://hu7xxxxxxxxx.connector.vanustest.com' \
    }
 }
 ```
+
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

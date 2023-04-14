@@ -4,7 +4,9 @@ This guide contains information to set up a Elasticsearch Sink in Vanus Cloud.
 
 ## Introduction
 
-Elasticsearch is a distributed, open-source search and analytics engine designed to be highly scalable and reliable. It is commonly used to store, search, and analyze large volumes of data in real-time, and is used by many organizations for a wide range of applications, including logging, e-commerce, content management, and business intelligence.
+Elasticsearch is a fast and scalable search and analytics engine used as a backend for search-heavy applications.
+
+The Elasticsearch Sink simplifies the process of delivering data to your Elasticsearch cluster. With this tool, you can easily and efficiently transfer your data to your Elasticsearch cluster, making it searchable and accessible for analysis and other processing needs.
 
 ## Prerequisites
 
