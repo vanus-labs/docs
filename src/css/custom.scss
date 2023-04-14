@@ -199,3 +199,70 @@ a.header-twitter-link:hover {
 .main-wrapper h2 {
   margin: 16px 0;
 }
+
+//imgbox
+.material-icons:before {
+  display: inline-block;
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga"
+}
+
+.check-original-image {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, .4);
+  font-size: 15px;
+  color: #fff;
+  z-index: 10000001;
+  transition: all 0.25s;
+}
+
+.check-original-image:hover {
+  box-shadow: 0px 0px 10px -2px rgb(0, 0, 0);
+}
+
+a.close-original-image {
+  z-index: 10000001;
+  display: block;
+  width: 96px;
+  height: 96px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 50%;
+  background-color: rgba(0, 0, 0, .6);
+  transform: rotate(-50deg);
+  position: fixed;
+  right: -45px;
+  top: -45px;
+  text-align: center;
+  line-height: 94px;
+}
+
+a.close-original-image:before {
+  content: '\E14C';
+  color: #fff;
+  margin-left: -45px;
+  transform: rotate(50deg);
+  transition: transform 0.5s;
+}
+
+a.close-original-image:hover:before {
+  transform: rotate(230deg);
+}

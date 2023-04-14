@@ -19,6 +19,9 @@ const config = {
   url: "https://docs.vanus.ai",
   baseUrl: "/",
   onBrokenLinks: "throw",
+  clientModules: [
+    require.resolve('./static/js/imgbox.js')
+  ],
   plugins: [
     "docusaurus-plugin-sass",
     [
@@ -78,7 +81,13 @@ const config = {
       "data-domain": "docs.vanus.ai",
     },
     { src: "https://code.createjs.com/1.0.0/createjs.min.js" },
+    { src: "https://code.jquery.com/jquery-3.3.1.min.js" },
+    { src: "/js/jquery.imgbox.min.js" },
     { src: "/js/product-animation.js" },
+    { src: "/js/imgbox.js"}
+  ],
+  stylesheets: [
+    { href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
   ],
   onBrokenMarkdownLinks: "warn",
   favicon: "img/vanus-favicon.svg",
