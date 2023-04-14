@@ -283,6 +283,17 @@ const sidebars = {
                 },
                 {
                   type: 'category',
+                  label: 'ChatGPT',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/chatgpt/setup',
+                      label: 'Setup Guide',
+                    }
+                  ],
+                },
+                {
+                  type: 'category',
                   label: 'Shopify',
                   items: [
                     {
@@ -393,8 +404,11 @@ const sidebars = {
                 'user-guides/connector-guides/sink/snowflake-setup',
                 'user-guides/connector-guides/sink/display-setup',
                 'user-guides/connector-guides/sink/s3-setup',
+                'user-guides/connector-guides/sink/doris-setup',
                 'user-guides/connector-guides/sink/mysql-setup',
-                'user-guides/connector-guides/sink/slack-setup'
+                'user-guides/connector-guides/sink/mongodb-setup',
+                'user-guides/connector-guides/sink/slack-setup',
+                'user-guides/connector-guides/sink/elasticsearch-setup'
               ],
             }
           ],
