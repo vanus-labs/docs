@@ -24,19 +24,19 @@ Before forwarding events to Ding Talk, you must have:
 
 2. In the top navigation pane, click **Robot Management**.
 
-   <img src="img-dingtalk/dingtalk-bot-management.png" alt="bot-management" align="left" style="zoom:30%;" />
+   <img src="img-dingtalk/dingtalk-bot-management.png" alt="bot-management" align="left" width="580" />
 
 3. In the **Robot Management** page, click **Custom**.
 
-    <img src="img-dingtalk/dingtalk-bot-custom.png" alt="bot-custom" align="left" style="zoom:80%;" />
+    <img src="img-dingtalk/dingtalk-bot-custom.png" alt="bot-custom" align="left" width="580" />
 
 4. In the **Robot details** page, click **Add**.
 
-    <img src="img-dingtalk/dingtalk-bot-details.png" alt="bot-details" align="left" style="zoom:80%;" />
+    <img src="img-dingtalk/dingtalk-bot-details.png" alt="bot-details" align="left" width="580" />
 
 5. In the **Add Robot** dialog:
 
-    <img src="img-dingtalk/dingtalk-bot-addrobot.png" alt="bot-addrobot" align="left" style="zoom:80%;" />
+    <img src="img-dingtalk/dingtalk-bot-addrobot.png" alt="bot-addrobot" align="left" width="580" />
 
     - In the **Chatbot name** field, provide a name for the robot.
     - In the **Add to Group** field, select the target group in which the Robot will create.
@@ -46,7 +46,7 @@ Before forwarding events to Ding Talk, you must have:
 
 6. Then get the **Webhook**.
 
-    <img src="img-dingtalk/dingtalk-bot-addrobot-2.png" alt="bot-addrobot" align="left" style="zoom:80%;" />
+    <img src="img-dingtalk/dingtalk-bot-addrobot-2.png" alt="bot-addrobot" align="left" width="580" />
 
 ### Step 2: Set up the Ding Talk Sink connector in Vanus Cloud
 
