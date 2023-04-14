@@ -1,7 +1,7 @@
 ---
 title: Concepts
 id: concepts
-slug: /introduction/concepts
+slug: /understand-vanus/concepts
 ---
 
 # Concepts

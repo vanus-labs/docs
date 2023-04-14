@@ -132,6 +132,7 @@ const config = {
       docs: {
         sidebar: {
           hideable: true,
+          autoCollapseCategories: false
         },
       },
       navbar: {
@@ -146,7 +147,7 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "introduction/what-is-vanus",
+            docId: "getting-started/what-is-vanus",
             position: "left",
             label: "Docs",
           },
