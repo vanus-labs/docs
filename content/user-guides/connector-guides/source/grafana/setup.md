@@ -54,7 +54,9 @@ Billing and cost metrics:
 - Instances running
 - Storage usage
 
-Here are templates for this connector:
+## Template Scenarios
+
+Here are some easy to use scenarios for this connector.
 
 - [Grafana resource utilization threshold event triggers a Discord message](https://cloud.vanus.ai/connections/wizard?source=grafana&sink=discord&id=20230330_1)
 - [Grafana resource utilization threshold event triggers a Feishu message](https://cloud.vanus.ai/connections/wizard?source=grafana&sink=feishu&id=20230406_4)

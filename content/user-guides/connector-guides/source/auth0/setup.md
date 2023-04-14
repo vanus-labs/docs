@@ -74,7 +74,9 @@ Token Exchange:
 - Token Exchange - Failure
 - Token Exchange - Success
 
-Here are templates for this connector:
+## Template Scenarios
+
+Here are some easy to use scenarios for this connector.
 
 - [Auth0 login event triggers a Feishu message](https://cloud.vanus.ai/connections/wizard?source=auth0&sink=feishu&id=20230323_1)
 - [Auth0 login event triggers a Slack message](https://cloud.vanus.ai/connections/wizard?source=auth0&sink=slack&id=20230323_2)

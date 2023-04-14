@@ -44,7 +44,9 @@ This Vanus Cloud Source connector offers support for various events. Below is a 
 
 - [Invoice Paid](events.md#invoice-paid)
 
-Here is a template for this connector:
+## Template Scenarios
+
+Here are some easy to use scenarios for this connector.
 
 - [Stripe Invoice Payment event triggers a Discord message](https://cloud.vanus.ai/connections/wizard?source=stripe&sink=discord&id=20230407_1)
 

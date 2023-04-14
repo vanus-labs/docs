@@ -82,7 +82,9 @@ Click it to see output CloudEvents corresponding to each event type.
 - workflow_dispatch
 - workflow_run
 
-Here are templates for this connector:
+## Template Scenarios
+
+Here are some easy to use scenarios for this connector.
 
 - [GitHub star event triggers a Feishu message](https://cloud.vanus.ai/connections/wizard?source=github&sink=feishu&id=20230306_1)
 - [GitHub issue event triggers a Feishu message](https://cloud.vanus.ai/connections/wizard?source=github&sink=feishu&id=20230307_2)

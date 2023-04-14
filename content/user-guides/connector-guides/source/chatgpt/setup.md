@@ -62,7 +62,9 @@ curl --location --request POST 'https://hu7xxxxxxxxx.connector.vanustest.com' \
 }
 ```
 
-Here is a template for this connector:
+## Template Scenarios
+
+Here are some easy to use scenarios for this connector.
 
 - [Chat with ChatGPT via Feishu bot](https://cloud.vanus.ai/connections/wizard?source=chatgpt&sink=feishu&id=20230329_0)
 
