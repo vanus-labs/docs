@@ -46,6 +46,6 @@ This Vanus Cloud Source connector offers support for various events. Below is a 
 
 Here is a template for this connector:
 
-- [Stripe Invoice Payment event triggers a Discord message](https://cloud.vanustest.com/connections/wizard?source=stripe&sink=discord&id=20230407_1)
+- [Stripe Invoice Payment event triggers a Discord message](https://cloud.vanus.ai/connections/wizard?source=stripe&sink=discord&id=20230407_1)
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

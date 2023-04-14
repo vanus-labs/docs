@@ -56,7 +56,7 @@ Billing and cost metrics:
 
 Here are templates for this connector:
 
-- [Grafana resource utilization threshold event triggers a Discord message](https://cloud.vanustest.com/connections/wizard?source=grafana&sink=discord&id=20230330_1)
-- [Grafana resource utilization threshold event triggers a Feishu message](https://cloud.vanustest.com/connections/wizard?source=grafana&sink=feishu&id=20230406_4)
+- [Grafana resource utilization threshold event triggers a Discord message](https://cloud.vanus.ai/connections/wizard?source=grafana&sink=discord&id=20230330_1)
+- [Grafana resource utilization threshold event triggers a Feishu message](https://cloud.vanus.ai/connections/wizard?source=grafana&sink=feishu&id=20230406_4)
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

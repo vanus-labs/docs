@@ -79,8 +79,8 @@ This Vanus Cloud Source connector offers support for only the following event:
 
 Here are templates for this connector:
 
-- [Send Amazon bills to Google Sheets](https://cloud.vanustest.com/connections/wizard?source=aws-billing&sink=google-sheets&id=20230404_1)
-- [AWS Billing event triggers a Slack message](https://cloud.vanustest.com/connections/wizard?source=aws-billing&sink=slack&id=20230406_1)
-- [AWS Billing event triggers a Discord message](https://cloud.vanustest.com/connections/wizard?source=aws-billing&sink=discord&id=20230410_1)
+- [Send Amazon bills to Google Sheets](https://cloud.vanus.ai/connections/wizard?source=aws-billing&sink=google-sheets&id=20230404_1)
+- [AWS Billing event triggers a Slack message](https://cloud.vanus.ai/connections/wizard?source=aws-billing&sink=slack&id=20230406_1)
+- [AWS Billing event triggers a Discord message](https://cloud.vanus.aiections/wizard?source=aws-billing&sink=discord&id=20230410_1)
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

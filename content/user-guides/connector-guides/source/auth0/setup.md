@@ -76,8 +76,8 @@ Token Exchange:
 
 Here are templates for this connector:
 
-- [Auth0 login event triggers a Feishu message](https://cloud.vanustest.com/connections/wizard?source=auth0&sink=feishu&id=20230323_1)
-- [Auth0 login event triggers a Slack message](https://cloud.vanustest.com/connections/wizard?source=auth0&sink=slack&id=20230323_2)
-- [Auth0 login event triggers a Discord message](https://cloud.vanustest.com/connections/wizard?source=auth0&sink=discord&id=20230329_1)
+- [Auth0 login event triggers a Feishu message](https://cloud.vanus.ai/connections/wizard?source=auth0&sink=feishu&id=20230323_1)
+- [Auth0 login event triggers a Slack message](https://cloud.vanus.ai/connections/wizard?source=auth0&sink=slack&id=20230323_2)
+- [Auth0 login event triggers a Discord message](https://cloud.vanus.ai/connections/wizard?source=auth0&sink=discord&id=20230329_1)
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
