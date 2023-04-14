@@ -4,7 +4,11 @@ This guide contains information to set up a Doris Sink in Vanus Cloud.
 
 ## Introduction
 
-Apache Doris is an open-source, distributed analytical database that is designed to be highly scalable and efficient. It is particularly well-suited for OLAP (Online Analytical Processing) workloads, which involve complex queries on large amounts of data.
+Doris is an open-source, distributed data management and analytics system developed by Alibaba. It provides real-time processing and analysis for large-scale data sets, supports diverse data sources, and is scalable and fault-tolerant for big data applications.
+
+The Doris sink receive Cloudevents and insert them into your Doris database. In order to do this you need to give access to Vanus Cloud to insert rows of data.
+
+The Doris sink is designed to receive Cloudevents and store them in your Doris database.
 
 ## Prerequisites
 

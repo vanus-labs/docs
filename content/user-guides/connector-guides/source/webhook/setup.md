@@ -4,11 +4,14 @@ This guide contains information to set up a Webhook Source in Vanus Cloud.
 
 ## Introduction
 
-Webhooks are the ways of communicating between two apps by sending notifications or alerts when something happens. With Webhook connector, you can obtain real-time events on all user activity.
+Webhooks are a method for web applications to automatically notify other systems about specific events or updates. They work by sending an HTTP POST request to a specified URL when a particular trigger occurs, enabling real-time data exchange and integration between applications.
+
+The Webhook Source is a webhook server that enables you to establish an endpoint for receiving events HTTP requests or any application able to send HTTP request. 
+
 
 ## Prerequisites
 
-Before obtaining Webhook events, you must have:
+Before obtaining Webhook server to receive events, you must have:
 
 - A [Vanus Cloud account](https://cloud.vanus.ai)
 
@@ -19,7 +22,7 @@ To obtain a unique Webhook URL in Vanus Cloud, follow these steps:
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
 3. From the list of sources, choose **Webhook**.
-4. Click next and complete sink connection and subscription to finish the configurations.
+4. Press **next**, complete all other configurations and 
 5. After creating your connection, select your connection and get the payload from the Webhook information.
    ![](images/payload.png)
 
@@ -37,7 +40,6 @@ curl --location --request POST 'https://webhook.site/4ccfb03d-0015-4533-aa70-ac1
 --data-raw '{
     "test":"Hello World!"
 }'
-
 ```
 
 ### Cloud Events Output
@@ -73,3 +75,6 @@ curl --location --request POST 'https://webhook.site/4ccfb03d-0015-4533-aa70-ac1
 ```
 
 The body of the request is extracted from `data.body` in the cloud event and the headers are extracted from `data.headers` in the cloud event.
+
+
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

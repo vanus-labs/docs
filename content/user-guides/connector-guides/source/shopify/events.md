@@ -12,21 +12,21 @@ Shopify Source generates **[CloudEvents](https://docs.vanus.ai/reference/cloudev
 
 ```json
 {
-    "specversion": "1.0",
-    "type": "com.shopify.customer.created",
-    "source": "https://example.com/shopify",
-    "id": "123456789",
-    "time": "2022-04-01T12:34:56Z",
-    "datacontenttype": "application/json",
-    "data": {
-        "id": "987654321",
-        "email": "john@example.com",
-        "first_name": "John",
-        "last_name": "Doe",
-        "created_at": "2022-04-01T12:34:56Z",
-        "updated_at": "2022-04-01T12:34:56Z"
-    }
-`}
+  "specversion": "1.0",
+  "type": "com.shopify.customer.created",
+  "source": "https://example.com/shopify",
+  "id": "123456789",
+  "time": "2022-04-01T12:34:56Z",
+  "datacontenttype": "application/json",
+  "data": {
+    "id": "987654321",
+    "email": "john@example.com",
+    "first_name": "John",
+    "last_name": "Doe",
+    "created_at": "2022-04-01T12:34:56Z",
+    "updated_at": "2022-04-01T12:34:56Z"
+  }
+}
 ```
 
 #### Customer update
