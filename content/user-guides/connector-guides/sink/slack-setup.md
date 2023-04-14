@@ -55,3 +55,15 @@ The event data must be JSON format, here a simple message, example:
   }
 }
 ```
+
+## Template Scenario
+
+Here are some easy to use scenarios for this connector.
+
+- [Auth0 login event triggers a Slack message](https://cloud.vanus.ai/connections/wizard?source=auth0&sink=http&id=20230323_2)
+- [AWS Billing event triggers a Slack message](https://cloud.vanus.ai/connections/wizard?source=aws-billing&sink=http&id=20230406_1)
+- [GitHub star event triggers a Slack message](https://cloud.vanus.ai/connections/wizard?source=github&sink=http&id=20230308_5)
+- [GitHub issue event triggers a Slack message](https://cloud.vanus.ai/connections/wizard?source=github&sink=http&id=20230308_6)
+- [GitHub issue comment event triggers a Slack message](https://cloud.vanus.ai/connections/wizard?source=github&sink=http&id=20230307_4)
+- [GitHub opened pull-request event triggers a Slack message](https://cloud.vanus.ai/connections/wizard?source=github&sink=http&id=20230316_3)
+- [GitHub merged pull-request event triggers a Slack message](https://cloud.vanus.ai/connections/wizard?source=github&sink=http&id=20230323_1)
