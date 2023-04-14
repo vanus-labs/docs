@@ -218,12 +218,12 @@ const sidebars = {
                   items: [
                     {
                       type: 'doc',
-                      id: 'user-guides/connector-guides/source/amazon-s3/setup',
+                      id: 'user-guides/connector-guides/source/aws-s3/setup',
                       label: 'Setup Guide',
                     },
                     {
                       type: 'doc',
-                      id: 'user-guides/connector-guides/source/amazon-s3/events',
+                      id: 'user-guides/connector-guides/source/aws-s3/events',
                       label: 'Output Events',
                     },
                   ],
@@ -234,7 +234,7 @@ const sidebars = {
                   items: [
                     {
                       type: 'doc',
-                      id: 'user-guides/connector-guides/source/amazon-billing/setup',
+                      id: 'user-guides/connector-guides/source/aws-billing/setup',
                       label: 'Setup Guide',
                     },
                   ],
@@ -279,12 +279,12 @@ const sidebars = {
                   items: [
                     {
                       type: 'doc',
-                      id: 'user-guides/connector-guides/source/amazon-eventbridge/setup',
+                      id: 'user-guides/connector-guides/source/aws-eventbridge/setup',
                       label: 'Setup Guide',
                     },
                     {
                       type: 'doc',
-                      id: 'user-guides/connector-guides/source/amazon-eventbridge/events',
+                      id: 'user-guides/connector-guides/source/aws-eventbridge/events',
                       label: 'Output Events',
                     },
                   ],
@@ -306,7 +306,7 @@ const sidebars = {
                 'user-guides/connector-guides/sink/http-setup',
                 'user-guides/connector-guides/sink/mongodb-setup',
                 'user-guides/connector-guides/sink/mysql-setup',
-                'user-guides/connector-guides/sink/s3-setup',
+                'user-guides/connector-guides/sink/aws-s3-setup',
                 'user-guides/connector-guides/sink/slack-setup',
                 'user-guides/connector-guides/sink/snowflake-setup'
               ],
