@@ -214,16 +214,16 @@ const sidebars = {
                 },
                 {
                   type: 'category',
-                  label: 'AWS S3',
+                  label: 'Amazon S3',
                   items: [
                     {
                       type: 'doc',
-                      id: 'user-guides/connector-guides/source/s3/setup',
+                      id: 'user-guides/connector-guides/source/amazon-s3/setup',
                       label: 'Setup Guide',
                     },
                     {
                       type: 'doc',
-                      id: 'user-guides/connector-guides/source/s3/events',
+                      id: 'user-guides/connector-guides/source/amazon-s3/events',
                       label: 'Output Events',
                     },
                   ],
