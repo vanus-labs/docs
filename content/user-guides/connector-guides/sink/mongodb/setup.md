@@ -4,7 +4,9 @@ This guide contains information to set up a MongoDB Sink in Vanus Cloud.
 
 ## Introduction
 
-MongoDB is a popular open-source NoSQL document database that is designed for storing, retrieving, and managing unstructured and semi-structured data. Unlike traditional relational databases, MongoDB stores data in flexible, JSON-like documents that can vary in structure and content, making it well-suited for use in a wide range of applications.
+MongoDB is a popular open-source NoSQL document database that stores data in a flexible, JSON-like format.
+
+The MongoDB Sink connector let you insert events into a mongoDB database automatically.
 
 ## Prerequisites
 
@@ -34,9 +36,11 @@ Create your template following the structure of your database, an example:
 
 ```json
 
-"inserts": [
+{
+   "inserts": [
       {
         "scenario": "quick-start"
       }
-]
+  ]
+}
 ```
