@@ -308,7 +308,8 @@ const sidebars = {
                 'user-guides/connector-guides/sink/mysql-setup',
                 'user-guides/connector-guides/sink/aws-s3-setup',
                 'user-guides/connector-guides/sink/slack-setup',
-                'user-guides/connector-guides/sink/snowflake-setup'
+                'user-guides/connector-guides/sink/snowflake-setup',
+                'user-guides/connector-guides/sink/discord-setup'
               ],
             }
           ],
