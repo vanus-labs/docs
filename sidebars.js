@@ -289,6 +289,17 @@ const sidebars = {
                     },
                   ],
                 },
+                {
+                  type: 'category',
+                  label: 'CloudEvents',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/cloudevents/setup',
+                      label: 'Setup Guide',
+                    }
+                  ],
+                },
 
                 /// add new connectors here
               ],
