@@ -214,7 +214,7 @@ const sidebars = {
                 },
                 {
                   type: 'category',
-                  label: 'AWS S3',
+                  label: 'Amazon S3',
                   items: [
                     {
                       type: 'doc',
