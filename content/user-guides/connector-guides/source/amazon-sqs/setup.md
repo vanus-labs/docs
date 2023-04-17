@@ -8,6 +8,8 @@ Amazon Simple Queue Service (Amazon SQS) is a fully-managed message queuing serv
 
 It is designed to help developers build distributed systems and applications that need to communicate asynchronously by reliably sending, storing, and receiving messages between software components.
 
+Vanus Cloud provides the Amazon SNS Source connector, which retrieves SNS events and converts them into CloudEvents.
+
 ## Prerequisites
 
 Before obtaining SQS events, you must have:
@@ -22,7 +24,7 @@ Before obtaining SQS events, you must have:
 
 ## Getting Started
 
-### Create a new AWS user
+### Step 1: Create a new AWS user
 
 Create a new user and set the proper IAM policy.
 
@@ -45,7 +47,7 @@ Create a new user and set the proper IAM policy.
 12. Save your access key and secret key safely.
     ![](images/img.png)
 
-### Config your connection
+### Step 2: Config your connection
 
 To obtain Amazon SQS events using the SQS source connector in Vanus Cloud, follow these steps:
 

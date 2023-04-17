@@ -8,6 +8,8 @@ Amazon Simple Notification Service (Amazon SNS) is a fully-managed messaging ser
 
 It enables you to send and receive messages between distributed systems or microservices, mobile devices, and other AWS services.
 
+Vanus Cloud provides the Amazon SNS Source connector, which retrieves SNS events and converts them into CloudEvents.
+
 ## Prerequisites
 
 Before obtaining SNS events, you must have:
@@ -22,7 +24,7 @@ Before obtaining SNS events, you must have:
 
 ## Getting Started
 
-### Create a new AWS user
+### Step 1: Create a new AWS user
 
 Create a new user and set the proper IAM policy.
 
@@ -45,7 +47,7 @@ Create a new user and set the proper IAM policy.
 12. Save your access key and secret key safely.
     ![](images/img.png)
 
-### Config your connection
+### Step 2: Config your connection
 
 To obtain Amazon SNS events using the SNS source connector in Vanus Cloud, follow these steps:
 
