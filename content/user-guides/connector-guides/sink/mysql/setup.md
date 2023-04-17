@@ -4,7 +4,10 @@ This guide contains information to set up a MySQL Sink in Vanus Cloud.
 
 ## Introduction
 
-MySQL is an open-source relational database management system (RDBMS) that is used to store and manage data. It is one of the most popular databases in the world and is commonly used in web applications, as well as in enterprise environments.
+MySQL is a popular open-source relational database management system that uses structured query language (SQL) to manage and manipulate data stored in tables.
+
+The MySQL Sink connector let you insert events into a MySQL database automatically.
+
 
 ## Prerequisites
 
@@ -19,15 +22,16 @@ Before forwarding events to MySQL, you must have:
 **To set up MySQL Sink in Vanus Cloud:**
 
 1. In Vanus Cloud, go to "Sinks" and select "MySQL".
-2. Provide the following credentials
-   - Host: Enter the hostname or IP address of your MySQL server
+2. Provide the following credentials.
+   - Host: Enter the hostname or IP address of your MySQL server.
    - Port: Enter the port number on which your MySQL server is listening. The default port for MySQL is 3306.
-   - Username: User account name
-   - Password: User password
-   - Database Name: The name of the database
-   - Table Name: The name of the table
+   - Username: User account name.
+   - Password: User password.
+   - Database Name: The name of the database.
+   - Table Name: The name of the table.
      ![](images/mysql.png)
 3. Click Next and finish the configurations.
+
 
 ## Custom Connection
 
