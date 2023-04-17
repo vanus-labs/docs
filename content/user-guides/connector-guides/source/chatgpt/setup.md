@@ -27,7 +27,7 @@ Before obtaining ChatGPT events, you must have:
 ChatGPT Source works as an HTTP server. You can obtain its webhook url after creating your connection.
 
 1. Click the connection you just created.
-![img.png](images/img.png)
+   ![img.png](images/img.png)
 2. Click the copy icon to copy the webhook url to use.
 
 ![img.png](images/img_1.png)
@@ -50,16 +50,22 @@ curl --location --request POST 'https://hu7xxxxxxxxx.connector.vanustest.com' \
 
 ```json
 {
-   "specversion": "1.0",
-   "id": "0effe4cc-06c7-4fe9-9180-aa7c3b30777e",
-   "source": "vanus-chatGPT-source",
-   "type": "vanus-chatGPT-type",
-   "datacontenttype": "application/json",
-   "time": "2023-03-28T09:15:10.70413Z",
-   "data": {
-      "content": "Vanus is a Serverless, event streaming system with processing capabilities. It connects SaaS, Cloud Services, and Databases to help users build next-gen event-driven Apps."
-   }
+  "specversion": "1.0",
+  "id": "0effe4cc-06c7-4fe9-9180-aa7c3b30777e",
+  "source": "vanus-chatGPT-source",
+  "type": "vanus-chatGPT-type",
+  "datacontenttype": "application/json",
+  "time": "2023-03-28T09:15:10.70413Z",
+  "data": {
+    "content": "Vanus is a Serverless, event streaming system with processing capabilities. It connects SaaS, Cloud Services, and Databases to help users build next-gen event-driven Apps."
+  }
 }
 ```
+
+## Template Scenarios
+
+Here are some easy to use scenarios for this connector.
+
+- [Chat with ChatGPT via Feishu bot](https://cloud.vanus.ai/connections/wizard?source=chatgpt&sink=feishu&id=20230329_0)
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

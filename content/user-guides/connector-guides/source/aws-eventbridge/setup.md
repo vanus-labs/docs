@@ -44,6 +44,11 @@ This Vanus Cloud Source connector offers support for various events. Below is a 
 - [Create Bucket](events.md#create-bucket)
 - [Delete Bucket](events.md#delete-bucket)
 
+## Template Scenarios
 
+Here are some easy to use scenarios for this connector.
+
+- [Amazon EventBridge CreateBucket | DeleteBucket event triggers a Feishu message](https://cloud.vanus.ai/connections/wizard?source=aws-eventbridge&sink=feishu&id=20230329_1)
+- [Amazon EventBridge CreateBucket | DeleteBucket event triggers a Discord message](https://cloud.vanus.ai/connections/wizard?source=aws-eventbridge&sink=discord&id=20230406_2)
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

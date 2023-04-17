@@ -30,14 +30,15 @@ Before obtaining S3 events, you must have:
 ### Create a new AWS user
 
 Create a new user and set the proper IAM policy.
+
 1. Log in to the AWS Management Console using your root account credentials.
 2. Navigate to the IAM service by clicking on the Services menu and selecting IAM.
-![](images/findIAM.png)
+   ![](images/findIAM.png)
 3. Click on the Users tab in the left navigation menu, and then click the Add user button.
-![](images/AddUser.png)
+   ![](images/AddUser.png)
 4. Write the name for your user and click next.
 5. select attach policy directly, and Create policy.
-![](images/permissionoption.png)
+   ![](images/permissionoption.png)
 6. select the Service `s3` and give it the following policy
    - "s3:PutObject",
    - "s3:GetObject",
@@ -54,24 +55,26 @@ Create a new user and set the proper IAM policy.
 13. Select Command line interface CLI, and press next.
 14. Save your access key and secret key safely.
     ![](images/img.png)
+
 ### Config your connection
+
 To obtain S3 Bucket events using the S3 source connector in Vanus Cloud, follow these steps:
 
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
 3. From the list of sources, choose **Amazon S3**.
 4. Enter your Access Key and Secret Key in Vanus Cloud.
-![img.png](images/s33.png)
+   ![img.png](images/s33.png)
 5. Now let go back to Amazon Web Services under the Amazon S3 service.
-![img_1.png](images/img_1.png)
+   ![img_1.png](images/img_1.png)
 6. At this point you can either create a new bucket or select a existent bucket.
 7. Once selected or created go to your bucket property and copy and paste the ARN to Vanus Cloud.
-![img_2.png](images/img_2.png)
+   ![img_2.png](images/img_2.png)
 8. Specify the kind of event you want to receive from the list
-![img_3.png](images/img_3.png)
+   ![img_3.png](images/img_3.png)
 9. Under SQS config you can choose to create a new SQS by selecting Region or if you already have a SQS provide the ARN.
 10. Click next to continue.
-![img_4.png](images/img_4.png)
+    ![img_4.png](images/img_4.png)
 
 ## Supported Events
 
