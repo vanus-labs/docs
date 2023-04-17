@@ -12,21 +12,28 @@ With Google Sheets Sink connector in Vanus Cloud, you can easily forward real-ti
 
 Before forwarding events to Google Sheets, you must have:
 
-- A Google account with administrative privileges
-- A [Vanus Cloud account](https://cloud.vanus.ai)
+- A Google account with administrative privileges.
+- A [Vanus Cloud account](https://cloud.vanus.ai).
 
 ## Getting Started
 
 **To set up a Google Sheets Sink in Vanus Cloud:**
 
+### Step 1: Create a Google spreadsheet
+1. Go to [Google Sheets](https://docs.google.com/spreadsheets/u/0/) and **Sign in**.
+2. Create a new black spreadsheet.
+![img.png](img.png)
+3. Copy the `ID` of the spreadsheet found in the link.
+![img_1.png](img_1.png)
+
+### Step 2: Create a connection
 1. Click on "Sign in with Google" and follow the process to sign in to your Google account.
 ![](images/google-sign-in.png)
-2. Go to [Google Docs](https://docs.google.com) and create a new Google Sheet.
-3. Obtain the Google Sheet ID from the URL. The ID is the long string of characters that comes after the "/spreadsheets/d/" in the URL.
-![](images/google-fields.png)
-4. Obtain the name of the sheet where you want to store the data.
-5. In Vanus Cloud, paste the Google Sheet ID and sheet name into the corresponding fields.
-6. Click "Next" to continue.
+2. Paste the string `id` Example: `1i9b80jHcKzkUSOUDE9RAjnGevdWKScq_6Jnpofvb4CU`.
+3. Obtain the name of the sheet at the bottom of the spreadsheet.
+![img_2.png](img_2.png)
+4. Paste the sheet name default: `Sheet1`.
+5. Click **Next** to continue.
 
 ## Required Data Format
 

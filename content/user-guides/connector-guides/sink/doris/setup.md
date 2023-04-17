@@ -8,14 +8,12 @@ Doris is an open-source, distributed data management and analytics system develo
 
 The Doris sink receive Cloudevents and insert them into your Doris database. In order to do this you need to give access to Vanus Cloud to insert rows of data.
 
-The Doris sink is designed to receive Cloudevents and store them in your Doris database.
-
 ## Prerequisites
 
 Before forwarding events to Feishu, you must have:
 
-- A Doris cluster
-- A [Vanus Cloud account](https://cloud.vanus.ai)
+- A Doris cluster.
+- A [Vanus Cloud account](https://cloud.vanus.ai).
 
 ## Getting Started
 

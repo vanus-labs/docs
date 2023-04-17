@@ -12,7 +12,7 @@ The Elasticsearch Sink simplifies the process of delivering data to your Elastic
 
 Before forwarding events to Elasticsearch, you must have:
 
-- A [Vanus Cloud account](https://cloud.vanus.ai)
+- A [Vanus Cloud account](https://cloud.vanus.ai).
 - Have an Elasticsearch cluster.
 
 ## Getting Started

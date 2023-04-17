@@ -8,8 +8,6 @@ Auth0 is an authentication and authorization platform that provides security sol
 
 The Auth0 Source is a webhook server that enables you to establish an endpoint for receiving events from your Auth0 application. To achieve this, it is necessary to establish a connection within Auth0.
 
-
-
 ## Prerequisites
 
 Before obtaining Auth0 events, you must have:
@@ -72,3 +70,5 @@ Token Exchange:
 - Token Exchange - Success
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+
+
