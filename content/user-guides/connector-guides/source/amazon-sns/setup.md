@@ -53,13 +53,16 @@ To obtain Amazon SNS events using the SNS source connector in Vanus Cloud, follo
 2. Click on the **create connection** button under connections.
 3. From the list of sources, choose **Amazon SNS**
 4. Enter the following credentials:
+
    - Port
    - Access Key ID
    - Secret Access Key
    - SNS ARN
    - Endpoint
    - Protocol
+
      ![img.png](images/vanus-sns.png)
+
 5. To get **SNS ARN**, **Endpoint** and **Protocol**, let's go back to our Amazon Web Services Account
 6. Search for SQS, Click on it and Create a Queue.
 7. Select type as FIFO and provide a name. Scroll down and click the **Create queue** Button. This will give you the Endpoint. The Protocol is **SQS**.
