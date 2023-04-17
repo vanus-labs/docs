@@ -298,7 +298,6 @@ const sidebars = {
               label: 'Sink',
               items: [
                 'user-guides/connector-guides/sink/dingtalk/setup',
-                'user-guides/connector-guides/sink/display/setup',
                 'user-guides/connector-guides/sink/doris/setup',
                 'user-guides/connector-guides/sink/elasticsearch/setup',
                 'user-guides/connector-guides/sink/feishu/setup',
