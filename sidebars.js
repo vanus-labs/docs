@@ -290,6 +290,23 @@ const sidebars = {
                   ],
                 },
 
+                {
+                  type: 'category',
+                  label: 'PostgresSQL',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/postgres/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/postgres/events',
+                      label: 'Output Events',
+                    },
+                  ],
+                },
+
                 /// add new connectors here
               ],
             },
