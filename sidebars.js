@@ -290,6 +290,39 @@ const sidebars = {
                   ],
                 },
 
+                {
+                  type: 'category',
+                  label: 'Amazon SQS',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/amazon-sqs/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/amazon-sqs/events',
+                      label: 'Output Events',
+                    },
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Amazon SNS',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/amazon-sns/setup',
+                      label: 'Setup Guide',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'user-guides/connector-guides/source/amazon-sns/events',
+                      label: 'Output Events',
+                    },
+                  ],
+                },
+
                 /// add new connectors here
               ],
             },
