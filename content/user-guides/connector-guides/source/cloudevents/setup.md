@@ -6,11 +6,11 @@ This guide contains information to set up a CloudEvents Source in Vanus Cloud.
 
 CloudEvent is a standardized format for representing and exchanging event data between different systems and services.
 
-The Vanus CloudEvent Source defines a set of common attributes that all CloudEvents should have, such as ID, source, and type, which provide contextual information about the event.
+The CloudEvent Source is a Webhook server design to receive CloudEvents.
 
 ## Prerequisites
 
-Before obtaining Webhook server to receive events, you must have:
+Before obtaining Payload URL to receive events, you must have:
 
 - A [Vanus Cloud account](https://cloud.vanus.ai)
 
@@ -19,9 +19,9 @@ Before obtaining Webhook server to receive events, you must have:
 To set up CloudEvents Source in Vanus Cloud, follow these steps:
 
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
-2. Click on the **create connection** button under connections.
+2. Click on the **create Connection** button under connections.
 3. From the list of sources, choose **CloudEvents**.
-4. Press **Next**, complete all other configurations and
+4. Press **Next**, complete all other configurations.
    ![](images/cloudevents.png)
 
 ## Supported Events
