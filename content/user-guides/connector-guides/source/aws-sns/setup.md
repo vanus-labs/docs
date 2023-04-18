@@ -35,12 +35,12 @@ Before obtaining SNS events, you must have:
 5. Select **attach policy directly**, and **Create policy**.
    ![](images/permissionoption.png)
 6. Select the Service `Cost Explore Service` and search for the following policy.
-   ![img.png](images/search.png)
     - "PutObject",
     - "GetObject",
     - "GetObjectVersion",
     - "DeleteObject",
     - "DeleteObjectVersion"
+   
 7. Press **next** and proceed to the next page, name your policy and click **create policy**.
 8. Return back to your previous `TAB`.
 9. Search for your custom policy and add it to your account, and press **next**.
