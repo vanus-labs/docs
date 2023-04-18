@@ -138,199 +138,30 @@ const sidebars = {
           type: 'category',
           label: 'Connector Guides',
           items: [
-            {
-              type: 'category',
-              label: 'Source',
-              items: [
                 {
                   type: 'category',
-                  label: 'GitHub',
+                  label: 'Source',
                   items: [
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/github/setup',
-                      label: 'Setup Guide',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/github/events',
-                      label: 'Output Events',
-                    },
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: 'Auth0',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/auth0/setup',
-                      label: 'Setup Guide',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/auth0/events',
-                      label: 'Output Events',
-                    },
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: 'Webhook',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/webhook/setup',
-                      label: 'Setup Guide',
-                    }
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: 'ChatGPT',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/chatgpt/setup',
-                      label: 'Setup Guide',
-                    }
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: 'Shopify',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/shopify/setup',
-                      label: 'Setup Guide',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/shopify/events',
-                      label: 'Output Events',
-                    },
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: 'Amazon S3',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/aws-s3/setup',
-                      label: 'Setup Guide',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/aws-s3/events',
-                      label: 'Output Events',
-                    },
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: 'Amazon Billing',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/aws-billing/setup',
-                      label: 'Setup Guide',
-                    },
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: 'Grafana',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/grafana/setup',
-                      label: 'Setup Guide',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/grafana/events',
-                      label: 'Output Events',
-                    },
-                  ],
-                },
+                    'user-guides/connector-guides/source/auth0/setup',
+                    'user-guides/connector-guides/source/aws-billing/setup',
+                    'user-guides/connector-guides/source/aws-eventbridge/setup',
+                    'user-guides/connector-guides/source/aws-s3/setup',
+                    'user-guides/connector-guides/source/chatgpt/setup',
+                    'user-guides/connector-guides/source/github/setup',
+                    'user-guides/connector-guides/source/grafana/setup',
+                    'user-guides/connector-guides/source/shopify/setup',
+                    'user-guides/connector-guides/source/stripe/setup',
+                    'user-guides/connector-guides/source/webhook/setup'
 
-                {
-                  type: 'category',
-                  label: 'Stripe',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/stripe/setup',
-                      label: 'Setup Guide',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/stripe/events',
-                      label: 'Output Events',
-                    },
                   ],
                 },
-
-                {
-                  type: 'category',
-                  label: 'Amazon Eventbridge',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/aws-eventbridge/setup',
-                      label: 'Setup Guide',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/aws-eventbridge/events',
-                      label: 'Output Events',
-                    },
-                  ],
-                },
-
-                {
-                  type: 'category',
-                  label: 'Amazon SQS',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/amazon-sqs/setup',
-                      label: 'Setup Guide',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/amazon-sqs/events',
-                      label: 'Output Events',
-                    },
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: 'Amazon SNS',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/amazon-sns/setup',
-                      label: 'Setup Guide',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'user-guides/connector-guides/source/amazon-sns/events',
-                      label: 'Output Events',
-                    },
-                  ],
-                },
-
-                /// add new connectors here
-              ],
-            },
             {
               type: 'category',
               label: 'Sink',
               items: [
+                'user-guides/connector-guides/sink/aws-s3/setup',
                 'user-guides/connector-guides/sink/dingtalk/setup',
+                'user-guides/connector-guides/sink/discord/setup',
                 'user-guides/connector-guides/sink/doris/setup',
                 'user-guides/connector-guides/sink/elasticsearch/setup',
                 'user-guides/connector-guides/sink/feishu/setup',
@@ -338,10 +169,8 @@ const sidebars = {
                 'user-guides/connector-guides/sink/http/setup',
                 'user-guides/connector-guides/sink/mongodb/setup',
                 'user-guides/connector-guides/sink/mysql/setup',
-                'user-guides/connector-guides/sink/aws-s3/setup',
                 'user-guides/connector-guides/sink/slack/setup',
-                'user-guides/connector-guides/sink/snowflake/setup',
-                'user-guides/connector-guides/sink/discord/setup'
+                'user-guides/connector-guides/sink/snowflake/setup'
               ],
             }
           ],
@@ -444,143 +273,32 @@ const sidebars = {
             'connectors/source/source-tencentcloud-cos/README'
           ],
         },
-        {
-          type: 'category',
-          label: 'Sink',
-          link: {
-            type: 'doc',
-            id: 'connectors/sink',
-          },
-          items: [
-            'connectors/sink/sink-aws-s3/README',
-            'connectors/sink/sink-display/README',
-            'connectors/sink/sink-doris/README',
-            'connectors/sink/sink-elasticsearch/README',
-            'connectors/sink/sink-email/README',
-            'connectors/sink/sink-feishu/README',
-            'connectors/sink/sink-http/README',
-            'connectors/sink/sink-k8s/README',
-            'connectors/sink/sink-mongodb/README',
-            'connectors/sink/sink-mysql/README',
-            'connectors/sink/sink-slack/README',
-            'connectors/sink/sink-tencentcloud-scf/README'
-          ],
-        },
-      ],
-    }
-    /*{
-      type: 'category',
-      label: 'How to',
-      link: {
-        type: 'doc',
-        id: 'how-to',
-      },
-      items: [
-        {
-          type: 'category',
-          label: 'Produce',
-          items: ['how-to/produce/using-sdk', 'how-to/produce/send-delay-event'],
-        },
-        {
-          type: 'category',
-          label: 'Consume',
-          items: ['how-to/consume/using-sdk'],
-        },
-        'how-to/manage-eventbus',
-        {
-          type: 'category',
-          label: 'Manage subscriptions',
-          link: {
-            type: 'doc',
-            id: 'how-to/manage-subscription',
-          },
-          items: [
-              'how-to/manage-subscription/filters',
-              'how-to/manage-subscription/transformer',
-              {
-                type: 'category',
-                label: 'Function reference',
-                link: {
-                  type: 'doc',
-                  id: 'how-to/manage-subscription/function-reference',
-                },
-                items: [
-                    'how-to/manage-subscription/function-reference/structure',
-                    'how-to/manage-subscription/function-reference/string',
-                    'how-to/manage-subscription/function-reference/date-time',
-                    'how-to/manage-subscription/function-reference/mathematical',
-                    'how-to/manage-subscription/function-reference/conditional',
-                    'how-to/manage-subscription/function-reference/array'
-                ],
-              },
-          ],
-        },
-        'how-to/manage-dlq',
-        'how-to/vsctl',
-        'how-to/use-lambda',
-        'how-to/use-gcloud-functions'
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Connectors',
-      link: {
-        type: 'doc',
-        id: 'connectors',
-      },
-      items: [
-        {
-          type: 'category',
-          label: 'Source',
-          link: {
-            type: 'doc',
-            id: 'connectors/source',
-          },
-          items: [
-            'connectors/source/source-alicloud-billing/README',
-            'connectors/source/source-aws-billing/README',
-            'connectors/source/source-aws-s3/README',
-            'connectors/source/source-aws-sns/README',
-            'connectors/source/source-aws-sqs/README',
-            'connectors/source/source-github/README',
-            'connectors/source/source-http/README',
-            'connectors/source/source-kafka/README',
-            'connectors/source/source-mongodb/README',
-            'connectors/source/source-mysql/README',
-            'connectors/source/source-postgres/README',
-            'connectors/source/source-tencentcloud-cos/README'
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Sink',
-          link: {
-            type: 'doc',
-            id: 'connectors/sink',
-          },
-          items: [
-            'connectors/sink/sink-aws-s3/README',
-            'connectors/sink/sink-display/README',
-            'connectors/sink/sink-doris/README',
-            'connectors/sink/sink-elasticsearch/README',
-            'connectors/sink/sink-email/README',
-            'connectors/sink/sink-feishu/README',
-            'connectors/sink/sink-http/README',
-            'connectors/sink/sink-k8s/README',
-            'connectors/sink/sink-mongodb/README',
-            'connectors/sink/sink-mysql/README',
-            'connectors/sink/sink-slack/README',
-            'connectors/sink/sink-tencentcloud-scf/README'
-          ],
-        },
-      ],
-    },*/
-    /*{
-      type: 'category',
-      label: 'Reference',
-      items: ['reference/cloudevents'],
-    },*/
-  ],
-};
 
-module.exports = sidebars;
+        {
+          type: 'category',
+          label: 'Sink',
+          link: {
+            type: 'doc',
+            id: 'connectors/sink',
+          },
+          items: [
+            'connectors/sink/sink-aws-s3/README',
+            'connectors/sink/sink-display/README',
+            'connectors/sink/sink-doris/README',
+            'connectors/sink/sink-elasticsearch/README',
+            'connectors/sink/sink-email/README',
+            'connectors/sink/sink-feishu/README',
+            'connectors/sink/sink-http/README',
+            'connectors/sink/sink-k8s/README',
+            'connectors/sink/sink-mongodb/README',
+            'connectors/sink/sink-mysql/README',
+            'connectors/sink/sink-slack/README',
+            'connectors/sink/sink-tencentcloud-scf/README'
+          ],
+        }
+    ]
+    }
+      ],
+    };
+
+  module.exports = sidebars;

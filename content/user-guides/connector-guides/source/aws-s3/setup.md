@@ -27,36 +27,40 @@ Before obtaining S3 events, you must have:
 
 ## Getting Started
 
-### Create a new AWS user
+### Step 1: Create a new AWS user
 
-Create a new user and set the proper IAM policy.
-
-1. Log in to the AWS Management Console using your root account credentials.
-2. Navigate to the IAM service by clicking on the Services menu and selecting IAM.
+1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
+2. Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by clicking on the Services menu and selecting IAM.
    ![](images/findIAM.png)
-3. Click on the Users tab in the left navigation menu, and then click the Add user button.
+3. Click on the **Users tab** in the left navigation menu, and then click the **Add user** button.
    ![](images/AddUser.png)
-4. Write the name for your user and click next.
-5. select attach policy directly, and Create policy.
+4. Write the name for your user and click **next**.
+5. Select **attach policy directly**, and **Create policy**.
    ![](images/permissionoption.png)
-6. select the Service `s3` and give it the following policy
-   - "s3:PutObject",
-   - "s3:GetObject",
-   - "s3:GetObjectVersion",
-   - "s3:DeleteObject",
-   - "s3:DeleteObjectVersion"
-7. press next and review.
-8. Name your policy and click create policy.
-9. search for your custom policy and add it to your account, and press next.
-10. Review and press create user.
-11. Now click on the user you just created.
-12. Go to `Access Key` Click Create access key.
-    ![](images/createAccesskey.png)
-13. Select Command line interface CLI, and press next.
-14. Save your access key and secret key safely.
-    ![](images/img.png)
+6. Select the Service `Cost Explore Service` and search for the following policy.
+![img.png](images/search.png)
+   - "PutObject",
+   - "GetObject",
+   - "GetObjectVersion",
+   - "DeleteObject",
+   - "DeleteObjectVersion"
+7. Press **next** and proceed to the next page, name your policy and click **create policy**.
+8. Return back to your previous `TAB`.
+9. Search for your custom policy and add it to your account, and press **next**.
+   ![img.png](images/policy.png)
+10. Review and press **create user**.
 
-### Config your connection
+### Step 2: Create an Create Access Key
+1. Now click on the user you just created.
+   ![img.png](images/user.png)
+2. Under **Security and credential** scroll down the page to `Access Key`, and Click **Create access key**.
+   ![](images/createAccesskey.png)
+3. Select Command line interface CLI, and press **next**.
+   ![img.png](images/CLI.png)
+4. Save your access key and secret key safely.
+   ![](images/img.png)
+
+### Step 3: Config your connection
 
 To obtain S3 Bucket events using the S3 source connector in Vanus Cloud, follow these steps:
 
@@ -75,27 +79,5 @@ To obtain S3 Bucket events using the S3 source connector in Vanus Cloud, follow 
 9. Under SQS config you can choose to create a new SQS by selecting Region or if you already have a SQS provide the ARN.
 10. Click next to continue.
     ![img_4.png](images/img_4.png)
-
-## Supported Events
-
-This Vanus Cloud Source connector offers support for various events. Below is a list of the supported events:
-
-S3:ObjectCreated:
-
-- S3:ObjectCreated:Put
-- S3:ObjectCreated:Post
-- S3:ObjectCreated:Copy
-- S3:ObjectCreated:CompleteMultipartUpload
-
-S3:ObjectRemoved:
-
-- S3:ObjectRemoved:Delete
-- S3:ObjectRemoved:DeleteMarkerCreated
-
-S3:ObjectRestore:
-
-- S3:ObjectRestore:Post
-- S3:ObjectRestore:Complete
-- S3:ObjectRestore:Delete
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

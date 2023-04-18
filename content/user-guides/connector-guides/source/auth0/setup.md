@@ -15,7 +15,7 @@ Before obtaining Auth0 events, you must have:
 - An Auth0 account with administrative privileges
 - A [Vanus Cloud account](https://cloud.vanus.ai)
 
-## Getting Started
+## Step 1: Create your connection
 
 To obtain all Auth0 events using the Streams menu and Webhook option in Vanus Cloud, follow these steps:
 
@@ -26,7 +26,7 @@ To obtain all Auth0 events using the Streams menu and Webhook option in Vanus Cl
 5. After creating your connection, select your connection and get the payload from the Auth0 information.
    ![](images/payload.png)
 
-### Configuring Auth0 to Send Webhook Events
+### Step 2: Configuring Auth0 to Send Webhook Events
 
 1. Log in to your Auth0 account.
 2. Navigate to the **Streams** menu under **Monitoring**.
@@ -41,45 +41,5 @@ To obtain all Auth0 events using the Streams menu and Webhook option in Vanus Cl
 8. Select the event you want to receive notifications for.
    ![img_4.png](images/img_4.png)
 9. and Save your settings.
-
-## Supported Events
-
-This Vanus Cloud Source connector offers support for various events. Below is a list of the supported events:
-
-### Authentication event filters
-
-Login:
-
-- [Login - Failure](events.md#login-failure)
-- Login - Notification
-- Login - Success
-
-Logout:
-
-- Logout - Failure
-- Logout - Success
-
-Signup:
-
-- Signup - Failure
-- Signup - Success
-
-Silent Authentication:
-
-- Silent Authentication - Failure
-- Silent Authentication - Success
-
-Token Exchange:
-
-- Token Exchange - Failure
-- Token Exchange - Success
-
-## Template Scenarios
-
-Here are some easy to use scenarios for this connector.
-
-- [Auth0 login event triggers a Feishu message](https://cloud.vanus.ai/connections/wizard?source=auth0&sink=feishu&id=20230323_1)
-- [Auth0 login event triggers a Slack message](https://cloud.vanus.ai/connections/wizard?source=auth0&sink=slack&id=20230323_2)
-- [Auth0 login event triggers a Discord message](https://cloud.vanus.ai/connections/wizard?source=auth0&sink=discord&id=20230329_1)
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
