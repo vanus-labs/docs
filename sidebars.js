@@ -142,16 +142,16 @@ const sidebars = {
                   type: 'category',
                   label: 'Source',
                   items: [
-                    'user-guides/connector-guides/Source/auth0/setup',
-                    'user-guides/connector-guides/Source/aws-billing/setup',
-                    'user-guides/connector-guides/Source/aws-eventbridge/setup',
-                    'user-guides/connector-guides/Source/aws-s3/setup',
-                    'user-guides/connector-guides/Source/chatgpt/setup',
-                    'user-guides/connector-guides/Source/github/setup',
-                    'user-guides/connector-guides/Source/grafana/setup',
-                    'user-guides/connector-guides/Source/shopify/setup',
-                    'user-guides/connector-guides/Source/stripe/setup',
-                    'user-guides/connector-guides/Source/webhook/setup'
+                    'user-guides/connector-guides/source/auth0/setup',
+                    'user-guides/connector-guides/source/aws-billing/setup',
+                    'user-guides/connector-guides/source/aws-eventbridge/setup',
+                    'user-guides/connector-guides/source/aws-s3/setup',
+                    'user-guides/connector-guides/source/chatgpt/setup',
+                    'user-guides/connector-guides/source/github/setup',
+                    'user-guides/connector-guides/source/grafana/setup',
+                    'user-guides/connector-guides/source/shopify/setup',
+                    'user-guides/connector-guides/source/stripe/setup',
+                    'user-guides/connector-guides/source/webhook/setup'
 
                   ],
                 },
