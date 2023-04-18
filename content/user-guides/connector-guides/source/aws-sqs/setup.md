@@ -58,13 +58,4 @@ To obtain Amazon SQS events using the SQS source connector in Vanus Cloud, follo
    ![img.png](images/vanus-sqs.png)
 5. Click next to continue.
 
-## Supported Events
-
-This Vanus Cloud Source connector offers support for various events. Below is a list of the supported events:
-
-- [Amazon S3 Events](events.md#amazon-s3-events)
-  - S3:ObjectCreated
-  - S3:ObjectRemoved
-  - S3:ObjectRestore
-
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

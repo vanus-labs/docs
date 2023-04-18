@@ -24,32 +24,45 @@ Before obtaining SNS events, you must have:
 
 ## Getting Started
 
-### Step 1: Create a new AWS user
+### Step 1: Create a New AWS User
 
-Create a new user and set the proper IAM policy.
-
-1. Log in to the AWS Management Console using your root account credentials.
-2. Navigate to the IAM service by clicking on the Services menu and selecting IAM.
+1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
+2. Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by clicking on the Services menu and selecting IAM.
    ![](images/findIAM.png)
-3. Click on the Users tab in the left navigation menu, and then click the Add user button.
+3. Click on the **Users tab** in the left navigation menu, and then click the **Add user** button.
    ![](images/AddUser.png)
-4. Write the name for your user and click next.
-5. Select attach policy directly, and Create policy.
+4. Write the name for your user and click **next**.
+5. Select **attach policy directly**, and **Create policy**.
    ![](images/permissionoption.png)
-6. Search for the Service `sns` and select `AmazonSNSFullAccess`
-   ![](images/full-access-sns.png)
-7. Press next and review.
-8. Review and press create user.
-9. Now click on the user you just created.
-10. Go to `Access Key` Click Create access key.
-    ![](images/createAccesskey.png)
-11. Select Command line interface CLI, and press next.
-12. Save your access key and secret key safely.
-    ![](images/img.png)
+6. Select the Service `Cost Explore Service` and search for the following policy.
+   ![img.png](images/search.png)
+    - "PutObject",
+    - "GetObject",
+    - "GetObjectVersion",
+    - "DeleteObject",
+    - "DeleteObjectVersion"
+7. Press **next** and proceed to the next page, name your policy and click **create policy**.
+8. Return back to your previous `TAB`.
+9. Search for your custom policy and add it to your account, and press **next**.
+   ![img.png](images/policy.png)
+10. Review and press **create user**.
 
-### Step 2: Config your connection
+### Step 2: Create an Create Access Key
 
-To obtain Amazon SNS events using the SNS source connector in Vanus Cloud, follow these steps:
+1. Now click on the user you just created.
+   ![img.png](images/user.png)
+2. Under **Security and credential** scroll down the page to `Access Key`, and Click **Create access key**.
+   ![](images/createAccesskey.png)
+3. Select Command line interface CLI, and press **next**.
+   ![img.png](images/CLI.png)
+4. Save your access key and secret key safely.
+   ![](images/img.png)
+
+### Step 3: AWS SNS 
+1. Go to the [Amazon SNS Console](https://console.aws.amazon.com/sns/)
+2. 
+
+### Step 4: Config your Connection
 
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
@@ -73,14 +86,5 @@ To obtain Amazon SNS events using the SNS source connector in Vanus Cloud, follo
 9. Click on the **Create Topic** Button, Select the type as **FIFO** and name the Topic. Scroll down and click the **Create topic** button to create a Topic.
 10. Copy the **SNS ARN** and paste on the field in Vanus Cloud.
 11. Click next to continue.
-
-## Supported Events
-
-This Vanus Cloud Source connector offers support for various events. Below is a list of the supported events:
-
-- [Amazon S3 Events](events.md#amazon-s3-events)
-  - S3:ObjectCreated
-  - S3:ObjectRemoved
-  - S3:ObjectRestore
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

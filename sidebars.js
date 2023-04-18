@@ -324,13 +324,30 @@ const sidebars = {
                 },
 
                 /// add new connectors here
-              ],
-            },
+                {
+                  type: 'category',
+                  label: 'Source',
+                  items: [
+                    'user-guides/connector-guides/Source/auth0/setup.md',
+                    'user-guides/connector-guides/Source/aws-billing/setup.md',
+                    'user-guides/connector-guides/Source/aws-eventbridge/setup.md',
+                    'user-guides/connector-guides/Source/aws-s3/setup.md',
+                    'user-guides/connector-guides/Source/chatgpt/setup.md',
+                    'user-guides/connector-guides/Source/github/setup.md',
+                    'user-guides/connector-guides/Source/grafana/setup.md',
+                    'user-guides/connector-guides/Source/shopify/setup.md',
+                    'user-guides/connector-guides/Source/stripe/setup.md',
+                    'user-guides/connector-guides/Source/webhook/setup.md'
+
+                  ],
+                },
             {
               type: 'category',
               label: 'Sink',
               items: [
+                'user-guides/connector-guides/sink/aws-s3/setup',
                 'user-guides/connector-guides/sink/dingtalk/setup',
+                'user-guides/connector-guides/sink/discord/setup',
                 'user-guides/connector-guides/sink/doris/setup',
                 'user-guides/connector-guides/sink/elasticsearch/setup',
                 'user-guides/connector-guides/sink/feishu/setup',
@@ -338,10 +355,8 @@ const sidebars = {
                 'user-guides/connector-guides/sink/http/setup',
                 'user-guides/connector-guides/sink/mongodb/setup',
                 'user-guides/connector-guides/sink/mysql/setup',
-                'user-guides/connector-guides/sink/aws-s3/setup',
                 'user-guides/connector-guides/sink/slack/setup',
-                'user-guides/connector-guides/sink/snowflake/setup',
-                'user-guides/connector-guides/sink/discord/setup'
+                'user-guides/connector-guides/sink/snowflake/setup'
               ],
             }
           ],
@@ -444,6 +459,7 @@ const sidebars = {
             'connectors/source/source-tencentcloud-cos/README'
           ],
         },
+
         {
           type: 'category',
           label: 'Sink',
@@ -465,8 +481,8 @@ const sidebars = {
             'connectors/sink/sink-slack/README',
             'connectors/sink/sink-tencentcloud-scf/README'
           ],
-        },
-      ],
+        }
+    ]
     }
     /*{
       type: 'category',
@@ -580,7 +596,7 @@ const sidebars = {
       label: 'Reference',
       items: ['reference/cloudevents'],
     },*/
-  ],
-};
+      ],
+    };
 
-module.exports = sidebars;
+  module.exports = sidebars;
