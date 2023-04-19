@@ -61,7 +61,7 @@ const sidebars = {
             id: 'user-guides/how-to-guides',
           },
           items: [
-            'how-to/use-gcloud-functions'
+            'user-guides/how-to-guides/chatgpt-feishu'
           ],
         },
         {
