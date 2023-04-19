@@ -15,7 +15,7 @@ Before obtaining Auth0 events, you must have:
 - An Auth0 account with administrative privileges
 - A [Vanus Cloud account](https://cloud.vanus.ai)
 
-## Step 1: Create your connection
+## Create your connection
 
 To obtain all Auth0 events using the Streams menu and Webhook option in Vanus Cloud, follow these steps:
 
@@ -23,23 +23,24 @@ To obtain all Auth0 events using the Streams menu and Webhook option in Vanus Cl
 2. Click on the **create connection** button under connections.
 3. From the list of sources, choose **Auth0**.
 4. Click **`Next`** to save the Auth0 Source.
-5. After creating your connection, select your connection and get the payload from the Auth0 information.
-   ![](images/payload.png)
 
-### Step 2: Configuring Auth0 to Send Webhook Events
+### How to use the webhook URL
+**Configuring Auth0 to Send Webhook Events**
 
-1. Log in to your Auth0 account.
-2. Navigate to the **Streams** menu under **Monitoring**.
-3. ![img.png](images/img.png)
-4. Click on the **Create Log Stream** button.
+1. Click the copy icon to copy the webhook url.
+![getLink](images/getlink.png)
+2. Log in to your Auth0 account.
+3. Navigate to the **Streams** menu under **Monitoring**.
+4. ![img.png](images/img.png)
+5. Click on the **Create Log Stream** button.
    ![img_1.png](images/img_1.png)
-5. Name your stream and select the **Webhook** option.
+6. Name your stream and select the **Webhook** option.
    ![img_2.png](images/img_2.png)
-6. Provide the payload URL of your Auth0 source connector in Vanus Cloud.
+7. Provide the payload URL of your Auth0 source connector in Vanus Cloud.
    ![img_3.png](images/img_3.png)
-7. Select json line under **Content Format**.
-8. Select the event you want to receive notifications for.
+8. Select json line under **Content Format**.
+9. Select the event you want to receive notifications for.
    ![img_4.png](images/img_4.png)
-9. and Save your settings.
+10. and Save your settings.
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

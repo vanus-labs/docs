@@ -27,28 +27,4 @@ To obtain Shopify events using the Shopify source connector in Vanus Cloud, foll
 5. Click next and finish the configurations.
 
 
-## Supported Events
-This Vanus Cloud Source connector offers support for various events. Below is a list of the supported events:
-
-Customers: 
-- [Customer creation](events.md#customer-creation)
-- Customer update 
-- Customer deletion
-
-Orders: 
-- Order creation 
-- Order update 
-- Order cancellation 
-- Order fulfillment
-- Order payment 
-- Order refund
-Products:
-- Product creation 
-- Product update 
-- Product deletion
-Carts:
-- Cart creation 
-- Cart update
-
-
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
