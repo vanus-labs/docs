@@ -22,6 +22,7 @@ Before obtaining ChatGPT events, you must have:
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
 3. From the list of sources, choose **ChatGPT**.
+![img.png](images/img22.png)
 4. Click **`Next`** to save the ChatGPT Source.
 
 ### Setup ChatGPT in Feishu
@@ -30,11 +31,11 @@ Before obtaining ChatGPT events, you must have:
 ![img.png](images/img_1.png)
 2. Return into Feishu and search for `flow` or `飞书捷径` and click on it.
 ![img.png](images/chatimg.png)
-3. Press on create 
+3. Press **create**.
 ![img_1.png](images/chatimg_1.png)
-4. Select the Trigger and choose Message
+4. Select the Trigger and choose **Message**.
 ![img_2.png](images/img_2.png)
-5. Select `New message that mentioned BOT in the group chat`
+5. Select `New message that mentioned BOT in the group chat`.
 ![img_3.png](images/img_3.png)
 6. In group select **specific groups** Search for the group you've previously created, select your ChatGPT bot under bot and press **confirm**.
 ![img_5.png](images/img_5.png)
