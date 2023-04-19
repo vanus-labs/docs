@@ -20,7 +20,7 @@ To obtain all Stripe events in Vanus Cloud, follow these steps:
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
 3. From the list of sources, choose **Stripe**.
-4. Click next and finish the configurations.
+4. Click next and finish the configurations.g
 
 ### How to use the webhook URL
 **Configuring Stripe to Send Webhook Events**
