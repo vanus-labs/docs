@@ -24,41 +24,19 @@ To obtain all Grafana events using Vanus Cloud, follow these steps:
 5. After creating your connection, select your connection and get the payload from the Grafana information.
    ![](images/payload.png)
 
-### Configuring Grafana to send Events
-
-1. Log in to your Grafana account.
-2. Navigate to the **Alert & IRM** menu in the **Menu** Tab.
+### How to use the webhook URL
+**Configuring Grafana to send Events**
+ 
+1. Click the copy icon to copy the webhook url.
+   ![](images/getlink.png)
+2. Log in to your Grafana account.
+3. Navigate to the **Alert & IRM** menu in the **Menu** Tab.
    ![img.png](images/img.png)
-3. Click on the **Contact Points**, and click on **add contact point**.
+4. Click on the **Contact Points**, and click on **add contact point**.
    ![img_1.png](images/img_1.png)
-4. Name your contact point and click on integration and select webhook.
-5. Provide the payload URL of your Grafana source connector in Vanus Cloud.
+5. Name your contact point and click on integration and select webhook.
+6. Provide the payload URL of your Grafana source connector in Vanus Cloud.
    ![img_2.png](images/img_2.png)
-6. Save your settings.
-
-## Supported Events
-
-This Vanus Cloud Source connector offers support for various events. Below is a list of the supported events:
-
-Resource usage metrics:
-
-- CPU utilization
-- Memory usage
-
-Security events:
-
-- Failed login attempts
-
-Billing and cost metrics:
-
-- Instances running
-- Storage usage
-
-## Template Scenarios
-
-Here are some easy to use scenarios for this connector.
-
-- [Grafana resource utilization threshold event triggers a Discord message](https://cloud.vanus.ai/connections/wizard?source=grafana&sink=discord&id=20230330_1)
-- [Grafana resource utilization threshold event triggers a Feishu message](https://cloud.vanus.ai/connections/wizard?source=grafana&sink=feishu&id=20230406_4)
+7. Save your settings.
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
