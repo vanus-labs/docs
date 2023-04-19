@@ -25,8 +25,10 @@ Before obtaining ChatGPT events, you must have:
 ![img.png](images/img22.png)
 4. Click **`Next`** to save the ChatGPT Source.
 
+
 ### How to use the webhook URL
 **How to setup ChatGPT in Feishu**
+
 
 1. Click the copy icon to copy the webhook url.
 ![img.png](images/img_1.png)
