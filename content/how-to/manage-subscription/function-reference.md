@@ -24,6 +24,7 @@ The following sections describe the functions, organized by what they do.
   - move
   - rename
   - replace
+  - duplicate
 - [String](function-reference/string.md)
   - upper_case
   - lower_case
@@ -31,6 +32,19 @@ The following sections describe the functions, organized by what they do.
   - add_suffix
   - replace_with_regex
   - join
+  - replace_string
+  - replace_between_positions
+  - capitalize_sentence
+  - check_custom_values
+  - split_with_intervals
+  - extract_between_delimiters
+  - extract_missing
+  - replace_between_delimiters
+  - capitalize_word
+  - split_with_delimiter
+  - split_between_positions
+  - split_from_start
+  - extract_between_positions
 - [Date and time](function-reference/date-time.md)
   - date_format
   - unix_time_format
@@ -39,3 +53,11 @@ The following sections describe the functions, organized by what they do.
   - math_sub
   - math_mul
   - math_div
+- [Condition]
+  - condition_if
+- [Array]
+  - render_array
+  - array_foreach
+  - unfold_array
+- [Common]
+  - length
