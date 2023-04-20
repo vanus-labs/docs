@@ -22,20 +22,26 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 2. Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by clicking on the Services menu and selecting IAM.
    ![](images/findIAM.png)
 3. Click on the **Users tab** in the left navigation menu, and then click the **Add user** button.
-   ![](images/AddUser.png)
+![](images/AddUser.png)
 4. Write the name for your user and click **next**.
+![img.png](images/setname.png)
 5. Select **attach policy directly**, and **Create policy**.
 ![](images/permissionoption.png)
-6. Select the Service `Cost Explore Service` and search for the following policy.
-   ![img.png](images/search.png)
-   - "GetCostAndUsage",
-7. Press **next** and proceed to the next page, name your policy and click **create policy**.
-8. Return back to your previous `TAB`.
-9. Search for your custom policy and add it to your account, and press **next**.
+6. Select the Service `Cost Explore Service`.
+![img.png](images/searchcost.png)
+7. Next search for the following policy.
+   - "GetCostAndUsage", 
+![img.png](images/search.png)
+8. Press **next** and proceed to the next page.
+![img_1.png](images/tag.png)
+9. Name your policy and click **create policy**.
+10. Return back to your previous `TAB`.
+![img.png](images/tab.png)
+11. Search for your custom policy and add it to your account, and press **next**.
 ![img.png](images/policy.png)
-10. Review and press **create user**.
+12. Review and press **create user**.
 
-### Step 2: Create an Create Access Key
+### Step 2: Create an Access Key and Secret Key
 1. Now click on the user you just created.
 ![img.png](images/user.png)
 2. Under **Security and credential** scroll down the page to `Access Key`, and Click **Create access key**.
@@ -52,6 +58,6 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 3. From the list of sources, choose **Amazon Billing**.
 4. Fill in your Access Key ID and your Secret Key and click next
 5. Click **`Next`** to save the Amazon Billing Source
-   ![](images/aws-billing.png)
+![](images/aws-billing.png)
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai)
