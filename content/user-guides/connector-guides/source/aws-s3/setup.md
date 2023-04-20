@@ -37,18 +37,24 @@ Before obtaining S3 events, you must have:
 4. Write the name for your user and click **next**.
 5. Select **attach policy directly**, and **Create policy**.
    ![](images/permissionoption.png)
-6. Select the Service `Cost Explore Service` and search for the following policy.
-![img.png](images/search.png)
+6. Search and select the Service `s3`.
+![img.png](images/s3search.png)
+7. Search for the following policy.
    - "PutObject",
    - "GetObject",
    - "GetObjectVersion",
    - "DeleteObject",
    - "DeleteObjectVersion"
-7. Press **next** and proceed to the next page, name your policy and click **create policy**.
-8. Return back to your previous `TAB`.
-9. Search for your custom policy and add it to your account, and press **next**.
+   ![img.png](images/search.png)
+8. Press **next** and proceed to the next page.
+![](images/user.png)
+9. name your policy and click **create policy**.
+![](images/setname.png)
+10. Return back to your previous `TAB`.
+![](images/tab.png)
+10. Search for your custom policy and add it to your account, and press **next**.
    ![img.png](images/policy.png)
-10. Review and press **create user**.
+11. Review and press **create user**.
 
 ### Step 2: Create an Create Access Key
 1. Now click on the user you just created.
@@ -69,9 +75,10 @@ To obtain S3 Bucket events using the S3 source connector in Vanus Cloud, follow 
 3. From the list of sources, choose **Amazon S3**.
 4. Enter your Access Key and Secret Key in Vanus Cloud.
    ![img.png](images/s33.png)
-5. Now let go back to Amazon Web Services under the Amazon S3 service.
+5. Now let go back to Amazon Web Services under the [Amazon S3 service](https://s3.console.aws.amazon.com/s3/buckets).
    ![img_1.png](images/img_1.png)
 6. At this point you can either create a new bucket or select a existent bucket.
+![](images/createbucket.png)
 7. Once selected or created go to your bucket property and copy and paste the ARN to Vanus Cloud.
    ![img_2.png](images/img_2.png)
 8. Specify the kind of event you want to receive from the list

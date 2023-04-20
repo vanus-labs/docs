@@ -22,8 +22,9 @@ To obtain a unique Webhook URL in Vanus Cloud, follow these steps:
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
 3. From the list of sources, choose **Webhook**.
-4. Press **next**, complete all other configurations and 
-5. After creating your connection, select your connection and get the payload from the Webhook information.
-   ![](images/payload.png)
+4. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
+![img.png](images/greatlink.png)
+5. Press **next**.
+
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
