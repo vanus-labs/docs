@@ -20,23 +20,8 @@ To obtain all Grafana events using Vanus Cloud, follow these steps:
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
 3. From the list of sources, choose **Grafana**.
-4. Click **`Next`** to save the Grafana Source.
-5. After creating your connection, select your connection and get the payload from the Grafana information.
-   ![](images/payload.png)
-
-### How to use the webhook URL
-**Configuring Grafana to send Events**
- 
-1. Click the copy icon to copy the webhook url.
-   ![](images/getlink.png)
-2. Log in to your Grafana account.
-3. Navigate to the **Alert & IRM** menu in the **Menu** Tab.
-   ![img.png](images/img.png)
-4. Click on the **Contact Points**, and click on **add contact point**.
-   ![img_1.png](images/img_1.png)
-5. Name your contact point and click on integration and select webhook.
-6. Provide the payload URL of your Grafana source connector in Vanus Cloud.
-   ![img_2.png](images/img_2.png)
-7. Save your settings.
+4. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
+   ![img.png](images/greatlink.png)
+5. Click **`Next`** to save the Grafana Source.
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
