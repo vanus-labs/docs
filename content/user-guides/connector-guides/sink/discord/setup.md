@@ -20,29 +20,31 @@ Before forwarding events to Slack, you must have:
 
 **To set up an app for receiving events in your Discord server:**
 
-### Step 1: Create a server
+### Step 1: Create a Server
 1. go to the Discord application.
 2. Create a new server by clicking the `+`.
-![img.png](img.png)
+![img.png](images/img.png)
 3. Choose a template or create your own.
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 4. Finish setting up your server.
 
-### Step 2: get a webhook url
+### Step 2: Get a webhook url
 1. Go to **Server Settings**.
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 2. Click **integration** in the sidebar under APPS.
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 3. Click **create Webhook**.
-![img_4.png](img_4.png)
+![img_4.png](images/img_4.png)
 4. Click on the webhook you just created.
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
 5. Copy and save your payload URL
-![img_6.png](img_6.png)
+![img_6.png](images/img_6.png)
 
 ### Connection Setup
-1. Paste your webhook URL in the `URL` field.
-2. Click "Next" to continue.
+1. Go back to Vanus Cloud.
+2. Paste your webhook URL in the `URL` field.
+![img_7.png](images/img_7.png)
+3. Click "Next" to continue.
 
 ## Required Data Format
 

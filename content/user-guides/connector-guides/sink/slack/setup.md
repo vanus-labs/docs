@@ -21,21 +21,26 @@ Before forwarding events to Slack, you must have:
 **To set up an app for receiving events in your Slack channel:**
 
 ### Step 1: Create a Slack App
-1. Create an App on Slack.
+1. Create an [App on Slack](https://api.slack.com/apps).
    ![](images/slack-createapp.png)
 2. Select From Scratch.
    ![](images/slack-selectfromscratch.png)
-3. Set the Bot name and Workspace.
+3. Set the app name and Workspace.
+![](images/create-app.png)
 
 ### Step 2: Create a Incoming Webhook
 1. select **Incoming Webhooks** in the sidebar menu.
 ![img.png](images/img.png)
-2. Turn on Webhooks.
-![img_1.png](images/img_1.png)
-3. Scroll down and click **Add New Webhook to Workspace** to add new webhook.
-4. Select the channel you want to send messages to and copy the URL.
+2. Turn on Webhooks and scroll down and click **Add New Webhook to Workspace** to add new webhook.
+![](images/slack-add-webhook.png)
+3. Select the channel to receive messages.
+![img.png](images/addtochannel.png)
+4. Now copy the webhook URL.
+![](images/slack-webhook-url.png)
 
-### Step 3: Finish the connection
+Check out this detail [**Article**](https://www.vanus.ai/blog/get-your-slack-webhook-url/) on how to get a Slack Webhook URL.
+
+### Step 3: Finish the Connection
 1. In Vanus Cloud, paste the Webhook URL into the `URL` field. 
 ![img_2.png](images/img_2.png)
 2. Click **Next** to continue.
