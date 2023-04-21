@@ -15,7 +15,7 @@
 ![](images/image1.jpg)
 8. Select the event you want to receive notifications for. 
 ![img.png](images/image2.png)
-9. and Save your settings.
+9. Save your settings.
 
 :::caution
 At this time you can only select one event.
