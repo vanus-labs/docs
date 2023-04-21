@@ -33,11 +33,12 @@ Before forwarding events to Slack, you must have:
 ![img.png](images/img.png)
 2. Turn on Webhooks and scroll down and click **Add New Webhook to Workspace** to add new webhook.
 ![](images/slack-add-webhook.png)
-3. Select the channel you want to send messages to 
+3. Select the channel to receive messages.
+![img.png](images/addtochannel.png)
 4. Now copy the webhook URL.
 ![](images/slack-webhook-url.png)
 
-Check out this detail [Article](https://www.vanus.ai/blog/get-your-slack-webhook-url/) on how to get a Slack Webhook URl.
+Check out this detail [**Article**](https://www.vanus.ai/blog/get-your-slack-webhook-url/) on how to get a Slack Webhook URL.
 
 ### Step 3: Finish the Connection
 1. In Vanus Cloud, paste the Webhook URL into the `URL` field. 
