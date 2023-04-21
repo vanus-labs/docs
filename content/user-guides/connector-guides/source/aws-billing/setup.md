@@ -37,7 +37,7 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 ![img.png](images/search.png)
 8. Press **next** and proceed to the next page.
 ![img_1.png](images/tag.png)
-9. Name your policy and click **create policy**.
+9. Name your policy and click **Create policy**.
 10. Return back to your previous `TAB`.
 ![img.png](images/tab.png)
 11. Search for your custom policy and add it to your account, and press **next**.
