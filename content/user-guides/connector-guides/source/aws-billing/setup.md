@@ -28,7 +28,7 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 ![](images/AddUser.png)
 4. Write the name for your user and click **next**.
 ![img.png](images/setname.png)
-5. Select **attach policy directly**, and **Create policy**.
+5. Select **Attach policy directly**, and **Create policy**.
 ![](images/permissionoption.png)
 6. Select the Service `Cost Explore Service`.
 ![img.png](images/searchcost.png)
