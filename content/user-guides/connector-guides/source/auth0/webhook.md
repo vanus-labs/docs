@@ -13,6 +13,10 @@
 ![](images/image.jpg)
 7. Provide the payload URL of your Auth0 source connector in Vanus Cloud, and select the json line under **Content Format**.
 ![](images/image1.jpg)
-8. Select the event you want to receive notifications for.
+8. Select the event you want to receive notifications for. 
 ![img.png](images/image2.png)
 9. and Save your settings.
+
+:::caution
+At this time you can only select one event.
+:::
