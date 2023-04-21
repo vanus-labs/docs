@@ -39,21 +39,13 @@ Before forwarding events to Feishu, you must have:
 ![img_2.png](images/img_2.png)
 3. Optionally add your Signature.
 ![img_3.png](images/img_3.png)
-
-Check out this article on how to get a [Feishu Webhook](https://www.vanus.ai/blog/retrieve-feishu-webhook-url/) for more details.
 4. Click "Next" to continue.
 
-
-## Required Data Format
-The event data must be text format, here a simple message, example:
-
-```text
-Hello <client_name>, User <user_name> just used <connection> to sign in to <client_name>. User <user_name> has logged in <number_of_login> times.
-```
+Check out this article on how to get a [Feishu Webhook](https://www.vanus.ai/blog/retrieve-feishu-webhook-url/) for more details.
 
 :::caution
 **ChatGPT Source**
-Trying to create a ChatGPT to Feishu connection, Checkout this [article](https://xjxt2gkbqf.feishu.cn/wiki/wikcnQpoi1rqoo4jI7q7j4iMYob) on how to proceed after creating the connection.
+Trying to create a ChatGPT to Feishu connection, Checkout the article on how to proceed after creating the connection [**click here**](https://xjxt2gkbqf.feishu.cn/wiki/wikcnQpoi1rqoo4jI7q7j4iMYob).
 Also note that after creating your connection there is still some more steps.
 :::
 
