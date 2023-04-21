@@ -39,7 +39,7 @@ Before forwarding events to Slack, you must have:
 
 Check out this detail [Article](https://www.vanus.ai/blog/get-your-slack-webhook-url/) on how to get a Slack Webhook URl.
 
-### Step 3: Finish the connection
+### Step 3: Finish the Connection
 1. In Vanus Cloud, paste the Webhook URL into the `URL` field. 
 ![img_2.png](images/img_2.png)
 2. Click **Next** to continue.

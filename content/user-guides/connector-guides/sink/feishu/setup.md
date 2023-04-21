@@ -31,7 +31,7 @@ Before forwarding events to Feishu, you must have:
 7. (Optionally) you can also set a **signature verification** for added security.
    ![img.png](images/feishu-signature.png)
 
-### Step 2: Finish you subscription
+### Step 2: Finish you Subscription
 
 1. In Vanus Cloud, select Feishu Sink
 ![img.png](images/img.png)
