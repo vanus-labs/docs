@@ -21,10 +21,12 @@ Before obtaining ChatGPT events, you must have:
 
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
-3. From the list of sources, choose **ChatGPT**.
+3. Write a connection name without any spaces.
+![img.png](img.png)
+4. From the list of sources, choose **ChatGPT**.
 ![img.png](images/chat.png)
-4. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
+5. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
    ![img.png](images/greatlink.png)
-5. Click **`Next`** to save the ChatGPT Source.
+6. Click **`Next`** to save the ChatGPT Source.
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
