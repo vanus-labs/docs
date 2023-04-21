@@ -25,7 +25,7 @@ Before forwarding events to Slack, you must have:
    ![](images/slack-createapp.png)
 2. Select From Scratch.
    ![](images/slack-selectfromscratch.png)
-3. Set the Bot name and Workspace.
+3. Set the app name and Workspace.
 ![](images/create-app.png)
 
 ### Step 2: Create a Incoming Webhook
