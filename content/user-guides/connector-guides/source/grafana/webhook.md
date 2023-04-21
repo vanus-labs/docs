@@ -3,7 +3,7 @@
 1. Click the copy icon to copy the Webhook URL.
    ![](images/getlink.png)
 2. Log in to your [Grafana](https://grafana.com) account.
-3. Navigate to the **Alert & IRM** menu in the **Menu** Tab.
+3. Navigate to the **Alert & IRM** menu in the **Menu** Tab, and click on **Alerting**.
 ![img.png](img.png)
 4. Click on the **Contact Points**, and click on **add contact point**.
 ![img_1.png](img_1.png)
