@@ -25,19 +25,36 @@ Before forwarding events to Ding Talk, you must have:
 1. Log in to your Ding Talk.
 2. In the top navigation pane, click **Robot Management**.
 ![](images/dingtalk-bot-management.png)
+
+
 3. In the **Robot Management** page, click **Custom**.
-![](images/dingtalk-bot-custom.png)
+
+   ![](images/dingtalk-bot-custom.png)
+
+
 4. In the **Robot details** page, click **Add**.
-![](images/dingtalk-bot-details.png)
+
+
+   ![](images/dingtalk-bot-details.png)
+
+
 5. In the **Add Robot** dialog:
-![](images/dingtalk-bot-addrobot.png)
+
+
+   ![](images/dingtalk-bot-addrobot.png)
+
+
     - In the **Chatbot name** field, provide a name for the robot.
     - In the **Add to Group** field, select the target group in which the Robot will create.
     - In the **Security Settings** field, selected the **Additional Signature**.
     - Accept the Terms of Service.
     - Click **Finished**.
+
+
 6. Then get the **Webhook**.
-![](images/dingtalk-bot-addrobot-2.png)
+
+
+   ![](images/dingtalk-bot-addrobot-2.png)
 
 ### Step 2: Set up the Ding Talk Sink connector in Vanus Cloud
 
