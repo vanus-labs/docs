@@ -20,7 +20,7 @@ Before obtaining ChatGPT events, you must have:
 2. Click on the **create connection** button under connections.
 ### Create a Connection
 
-1. Write a connection name without any spaces.
+1. Write a name for your connection.
 ![img.png](images/name.png)
 2. From the list of sources, choose **ChatGPT**.
 ![img.png](images/chat.png)
