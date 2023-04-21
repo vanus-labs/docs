@@ -40,17 +40,18 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 9. Name your policy and click **Create policy**.
 10. Return back to your previous `TAB`.
 ![img.png](images/tab.png)
-11. Search for your custom policy and add it to your account, and press **next**.
+11. Search for your custom policy and add it to your account, and press **Next**.
 ![img.png](images/policy.png)
-12. Review and press **create user**.
+12. Review and press **Create user**.
 ![img.png](images/createuser.png)
-13. 
+
+
 ### Step 2: Create an Access Key and Secret Key
 1. Now click on the user you just created.
 ![img.png](images/user.png)
 2. Under **Security and credential** scroll down the page to `Access Key`, and Click **Create access key**.
 ![](images/createAccesskey.png)
-3. Select Command line interface CLI, and press **next**.
+3. Select Command line interface CLI, and press **Next**.
 ![img.png](images/CLI.png)
 4. Click **Create sccess key**.
 ![img.png](images/createacess.png)
@@ -62,9 +63,7 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 1. Write a name for your connection.
       ![img.png](images/name.png)
 2. From the list of sources, choose **Amazon Billing**.
-3. Fill in your Access Key ID and your Secret Key.
-4. Add the hour of day you want to recieve the events.
-5. Click **`Next`** to save the Amazon Billing Source
+3. Provide your Access Key ID and Secret Key, set the desired hour for event fetching, and then save the Amazon Billing Source by clicking "Next".
 ![](images/aws-billing.png)
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai)
