@@ -49,9 +49,11 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 1. Now click on the user you just created.
 ![img.png](images/user.png)
 2. Under **Security and credential** scroll down the page to `Access Key`, and Click **Create access key**.
-    ![](images/createAccesskey.png)
+![](images/createAccesskey.png)
 3. Select Command line interface CLI, and press **next**.
 ![img.png](images/CLI.png)
+4. Click **Create sccess key**.
+![img.png](images/createacess.png)
 4. Save your access key and secret key safely.
     ![](images/img.png)
 
