@@ -19,7 +19,7 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections
 
-### Step 1: How to create a new AWS user
+### Step 1: Create a new AWS user
 
 1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
 2. Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by searching for IAM and click the IAM service.
@@ -35,7 +35,7 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 7. Next search for the following policy.
    - "GetCostAndUsage", 
 ![img.png](images/search.png)
-8. Press **next** and proceed to the next page.
+8. Press **Next** and proceed to the next page.
 ![img_1.png](images/tag.png)
 9. Name your policy and click **Create policy**.
 10. Return back to your previous `TAB`.
@@ -43,7 +43,8 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 11. Search for your custom policy and add it to your account, and press **next**.
 ![img.png](images/policy.png)
 12. Review and press **create user**.
-
+![img.png](images/createuser.png)
+13. 
 ### Step 2: Create an Access Key and Secret Key
 1. Now click on the user you just created.
 ![img.png](images/user.png)
