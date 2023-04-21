@@ -4,47 +4,25 @@ This guide contains information to set up a Grafana Source in Vanus Cloud.
 
 ## Introduction
 
-Grafana is a powerful open-source data visualization and monitoring tool that can be used to visualize and analyze various types of data, including cloud events.
+Grafana is an open-source platform for data visualization and analytics. It enables users to create and share dashboards, charts, and alerts across multiple data sources.
+
+The Grafana Source is a webhook server that enables you to establish an endpoint for receiving events from Grafana. To achieve this, it is necessary to establish a connection within Grafana.
 
 ## Prerequisites
 
 - A [Vanus Cloud account](https://cloud.vanus.ai)
-- Grafana installed on your machine or an Account in Grafana Cloud
+- A Grafana instance or an account in Grafana cloud
 
 ## Getting Started
 
-To obtain all Grafana events using the Streams menu and Webhook option in Vanus Cloud, follow these steps:
+To obtain all Grafana events using Vanus Cloud, follow these steps:
 
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
 3. From the list of sources, choose **Grafana**.
-4. Click **`Next`** to save the Grafana Source.
-5.  After creating your connection, select your connection and get the payload from the Grafana information.
-   ![](images/payload.png)
+![img.png](images/graf.png)
+4. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
+   ![img.png](images/greatlink.png)
+5. Click **`Next`** to save the Grafana Source.
 
-### Configuring Grafana to Send Webhook Events
-
-1. Log in to your Grafana account.
-2. Navigate to the **Alerting** menu in the **Menu** Tab.
-3. Click on the **Contact Points** button.
-4. Click on **Add Contact Point**
-5. Name your contact point and select the **Webhook** option.
-   ![](images/webhook.png)
-6. Provide the payload URL of your Grafana source connector in Vanus Cloud.
-7. Save your settings.
-
-## Supported Events
-
-Resource usage metrics:
-
-- CPU utilization
-- Memory usage
-
-Security events:
-
-- Failed login attempts
-
-Billing and cost metrics:
-
-- Instances running
-- Storage usage
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

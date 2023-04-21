@@ -6,6 +6,8 @@ This guide contains information to set up a Stripe Source in Vanus Cloud.
 
 Stripe is a technology company that provides a suite of APIs (Application Programming Interfaces) and tools that enable businesses to process online payments and manage their financial transactions.
 
+The Stripe Source is a webhook server that enables you to establish an endpoint for receiving events from Stripe. To achieve this, it is necessary to establish a connection within Stripe.
+
 ## Prerequisites
 
 - A [Vanus Cloud account](https://cloud.vanus.ai)
@@ -13,28 +15,14 @@ Stripe is a technology company that provides a suite of APIs (Application Progra
 
 ## Getting Started
 
-To obtain all Stripe events using the Webhook option in Vanus Cloud, follow these steps:
+To obtain all Stripe events in Vanus Cloud, follow these steps:
 
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
 3. From the list of sources, choose **Stripe**.
-4. Click next and finish the configurations.
-5. After creating your connection, select your connection and get the payload from the Grafana information.
-   ![](images/stripe.png)
+![img.png](images/stripee.png)
+4. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
+   ![img.png](images/greatlink.png)
+5. Click **next** and finish the configurations.
 
-### Configuring Stripe to Send Webhook Events
-
-1. Log in to your Stripe account and navigate to the **Developer** section.
-2. Click on **Webhooks** in the left-hand menu.
-3. Click on the **Add endpoint** button to create a new webhook.
-4. Enter the URL for your webhook endpoint. This is the URL where Stripe will send the webhook events.
-5. Select the events you want to receive notifications for. Stripe offers a wide range of events, such as `charge.succeeded`, `invoice.paid`, and `customer.subscription.updated`.
-6. Click on the **Create endpoint** button to save your webhook.
-
-## Supported Events
-
-- [Charge Succeded](events.md#charge-succeded)
-
-- [Invoice Paid](events.md#invoice-paid)
-
-- [Customer Subscription Update](events.md#customer-subscription-updated)
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

@@ -6,11 +6,9 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --bg-gradient: linear-gradient(
-                  to bottom,
-                  hsl(225, 71%, 25%),
-                  hsl(225, 71%, 25%)
-  );
+  --bg-gradient: linear-gradient(to bottom,
+      hsl(225, 71%, 25%),
+      hsl(225, 71%, 25%));
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -55,6 +53,7 @@
   article header h1 {
     font-size: 1.5rem !important;
   }
+
   .hero .hero__title {
     font-size: 2.5rem;
   }
@@ -67,47 +66,55 @@
 }
 
 /*自定义修改*/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {}
 
-}
 /*顶部导航条*/
-.navbar__items{
+.navbar__items {
   height: 44px;
 }
+
 /*左侧菜单栏*/
-.menu__link{
+.menu__link {
   padding: 0.375rem var(--ifm-menu-link-padding-horizontal);
 }
-.menu__link--sublist{
+
+.menu__link--sublist {
   /*color: #000;*/
 }
-.menu__link.menu__link--sublist{
+
+.menu__link.menu__link--sublist {
   /*font-weight: var(--ifm-font-weight-bold);*/
 }
+
 /*正文*/
-.markdown{
+.markdown {
   --ifm-h1-vertical-rhythm-top: 1.5;
   --ifm-h2-vertical-rhythm-top: 1.25;
   --ifm-h3-vertical-rhythm-top: 1;
   --ifm-h1-vertical-rhythm-bottom: 1;
 }
+
 /*代码*/
-pre code .token-line{
+pre code .token-line {
   font-size: 14px;
 }
+
 /*黑暗模式 右上角icon*/
 [data-theme=dark] .header-github-link:before {
   background: url("/img/github_white.png") no-repeat center;
   background-size: 24px 24px;
 }
+
 [data-theme=dark] .header-slack-link:before {
   background: url("/img/slack_white.png") no-repeat center;
   background-size: 24px 24px;
 }
+
 [data-theme=dark] .header-twitter-link:before {
   background: url("/img/twitter_white.png") no-repeat center;
   background-size: 24px 24px;
 }
+
 /*普通模式 右上角icon*/
 .header-github-link:before {
   background: url("/img/github.png") no-repeat center;
@@ -117,6 +124,7 @@ pre code .token-line{
   height: 24px;
   width: 24px;
 }
+
 .header-slack-link:before {
   background: url("/img/slack.png") no-repeat center;
   background-size: 24px 24px;
@@ -125,6 +133,7 @@ pre code .token-line{
   height: 24px;
   width: 24px;
 }
+
 .header-twitter-link:before {
   background: url("/img/twitter.png") no-repeat center;
   background-size: 24px 24px;
@@ -133,22 +142,33 @@ pre code .token-line{
   height: 24px;
   width: 24px;
 }
+
 /*顶部导航条右上角icon 悬浮*/
-a.header-github-link:hover{
-  filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5;
+a.header-github-link:hover {
+  filter: alpha(Opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
-a.header-slack-link:hover{
-  filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5;
+
+a.header-slack-link:hover {
+  filter: alpha(Opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
-a.header-twitter-link:hover{
-  filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5;
+
+a.header-twitter-link:hover {
+  filter: alpha(Opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
+
 /*底部版权信息*/
-.footer__copyright{
+.footer__copyright {
   color: #898c8c;
 }
+
 /*顶部导航条logo*/
-.navbar__brand{
+.navbar__brand {
   font-size: 20px;
   line-height: 44px;
 }
@@ -161,7 +181,88 @@ a.header-twitter-link:hover{
 
 // .buttonGroup_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module,
 .theme-code-block div[class^="buttonGroup"] {
-  display: block !important; 
+  display: block !important;
   position: relative !important;
   margin-top: 5px;
+}
+
+.main-wrapper div[class^="expandButton"] {
+  align-items: end;
+  padding-bottom: 10px;
+}
+
+.main-wrapper button {
+  display: flex !important;
+  justify-content: flex-end;
+}
+
+.main-wrapper h2 {
+  margin: 16px 0;
+}
+
+//imgbox
+.material-icons:before {
+  display: inline-block;
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga"
+}
+
+.check-original-image {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, .4);
+  font-size: 15px;
+  color: #fff;
+  z-index: 10000001;
+  transition: all 0.25s;
+}
+
+.check-original-image:hover {
+  box-shadow: 0px 0px 10px -2px rgb(0, 0, 0);
+}
+
+a.close-original-image {
+  z-index: 10000001;
+  display: block;
+  width: 96px;
+  height: 96px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 50%;
+  background-color: rgba(0, 0, 0, .6);
+  transform: rotate(-50deg);
+  position: fixed;
+  right: -45px;
+  top: -45px;
+  text-align: center;
+  line-height: 94px;
+}
+
+a.close-original-image:before {
+  content: '\E14C';
+  color: #fff;
+  margin-left: -45px;
+  transform: rotate(50deg);
+  transition: transform 0.5s;
+}
+
+a.close-original-image:hover:before {
+  transform: rotate(230deg);
 }
