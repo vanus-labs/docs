@@ -15,16 +15,17 @@ The Stripe Source is a webhook server that enables you to establish an endpoint 
 
 ## Getting Started
 
-To obtain all Stripe events in Vanus Cloud, follow these steps:
-
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
-3. Write a connection name without any spaces.
+
+### Create a Connection
+
+1. Write a name for your connection.
    ![img.png](images/name.png)
-4. From the list of sources, choose **Stripe**.
+2. From the list of sources, choose **Stripe**.
 ![img.png](images/stripee.png)
-5. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
+3. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
    ![img.png](images/greatlink.png)
-6. Click **next** and finish the configurations.
+4. Click **next** and finish the configurations.
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
