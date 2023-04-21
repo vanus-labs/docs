@@ -35,10 +35,12 @@ Before forwarding events to Feishu, you must have:
 
 1. In Vanus Cloud, select Feishu Sink
 ![img.png](images/img.png)
-2. paste the payload URL into the "URL" field.
+2. Paste the payload URL into the "URL" field.
 ![img_2.png](images/img_2.png)
 3. Optionally add your Signature.
 ![img_3.png](images/img_3.png)
+
+Check out this article on how to get a [Feishu Webhook](https://www.vanus.ai/blog/retrieve-feishu-webhook-url/) for more details.
 4. Click "Next" to continue.
 
 
@@ -51,20 +53,9 @@ Hello <client_name>, User <user_name> just used <connection> to sign in to <clie
 
 :::caution
 **ChatGPT Source**
-If you created a connection with chatGPT Source after submitting you will need to finish the connection by setting up
-the URL [click here](../../source/chatgpt/setup.md) to open the configuration step for chatGPT.
+Trying to create a ChatGPT to Feishu connection, Checkout this [article](https://xjxt2gkbqf.feishu.cn/wiki/wikcnQpoi1rqoo4jI7q7j4iMYob) on how to proceed after creating the connection.
+Also note that after creating your connection there is still some more steps.
 :::
 
 
-## Template Scenario
-Here are some easy to use scenarios for this connector.
 
-- [Chat with ChatGPT via Feishu bot](https://cloud.vanus.ai/connections/wizard?source=chatgpt&sink=http&id=20230329_0)
-- [Amazon EventBridge CreateBucket | DeleteBucket event triggers a Feishu message](https://cloud.vanus.ai/connections/wizard?source=aws-eventbridge&sink=http&id=20230329_1)
-- [GitHub star event triggers a Feishu message](https://cloud.vanus.ai/connections/wizard?source=github&sink=http&id=20230306_1)
-- [GitHub issue event triggers a Feishu message](https://cloud.vanus.ai/connections/wizard?source=github&sink=http&id=20230307_2)
-- [GitHub issue comment event triggers a Feishu message](https://cloud.vanus.ai/connections/wizard?source=github&sink=http&id=20230307_3)
-
-
-
-Check out this article on how to get a [Feishu Webhook](https://www.vanus.ai/blog/retrieve-feishu-webhook-url/) for more details.

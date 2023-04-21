@@ -21,12 +21,13 @@ Before forwarding events to Slack, you must have:
 **To set up an app for receiving events in your Slack channel:**
 
 ### Step 1: Create a Slack App
-1. Create an App on Slack.
+1. Create an [App on Slack](https://api.slack.com/apps).
    ![](images/slack-createapp.png)
 2. Select From Scratch.
    ![](images/slack-selectfromscratch.png)
 3. Set the Bot name and Workspace.
 
+Check out this detail [Article](https://www.vanus.ai/blog/get-your-slack-webhook-url/) on how to get a Slack Webhook URl.
 ### Step 2: Create a Incoming Webhook
 1. select **Incoming Webhooks** in the sidebar menu.
 ![img.png](images/img.png)
