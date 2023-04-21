@@ -19,10 +19,12 @@ To obtain all Grafana events using Vanus Cloud, follow these steps:
 
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
-3. From the list of sources, choose **Grafana**.
+3. Write a connection name without any spaces.
+   ![img.png](images/name.png)
+4. From the list of sources, choose **Grafana**.
 ![img.png](images/graf.png)
-4. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
+5. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
    ![img.png](images/greatlink.png)
-5. Click **`Next`** to save the Grafana Source.
+6. Click **`Next`** to save the Grafana Source.
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
