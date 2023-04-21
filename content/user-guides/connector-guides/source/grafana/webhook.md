@@ -1,8 +1,8 @@
 # **Configuring Grafana to send Events**
 
-1. Click the copy icon to copy the webhook url.
+1. Click the copy icon to copy the Webhook URL.
    ![](images/getlink.png)
-2. Log in to your Grafana account.
+2. Log in to your [Grafana](https://grafana.com) account.
 3. Navigate to the **Alert & IRM** menu in the **Menu** Tab.
    ![img.png](images/img.png)
 4. Click on the **Contact Points**, and click on **add contact point**.
