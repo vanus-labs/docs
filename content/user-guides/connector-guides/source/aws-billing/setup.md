@@ -21,28 +21,27 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 
 ### Step 1: How to create a new AWS user
 
-1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
-2. Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by clicking on the Services menu and selecting IAM.
+1. Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by searching for IAM and click the IAM service.
    ![](images/findIAM.png)
-3. Click on the **Users tab** in the left navigation menu, and then click the **Add user** button.
+2. Click on the **Users tab** in the left navigation menu, and then click the **Add user** button.
 ![](images/AddUser.png)
-4. Write the name for your user and click **next**.
+3. Write the name for your user and click **next**.
 ![img.png](images/setname.png)
-5. Select **attach policy directly**, and **Create policy**.
+4. Select **attach policy directly**, and **Create policy**.
 ![](images/permissionoption.png)
-6. Select the Service `Cost Explore Service`.
+5. Select the Service `Cost Explore Service`.
 ![img.png](images/searchcost.png)
-7. Next search for the following policy.
+6. Next search for the following policy.
    - "GetCostAndUsage", 
 ![img.png](images/search.png)
-8. Press **next** and proceed to the next page.
+7. Press **next** and proceed to the next page.
 ![img_1.png](images/tag.png)
-9. Name your policy and click **create policy**.
-10. Return back to your previous `TAB`.
+8. Name your policy and click **create policy**.
+9. Return back to your previous `TAB`.
 ![img.png](images/tab.png)
-11. Search for your custom policy and add it to your account, and press **next**.
+10. Search for your custom policy and add it to your account, and press **next**.
 ![img.png](images/policy.png)
-12. Review and press **create user**.
+11. Review and press **create user**.
 
 ### Step 2: Create an Access Key and Secret Key
 1. Now click on the user you just created.
