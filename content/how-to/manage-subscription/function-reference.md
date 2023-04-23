@@ -6,7 +6,7 @@ The function parameters support the following type:
 
 - Event JSON Path - support event attribute such as `$.id` and event data such as `$.data.service`.
 - Define Variable - in [define](transformer.md#define) defined variable such as `<variable>`.
-- Constant - cunstant value such as "123".
+- Constant - constant value such as "123".
 
 For example:
 
@@ -53,11 +53,11 @@ The following sections describe the functions, organized by what they do.
   - math_sub
   - math_mul
   - math_div
-- [Condition]
+- Condition
   - condition_if
-- [Array]
+- Array
   - render_array
   - array_foreach
   - unfold_array
-- [Common]
+- Common
   - length
