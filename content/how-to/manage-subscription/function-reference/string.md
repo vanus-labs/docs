@@ -291,7 +291,7 @@ Replaces the string between two seperators with the specified value.
 ### Example
 
 ```json
-{"command":["replace_between_delimiters","$.data.name1","-",",","abc"]}
+{"command":["replace_between_delimiters","$.data.name1","-","-","abc"]}
 ```
 
 ## capitalize_word
