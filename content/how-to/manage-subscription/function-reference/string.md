@@ -387,7 +387,7 @@ Retrieves the stated string within a range of index and assign it to a new path.
 
 ### Parameters
 
-- `"replace_between_positions"` – The name of the function.
+- `"extract_between_positions"` – The name of the function.
 - `path1` – The name of an existing event attribute or event data path.
 - `path2` - The name of the new event attribute or event data path.
 - `index1` – The start position. The param support integers.
@@ -396,5 +396,5 @@ Retrieves the stated string within a range of index and assign it to a new path.
 ### Example
 
 ```json
-{"command":["replace_between_positions","$.data.name1","$.data.name2","1","2"]}
+{"command":["extract_between_positions","$.data.name1","$.data.name2","1","2"]}
 ```
