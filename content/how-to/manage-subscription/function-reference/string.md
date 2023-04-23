@@ -234,15 +234,15 @@ Retrieves the string within two seperators.
 
 ### definition
 
-["extract_between_delimiters", path1, path2, value1, vzlue2]
+["extract_between_delimiters", path1, path2, seperator1, seperator2]
 
 ### Parameters
 
 - `"extract_between_delimiters"` – The name of the function.
 - `path1` – The name of an existing event attribute or event data path.
 - `path2` - The name of the new event attribute or event data path.
-- `value1` – The start delimiter. The param support all param types.
-- `value2` - The end delimiter. The param support all param types
+- `seperator1` – The start delimiter. The param support all param types.
+- `seperator2` - The end delimiter. The param support all param types
 
 ### Example
 
@@ -278,14 +278,14 @@ Replaces the string between two seperators with the specified value.
 
 ### definition
 
-["replace_between_delimiters", path, value1, value2, newValue]
+["replace_between_delimiters", path, seperator1, seperator2, newValue]
 
 ### Parameters
 
 - `"replace_between_delimiters"` – The name of the function.
 - `path1` – The name of an existing event attribute or event data path.
-- `value1` – The start delimiter. The param support all param types.
-- `value2` - The end delimiter. The param support all param types
+- `seperator1` – The start delimiter. The param support all param types.
+- `seperator2` - The end delimiter. The param support all param types
 - `newValue` - The replacement string that is used to substitute the old value. The param support all param types.
 
 ### Example
@@ -319,14 +319,14 @@ Splits the string within a seperator into an array of smaller non-overlapping se
 
 ### definition
 
-["split_with_delimiter", path1, value, path2]
+["split_with_delimiter", path1, seperator, path2]
 
 ### Parameters
 
 - `"split_with_delimiter"` – The name of the function.
 - `path1` – The name of an existing event attribute or event data path.
 - `path2` - The name of the new event attribute or event data path.
-- `value` – The delimiter value. The param support all param types.
+- `seperator` – The delimiter value. The param support all param types.
 
 ### Example
 
@@ -362,14 +362,14 @@ Splits the string within a path from a numeric position into an array of two non
 
 ### definition
 
-["split_from_start", path1, value, path2]
+["split_from_start", path1, index, path2]
 
 ### Parameters
 
 - `"split_from_start"` – The name of the function.
 - `path1` – The name of an existing event attribute or event data path.
 - `path2` - The name of the new event attribute or event data path.
-- `value` – The start position. The param support intregers.
+- `index` – The start position. The param support intregers.
 
 ### Example
 
