@@ -1,6 +1,6 @@
 # Labelling
 
-This guide contains information to set up a Amazon Eventbridge Source in Vanus Cloud.
+This guide contains information to set up a Labelling Source in Vanus Cloud.
 
 ## Introduction
 
