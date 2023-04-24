@@ -45,7 +45,7 @@ Before obtaining Auth0 events, you must have:
 ### Step 3: Connection in Vanus Cloud
 
 1. Write a name for your connection.
-   ![img.png](images/name.png)
+ ![](images/img_16.png)
 2. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
    ![img.png](images/greatlink.png)
 3. Click **`Next`** to save the Slack Source.
