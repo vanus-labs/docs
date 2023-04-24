@@ -23,7 +23,7 @@ Before forwarding events to Ding Talk, you must have:
 
 1. Log in to your Ding Talk account.
 2. Create a **new group** go to the `+` and select **New Chat**.
-   ![img.png](img.png)
+   ![img.png](images/img.png)
 3. Now click **发起群聊**.
    ![](images/img_1.png)
 4. Click **外部群**.
@@ -34,26 +34,26 @@ Before forwarding events to Ding Talk, you must have:
 ### Step 2: Add Bot to Ding Talk Group
 
 1. In the top navigation pane, click **Robot Management**.
-   ![](images/dingtalk-bot-management.png)
+![](images/img_4.png)
 2. In the **Robot Management** page, click **Custom**.
-   ![](images/dingtalk-bot-custom.png)
+![](images/img_5.png)
 3. In the **Robot details** page, click **Add**.
-   ![](images/dingtalk-bot-details.png)
+![](images/img_6.png)
 4. In the **Add Robot** dialog:
-   ![](images/dingtalk-bot-addrobot.png)
+![](images/img_7.png)
    - In the **Chatbot name** field, provide a name for the robot.
    - In the **Add to Group** field, select the target group in which the Robot will create.
    - In the **Security Settings** field, selected the **Additional Signature**, copy the signature and paste it Vanus Cloud.
    - Accept the Terms of Service.
    - Click **Finished**.
-5. Then get the **Webhook** URL, copy it and save it securely.
-   ![](images/dingtalk-bot-addrobot-2.png)
+5. Now click **Copy**, keep the Webhook URL safely and click **Finished**.
+![](images/img_8.png)
 
 ### Step 3: Set up the Ding Talk Sink connector in Vanus Cloud
 
-1. **Webhook URL**: The webhook address that message sent to, you can get it when you create Chat Bot. You retrieved in **Step 1** above.
-
-2. **Signature Verification**: The signature to sign request, you can get it when you create Chat Bot. You retrieved in **Step 1** above.
+1. **Webhook URL**: The webhook address that message sent to, you can get it when you create Chat Bot. You retrieved above.
+2. **Signature Verification**: The signature to sign request, you can get it when you create Chat Bot. You retrieved above.
+![](images/img_9.png)
 
 Click **Next** to continue.
 
