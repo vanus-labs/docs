@@ -151,7 +151,8 @@ const sidebars = {
                     'user-guides/connector-guides/source/grafana/setup',
                     'user-guides/connector-guides/source/shopify/setup',
                     'user-guides/connector-guides/source/stripe/setup',
-                    'user-guides/connector-guides/source/webhook/setup'
+                    'user-guides/connector-guides/source/webhook/setup',
+                    'user-guides/connector-guides/source/labelling/setup'
 
                   ],
                 },
