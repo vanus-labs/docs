@@ -40,7 +40,7 @@ Before forwarding events to Google Sheets, you must have:
 
 <TabItem label="Service Account Credentials" value="service-account-credentials">
 
-
+Service Account Credentials
 
 </TabItem>
 
