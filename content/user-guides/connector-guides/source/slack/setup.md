@@ -29,7 +29,7 @@ Before obtaining Slack events, you must have:
 
 1. Go to **Basic Information**.
 ![](images/img_3.png)
-2. Scroll down to **App Credentials** and save the two following credentials.
+2. Scroll down to **App Credentials** and copy the two following credentials.
  - Verification Token
  - Signing Secret
 ![](images/img_4.png)
@@ -38,10 +38,9 @@ Before obtaining Slack events, you must have:
 ### Step 3: Connection in Vanus Cloud
 
 1. Write a name for your connection.
- ![](images/img_16.png)
-2. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
-   ![img.png](images/greatlink.png)
+ ![](images/img_22.png)
+2. Paste two credentials from Slack as configurations.
+   ![](images/img_19.png)
 3. Click **`Next`** to save the Slack Source.
-
-
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+4. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
+   ![img.png](images/img_20.png)

@@ -35,7 +35,7 @@ const sidebars = {
       type: 'doc',
       id: 'getting-started/cloud-vs-os'
     },
-    { 
+    {
       type: 'category',
       label: 'Understand Vanus',
       items: ['understand-vanus/architecture', 'understand-vanus/concepts', 'understand-vanus/features', 'understand-vanus/use-cases'],
@@ -47,7 +47,7 @@ const sidebars = {
     },
     {
       type: 'doc',
-      id: 'vanus-cloud/what-is-vanus-cloud', 
+      id: 'vanus-cloud/what-is-vanus-cloud',
     },
     {
       type: 'category',
@@ -61,7 +61,8 @@ const sidebars = {
             id: 'user-guides/how-to-guides',
           },
           items: [
-            'user-guides/how-to-guides/get-webhook-url'
+            'user-guides/how-to-guides/get-webhook-url',
+            'user-guides/how-to-guides/add-sections-in-slack-sink'
           ],
         },
         {
