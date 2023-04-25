@@ -24,12 +24,6 @@ Before obtaining Slack events, you must have:
 ![](images/img_1.png)
 3. Set the app name and Workspace.
 ![](images/img_2.png)
-4. Go to **Install Apps** from the side menu and click **Install to Workspace**.
-![](images/img_13.png)
-5. Allow it into your workspace.
-![](images/img_14.png)
-6. Mention your bot in slack and invite him to the channel.
-![](images/img_15.png)
 
 ### Step 2: Get App Credentials
 
