@@ -1,0 +1,55 @@
+# Schedule
+
+This guide contains information to set up a Schedule Source in Vanus Cloud.
+
+## Introduction
+
+Schedule source gives you the ability to schedule messages or events hourly, daily, weekly or monthly.
+
+
+## Getting Started
+
+### Create a Connection
+1. Write a name for your connection.
+   ![img.png](images/name.png)
+2. Choose your schedule type.
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+
+<TabItem label="Hourly" value="hourly">
+
+3. If you opt for a **Hourly** schedule, you can choose the specific minute and second within every hour when the event will be sent. This means that the event will be dispatched at the same minute and second within every subsequent hour that it is scheduled to run.
+![](images/img.png)
+
+</TabItem>
+<TabItem label="Daily" value="daily">
+
+3. If you opt for a **Daily** schedule, you have the flexibility to select both the hour and the minute/second at which the event should be sent every day. This allows you to specify the exact time of day when the event will be dispatched, and it will recur at the same time on subsequent days according to the schedule you set.
+![](images/img_1.png)
+
+</TabItem>
+<TabItem label="Weekly" value="weekly">
+
+3. If you opt for a **Weekly** schedule, the first step is to choose the day of the week or multiple days when you want the event to be sent.
+4. Once you have selected the day or days, you can move on to the second step, which is to specify the hour, minute, and second at which the event should be dispatched on that particular day.
+![](images/img_2.png)
+This allows you to set up a recurring schedule for the event that will run every week on the same day and time according to the schedule you have configured.
+
+</TabItem>
+<TabItem label="Monthly" value="monthly">
+
+3. If you opt for a **Monthly** schedule, the first step is to choose the day or days of the month when you want the event to be sent. You can select a specific day of the month (e.g., the 15th) or multiple days of the month (e.g., the 1st and the 15th).
+
+4. The second step is to specify the time of day when the event should be dispatched. You can choose the hour, minute, and second at which the event should be sent on the selected day(s) of the month.
+
+This allows you to set up a recurring schedule for the event that will run every month on the same day(s) and time according to the schedule you have configured.
+
+</TabItem>
+
+</Tabs>
+
+Now click **`Next`** to save the Schedule Source.
+![](images/img_3.png)

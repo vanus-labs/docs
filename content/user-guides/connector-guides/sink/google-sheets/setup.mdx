@@ -21,19 +21,41 @@ Before forwarding events to Google Sheets, you must have:
 
 ### Step 1: Create a Google spreadsheet
 1. Go to [Google Sheets](https://docs.google.com/spreadsheets/u/0/) and **Sign in**.
-2. Create a new black spreadsheet.
+2. Create a new blank spreadsheet.
 ![img.png](img.png)
 3. Copy the `ID` of the spreadsheet found in the link.
 ![img_1.png](img_1.png)
 
 ### Step 2: Create a connection
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+
+<TabItem label="Authentication via Google" value="authentication-via-google">
+
 1. Click on "Sign in with Google" and follow the process to sign in to your Google account.
-![](images/google-sign-in.png)
-2. Paste the string `id` Example: `1i9b80jHcKzkUSOUDE9RAjnGevdWKScq_6Jnpofvb4CU`.
+   ![](images/google-sign-in.png)
+
+</TabItem>
+
+<TabItem label="Service Account Credentials" value="service-account-credentials">
+
+1. Go to the Google [Service account](https://console.cloud.google.com/iam-admin/serviceaccounts)
+
+
+</TabItem>
+
+</Tabs>
+
+2. Paste the string `id` Example: `1i9b80jHcKzkUSOUDE9RAjnGevdWKScq_6Jnpofvb4CU` from Step 1.
 3. Obtain the name of the sheet at the bottom of the spreadsheet.
-![img_2.png](img_2.png)
+   ![img_2.png](img_2.png)
 4. Paste the sheet name default: `Sheet1`.
 5. Click **Next** to continue.
+
+
 
 ## Required Data Format
 

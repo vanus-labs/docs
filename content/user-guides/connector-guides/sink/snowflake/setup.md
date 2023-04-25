@@ -24,7 +24,7 @@ If you end up utilizing all $400 credits before the 30-day trial period is over,
 
 Let's get started:
 
-1. Go to [Snowflake Sign Up](https://signup.snowflake.com/)/
+1. Go to [Snowflake Sign Up](https://signup.snowflake.com/)
 2. In the Sign Up page, specify the following and click **CONTINUE**:
    - First Name and Last Name: The first and last name of the account user.
    - Email: A valid email address that can be used to manage the Snowflake account.
@@ -139,8 +139,9 @@ Step 3: Finish your connection in Vanus Cloud.
    - **Schema**: This is the name of the schema that contains the Snowflake table.
    - **Username**: This is the username for your Snowflake account.
    - **Password**: This is the password for your Snowflake account.
-
-3. Enter the name of the table where you want to store your data.
+![](images/img_4.png)
+3. Create a **table** by entering a name.
+![](images/img_5.png)
 4. Click "Next" to continue.
 
 ## Required Data Format

@@ -11,7 +11,7 @@
    ![img_2.png](images/img_2.png)
 6. Write a name for your webhook stream.
 ![](images/image.jpg)
-7. Provide the payload URL of your Auth0 source connector in Vanus Cloud, and select the json line under **Content Format**.
+7. Provide the payload URL of your Auth0 source connector in Vanus Cloud, and select `Json line` under **Content Format**.
 ![](images/image1.jpg)
 8. Select the event you want to receive notifications for. 
 ![img.png](images/image2.png)
