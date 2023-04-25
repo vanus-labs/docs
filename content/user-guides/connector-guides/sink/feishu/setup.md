@@ -27,17 +27,17 @@ Before forwarding events to Feishu, you must have:
 4. Click on **Add Bot** and select **Custom bot**.
    ![img_3.png](images/feishu-add-custom-bot.png)
 5. Enter a name for your bot and click **Continue**.
-6. Copy the payload URL for your bot.
-7. (Optionally) you can also set a **signature verification** for added security.
+6. Copy the **Webhook URL** and keep it safely.
+7. (Optionally) you can also set a **Signature verification** for added security.
    ![img.png](images/feishu-signature.png)
 
-### Step 2: Finish you Subscription
+### Step 2: Finish you Connection
 
 1. In Vanus Cloud, select Feishu Sink
 ![img.png](images/img.png)
-2. Paste the payload URL into the "URL" field.
+2. Paste the ** Feishu Webhook URL** into the "URL" field.
 ![img_2.png](images/img_2.png)
-3. Optionally add your Signature.
+3. (Optionally) add your **Signature Verification**.
 ![img_3.png](images/img_3.png)
 4. Click "Next" to continue.
 

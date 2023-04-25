@@ -31,22 +31,31 @@ Before obtaining S3 events, you must have:
 5. Select **Attach policy directly**, and **Create policy**.
    ![](images/permissionoption.png)
 6. Search for s3 and select it.
-   ![img.png](images/searchcost.png)
-7. Next search for the following policy.
-   - "PutObject",
-   - "GetObject",
-   - "GetObjectVersion",
-   - "DeleteObject",
-   - "DeleteObjectVersion"
-![img.png](images/search.png)
-8. Press **Next** and proceed to the next page.
+![](images/img_5.png)   
+7. Next search for the following policy. 
+   - PutBucketNotification
+   ![](images/img_6.png)
+8. Click **Add additional permissions**.
+![](images/img_8.png)
+9. Now search for SQS.
+![](images/img_7.png)
+10. Next search for the following policies.
+![](images/img_9.png)
+    - ListQueues
+    - GetQueueUrl
+    - ReceiveMessage
+    - GetQueueAttributes
+    - CreateQueue
+    - SetQueueAttributes
+    - DeleteMessage
+11. Press **Next** and proceed to the next page.
    ![img_1.png](images/tag.png)
-9. Name your policy and click **Create policy**.
-10. Return back to your previous `TAB`.
+12. Name your policy and click **Create policy**.
+13. Return back to your previous `TAB`.
     ![img.png](images/tab.png)
-11. Search for your custom policy and add it to your account, and press **Next**.
+14. Search for your custom policy and add it to your account, and press **Next**.
     ![img.png](images/policy.png)
-12. Review and press **Create user**.
+15. Review and press **Create user**.
     ![img.png](images/createuser.png)
 
 

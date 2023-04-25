@@ -10,10 +10,9 @@ Our Slack Source connector, lets you receive events when users join, message, re
 
 ## Prerequisites
 
-Before obtaining Auth0 events, you must have:
-
-- An Auth0 account with administrative privileges
-- A [Vanus Cloud account](https://cloud.vanus.ai)
+Before obtaining Slack events, you must have:
+- Have a [Slack account](https://slack.com).
+- A [Vanus Cloud account](https://cloud.vanus.ai).
 
 ## Getting Started
 

@@ -16,8 +16,7 @@ Before obtaining ChatGPT events, you must have:
 - A [Vanus Cloud account](https://cloud.vanus.ai)
 
 ## Getting Started
-1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
-2. Click on the **create connection** button under connections.
+
 ### Create a Connection
 
 1. Write a name for your connection.
