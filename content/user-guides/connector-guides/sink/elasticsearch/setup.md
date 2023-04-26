@@ -26,7 +26,8 @@ Before forwarding events to Elasticsearch, you must have:
    - Username: Elasticsearch cluster username
    - Password: Elasticsearch cluster password
      ![](images/elasticsearch.png)
-3. Click Next and finish the configurations.
+     
+3. Click `Next` and finish the configurations.
 
 ## Custom Connection
 

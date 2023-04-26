@@ -28,7 +28,8 @@ Before forwarding events to MongoDB, you must have:
    - Auth Mechanism
    - Auth Mechanism Properties
      ![](images/mongodb.png)
-3. Click Next and finish the configurations.
+
+3. Click `Next` and finish the configurations.
 
 ## Custom Connection
 

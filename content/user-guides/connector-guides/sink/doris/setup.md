@@ -29,7 +29,7 @@ Before forwarding events to Feishu, you must have:
    - Password: Enter the password that corresponds to the username you entered in the previous step.
      ![](images/doris.png)
 
-3. Click Next
+3. Click `Next`
 
 ## Custom Connection
 
