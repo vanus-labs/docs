@@ -174,7 +174,7 @@ Within the MySQL Workbench, there are multiple schema objects that can be access
 
 
 2. Provide the Host ID, port ID, username, password, Databases and Tables as instructed. Then save the Amazon Mysql source by clicking "Next".  
-[28](images/source%20configuration.png)  
+![28](images/source%20configuration.png)  
 
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)
