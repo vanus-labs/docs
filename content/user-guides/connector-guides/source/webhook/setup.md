@@ -30,7 +30,7 @@ To obtain a unique Webhook URL in Vanus Cloud, follow these steps:
 2. From the list of sources, choose **Webhook**.
 ![img.png](images/webb.png)
 3. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
-![img.png](images/greatlink.png)
+![img.png](images/webhook_setup.png)
 4. Press **next**.
 
 

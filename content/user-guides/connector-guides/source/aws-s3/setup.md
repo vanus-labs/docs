@@ -90,7 +90,7 @@ To obtain S3 Bucket events using the S3 source connector in Vanus Cloud, follow 
 7. Specify the kind of event you want to receive from the list
    ![img_3.png](images/img_3.png)
 8. Under SQS config you can choose to create a new SQS by selecting Region or if you already have a SQS provide the ARN.
-   ![img_4.png](images/img_4.png)
+   ![img_4.png](images/sqs.png)
 9. Click **Next** to continue.
 
 

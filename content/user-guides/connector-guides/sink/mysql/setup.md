@@ -30,7 +30,8 @@ Before forwarding events to MySQL, you must have:
    - Database Name: The name of the database.
    - Table Name: The name of the table.
      ![](images/mysql.png)
-3. Click Next and finish the configurations.
+
+3. Click `Next` and finish the configurations.
 
 
 ## Custom Connection
