@@ -6,7 +6,9 @@ This guide contains information to set up a CloudEvents Source in Vanus Cloud.
 
 Cloud events are a standardized way of describing event data in a platform-agnostic and vendor-neutral format. They provide a common format and metadata for describing events across different cloud providers, systems, and programming languages which are defined by the CloudEvents specification, which defines a set of common attributes such as event type, event source, and event ID, that describe the event data and a structured data format for events such as JSON for the event payload, which can be used to encapsulate different types of data. Cloud events are designed to be easy to consume and integrate with different cloud services and platforms, and to support event-driven architectures and serverless computing.
 
-The CloudEvent Source is a Webhook server design to receive CloudEvents.
+The CloudEvent Source is a component designed to receive and handle CloudEvents. An event source is the system or component that generates events, which are then consumed by other systems or components. In this case, the CloudEvent Source is a server that is designed to receive CloudEvents from other systems.
+
+The CloudEvent Source is typically implemented as a webhook server, which is a web server that listens for incoming HTTP requests. When a CloudEvent is sent to the CloudEvent Source, it is received as an HTTP POST request, which contains the CloudEvent payload in the request body. The CloudEvent Source then processes the event and triggers any associated actions or processes.
 
 ## Prerequisites
 
@@ -41,9 +43,11 @@ To set up CloudEvents in Vanus Cloud, follow these steps:
 
 ## Supported Events
 
-The CloudEvents source supports different kind of events structured in the CloudEvent specification
+The CloudEvents source supports different kind of events structured in the [CloudEvent specification](https://github.com/cloudevents/spec).
 
 ### Cloud Events Specification
+
+A typical CloudEvent consists of a set of required and optional attributes, which are defined by the [CloudEvent specification](https://github.com/cloudevents/spec). Here's an example of what a CloudEvent in JSON might look like:
 
 ```json
 {
