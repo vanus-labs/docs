@@ -136,7 +136,7 @@ After the database instance is successfully created and its status changes to "a
 ![](images/SQL%20workbench.png)   
 
 
-2. Next, click [here] to download the latest JDBC driver from the PostgreSQL website.  
+2. Next, click [here](https://jdbc.postgresql.org/) to download the latest JDBC driver from the PostgreSQL website.  
 ![](images/download%20pgadmin%20driver.png)   
 
 
