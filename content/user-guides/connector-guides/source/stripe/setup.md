@@ -21,9 +21,9 @@ The Stripe Source is a webhook server that enables you to establish an endpoint 
 ### Create a Connection
 
 1. Write a name for your connection.
-   ![img.png](images/name.png)
+   ![img.png](images/connection.png)
 2. From the list of sources, choose **Stripe**.
-![img.png](images/stripee.png)
+![img.png](images/stripe.png)
 3. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
    ![img.png](images/webhook_setup.png)
 4. Click **next** and finish the configurations.
