@@ -52,7 +52,7 @@ By following this path, you can access the value of the title attribute within t
     ```json
     {
         "label1": {
-            "keys": ["key1", key2"]
+            "keys": ["key1", "key2"]
         },
         "label2": {
             "keys": ["key3", "key4", "key5"]
