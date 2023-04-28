@@ -195,7 +195,7 @@ In this step you would connect to the database you just created, using SQL Workb
 
 
 ### Step 2: Finish Your Connection in Vanus Cloud  
-1. Write a name for your connection, and from the list of sources, choose Mysql.  
+1. Write a name for your connection, and from the list of sources, choose PostgreSQL CDC.    
 ![](images/name%20connection.png)   
 
 
