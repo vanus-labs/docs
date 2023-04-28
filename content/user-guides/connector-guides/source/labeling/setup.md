@@ -49,7 +49,7 @@ In this example, the JSON path specifies the location of the title attribute wit
 By following this path, you can access the value of the title attribute within the body object of a CloudEvent's data attribute.
 
     - Label: The config of label, an example as below:
-    ```
+    ```json
     {
         "label1": {
             "keys": ["key1", key2"]
