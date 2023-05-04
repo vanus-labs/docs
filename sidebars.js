@@ -161,6 +161,7 @@ const sidebars = {
               type: 'category',
               label: 'Sink',
               items: [
+                'user-guides/connector-guides/sink/aws-rds-mysql/setup',
                 'user-guides/connector-guides/sink/aws-s3/setup',
                 'user-guides/connector-guides/sink/dingtalk/setup',
                 'user-guides/connector-guides/sink/discord/setup',
