@@ -172,7 +172,6 @@ Within the MySQL Workbench, there are multiple schema objects that can be access
 1. Write a name for your connection, and from the list of sources, choose **Mysql**. 
 ![27](images/vanus%20cloud%20connection.png)   
 
-
 2. Provide the Host ID, port ID, username, password, Databases and Tables as instructed. Then save the Amazon Mysql source by clicking "Next".  
 ![28](images/source%20configuration.png)  
 

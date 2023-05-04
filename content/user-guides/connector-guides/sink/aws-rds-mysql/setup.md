@@ -122,6 +122,7 @@ Now you can connect to your server and create a table and database.
 - **Password:** User password.
 - **Database Name:** The initial database name.
 - **Table Name:** The name of the table you want your events to be sent to.
+- Chose the insertion mode.
 3. Click `Next` and finish the configurations.
 
 ## Custom Connection
