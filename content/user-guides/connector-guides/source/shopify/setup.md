@@ -22,7 +22,7 @@ To obtain Shopify events using the Shopify source connector in Vanus Cloud, foll
 1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
 2. Click on the **create connection** button under connections.
 3. Write a connection name without any spaces.
-   ![img.png](images/name.png)
+   ![img.png](images/connection.png)
 4. From the list of sources, choose **Shopify**.
 5. Provide the name of your shop.
 ![](images/shopify.png)

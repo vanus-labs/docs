@@ -23,10 +23,11 @@ Before obtaining Auth0 events, you must have:
 ### Create your connection in Vanus Cloud
 
 1. Write a name for your connection.
-      ![img.png](images/name.png)
+      ![img.png](images/connection.png)
 2. From the list of sources, choose **Auth0**.
+      ![img.png](images/auth0.png)
 3. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
-   ![img.png](images/greatlink.png)
+   ![img.png](images/webhook_setup.png)
 4. Click **`Next`** to save the Auth0 Source.
 
 

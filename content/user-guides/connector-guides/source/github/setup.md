@@ -16,7 +16,7 @@ The GitHub Source enables you to get specific CloudEvents when particular events
 ## Getting Started
 
 1. Write a connection name without any spaces.
-   ![img.png](images/name.png)
+   ![img.png](images/connection.png)
 2. Click `Authorize` to authorize to your GitHub account.
 ![img.png](images/img.png)
 3. Configure Vanus cloud with your account.
