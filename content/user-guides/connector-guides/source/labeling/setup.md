@@ -14,25 +14,15 @@ The Labeling Source is a webhook, it receives http requests with json data as th
 
 ## Getting Started
 
-1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
-2. Click on the **create connection** button under connections.
-
-    ![img.png](images/img1.png)
-
 ### Create your connection in Vanus Cloud
 
 To set up labeling in Vanus Cloud, follow these steps:
 
 1. Write a name for your connection.
 
-    ![img.png](images/img2.png)
-2. From the list of sources, choose **Labeling**.
+![img.png](images/img2.png)
 
-    ![img.png](images/img3.png)
-
-    ![img.png](images/img4.png)
-
-3. Insert the following:
+2. Insert the following:
     - Source Path: A Source path refers to a field in body to label.
     - Target Path: A Target path refers to a field in body where the output is placed. The output is a list of labels.
     
@@ -64,6 +54,6 @@ By following this path, you can access the value of the title attribute within t
     
     ![img.png](images/img5.png)
 
-4. Click **Next** and finish the configurations.
+3. Click **Next** and finish the configurations.
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
