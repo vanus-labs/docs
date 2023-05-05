@@ -1,4 +1,4 @@
-# MySQL
+# Amazon RDS MySQL
 
 This guide contains information required in setting up an Amazon MySQL Sink in Vanus Cloud.  
 
