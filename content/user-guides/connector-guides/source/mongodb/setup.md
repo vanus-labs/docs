@@ -25,16 +25,7 @@ The Vanus MongoDB source connector is a connector provided by Vanus, that extrac
 - Collections  
 
 
-## Getting Started   
-1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard)  
-
-2. Click on connections.  
-![](images/VC%20connections%20start.png)   
-
-
-3. Click on the **create connection** button.  
-![](images/create%20connection.png)   
-
+## Getting Started
 
 ### Step 1: Setup a MongoDB database  
 

@@ -51,13 +51,10 @@ Create a new user and set the proper IAM policy.
 
 To obtain Amazon SQS events using the SQS source connector in Vanus Cloud, follow these steps:
 
-1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
-2. Click on the **create connection** button under connections.
-3. Write a connection name without any spaces.
+1. Write a connection name without any spaces.
    ![img.png](images/name.png)
-4. From the list of sources, choose **Amazon SQS**.
-5. Enter your Access Key and Secret Key in Vanus Cloud.
+2. Enter your Access Key and Secret Key in Vanus Cloud.
    ![img.png](images/vanus-sqs.png)
-6. Click next to continue.
+3. Click next to continue.
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

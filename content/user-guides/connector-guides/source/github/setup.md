@@ -23,8 +23,8 @@ The GitHub Source enables you to get specific CloudEvents when particular events
 ![](images/selconfig.png)
 4. **Install and Authorize** Vanus to read repos and create webhooks.
 ![](images/authorizw.png)
-5. Select a repository to connect.
+5. Select a repository to connect and click **`Next`** to save the GitHub Source.
 ![](images/selectrepo.png)
-6. Click **`Next`** to save the GitHub Source.
+
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
