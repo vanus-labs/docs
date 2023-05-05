@@ -16,8 +16,8 @@ The Labeling Source is a webhook, it receives http requests with json data as th
 
 ### Create your connection in Vanus Cloud
 
-1. Write a name for your connection.
 ![img.png](images/img2.png)
+
 2. Insert the following:
     - Source Path: A Source path refers to a field in body to label.
     - Target Path: A Target path refers to a field in body where the output is placed. The output is a list of labels.
@@ -51,6 +51,5 @@ By following this path, you can access the value of the title attribute within t
     ![img.png](images/img5.png)
 
 3. Click **Next** and finish the configurations.
-
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
