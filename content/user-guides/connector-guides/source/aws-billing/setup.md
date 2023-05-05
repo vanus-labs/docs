@@ -16,9 +16,6 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 
 ## Getting Started
 
-1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
-2. Click on the **create connection** button under connections
-
 ### Step 1: Create a new AWS user
 
 1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
@@ -62,8 +59,7 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 
 1. Write a name for your connection.
       ![img.png](images/name.png)
-2. From the list of sources, choose **Amazon Billing**.
-3. Provide your Access Key ID and Secret Key, set the desired hour for event fetching, and then save the Amazon Billing Source by clicking "Next".
+2. Provide your Access Key ID and Secret Key, set the desired hour for event fetching, and then save the Amazon Billing Source by clicking "Next".
 ![](images/aws-billing.png)
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai)

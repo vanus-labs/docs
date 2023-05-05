@@ -16,9 +16,6 @@ Before obtaining S3 events, you must have:
 
 ## Getting Started
 
-1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
-2. Click on the **create connection** button under connections.
-
 ### Step 1: Create a new AWS user
 
 1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
@@ -78,20 +75,19 @@ To obtain S3 Bucket events using the S3 source connector in Vanus Cloud, follow 
 
 1. Write a connection name without any spaces.
    ![img.png](images/name.png)
-2. From the list of sources, choose **Amazon S3**.
-3. Enter your `Access Key` and `Secret Key` in Vanus Cloud.
+2. Enter your `Access Key` and `Secret Key` in Vanus Cloud.
    ![img.png](images/s33.png)
-4. Now let go back to AWS under the [Amazon S3 service](https://s3.console.aws.amazon.com/s3/buckets).
+3. Now let go back to AWS under the [Amazon S3 service](https://s3.console.aws.amazon.com/s3/buckets).
    ![img_1.png](images/img_1.png)
-5. At this point you can either **Create a new bucket** or **select a existent bucket**.
+4. At this point you can either **Create a new bucket** or **select a existent bucket**.
 ![](images/createbucket.png)
-6. Once selected or created go to your bucket property and copy and paste the **ARN** to Vanus Cloud.
+5. Once selected or created go to your bucket property and copy and paste the **ARN** to Vanus Cloud.
    ![img_2.png](images/img_2.png)
-7. Specify the kind of event you want to receive from the list
+6. Specify the kind of event you want to receive from the list
    ![img_3.png](images/img_3.png)
-8. Under SQS config you can choose to create a new SQS by selecting Region or if you already have a SQS provide the ARN.
+7. Under SQS config you can choose to create a new SQS by selecting Region or if you already have a SQS provide the ARN.
    ![img_4.png](images/sqs.png)
-9. Click **Next** to continue.
+8. Click **Next** to continue.
 
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

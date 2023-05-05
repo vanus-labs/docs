@@ -64,12 +64,11 @@ Before obtaining SNS events, you must have:
 
 ### Step 4: Config your Connection
 
-1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
-2. Click on the **create connection** button under connections.
-3. Write a connection name without any spaces.
+
+
+1. Write a connection name without any spaces.
    ![img.png](images/name.png)
-4. From the list of sources, choose **Amazon SNS**
-5. Enter the following credentials:
+2. Enter the following credentials:
 
    - Port
    - Access Key ID
@@ -80,13 +79,12 @@ Before obtaining SNS events, you must have:
 
      ![img.png](images/vanus-sns.png)
 
-5. To get **SNS ARN**, **Endpoint** and **Protocol**, let's go back to our Amazon Web Services Account
-6. Search for SQS, Click on it and Create a Queue.
-7. Select type as FIFO and provide a name. Scroll down and click the **Create queue** Button. This will give you the Endpoint. The Protocol is **SQS**.
+3. To get **SNS ARN**, **Endpoint** and **Protocol**, let's go back to our Amazon Web Services Account
+4. Search for SQS, Click on it and Create a Queue.
+5. Select type as FIFO and provide a name. Scroll down and click the **Create queue** Button. This will give you the Endpoint. The Protocol is **SQS**.
    ![img.png](images/sqs-fifo.png)
-8. To obtain the **SNS ARN**, Search for **SNS** and Click on it to open the SNS Console.
-9. Click on the **Create Topic** Button, Select the type as **FIFO** and name the Topic. Scroll down and click the **Create topic** button to create a Topic.
-10. Copy the **SNS ARN** and paste on the field in Vanus Cloud.
-11. Click next to continue.
+6. To obtain the **SNS ARN**, Search for **SNS** and Click on it to open the SNS Console.
+7. Click on the **Create Topic** Button, Select the type as **FIFO** and name the Topic. Scroll down and click the **Create topic** button to create a Topic.
+8. Copy the **SNS ARN** and paste on the field in Vanus Cloud and click **Next** to continue.
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
