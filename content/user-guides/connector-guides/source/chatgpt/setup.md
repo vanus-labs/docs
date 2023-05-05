@@ -21,10 +21,8 @@ Before obtaining ChatGPT events, you must have:
 
 1. Write a name for your connection.
 ![img.png](images/connection.png)
-2. From the list of sources, choose **ChatGPT**.
-![img.png](images/chatgpt.png)
-3. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
+2. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
    ![img.png](images/webhook_setup.png)
-4. Click **`Next`** to save the ChatGPT Source.
+3. Click **`Next`** to save the ChatGPT Source.
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

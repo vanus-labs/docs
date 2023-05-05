@@ -18,16 +18,7 @@ Before creating your MySQL connection, you must have:
 - A running MySQL server
 - A database and Table
 
-## Getting Started   
-
-1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).    
-
-2. Click on **Connections**  
-![1](images/Click%20connections1.png)  
-
-3. Click on **Create Connection**  
-![2](images/create%20connection.png)   
-
+## Getting Started
 
 ### Step 1: Setup A Mysql database server in AWS using RDS  
 
@@ -103,9 +94,7 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 5. Select the password method of authentication.   
 
 6. Leave **enabled monitoring** unchecked, to stay within the free tier limit.  
-![15](images/Database%20Auth.png)  
-
- 
+![15](images/Database%20Auth.png)
 7. Set a database name. If you do not provide one, Amazon RDS will not create a database on your instance being created.  
 
 8. Set your preferred backup retention period.  

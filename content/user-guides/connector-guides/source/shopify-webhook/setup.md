@@ -4,9 +4,9 @@ This guide contains information to set up a Stripe Source in Vanus Cloud.
 
 ## Introduction
 
-Stripe is a technology company that provides a suite of APIs (Application Programming Interfaces) and tools that enable businesses to process online payments and manage their financial transactions.
+Shopify is a popular e-commerce platform that allows businesses to sell their products online.
 
-The Stripe Source is a webhook server that enables you to establish an endpoint for receiving events from Stripe. To achieve this, it is necessary to establish a connection within Stripe.
+The Shopify webhook Source is a webhook server that enables you to establish an endpoint for receiving events from Shopify. To achieve this, it is necessary to establish a connection within Shopify.
 
 ## Prerequisites
 
