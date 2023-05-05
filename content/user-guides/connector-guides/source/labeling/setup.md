@@ -6,7 +6,7 @@ This guide contains information to set up a Labeling Source in Vanus Cloud.
 
 Labeling (also known as tagging) is a method used to organize and categorize resources in a cloud environment. Labeling is done by attaching metadata (key-value pairs) to cloud resources such as virtual machines, storage buckets, or database instances. Labeling cloud events is an essential part of managing cloud-based applications and services efficiently. Labels can be used to categorize and organize cloud events, making it easier to monitor performance, troubleshoot issues, easier automation, increased efficiency and identify trends. 
 
-The Labeling Source is a webhook, it receives http requests with json data as the body, then does labeling, and puts events to eventbus.
+The Labeling Source is a webhook, it receives http requests with json data as the body, and labels the correcting keys.
 
 ## Prerequisites
 
@@ -14,29 +14,15 @@ The Labeling Source is a webhook, it receives http requests with json data as th
 
 ## Getting Started
 
-1. Log in to your [Vanus Dashboard](https://cloud.vanus.ai/dashboard).
-2. Click on the **create connection** button under connections.
-
-    ![img.png](images/img1.png)
-
 ### Create your connection in Vanus Cloud
 
-To set up labeling in Vanus Cloud, follow these steps:
+![img.png](images/img2.png)
 
-1. Write a name for your connection.
-
-    ![img.png](images/img2.png)
-2. From the list of sources, choose **Labeling**.
-
-    ![img.png](images/img3.png)
-
-    ![img.png](images/img4.png)
-
-3. Insert the following:
+2. Insert the following:
     - Source Path: A Source path refers to a field in body to label.
     - Target Path: A Target path refers to a field in body where the output is placed. The output is a list of labels.
     
-### Example of a Path
+**Example of a Path**
 
 A JSON path would be structure in this format; `$.data.body.title`
 
@@ -64,6 +50,6 @@ By following this path, you can access the value of the title attribute within t
     
     ![img.png](images/img5.png)
 
-4. Click **Next** and finish the configurations.
+3. Click **Next** and finish the configurations.
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

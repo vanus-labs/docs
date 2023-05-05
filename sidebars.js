@@ -150,6 +150,7 @@ const sidebars = {
                     'user-guides/connector-guides/source/chatgpt/setup',
                     'user-guides/connector-guides/source/github/setup',
                     'user-guides/connector-guides/source/grafana/setup',
+                    'user-guides/connector-guides/source/labeling/setup',
                     'user-guides/connector-guides/source/shopify/setup',
                     'user-guides/connector-guides/source/stripe/setup',
                     'user-guides/connector-guides/source/webhook/setup',
