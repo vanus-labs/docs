@@ -91,10 +91,6 @@ Before forwarding events to Elasticsearch, you must have:
    - Index: The name of the index you created.  
    - Username: The username you downloaded during the creation of your deployment.   
    - Password: The password you downloaded during the creation of your deployment.  
-
-![](images/finish%20elasticsearch%20setup.png) 
-
-
     
 3. Click `Next` and finish the configurations.
 
