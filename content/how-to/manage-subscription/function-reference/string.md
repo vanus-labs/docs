@@ -127,36 +127,36 @@ Replaces the stated string in a path with the specified new value.
 
 ### definition
 
-["replace_string", path, subValue, newValue]
+["replace_string", path, subValue, targetValue]
 
 ### Parameters
 
 - `"replace_string"` – The name of the function.
 - `path` – The name of an existing event attribute or event data path.
 - `subValue` – The string value to be replaced. The param support all param types.
-- `newValue` - The replacement string that is used to substitute the old value. The param support all param types.
+- `targetValue` - The replacement string that is used to substitute the old value. The param support all param types.
 
 ### Example
 
 ```json
-{"command":["replace_string","$.data.name","subValue","newValue"]}
+{"command":["replace_string","$.data.name","ab","abc"]}
 ```
 
 ## replace_between_positions
 
-Replaces the stated string within a path with the specified value by defining a range of index.
+Replaces the stated string within a path with the specified new value within a range of index.
 
 ### definition
 
-["replace_between_positions", path, index1, index2, newValue]
+["replace_between_positions", path, startPosition, endPosition, targetValue]
 
 ### Parameters
 
 - `"replace_between_positions"` – The name of the function.
 - `path` – The name of an existing event attribute or event data path.
-- `index1` - The start position. The param support integers.
-- `index2` – The end position. The param support integers.
-- `newValue` – The replacement string that is used to substitute the old value. The param support all param types.
+- `startPosition` - The start position of the string. The param support integers.
+- `endPosition` – The end position of the string. The param support integers.
+- `targetValue` – The replacement string that is used to substitute the old value. The param support all param types.
 
 ### Example
 
@@ -189,16 +189,16 @@ Checks if the specified string is present or not in a path (true/false) and assi
 
 ### definition
 
-["check_custom_values", path1, value, path2, flag1, flag2]
+["check_custom_values", sourcePath, value, targetPath, trueFlag, falseFlag]
 
 ### Parameters
 
 - `"check_custom_values"` – The name of the function.
 - `value` - Specified value to be checked.
-- `path1` – The name of an existing event attribute or event data path.
-- `path2` - The name of the new event attribute or event data path.
-- `flag1` – String to be assigned to new path if the custom value is found true.
-- `flag2` – String to be assigned to new path if the custom value is found false. 
+- `sourcePath` – The name of an existing event attribute or event data path.
+- `targetPath` - The name of the new event attribute or event data path.
+- `trueFlag` – String to be assigned to new path if the custom value is found true.
+- `falseFlag` – String to be assigned to new path if the custom value is found false. 
 
 ### Example
 
@@ -212,15 +212,15 @@ Divides the range of strings into smaller non-overlapping segments by starting a
 
 ### definition
 
-["split_with_interval", path1, index1, index2, path2]
+["split_with_interval", sourcePath, startPosition, splitInterval, targetPath]
 
 ### Parameters
 
 - `"split_with_interval"` – The name of the function.
-- `path1` – The name of an existing event attribute or event data path.
-- `path2` - The name of the new event attribute or event data path.
-- `index1` – The start position. The param support integers.
-- `index2` – The split interval. The param support integers.
+- `sourcePath` – The name of an existing event attribute or event data path.
+- `targetPath` - The name of the new event attribute or event data path.
+- `startPosition` – The start position of the string. The param support integers.
+- `splitInterval` – The split interval. The param support integers.
 
 ### Example
 
@@ -234,15 +234,15 @@ Retrieves the string within two seperators.
 
 ### definition
 
-["extract_between_delimiters", path1, path2, seperator1, seperator2]
+["extract_between_delimiters", sourcePath, targetPath, startSeperator, endSeperator]
 
 ### Parameters
 
 - `"extract_between_delimiters"` – The name of the function.
-- `path1` – The name of an existing event attribute or event data path.
-- `path2` - The name of the new event attribute or event data path.
-- `seperator1` – The start delimiter. The param support all param types.
-- `seperator2` - The end delimiter. The param support all param types
+- `sourcePath` – The name of an existing event attribute or event data path.
+- `targetPath` - The name of the new event attribute or event data path.
+- `startSeperator` – The start delimiter. The param support all param types.
+- `endSeperator` - The end delimiter. The param support all param types
 
 ### Example
 
@@ -256,15 +256,15 @@ Checks if the specified string is present or not in a path and assign it to a ne
 
 ### definition
 
-["extract_missing", path1, path2, flag1, flag2]
+["extract_missing", sourcePath, targetPath, trueFlag, falseFlag]
 
 ### Parameters
 
 - `"extract_missing"` – The name of the function.
-- `path1` – The name of an existing event attribute or event data path.
-- `path2` - The name of the new event attribute or event data path.
-- `flag1` – String to be assigned to new path if the custom value is found true.
-- `flag2` – String to be assigned to new path if the custom value is found false. 
+- `sourcePath` – The name of an existing event attribute or event data path.
+- `targetPath` - The name of the new event attribute or event data path.
+- `trueFlag` – String to be assigned to new path if the custom value is found true.
+- `falseFlag` – String to be assigned to new path if the custom value is found false. 
 
 ### Example
 
@@ -278,20 +278,20 @@ Replaces the string between two seperators with the specified value.
 
 ### definition
 
-["replace_between_delimiters", path, seperator1, seperator2, newValue]
+["replace_between_delimiters", path, startSeperator, endSeperator, targetValue]
 
 ### Parameters
 
 - `"replace_between_delimiters"` – The name of the function.
-- `path1` – The name of an existing event attribute or event data path.
-- `seperator1` – The start delimiter. The param support all param types.
-- `seperator2` - The end delimiter. The param support all param types
-- `newValue` - The replacement string that is used to substitute the old value. The param support all param types.
+- `path` – The name of an existing event attribute or event data path.
+- `startSeperator` – The start delimiter. The param support all param types.
+- `endSeperator` - The end delimiter. The param support all param types
+- `targetValue` - The replacement string that is used to substitute the old value. The param support all param types.
 
 ### Example
 
 ```json
-{"command":["replace_between_delimiters","$.data.name1","-","-","abc"]}
+{"command":["replace_between_delimiters","$.data.name1","-","&","abc"]}
 ```
 
 ## capitalize_word
@@ -319,14 +319,14 @@ Splits the string within a seperator into an array of smaller non-overlapping se
 
 ### definition
 
-["split_with_delimiter", path1, seperator, path2]
+["split_with_delimiter", sourcePath, seperator, targetath]
 
 ### Parameters
 
 - `"split_with_delimiter"` – The name of the function.
-- `path1` – The name of an existing event attribute or event data path.
-- `path2` - The name of the new event attribute or event data path.
-- `seperator` – The delimiter value. The param support all param types.
+- `sourcePath` – The name of an existing event attribute or event data path.
+- `targetPath` - The name of the new event attribute or event data path.
+- `seperator` – The delimiter value.
 
 ### Example
 
@@ -336,19 +336,19 @@ Splits the string within a seperator into an array of smaller non-overlapping se
 
 ## split_between_positions
 
-Splits the stated string within a path into three parts by defining a range of index.
+Divides the stated string in a path within a range of numeric position into an array of three non-overlapping segments and assign it to the target path. The source string is split into three components, namely the initial substring, the dividing string between the starting and ending positions and the final substring.
 
 ### definition
 
-["split_between_positions", path1, index1, index2, path2]
+["split_between_positions", sourcePath, startPosition, endPosition, targetPath]
 
 ### Parameters
 
 - `"split_between_positions"` – The name of the function.
-- `path1` – The name of an existing event attribute or event data path.
-- `path2` - The name of the new event attribute or event data path.
-- `index1` – The start position. The param support integers.
-- `index2` – The end position. The param support integers.
+- `psourcePath` – The name of an existing event attribute or event data path.
+- `targetPath` - The name of the new event attribute or event data path.
+- `startPosition` – The start position of the string. The param support integers.
+- `endPosition` – The end position of the string. The param support integers.
 
 ### Example
 
@@ -362,14 +362,14 @@ Splits the string within a path from a numeric position into an array of two non
 
 ### definition
 
-["split_from_start", path1, index, path2]
+["split_from_start", sourcePath, position, targetPath]
 
 ### Parameters
 
 - `"split_from_start"` – The name of the function.
-- `path1` – The name of an existing event attribute or event data path.
-- `path2` - The name of the new event attribute or event data path.
-- `index` – The start position. The param support intregers.
+- `sourcePath` – The name of an existing event attribute or event data path.
+- `targetPath` - The name of the new event attribute or event data path.
+- `position` – The start position of the string. The param support intregers.
 
 ### Example
 
@@ -379,19 +379,19 @@ Splits the string within a path from a numeric position into an array of two non
 
 ## extract_between_positions
 
-Retrieves the stated string within a range of index and assign it to a new path.
+Retrieves the stated string within a range of numeric positions and assign it to a target path.
 
 ### definition
 
-["extract_between_positions", path1, path2, index1, index2]
+["extract_between_positions", sourcePath, targetPath, startPosition, endPosition]
 
 ### Parameters
 
 - `"extract_between_positions"` – The name of the function.
-- `path1` – The name of an existing event attribute or event data path.
-- `path2` - The name of the new event attribute or event data path.
-- `index1` – The start position. The param support integers.
-- `index2` – The end position. The param support integers.
+- `sourcePath` – The name of an existing event attribute or event data path.
+- `targetPath` - The name of the new event attribute or event data path.
+- `startPosition` – The start position of the string. The param support integers.
+- `endPosition` – The end position of the string. The param support integers.
 
 ### Example
 
