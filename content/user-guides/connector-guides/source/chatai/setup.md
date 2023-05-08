@@ -16,48 +16,17 @@ Before obtaining ChatAI events, you must have:
 
 ## Getting Started
 
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-<Tabs>
-
-<TabItem label="ChatGPT" value="chatgpt">
-
-### Step 1: Sign Up to ChatGPT
-
-1. Go to [ChatGPT](https://chat.openai.com/auth/login) and Sign Up
-   ![img.png](images/chatgpt-signup.png)
-2. Select your preferred sign up option (Email, Google Account Sign Up, Microsoft Account Sign Up)
-   ![img.png](images/chatgpt-signup-options.png)
-3. Sign Up and Complete Your Profile Set up
-   ![img.png](images/chatgpt-google.png)
-
-
-### Step 2: Retrieve the necessary tokens
-
-</TabItem>
-
-<TabItem label="ErnieBot" value="erniebot">
-
-### Step 1: Sign Up to ErnieBot
-### Step 2: Retrieve the necessary tokens
-
-
-</TabItem>
-
-</Tabs>
-
-### Step 3: Finish your connection in Vanus Cloud
+### Set up your connection in Vanus Cloud
 
 1. Write a name for your connection.
-![img.png](images/connection.png)
+    ![img.png](images/connection.png)
 2. Fill in the various required configurations
-    - Chat Mode: Select Chat Mode, Default is ChatGPT
-    - Context: If context is required, please enable it before use. Enabling it will incur additional charges.
-    - Unique Identifier: The unique identifier of an identity, which is used to differentiate among multiple individuals using the same Connection.
+    - Chat Mode: Select Chat Mode (ChatGPT or Ernie Bot), Default is ChatGPT
+    - Context: Select Context as on if you want the AI to remember previous conversations
+    - Unique Identifier: The unique identifier is used to differentiate among multiple conversations using the same Connection.
     - Basic Auth Username: A method for an HTTP user agent to provide a user name when making a request.
     - Basic Auth Password: A method for an HTTP user agent to provide a password when making a request.
+    ![img.png](images/chatai-config.png)
 3. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
    ![img.png](images/webhook_setup.png)
 4. Click **`Next`** to save the ChatAI Source.
