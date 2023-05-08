@@ -144,7 +144,7 @@ Replaces the stated string in a path with the specified new value.
 
 ## replace_between_positions
 
-Replaces the stated string within a path with the specified new value within a range of index.
+Replaces the stated string within a path with the specified new value within a range of numeric positions.
 
 ### definition
 
@@ -166,7 +166,7 @@ Replaces the stated string within a path with the specified new value within a r
 
 ## capitalize_sentence
 
-Converts the first letter string of a sentence within a value to uppercase.
+Converts the first letter string of the specified value within a path to uppercase.
 
 ### definition
 
@@ -208,7 +208,7 @@ Checks if the specified string is present or not in a path (true/false) and assi
 
 ## split_with_interval
 
-Divides the range of strings into smaller non-overlapping segments by starting at a designated position.
+Divides the string in a path into smaller non-overlapping segments that are based on fixed character intervals indicated by a specified starting position.
 
 ### definition
 
@@ -247,12 +247,12 @@ Retrieves the string within two seperators.
 ### Example
 
 ```json
-{"command":["extract_between_delimiters","$.data.name1","$.data.name2","-",","]}
+{"command":["extract_between_delimiters","$.data.name1","$.data.name2","-","&"]}
 ```
 
 ## extract_missing
 
-Checks if the specified string is present or not in a path and assign it to a new path.
+Checks if the specified string is present or not in a path (true/false) and assign it to a new path.
 
 ### definition
 
@@ -262,7 +262,7 @@ Checks if the specified string is present or not in a path and assign it to a ne
 
 - `"extract_missing"` – The name of the function.
 - `sourcePath` – The name of an existing event attribute or event data path.
-- `targetPath` - The name of the new event attribute or event data path.
+- `targetPath` – The name of the new event attribute or event data path.
 - `trueFlag` – String to be assigned to new path if the custom value is found true.
 - `falseFlag` – String to be assigned to new path if the custom value is found false. 
 
@@ -296,7 +296,7 @@ Replaces the string between two seperators with the specified value.
 
 ## capitalize_word
 
-Converts the strings within a value to uppercase.
+Converts the specified string within a path to uppercase.
 
 ### definition
 
@@ -345,7 +345,7 @@ Divides the stated string in a path within a range of numeric position into an a
 ### Parameters
 
 - `"split_between_positions"` – The name of the function.
-- `psourcePath` – The name of an existing event attribute or event data path.
+- `sourcePath` – The name of an existing event attribute or event data path.
 - `targetPath` - The name of the new event attribute or event data path.
 - `startPosition` – The start position of the string. The param support integers.
 - `endPosition` – The end position of the string. The param support integers.
