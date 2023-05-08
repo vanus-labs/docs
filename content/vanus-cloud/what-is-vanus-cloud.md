@@ -5,14 +5,13 @@ id: what-is-vanus-cloud
 
 # What is Vanus Cloud?
 
-Vanus Cloud is a cloud-based service that makes it easy for users to create event-driven applications without the hassle of setting up their own Vanus Cluster. With Vanus Cloud, you can quickly and easily build connections between your SaaS, cloud services, and databases, allowing you to automate, notify, and streamline your processes with ease.
+Vanus Cloud is a cloud-based service that makes it easy for users to create event-driven applications without the hassle of setting up and managing their own Vanus server. With Vanus Cloud, you can quickly and easily build connections between SaaS, cloud services, and databases, allowing you to easily automate, notify, and streamline your processes.
 
-Our user-friendly interface and templates simplify the process of setting up connections, making event streaming and processing accessible to everyone, regardless of technical expertise. Whether you're a seasoned developer or a non-technical user, Vanus Cloud enables you to leverage the power of event-driven architectures without having to worry about complex code or infrastructure management.
+Our user-friendly interface simplifies the process of setting up connections, making event streaming and processing accessible to everyone, regardless of technical expertise. Whether you're a seasoned developer or a non-technical user, Vanus Cloud enables you to leverage the power of event-driven architectures without worrying about complex code or infrastructure management.
 
 ![](../../static/img/vanus-cloud.png)
 
-We're passionate about helping our users save time and resources while enjoying the benefits of instant data delivery. Join the growing number of businesses and developers by signing up for[ Vanus Cloud](https://cloud.vanus.ai) using your email address, Google login, or GitHub login.
-
+We're passionate about helping our users save time and resources while enjoying the benefits of instant data delivery. Join the growing number of businesses and developers by signing up for Vanus Cloud today using your email address, Google account, or GitHub account.
 ### Common questions
 
 #### **What specific SaaS, cloud services, and databases can be connected through Vanus Cloud?**
