@@ -25,7 +25,7 @@ Before obtaining ChatAI events, you must have:
     - Context (optional): Select Context as on if you want the AI to remember previous conversations
     - Unique Identifier (optional): The unique identifier differentiates among multiple conversations using the same Connection. Example identifier:convo1 identifier:convo2...
     - Basic Auth Username (optional): A method for an HTTP user agent to provide a username when making a request.
-    - Basic Auth Password: A method for an HTTP user agent to provide a password when making a request.
+    - Basic Auth Password (optional): A method for an HTTP user agent to provide a password when making a request.
     ![img.png](images/chatai-config.png)
 3. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
    ![img.png](images/webhook_setup.png)
