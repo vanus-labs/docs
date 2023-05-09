@@ -1,4 +1,4 @@
-# **How to Use Webhook URL to Send Message to ChatAI**
+# **How to Use the Webhook URL to Send Message to ChatAI**
 
 - Click the **copy icon** to copy the webhook url.
    ![](images/getlink.png)
