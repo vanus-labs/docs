@@ -5,7 +5,7 @@
 
 Ask a question to ChatAI by sending a POST Request to the Webhook URL. Below I will share with you how to send a simple curl Post Request to the address.
 
-Here is a Example of a CURL Post Request of a CloudEvent.
+Here is a Example of a curl Post Request of a CloudEvent.
 ```shell
 curl \
 -H "unique_identifier:value"  \
