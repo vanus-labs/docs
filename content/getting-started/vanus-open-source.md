@@ -12,7 +12,7 @@ To install Vanus OSS on your own infrastructure, please refer to the [installati
 
 ## Contributing
 
-We welcome contributions from the community to enhance and improve Vanus OSS. If you have any bug reports, feature requests, or code contributions, please refer to our [contribution guidelines](CONTRIBUTING.md).
+We welcome contributions from the community to enhance and improve Vanus OSS. If you have any bug reports, feature requests, or code contributions, please refer to our [contribution guidelines](../../CONTRIBUTING.md).
 
 ## License
 
