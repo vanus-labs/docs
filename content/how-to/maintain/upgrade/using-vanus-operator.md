@@ -4,7 +4,7 @@ title: Use Vanus Operator
 
 # Upgrade Vanus Cluster Using Operator
 
-If you use Vanus Operator to deploy and manage Vanus cluster on Kubernetes, you can upgrade the version of Vanus cluster through rolling update to reduce the impact on business. This article describes how to use the Operator to upgrade the Vanus cluster on Kubernetes.
+If you use Vanus Operator to deploy and manage a Vanus cluster on Kubernetes, you can upgrade the version of a Vanus cluster through rolling update to reduce the impact on business. This article describes how to use the Operator to upgrade the Vanus cluster on Kubernetes.
 
 ## Upgrade Sequence
 

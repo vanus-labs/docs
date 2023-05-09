@@ -23,7 +23,7 @@ To obtain all Grafana events using Vanus Cloud, follow these steps:
    ![img.png](images/connection.png)
 2. From the list of sources, choose **Grafana**.
 ![img.png](images/grafana.png)
-3. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
+3. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction. 
    ![img.png](images/webhook_setup.png)
 4. Click **`Next`** to save the Grafana Source.
 

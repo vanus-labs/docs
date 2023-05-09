@@ -38,9 +38,9 @@ Before obtaining Slack events, you must have:
 ### Step 3: Connection in Vanus Cloud
 
 1. Write a name for your connection.
- ![](images/img_22.png)
+![](images/img_22.png)
 2. Paste two credentials from Slack as configurations.
-   ![](images/img_19.png)
-3. Click **`Next`** to save the Slack Source.
-4. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
-   ![img.png](images/img_20.png)
+![](images/img_19.png)
+3. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction.
+![img.png](images/webhook_setup.png)
+4. Click **next** and finish the configurations.
