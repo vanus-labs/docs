@@ -9,7 +9,7 @@ Here is a Example of a CURL Post Request of a CloudEvent.
 ```shell
 curl \
 -H "unique_identifier:value"  \
--H "Authorization: Basic base64(username:password)"
+-H "Authorization: Basic base64(yourusername:yourpassword)"
 -XPOST 'https://YourWebbookURL' \
 -D'What is CloudEvents?'
 ```
