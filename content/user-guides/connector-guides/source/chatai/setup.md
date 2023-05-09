@@ -27,7 +27,7 @@ Before obtaining ChatAI events, you must have:
     - Basic Auth Username (optional): A method for an HTTP user agent to provide a username when making a request.
     - Basic Auth Password (optional): A method for an HTTP user agent to provide a password when making a request.
     ![img.png](images/chatai-config.png)
-3. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
+3. After you finish creating the connection, there will be more steps. Please click this document to open a new tab with the following instruction.
    ![img.png](images/webhook_setup.png)
 4. Click **`Next`** to save the ChatAI Source.
 
