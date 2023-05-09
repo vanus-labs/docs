@@ -41,6 +41,6 @@ Before obtaining Slack events, you must have:
  ![](images/img_22.png)
 2. Paste two credentials from Slack as configurations.
    ![](images/img_19.png)
-3. Click **`Next`** to save the Slack Source.
-4. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
+3. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction.   ![img.png](images/webhook_setup.png)
+4. Click **`Next`** to save the Slack Source.
    ![img.png](images/img_20.png)

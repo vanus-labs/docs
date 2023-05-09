@@ -22,7 +22,7 @@ To set up CloudEvents in Vanus Cloud, follow these steps:
 
 1.  Write a name for your connection.
 ![](images/connection.png) 
-2. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
+2. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction.   ![img.png](images/webhook_setup.png)
 ![](images/img5.png)
 3. Click **`Next`** to save the Grafana Source.
 

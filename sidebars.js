@@ -206,6 +206,11 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Upgrade Vanus',
+          items: ['how-to/maintain/upgrade/using-vanus-operator', 'how-to/maintain/upgrade/using-vsctl'],
+        },
+        {
+          type: 'category',
           label: 'Produce',
           items: ['how-to/produce/using-sdk', 'how-to/produce/send-delay-event'],
         },
