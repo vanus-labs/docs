@@ -38,7 +38,7 @@ Before forwarding events to Slack, you must have:
 ### Step 2: Get a webhook url
 1. Go to **Server Settings**.
     ![img_2.png](images/3.png)
-2. Click **integration** in the sidebar under APPS
+2. Click **integration** in the sidebar under APPS.
     ![img_3.png](images/4.png)
 3. Click **create Webhook**.
     ![img_3.png](images/4.1.png)
