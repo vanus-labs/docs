@@ -12,9 +12,9 @@ Our user-friendly interface simplifies the process of setting up connections, ma
 ![](../../static/img/vanus-cloud.png)
 
 We're passionate about helping our users save time and resources while enjoying the benefits of instant data delivery. Join the growing number of businesses and developers by signing up for Vanus Cloud today using your email address, Google account, or GitHub account.
-### Common questions
+## Common questions
 
-#### **What specific SaaS, cloud services, and databases can be connected through Vanus Cloud?**
+### **What specific SaaS, cloud services, and databases can be connected through Vanus Cloud?**
 
 Vanus Cloud offers a wide range of connectors that can be used to integrate with popular SaaS applications, cloud services, and databases. Some of the most commonly used connectors include:
 
@@ -32,7 +32,7 @@ Vanus Cloud offers a wide range of connectors that can be used to integrate with
 
 Our platform is designed to be highly flexible and versatile, so if you don't see a connector for the SaaS, cloud service, or database you need to connect with, please let us know. We're constantly adding new connectors to our platform, and we're always happy to work with our users to ensure that their specific integration needs are met.
 
-#### **Can Vanus Cloud be integrated with existing applications, or does it require a different setup?**
+### **Can Vanus Cloud be integrated with existing applications, or does it require a different setup?**
 
 While Vanus Cloud is designed to simplify the process of building connections between your SaaS, cloud services, and databases, it's important to note that it may require some integration work to connect with your existing applications. However, our platform is highly versatile and can be integrated with a wide range of systems and applications.
 
@@ -40,7 +40,7 @@ We provide a large selection of connectors, including source and sink connectors
 
 If you require assistance with integration, our support team is always available to help. We're dedicated to ensuring a seamless experience for our users, and we'll work with you to ensure that your existing applications can be easily integrated with Vanus Cloud.
 
-#### **What level of technical knowledge is required to use Vanus Cloud effectively?**
+### **What level of technical knowledge is required to use Vanus Cloud effectively?**
 
 Vanus Cloud is designed to be user-friendly and accessible to a wide range of users, regardless of their technical expertise. While some technical knowledge may be helpful when using our platform, it is not required to get started.
 
