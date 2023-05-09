@@ -20,24 +20,24 @@ Before obtaining S3 events, you must have:
 
 1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
 2. Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by searching for IAM and click the IAM service.
-   ![](images/findIAM.png)
+   ![](images/1.png)
 3. Click on the **Users tab** in the left navigation menu, and then click the **Add user** button.
-   ![](images/AddUser.png)
+   ![](images/2.png)
 4. Write the name for your user and click **next**.
-   ![img.png](images/setname.png)
+   ![img.png](images/3.png)
 5. Select **Attach policy directly**, and **Create policy**.
-   ![](images/permissionoption.png)
+   ![](images/4.png)
 6. Search for s3 and select it.
-![](images/img_5.png)   
+![](images/5.png)   
 7. Next search for the following policy. 
    - PutBucketNotification
-   ![](images/img_6.png)
-8. Click **Add additional permissions**.
-![](images/img_8.png)
+   ![](images/6.png)
+8. Click **Add more permissions**.
+![](images/7.png)
 9. Now search for SQS.
-![](images/img_7.png)
+![](images/8.png)
 10. Next search for the following policies.
-![](images/img_9.png)
+![](images/9.png)
     - ListQueues
     - GetQueueUrl
     - ReceiveMessage
@@ -46,27 +46,28 @@ Before obtaining S3 events, you must have:
     - SetQueueAttributes
     - DeleteMessage
 11. Press **Next** and proceed to the next page.
-   ![img_1.png](images/tag.png)
-12. Name your policy and click **Create policy**.
+
+12. Name your policy and click **Create policy**. 
+   ![img_1.png](images/10.png)
 13. Return back to your previous `TAB`.
-    ![img.png](images/tab.png)
+    ![img.png](images/11.png)
 14. Search for your custom policy and add it to your account, and press **Next**.
-    ![img.png](images/policy.png)
+    ![img.png](images/12.png)
 15. Review and press **Create user**.
-    ![img.png](images/createuser.png)
+    ![img.png](images/13.png)
 
 
 ### Step 2: Create an Create Access Key
 1. Now click on the user you just created.
-   ![img.png](images/user.png)
+   ![img.png](images/14.png)
 2. Under **Security and credential** scroll down the page to `Access Key`, and Click **Create access key**.
-   ![](images/createAccesskey.png)
+   ![](images/15.png)
 3. Select Command line interface CLI, and press **Next**.
-   ![img.png](images/CLI.png)
-4. Click **Create sccess key**.
-   ![img.png](images/createacess.png)
+   ![img.png](images/16.png)
+4. Click **Create access key**.
+   ![img.png](images/17.png)
 5. Save your `Access key` and `Secret key` safely.
-   ![](images/img.png)
+   ![](images/18.png)
 
 ### Step 3: Config your connection
 
@@ -74,19 +75,19 @@ To obtain S3 Bucket events using the S3 source connector in Vanus Cloud, follow 
 
 
 1. Write a connection name without any spaces.
-   ![img.png](images/name.png)
+   ![img.png](images/19.png)
 2. Enter your `Access Key` and `Secret Key` in Vanus Cloud.
-   ![img.png](images/s33.png)
+   ![img.png](images/20.png)
 3. Now let go back to AWS under the [Amazon S3 service](https://s3.console.aws.amazon.com/s3/buckets).
-   ![img_1.png](images/img_1.png)
+   ![img_1.png](images/21.png)
 4. At this point you can either **Create a new bucket** or **select a existent bucket**.
-![](images/createbucket.png)
+![](images/22.png)
 5. Once selected or created go to your bucket property and copy and paste the **ARN** to Vanus Cloud.
-   ![img_2.png](images/img_2.png)
+   ![img_2.png](images/23.png)
 6. Specify the kind of event you want to receive from the list
-   ![img_3.png](images/img_3.png)
+   ![img_3.png](images/24.png)
 7. Under SQS config you can choose to create a new SQS by selecting Region or if you already have a SQS provide the ARN.
-   ![img_4.png](images/sqs.png)
+   ![img_4.png](images/25.png)
 8. Click **Next** to continue.
 
 
