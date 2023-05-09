@@ -23,11 +23,16 @@ Before forwarding events to Slack, you must have:
 ### Step 1: Create a Server
 1. go to the Discord application.
 2. Create a new server by clicking the `+`.
+
 ![img.png](images/1.png)
 3. Choose a template or create your own.
+
 ![img.png](images/2.png)
+
 ![img.png](images/2.1.png)
+
 4. Finish setting up your server.
+
 ![img.png](images/2.2.png)
 
 ### Step 2: Get a webhook url
@@ -43,7 +48,8 @@ Before forwarding events to Slack, you must have:
 ### Connection Setup
 1. Go back to Vanus Cloud.
 2. Paste your webhook URL in the `URL` field.
-![img_7.png](images/7.png)
+
+    ![img_7.png](images/7.png)
 3. Click "Next" to continue.
 
 ## Required Data Format
