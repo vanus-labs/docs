@@ -22,7 +22,7 @@ Before obtaining ChatAI events, you must have:
     ![img.png](images/connection.png)
 2. Fill in the various required configurations
     - Chat Mode: Select Chat Mode (ChatGPT or Ernie Bot), Default is ChatGPT
-    - Context: Select Context as on if you want the AI to remember previous conversations
+    - Context (optional): Select Context as on if you want the AI to remember previous conversations
     - Unique Identifier (optional): The unique identifier differentiates among multiple conversations using the same Connection. Example identifier:convo1 identifier:convo2...
     - Basic Auth Username (optional): A method for an HTTP user agent to provide a username when making a request.
     - Basic Auth Password: A method for an HTTP user agent to provide a password when making a request.
