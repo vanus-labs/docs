@@ -59,7 +59,8 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 
 1. Write a name for your connection.
       ![img.png](images/16.png)
-2. Provide your Access Key ID and Secret Key, set the desired hour for event fetching, and then save the Amazon Billing Source by clicking "Next".
+2. Provide your Access Key ID and Secret Key, set the desired hour for event fetching.
 ![](images/17.png)
+3. Click **Next** and continue the configuration.
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai)
