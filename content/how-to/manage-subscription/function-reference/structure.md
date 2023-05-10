@@ -22,7 +22,7 @@ Create a new event attribute or event data path.
 
 ## delete
 
-Delete a event attribue or event data path.
+Delete a event attribute or event data path.
 
 ### definition
 
@@ -31,7 +31,7 @@ Delete a event attribue or event data path.
 ### Parameters
 
 - `"delete"` – The name of the function.
-- `path` – The name of event attribue or event data path. If the key no exist, an error will be reported. The param must be event json path.
+- `path` – The name of event attribute or event data path. If the key no exist, an error will be reported. The param must be event json path.
 
 ### Example
 
@@ -41,7 +41,7 @@ Delete a event attribue or event data path.
 
 ## move
 
-Move the existing event attribe or event data path.
+Move the existing event attribute or event data path.
 
 ### definition
 
@@ -50,8 +50,8 @@ Move the existing event attribe or event data path.
 ### Parameters
 
 - `"move"` – The name of the function.
-- `fromPath` – The name of event attribe or event data path. If the key no exist, an error will be reported. The param must be event json path.
-- `toPath` – The target name of event attribe or event data path. If the key exist, an error will be reported. The param must be event json path.
+- `fromPath` – The name of event attribute or event data path. If the key no exist, an error will be reported. The param must be event json path.
+- `toPath` – The target name of event attribute or event data path. If the key exist, an error will be reported. The param must be event json path.
 
 ### Example
 
@@ -61,7 +61,7 @@ Move the existing event attribe or event data path.
 
 ## rename
 
-Rename the existing event attribe or event data path.
+Rename the existing event attribute or event data path.
 
 ### definition
 
@@ -70,8 +70,8 @@ Rename the existing event attribe or event data path.
 ### Parameters
 
 - `"rename"` – The name of the function.
-- `oldPath` – The name of an existing event attribe or event data path. If the key no exist, an error will be reported. The param must be event json path.
-- `newPath` – The name of an new event attribe or event data path. If the key exist, an error will be reported. The param must be event json path.
+- `oldPath` – The name of an existing event attribute or event data path. If the key no exist, an error will be reported. The param must be event json path.
+- `newPath` – The name of an new event attribute or event data path. If the key exist, an error will be reported. The param must be event json path.
 
 ### Example
 
@@ -81,7 +81,7 @@ Rename the existing event attribe or event data path.
 
 ## replace
 
-Replaces the value of event attribe or event data path.
+Replaces the value of event attribute or event data path.
 
 ### definition
 
@@ -90,11 +90,31 @@ Replaces the value of event attribe or event data path.
 ### Parameters
 
 - `"replace"` – The name of the function.
-- `path` – The name of an existing event attribe or event data path. If the key no exist, an error will be reported. The param must be event json path.
-- `value` – The new value of event attribe or event data path. The param support all param types.
+- `path` – The name of an existing event attribute or event data path. If the key no exist, an error will be reported. The param must be event json path.
+- `value` – The new value of event attribute or event data path. The param support all param types.
 
 ### Example
 
 ```json
-{"command":["replace","$.data.name","newValue"]}
+{"command":["replace","$.data.name","abc"]}
+```
+
+## duplicate
+
+Copies the value of event attribute or event data path and create a new path with that value.
+
+### definition
+
+["duplicate", sourcePath, targetPath]
+
+### Parameters
+
+- `"duplicate"` – The name of the function.
+- `sourcePath` – The name of an existing event attribute or event data path. If the key no exist, an error will be reported. The param must be event json path.
+- `targetPath` – The name of the new event attribute or event data path.
+
+### Example
+
+```json
+{"command":["duplicate","$.data.name1","$.data.name2"]}
 ```

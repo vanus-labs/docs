@@ -147,6 +147,7 @@ const sidebars = {
                     'user-guides/connector-guides/source/aws-billing/setup',
                     'user-guides/connector-guides/source/aws-eventbridge/setup',
                     'user-guides/connector-guides/source/aws-s3/setup',
+                    'user-guides/connector-guides/source/chatai/setup',
                     'user-guides/connector-guides/source/chatgpt/setup',
                     'user-guides/connector-guides/source/github/setup',
                     'user-guides/connector-guides/source/grafana/setup',
@@ -155,6 +156,7 @@ const sidebars = {
                     'user-guides/connector-guides/source/stripe/setup',
                     'user-guides/connector-guides/source/webhook/setup',
                     'user-guides/connector-guides/source/schedule/setup'
+                    
 
                   ],
                 },
@@ -202,6 +204,11 @@ const sidebars = {
         id: 'how-to',
       },
       items: [
+        {
+          type: 'category',
+          label: 'Upgrade Vanus',
+          items: ['how-to/maintain/upgrade/using-vanus-operator', 'how-to/maintain/upgrade/using-vsctl'],
+        },
         {
           type: 'category',
           label: 'Produce',

@@ -18,9 +18,10 @@ The Stripe Source is a webhook server that enables you to establish an endpoint 
 ### Create a Connection
 
 1. Write a name for your connection.
-   ![img.png](images/connection.png)
-2. After you finish creating the connection their will be more steps please click this document to open a new tab with the following instruction.
-   ![img.png](images/webhook_setup.png)
+   ![img.png](images/1.png)
+2. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction.
+![](images/2.png)
 3. Click **next** and finish the configurations.
+
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
