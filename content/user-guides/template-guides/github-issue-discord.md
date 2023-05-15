@@ -27,9 +27,9 @@ This guide will help you get a Discord notification whenever an issue is opened 
 
 - Click on New Webhook. Open the newly created Webhook and Copy the Webhook URL
 
-![2.png](imgs/github-issue-discord-2.png)
+![2.png](imgs/github-issue-discord-2.PNG)
 
-![3.png](imgs/github-issue-discord-3.png)
+![3.png](imgs/github-issue-discord-3.PNG)
 
 ### Step 3: Configure Subscription
 
@@ -39,7 +39,7 @@ This guide will help you get a Discord notification whenever an issue is opened 
 
 - Your connection has been succesfully created
 
-![4.png](imgs/github-issue-discord-4.png)
+![4.png](imgs/github-issue-discord-4.PNG)
 
 Note: You can customize the display format and content of the notifications by configuring the **Subscription**.
 
@@ -49,4 +49,4 @@ Note: You can customize the display format and content of the notifications by c
 
 - When a new issue is created, you will receive a real-time GitHub Issue Notify in Discord.
 
-![6.png](imgs/github-issue-discord-6.png)
+![6.png](imgs/github-issue-discord-6.PNG)
