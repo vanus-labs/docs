@@ -12,8 +12,7 @@ With the Shopify App source connector in Vanus Cloud, you can create an Shopify 
 
 Before obtaining Shopify events, you must have:
 
-- A Shopify shop with administrative privileges
-- A [Vanus Cloud account](https://cloud.vanus.ai)
+- A Shopify shop with administrative privileges 
 
 ## Getting Started
 

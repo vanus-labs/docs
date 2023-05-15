@@ -1,46 +1,12 @@
-# AWS-PostgreSQL   
-
-This guide contains information required in setting up an Amazon PostgreSQL Source in Vanus Cloud.  
-
-
-## Introduction  
-
-### PostqreSQL  
-PostgreSQL is a reliable and feature-rich open-source database system with advanced features like multi-version concurrency control(MVCC), full-text search, and geospatial data management. It's commonly used for data-intensive applications and web applications due to its scalability and robustness. PostgreSQL works on various operating systems and provides both command-line and graphical user interface tools for data management and application development.
-
-
-### AWS-PostgreSQL  
-AWS PostgreSQL is a managed database service offered by Amazon Web Services (AWS) that provides a fully-managed, scalable, and secure PostgreSQL database in the cloud. It simplifies tasks like database backups, software patching, and replication, allowing users to focus on their application development and business needs. AWS PostgreSQL features high availability, automated backups and recovery, automatic failover, and advanced security features like encryption. It also supports popular PostgreSQL extensions like PostGIS and pgAdmin. Overall, AWS PostgreSQL is a reliable option for running PostgreSQL databases in the cloud with flexibility and scalability.
-
-
-### PostgreSQL CDC  
-PostgreSQL CDC (Change Data Capture) is a feature that captures and tracks real-time changes made to a PostgreSQL database. It works by monitoring the database's transaction log and capturing any detected changes, which are stored separately for further analysis or processing. CDC is useful for real-time data integration and synchronization in scenarios such as data warehousing, business intelligence, or ETL processes, ensuring that downstream systems have access to the latest information and data is synchronized across different systems in real-time.
-
-
-### PostgreSQL CDC Source  
-The Vanus PostgreSQL Source connector is a connector provided by Vanus, that identifies and tracks data changes from a PostgreSQL database in real-time. It extracts this data from the users postgresql database, converts it to cloud events and streams it to a sink connector of their choice.  
-CDC is a technique used to identify and track changes made to a database, such as insertions, updates, and deletions.  
-
-
 ## Prerequisites  
 Before creating your PostgreSQL connection, you must have:
 
-- A Vanus Cloud account
 - An SQL client
 - A running PostgreSQL server
 - A database, schema and Table  
 
 
 ## Getting Started 
-1. Log into your [Vanus Dashboard](https://cloud.vanus.ai/dashboard)  
-
-2. Click on **Connections**.  
-![](images/VC%20connections%20start.png)   
-
-3. Click on **Create connection**  
-![](images/create%20connection.png)   
-
-
 ### Step 1: Setup A PostgreSQL database server in AWS using RDS  
 
 #### Creating an RDS account  
@@ -199,8 +165,16 @@ In this step you would connect to the database you just created, using SQL Workb
 ![](images/name%20connection.png)   
 
 
-2. Provide the Host, port. Username, Password, Database, Schemas and tables.   
-![](images/source%20config.png)   
+2. Provide the following credentials: 
+- Host 
+- Port 
+- Username 
+- Password 
+- Database 
+- Schemas 
+- Tables   
+
+3. Click next to continue. 
 
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)

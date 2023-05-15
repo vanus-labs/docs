@@ -1,16 +1,5 @@
-# Grafana
-
-This guide contains information to set up a Grafana Source in Vanus Cloud.
-
-## Introduction
-
-Grafana is an open-source platform for data visualization and analytics. It enables users to create and share dashboards, charts, and alerts across multiple data sources.
-
-The Grafana Source is a webhook server that enables you to establish an endpoint for receiving events from Grafana. To achieve this, it is necessary to establish a connection within Grafana.
-
 ## Prerequisites
 
-- A [Vanus Cloud account](https://cloud.vanus.ai)
 - A Grafana instance or an account in Grafana cloud
 
 ## Getting Started
@@ -25,6 +14,18 @@ To obtain all Grafana events using Vanus Cloud, follow these steps:
 ![img.png](images/source.png)
 3. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction. 
    ![img.png](images/2..png)
-4. Click **`Next`** to save the Grafana Source.
+4. Click **`Next`** to save the Grafana Source. 
+
+# **Configuring Grafana to send Events**
+
+1. Click the copy icon to copy the Webhook URL.
+   ![](images/getlink.png)
+2. Log in to your [Grafana](https://grafana.com) account.
+3. Navigate to the **Alert & IRM** menu in the **Menu** Tab, and click on **Alerting**.
+![img.png](images/1.png)
+4. Click on the **Contact Points**, and click on **Add contact point**.
+![img_1.png](images/2.png)
+5. Name your contact point, click on integration, select webhook, provide the payload URL from Vanus Cloud, and **Save contact point**.
+![img_2.png](images/3.png)
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

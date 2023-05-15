@@ -1,13 +1,3 @@
-# GitHub
-
-This guide contains information to set up a GitHub Source in Vanus Cloud.
-
-## Introduction
-
-GitHub is the largest web-based platform that provides developers with a place to host and manage their software projects.
-
-The GitHub Source enables you to get specific CloudEvents when particular events take place on your repositories.
-
 ## Prerequisites
 
 - GitHub Account with proper permissions(`Admin` or `Owner`) to your repository

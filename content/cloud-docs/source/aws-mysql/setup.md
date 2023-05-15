@@ -1,19 +1,6 @@
-# AWS-MySQL  
-
-This guide contains information required in setting up an Amazon MySQL Source in Vanus Cloud.  
-
-## Introduction   
-
-### MySQL  
-MySQL is a widely used database management system that helps manage and manipulate data using Structured Query Language (SQL). It offers several capabilities to manage data effectively, including the ability to **create indexes**, which improves the speed of data retrieval. **Replication** which allows data to be duplicated across multiple servers, providing backup and fault tolerance. And stored procedures, which are a set of pre-written SQL commands that can be saved in the database and executed later, making it easier to manage complex operations. MySQL is appreciated for its ease of use, flexibility and reliability. It can be integrated with a wide range of programming languages and operating systems.  
-
-### AWS-MySQL  
-AWS MySQL is a cloud-based relational database service provided by Amazon Web Services, which utilizes the open-source MySQL database management system. This service allows users to deploy and manage MySQL databases in the cloud without the need to configure and administer infrastructure on their own. AWS MySQL provides numerous features, including automatic backups, scalability, high availability, and security, making it a highly sought-after option for businesses of all sizes. Furthermore, AWS MySQL supports seamless integration with popular open-source MySQL tools and applications, which enables users to migrate their existing MySQL databases to the cloud effortlessly.   
-
 ## Prerequisites   
 Before creating your MySQL connection, you must have:  
 
-- A Vanus Cloud account 
 - An SQL client 
 - A running MySQL server
 - A database and Table

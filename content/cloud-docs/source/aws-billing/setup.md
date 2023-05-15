@@ -1,16 +1,6 @@
-# Amazon Billing
-
-This guide contains information to set up a Amazon Billing Source in Vanus Cloud.
-
-## Introduction
-
-AWS Billing is an AWS service for monitoring and managing your cloud usage and costs. It provides comprehensive usage and expense data to help you optimize resources and control spending.
-
-Amazon Billing Source is a connector provided by Vanus that retrieves daily or hourly spending information from Amazon Cloud Services and converts it into CloudEvents. To use cloud billing, you need to provide a user access key and secret key, which are required to authenticate and authorize access to your AWS account. By providing these keys, the Amazon Billing Source connector can access your billing information and retrieve the spending data from your AWS account.
-
 ## Prerequisites
 
-- A [Vanus Cloud account](https://cloud.vanus.ai)
+- An AWS Account 
 - AWS IAM Access Key.
 - AWS permissions ce:GetCostAndUsage for the IAM user.
 

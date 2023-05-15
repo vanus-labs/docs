@@ -1,20 +1,7 @@
-# Amazon SNS
-
-This guide contains information to set up a SNS Source in Vanus Cloud.
-
-## Introduction
-
-Amazon Simple Notification Service (Amazon SNS) is a fully-managed messaging service provided by Amazon Web Services (AWS).
-
-It enables you to send and receive messages between distributed systems or microservices, mobile devices, and other AWS services.
-
-Vanus Cloud provides the Amazon SNS Source connector, which retrieves SNS events and converts them into CloudEvents.
-
 ## Prerequisites
 
 Before obtaining SNS events, you must have:
 
-- A [Vanus Cloud account](https://cloud.vanus.ai)
 - Have an AWS SNS Topic.
 - AWS IAM Access Key.
 - AWS permissions for the IAM user:
@@ -58,13 +45,7 @@ Before obtaining SNS events, you must have:
 4. Save your access key and secret key safely.
    ![](images/img.png)
 
-### Step 3: AWS SNS 
-1. Go to the [Amazon SNS Console](https://console.aws.amazon.com/sns/)
-2. 
-
-### Step 4: Config your Connection
-
-
+### Step 3: Config your Connection
 
 1. Write a connection name without any spaces.
    ![img.png](images/name.png)
@@ -79,10 +60,11 @@ Before obtaining SNS events, you must have:
 
      ![img.png](images/vanus-sns.png)
 
-3. To get **SNS ARN**, **Endpoint** and **Protocol**, let's go back to our Amazon Web Services Account
+3. To get **SNS ARN**, **Endpoint** and **Protocol**, let's go back to our Amazon Web Services Account. 
+
 4. Search for SQS, Click on it and Create a Queue.
-5. Select type as FIFO and provide a name. Scroll down and click the **Create queue** Button. This will give you the Endpoint. The Protocol is **SQS**.
-   ![img.png](images/sqs-fifo.png)
+5. Select type as FIFO and provide a name. Scroll down and click the **Create queue** Button. This will give you the Endpoint. The Protocol is **SQS**.  
+![img.png](images/sqs-fifo.png)
 6. To obtain the **SNS ARN**, Search for **SNS** and Click on it to open the SNS Console.
 7. Click on the **Create Topic** Button, Select the type as **FIFO** and name the Topic. Scroll down and click the **Create topic** button to create a Topic.
 8. Copy the **SNS ARN** and paste on the field in Vanus Cloud and click **Next** to continue.

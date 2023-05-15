@@ -1,13 +1,3 @@
-# Amazon S3
-
-This guide contains information to set up a S3 Source in Vanus Cloud.
-
-## Introduction
-
-S3 is Amazon's cloud storage service that offers scalable and durable storage for various data types. It provides easy management and retrieval of data from anywhere with high availability and low latency.
-
-Vanus Cloud provides the Amazon S3 Source connector, which retrieves S3 events from a designated bucket and converts them into CloudEvents. With this connector, users can also set up an SQS queue to receive S3 event notifications. If a queue isn't specified, the connector will create one automatically.
-
 ## Prerequisites
 
 Before obtaining S3 events, you must have:

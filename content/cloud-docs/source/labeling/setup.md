@@ -1,17 +1,3 @@
-# Labeling
-
-This guide contains information to set up a Labeling Source in Vanus Cloud.
-
-## Introduction
-
-Labeling (also known as tagging) is a method used to organize and categorize resources in a cloud environment. Labeling is done by attaching metadata (key-value pairs) to cloud resources such as virtual machines, storage buckets, or database instances. Labeling cloud events is an essential part of managing cloud-based applications and services efficiently. Labels can be used to categorize and organize cloud events, making it easier to monitor performance, troubleshoot issues, easier automation, increased efficiency and identify trends. 
-
-The Labeling Source is a webhook, it receives http requests with json data as the body, and labels the correcting keys.
-
-## Prerequisites
-
-- A [Vanus Cloud account](https://cloud.vanus.ai)
-
 ## Getting Started
 
 ### Create your connection in Vanus Cloud
@@ -19,8 +5,8 @@ The Labeling Source is a webhook, it receives http requests with json data as th
 ![img.png](images/img2.png)
 
 1. Insert the following:
-    - Source Path: A Source path refers to a field in body to label.
-    - Target Path: A Target path refers to a field in body where the output is placed. The output is a list of labels.
+    - **Source Path:** A Source path refers to a field in body to label.
+    - **Target Path:** A Target path refers to a field in body where the output is placed. The output is a list of labels.
     
 **Example of a Path**
 

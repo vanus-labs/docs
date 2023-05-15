@@ -1,21 +1,5 @@
-# MongoDB  
-
-This guide contains information to set up a MongoDB Source in Vanus Cloud.  
-
-## Introduction  
-
-##### MongoDB 
-MongoDB is a popular open-source document-oriented database that is designed to be scalable and flexible. Unlike traditional relational databases, which store data in tables with predefined schemas, MongoDB stores data in flexible documents that can have varying fields and structures. 
-This makes MongoDB particularly well-suited for use cases where the data being stored is constantly changing or has a complex structure. Additionally, MongoDB is designed to work well with large amounts of data and can easily scale horizontally across multiple servers.
-
-One of the key features of MongoDB is its support for dynamic queries and indexing. This allows developers to easily query their data using a variety of different criteria and indexes, which can significantly improve performance. 
-MongoDB is also designed to be easy to use and developer-friendly. It has a powerful query language and a variety of APIs for interacting with the database, and it is often used in conjunction with popular programming languages like JavaScript and Python.
-
-##### MongoDB Source   
-The Vanus MongoDB source connector is a connector provided by Vanus, that extracts data from the users MongoDB database, converts it into CloudEvents, and streams it to their selected system/sink connector. The connector continuously monitors the MongoDB database for changes and captures those changes in real-time. To use the Vanus cloud mongodb source connector, you need to provide a host, username, password, Auth Source, Database, and Collection, which are required to authenticate and authorize access to your MongoDB account. 
-
-
 ## Prerequisites   
+
 - A [MongoDB account](https://account.mongodb.com/account/register)   
 - Host  
 - Username  
@@ -247,8 +231,16 @@ You are now connected to your MongoDB database.
 2. Give your connection a name, and choose MongoDB as the source.  
 ![](images/vanus%20source.png)   
 
-3. Input the required details in the source configuration, and save your MongoDB configuration by pressing next.  
-![](images/complete%20mongo%20source.png)   
+3. Input the required credentials in the source configuration.   
+- Hosts 
+- Username 
+- Password 
+- Auth Source 
+- Databases 
+- Collections 
+
+4. Save your MongoDB configuration by pressing next.  
+
 
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)
