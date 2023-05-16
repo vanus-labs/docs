@@ -150,6 +150,17 @@ const sidebars = {
               id: "user-guides/template-guides/github-star-triggers-slack",
               label: "GitHub Star event triggers a Slack message",
             },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/slack-schedule-message",
+              label: "Send messages in a Slack channel at scheduled time",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/slack-greeting-message",
+              label:
+                "Send a custom greeting message when new members join the Slack channel",
+            },
           ],
         },
         {
