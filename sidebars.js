@@ -112,7 +112,7 @@ const sidebars = {
             {
               type: "doc",
               id: "user-guides/template-guides/github-comment-slack",
-              label: "GitHub comment event triggers a Slack message",
+              label: "GitHub issue comment event triggers a Slack message",
             },
             {
               type: "doc",
