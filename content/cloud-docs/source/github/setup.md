@@ -6,15 +6,18 @@
 ## Getting Started
 
 1. Write a connection name without any spaces.
-   ![img.png](images/connection.png)
+   ![img.png](images/1.png)  
+
 2. Click `Authorize` to authorize to your GitHub account.
-![img.png](images/img.png)
+![img.png](images/auth%20successful.png)  
+
 3. Configure Vanus cloud with your account.
-![](images/selconfig.png)
+
 4. **Install and Authorize** Vanus to read repos and create webhooks.
-![](images/authorizw.png)
+![](images/install%20and%20auth.png)  
+
 5. Select a repository to connect and click **`Next`** to save the GitHub Source.
-![](images/selectrepo.png)
+![](images/selectrepo.png)  
 
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
