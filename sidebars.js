@@ -161,6 +161,11 @@ const sidebars = {
               label:
                 "Send a custom greeting message when new members join the Slack channel",
             },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/aws-billing-to-google-sheet",
+              label: "Send AWS Billing to Google Sheets",
+            },
           ],
         },
         {
