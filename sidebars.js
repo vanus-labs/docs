@@ -150,11 +150,6 @@ const sidebars = {
               id: "user-guides/template-guides/github-star-triggers-slack",
               label: "GitHub Star event triggers a Slack message",
             },
-            {
-              type: "doc",
-              id: "user-guides/template-guides/github-issue-triggers-slack",
-              label: "GitHub Issue event triggers a Slack message",
-            },
           ],
         },
         {
