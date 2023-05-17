@@ -216,19 +216,33 @@ You are now connected to your MongoDB database.
 
 ### Step 2: Set up MongoDB Sink in Vanus Cloud  
 
-1. In Vanus Cloud, go to "Sinks" and select "MongoDB".  
-![](images/mongo%20sink.png) 
+1. Log in to your [Vanus](cloud.vanus.ai) account and click on **connections**  
+![3](images/go%20to%20vanuscloud.png)  
 
-2. Provide the following credentials
-   - Connection Uri: The URI to connect MongoDB, view [Connection String URI Format](https://www.mongodb.com/docs/manual/reference/connection-string/) for more details
-   - Port: The port which the MongoDB Sink listens on
-   - Username: MongoDB username
-   - Password: MongoDB user's password
-   - Auth Source
-   - Auth Mechanism
-   - Auth Mechanism Properties
+2. Click on **Create Connections**  
+![3](images/click%20create%20connection.png)  
 
-3. Click `Next` and finish the configurations.
+3. Name your connection, Choose your source and click next 
+![3](images/choose%20source.png) 
+
+4. Click on **Sink** and choose **MongoDB** 
+![3](images/choose%20sink.png) 
+
+5. Provide the following credentials and click **Next**.  
+![3](images/sink%20config.png) 
+   - **Connection Uri:** The URI to connect MongoDB, view [Connection String URI Format](https://www.mongodb.com/docs/manual/reference/connection-string/) for more details
+   - **Port:** The port which the MongoDB Sink listens on
+   - **Username:** MongoDB username
+   - **Password:** MongoDB user's password
+   - **Auth Source:** The authentication database used to authenticate users credentials 
+   - **Auth Mechanism:** The method used for authentication 
+   - **Auth Mechanism Properties:** The configuration options set to control the behaviour and parameters of the authentication mechanism. 
+
+6. Click on submit to finish the configuration. 
+![](images/submit.png)  
+
+7. You've successfully created your Vanus MongoDB sink connection.  
+![](images/created.png)  
 
 ## Custom Connection
 

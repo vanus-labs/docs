@@ -31,15 +31,33 @@ Before forwarding events to Feishu, you must have:
 7. (Optionally) you can also set a **Signature verification** for added security.
    ![img.png](images/feishu-signature.png)
 
-### Step 2: Finish you Connection
+### Step 2: Set up your Connection in Vanus cloud  
 
-1. In Vanus Cloud, select Feishu Sink
-![img.png](images/img.png)
-2. Paste the ** Feishu Webhook URL** into the "URL" field.
-![img_2.png](images/img_2.png)
-3. (Optionally) add your **Signature Verification**.
-![img_3.png](images/img_3.png)
-4. Click "Next" to continue.
+1. Log in to your [Vanus](cloud.vanus.ai) account and click on **connections**  
+![3](images/go%20to%20vanuscloud.png)  
+
+2. Click on **Create Connections**  
+![3](images/click%20create%20connection.png)  
+
+3. Name your connection, Choose your source and click next 
+![3](images/choose%20source.png) 
+
+4. Click on **Sink** and choose **feishu** 
+![3](images/choose%20sink.png) 
+
+5. Paste the ** Feishu Webhook URL** into the "URL" field.
+![img_2.png](images/img_2.png) 
+
+6. (Optionally) add your **Signature Verification**.
+![img_3.png](images/img_3.png) 
+
+7. Click "Next" to continue.  
+
+8. Click on submit to finish the configuration. 
+![](images/submit.png)  
+
+9. You've successfully created your Vanus feishu sink connection.  
+![](images/created.png)  
 
 Check out this article on how to get a [Feishu Webhook](https://www.vanus.ai/blog/retrieve-feishu-webhook-url/) for more details.
 

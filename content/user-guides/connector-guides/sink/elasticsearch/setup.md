@@ -80,18 +80,34 @@ Before forwarding events to Elasticsearch, you must have:
 ![](images/12.png)   
 
 
-**To set up Elasticsearch Sink in Vanus Cloud:**
+### Step 2: Configure your connection on Vanus cloud 
 
-1. In Vanus Cloud, go to "Sinks" and select "Elasticsearch".  
+**To set up Elasticsearch Sink in Vanus Cloud:**  
 
+1. Log in to your [Vanus](cloud.vanus.ai) account and click on **connections**  
+![3](images/go%20to%20vanuscloud.png)  
 
-2. Provide the following credentials
-   - Server Endpoint: The endpoint of your elasticsearch cluster.  
-   - Index: The name of the index you created.  
-   - Username: The username you downloaded during the creation of your deployment.   
-   - Password: The password you downloaded during the creation of your deployment.  
-    
-3. Click `Next` and finish the configurations.
+2. Click on **Create Connections**  
+![3](images/click%20create%20connection.png)  
+
+3. Name your connection, Choose your source and click next 
+![3](images/choose%20source.png) 
+
+4. Click on **Sink** and choose **ElasticSearch** 
+![3](images/choose%20sink.png)   
+
+5. Provide the following credentials and click **Next**  
+![3](images/sink%20config.png)  
+- **Server Endpoint:** The endpoint of your elasticsearch cluster.  
+- **Index:** The name of the index you created.  
+- **Username:** The username you downloaded during the creation of your deployment.   
+- **Password:** The password you downloaded during the creation of your deployment.   
+
+6. Click on submit to finish the configuration. 
+![](images/submit.png)  
+
+7. You've successfully created your Vanus Elasticsearch sink connection.  
+![](images/created.png)  
 
 ## Custom Connection
 

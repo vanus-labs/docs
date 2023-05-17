@@ -51,12 +51,29 @@ Before forwarding events to Ding Talk, you must have:
 
 ### Step 3: Set up the Ding Talk Sink connector in Vanus Cloud
 
-1. **Webhook URL**: The webhook address that message sent to, you can get it when you create Chat Bot. You retrieved above.
-2. **Signature Verification**: The signature to sign request, you can get it when you create Chat Bot. You retrieved above.
+1. Log in to your [Vanus](cloud.vanus.ai) account and click on **connections**  
+![3](images/go%20to%20vanuscloud.png)  
+
+2. Click on **Create Connections**  
+![3](images/click%20create%20connection.png)  
+
+3. Name your connection, Choose your source and click next 
+![3](images/choose%20source.png) 
+
+4. Click on **Sink** and choose **dingtalk** 
+![3](images/choose%20sink.png) 
+
+5. **Webhook URL**: The webhook address that message sent to, you can get it when you create Chat Bot. You retrieved above.
+6. **Signature Verification**: The signature to sign request, you can get it when you create Chat Bot. You retrieved above.
 ![](images/img_9.png)
 
-Click **Next** to continue.
+7. Click **Next** to continue. 
 
+8. Click on submit to finish the configuration. 
+![](images/submit.png)  
+
+9. You've successfully created your Vanus dingtalk sink connection.  
+![](images/created.png)
 
 ## Required Data Format
 The event data must be JSON format, here a simple message, example:

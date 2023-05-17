@@ -13,7 +13,8 @@ Using Snowflake sink, you can receive EventClouds and effortlessly transfer them
 Before forwarding events to Snowflake, you must have:
 
 - A [Snowflake](https://www.snowflake.com/) account with administrative privileges
-- The user has either ACCOUNTADMIN or SECURITYADMIN role in Snowflake.
+- The user has either ACCOUNTADMIN or SECURITYADMIN role in Snowflake. 
+- A Vanus cloud account  
 
 ## Getting Started
 
@@ -128,21 +129,42 @@ Note that you should replace the sample values given in lines 2-7 of the script 
 The values for `role_name`, `user_name`, `warehouse_name`, `database_name` and `schemaName` must be in upper case.
 :::
 
-Step 3: Finish your connection in Vanus Cloud.
+### Step 3: Set up your connection in Vanus Cloud.
 ---
-1. Get your account URL by going to **Admin** and **Accounts** from the side menu, and click the button to copy the link.
-![](images/img_3.png)
-2. Write following information from previously in **step 2**.
+1. Log in to your [Vanus](cloud.vanus.ai) account and click on **connections**  
+![3](images/go%20to%20vanuscloud.png)  
+
+2. Click on **Create Connections**  
+![3](images/click%20create%20connection.png)  
+
+3. Name your connection, Choose your source and click next 
+![3](images/choose%20source.png) 
+
+4. Click on **Sink** and choose **snowflake** 
+![3](images/choose%20sink.png) 
+
+5. Get your account URL by going to **Admin** and **Accounts** from the side menu, and click the button to copy the link.
+![](images/img_3.png)  
+
+6. Write following information from previously in **step 2**.
    - **Role**: This is the name of the role that has the necessary privileges to perform operations on the Snowflake table.
    - **Warehouse**: This is the name of the warehouse that will execute queries for the Snowflake table.
    - **Database**: This is the name of the database that contains the Snowflake table.
    - **Schema**: This is the name of the schema that contains the Snowflake table.
    - **Username**: This is the username for your Snowflake account.
    - **Password**: This is the password for your Snowflake account.
-![](images/img_4.png)
-3. Create a **table** by entering a name.
-![](images/img_5.png)
-4. Click "Next" to continue.
+![](images/sink%20config.png) 
+
+7. Create a **table** by entering a name.
+![](images/img_5.png) 
+
+8. Click "Next" to continue.  
+
+9. Click on submit to finish the configuration. 
+![](images/submit.png)  
+
+10. You've successfully created your Vanus snowflake sink connection.  
+![](images/created.png)  
 
 ## Required Data Format
 
