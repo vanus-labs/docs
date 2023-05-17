@@ -27,9 +27,9 @@ Before obtaining Slack events, you must have:
 ### Step 3: Connection in Vanus Cloud
 
 1. Write a name for your connection.
-![](images/img_22.png)
+![](images/name%20connection.png)
 2. Paste two credentials from Slack as configurations.
-![](images/img_19.png)
+![](images/token%20and%20secret.png)
 3. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction.
 ![img.png](images/2.png)
 4. Click **next** and finish the configurations.  
@@ -64,9 +64,9 @@ But, if you're using some **Vanus Templates** like `Send a custom greeting messa
 1. Scroll down, click **Subscribe to bot events** and after you will be able to click **Add Bot User Event**.
 ![](images/img_9.png)
 2. Select the events you would like to receive, for example you can select `member_joined_channel` to receive events whenever a new member joins your Slack Channel.
-![](images/img_17.png)
+![](images/member_joined.png)
 3. Finally you can **Save Changes** to complete your configuration.
-![](images/img_18.png)
+![](images/save%20changes.png)
 
 ## Step 3: Install the Slack App to your Slack workspace
 

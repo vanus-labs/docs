@@ -19,20 +19,28 @@ Before obtaining Auth0 events, you must have:
 #### **Configuring Auth0 to Send Webhook Events**
 
 1. Click the copy icon to copy the webhook url.
-   ![getLink](images/getlink.png)
-2. Log in to your Auth0 account.
+   ![getLink](images/copy%20url.png)  
+
+2. Log in to your Auth0 account.  
+
 3. Navigate to the **Streams** menu under **Monitoring**.
-![img.png](images/img.png)
+![img.png](images/monitoring.png)  
+
 4. Click on the **Create Log Stream** button.
-   ![img_1.png](images/img_1.png)
+   ![img_1.png](images/create%20log%20stream.png)  
+
 5. Select the **Webhook** option.
-   ![img_2.png](images/img_2.png)
+   ![img_2.png](images/custom%20webhook.png)  
+
 6. Write a name for your webhook stream.
-![](images/image.jpg)
+![](images/name%20event%20stream.png)  
+
 7. Provide the payload URL of your Auth0 source connector in Vanus Cloud, and select `Json line` under **Content Format**.
-![](images/image1.jpg)
+![](images/payload.png)  
+
 8. Select the event you want to receive notifications for. 
-![img.png](images/image2.png)
+![img.png](images/filter.png)  
+
 9. Save your settings.
 
 :::caution

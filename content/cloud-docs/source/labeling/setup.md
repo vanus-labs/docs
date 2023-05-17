@@ -2,7 +2,7 @@
 
 ### Create your connection in Vanus Cloud
 
-![img.png](images/img2.png)
+![img.png](images/name%20connection.png)
 
 1. Insert the following:
     - **Source Path:** A Source path refers to a field in body to label.
@@ -34,7 +34,7 @@ By following this path, you can access the value of the title attribute within t
     If "key1" or "key2" is present in the field of `Source Path`, the `Target Path` will have "label1".
     If "key3" or "key4" or "key5" is present in the field of `Source Path`, the `Target Path` will have "label2".
     
-    ![img.png](images/img5.png)
+    ![img.png](images/source.png)
 
 2. Click **Next** and finish the configurations.
 

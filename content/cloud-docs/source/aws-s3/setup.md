@@ -1,7 +1,7 @@
 ## Prerequisites
 
 Before obtaining S3 events, you must have:
-- A [Vanus Cloud account](https://cloud.vanus.ai)
+- An AWS Account
 
 
 ## Getting Started

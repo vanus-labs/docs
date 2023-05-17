@@ -1,13 +1,3 @@
-# Shopify App
-
-This guide contains information to set up a Shopify App Source in Vanus Cloud.
-
-## Introduction
-
-Shopify is a popular e-commerce platform that allows businesses to sell their products online. 
-
-With the Shopify App source connector in Vanus Cloud, you can create an Shopify App to obtain real-time updates on all customer and order activity in your Shopify store.
-
 ## Prerequisites
 
 Before obtaining Shopify events, you must have:
