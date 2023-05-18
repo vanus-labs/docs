@@ -9,10 +9,9 @@ Before obtaining SNS events, you must have:
   - sns:ConfirmSubscription
   - sns:Unsubscribe
 
-# Getting Started
+---
 
-Perform the following steps to configure your Amazon SNS Source:
-
+**Perform the following steps to configure your Amazon SNS Source:**
 
 ## Step 1: Create a New AWS User
 
@@ -39,6 +38,8 @@ Perform the following steps to configure your Amazon SNS Source:
    ![img.png](images/9..png)
 10. Review and press **create user**.
 
+---
+
 ## Step 2: Create an Create Access Key
 
 1. Now click on the user you just created.
@@ -49,6 +50,8 @@ Perform the following steps to configure your Amazon SNS Source:
    ![img.png](images/13.png)
 4. Save your access key and secret key safely.
    ![](images/img.png)
+
+---
 
 ## Step 3: Config your Connection
 
@@ -82,5 +85,7 @@ Perform the following steps to configure your Amazon SNS Source:
 
 6. Copy the **SNS ARN** and paste on the field in Vanus Cloud and click **Next** to continue.  
 ![img.png](images/arn.png)
+
+---
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

@@ -1,24 +1,13 @@
 # Prerequisites
-
-Before obtaining ChatGPT events, you must have:
+This connector is exclusively made for Feishu, if you don't use Feishu select ChatAi Source or Slack Source for ChatGPT.
 
 - A [feishu account](https://www.feishu.cn).
 
-# Getting Started
+---
 
-Perform the following steps to configure your ChatGPT Source:
+**Perform the following steps to configure your ChatGPT Source:**
 
-
-## Create a Connection
-
-1. Write a name for your connection.
-![img.png](images/1.png)
-2. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction.
-   ![img.png](images/2.png)
-3. Click **`Next`** to save the ChatGPT Source. 
-
-
-## **How to setup ChatGPT in Feishu**
+# Step 1: Setup ChatGPT in Feishu
 
 1. Click the copy icon to copy the webhook url.
    ![img.png](images/img_1.png)
@@ -44,6 +33,16 @@ Perform the following steps to configure your ChatGPT Source:
     ![img_10.png](images/img_10.png)
 12. Now send a message in the group tagging the bot.
     ![img_11.png](images/img_11.png)
-   
+
+---
+
+## Step 2: Setup your Connection
+
+1. Write a name for your connection.
+![img.png](images/1.png)
+
+2. Click **`Next`** to save the ChatGPT Source. 
+
+---   
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

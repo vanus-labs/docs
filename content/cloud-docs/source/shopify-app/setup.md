@@ -4,9 +4,9 @@ Before obtaining Shopify events, you must have:
 
 - A Shopify shop with administrative privileges 
 
-# Getting Started
+---
 
-Perform the following steps to configure your Shopify App Source:
+**Perform the following steps to configure your Shopify App Source:**
 
 ## Step 1: Create an App
 1. Go to [shopify](https://shopify.com) and sign in to your account to access the shopify dashboard.
@@ -32,6 +32,7 @@ Perform the following steps to configure your Shopify App Source:
 ![](images/img_9.png)
 12. Reveal the **Admin API access token** and copy the token.
 
+---
 
 ## Step 2: Finish the connection in Vanus Cloud
 1. Paste the **Admin API access token** into Vanus Cloud.
@@ -42,5 +43,7 @@ Perform the following steps to configure your Shopify App Source:
 ![](images/img_13.png)
 4. Choose from what moment you would like to start receive the events,
     select how often do you want to receive updates and press **Next**.
+
+---
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

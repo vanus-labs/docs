@@ -8,7 +8,7 @@
 
 Perform the following steps to configure your Amazon billing Source:
 
-# Step 1: Create a new User in AWS
+# Step 1: Create a new User in AWS (Optional)
 
 1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
 2. Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by searching for IAM and click the IAM service.
@@ -36,7 +36,7 @@ Perform the following steps to configure your Amazon billing Source:
 
 ---
 
-# Step 2: Create an Access Key and Secret Key
+# Step 2: Create an Access Key and Secret Key (Optional)
 1. Now click on the user you just created.
 ![img.png](images/11.png)
 2. Under **Security and credential** scroll down the page to `Access Key`, and Click **Create access key**.
