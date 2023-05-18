@@ -65,7 +65,7 @@ Before forwarding events to an S3 bucket, you must have:
 ### Step 3: Set up your connection in Vanus cloud 
 **To set up S3 Sink in Vanus Cloud:**  
 
-1. Log in to your [Vanus](cloud.vanus.ai) account and click on **connections**  
+1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
 ![3](images/go%20to%20vanuscloud.png)  
 
 2. Click on **Create Connections**  
