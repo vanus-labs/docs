@@ -36,7 +36,7 @@ Before obtaining SNS events, you must have:
    ![img.png](images/9..png)
 10. Review and press **create user**.
 
-### Step 2: Create an Create Access Key
+### Step 2: Create an Access Key
 
 1. Now click on the user you just created.
    ![img.png](images/11.png)
@@ -49,8 +49,9 @@ Before obtaining SNS events, you must have:
 
 ### Step 3: Config your Connection
 
-1. Write a connection name without any spaces.
-   ![img.png](images/16.png)
+1. Write a connection name without any spaces. 
+   ![choose source](https://github.com/StrangeJay/docs/assets/105195327/ac1f5c84-5ab6-4357-af7e-60401696489f)
+
 2. Enter the following credentials:
 
    - Port
