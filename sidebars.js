@@ -145,6 +145,11 @@ const sidebars = {
               id: "user-guides/template-guides/github-issue-discord",
               label: "GitHub issue event triggers a Discord message",
             },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/github-developer-360",
+              label: "Real-time GitHub Developer 360",
+            },
           ],
         },
         {
