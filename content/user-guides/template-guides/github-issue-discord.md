@@ -32,7 +32,7 @@ This guide will help you get a Discord notification whenever an issue is opened 
 
 ### Step 3: Configure Subscription
 
-- Go back to Vanus CLoud webiste and scroll down to Sink Configuration
+- Go back to Vanus Cloud website and scroll down to Sink Configuration
 
 - Paste the copied URL in the Webhook URL section and click Submit
 
