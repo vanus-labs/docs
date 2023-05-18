@@ -74,7 +74,7 @@ This guide will help you get a record of AWS billings directly on Google Sheets.
 
 - Click Create access key and download the .csv file
 
-![12.png](imgs/github-pr-slack-12.PNG)
+![12.png](imgs/aws-to-sheets-12.PNG)
 
 ### Step 3: Connection Configuration
 
@@ -87,24 +87,28 @@ This guide will help you get a record of AWS billings directly on Google Sheets.
 ### Step 4: Sink Configuration
 
 - Select the Service Account Credentials in the Authencation Method
-  ![13.png](imgs/github-pr-slack-13.PNG)
+
+  ![13.png](imgs/aws-to-sheets-13.PNG)
 
 - Now go to Google Service Account and add a Project
-  ![14.png](imgs/github-pr-slack-14.PNG)
+
+  ![14.png](imgs/aws-to-sheets-14.PNG)
 
 - Click on '+ CREATE SERVICE ACCOUNT'
 
 - Add a Service Account Name and Service Account ID and click on Create and Continue and then click on Done
 
+  ![15.png](imgs/aws-to-sheets-15.PNG)
+
 - Now click on newly created Service Account, go to Keys tab
-  ![16.png](imgs/github-pr-slack-16.PNG)
 
 - Click on Add Key and select the Create new key option
 
-![17.png](imgs/github-pr-slack-17.PNG)
+![16.png](imgs/aws-to-sheets-16.PNG)
 
 - Choose JSON format and click on Create. A JSON file will be downloaded on your device
-  ![18.png](imgs/github-pr-slack-18.PNG)
+
+  ![17.png](imgs/aws-to-sheets-17.PNG)
 
 - Open that file and copy the credientals mentioned in it
 
@@ -113,8 +117,11 @@ This guide will help you get a record of AWS billings directly on Google Sheets.
 - For the spreadsheet Id we will create a go to Google Sheets and create a new sheet
 
 - Copy the sheet id from the URL and paste it in the spreadhseet ID section
-  ![19.png](imgs/github-pr-slack-19.PNG)
+
+  ![18.png](imgs/aws-to-sheets-18.PNG)
 
 - Add the sheet name and click on Submit
 
 - Your connection has been succesfully setup
+
+- Now all your AWS billings will get recorded in the Google Sheet automatically

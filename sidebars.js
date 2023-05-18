@@ -112,7 +112,7 @@ const sidebars = {
             {
               type: "doc",
               id: "user-guides/template-guides/github-comment-slack",
-              label: "GitHub comment event triggers a Slack message",
+              label: "GitHub issue comment event triggers a Slack message",
             },
             {
               type: "doc",
@@ -144,6 +144,33 @@ const sidebars = {
               type: "doc",
               id: "user-guides/template-guides/github-issue-discord",
               label: "GitHub issue event triggers a Discord message",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/github-star-triggers-slack",
+              label: "GitHub Star event triggers a Slack message",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/slack-schedule-message",
+              label: "Send messages in a Slack channel at scheduled time",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/slack-greeting-message",
+              label:
+                "Send a custom greeting message when new members join the Slack channel",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/aws-billing-to-google-sheet",
+              label: "Send AWS Billing to Google Sheets",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/github-merge-pr-slack",
+              label:
+                "GitHub merged pull-request event triggers a Slack message",
             },
           ],
         },

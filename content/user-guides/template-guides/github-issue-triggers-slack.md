@@ -1,26 +1,18 @@
-# GitHub opened pull-request event triggers a Slack message
+# GitHub Issue event triggers a Slack message
 
 GitHub is the largest web-based platform that provides developers with a place to host and manage their software projects.
 
 You can receive notifications when specific events occur in a repository by adding a GitHub Source on Vanus Cloud.
 
-This guide will help you get a Slack notification whenever an pull request is opened in your repository.
+This guide will help you get a Discord notification whenever a new issue is created on your Github repository.
 
-<iframe
-  width="800"
-  height="450"
-  src="https://www.youtube.com/watch?v=bESsX8lKCEY"
-  title="YouTube video player"
-  frameBorder="0"
-  allowFullScreen={true}
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-></iframe>
+<iframe width="800" height="450" src="https://www.youtube.com/watch?v=QPOJfz08E1E" title="YouTube video player" frameBorder="0" allowFullScreen={true} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 
 ## Get Started
 
 ### Step 1: Configure the Source - Authorize GitHub and select a GitHub repo
 
-- Log in to [Vanus Cloud](https://cloud.vanus.ai/) and choose the **GitHub Star event triggers a Slack message** template.
+- Log in to [Vanus Cloud](https://cloud.vanus.ai/) and choose the **GitHub Issue event triggers a Slack message** template.
 
 - Find the **Sign in with GitHub** button and authorize GitHub. Then, select the repo you want to configure.
 
@@ -46,4 +38,4 @@ Tip: For detailed steps on how to obtain the Slack Webhook URL, refer to the blo
 
 Note: You can customize the display format and content of the notifications by configuring the **Subscription**.
 
-- After submission, the status will show as **running**. Now everytime a user opens a pull request on your repository, you will instantly recieve a customized notification message
+- After submission, the status will show as **running**. Now everytime a new issue is created on your repository, you will instantly recieve a customized notification message
