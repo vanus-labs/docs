@@ -19,7 +19,7 @@ Before forwarding events to Feishu, you must have:
 
 **To set up Doris Sink in Vanus Cloud:** 
 
-1. Log in to your [Vanus](cloud.vanus.ai) account and click on **connections**  
+1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
 ![3](images/go%20to%20vanuscloud.png)  
 
 2. Click on **Create Connections**  
