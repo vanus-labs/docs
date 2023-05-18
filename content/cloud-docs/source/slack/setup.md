@@ -1,11 +1,13 @@
-## Prerequisites
+# Prerequisites
 
 Before obtaining Slack events, you must have:
 - A [Slack account](https://slack.com).
 
-## Getting Started
+# Getting Started
 
-### Step 1: Create and Install an App in Slack
+Perform the following steps to configure your Slack Source:
+
+## Step 1: Create and Install an App in Slack
 
 1. Go to [Slack API](https://api.slack.com/apps), and click **Create New App**.
    ![](images/img.png)
@@ -14,7 +16,7 @@ Before obtaining Slack events, you must have:
 3. Set the app name and Workspace.
 ![](images/img_2.png)
 
-### Step 2: Get App Credentials
+## Step 2: Get App Credentials
 
 1. Go to **Basic Information**.
 ![](images/img_3.png)
@@ -24,7 +26,7 @@ Before obtaining Slack events, you must have:
 ![](images/img_4.png)
 3. Don't close this page but continue in Vanus Cloud
 
-### Step 3: Connection in Vanus Cloud
+## Step 3: Connection in Vanus Cloud
 
 1. Write a name for your connection.
 ![](images/name%20connection.png)
@@ -35,7 +37,7 @@ Before obtaining Slack events, you must have:
 4. Click **next** and finish the configurations.  
 
 
-# **How to use the webhook URL of a Slack Source**
+# How to use the webhook URL of a Slack Source
 
 ## Step 1: Configure Event Subscription
 1. Click the **copy icon** to copy the webhook url.

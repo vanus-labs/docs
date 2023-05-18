@@ -1,10 +1,10 @@
-## Prerequisites
+# Prerequisites
 
 To set up HTTP Sink, you must have:
 
 - A payload URL.
 
-## Getting Started
+# Getting Started
 
 In Vanus Cloud,
 
@@ -17,7 +17,7 @@ You can also select the URL Method (`POST`, `GET`, `PATCH`, `DELETE`, `PUT`)
 
 4. Click `Next` and finish the configurations.
 
-## Required Data Format
+# Required Data Format
 
 The event data must be JSON form4at, here a simple message, example:
 

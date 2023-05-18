@@ -1,12 +1,14 @@
-## Prerequisites
+# Prerequisites
 
 - An AWS Account 
 - AWS IAM Access Key.
 - AWS permissions ce:GetCostAndUsage for the IAM user.
 
-## Getting Started
+---
 
-### Step 1: Create a new AWS user
+Perform the following steps to configure your Amazon billing Source:
+
+# Step 1: Create a new User in AWS
 
 1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
 2. Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by searching for IAM and click the IAM service.
@@ -32,8 +34,9 @@
 12. Review and press **Create user**.
 ![img.png](images/10..png)
 
+---
 
-### Step 2: Create an Access Key and Secret Key
+# Step 2: Create an Access Key and Secret Key
 1. Now click on the user you just created.
 ![img.png](images/11.png)
 2. Under **Security and credential** scroll down the page to `Access Key`, and Click **Create access key**.
@@ -45,12 +48,16 @@
 5. Save your `Access key` and `Secret key` safely. Download the .csv file.
     ![](images/15.png)
 
-### Step 3: Config your connection
+---
+
+# Step 3: Config your connection
 
 1. Write a name for your connection.
       ![img.png](images/16.png)
 2. Provide your Access Key ID and Secret Key, set the desired hour for event fetching.
 ![](images/17.png)
 3. Click **Next** and continue the configuration.
+
+---
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai)

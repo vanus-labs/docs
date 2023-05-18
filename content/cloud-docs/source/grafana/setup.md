@@ -1,12 +1,12 @@
-## Prerequisites
+# Prerequisites
 
 - A Grafana instance or an account in Grafana cloud
 
-## Getting Started
+# Getting Started
 
-To obtain all Grafana events using Vanus Cloud, follow these steps:
+Perform the following steps to configure your Grafana Source:
 
-### Create a Connection
+## Create a Connection
 
 1.  Write a name for your connection.
    ![img.png](images/1..png)

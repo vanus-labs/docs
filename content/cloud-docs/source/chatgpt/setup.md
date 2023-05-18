@@ -1,12 +1,15 @@
-## Prerequisites
+# Prerequisites
 
 Before obtaining ChatGPT events, you must have:
 
-- A feishu account 
+- A [feishu account](https://www.feishu.cn).
 
-## Getting Started
+# Getting Started
 
-### Create a Connection
+Perform the following steps to configure your ChatGPT Source:
+
+
+## Create a Connection
 
 1. Write a name for your connection.
 ![img.png](images/1.png)
@@ -15,7 +18,7 @@ Before obtaining ChatGPT events, you must have:
 3. Click **`Next`** to save the ChatGPT Source. 
 
 
-### **How to setup ChatGPT in Feishu**
+## **How to setup ChatGPT in Feishu**
 
 1. Click the copy icon to copy the webhook url.
    ![img.png](images/img_1.png)

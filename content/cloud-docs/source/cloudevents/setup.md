@@ -1,6 +1,8 @@
-## Getting Started
+# Getting Started
 
-### Create your connection in Vanus Cloud
+Perform the following steps to configure your CloudEvents Source:
+
+## Create your connection in Vanus Cloud
 
 To set up CloudEvents in Vanus Cloud, follow these steps:
 
@@ -10,7 +12,7 @@ To set up CloudEvents in Vanus Cloud, follow these steps:
 ![img.png](images/2.png)
 3. Click **`Next`** to save the Grafana Source. 
 
-### **Send CloudEvents**
+## **Send CloudEvents**
 - Click the **copy icon** to copy the webhook url.
    ![](images/getlink.png)
 You can use your Webhook URL to send CloudEvents.

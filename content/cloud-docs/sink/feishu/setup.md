@@ -1,13 +1,13 @@
-## Prerequisites
+# Prerequisites
 
 Before forwarding events to Feishu, you must have:
 
 - A [Feishu](https://www.feishu.cn) account.
 
 
-## Getting Started
+# Getting Started
 
-### Step 1: Setup a Feishu bot
+## Step 1: Setup a Feishu bot
 1. Create a new Group chat
 ![img_1.png](images/img_1.png)
 2. In the feishu group click `...` and then **settings**.
@@ -21,7 +21,7 @@ Before forwarding events to Feishu, you must have:
 7. (Optionally) you can also set a **Signature verification** for added security.
    ![img.png](images/feishu-signature.png)
 
-### Step 2: Finish you Connection
+## Step 2: Finish you Connection
 
 1. Paste the ** Feishu Webhook URL** into the "URL" field.
 ![img_2.png](images/img_2.png)

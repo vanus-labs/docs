@@ -1,12 +1,14 @@
-## Prerequisites
+# Prerequisites
 
 Before obtaining Shopify events, you must have:
 
 - A Shopify shop with administrative privileges 
 
-## Getting Started
+# Getting Started
 
-### Step 1: Create an App
+Perform the following steps to configure your Shopify App Source:
+
+## Step 1: Create an App
 1. Go to [shopify](https://shopify.com) and sign in to your account to access the shopify dashboard.
 2. Once log in go to `Apps  >` from the side menu a list will appear on top of the page and click **App and sales channel settings**.
 ![](images/img.png)
@@ -31,7 +33,7 @@ Before obtaining Shopify events, you must have:
 12. Reveal the **Admin API access token** and copy the token.
 
 
-### Step 2: Finish the connection in Vanus Cloud
+## Step 2: Finish the connection in Vanus Cloud
 1. Paste the **Admin API access token** into Vanus Cloud.
 ![](images/img_11.png)
 2. Go to your store home page and copy the name of your store.

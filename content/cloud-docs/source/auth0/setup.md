@@ -1,22 +1,14 @@
-## Prerequisites
+# Prerequisites
 
 Before obtaining Auth0 events, you must have:
 
 - An Auth0 account with administrative privileges
 
-## Getting Started
+---
 
-### Create your connection in Vanus Cloud
+**Perform the following steps to configure your Auth0 Source:**
 
-1. Write a name for your connection.
-![](images/1.png)
-2. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction.
-![](images/2.png)
-3. Click **Next** and continue the configuration.
-
-### Configuration Continuation 
-
-#### **Configuring Auth0 to Send Webhook Events**
+# Step 1: Configuring Auth0 to Send Webhook Events
 
 1. Click the copy icon to copy the webhook url.
    ![getLink](images/copy%20url.png)  
@@ -43,10 +35,14 @@ Before obtaining Auth0 events, you must have:
 
 9. Save your settings.
 
-:::caution
-At this time you can only select one event.
-:::
+---
 
+# Step 2: Complete your connection in Vanus Cloud
 
+1. Write a name for your connection.
+   ![](images/1.png)
+2. Click **Next** and continue the configuration.
+
+---
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

@@ -1,10 +1,13 @@
-## Prerequisites
+# Prerequisites
 
 - An AWS Account with Administrative Privileges
 
-## Getting Started
+# Getting Started
 
-### Create your connection in Vanus Cloud
+Perform the following steps to configure your Amazon EventBridge Source:
+
+
+## Create your connection in Vanus Cloud
 
 To obtain all Amazon Eventbridge events in Vanus Cloud, follow these steps:
 
@@ -17,14 +20,14 @@ To obtain all Amazon Eventbridge events in Vanus Cloud, follow these steps:
 3. Click **Next** and continue the configuration.  
 
 
-### **Configuring Amazon Eventbridge**
+## **Configuring Amazon Eventbridge**
 
 1. Click the **copy icon** to copy the webhook url.
    ![](images/no1.png)  
 
 2. Navigate to the [EventBridge console](https://console.aws.amazon.com/events/home).  
 
-## Step 1: Create an Event Bus
+# Step 1: Create an Event Bus
 
 1. In the side menu click **Event buses**.
    ![img_3.png](images/no2.png)  
@@ -35,7 +38,7 @@ To obtain all Amazon Eventbridge events in Vanus Cloud, follow these steps:
 3. Write a name and press **create**.
    ![img_5.png](images/4.png) 
 
-## Step 2: Create a Rule.
+# Step 2: Create a Rule.
 1. Go to **Rules** from the side menu and click **Create rule**. 
    ![img_6.png](images/5.png)  
 
@@ -48,7 +51,7 @@ To obtain all Amazon Eventbridge events in Vanus Cloud, follow these steps:
 4. Press **Next** to continue.
 ![img.png](images/8.png)
 
-## Step 3: Create an API Destination and Connection
+# Step 3: Create an API Destination and Connection
 1. Select EventBridge API destination.
     ![img_9.png](images/9.png)  
 

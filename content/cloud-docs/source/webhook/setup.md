@@ -1,8 +1,11 @@
-## Getting Started
+# Prerequisites
+- Have an HTTP client.
 
-To obtain a unique Webhook URL in Vanus Cloud, follow these steps:
+# Getting Started
 
-### Create a Connection
+Perform the following steps to configure your Webhook Source:
+
+## Create a Connection
 
 1. Write a name for your connection.
    ![img.png](images/1.png)

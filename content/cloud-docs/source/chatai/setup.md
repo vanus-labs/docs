@@ -1,6 +1,12 @@
-## Getting Started
+# Prerequisites
+- Have the ability to send HTTP request.
 
-### Set up your connection in Vanus Cloud
+
+# Getting Started
+
+Perform the following steps to configure your ChatAI Source:
+
+## Set up your connection in Vanus Cloud
 
 1. Write a name for your connection.  
     ![img.png](images/connection.png)  
@@ -18,7 +24,7 @@
 
 4. Click **`Next`** to save the ChatAI Source. 
 
-### **How to Use the Webhook URL to Send Message to ChatAI**
+## **How to Use the Webhook URL to Send Message to ChatAI**
 
 - Click the **copy icon** to copy the webhook url.  
    ![](images/getlink.png)  

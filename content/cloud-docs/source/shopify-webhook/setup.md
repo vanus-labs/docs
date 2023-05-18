@@ -1,10 +1,12 @@
-## Prerequisites
+# Prerequisites
 
 - A Shopify Account
 
-## Getting Started
+# Getting Started
 
-### Create a Connection
+Perform the following steps to configure your Shopify Webhook Source:
+
+## Create a Connection
 
 1. Write a name for your connection.
    ![img.png](images/1.png)
@@ -12,7 +14,7 @@
    ![img.png](images/2.png)
 3. Click **next** and finish the configurations.  
 
-### **Configuring Shopify to Send Webhook Events**
+## **Configuring Shopify to Send Webhook Events**
 
 1. Click the copy icon to copy the webhook url.
 ![](images/copywebhook.png)

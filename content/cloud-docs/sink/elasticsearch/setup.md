@@ -1,12 +1,12 @@
-## Prerequisites
+# Prerequisites
 
 Before forwarding events to Elasticsearch, you must have:
 
 - Have an Elasticsearch cluster. 
 
-## Getting Started
+# Getting Started
 
-### Step 1: Setup an Elasticsearch cluster 
+## Step 1: Setup an Elasticsearch cluster 
 
 1. Got to the [Elasticsearch](https://www.elastic.co/) official website and sign up for an account.  
 ![](images/1.png)   
@@ -40,7 +40,7 @@ Before forwarding events to Elasticsearch, you must have:
 6. Your deployment has been successfully created, click **continue**  
 ![](images/5.png)   
 
-### Getting your server endpoint 
+## Getting your server endpoint 
 1. Click on the **settings** icon at the right side of your deployment.  
 ![](images/6.png)   
 
@@ -55,7 +55,7 @@ Before forwarding events to Elasticsearch, you must have:
 
     ![](images/9.png)   
 
-### Creating an Index 
+## Creating an Index 
 1. Click on API Console  
 ![](images/10.png)   
 
@@ -79,7 +79,7 @@ Before forwarding events to Elasticsearch, you must have:
     
 2. Click `Next` and finish the configurations.
 
-## Custom Connection
+# Custom Connection
 
 Create your template following the structure of your database, an example:
 

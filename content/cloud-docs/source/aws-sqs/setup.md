@@ -1,4 +1,4 @@
-## Prerequisites
+# Prerequisites
 
 Before obtaining SQS events, you must have:
 
@@ -9,9 +9,12 @@ Before obtaining SQS events, you must have:
   - sqs:ReceiveMessage
   - sqs:DeleteMessage
 
-## Getting Started
+# Getting Started
 
-### Step 1: Create a new AWS user
+Perform the following steps to configure your Amazon SQS Source:
+
+
+## Step 1: Create a new AWS user
 
 Create a new user and set the proper IAM policy.
 
@@ -37,7 +40,7 @@ Create a new user and set the proper IAM policy.
 12. Save your access key and secret key safely.
     ![](images/img.png)
 
-### Step 2: Config your connection
+## Step 2: Config your connection
 
 To obtain Amazon SQS events using the SQS source connector in Vanus Cloud, follow these steps:
 

@@ -1,6 +1,11 @@
-## Getting Started
+# Prerequisites
+- Have a HTTP client.
 
-### Create your connection in Vanus Cloud
+# Getting Started
+
+Perform the following steps to configure your labeling Source:
+
+## Create your connection in Vanus Cloud
 
 ![img.png](images/name%20connection.png)
 
