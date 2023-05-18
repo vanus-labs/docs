@@ -1,13 +1,14 @@
+#
 # Prerequisites
 
 Before obtaining Slack events, you must have:
 - A [Slack account](https://slack.com).
 
-# Getting Started
+---
 
-Perform the following steps to configure your Slack Source:
+**Perform the following steps to configure your Slack Source:**
 
-## Step 1: Create and Install an App in Slack
+# Step 1: Create and Install an App in Slack
 
 1. Go to [Slack API](https://api.slack.com/apps), and click **Create New App**.
    ![](images/img.png)
@@ -16,7 +17,9 @@ Perform the following steps to configure your Slack Source:
 3. Set the app name and Workspace.
 ![](images/img_2.png)
 
-## Step 2: Get App Credentials
+---
+
+#  Step 2: Get App Credentials
 
 1. Go to **Basic Information**.
 ![](images/img_3.png)
@@ -25,21 +28,12 @@ Perform the following steps to configure your Slack Source:
  - Signing Secret
 ![](images/img_4.png)
 3. Don't close this page but continue in Vanus Cloud
+4. Paste the two credentials from Slack as configurations.
+      ![](images/token%20and%20secret.png)
 
-## Step 3: Connection in Vanus Cloud
+---
 
-1. Write a name for your connection.
-![](images/name%20connection.png)
-2. Paste two credentials from Slack as configurations.
-![](images/token%20and%20secret.png)
-3. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction.
-![img.png](images/2.png)
-4. Click **next** and finish the configurations.  
-
-
-# How to use the webhook URL of a Slack Source
-
-## Step 1: Configure Event Subscription
+# Step 3: Configure Event Subscription
 1. Click the **copy icon** to copy the webhook url.
 ![](images/img_10.png)
 2. Go back to **Slack API**.
@@ -51,7 +45,9 @@ Perform the following steps to configure your Slack Source:
 5. Use the URL we've previously **copy and paste** it in **Request URL**. You should see a green `Verified` indicating our Source is verified by Slack.
 ![](images/img_8.png)
 
-## Step 2: Subscribe to bot events
+---
+
+# Step 4: Subscribe to bot events
 
 Generally speaking, Slack Source can subscribe any events you need from Slack.
 
@@ -61,7 +57,7 @@ But, if you're using some **Vanus Templates** like `Send a custom greeting messa
 |------------------------------------------------------------------------|:------------------------:|
 | Send a custom greeting message when new members join the Slack channel | `member_joined_channel`  |
 
-### How to subscribe
+## How to subscribe
 
 1. Scroll down, click **Subscribe to bot events** and after you will be able to click **Add Bot User Event**.
 ![](images/img_9.png)
@@ -70,7 +66,9 @@ But, if you're using some **Vanus Templates** like `Send a custom greeting messa
 3. Finally you can **Save Changes** to complete your configuration.
 ![](images/save%20changes.png)
 
-## Step 3: Install the Slack App to your Slack workspace
+---
+
+# Step 5: Install the Slack App to your Slack workspace
 
 1. Go to **Install Apps** from the side menu and click **Install to Workspace**.
    ![](images/img_13.png)
@@ -78,3 +76,12 @@ But, if you're using some **Vanus Templates** like `Send a custom greeting messa
       ![](images/img_14.png)
 3. Mention your bot in slack and invite it to the channel.
    ![](images/img_15.png)
+
+---
+
+# Step 6: Connection in Vanus Cloud
+
+1. Write a name for your connection.
+   ![](images/name%20connection.png)
+
+3. Click **next** and finish the configurations.  

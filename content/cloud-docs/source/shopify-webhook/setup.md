@@ -29,7 +29,7 @@ If you'd like to receive multiple events you can create more webhooks using the 
 
 ---
 
-## Step 2: Setup your Connection
+# Step 2: Setup your Connection
 
 1. Write a name for your connection.
    ![img.png](images/1.png)

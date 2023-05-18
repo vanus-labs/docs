@@ -1,3 +1,4 @@
+#
 # Prerequisites
 
 - An SQL client

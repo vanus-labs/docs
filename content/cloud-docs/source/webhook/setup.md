@@ -5,12 +5,11 @@
 
 Perform the following steps to configure your Webhook Source:
 
-## Create a Connection
+# Step 1: Create a Connection
 
 1. Write a name for your connection.
    ![img.png](images/1.png)
-2. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction.
-![img.png](images/2.png)
+2. Save your Webhook URL.
 3. Press **next**.
 
 

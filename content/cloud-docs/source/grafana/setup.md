@@ -1,3 +1,4 @@
+#
 # Prerequisites
 
 - A Grafana instance or an account in Grafana cloud

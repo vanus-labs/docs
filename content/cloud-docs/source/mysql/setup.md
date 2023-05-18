@@ -1,4 +1,6 @@
+#
 # Prerequisites
+
 Before forwarding events to MySQL, you must have:
 
 - Have a running MySQL server.
