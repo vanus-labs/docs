@@ -150,6 +150,12 @@ const sidebars = {
               id: "user-guides/template-guides/github-developer-360",
               label: "Real-time GitHub Developer 360",
             },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/github-merge-pr-slack",
+              label:
+                "GitHub merged pull-request event triggers a Slack message",
+            },
           ],
         },
         {
