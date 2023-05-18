@@ -9,7 +9,7 @@ This guide will help you create a connection between Google Sheets and Github to
 <iframe
   width="800"
   height="450"
-  src="https://www.youtube.com/watch?v=6Mvl7zRwNA0"
+  src="https://www.youtube.com/embed/FygBdoL3ld0"
   title="YouTube video player"
   frameBorder="0"
   allowFullScreen={true}

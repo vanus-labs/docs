@@ -6,7 +6,7 @@ You can receive notifications when specific events occur in a repository by addi
 
 This guide will help you get a Discord notification whenever an issue is opened in your repository.
 
-<iframe width="800" height="450" src="https://www.youtube.com/watch?v=CSelNeVjdlM" title="YouTube video player" frameBorder="0" allowFullScreen={true} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/QPOJfz08E1E" title="YouTube video player" frameBorder="0" allowFullScreen={true} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 
 ## Get Started
 
@@ -17,7 +17,6 @@ This guide will help you get a Discord notification whenever an issue is opened 
 - Find the **Sign in with GitHub** button and authorize GitHub. Then, select the repo you want to configure.
 
 ![1.png](imgs/github-issue-discord-1.PNG)
-                
 
 ### Step 2: Configure Sink - Get the Discord Webhook URL
 
