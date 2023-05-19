@@ -166,6 +166,12 @@ const sidebars = {
               id: "user-guides/template-guides/auth0-login-discord",
               label: "Auth0 login event triggers a Discord message",
             },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/grafana-discord",
+              label:
+                " Grafana resource utilization threshold event triggers a Discord message",
+            },
           ],
         },
         {
