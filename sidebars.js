@@ -156,6 +156,16 @@ const sidebars = {
               label:
                 "GitHub merged pull-request event triggers a Slack message",
             },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/auth0-login-slack",
+              label: "Auth0 login event triggers a Slack message",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/auth0-login-discord",
+              label: "Auth0 login event triggers a Discord message",
+            },
           ],
         },
         {
