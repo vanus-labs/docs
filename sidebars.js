@@ -172,6 +172,12 @@ const sidebars = {
               label:
                 " Grafana resource utilization threshold event triggers a Discord message",
             },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/grafana-slack",
+              label:
+                " Grafana resource utilization threshold event triggers a Slack message",
+            },
           ],
         },
         {
