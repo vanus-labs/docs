@@ -14,8 +14,6 @@ This guide will help you get a Discord notification whenever someone open a new 
 
 - Log in to [Vanus Cloud](https://cloud.vanus.ai/) and choose the **Grafana resource utilization threshold event triggers a Discord message** template.
 
-![1.png](imgs/github-issue-discord-1.PNG)
-
 ### Step 2: Configure Sink - Get the Discord Webhook URL
 
 - Open Discord in your browser and go to your desired Discord Server

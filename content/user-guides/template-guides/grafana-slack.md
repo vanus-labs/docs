@@ -32,8 +32,6 @@ Tip: For detailed steps on how to obtain the Slack Webhook URL, refer to the blo
 
 - Open the newly created connection and copy the webhook URL
 
-![3.png](imgs/grafana-slack-1.PNG)
-
 - Open [Grafana](https://grafana.com/) and login your account
 
 - Open the left sidebar and go to Alerts & IRM

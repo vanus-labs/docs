@@ -178,6 +178,12 @@ const sidebars = {
               label:
                 " Grafana resource utilization threshold event triggers a Slack message",
             },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/aws-bucket-discord",
+              label:
+                " Amazon EventBridge CreateBucket | DeleteBucket event triggers a Discord message",
+            },
           ],
         },
         {
