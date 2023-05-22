@@ -6,13 +6,24 @@ This guide contains information to set up a Schedule Source in Vanus Cloud.
 
 Schedule source gives you the ability to schedule messages or events hourly, daily, weekly or monthly.
 
+---
 
 ## Getting Started
 
-### Create a Connection
-1. Write a name for your connection.
-![](images/connection_name.png)
-2. Choose your schedule type.
+### Create a Connection on Vanus cloud 
+
+1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
+![3](images/go%20to%20vanuscloud.png)  
+
+2. Click on **Create Connections**  
+![3](images/click%20create%20connection.png)  
+
+3. Write a name for your connection.
+![](images/connection_name.png) 
+
+4. Click on **source** and select schedule. 
+
+5. Choose your schedule type.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -21,21 +32,21 @@ import TabItem from '@theme/TabItem';
 
 <TabItem label="Hourly" value="hourly">
 
-3. If you opt for a **Hourly** schedule, you can choose the specific minute and second within every hour when the event will be sent. This means that the event will be dispatched at the same minute and second within every subsequent hour that it is scheduled to run.
+6. If you opt for a **Hourly** schedule, you can choose the specific minute and second within every hour when the event will be sent. This means that the event will be dispatched at the same minute and second within every subsequent hour that it is scheduled to run.
 
 ![](images/hourly.png)
 
 </TabItem>
 <TabItem label="Daily" value="daily">
 
-3. If you opt for a **Daily** schedule, you have the flexibility to select both the hour and the minute/second at which the event should be sent every day. This allows you to specify the exact time of day when the event will be dispatched, and it will recur at the same time on subsequent days according to the schedule you set.
+6. If you opt for a **Daily** schedule, you have the flexibility to select both the hour and the minute/second at which the event should be sent every day. This allows you to specify the exact time of day when the event will be dispatched, and it will recur at the same time on subsequent days according to the schedule you set.
 
 ![](images/daily.png)
 
 </TabItem>
 <TabItem label="Weekly" value="weekly">
 
-3. If you opt for a **Weekly** schedule.
+6. If you opt for a **Weekly** schedule.
     - The first step is to choose the day of the week or multiple days when you want the event to be sent.
     - Once you have selected the day or days, you can move on to the second step, which is to specify the hour, minute, and second at which the event should be dispatched on that particular day.
 
@@ -44,7 +55,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem label="Monthly" value="monthly">
 
-3. If you opt for a **Monthly** schedule.
+6. If you opt for a **Monthly** schedule.
     - The first step is to choose the day or days of the month when you want the event to be sent. You can select a specific day of the month (e.g., the 15th) or multiple days of the month (e.g., the 1st and the 15th).
     - The second step is to specify the time of day when the event should be dispatched. You can choose the hour, minute, and second at which the event should be sent on the selected day(s) of the month.
 
@@ -54,4 +65,13 @@ import TabItem from '@theme/TabItem';
 
 </Tabs>
 
-4. Now click **`Next`** to save the Schedule Source.
+7. Now click **`Next`** to save the Schedule Source.  
+
+8. Choose your sink and click **Next** 
+![3](images/choose%20sink.png) 
+
+9. Click on submit to finish the configuration. 
+![](images/submit.png)  
+
+10. You've successfully created your Vanus source connection.  
+![](images/created.png) 

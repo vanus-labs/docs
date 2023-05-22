@@ -5,6 +5,7 @@ This guide contains information to set up a MongoDB Source in Vanus Cloud.
 ## Introduction  
 
 ##### MongoDB 
+
 MongoDB is a popular open-source document-oriented database that is designed to be scalable and flexible. Unlike traditional relational databases, which store data in tables with predefined schemas, MongoDB stores data in flexible documents that can have varying fields and structures. 
 This makes MongoDB particularly well-suited for use cases where the data being stored is constantly changing or has a complex structure. Additionally, MongoDB is designed to work well with large amounts of data and can easily scale horizontally across multiple servers.
 
@@ -12,10 +13,14 @@ One of the key features of MongoDB is its support for dynamic queries and indexi
 MongoDB is also designed to be easy to use and developer-friendly. It has a powerful query language and a variety of APIs for interacting with the database, and it is often used in conjunction with popular programming languages like JavaScript and Python.
 
 ##### MongoDB Source   
+
 The Vanus MongoDB source connector is a connector provided by Vanus, that extracts data from the users MongoDB database, converts it into CloudEvents, and streams it to their selected system/sink connector. The connector continuously monitors the MongoDB database for changes and captures those changes in real-time. To use the Vanus cloud mongodb source connector, you need to provide a host, username, password, Auth Source, Database, and Collection, which are required to authenticate and authorize access to your MongoDB account. 
 
+---
 
 ## Prerequisites   
+
+- A [Vanus cloud account](https://cloud.vanus.ai) 
 - A [MongoDB account](https://account.mongodb.com/account/register)   
 - Host  
 - Username  
@@ -24,48 +29,45 @@ The Vanus MongoDB source connector is a connector provided by Vanus, that extrac
 - Databases  
 - Collections  
 
+---
 
 ## Getting Started
 
 ### Step 1: Setup a MongoDB database  
 
 #### Create a MongoDB account(for 1st time users without an account)  
+
 1. Go to the [official MongoDB website](https://www.mongodb.com/) and click on **start free** to create a free account. 
 ![](images/mongodb%20start%20free.png)   
-
 
 2. You can choose to Sign up with google or Create your Atlas account with your preferred username and password. For the purpose of this tutorial, we created our Atlas account.   
 ![](images/mongodb%20signup.png)   
 
-
 >**Note** MongoDB Atlas is a cloud-based and fully-managed version of the MongoDB database. It is designed to simplify the process of deploying and managing MongoDB in the cloud. It includes features such as automatic scaling, backup and recovery, and performance optimization. The MongoDB website refers to Atlas as it is one of the primary ways to use the MongoDB database in a cloud environment.  
-
 
 3. You'll receive a verification email.  
 ![](images/verify%20your%20email%20message.png)   
 
-
 4. Go to your inbox and verify the email by clicking on **verify**.  
 ![](images/verify%20mongodb%20email.png)   
-
 
 5. Congratulations. Your email has been successfully verified, click **continue** to be taken to the Atlas setup page.  
 ![](images/verified%20email.png)   
 
+---
 
 ##### Project details information   
 
 ![](images/wwelcome%20to%20atlass.png)   
 
 - **What is your goal today? :** These are questions designed to help MongoDB Inc understand the users goals and requirements for using the MongoDB database in the cloud. The questions are designed to understand the user's specific needs and use case. Based on their responses, MongoDB Inc. can provide personalized guidance and resources to maximize the benefits of their MongoDB deployment, ensuring a successful implementation in the cloud.
-  
 
 - **What application are you building? :** This section on the Atlas MongoDB information collection page aims to gather information about the user's specific project to understand their needs and offer customized guidance and resources. This section helps MongoDB Inc. identify trends and patterns in customers' MongoDB use cases to develop new features and functionality to better support them.
-
 
 - **What is your preferred language? :** This section is a way for MongoDB Inc. to gather information about the user's technical skills and preferences, and to provide customized support to ensure a successful MongoDB deployment. 
 Select your preferred programming language. 
 
+---
 
 #### Setting up your MongoDB database   
 
@@ -79,7 +81,6 @@ Select your preferred programming language.
 
 3. Select your preferred region. The region you want your resources to be deployed in.   
 
-
 4. Choose a name for your Cluster.  
 
 >**Note** A cluster in MongoDB is a group of servers or nodes that work together to store and manage data. It typically consists of multiple instances of the MongoDB database, which communicate with each other to ensure data consistency and availability.
@@ -88,6 +89,7 @@ A cluster provides high availability and scalability to a MongoDB deployment, en
 
 5. Click on create to create your database.  
 
+---
 
 ##### Security Setup   
 
@@ -99,8 +101,10 @@ A cluster provides high availability and scalability to a MongoDB deployment, en
 
 3. Click on **create user** to create the user.  
 
+---
 
-##### Setting up the host   
+### Step2: Setting up the host   
+
 We are going to be using an EC2 instance running the Ubuntu AMI to connect to our DynamoDB database. We need to set that up before moving to the next step.  
 
 1. Log in to the [AWS Management Console](https://aws.amazon.com/)   
@@ -108,11 +112,11 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 2. Click on the left navigation pane called **Services** and select compute. A list of all compute services would be listed out, select **EC2**. 
 ![](images/create%20ec2%20server.png)   
 
-
 3. Click on the **Launch Instance** button.  
 ![](images/launch%20instance.png)   
 
 ###### Name and AMI setting  
+
 1. Give your instance a name and select an Amazon machine image for the instance.  
 ![](images/server%20name%20and%20ami.png)   
 
@@ -124,6 +128,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 
 
 ###### Key pair setting  
+
 1. Create a key pair, to enable you SSH into your server.  
 ![](images/create%20keypair.png)   
 
@@ -133,6 +138,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 ![](images/create%20keypair2.png)   
 
 ###### Network setting  
+
 1. Leave the default VPC and subnet.  
 
 2. Create security group. We allowed SSH traffic from anywhere because we intend to terminate the instance immediately after the test, it's best practice to set the specific IP you want to have access to your instance.  
@@ -141,20 +147,21 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 
 3. Leave the storage section in its default setting. Click on **Launch Instance** when you're done with the required settings.  
 
-
 4. Click on Instance to be taking to the instance page where you can see the status of your recently launched instance.  
 ![](images/check%20instance.png)   
-
 
 5. Wait until the instance state is **running** and its status check is **2/2 checks passed.**   
 ![](images/instance%20running.png)   
 
-
 6. Check the box before the instance name, to see the drop down menu. Copy your public IP, it would be needed to set a host for MongoDb.  
 ![](images/copy%20instance%20IP.png)   
 
+---
 
-#### MongoDB connection setting.  
+### Step3: Connect to your Database using your host 
+
+###### MongoDB connection setting.  
+
 1. Choose a connection point, you can choose to connect from your local environment, or a cloud environment.  
 
 2. Set your network security and input the IP of the created EC2 instance.  
@@ -168,7 +175,10 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 5. Your database is ready to be used. Click on "Go to Database" to be taken to your database page.  
 ![](images/go%20to%20database.png)   
 
+---
+
 ###### SSH Into your EC2 Instance 
+
 Now we want to SSH into our EC2 instance to enable us connect to our database host.  
 
 1. Click the **Connect button**.  
@@ -186,31 +196,29 @@ Now we want to SSH into our EC2 instance to enable us connect to our database ho
 
 5. You've been connected to your instance.  
 
-
+---
 #### MongoDB cluster Connection  
+
 1. Click on the **connect** button.  
 ![](images/connect%20to%20mongodb.png)   
 
 2. Click on **Add current IP Address** to add your current devices IP to the Access list. 
 ![](images/add%20current%20ip.png)   
 
-
 3. Select the means through which you would connect to your database.  
 For the purpose of this tutorial, we chose the **shell**.  
 ![](images/mongo%20shell.png)   
 
-
 4. Select your operating system and download the MongoDB shell **mongosh**  
 ![](images/connect%20to%20cluster%201.png)   
 
-
 5. We're presently running an ubuntu server on our instance so we would copy the download url and paste it in our terminal with the download command.  
+
 ```
 wget https://downloads.mongodb.com/compass/mongodb-mongosh_1.8.1_amd64.deb
 ```   
 
 ![](images/downloaded%20mongodb%20shell.png)   
-
 
 6. Return to the Atlas page, click on the [How to](https://www.mongodb.com/docs/mongodb-shell/install/) link to get step by step instructions on how to add your mongosh directory to your $PATH variable.  
 
@@ -224,16 +232,16 @@ wget https://downloads.mongodb.com/compass/mongodb-mongosh_1.8.1_amd64.deb
 
 You are now connected to your MongoDB database.  
 
+---
 
-#### Get the information needed for the Vanus source connection.  
+### Step 4: Get the information needed for the Vanus source connection.  
+
 1. To find your **Host**, run the command `db.runCommand({whatsmyuri:1})` and it'll be outputed to the terminal.  
 
 ![](images/mongodb%20host.png)   
 
-
 2. To find your **AuthSource**, run `db.runCommand({whatsmyuri: 1})` on your terminal and it'll output your AuthSource. It's usually **admin**, but can be changed by users, so it's better to confirm it.  
 ![](images/auth%20source.png)   
-
 
 3. Go to Atlas Database page and click on **Browse collections** to see your collections and get the name of the one you plan on making the Vanus Cloud Source connection with.  
 ![](images/collection%20set.png)   
@@ -241,14 +249,29 @@ You are now connected to your MongoDB database.
 4. Take note of your collection name.  
 ![](images/collection%20name.png)   
 
-### Step 2: Configure your MongoDB Vanus Cloud Source Connection  
-1. return to your Vanus Connection page.  
+---
 
-2. Give your connection a name, and choose MongoDB as the source.  
-![](images/vanus%20source.png)   
+### Step 5: Configure your MongoDB Vanus Cloud Source Connection  
 
-3. Input the required details in the source configuration, and save your MongoDB configuration by pressing next.  
-![](images/complete%20mongo%20source.png)   
+1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
+![3](images/go%20to%20vanuscloud.png)  
 
+2. Click on **Create Connections**  
+![3](images/click%20create%20connection.png)  
+
+3. Give your connection a name, and choose MongoDB as the source.  
+![](images/choose%20source.png)   
+
+4. Input the required credentials in the source configuration and click **Next** 
+![](images/finish%20source.png) 
+
+5.  Choose your sink and click **Next** 
+![3](images/choose%20sink.png) 
+
+6. Click on submit to finish the configuration. 
+![](images/submit.png)  
+
+7. You've successfully created your Vanus ,MongoDB source connection.  
+![](images/created.png) 
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)
