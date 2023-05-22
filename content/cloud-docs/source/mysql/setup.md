@@ -22,6 +22,8 @@ Before forwarding events to MySQL, you must have:
 
 2. Click **Next** and continue the configuration.
 
+---
+
 # Custom Connection
 
 The event data must be in JSON format and created following the structure of your database, here's an example:

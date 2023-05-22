@@ -1,4 +1,4 @@
-# Pr#
+# 
 # Prerequisites
 
 Before obtaining S3 events, you must have:
@@ -50,7 +50,7 @@ Before obtaining S3 events, you must have:
 
 ---
 
-# Step 2: Create an Create Access Key
+# Step 2: Create an Access Key
 1. Now click on the user you just created.
    ![img.png](images/14.png)
 2. Under **Security and credential** scroll down the page to `Access Key`, and Click **Create access key**.

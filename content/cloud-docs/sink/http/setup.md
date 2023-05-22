@@ -1,10 +1,13 @@
+#
 # Prerequisites
 
 To set up HTTP Sink, you must have:
 
 - A payload URL.
 
-# Getting Started
+---
+
+**Perform the following steps to configure your http Sink:**
 
 In Vanus Cloud,
 
@@ -16,6 +19,8 @@ In Vanus Cloud,
 You can also select the URL Method (`POST`, `GET`, `PATCH`, `DELETE`, `PUT`)
 
 4. Click `Next` and finish the configurations.
+
+---
 
 # Required Data Format
 

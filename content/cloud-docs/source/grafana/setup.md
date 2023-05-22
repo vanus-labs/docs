@@ -19,10 +19,13 @@
 5. Name your contact point, click on integration, select webhook, provide the payload URL from Vanus Cloud, and **Save contact point**.
 ![img_2.png](images/save%20contact.png)
 
+---
 # step 2: Setup your connection
 
 1.  Write a name for your connection.
     ![img.png](images/1..png)
 2. Click **Next** and continue the configuration.
+
+---
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

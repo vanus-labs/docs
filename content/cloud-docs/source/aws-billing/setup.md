@@ -7,7 +7,7 @@
 
 ---
 
-Perform the following steps to configure your Amazon billing Source:
+**Perform the following steps to configure your Amazon billing Source:**
 
 # Step 1: Create a new User in AWS (Optional)
 

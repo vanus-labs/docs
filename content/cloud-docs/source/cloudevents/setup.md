@@ -11,7 +11,7 @@
 
 To set up CloudEvents in Vanus Cloud, follow these steps:
 
-1.  Write a name for your connection.
+1. Write a name for your connection.
     ![](images/1.png)
 2. Save the target URL, this URL can receive HTTP CloudEvents.
 

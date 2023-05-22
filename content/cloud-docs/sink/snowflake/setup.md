@@ -1,3 +1,4 @@
+#
 # Prerequisites
 
 Before forwarding events to Snowflake, you must have:
@@ -5,9 +6,11 @@ Before forwarding events to Snowflake, you must have:
 - A [Snowflake](https://www.snowflake.com/) account with administrative privileges
 - The user has either ACCOUNTADMIN or SECURITYADMIN role in Snowflake.
 
-# Getting Started
+---
 
-## Step 1: (Optional) Creating a Snowflake Account
+**Perform the following steps to configure your Amazon RDS PostGreSQL Source:**
+
+# Step 1: (Optional) Creating a Snowflake Account
 When you sign up for an account on Snowflake, you'll receive 30 days of free access along with $400 credits. However, any usage beyond this limit will be charged. The free trial begins once you complete the sign-up process and activate your account.
 
 If you end up utilizing all $400 credits before the 30-day trial period is over, your account will be suspended, and you won't be able to use any of its features. You can still log in to your account, but you won't be able to perform any actions, such as running a virtual warehouse, loading data, or running queries.
@@ -38,7 +41,9 @@ For detailed information on pricing and other specifics related to each cloud pl
 
 Great! An activation email from Snowflake has been sent to your registered email address. To sign in to your Snowflake account, simply click on the link provided in the email.
 
-## Step 2: Create and Configure a Snowflake Warehouse
+---
+
+# Step 2: Create and Configure a Snowflake Warehouse
 
 Vanus provides you a ready-to-use script to configure the Snowflake warehouse you intend to use as the Destination.
 
@@ -118,8 +123,9 @@ Note that you should replace the sample values given in lines 2-7 of the script 
 The values for `role_name`, `user_name`, `warehouse_name`, `database_name` and `schemaName` must be in upper case.
 :::
 
-Step 3: Finish your connection in Vanus Cloud.
 ---
+
+# Step 3: Finish your connection in Vanus Cloud.
 1. Get your account URL by going to **Admin** and **Accounts** from the side menu, and click the button to copy the link.
 ![](images/img_3.png)
 2. Write following information from previously in **step 2**.
@@ -133,6 +139,8 @@ Step 3: Finish your connection in Vanus Cloud.
 3. Create a **table** by entering a name.
 ![](images/img_5.png)
 4. Click "Next" to continue.
+
+---
 
 # Required Data Format
 

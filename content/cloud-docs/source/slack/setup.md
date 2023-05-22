@@ -84,4 +84,8 @@ But, if you're using some **Vanus Templates** like `Send a custom greeting messa
 1. Write a name for your connection.
    ![](images/name%20connection.png)
 
-3. Click **next** and finish the configurations.  
+2. Click **next** and finish the configurations.  
+
+---
+
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

@@ -1,14 +1,17 @@
+#
 # Prerequisites
 
 Before forwarding events to Ding Talk, you must have:
 
 - A Ding Talk account with administrative privileges
 
-# Getting Started
+---
+
+**Perform the following steps to configure your dingtalk Sink:**
+
 
 **To set up a bot for receiving events in your Ding Talk group chat:**
-
-## Step 1: Create a Group
+# Step 1: Create a Group
 
 1. Log in to your Ding Talk account.
 2. Create a **new group** go to the `+` and select **New Chat**.
@@ -20,7 +23,9 @@ Before forwarding events to Ding Talk, you must have:
 5. Select **minimum 2 members** of your team to create a group, set a group name and press **Ok**.
    ![](images/img_3.png)
 
-## Step 2: Add Bot to Ding Talk Group
+---
+
+# Step 2: Add Bot to Ding Talk Group
 
 1. In the top navigation pane, click **Robot Management**.
 ![](images/img_4.png)
@@ -38,7 +43,9 @@ Before forwarding events to Ding Talk, you must have:
 5. Now click **Copy**, keep the Webhook URL safely and click **Finished**.
 ![](images/img_8.png)
 
-## Step 3: Set up the Ding Talk Sink connector in Vanus Cloud
+---
+
+# Step 3: Set up the Ding Talk Sink connector in Vanus Cloud
 
 1. **Webhook URL**: The webhook address that message sent to, you can get it when you create Chat Bot. You retrieved above.
 2. **Signature Verification**: The signature to sign request, you can get it when you create Chat Bot. You retrieved above.
@@ -46,6 +53,7 @@ Before forwarding events to Ding Talk, you must have:
 
 Click **Next** to continue.
 
+---
 
 # Required Data Format
 The event data must be JSON format, here a simple message, example:

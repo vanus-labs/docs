@@ -1,16 +1,17 @@
+#
 # Prerequisites
 
 Before forwarding events to MySQL, you must have:
 
 - A Mysql server 
 
-# Getting Started 
+---
 
-Perform the following steps to configure your Amazon RDS MySQL Sink:
+**Perform the following steps to configure your Amazon RDS MySQL Sink:**
 
-## Step 1: Setup A Mysql server in AWS using RDS
+# Step 1: Setup A Mysql server in AWS using RDS 
 
-### Create an RDS account  
+## Create an RDS account  
 1. Log in to the [AWS Management Console](https://aws.amazon.com/) using your root account credentials.  
 ![3](images/1.png)
 
@@ -23,7 +24,8 @@ Perform the following steps to configure your Amazon RDS MySQL Sink:
 4. Click on **Create database** in the **Create Database** section.  
 ![7](images/4.png)
 
-### Create Database   
+
+## Create Database   
 Now you have options to select your engine.  
 
 1. Select **standard create** and choose the MySQL icon.  
@@ -37,7 +39,8 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 
 ![10](images/7.png)
 
-#### Settings   
+
+### Settings   
 ![11](images/8.png)   
 
 - **DB Instance Identifier:** Type a name unique to the region your DB instance has been set in.  
@@ -49,14 +52,14 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 - **Confirm password:** Type the password again.  
 
 
-#### Instance configuration and storage   
+### Instance configuration and storage   
 1. Leave the default Instance configuration. 
 
 2. Select the gp2 storage type, it's efficient and cost effective for our intended use.  
 ![12](images/9.png)   
 
 
-#### Connectivity   
+### Connectivity   
 1. Leave the default subnet group.  
 
 2. Enable public access, this allocates an IP to your database instance and allows direct connection to the database from your own device.  
@@ -86,7 +89,8 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 11. Your DB is now being created. This could take a few minutes. 
 ![19](images/16.png)   
 
-#### Modify your VPC security groups
+
+### Modify your VPC security groups
 1. Click on the server you just created in AWS RDS.
 ![](images/17.png)
 2. Now, Click on your **VPC Security Group**.
@@ -100,7 +104,10 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 
 Now you can connect to your server and create a table and database. 
 
-## Step 2: Setup your connection in Vanus Cloud
+---
+
+# Step 2: Setup your connection in Vanus Cloud
+
 **To set up rds-mysql Sink in Vanus Cloud:**
 
 1. Click on the server you just created in AWS RDS.
@@ -116,6 +123,8 @@ Now you can connect to your server and create a table and database.
 - **Table Name:** The name of the table you want your events to be sent to.
 - Chose the insertion mode.
 4. Click `Next` and finish the configurations.
+
+---
 
 # Custom Connection
 
