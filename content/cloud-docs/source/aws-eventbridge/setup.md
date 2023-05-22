@@ -1,41 +1,30 @@
-## Prerequisites
+#
+# Prerequisites
 
 - An AWS Account with Administrative Privileges
 
-## Getting Started
+---
 
-### Create your connection in Vanus Cloud
+**Perform the following steps to configure your Amazon EventBridge Source:**
 
-To obtain all Amazon Eventbridge events in Vanus Cloud, follow these steps:
+# Step 1: Setup EventBridge to Send Events
 
-1. Write a name for your connection.
-![img.png](images/1.png)  
+## Create an Event Bus
+ 
+1. Navigate to the [EventBridge console](https://console.aws.amazon.com/events/home).
 
-2. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction.
-![img.png](images/2.png)  
-
-3. Click **Next** and continue the configuration.  
-
-
-### **Configuring Amazon Eventbridge**
-
-1. Click the **copy icon** to copy the webhook url.
-   ![](images/no1.png)  
-
-2. Navigate to the [EventBridge console](https://console.aws.amazon.com/events/home).  
-
-## Step 1: Create an Event Bus
-
-1. In the side menu click **Event buses**.
+2. In the side menu click **Event buses**.
    ![img_3.png](images/no2.png)  
 
-2. Create a **new event bus** if you haven't already.
+3. Create a **new event bus** if you haven't already.
    ![img_4.png](images/3.png)  
 
-3. Write a name and press **create**.
+4. Write a name and press **create**.
    ![img_5.png](images/4.png) 
 
-## Step 2: Create a Rule.
+---
+
+## Create a Rule.
 1. Go to **Rules** from the side menu and click **Create rule**. 
    ![img_6.png](images/5.png)  
 
@@ -48,14 +37,16 @@ To obtain all Amazon Eventbridge events in Vanus Cloud, follow these steps:
 4. Press **Next** to continue.
 ![img.png](images/8.png)
 
-## Step 3: Create an API Destination and Connection
+---
+
+## Create an API Destination and Connection
 1. Select EventBridge API destination.
     ![img_9.png](images/9.png)  
 
 2. Now select create new **Create a new API destination** under API destination.  
 ![img_10.png](images/10.png)  
    - Write a connection **Name**.
-   - Set the **API destination endpoint** to the URL from Vanus Cloud from **[step 1](#configuring-amazon-eventbridge)**.
+   - Set the **API destination endpoint** go back to Vanus Cloud and copy paste the Webhook URL.
    - Set the **HTTP method** as `POST`.  
        
 3. Next, select **Create a new connection**.
@@ -75,5 +66,17 @@ To obtain all Amazon Eventbridge events in Vanus Cloud, follow these steps:
 
 *Now every event sent to your Event Bus will be send to your Vanus connection.* 
 
+---
+
+# Step 2: Config your connection
+
+To obtain all Amazon Eventbridge events in Vanus Cloud, follow these steps:
+
+1. Write a name for your connection.
+   ![img.png](images/1.png)
+
+2. Click **Next** and continue the configuration.
+
+---
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

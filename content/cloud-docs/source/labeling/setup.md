@@ -1,6 +1,13 @@
-## Getting Started
+#
+# Prerequisites
 
-### Create your connection in Vanus Cloud
+- Have a CloudEvents HTTP client.
+
+---
+
+**Perform the following steps to configure your labeling Source:**
+
+## Step 1: Create your connection in Vanus Cloud
 
 ![img.png](images/name%20connection.png)
 
@@ -36,6 +43,10 @@ By following this path, you can access the value of the title attribute within t
     
     ![img.png](images/source.png)
 
-2. Click **Next** and finish the configurations.
+2. Save Target URL to send your cloudEvents to it. 
+
+3. Click **Next** and continue the configuration.
+
+---
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

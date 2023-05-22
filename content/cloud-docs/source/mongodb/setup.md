@@ -1,4 +1,5 @@
-## Prerequisites   
+#
+# Prerequisites  
 
 - A [MongoDB account](https://account.mongodb.com/account/register)   
 - Host  
@@ -9,21 +10,20 @@
 - Collections  
 
 
-## Getting Started
+---
 
-### Step 1: Setup a MongoDB database  
+Perform the following steps to configure your MongoDB Source:
 
-#### Create a MongoDB account(for 1st time users without an account)  
+# Step 1: Setup a MongoDB database  
+
+## Create a MongoDB account (Optional)
 1. Go to the [official MongoDB website](https://www.mongodb.com/) and click on **start free** to create a free account. 
 ![](images/mongodb%20start%20free.png)   
-
 
 2. You can choose to Sign up with google or Create your Atlas account with your preferred username and password. For the purpose of this tutorial, we created our Atlas account.   
 ![](images/mongodb%20signup.png)   
 
-
->**Note** MongoDB Atlas is a cloud-based and fully-managed version of the MongoDB database. It is designed to simplify the process of deploying and managing MongoDB in the cloud. It includes features such as automatic scaling, backup and recovery, and performance optimization. The MongoDB website refers to Atlas as it is one of the primary ways to use the MongoDB database in a cloud environment.  
-
+> **Note** MongoDB Atlas is a cloud-based and fully-managed version of the MongoDB database. It is designed to simplify the process of deploying and managing MongoDB in the cloud. It includes features such as automatic scaling, backup and recovery, and performance optimization. The MongoDB website refers to Atlas as it is one of the primary ways to use the MongoDB database in a cloud environment.
 
 3. You'll receive a verification email.  
 ![](images/verify%20your%20email%20message.png)   
@@ -37,7 +37,7 @@
 ![](images/verified%20email.png)   
 
 
-##### Project details information   
+### Project details information   
 
 ![](images/wwelcome%20to%20atlass.png)   
 
@@ -51,7 +51,7 @@
 Select your preferred programming language. 
 
 
-#### Setting up your MongoDB database   
+## Setting up your MongoDB database   
 
 ![](images/create%20database.png)   
 
@@ -73,7 +73,7 @@ A cluster provides high availability and scalability to a MongoDB deployment, en
 5. Click on create to create your database.  
 
 
-##### Security Setup   
+### Security Setup   
 
 ![](images/security%20quick%20start.png)   
 
@@ -84,7 +84,7 @@ A cluster provides high availability and scalability to a MongoDB deployment, en
 3. Click on **create user** to create the user.  
 
 
-##### Setting up the host   
+### Setting up the host   
 We are going to be using an EC2 instance running the Ubuntu AMI to connect to our DynamoDB database. We need to set that up before moving to the next step.  
 
 1. Log in to the [AWS Management Console](https://aws.amazon.com/)   
@@ -96,7 +96,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 3. Click on the **Launch Instance** button.  
 ![](images/launch%20instance.png)   
 
-###### Name and AMI setting  
+#### Name and AMI setting  
 1. Give your instance a name and select an Amazon machine image for the instance.  
 ![](images/server%20name%20and%20ami.png)   
 
@@ -107,7 +107,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 3. Select an instance type that is free tier eligible to prevent extra cost.  
 
 
-###### Key pair setting  
+#### Key pair setting  
 1. Create a key pair, to enable you SSH into your server.  
 ![](images/create%20keypair.png)   
 
@@ -116,7 +116,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 3. Click on **create key pair** to finish the creation of the key pair.  
 ![](images/create%20keypair2.png)   
 
-###### Network setting  
+#### Network setting  
 1. Leave the default VPC and subnet.  
 
 2. Create security group. We allowed SSH traffic from anywhere because we intend to terminate the instance immediately after the test, it's best practice to set the specific IP you want to have access to your instance.  
@@ -138,7 +138,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 ![](images/copy%20instance%20IP.png)   
 
 
-#### MongoDB connection setting.  
+## MongoDB connection setting.  
 1. Choose a connection point, you can choose to connect from your local environment, or a cloud environment.  
 
 2. Set your network security and input the IP of the created EC2 instance.  
@@ -152,7 +152,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 5. Your database is ready to be used. Click on "Go to Database" to be taken to your database page.  
 ![](images/go%20to%20database.png)   
 
-###### SSH Into your EC2 Instance 
+#### SSH Into your EC2 Instance 
 Now we want to SSH into our EC2 instance to enable us connect to our database host.  
 
 1. Click the **Connect button**.  
@@ -171,7 +171,7 @@ Now we want to SSH into our EC2 instance to enable us connect to our database ho
 5. You've been connected to your instance.  
 
 
-#### MongoDB cluster Connection  
+## MongoDB cluster Connection  
 1. Click on the **connect** button.  
 ![](images/connect%20to%20mongodb.png)   
 
@@ -209,7 +209,7 @@ wget https://downloads.mongodb.com/compass/mongodb-mongosh_1.8.1_amd64.deb
 You are now connected to your MongoDB database.  
 
 
-#### Get the information needed for the Vanus source connection.  
+## Get the information needed for the Vanus source connection.  
 1. To find your **Host**, run the command `db.runCommand({whatsmyuri:1})` and it'll be outputed to the terminal.  
 
 ![](images/mongodb%20host.png)   
@@ -225,7 +225,9 @@ You are now connected to your MongoDB database.
 4. Take note of your collection name.  
 ![](images/collection%20name.png)   
 
-### Step 2: Configure your MongoDB Vanus Cloud Source Connection  
+---
+
+# Step 2: Configure your MongoDB Vanus Cloud Source Connection  
 1. return to your Vanus Connection page.  
 
 2. Give your connection a name, and choose MongoDB as the source.  
@@ -239,8 +241,8 @@ You are now connected to your MongoDB database.
 - Databases 
 - Collections 
 
-4. Save your MongoDB configuration by pressing next.  
+4. Click **Next** and continue the configuration.
 
-
+---
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)

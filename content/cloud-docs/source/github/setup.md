@@ -1,9 +1,14 @@
-## Prerequisites
+#
+# Prerequisites
 
 - GitHub Account with proper permissions(`Admin` or `Owner`) to your repository
 - GitHub Repositories
 
-## Getting Started
+---
+
+**Perform the following steps to configure your Github Source:**
+
+## step 1: Setup your connection
 
 1. Write a connection name without any spaces.
    ![img.png](images/1.png)  
@@ -16,8 +21,9 @@
 4. **Install and Authorize** Vanus to read repos and create webhooks.
 ![](images/install%20and%20auth.png)  
 
-5. Select a repository to connect and click **`Next`** to save the GitHub Source.
+5. Select a repository to connect
 ![](images/selectrepo.png)  
-
+6. Click **Next** and continue the configuration.
+---
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

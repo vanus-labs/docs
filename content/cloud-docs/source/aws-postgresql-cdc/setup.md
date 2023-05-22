@@ -1,15 +1,17 @@
-## Prerequisites  
-Before creating your PostgreSQL connection, you must have:
+#
+# Prerequisites
 
 - An SQL client
 - A running PostgreSQL server
-- A database, schema and Table  
+- A database, schema and Table
 
+---
 
-## Getting Started 
-### Step 1: Setup A PostgreSQL database server in AWS using RDS  
+**Perform the following steps to configure your Amazon RDS PostGreSQL Source:**
 
-#### Creating an RDS account  
+# Step 1: Setup A PostgreSQL database server in AWS using RDS  
+
+## Creating an RDS account  
 1. Log in to the [AWS Management Console](https://aws.amazon.com/)   
 
 2. Click on the left navigation pane called **services** click on database and select **RDS**.   
@@ -20,7 +22,7 @@ Before creating your PostgreSQL connection, you must have:
 ![](images/4.png)   
 
 
-#### Create Database  
+## Create Database  
 Now you have options to select your engine.  
 
 1. Select standard create and choose the PostgreSQL icon.   
@@ -35,7 +37,7 @@ Now you have options to select your engine.
 
 
 
-##### Settings   
+### Settings   
 ![](images/7.png)   
 
 1.
@@ -48,7 +50,7 @@ Now you have options to select your engine.
 - Confirm password: Type the password again.   
 
 
-##### Instance configuration and storage
+### Instance configuration and storage
 
 2.
 - Leave the default Instance configuration.  
@@ -59,7 +61,7 @@ Now you have options to select your engine.
 ![](images/8.png)   
 
 
-##### Connectivity  
+### Connectivity  
 3.
 - Leave the default VPC and subnet group.  
 
@@ -101,9 +103,11 @@ Now you have options to select your engine.
 
 
 - Your DB is now being created.  
-![](images/15.png)   
+![](images/15.png)  
 
-### Step 2: Finish Your Connection in Vanus Cloud  
+---
+
+# Step 2: Finish Your Connection in Vanus Cloud  
 
 1. Provide the following credentials: 
 - Host 
@@ -114,7 +118,7 @@ Now you have options to select your engine.
 - Schemas 
 - Tables   
 
-3. Click next to continue. 
+2. Click **Next** and continue the configuration.
 
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)

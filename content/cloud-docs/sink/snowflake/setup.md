@@ -1,13 +1,13 @@
-## Prerequisites
+# Prerequisites
 
 Before forwarding events to Snowflake, you must have:
 
 - A [Snowflake](https://www.snowflake.com/) account with administrative privileges
 - The user has either ACCOUNTADMIN or SECURITYADMIN role in Snowflake.
 
-## Getting Started
+# Getting Started
 
-### Step 1: (Optional) Creating a Snowflake Account
+## Step 1: (Optional) Creating a Snowflake Account
 When you sign up for an account on Snowflake, you'll receive 30 days of free access along with $400 credits. However, any usage beyond this limit will be charged. The free trial begins once you complete the sign-up process and activate your account.
 
 If you end up utilizing all $400 credits before the 30-day trial period is over, your account will be suspended, and you won't be able to use any of its features. You can still log in to your account, but you won't be able to perform any actions, such as running a virtual warehouse, loading data, or running queries.
@@ -38,7 +38,7 @@ For detailed information on pricing and other specifics related to each cloud pl
 
 Great! An activation email from Snowflake has been sent to your registered email address. To sign in to your Snowflake account, simply click on the link provided in the email.
 
-### Step 2: Create and Configure a Snowflake Warehouse
+## Step 2: Create and Configure a Snowflake Warehouse
 
 Vanus provides you a ready-to-use script to configure the Snowflake warehouse you intend to use as the Destination.
 
@@ -134,7 +134,7 @@ Step 3: Finish your connection in Vanus Cloud.
 ![](images/img_5.png)
 4. Click "Next" to continue.
 
-## Required Data Format
+# Required Data Format
 
 The event data must be in JSON format with the following keys:
 
