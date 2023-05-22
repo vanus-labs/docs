@@ -20,7 +20,7 @@ Before forwarding events to Slack, you must have:
 
 **To set up an app for receiving events in your Discord server:**
 
-### Step 1: Create a Server
+### Step 1: Create a Server 
 1. Go to the Discord application.
 2. Create a new server by clicking the `+`.
 
@@ -47,12 +47,28 @@ Before forwarding events to Slack, you must have:
 5. Copy and save your payload URL
     ![img_6.png](images/6.png)
 
-### Connection Setup
-1. Go back to Vanus Cloud.
-2. Paste your webhook URL in the `URL` field.
+### Step 3: Set up your Connection in Vanus cloud 
 
-    ![img_7.png](images/7.png)
-3. Click "Next" to continue.
+1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
+![3](images/go%20to%20vanuscloud.png)  
+
+2. Click on **Create Connections**  
+![3](images/click%20create%20connection.png)  
+
+3. Name your connection, Choose your source and click next 
+![3](images/choose%20source.png) 
+
+4. Click on **Sink** and choose **discord** 
+![3](images/choose%20sink.png) 
+
+5. Paste your webhook URL in the `URL` field and click next to continue.  
+![img_7.png](images/7.png)  
+
+6. Click on submit to finish the configuration. 
+![](images/submit.png)  
+
+7. You've successfully created your Vanus discord sink connection.  
+![](images/created.png)  
 
 ## Required Data Format
 
