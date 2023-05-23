@@ -22,7 +22,6 @@
 4. Write a name and press **create**.
    ![img_5.png](images/4.png) 
 
----
 
 ## Create a Rule.
 1. Go to **Rules** from the side menu and click **Create rule**. 
@@ -37,7 +36,6 @@
 4. Press **Next** to continue.
 ![img.png](images/8.png)
 
----
 
 ## Create an API Destination and Connection
 1. Select EventBridge API destination.

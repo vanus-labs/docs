@@ -1,12 +1,15 @@
+#
 # Prerequisites
 
 Before forwarding events to Elasticsearch, you must have:
 
 - Have an Elasticsearch cluster. 
 
-# Getting Started
+---
 
-## Step 1: Setup an Elasticsearch cluster 
+**Perform the following steps to configure your elasticsearch Sink:**
+
+# Step 1: Setup an Elasticsearch cluster 
 
 1. Got to the [Elasticsearch](https://www.elastic.co/) official website and sign up for an account.  
 ![](images/1.png)   
@@ -40,6 +43,7 @@ Before forwarding events to Elasticsearch, you must have:
 6. Your deployment has been successfully created, click **continue**  
 ![](images/5.png)   
 
+
 ## Getting your server endpoint 
 1. Click on the **settings** icon at the right side of your deployment.  
 ![](images/6.png)   
@@ -52,8 +56,8 @@ Before forwarding events to Elasticsearch, you must have:
 3. Paste the copied endpoint in your browser, fill in the credentials you downloaded while creating your deployment and click on sign in. 
 ![](images/8.png)   
 
+![](images/9.png)   
 
-    ![](images/9.png)   
 
 ## Creating an Index 
 1. Click on API Console  
@@ -63,11 +67,14 @@ Before forwarding events to Elasticsearch, you must have:
 ![](images/11.png)   
 
     
-    ![](images/11.1.png) 
+![](images/11.1.png) 
 
 3. Add a backslash and your index name to your endpoint, to see the content of your index. 
 ![](images/12.png)   
 
+---
+
+# Step 2: Setting up your connection in Vanus cloud 
 
 **To set up Elasticsearch Sink in Vanus Cloud:**
 
@@ -78,6 +85,8 @@ Before forwarding events to Elasticsearch, you must have:
    - Password: The password you downloaded during the creation of your deployment.  
     
 2. Click `Next` and finish the configurations.
+
+---
 
 # Custom Connection
 

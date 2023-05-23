@@ -34,7 +34,8 @@ If you'd like to receive multiple events you can create more webhooks using the 
 1. Write a name for your connection.
    ![img.png](images/1.png)
 
-2Click **next** and finish the configurations.
+2. Click **next** and finish the configurations.
 
+---
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

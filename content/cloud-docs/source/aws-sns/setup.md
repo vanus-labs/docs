@@ -14,7 +14,7 @@ Before obtaining SNS events, you must have:
 
 **Perform the following steps to configure your Amazon SNS Source:**
 
-## Step 1: Create a New AWS User
+# Step 1: Create a New AWS User
 
 1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
 2. Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by clicking on the Services menu and selecting IAM.
@@ -39,9 +39,9 @@ Before obtaining SNS events, you must have:
    ![img.png](images/9..png)
 10. Review and press **create user**.
 
+---
 
-## Step 2: Create an Create Access Key
-
+# Step 2: Create an Create Access Key
 
 1. Now click on the user you just created.
    ![img.png](images/11.png)
@@ -54,7 +54,7 @@ Before obtaining SNS events, you must have:
 
 ---
 
-## Step 3: Config your Connection
+# Step 3: Config your Connection
 
 1. Write a connection name without any spaces. 
    ![choose source](https://github.com/StrangeJay/docs/assets/105195327/ac1f5c84-5ab6-4357-af7e-60401696489f)

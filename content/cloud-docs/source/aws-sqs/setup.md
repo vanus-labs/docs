@@ -14,7 +14,7 @@ Before obtaining SQS events, you must have:
 
 **Perform the following steps to configure your Amazon SQS Source:**
 
-## Step 1: Create a new AWS user
+# Step 1: Create a new AWS user
 
 Create a new user and set the proper IAM policy.
 
@@ -42,7 +42,7 @@ Create a new user and set the proper IAM policy.
 
 ---
 
-## Step 2: Config your connection
+# Step 2: Config your connection
 
 To obtain Amazon SQS events using the SQS source connector in Vanus Cloud, follow these steps:
 

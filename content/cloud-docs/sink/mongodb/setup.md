@@ -1,14 +1,17 @@
+#
 # Prerequisites   
 
 Before forwarding events to MongoDB, you must have:
 
 - A [MongoDB account](https://account.mongodb.com/account/register)   
 
-# Getting Started
+---
 
-## Step 1: Setup a MongoDB database  
+**Perform the following steps to configure your mongoDB sink:**
 
-### Create a MongoDB account(for 1st time users without an account)  
+# Step 1: Setup a MongoDB database  
+
+## Create a MongoDB account(for 1st time users without an account)  
 1. Go to the [official MongoDB website](https://www.mongodb.com/) and click on **start free** to create a free account. 
 ![](images/mongodb%20start%20free.png)   
 
@@ -32,7 +35,7 @@ Before forwarding events to MongoDB, you must have:
 ![](images/verified%20email.png)   
 
 
-#### Project details information   
+### Project details information   
 
 ![](images/wwelcome%20to%20atlass.png)   
 
@@ -46,7 +49,7 @@ Before forwarding events to MongoDB, you must have:
 Select your preferred programming language. 
 
 
-### Setting up your MongoDB database   
+## Setting up your MongoDB database   
 
 ![](images/create%20database.png)   
 
@@ -68,7 +71,7 @@ A cluster provides high availability and scalability to a MongoDB deployment, en
 5. Click on create to create your database.  
 
 
-#### Security Setup   
+### Security Setup   
 
 ![](images/security%20quick%20start.png)   
 
@@ -79,7 +82,7 @@ A cluster provides high availability and scalability to a MongoDB deployment, en
 3. Click on **create user** to create the user.  
 
 
-#### Setting up the host   
+### Setting up the host   
 We are going to be using an EC2 instance running the Ubuntu AMI to connect to our DynamoDB database. We need to set that up before moving to the next step.  
 
 1. Log in to the [AWS Management Console](https://aws.amazon.com/)   
@@ -91,7 +94,8 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 3. Click on the **Launch Instance** button.  
 ![](images/launch%20instance.png)   
 
-##### Name and AMI setting  
+
+#### Name and AMI setting  
 1. Give your instance a name and select an Amazon machine image for the instance.  
 ![](images/server%20name%20and%20ami.png)   
 
@@ -102,7 +106,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 3. Select an instance type that is free tier eligible to prevent extra cost.  
 
 
-##### Key pair setting  
+#### Key pair setting  
 1. Create a key pair, to enable you SSH into your server.  
 ![](images/create%20keypair.png)   
 
@@ -111,7 +115,8 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 3. Click on **create key pair** to finish the creation of the key pair.  
 ![](images/create%20keypair2.png)   
 
-##### Network setting  
+
+#### Network setting  
 1. Leave the default VPC and subnet.  
 
 2. Create security group. It's best practice to set the specific IP you want to have access to your instance, so we set ours to only allow access from our IP.  
@@ -133,7 +138,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 ![](images/copy%20instance%20IP.png)   
 
 
-### MongoDB connection setting.  
+## MongoDB connection setting.  
 1. Choose a connection point, you can choose to connect from your local environment, or a cloud environment.  
 
 2. Set your network security and input the IP of the created EC2 instance.  
@@ -147,7 +152,8 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 5. Your database is ready to be used. Click on "Go to Database" to be taken to your database page.  
 ![](images/go%20to%20database.png)   
 
-##### SSH Into your EC2 Instance 
+
+#### SSH Into your EC2 Instance 
 Now we want to SSH into our EC2 instance to enable us connect to our database host.  
 
 1. Click the **Connect button**.  
@@ -166,7 +172,7 @@ Now we want to SSH into our EC2 instance to enable us connect to our database ho
 5. You've been connected to your instance.  
 
 
-### MongoDB cluster Connection  
+## MongoDB cluster Connection  
 1. Click on the **connect** button.  
 ![](images/connect%20to%20mongodb.png)   
 
@@ -203,7 +209,8 @@ wget https://downloads.mongodb.com/compass/mongodb-mongosh_1.8.1_amd64.deb
 
 You are now connected to your MongoDB database.  
 
-## Step 2: Set up MongoDB Sink in Vanus Cloud  
+---
+# Step 2: Set up MongoDB Sink in Vanus Cloud  
 
 1. Provide the following credentials
    - Connection Uri: The URI to connect MongoDB, view [Connection String URI Format](https://www.mongodb.com/docs/manual/reference/connection-string/) for more details
@@ -215,6 +222,8 @@ You are now connected to your MongoDB database.
    - Auth Mechanism Properties
 
 2. Click `Next` and finish the configurations.
+
+---
 
 # Custom Connection
 

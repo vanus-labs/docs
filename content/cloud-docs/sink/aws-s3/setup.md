@@ -1,14 +1,15 @@
+#
 # Prerequisites
 
 Before forwarding events to an S3 bucket, you must have:
 
 - An [Amazon Web Services](https://aws.amazon.com) account.
 
-# Getting Started
+---
 
-Perform the following steps to configure your Amazon S3 Sink:
+**Perform the following steps to configure your Amazon S3 Sink:**
 
-## Step 1: Create an AWS User
+# Step 1: Create an AWS User
 
 1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
 2. Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by searching for IAM and click the IAM service.
@@ -39,7 +40,9 @@ Perform the following steps to configure your Amazon S3 Sink:
 12. Review and press **Create user**.
     ![img.png](images/10.png)
 
-## Step 2: Get your Access and secret key
+---
+
+# Step 2: Get your Access and secret key
 
 1. Now click on the user you just created.
    ![img.png](images/11.png)
@@ -52,7 +55,10 @@ Perform the following steps to configure your Amazon S3 Sink:
 5. Save your `Access key` and `Secret key` safely.
    ![](images/15.png)
 
-## Step 3: Config your connection
+---
+
+# Step 3: Config your connection
+
 **To set up S3 Sink in Vanus Cloud:**
 
 1. Enter your `Access Key` and `Secret Key` in Vanus Cloud from previous steps.
@@ -65,6 +71,7 @@ Perform the following steps to configure your Amazon S3 Sink:
 6. Select the interval time of upload; `HOURLY` or `DAILY`
 7. Click **Next** to continue.
 
+---
 # Required Data Format
 
 The event data must be in JSON format with the following way:

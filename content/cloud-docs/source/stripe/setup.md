@@ -20,7 +20,7 @@
    ![img_3.png](images/img_3.png)
 5. Click on the **Create endpoint** button to save your webhook.
 
-___
+---
 
 # Step 2: Create a Connection
 

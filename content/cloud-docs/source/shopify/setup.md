@@ -9,7 +9,7 @@ Before obtaining Shopify events, you must have:
 
 **Perform the following steps to configure your Shopify Source:**
 
-## Step 1: Setup your Connection
+# Step 1: Setup your Connection 
 
 To obtain Shopify events using the Shopify source connector in Vanus Cloud, follow these steps:
 

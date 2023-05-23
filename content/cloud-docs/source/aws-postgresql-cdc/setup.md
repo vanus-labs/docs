@@ -36,7 +36,6 @@ Now you have options to select your engine.
 >**Note** Multi-AZ deployment is not available for the free tier, you will have to pay for it. Using a Multi-AZ deployment automatically provisions and maintains a synchronous standby replica in a different Availability Zone.   
 
 
-
 ### Settings   
 ![](images/7.png)   
 
@@ -120,5 +119,6 @@ Now you have options to select your engine.
 
 2. Click **Next** and continue the configuration.
 
+---
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)

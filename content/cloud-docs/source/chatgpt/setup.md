@@ -36,7 +36,7 @@ This connector is exclusively made for Feishu, if you don't use Feishu select Ch
 
 ---
 
-## Step 2: Setup your Connection
+# Step 2: Setup your Connection
 
 1. Write a name for your connection.
 ![img.png](images/1.png)

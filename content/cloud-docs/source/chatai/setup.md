@@ -18,7 +18,6 @@
     - **Basic Auth Username (optional):** A method for an HTTP user agent to provide a username when making a request.
     - **Basic Auth Password (optional):** A method for an HTTP user agent to provide a password when making a request.  
       ![img.png](images/chatai-config.png)
-- 
 
 3. Save the Webhook URL, after finish the connection you will be able to send HTTP request to it.
    

@@ -1,5 +1,6 @@
+#
 # Prerequisites
-- Have an HTTP client.
+- Have a HTTP client.
 
 # Getting Started
 
@@ -12,6 +13,7 @@ Perform the following steps to configure your Webhook Source:
 2. Save your Webhook URL.
 3. Press **next**.
 
+---
 
 # Webhook server
 When a webhook is triggered, the webhook server receives an HTTP request with a payload of data related to the event. 
@@ -30,7 +32,8 @@ A list of application that can send HTTP request to our webhook server.
 - Trello
 - more
 
-Vanus Cloud webhook can receive any kind of HTTP request.
+---
 
+Vanus Cloud webhook can receive any kind of HTTP request.
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

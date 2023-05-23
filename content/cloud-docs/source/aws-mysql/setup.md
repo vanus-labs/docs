@@ -27,6 +27,7 @@ Or type "RDS" in the search box and select it from the results.
 4. Click on **Create database** in the **Create Database** section.  
 ![7](images/4.png)   
 
+
 ### Create Database
 
 1. Select **standard create** and choose the MySQL icon.  
@@ -93,6 +94,7 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 :::note
 If you have errors during connection, make sure you go to the security group on your RDS instance and ensure that the IP it has given access to is your IP. Change the settings from "custom" to **"my IP"**.    
 :::
+
 
 ### Modify your VPC security groups
 1. Click on the server you just created in AWS RDS.

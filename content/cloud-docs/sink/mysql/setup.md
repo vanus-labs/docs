@@ -1,11 +1,15 @@
+#
 # Prerequisites
 Before forwarding events to MySQL, you must have:
 
 - A running MySQL server.
 - A Database and Table created.
 
+---
 
-## Setup your connection in Vanus Cloud
+**Perform the following steps to configure your MySQL Sink:**
+
+# Setup your connection in Vanus Cloud
 
 Enter all the following information in Vanus Cloud.
 - Host - The IP address of your MySQL Server.
@@ -16,6 +20,7 @@ Enter all the following information in Vanus Cloud.
 - Table - The table name.
 - Chose the insertion mode.
 
+---
 
 # Custom Connection
 

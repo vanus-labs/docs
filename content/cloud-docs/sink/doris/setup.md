@@ -1,10 +1,13 @@
+#
 # Prerequisites
 
 Before forwarding events to Feishu, you must have:
 
 - A Doris cluster.
 
-# Getting Started
+---
+
+**Perform the following steps to configure your doris Sink:**
 
 **To set up Doris Sink in Vanus Cloud:**
 
@@ -18,6 +21,8 @@ Before forwarding events to Feishu, you must have:
      ![](images/doris.png)
 
 2. Click `Next`
+
+---
 
 # Custom Connection
 
