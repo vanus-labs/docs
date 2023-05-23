@@ -156,6 +156,37 @@ const sidebars = {
               label:
                 "GitHub merged pull-request event triggers a Slack message",
             },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/github-merge-pr-discord",
+              label:
+                "GitHub merged pull-request event triggers a Discord message",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/s3-upoad-object-slack.md",
+              label: "S3 Upload Object Event triggers a Slack message",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/s3-upload-object-discord",
+              label: "S3 Upload Object Event triggers a Discord message",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/s3-delete-object-slack",
+              label: "S3 Delete Object Event triggers a Slack message",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/s3-delete-object-discord",
+              label: "S3 Delete Object Event triggers a Discord message",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/stripe-payment-slack.md",
+              label: "Stripe Invoice Payment event triggers a Slack messag",
+            },
           ],
         },
         {
