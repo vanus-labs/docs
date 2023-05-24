@@ -1,4 +1,4 @@
-#
+#  
 # Prerequisites
 
 Before obtaining Slack events, you must have:
@@ -57,7 +57,8 @@ But, if you're using some **Vanus Templates** like `Send a custom greeting messa
 |------------------------------------------------------------------------|:------------------------:|
 | Send a custom greeting message when new members join the Slack channel | `member_joined_channel`  |
 
-## How to subscribe
+**How to subscribe**  
+---
 
 1. Scroll down, click **Subscribe to bot events** and after you will be able to click **Add Bot User Event**.
 ![](images/img_9.png)

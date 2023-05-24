@@ -1,4 +1,4 @@
-#
+#  
 # Prerequisites
 
 Before obtaining Shopify events, you must have:

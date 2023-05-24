@@ -1,4 +1,4 @@
-#
+#  
 # Prerequisites
 
 Before obtaining SQS events, you must have:

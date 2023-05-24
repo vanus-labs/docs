@@ -1,4 +1,4 @@
-#
+#  
 # Prerequisites
 
 Before forwarding events to Google Sheets, you must have:
@@ -11,6 +11,7 @@ Before forwarding events to Google Sheets, you must have:
 
 **To set up a Google Sheets Sink in Vanus Cloud:**
 # Step 1: Create a Google spreadsheet
+
 1. Go to [Google Sheets](https://docs.google.com/spreadsheets/u/0/) and **Sign in**.
 2. Create a new blank spreadsheet.
 ![img.png](images/1.png)

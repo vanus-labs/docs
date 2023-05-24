@@ -1,4 +1,4 @@
-# 
+#  
 # Prerequisites
 
 Before obtaining S3 events, you must have:
@@ -64,7 +64,7 @@ Before obtaining S3 events, you must have:
 
 ---
 
-## Step 3: Config your connection
+# Step 3: Config your connection
 
 To obtain S3 Bucket events using the S3 source connector in Vanus Cloud, follow these steps:
 

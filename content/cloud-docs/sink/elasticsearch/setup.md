@@ -1,4 +1,4 @@
-#
+#  
 # Prerequisites
 
 Before forwarding events to Elasticsearch, you must have:
@@ -44,7 +44,9 @@ Before forwarding events to Elasticsearch, you must have:
 ![](images/5.png)   
 
 
-## Getting your server endpoint 
+**Getting your server endpoint** 
+---
+
 1. Click on the **settings** icon at the right side of your deployment.  
 ![](images/6.png)   
 
@@ -59,7 +61,9 @@ Before forwarding events to Elasticsearch, you must have:
 ![](images/9.png)   
 
 
-## Creating an Index 
+**Creating an Index** 
+---
+
 1. Click on API Console  
 ![](images/10.png)   
 

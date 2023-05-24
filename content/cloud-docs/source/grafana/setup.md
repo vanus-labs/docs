@@ -1,4 +1,4 @@
-#
+#  
 # Prerequisites
 
 - A Grafana instance or an account in Grafana cloud
@@ -20,7 +20,7 @@
 ![img_2.png](images/save%20contact.png)
 
 ---
-# step 2: Setup your connection
+# step 2: Setup your connection in Vanus cloud 
 
 1.  Write a name for your connection.
     ![img.png](images/1..png)
