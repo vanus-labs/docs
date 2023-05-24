@@ -1,4 +1,4 @@
-#
+#  
 # Prerequisites
 
 Before obtaining SNS events, you must have:

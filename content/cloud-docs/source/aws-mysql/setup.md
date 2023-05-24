@@ -1,4 +1,4 @@
-#
+#  
 # Prerequisites
 
 Before creating your MySQL connection, you must have:  

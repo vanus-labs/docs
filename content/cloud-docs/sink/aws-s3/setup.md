@@ -1,4 +1,4 @@
-#
+#  
 # Prerequisites
 
 Before forwarding events to an S3 bucket, you must have:

@@ -1,4 +1,4 @@
-#
+#  
 # Prerequisites
 
 Before forwarding events to Elasticsearch, you must have:
