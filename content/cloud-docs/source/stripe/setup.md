@@ -1,4 +1,4 @@
-#
+#  
 # Prerequisites
 
 - A Stripe Account

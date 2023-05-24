@@ -1,4 +1,4 @@
-#
+#  
 # Prerequisites
 
 Before forwarding events to Snowflake, you must have:

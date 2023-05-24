@@ -1,5 +1,4 @@
-#
-
+#  
 # Prerequisites
 
 Before forwarding events to Whatsapp, you must have: 
