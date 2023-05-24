@@ -1,12 +1,10 @@
 #  
-
 # Prerequisites
 
 Before forwarding events to Whatsapp, you must have: 
 
 - A whatsapp account 
 
----
 
 **Perform the following steps to configure your Whatsapp Sink:**
 
