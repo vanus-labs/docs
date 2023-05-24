@@ -174,18 +174,20 @@ const sidebars = {
             },
             {
               type: "doc",
-              id: "user-guides/template-guides/s3-delete-object-slack",
-              label: "S3 Delete Object Event triggers a Slack message",
+              id: "user-guides/template-guides/github-star-snowflake",
+              label: "Github Star Event Triggers a new row on Snowflake",
             },
             {
               type: "doc",
-              id: "user-guides/template-guides/s3-delete-object-discord",
-              label: "S3 Delete Object Event triggers a Discord message",
+              id: "user-guides/template-guides/github-issue-snowflake",
+              label:
+                "Github Issue create event triggers a new row on Snowflake",
             },
             {
               type: "doc",
-              id: "user-guides/template-guides/stripe-payment-slack.md",
-              label: "Stripe Invoice Payment event triggers a Slack messag",
+              id: "user-guides/template-guides/github-issue-comment-snowflake",
+              label:
+                "Github Issue create comment event triggers a new row on Snowflake",
             },
           ],
         },
