@@ -7,7 +7,7 @@
 
 **Perform the following steps to configure your CloudEvents Source:**
 
-# Step 1: Setup your Connection
+# Setup your Connection in Vanus cloud 
 
 To set up CloudEvents in Vanus Cloud, follow these steps:
 

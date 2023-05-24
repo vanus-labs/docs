@@ -10,7 +10,8 @@ Before forwarding events to Feishu, you must have:
 
 **Perform the following steps to configure your feishu Sink:**
 
-# Step 1: Setup a Feishu bot
+# Step 1: Setup a Feishu bot 
+
 1. Create a new Group chat
 ![img_1.png](images/img_1.png)
 2. In the feishu group click `...` and then **settings**.

@@ -126,6 +126,7 @@ The values for `role_name`, `user_name`, `warehouse_name`, `database_name` and `
 ---
 
 # Step 3: Finish your connection in Vanus Cloud.
+
 1. Get your account URL by going to **Admin** and **Accounts** from the side menu, and click the button to copy the link.
 ![](images/img_3.png)
 2. Write following information from previously in **step 2**.

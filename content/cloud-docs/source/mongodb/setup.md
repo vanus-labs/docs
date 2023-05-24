@@ -2,13 +2,7 @@
 # Prerequisites  
 
 - A [MongoDB account](https://account.mongodb.com/account/register)   
-- Host  
-- Username  
-- Password  
-- Auth Source  
-- Databases  
-- Collections  
-
+- A database 
 
 ---
 
@@ -16,7 +10,9 @@
 
 # Step 1: Setup a MongoDB database  
 
-## Create a MongoDB account (Optional)
+**Create a MongoDB account (Optional)** 
+---
+
 1. Go to the [official MongoDB website](https://www.mongodb.com/) and click on **start free** to create a free account. 
 ![](images/mongodb%20start%20free.png)   
 
@@ -37,7 +33,8 @@
 ![](images/verified%20email.png)   
 
 
-### Project details information   
+**Project details information**   
+---
 
 ![](images/wwelcome%20to%20atlass.png)   
 
@@ -51,7 +48,8 @@
 Select your preferred programming language. 
 
 
-## Setting up your MongoDB database   
+**Setting up your MongoDB database**   
+---
 
 ![](images/create%20database.png)   
 
@@ -73,7 +71,8 @@ A cluster provides high availability and scalability to a MongoDB deployment, en
 5. Click on create to create your database.  
 
 
-### Security Setup   
+**Security Setup**   
+---
 
 ![](images/security%20quick%20start.png)   
 
@@ -84,7 +83,9 @@ A cluster provides high availability and scalability to a MongoDB deployment, en
 3. Click on **create user** to create the user.  
 
 
-### Setting up the host   
+**Setting up the host**   
+---
+
 We are going to be using an EC2 instance running the Ubuntu AMI to connect to our DynamoDB database. We need to set that up before moving to the next step.  
 
 1. Log in to the [AWS Management Console](https://aws.amazon.com/)   
@@ -96,7 +97,9 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 3. Click on the **Launch Instance** button.  
 ![](images/launch%20instance.png)   
 
-#### Name and AMI setting  
+**Name and AMI setting**  
+---
+
 1. Give your instance a name and select an Amazon machine image for the instance.  
 ![](images/server%20name%20and%20ami.png)   
 
@@ -107,7 +110,9 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 3. Select an instance type that is free tier eligible to prevent extra cost.  
 
 
-#### Key pair setting  
+**Key pair setting**  
+---
+
 1. Create a key pair, to enable you SSH into your server.  
 ![](images/create%20keypair.png)   
 
@@ -116,7 +121,9 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 3. Click on **create key pair** to finish the creation of the key pair.  
 ![](images/create%20keypair2.png)   
 
-#### Network setting  
+**Network setting**  
+---
+
 1. Leave the default VPC and subnet.  
 
 2. Create security group. We allowed SSH traffic from anywhere because we intend to terminate the instance immediately after the test, it's best practice to set the specific IP you want to have access to your instance.  
@@ -138,7 +145,9 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 ![](images/copy%20instance%20IP.png)   
 
 
-## MongoDB connection setting.  
+**MongoDB connection setting.**  
+---
+
 1. Choose a connection point, you can choose to connect from your local environment, or a cloud environment.  
 
 2. Set your network security and input the IP of the created EC2 instance.  
@@ -152,7 +161,9 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 5. Your database is ready to be used. Click on "Go to Database" to be taken to your database page.  
 ![](images/go%20to%20database.png)   
 
-#### SSH Into your EC2 Instance 
+**SSH Into your EC2 Instance**  
+---
+
 Now we want to SSH into our EC2 instance to enable us connect to our database host.  
 
 1. Click the **Connect button**.  
@@ -164,14 +175,15 @@ Now we want to SSH into our EC2 instance to enable us connect to our database ho
 3. Copy the example command given.  
 ![](images/copy%20ssh%20example.png)   
 
-
 4. Open up your terminal and paste the code in the same folder/directory your key pair was downloaded into.  
 ![](images/terminal%20access.png)   
 
 5. You've been connected to your instance.  
 
 
-## MongoDB cluster Connection  
+**MongoDB cluster Connection**  
+---
+
 1. Click on the **connect** button.  
 ![](images/connect%20to%20mongodb.png)   
 
@@ -183,10 +195,8 @@ Now we want to SSH into our EC2 instance to enable us connect to our database ho
 For the purpose of this tutorial, we chose the **shell**.  
 ![](images/mongo%20shell.png)   
 
-
 4. Select your operating system and download the MongoDB shell **mongosh**  
 ![](images/connect%20to%20cluster%201.png)   
-
 
 5. We're presently running an ubuntu server on our instance so we would copy the download url and paste it in our terminal with the download command.  
 ```
@@ -194,7 +204,6 @@ wget https://downloads.mongodb.com/compass/mongodb-mongosh_1.8.1_amd64.deb
 ```   
 
 ![](images/downloaded%20mongodb%20shell.png)   
-
 
 6. Return to the Atlas page, click on the [How to](https://www.mongodb.com/docs/mongodb-shell/install/) link to get step by step instructions on how to add your mongosh directory to your $PATH variable.  
 
@@ -209,7 +218,9 @@ wget https://downloads.mongodb.com/compass/mongodb-mongosh_1.8.1_amd64.deb
 You are now connected to your MongoDB database.  
 
 
-## Get the information needed for the Vanus source connection.  
+**Get the information needed for the Vanus source connection.**   
+---
+
 1. To find your **Host**, run the command `db.runCommand({whatsmyuri:1})` and it'll be outputed to the terminal.  
 
 ![](images/mongodb%20host.png)   
@@ -228,6 +239,7 @@ You are now connected to your MongoDB database.
 ---
 
 # Step 2: Configure your MongoDB Vanus Cloud Source Connection  
+
 1. return to your Vanus Connection page.  
 
 2. Give your connection a name, and choose MongoDB as the source.  

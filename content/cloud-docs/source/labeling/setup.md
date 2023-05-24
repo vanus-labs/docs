@@ -7,7 +7,7 @@
 
 **Perform the following steps to configure your labeling Source:**
 
-# Step 1: Create your connection in Vanus Cloud
+# Create your connection in Vanus Cloud
 
 ![img.png](images/name%20connection.png)
 

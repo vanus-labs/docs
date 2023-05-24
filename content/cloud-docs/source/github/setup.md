@@ -8,7 +8,7 @@
 
 **Perform the following steps to configure your Github Source:**
 
-# step 1: Setup your connection
+# Setup your connection in Vanus cloud  
 
 1. Write a connection name without any spaces.
    ![img.png](images/1.png)  
