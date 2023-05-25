@@ -189,6 +189,22 @@ const sidebars = {
               label:
                 "Github Issue create comment event triggers a new row on Snowflake",
             },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/github-pr-snowflake",
+              label:
+                "Github pull-request event triggers a new row on Snowflake",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/github-charge-success-slack",
+              label: "Stripe Charge Success event triggers a Slack message",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/github-charge-success-discord",
+              label: "Stripe Charge Success event triggers a Discord message",
+            },
           ],
         },
         {
