@@ -21,8 +21,7 @@
 
 3. Save the Webhook URL, after finish the connection you will be able to send HTTP request to it.
    
-**Here is an example**
----
+### Here is an example
 
 ```shell
 curl -i https://example.com \  # The Webhook URL 
