@@ -1,5 +1,9 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
+
+## Prerequisites
 
 Before forwarding events to Google Sheets, you must have:
 
@@ -9,8 +13,7 @@ Before forwarding events to Google Sheets, you must have:
 
 **Perform the following steps to configure your google-sheets: Sink**
 
-**To set up a Google Sheets Sink in Vanus Cloud:**
-# Step 1: Create a Google spreadsheet
+## Step 1: Create a Google Spreadsheet
 
 1. Go to [Google Sheets](https://docs.google.com/spreadsheets/u/0/) and **Sign in**.
 2. Create a new blank spreadsheet.
@@ -20,7 +23,7 @@ Before forwarding events to Google Sheets, you must have:
 
 ---
 
-# Step 2: Create a connection
+## Step 2: Create a Connection
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -67,7 +70,7 @@ import TabItem from '@theme/TabItem';
 
 ---
 
-# Step 3: Finish your connection.
+## Step 3: Finish your Connection.
 
 1. Paste the string from the sheet URL Example: `1i9b80jHcKzkUSOUDE9RAjnGevdWKScq_6Jnpofvb4CU` from Step 1.
 2. Obtain the name of the sheet at the bottom of the spreadsheet.
@@ -77,14 +80,4 @@ import TabItem from '@theme/TabItem';
 
 ---
 
-# Required Data Format
-
-The event data must be in JSON format with the following keys:
-
-```json
-{
-    "Title": "value",
-    "date": "value",
-    "ect...": "value"
-}
-```
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

@@ -1,5 +1,9 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
+
+## Prerequisites
 
 - An AWS Account with Administrative Privileges
 
@@ -7,8 +11,7 @@
 
 **Perform the following steps to configure your Amazon EventBridge Source:**
 
-
-# Config your connection
+## Config your Connection
 
 1. Write a name for your connection.
    ![img.png](images/1.png)

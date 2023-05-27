@@ -1,15 +1,17 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
 
-Before forwarding events to Slack, you must have:
+## Prerequisites
 
-- A Slack Account
+- A [slack account](https://slack.com)
 
 ---
 
 **Perform the following steps to configure your slack Sink:**
 
-# Step 1: Create a Slack App
+## Step 1: Create a Slack App
 1. Go to [Slack API](https://api.slack.com/apps), and click Create New App.
 ![img.png](images/img.png)
 2. Select From scratch.
@@ -20,7 +22,7 @@ Before forwarding events to Slack, you must have:
 
 ---
 
-# Step 2: Configure your App
+## Step 2: Configure your App
 1. Add Permissions feature for your App.
 ![img_3.png](images/img_3.png)
 2. Scroll down to Scopes/Bot Token Scopes, and click Add an OAuth Scope.
@@ -38,9 +40,11 @@ Before forwarding events to Slack, you must have:
 
 ---
 
-# Step 3: Finish the Connection
+## Step 3: Finish the Connection
 1. Paste the Bot User OAuth Token to Slack Sink.
 ![img_10.png](images/img_10.png)
 2. Click **Next** to continue.
 
 ---
+
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

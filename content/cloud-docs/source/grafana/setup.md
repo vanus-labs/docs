@@ -1,5 +1,9 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
+
+## Prerequisites
 
 - A Grafana instance or an account in Grafana cloud
 
@@ -7,7 +11,7 @@
 
 **Perform the following steps to configure your Grafana Source:**
 
-# Setup your connection in Vanus cloud 
+## Setup your connection in Vanus cloud 
 
 1.  Write a name for your connection.
     ![img.png](images/1..png)]

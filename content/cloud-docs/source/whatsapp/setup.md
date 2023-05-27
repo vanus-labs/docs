@@ -1,8 +1,9 @@
-#  
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
 
-# Prerequisites
-
-Before forwarding events to Whatsapp, you must have: 
+## Prerequisites
 
 - A whatsapp account 
 
@@ -10,7 +11,7 @@ Before forwarding events to Whatsapp, you must have:
 
 **Perform the following steps to configure your Whatsapp Source:**
 
-# Setup your connection in Vanus Cloud 
+## Setup your connection in Vanus Cloud 
 
 1. Write a connection name without any spaces.
 

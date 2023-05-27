@@ -1,11 +1,15 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
+
+## Prerequisites
 
 - Have a HTTP client.
 
 **Perform the following steps to configure your Webhook Source:**
 
-# Step 1: Create a Connection
+## Step 1: Create a Connection
 
 1. Write a name for your connection.
    ![img.png](images/1.png)

@@ -116,7 +116,7 @@ Now you can connect to your server and create a table and database.
 
 ---
 
-# Step 2: Setup your connection in Vanus Cloud
+## Step 2: Setup your connection in Vanus Cloud
 
 **To set up rds-mysql Sink in Vanus Cloud:**
 
@@ -136,14 +136,5 @@ Now you can connect to your server and create a table and database.
 
 ---
 
-## Custom Connection
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
 
-The event data must be in JSON format and created following the structure of your database, here's an example:
-
-```json
-{
-  "title": "value",
-  "date": "value",
-  "ect...": "value"
-}
-```

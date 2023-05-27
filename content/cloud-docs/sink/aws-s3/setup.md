@@ -1,7 +1,10 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
 
-Before forwarding events to an S3 bucket, you must have:
+
+## Prerequisites
 
 - An [Amazon Web Services](https://aws.amazon.com) account.
 
@@ -9,7 +12,7 @@ Before forwarding events to an S3 bucket, you must have:
 
 **Perform the following steps to configure your Amazon S3 Sink:**
 
-# Step 1: Create an AWS User
+## Step 1: Create an AWS User
 
 1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
 2. Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by searching for IAM and click the IAM service.
@@ -42,7 +45,7 @@ Before forwarding events to an S3 bucket, you must have:
 
 ---
 
-# Step 2: Get your Access and secret key
+## Step 2: Get your Access and secret key
 
 1. Now click on the user you just created.
    ![img.png](images/11.png)
@@ -57,7 +60,7 @@ Before forwarding events to an S3 bucket, you must have:
 
 ---
 
-# Step 3: Config your connection
+## Step 3: Config your connection
 
 **To set up S3 Sink in Vanus Cloud:**
 
@@ -72,14 +75,5 @@ Before forwarding events to an S3 bucket, you must have:
 7. Click **Next** to continue.
 
 ---
-# Required Data Format
 
-The event data must be in JSON format with the following way:
-
-```json
-{
-  "data": {
-    "myData": "simulation event data"
-  }
-}
-```
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

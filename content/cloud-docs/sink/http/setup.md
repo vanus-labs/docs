@@ -1,5 +1,9 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
+
+## Prerequisites
 
 To set up HTTP Sink, you must have:
 
@@ -10,7 +14,7 @@ To set up HTTP Sink, you must have:
 **Perform the following steps to configure your http Sink:** 
 
 
-**To set up http Sink in Vanus Cloud:**
+## Configure HTTP Sink**
 
 1. Select the **HTTP** Sink connector.
 2. Get a Payload URL from your application. (The EndPoint URL to send the HTTP requests)
@@ -23,12 +27,5 @@ You can also select the URL Method (`POST`, `GET`, `PATCH`, `DELETE`, `PUT`)
 
 ---
 
-# Required Data Format
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
 
-The event data must be JSON form4at, here a simple message, example:
-
-```json
-{
-  "body": "Message must go here!"
-}
-```

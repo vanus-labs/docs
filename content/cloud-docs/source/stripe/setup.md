@@ -1,5 +1,9 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
+
+## Prerequisites
 
 - A Stripe Account
 
@@ -7,7 +11,7 @@
 
 **Perform the following steps to configure your Stripe Source:**
 
-# Create a Connection
+## Create a Connection
 
 1. Write a name for your connection.
    ![img.png](images/1.png)

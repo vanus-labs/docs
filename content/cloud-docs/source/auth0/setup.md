@@ -1,7 +1,9 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
 
-Before obtaining Auth0 events, you must have:
+## Prerequisites
 
 - An Auth0 account with administrative privileges
 
@@ -9,7 +11,7 @@ Before obtaining Auth0 events, you must have:
 
 **Perform the following steps to configure your Auth0 Source:**
 
-# Complete your connection in Vanus Cloud
+## Complete your Connection in Vanus Cloud
 
 1. Write a name for your connection.
    ![](images/1.png)
@@ -18,6 +20,5 @@ Before obtaining Auth0 events, you must have:
 3. Click **Next** and continue the configuration.
 
 ---
-
 
 Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

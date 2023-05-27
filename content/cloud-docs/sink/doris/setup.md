@@ -1,7 +1,9 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
 
-Before forwarding events to Feishu, you must have:
+## Prerequisites
 
 - A Doris cluster.
 
@@ -9,7 +11,7 @@ Before forwarding events to Feishu, you must have:
 
 **Perform the following steps to configure your doris Sink:**
 
-**To set up Doris Sink in Vanus Cloud:**
+## Setup Doris Sink
 
 1. Provide the following credentials
 
@@ -24,14 +26,5 @@ Before forwarding events to Feishu, you must have:
 
 ---
 
-# Custom Connection
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
 
-Create your template following the structure of your database, an example:
-
-```json
-{
-  "title": "value",
-  "date": "value",
-  "ect...": "value"
-}
-```

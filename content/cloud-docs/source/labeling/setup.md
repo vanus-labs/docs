@@ -1,5 +1,9 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
+
+## Prerequisites
 
 - Have a CloudEvents HTTP client.
 
@@ -7,7 +11,7 @@
 
 **Perform the following steps to configure your labeling Source:**
 
-# Create your connection in Vanus Cloud
+## Create your connection in Vanus Cloud
 
 ![img.png](images/name%20connection.png)
 
