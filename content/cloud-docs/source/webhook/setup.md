@@ -9,28 +9,10 @@
 
 1. Write a name for your connection.
    ![img.png](images/1.png)
-2. Save your Webhook URL.
+2. There will be more steps Once you finish creating the connection. Click on the link to open a new page with the details on completing the connection.
+   ![](images/warning.png)
+
 3. Press **next**.
-
----
-
-# Webhook server
-When a webhook is triggered, the webhook server receives an HTTP request with a payload of data related to the event. 
-
-#### 3rd Party Services
-
-A list of application that can send HTTP request to our webhook server.
-- Zapier
-- IFTTT (If This Then That)
-- GitHub
-- Bitbucket
-- GitLab
-- Stripe
-- Mailchimp
-- Shopify
-- Salesforce
-- Trello
-- more
 
 ---
 

@@ -16,10 +16,10 @@ Before forwarding events to Whatsapp, you must have:
 
 2. Click `Verify` to authorize Vanus to establish a connection with your WhatsApp account. 
 
-3. Choose to enable or disable chatai. 
+3. Choose to enable chatai to use OpenAI. 
 
 4. Scan the QR Code with your mobile whatsapp 
-
+![img.png](image/img.png)
 5. Click **Next** and continue the configuration. 
 
 
