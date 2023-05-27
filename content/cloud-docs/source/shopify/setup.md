@@ -1,7 +1,9 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
 
-Before obtaining Shopify events, you must have:
+## Prerequisites
 
 - A Shopify shop with administrative privileges
 
@@ -9,9 +11,7 @@ Before obtaining Shopify events, you must have:
 
 **Perform the following steps to configure your Shopify Source:**
 
-# Step 1: Setup your Connection 
-
-To obtain Shopify events using the Shopify source connector in Vanus Cloud, follow these steps:
+## Step 1: Setup your Connection 
 
 1. Write a connection name without any spaces.
    ![img.png](images/1.png)

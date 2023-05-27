@@ -1,14 +1,17 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
 
-Before obtaining Slack events, you must have:
+## Prerequisites
+
 - A [Slack account](https://slack.com).
 
 ---
 
 **Perform the following steps to configure your Slack Source:**
 
-# Step 1: Create and Install an App in Slack
+## Step 1: Create and Install an App in Slack
 
 1. Go to [Slack API](https://api.slack.com/apps), and click **Create New App**.
    ![](images/img.png)
@@ -19,7 +22,7 @@ Before obtaining Slack events, you must have:
 
 ---
 
-#  Step 2: Get App Credentials
+## Step 2: Get App Credentials
 
 1. Go to **Basic Information**.
 ![](images/img_3.png)
@@ -33,7 +36,7 @@ Before obtaining Slack events, you must have:
 
 ---
 
-# Step 3: Configure Event Subscription
+## Step 3: Configure Event Subscription
 1. Click the **copy icon** to copy the webhook url.
 ![](images/img_10.png)
 2. Go back to **Slack API**.
@@ -47,7 +50,7 @@ Before obtaining Slack events, you must have:
 
 ---
 
-# Step 4: Subscribe to bot events
+## Step 4: Subscribe to bot events
 
 Generally speaking, Slack Source can subscribe any events you need from Slack.
 
@@ -57,7 +60,7 @@ But, if you're using some **Vanus Templates** like `Send a custom greeting messa
 |------------------------------------------------------------------------|:------------------------:|
 | Send a custom greeting message when new members join the Slack channel | `member_joined_channel`  |
 
-#### How to subscribe
+### How to subscribe
 
 1. Scroll down, click **Subscribe to bot events** and after you will be able to click **Add Bot User Event**.
 ![](images/img_9.png)
@@ -68,7 +71,7 @@ But, if you're using some **Vanus Templates** like `Send a custom greeting messa
 
 ---
 
-# Step 5: Install the Slack App to your Slack workspace
+## Step 5: Install the Slack App to your Slack workspace
 
 1. Go to **Install Apps** from the side menu and click **Install to Workspace**.
    ![](images/img_13.png)
@@ -79,7 +82,7 @@ But, if you're using some **Vanus Templates** like `Send a custom greeting messa
 
 ---
 
-# Step 6: Connection in Vanus Cloud
+## Step 6: Connection in Vanus Cloud
 
 1. Write a name for your connection.
    ![](images/name%20connection.png)

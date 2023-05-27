@@ -1,7 +1,9 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
 
-Before forwarding events to Elasticsearch, you must have:
+## Prerequisites
 
 - Have an Elasticsearch cluster. 
 
@@ -9,7 +11,7 @@ Before forwarding events to Elasticsearch, you must have:
 
 **Perform the following steps to configure your elasticsearch Sink:**
 
-# Step 1: Setup an Elasticsearch cluster 
+## Step 1: Setup an Elasticsearch cluster 
 
 1. Got to the [Elasticsearch](https://www.elastic.co/) official website and sign up for an account.  
 ![](images/1.png)   
@@ -44,7 +46,7 @@ Before forwarding events to Elasticsearch, you must have:
 ![](images/5.png)   
 
 
-#### Getting your server endpoint
+### Getting your server endpoint
 
 1. Click on the **settings** icon at the right side of your deployment.  
 ![](images/6.png)   
@@ -60,7 +62,7 @@ Before forwarding events to Elasticsearch, you must have:
 ![](images/9.png)   
 
 
-#### Creating an Index
+### Creating an Index
 
 1. Click on API Console  
 ![](images/10.png)   
@@ -76,9 +78,7 @@ Before forwarding events to Elasticsearch, you must have:
 
 ---
 
-# Step 2: Setting up your connection in Vanus cloud 
-
-**To set up Elasticsearch Sink in Vanus Cloud:**
+## Step 2: Setting up your connection in Vanus cloud
 
 1. Provide the following credentials
    - Server Endpoint: The endpoint of your elasticsearch cluster.  
@@ -90,20 +90,4 @@ Before forwarding events to Elasticsearch, you must have:
 
 ---
 
-# Custom Connection
-
-Create your template following the structure of your database, an example:
-
-```json
-{
-  "_index": "vanus_test",
-  "_type": "_doc",
-  "_id": "CqFnBIEBzJc0Oa5TERDD",
-  "_version": 1,
-  "_source": {
-    "id": 123,
-    "date": "2022-06-13",
-    "service": "test data"
-  }
-}
-```
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

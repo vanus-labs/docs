@@ -1,12 +1,17 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
+
+## Prerequisites
+
 - Have the ability to send HTTP request.
 
 ---
 
 **Perform the following steps to configure your ChatAI Source:**
 
-# Set up your connection in Vanus Cloud
+## Set up your connection in Vanus Cloud
 
 1. Write a name for your connection.  
    ![img.png](images/connection.png)

@@ -1,7 +1,9 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
 
-Before forwarding events to Snowflake, you must have:
+## Prerequisites
 
 - A [Snowflake](https://www.snowflake.com/) account with administrative privileges
 - The user has either ACCOUNTADMIN or SECURITYADMIN role in Snowflake.
@@ -10,7 +12,7 @@ Before forwarding events to Snowflake, you must have:
 
 **Perform the following steps to configure your Amazon RDS PostGreSQL Source:**
 
-# Step 1: (Optional) Creating a Snowflake Account
+## Step 1: (Optional) Creating a Snowflake Account
 When you sign up for an account on Snowflake, you'll receive 30 days of free access along with $400 credits. However, any usage beyond this limit will be charged. The free trial begins once you complete the sign-up process and activate your account.
 
 If you end up utilizing all $400 credits before the 30-day trial period is over, your account will be suspended, and you won't be able to use any of its features. You can still log in to your account, but you won't be able to perform any actions, such as running a virtual warehouse, loading data, or running queries.
@@ -43,7 +45,7 @@ Great! An activation email from Snowflake has been sent to your registered email
 
 ---
 
-# Step 2: Create and Configure a Snowflake Warehouse
+## Step 2: Create and Configure a Snowflake Warehouse
 
 Vanus provides you a ready-to-use script to configure the Snowflake warehouse you intend to use as the Destination.
 
@@ -125,7 +127,7 @@ The values for `role_name`, `user_name`, `warehouse_name`, `database_name` and `
 
 ---
 
-# Step 3: Finish your connection in Vanus Cloud.
+## Step 3: Finish your Connection
 
 1. Get your account URL by going to **Admin** and **Accounts** from the side menu, and click the button to copy the link.
 ![](images/img_3.png)
@@ -143,14 +145,4 @@ The values for `role_name`, `user_name`, `warehouse_name`, `database_name` and `
 
 ---
 
-# Required Data Format
-
-The event data must be in JSON format with the following keys:
-
-```json
-{
-    "column1": "value1",
-    "column2": "value2",
-    "column3": "value3",
-    "etc...": "etc..."
-}
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

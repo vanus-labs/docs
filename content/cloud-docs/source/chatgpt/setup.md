@@ -1,6 +1,9 @@
-#  
-# Prerequisites
-This connector is exclusively made for Feishu, if you don't use Feishu select ChatAi Source or Slack Source for ChatGPT.
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
+
+## Prerequisites
 
 - A [feishu account](https://www.feishu.cn).
 
@@ -8,7 +11,7 @@ This connector is exclusively made for Feishu, if you don't use Feishu select Ch
 
 **Perform the following steps to configure your ChatGPT Source:**
 
-# Setup your Connection
+## Setup your Connection
 
 1. Write a name for your connection.
 ![img.png](images/1.png)

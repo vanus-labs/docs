@@ -1,5 +1,9 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
+
+## Prerequisites
 
 - A CloudEvent HTTP Client.
 
@@ -7,7 +11,7 @@
 
 **Perform the following steps to configure your CloudEvents Source:**
 
-# Setup your Connection in Vanus cloud
+## Setup your Connection
 
 1. Write a name for your connection.
     ![](images/1.png)
@@ -18,6 +22,4 @@
 
 ---
 
-Learn more about [CloudEvents](https://cloudevents.io).
-
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai) and more about [CloudEvents](https://cloudevents.io).

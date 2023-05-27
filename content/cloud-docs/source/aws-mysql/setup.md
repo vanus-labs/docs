@@ -1,7 +1,9 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
 
-Before creating your MySQL connection, you must have:  
+## Prerequisites
 
 - An SQL client 
 - A running MySQL server
@@ -11,9 +13,9 @@ Before creating your MySQL connection, you must have:
 
 **Perform the following steps to configure your Amazon RDS MySQL Source:**
 
-# Step 1: Setup A Mysql database server in AWS using RDS
+## Step 1: Setup A Mysql database server in AWS using RDS
 
-#### Create an RDS account
+### Create an RDS account
 
 1. Log in to the [AWS Management Console](https://aws.amazon.com/) using your root account credentials.  
 ![3](images/1.png)
@@ -29,7 +31,7 @@ Or type "RDS" in the search box and select it from the results.
 ![7](images/4.png)   
 
 
-#### Create Database
+### Create Database
 
 1. Select **standard create** and choose the MySQL icon.  
 ![8](images/5.png)
@@ -44,7 +46,7 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 ![10](images/7.png)   
 
 
-#### Settings
+### Settings
 
 ![11](images/8.png)   
 - **DB Instance Identifier:** Type a name unique to the region your DB instance has been set in.  
@@ -56,7 +58,7 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 - **Confirm password:** Type the password again.  
 
 
-#### Instance configuration and storage
+### Instance configuration and storage
 
 1. Leave the default Instance configuration. 
 
@@ -64,7 +66,7 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 ![12](images/9.png)   
 
 
-#### Connectivity
+### Connectivity
 
 1. Leave the default subnet group.  
 
@@ -100,7 +102,7 @@ If you have errors during connection, make sure you go to the security group on 
 :::
 
 
-#### Modify your VPC security groups
+### Modify your VPC security groups
 
 1. Click on the server you just created in AWS RDS.
 ![](images/17.png)
@@ -117,9 +119,7 @@ Now you can connect to your server and create a table and database.
 
 ---
 
-# Step 2: Setup your connection in Vanus Cloud
-
-**To set up rds-mysql Source in Vanus Cloud:**
+## Step 2: Setup your connection in Vanus Cloud
 
 1. Click on the server you just created in AWS RDS.
 ![](images/23.png)

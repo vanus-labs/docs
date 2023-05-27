@@ -1,5 +1,9 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
+
+## Prerequisites
 
 - GitHub Account with proper permissions(`Admin` or `Owner`) to your repository
 - GitHub Repositories
@@ -8,7 +12,7 @@
 
 **Perform the following steps to configure your Github Source:**
 
-# Setup your connection in Vanus cloud  
+## Setup your connection in Vanus cloud  
 
 1. Write a connection name without any spaces.
    ![img.png](images/1.png)  

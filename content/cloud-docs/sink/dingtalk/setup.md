@@ -1,7 +1,9 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
 
-Before forwarding events to Ding Talk, you must have:
+## Prerequisites
 
 - A Ding Talk account with administrative privileges
 
@@ -9,9 +11,7 @@ Before forwarding events to Ding Talk, you must have:
 
 **Perform the following steps to configure your dingtalk Sink:**
 
-
-**To set up a bot for receiving events in your Ding Talk group chat:**
-# Step 1: Create a Group
+## Step 1: Create a Group
 
 1. Log in to your Ding Talk account.
 2. Create a **new group** go to the `+` and select **New Chat**.
@@ -25,7 +25,7 @@ Before forwarding events to Ding Talk, you must have:
 
 ---
 
-# Step 2: Add Bot to Ding Talk Group
+## Step 2: Add Bot to Ding Talk Group
 
 1. In the top navigation pane, click **Robot Management**.
 ![](images/img_4.png)
@@ -45,7 +45,7 @@ Before forwarding events to Ding Talk, you must have:
 
 ---
 
-# Step 3: Set up the Ding Talk Sink connector in Vanus Cloud
+## Step 3: Set up the Ding Talk Sink connector in Vanus Cloud
 
 1. **Webhook URL**: The webhook address that message sent to, you can get it when you create Chat Bot. You retrieved above.
 2. **Signature Verification**: The signature to sign request, you can get it when you create Chat Bot. You retrieved above.
@@ -55,19 +55,4 @@ Click **Next** to continue.
 
 ---
 
-# Required Data Format
-The event data must be JSON format, here a simple message, example:
-
-```json
-{
-    "id": "53d1c340-551a-11ed-96c7-8b504d95037c",
-    "source": "sink-Dingtalk-quickstart",
-    "specversion": "1.0",
-    "type": "quickstart",
-    "datacontenttype": "text/plain",
-    "time": "2022-10-26T10:38:29.345Z",
-    "xvchatgroup": "bot1",
-    "xvmsgtype": "text",
-    "data": "Hello dingtalk"
-}
-```
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

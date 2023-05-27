@@ -1,6 +1,9 @@
-#  
-# Prerequisites
-Before forwarding events to MySQL, you must have:
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
+
+## Prerequisites
 
 - A running MySQL server.
 - A Database and Table created.
@@ -9,7 +12,7 @@ Before forwarding events to MySQL, you must have:
 
 **Perform the following steps to configure your MySQL Sink:**
 
-# Setup your connection in Vanus Cloud
+## Setup your connection in Vanus Cloud
 
 Enter all the following information in Vanus Cloud.
 - Host - The IP address of your MySQL Server.
@@ -22,14 +25,4 @@ Enter all the following information in Vanus Cloud.
 
 ---
 
-# Custom Connection
-
-The event data must be in JSON format and created following the structure of your database, here's an example:
-
-```json
-{
-  "title": "value",
-  "date": "value",
-  "ect...": "value"
-}
-```
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

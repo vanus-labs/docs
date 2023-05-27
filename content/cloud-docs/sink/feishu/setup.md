@@ -1,7 +1,9 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
 
-Before forwarding events to Feishu, you must have:
+## Prerequisites
 
 - A [Feishu](https://www.feishu.cn) account.
 
@@ -10,7 +12,7 @@ Before forwarding events to Feishu, you must have:
 
 **Perform the following steps to configure your feishu Sink:**
 
-# Step 1: Setup a Feishu bot 
+## Step 1: Setup a Feishu bot 
 
 1. Create a new Group chat
 ![img_1.png](images/img_1.png)
@@ -27,7 +29,7 @@ Before forwarding events to Feishu, you must have:
 
 ---
 
-# Step 2: Finish your Connection
+## Step 2: Finish your Connection
 
 1. Paste the ** Feishu Webhook URL** into the "URL" field.
 ![img_2.png](images/img_2.png)
@@ -37,10 +39,4 @@ Before forwarding events to Feishu, you must have:
 
 ---
 
-Check out this article on how to get a [Feishu Webhook](https://www.vanus.ai/blog/retrieve-feishu-webhook-url/) for more details.
-
-:::caution
-**ChatGPT Source**
-Trying to create a ChatGPT to Feishu connection, Checkout the article on how to proceed after creating the connection [**click here**](https://xjxt2gkbqf.feishu.cn/wiki/wikcnQpoi1rqoo4jI7q7j4iMYob).
-Also note that after creating your connection there is still some more steps.
-:::
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).

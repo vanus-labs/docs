@@ -1,14 +1,17 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
 
-Before obtaining S3 events, you must have:
-- An AWS Account
+## Prerequisites
+
+- An [AWS Account](https://aws.amazon.com)
 
 ---
 
 **Perform the following steps to configure your Amazon S3 Source:**
 
-# Step 1: Create a new AWS user
+## Step 1: Create a new AWS user
 
 1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
 2. Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by searching for IAM and click the IAM service.
@@ -50,7 +53,8 @@ Before obtaining S3 events, you must have:
 
 ---
 
-# Step 2: Create an Access Key
+## Step 2: Create an Access Key
+
 1. Now click on the user you just created.
    ![img.png](images/14.png)
 2. Under **Security and credential** scroll down the page to `Access Key`, and Click **Create access key**.
@@ -64,10 +68,7 @@ Before obtaining S3 events, you must have:
 
 ---
 
-# Step 3: Config your connection
-
-To obtain S3 Bucket events using the S3 source connector in Vanus Cloud, follow these steps:
-
+## Step 3: Config your connection
 
 1. Write a connection name without any spaces.
    ![img.png](images/19.png)

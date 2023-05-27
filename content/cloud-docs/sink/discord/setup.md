@@ -1,7 +1,9 @@
-#  
-# Prerequisites
+--- 
+hide_table_of_contents: true
+hide_title: true
+---
 
-Before forwarding events to Slack, you must have:
+## Prerequisites
 
 - A Discord Account
 
@@ -9,10 +11,7 @@ Before forwarding events to Slack, you must have:
 
 **Perform the following steps to configure your discord Sink:**
 
-
-**To set up an app for receiving events in your Discord server:**
-
-# Step 1: Create a Server
+## Step 1: Create a Server
 
 1. Go to the Discord application.
 
@@ -31,7 +30,7 @@ Before forwarding events to Slack, you must have:
 
 ---
 
-# Step 2: Get a webhook url
+## Step 2: Get a webhook url
 
 1. Go to **Server Settings**.
     ![img_2.png](images/3.png)
@@ -46,7 +45,7 @@ Before forwarding events to Slack, you must have:
 
 ---
 
-# Step 3: Connection Setup
+## Step 3: Connection Setup
 
 1. Go back to Vanus Cloud.
 2. Paste your webhook URL in the `URL` field.
@@ -56,31 +55,4 @@ Before forwarding events to Slack, you must have:
 
 ---
 
-# Required Data Format
-
-The event data must be JSON format, here a simple message, example:
-
-```json
-{
-  "data": {
-    "username": "Test",
-    "content": "Hello, This is a Discord Message!"
-  }
-}
-```
-
----
-
-# Template Scenario
-
-Here are some easy to use scenarios for this connector.
-
-- [Amazon EventBridge CreateBucket | DeleteBucket event triggers a Discord message Receive](https://cloud.vanus.ai/connections/wizard?source=aws-eventbridge&sink=http&id=20230406_2)
-- [AWS Billing event triggers a Discord message](https://cloud.vanus.ai/connections/wizard?source=aws-billing&sink=http&id=20230410_1)
-- [Auth0 login event triggers a Discord message](https://cloud.vanus.ai/connections/wizard?source=auth0&sink=http&id=20230329_1)
-- [GitHub star event triggers a Discord message](https://cloud.vanus.ai/connections/wizard?source=github&sink=http&id=20230320_1)
-- [GitHub issue event triggers a Discord message](https://cloud.vanus.ai/connections/wizard?source=github&sink=http&id=20230320_2)
-- [GitHub issue comment event triggers a Discord message](https://cloud.vanus.ai/connections/wizard?source=github&sink=http&id=20230320_3)
-- [GitHub opened pull-request event triggers a Discord message](https://cloud.vanus.ai/connections/wizard?source=github&sink=http&id=20230321_1)
-- [Grafana resource utilization threshold event triggers a Discord message](https://cloud.vanus.ai/connections/wizard?source=grafana&sink=http&id=20230330_1)
-- [Stripe Invoice Payment event triggers a Discord message](https://cloud.vanus.ai/connections/wizard?source=stripe&sink=http&id=20230407_1)
+Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
