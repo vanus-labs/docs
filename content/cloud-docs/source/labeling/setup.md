@@ -11,7 +11,7 @@ hide_title: true
 
 **Perform the following steps to configure your labeling Source:**
 
-## Create your connection in Vanus Cloud
+## Labeling Connection Settings
 
 ![img.png](images/name%20connection.png)
 

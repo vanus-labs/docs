@@ -39,7 +39,7 @@ Before obtaining Shopify events, you must have:
 
 ---
 
-## Step 2: Finish the connection in Vanus Cloud
+## Step 2: Shopify App Connection Settings
 1. Paste the **Admin API access token** into Vanus Cloud.
 ![](images/img_11.png)
 2. Go to your store home page and copy the name of your store.

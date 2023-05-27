@@ -82,7 +82,7 @@ But, if you're using some **Vanus Templates** like `Send a custom greeting messa
 
 ---
 
-## Step 6: Connection in Vanus Cloud
+## Step 6: Slack Connection Settings
 
 1. Write a name for your connection.
    ![](images/name%20connection.png)

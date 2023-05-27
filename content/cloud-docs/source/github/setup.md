@@ -12,7 +12,7 @@ hide_title: true
 
 **Perform the following steps to configure your Github Source:**
 
-## Setup your connection in Vanus cloud  
+## GitHub Connection Settings
 
 1. Write a connection name without any spaces.
    ![img.png](images/1.png)  

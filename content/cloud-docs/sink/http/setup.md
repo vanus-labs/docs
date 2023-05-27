@@ -14,7 +14,7 @@ To set up HTTP Sink, you must have:
 **Perform the following steps to configure your http Sink:** 
 
 
-## Configure HTTP Sink**
+## HTTP Connection Settings
 
 1. Select the **HTTP** Sink connector.
 2. Get a Payload URL from your application. (The EndPoint URL to send the HTTP requests)

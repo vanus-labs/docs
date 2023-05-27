@@ -11,7 +11,7 @@ hide_title: true
 
 **Perform the following steps to configure your Auth0 Source:**
 
-## Complete your Connection in Vanus Cloud
+## Auth0 Connection Settings
 
 1. Write a name for your connection.
    ![](images/1.png)

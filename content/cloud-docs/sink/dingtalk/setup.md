@@ -45,7 +45,7 @@ hide_title: true
 
 ---
 
-## Step 3: Set up the Ding Talk Sink connector in Vanus Cloud
+## Step 3: DingTalk Connection Settings
 
 1. **Webhook URL**: The webhook address that message sent to, you can get it when you create Chat Bot. You retrieved above.
 2. **Signature Verification**: The signature to sign request, you can get it when you create Chat Bot. You retrieved above.

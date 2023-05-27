@@ -127,7 +127,7 @@ The values for `role_name`, `user_name`, `warehouse_name`, `database_name` and `
 
 ---
 
-## Step 3: Finish your Connection
+## Step 3: SnowFlake Connection Settings
 
 1. Get your account URL by going to **Admin** and **Accounts** from the side menu, and click the button to copy the link.
 ![](images/img_3.png)

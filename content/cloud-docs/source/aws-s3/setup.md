@@ -68,7 +68,7 @@ hide_title: true
 
 ---
 
-## Step 3: Config your connection
+## Step 3: Amazon S3 Connection Settings
 
 1. Write a connection name without any spaces.
    ![img.png](images/19.png)

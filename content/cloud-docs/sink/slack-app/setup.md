@@ -40,7 +40,7 @@ hide_title: true
 
 ---
 
-## Step 3: Finish the Connection
+## Step 3: Slack App Connection Settings
 1. Paste the Bot User OAuth Token to Slack Sink.
 ![img_10.png](images/img_10.png)
 2. Click **Next** to continue.

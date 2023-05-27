@@ -11,7 +11,7 @@ hide_title: true
 
 **Perform the following steps to configure your Shopify Source:**
 
-## Step 1: Setup your Connection 
+## Shopify Connection Settings
 
 1. Write a connection name without any spaces.
    ![img.png](images/1.png)

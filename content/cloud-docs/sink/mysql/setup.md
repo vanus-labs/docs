@@ -12,7 +12,7 @@ hide_title: true
 
 **Perform the following steps to configure your MySQL Sink:**
 
-## Setup your connection in Vanus Cloud
+## MySQL Connection Settings
 
 Enter all the following information in Vanus Cloud.
 - Host - The IP address of your MySQL Server.

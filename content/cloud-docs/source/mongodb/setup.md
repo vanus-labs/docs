@@ -230,7 +230,7 @@ You are now connected to your MongoDB database.
 
 ---
 
-## Step 2: Configure your MongoDB Vanus Cloud Source Connection  
+## Step 2: MongoDB Connection Settings
 
 1. return to your Vanus Connection page.  
 

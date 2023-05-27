@@ -220,7 +220,7 @@ wget https://downloads.mongodb.com/compass/mongodb-mongosh_1.8.1_amd64.deb
 You are now connected to your MongoDB database.  
 
 ---
-## Step 2: Set up MongoDB Sink in Vanus Cloud  
+## Step 2: MongoDB Connection Settings
 
 1. Provide the following credentials
    - Connection Uri: The URI to connect MongoDB, view [Connection String URI Format](https://www.mongodb.com/docs/manual/reference/connection-string/) for more details
