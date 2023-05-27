@@ -70,7 +70,7 @@ hide_title: true
 
 ## Step 3: Amazon S3 Connection Settings
 
-1. Write a connection name without any spaces.
+1. Write a name for your connection in Vanus Cloud.
    ![img.png](images/19.png)
 2. Enter your `Access Key` and `Secret Key` in Vanus Cloud.
    ![img.png](images/20.png)

@@ -40,13 +40,15 @@ Before obtaining Shopify events, you must have:
 ---
 
 ## Step 2: Shopify App Connection Settings
-1. Paste the **Admin API access token** into Vanus Cloud.
+1. Write a name for your connection in Vanus Cloud.
+![](images/name.png)
+2. Paste the **Admin API access token** into Vanus Cloud.
 ![](images/img_11.png)
-2. Go to your store home page and copy the name of your store.
+3. Go to your store home page and copy the name of your store.
 ![](images/img_12.png)
-3. Paste your shop name into Vanus Cloud.
+4. Paste your shop name into Vanus Cloud.
 ![](images/img_13.png)
-4. Choose from what moment you would like to start receive the events,
+5. Choose from what moment you would like to start receive the events,
     select how often do you want to receive updates and press **Next**.
 
 ---

@@ -12,10 +12,11 @@ hide_title: true
 **Perform the following steps to configure your labeling Source**
 
 ## Labeling Connection Settings
-
+![](images/name.png)
 ![img.png](images/name%20connection.png)
+1. Write a name for your connection in Vanus Cloud.
 
-1. Insert the following:
+2. Insert the following:
     - **Source Path:** A Source path refers to a field in body to label.
     - **Target Path:** A Target path refers to a field in body where the output is placed. The output is a list of labels.
     
@@ -47,10 +48,10 @@ By following this path, you can access the value of the title attribute within t
     
     ![img.png](images/source.png)
 
-2. There will be more steps Once you finish creating the connection. Click on the link to open a new page with the details on completing the connection.
+3. There will be more steps Once you finish creating the connection. Click on the link to open a new page with the details on completing the connection.
    ![](images/warning.png)
 
-3. Click **Next** and continue the configuration.
+4. Click **Next** and continue the configuration.
 
 ---
 

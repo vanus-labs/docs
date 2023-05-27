@@ -232,9 +232,7 @@ You are now connected to your MongoDB database.
 
 ## Step 2: MongoDB Connection Settings
 
-1. return to your Vanus Connection page.  
-
-2. Give your connection a name, and choose MongoDB as the source.  
+1. Write a name for your connection in Vanus Cloud.
 ![](images/vanus%20source.png)   
 
 3. Input the required credentials in the source configuration.   

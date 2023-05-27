@@ -15,8 +15,9 @@ Before forwarding events to MySQL, you must have:
 **Perform the following steps to configure your MySQL Source**
 
 ## MySQL Connection Settings
-
-1. Enter all the following information in Vanus Cloud.
+1. Write a name for your connection in Vanus Cloud.
+![](images/name.png)
+2. Enter all the following information in Vanus Cloud.
 - **Host** - The IP address of your MySQL Server.
 - **Port** - The Port of your MySQL Server default: 3306.
 - **Username** - A Username with the following permissions RELOAD, SHOW DATABASES, REPLICATION SLAVE, REPLICATION CLIENT.
@@ -24,7 +25,7 @@ Before forwarding events to MySQL, you must have:
 - **Database** - The database name.
 - **Table** - The table name.
 
-2. Click **Next** and continue the configuration.
+3. Click **Next** and continue the configuration.
 
 ---
 

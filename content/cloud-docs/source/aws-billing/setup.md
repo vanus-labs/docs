@@ -16,13 +16,13 @@ hide_title: true
 1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
 2. Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by searching for IAM and click the IAM service.
    ![](images/1.png)
-3. Click on the **Users tab** in the left navigation menu, and then click the **Add user** button.
+3. Click on the **Users tab** in the left navigation menu, and then click on the **Add user** button.
 ![](images/create%20a%20user.png)
-4. Write the name for your user and click **next**.
+4. Write a name for your user and click **next**.
 ![img.png](images/3.png)
 5. Select **Attach policy directly**, and **Create policy**.
 ![](images/4..png)
-6. Select the Service `Cost Explore Service`.
+6. Search and select the Service `Cost Explore Service`.
 ![img.png](images/5..png)
 7. Next search for the following policy.
    - "GetCostAndUsage", 
@@ -39,8 +39,8 @@ hide_title: true
 
 ---
 
-## Step 2: Create an Access Key and Secret Key
-1. Now click on the user you just created.
+## Step 2: Create an Access and Secret Key
+1. Now click on the user you've just created.
 ![img.png](images/11.png)
 2. Under **Security and credential** scroll down the page to `Access Key`, and Click **Create access key**.
 ![](images/12.png)
@@ -55,7 +55,7 @@ hide_title: true
 
 ## Step 3: Amazon Billing Connection Settings
 
-1. Write a name for your connection.
+1. Write a name for your connection in Vanus Cloud.
       ![img.png](images/16.png)
 2. Provide your Access Key ID and Secret Key, set the desired hour for event fetching.
 ![](images/17.png)

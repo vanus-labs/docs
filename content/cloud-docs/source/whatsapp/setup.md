@@ -13,8 +13,8 @@ hide_title: true
 
 ## whatsApp Connection Settings
 
-1. Write a connection name without any spaces.
-
+1. Write a name for your connection in Vanus Cloud.
+![](image/name.png)
 2. Click `Verify` to authorize Vanus to establish a connection with your WhatsApp account. 
 
 3. Choose to enable ChatAI to use OpenAI. 
