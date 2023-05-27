@@ -9,9 +9,9 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your ChatAI Source:**
+**Perform the following steps to configure your ChatAI Source**
 
-## Set up your connection in Vanus Cloud
+## ChatAI Connection Settings
 
 1. Write a name for your connection.  
    ![img.png](images/connection.png)

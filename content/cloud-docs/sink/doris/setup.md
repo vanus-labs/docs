@@ -9,9 +9,9 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your doris Sink:**
+**Perform the following steps to configure your doris Sink**
 
-## Setup Doris Sink
+## Doris Connection Settings
 
 1. Provide the following credentials
 

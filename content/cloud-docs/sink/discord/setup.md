@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your discord Sink:**
+**Perform the following steps to configure your discord Sink**
 
 ## Step 1: Create a Server
 
@@ -45,7 +45,7 @@ hide_title: true
 
 ---
 
-## Step 3: Connection Setup
+## Step 3: Discord Connection Settings
 
 1. Go back to Vanus Cloud.
 2. Paste your webhook URL in the `URL` field.

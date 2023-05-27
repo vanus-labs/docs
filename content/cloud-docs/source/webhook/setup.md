@@ -7,9 +7,9 @@ hide_title: true
 
 - Have a HTTP client.
 
-**Perform the following steps to configure your Webhook Source:**
+**Perform the following steps to configure your Webhook Source**
 
-## Step 1: Create a Connection
+## Webhook Connection Settings
 
 1. Write a name for your connection.
    ![img.png](images/1.png)

@@ -12,9 +12,9 @@ Before forwarding events to MySQL, you must have:
 
 ---
 
-**Perform the following steps to configure your MySQL Source:**
+**Perform the following steps to configure your MySQL Source**
 
-## Step 1: Setup your connection 
+## MySQL Connection Settings
 
 1. Enter all the following information in Vanus Cloud.
 - **Host** - The IP address of your MySQL Server.

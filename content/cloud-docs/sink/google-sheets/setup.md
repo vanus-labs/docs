@@ -11,7 +11,7 @@ Before forwarding events to Google Sheets, you must have:
 
 ---
 
-**Perform the following steps to configure your google-sheets: Sink**
+**Perform the following steps to configure your google-sheets Sink**
 
 ## Step 1: Create a Google Spreadsheet
 
@@ -70,7 +70,7 @@ import TabItem from '@theme/TabItem';
 
 ---
 
-## Step 3: Finish your Connection.
+## Step 3: Google sheets Connection Settings
 
 1. Paste the string from the sheet URL Example: `1i9b80jHcKzkUSOUDE9RAjnGevdWKScq_6Jnpofvb4CU` from Step 1.
 2. Obtain the name of the sheet at the bottom of the spreadsheet.

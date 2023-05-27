@@ -11,7 +11,7 @@ Before forwarding events to MySQL, you must have:
 
 ---
 
-**Perform the following steps to configure your Amazon RDS MySQL Sink:**
+**Perform the following steps to configure your Amazon RDS MySQL Sink**
 
 ## Step 1: Setup A Mysql server in AWS using RDS 
 
@@ -116,7 +116,7 @@ Now you can connect to your server and create a table and database.
 
 ---
 
-## Step 2: Setup your connection in Vanus Cloud
+## Step 2: Amazon RDS MySQL Connection Settings
 
 **To set up rds-mysql Sink in Vanus Cloud:**
 

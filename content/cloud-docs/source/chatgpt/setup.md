@@ -9,9 +9,9 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your ChatGPT Source:**
+**Perform the following steps to configure your ChatGPT Source**
 
-## Setup your Connection
+## ChatGPT Connection Settings
 
 1. Write a name for your connection.
 ![img.png](images/1.png)

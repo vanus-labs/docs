@@ -11,7 +11,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Amazon RDS MySQL Source:**
+**Perform the following steps to configure your Amazon RDS MySQL Source**
 
 ## Step 1: Setup A Mysql database server in AWS using RDS
 
@@ -119,7 +119,7 @@ Now you can connect to your server and create a table and database.
 
 ---
 
-## Step 2: Setup your connection in Vanus Cloud
+## Step 2: Amazon RDS MySQL Connection Settings
 
 1. Click on the server you just created in AWS RDS.
 ![](images/23.png)

@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your slack Sink:**
+**Perform the following steps to configure your slack Sink**
 
 ## Step 1: Create a Slack App
 1. Create an [App on Slack](https://api.slack.com/apps).
@@ -33,7 +33,7 @@ hide_title: true
 
 ---
 
-## Step 3: Finish the Connection
+## Step 3: Slack Connection Settings
 1. In Vanus Cloud, paste the Webhook URL into the `URL` field. 
 ![img_2.png](images/8.png)
 2. Click **Next** to continue.

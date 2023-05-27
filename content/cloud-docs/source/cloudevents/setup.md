@@ -9,9 +9,9 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your CloudEvents Source:**
+**Perform the following steps to configure your CloudEvents Source**
 
-## Setup your Connection
+## CloudEvents Connection Settings
 
 1. Write a name for your connection.
     ![](images/1.png)

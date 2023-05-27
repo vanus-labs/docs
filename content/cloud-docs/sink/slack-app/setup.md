@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your slack Sink:**
+**Perform the following steps to configure your slack Sink**
 
 ## Step 1: Create a Slack App
 1. Go to [Slack API](https://api.slack.com/apps), and click Create New App.
@@ -40,7 +40,7 @@ hide_title: true
 
 ---
 
-## Step 3: Finish the Connection
+## Step 3: Slack App Connection Settings
 1. Paste the Bot User OAuth Token to Slack Sink.
 ![img_10.png](images/img_10.png)
 2. Click **Next** to continue.

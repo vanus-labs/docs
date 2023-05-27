@@ -7,10 +7,9 @@ hide_title: true
 
 - A [WhatsApp account](https://www.whatsapp.com)
 
+**Perform the following steps to configure your WhatsApp Sink**
 
-**Perform the following steps to configure your WhatsApp Sink:**
-
-## Setup your Connection in Vanus Cloud 
+## WhatsApp Connection Settings
 
 1. Write a connection name without any spaces.
 

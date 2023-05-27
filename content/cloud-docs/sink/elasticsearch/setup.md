@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your elasticsearch Sink:**
+**Perform the following steps to configure your elasticsearch Sink**
 
 ## Step 1: Setup an Elasticsearch cluster 
 
@@ -78,7 +78,7 @@ hide_title: true
 
 ---
 
-## Step 2: Setting up your connection in Vanus cloud
+## Step 2: Elastic Search Connection Settings
 
 1. Provide the following credentials
    - Server Endpoint: The endpoint of your elasticsearch cluster.  

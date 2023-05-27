@@ -9,9 +9,9 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Shopify Webhook Source:**
+**Perform the following steps to configure your Shopify Webhook Source**
 
-## Setup your Connection
+## Shopify Webhook Connection Settings
 
 1. Write a name for your connection.
    ![img.png](images/1.png)

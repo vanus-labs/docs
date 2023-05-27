@@ -10,7 +10,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your feishu Sink:**
+**Perform the following steps to configure your feishu Sink**
 
 ## Step 1: Setup a Feishu bot 
 
@@ -29,7 +29,7 @@ hide_title: true
 
 ---
 
-## Step 2: Finish your Connection
+## Step 2: Feishu Connection Settings
 
 1. Paste the ** Feishu Webhook URL** into the "URL" field.
 ![img_2.png](images/img_2.png)

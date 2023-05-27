@@ -9,9 +9,9 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Amazon EventBridge Source:**
+**Perform the following steps to configure your Amazon EventBridge Source**
 
-## Config your Connection
+## Amazon EventBridge Connection Settings
 
 1. Write a name for your connection.
    ![img.png](images/1.png)

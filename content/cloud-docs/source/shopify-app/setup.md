@@ -11,7 +11,7 @@ Before obtaining Shopify events, you must have:
 
 ---
 
-**Perform the following steps to configure your Shopify App Source:**
+**Perform the following steps to configure your Shopify App Source**
 
 ## Step 1: Create an App
 1. Go to [shopify](https://shopify.com) and sign in to your account to access the shopify dashboard.
@@ -39,7 +39,7 @@ Before obtaining Shopify events, you must have:
 
 ---
 
-## Step 2: Finish the connection in Vanus Cloud
+## Step 2: Shopify App Connection Settings
 1. Paste the **Admin API access token** into Vanus Cloud.
 ![](images/img_11.png)
 2. Go to your store home page and copy the name of your store.

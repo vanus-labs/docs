@@ -9,9 +9,9 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Grafana Source:**
+**Perform the following steps to configure your Grafana Source**
 
-## Setup your connection in Vanus cloud 
+## Grafana Connection Settings
 
 1.  Write a name for your connection.
     ![img.png](images/1..png)]
