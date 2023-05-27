@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your dingtalk Sink:**
+**Perform the following steps to configure your dingtalk Sink**
 
 ## Step 1: Create a Group
 

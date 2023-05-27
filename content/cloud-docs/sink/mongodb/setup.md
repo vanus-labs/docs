@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your mongoDB sink:**
+**Perform the following steps to configure your mongoDB sink**
 
 ## Step 1: Setup a MongoDB database  
 

@@ -10,7 +10,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your MongoDB Source:**
+**Perform the following steps to configure your MongoDB Source**
 
 ## Step 1: Setup a MongoDB database  
 

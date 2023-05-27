@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Amazon S3 Source:**
+**Perform the following steps to configure your Amazon S3 Source**
 
 ## Step 1: Create a new AWS user
 

@@ -11,7 +11,7 @@ Before forwarding events to MySQL, you must have:
 
 ---
 
-**Perform the following steps to configure your Amazon RDS MySQL Sink:**
+**Perform the following steps to configure your Amazon RDS MySQL Sink**
 
 ## Step 1: Setup A Mysql server in AWS using RDS 
 

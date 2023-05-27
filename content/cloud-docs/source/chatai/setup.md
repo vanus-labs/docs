@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your ChatAI Source:**
+**Perform the following steps to configure your ChatAI Source**
 
 ## ChatAI Connection Settings
 

@@ -11,7 +11,7 @@ To set up HTTP Sink, you must have:
 
 ---
 
-**Perform the following steps to configure your http Sink:** 
+**Perform the following steps to configure your http Sink** 
 
 
 ## HTTP Connection Settings

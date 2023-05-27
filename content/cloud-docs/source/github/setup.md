@@ -10,7 +10,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Github Source:**
+**Perform the following steps to configure your Github Source**
 
 ## GitHub Connection Settings
 

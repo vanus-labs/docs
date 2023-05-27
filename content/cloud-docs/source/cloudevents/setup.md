@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your CloudEvents Source:**
+**Perform the following steps to configure your CloudEvents Source**
 
 ## CloudEvents Connection Settings
 

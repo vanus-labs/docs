@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Stripe Source:**
+**Perform the following steps to configure your Stripe Source**
 
 ## Stripe Connection Settings
 

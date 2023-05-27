@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your slack Sink:**
+**Perform the following steps to configure your slack Sink**
 
 ## Step 1: Create a Slack App
 1. Go to [Slack API](https://api.slack.com/apps), and click Create New App.

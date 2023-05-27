@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Auth0 Source:**
+**Perform the following steps to configure your Auth0 Source**
 
 ## Auth0 Connection Settings
 

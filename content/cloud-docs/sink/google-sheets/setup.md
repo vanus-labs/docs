@@ -11,7 +11,7 @@ Before forwarding events to Google Sheets, you must have:
 
 ---
 
-**Perform the following steps to configure your google-sheets: Sink**
+**Perform the following steps to configure your google-sheets Sink**
 
 ## Step 1: Create a Google Spreadsheet
 

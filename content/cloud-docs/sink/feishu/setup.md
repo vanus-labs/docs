@@ -10,7 +10,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your feishu Sink:**
+**Perform the following steps to configure your feishu Sink**
 
 ## Step 1: Setup a Feishu bot 
 

@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your ChatGPT Source:**
+**Perform the following steps to configure your ChatGPT Source**
 
 ## ChatGPT Connection Settings
 

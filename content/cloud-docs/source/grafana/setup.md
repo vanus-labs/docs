@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Grafana Source:**
+**Perform the following steps to configure your Grafana Source**
 
 ## Grafana Connection Settings
 

@@ -12,7 +12,7 @@ Before forwarding events to MySQL, you must have:
 
 ---
 
-**Perform the following steps to configure your MySQL Source:**
+**Perform the following steps to configure your MySQL Source**
 
 ## MySQL Connection Settings
 

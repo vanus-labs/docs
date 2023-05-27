@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Slack Source:**
+**Perform the following steps to configure your Slack Source**
 
 ## Step 1: Create and Install an App in Slack
 

@@ -10,7 +10,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Amazon RDS PostGreSQL Source:**
+**Perform the following steps to configure your Amazon RDS PostGreSQL Source**
 
 ## Step 1: (Optional) Creating a Snowflake Account
 When you sign up for an account on Snowflake, you'll receive 30 days of free access along with $400 credits. However, any usage beyond this limit will be charged. The free trial begins once you complete the sign-up process and activate your account.

@@ -11,7 +11,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Amazon RDS MySQL Source:**
+**Perform the following steps to configure your Amazon RDS MySQL Source**
 
 ## Step 1: Setup A Mysql database server in AWS using RDS
 

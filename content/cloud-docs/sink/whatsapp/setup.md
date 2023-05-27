@@ -7,7 +7,7 @@ hide_title: true
 
 - A [WhatsApp account](https://www.whatsapp.com)
 
-**Perform the following steps to configure your WhatsApp Sink:**
+**Perform the following steps to configure your WhatsApp Sink**
 
 ## WhatsApp Connection Settings
 

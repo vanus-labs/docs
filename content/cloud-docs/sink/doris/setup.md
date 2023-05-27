@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your doris Sink:**
+**Perform the following steps to configure your doris Sink**
 
 ## Doris Connection Settings
 

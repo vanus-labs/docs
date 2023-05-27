@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your discord Sink:**
+**Perform the following steps to configure your discord Sink**
 
 ## Step 1: Create a Server
 

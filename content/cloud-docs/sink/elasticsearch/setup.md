@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your elasticsearch Sink:**
+**Perform the following steps to configure your elasticsearch Sink**
 
 ## Step 1: Setup an Elasticsearch cluster 
 

@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Shopify Source:**
+**Perform the following steps to configure your Shopify Source**
 
 ## Shopify Connection Settings
 

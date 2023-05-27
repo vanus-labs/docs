@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your labeling Source:**
+**Perform the following steps to configure your labeling Source**
 
 ## Labeling Connection Settings
 

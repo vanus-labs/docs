@@ -10,7 +10,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Amazon S3 Sink:**
+**Perform the following steps to configure your Amazon S3 Sink**
 
 ## Step 1: Create an AWS User
 

@@ -7,7 +7,7 @@ hide_title: true
 
 - Have a HTTP client.
 
-**Perform the following steps to configure your Webhook Source:**
+**Perform the following steps to configure your Webhook Source**
 
 ## Webhook Connection Settings
 

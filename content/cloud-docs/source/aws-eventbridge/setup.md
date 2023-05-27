@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Amazon EventBridge Source:**
+**Perform the following steps to configure your Amazon EventBridge Source**
 
 ## Amazon EventBridge Connection Settings
 

@@ -11,7 +11,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Amazon RDS PostGreSQL Source:**
+**Perform the following steps to configure your Amazon RDS PostGreSQL Source**
 
 ## Step 1: Setup PostGreSQL Server in AWS (Optional)
 

@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Shopify Webhook Source:**
+**Perform the following steps to configure your Shopify Webhook Source**
 
 ## Shopify Webhook Connection Settings
 

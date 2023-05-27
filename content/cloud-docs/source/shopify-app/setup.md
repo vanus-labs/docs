@@ -11,7 +11,7 @@ Before obtaining Shopify events, you must have:
 
 ---
 
-**Perform the following steps to configure your Shopify App Source:**
+**Perform the following steps to configure your Shopify App Source**
 
 ## Step 1: Create an App
 1. Go to [shopify](https://shopify.com) and sign in to your account to access the shopify dashboard.

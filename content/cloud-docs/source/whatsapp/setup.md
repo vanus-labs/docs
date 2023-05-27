@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your WhatsApp Source:**
+**Perform the following steps to configure your WhatsApp Source**
 
 ## whatsApp Connection Settings
 

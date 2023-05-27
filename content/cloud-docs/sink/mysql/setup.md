@@ -10,7 +10,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your MySQL Sink:**
+**Perform the following steps to configure your MySQL Sink**
 
 ## MySQL Connection Settings
 
