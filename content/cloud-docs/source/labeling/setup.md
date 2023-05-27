@@ -47,8 +47,8 @@ By following this path, you can access the value of the title attribute within t
     If "key3" or "key4" or "key5" is present in the field of `Source Path`, the `Target Path` will have "label2".
     
     ![img.png](images/source.png)
+3. After creating the connection, there are a few more steps. Simply click the link to open a new page with all the details on how to complete the connection.
 
-3. There will be more steps Once you finish creating the connection. Click on the link to open a new page with the details on completing the connection.
    ![](images/warning.png)
 
 4. Click **Next** and continue the configuration.
