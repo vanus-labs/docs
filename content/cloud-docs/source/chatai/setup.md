@@ -18,17 +18,8 @@
     - **Basic Auth Username (optional):** A method for an HTTP user agent to provide a username when making a request.
     - **Basic Auth Password (optional):** A method for an HTTP user agent to provide a password when making a request.  
       ![img.png](images/chatai-config.png)
-
-3. Save the Webhook URL, after finish the connection you will be able to send HTTP request to it.
-   
-#### Here is an example
-
-```shell
-curl -i https://example.com \  # The Webhook URL 
- -H "identifier:tag" \  # Optional needed if you added a Identifier.
- -u johndoe:12345 \  # Optional needed if you added a username and password
- -X POST -d "When was the internet invented"  # The question you want to ask the AI
-```
+3. There will be more steps Once you finish creating the connection. Click on the link to open a new page with the details on completing the connection.
+   ![](images/warning.png)
 
 4. Click **Next** and continue the configuration.
 
