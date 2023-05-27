@@ -195,6 +195,10 @@ html[class*="docs-doc-id-cloud-docs"] .theme-doc-toc-mobile {
   display: none;
 }
 
+html[class*="docs-doc-id-cloud-docs"] p {
+  font-size: 14px;
+}
+
 .main-wrapper div[class^="expandButton"] {
   align-items: end;
   padding-bottom: 10px;
