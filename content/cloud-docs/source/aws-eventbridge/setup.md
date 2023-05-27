@@ -9,7 +9,7 @@
 
 # Step 1: Setup EventBridge to Send Events
 
-### Create an Event Bus
+#### Create an Event Bus
  
 1. Navigate to the [EventBridge console](https://console.aws.amazon.com/events/home).
 
@@ -23,7 +23,7 @@
    ![img_5.png](images/4.png) 
 
 
-### Create a Rule
+#### Create a Rule
 
 1. Go to **Rules** from the side menu and click **Create rule**. 
    ![img_6.png](images/5.png)  
@@ -38,7 +38,7 @@
 ![img.png](images/8.png)
 
 
-### Create an API Destination and Connection*
+#### Create an API Destination and Connection*
 
 1. Select EventBridge API destination.
     ![img_9.png](images/9.png)  

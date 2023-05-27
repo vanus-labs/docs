@@ -11,7 +11,7 @@ Before forwarding events to MySQL, you must have:
 
 # Step 1: Setup A Mysql server in AWS using RDS 
 
-### Create an RDS account
+#### Create an RDS account
 
 1. Log in to the [AWS Management Console](https://aws.amazon.com/) using your root account credentials.  
 ![3](images/1.png)
@@ -26,7 +26,7 @@ Before forwarding events to MySQL, you must have:
 ![7](images/4.png)
 
 
-### Create database
+#### Create database
 
 Now you have options to select your engine.  
 
@@ -42,7 +42,7 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 ![10](images/7.png)
 
 
-### Settings
+#### Settings
 
 ![11](images/8.png)   
 
@@ -55,7 +55,7 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 - **Confirm password:** Type the password again.  
 
 
-### Instance configuration and storage
+#### Instance configuration and storage
 
 1. Leave the default Instance configuration. 
 
@@ -63,7 +63,7 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 ![12](images/9.png)   
 
 
-### Connectivity
+#### Connectivity
 
 1. Leave the default subnet group.  
 
@@ -95,7 +95,7 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 ![19](images/16.png)   
 
 
-### Modify your VPC security groups
+#### Modify your VPC security groups
 
 1. Click on the server you just created in AWS RDS.
 ![](images/17.png)
