@@ -111,8 +111,9 @@ Now you have options to select your engine.
 ---
 
 ## Step 2: PostGreSQL Connection Settings
-
-1. Provide the following credentials: 
+1. Write a name for your connection in Vanus Cloud.
+![](images/name.png)
+2. Provide the following credentials: 
 - Host 
 - Port 
 - Username 
@@ -121,7 +122,7 @@ Now you have options to select your engine.
 - Schemas 
 - Tables   
 
-2. Click **Next** and continue the configuration.
+3. Click **Next** and continue the configuration.
 
 ---
 

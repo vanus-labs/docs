@@ -13,9 +13,8 @@ hide_title: true
 
 ## ChatAI Connection Settings
 
-1. Write a name for your connection.  
+1. Write a name for your connection in Vanus Cloud.
    ![img.png](images/connection.png)
-
 2. Fill in the various required configurations
     - **Chat Mode:** Select Chat Mode (ChatGPT or Ernie Bot), Default is ChatGPT
     - **Context (optional):** Select Context as on if you want the AI to remember previous conversations
