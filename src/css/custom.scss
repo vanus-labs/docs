@@ -190,12 +190,9 @@ html[class*="docs-doc-id-reference"] footer {
 }
 
 html[class*="docs-doc-id-cloud-docs"] nav,
-html[class*="docs-doc-id-cloud-docs"] footer {
+html[class*="docs-doc-id-cloud-docs"] footer,
+html[class*="docs-doc-id-cloud-docs"] .theme-doc-toc-mobile {
   display: none;
-
-  .theme-doc-toc-mobile {
-    display: none;
-  }
 }
 
 .main-wrapper div[class^="expandButton"] {
