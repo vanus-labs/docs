@@ -197,13 +197,39 @@ const sidebars = {
             },
             {
               type: "doc",
-              id: "user-guides/template-guides/github-charge-success-slack",
+              id: "user-guides/template-guides/stripe-charge-success-slack",
               label: "Stripe Charge Success event triggers a Slack message",
             },
             {
               type: "doc",
-              id: "user-guides/template-guides/github-charge-success-discord",
+              id: "user-guides/template-guides/stripe-charge-failed-slack",
+              label: "Stripe Charge Failed event triggers a Slack message",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/stripe-charge-success-discord",
               label: "Stripe Charge Success event triggers a Discord message",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/stripe-charge-failed-discord",
+              label: "Stripe Charge Failed event triggers a Discord message",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/github-star-mysql",
+              label: "Github Star Event Triggers a new row on MySQL",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/github-issue-comment-mysql",
+              label:
+                "Github Issue create comment event triggers a new row on MySQL",
+            },
+            {
+              type: "doc",
+              id: "user-guides/template-guides/github-issue-mysql",
+              label: "Github Issue create event triggers a new row on MySQL",
             },
           ],
         },
