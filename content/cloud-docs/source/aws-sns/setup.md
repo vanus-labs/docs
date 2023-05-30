@@ -3,7 +3,7 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 - An [AWS Account](https://aws.amazon.com) 
 - An AWS SNS Topic 
@@ -16,11 +16,11 @@ hide_title: true
 
 **Perform the following steps to configure your Amazon SNS Source**
 
-## Step 1: Create a new AWS user 
+### Step 1: Create a new AWS user 
 
 Create a new user and set the proper IAM policy. 
 
-### Create a user 
+#### Create a user 
 
 1. Log in to the [AWS Management Console](https://aws.amazon.com/) using your root account credentials. 
 
@@ -45,7 +45,7 @@ Create a new user and set the proper IAM policy.
 8. Review and click on **Create user**. 
 ![](images/create%20user.png)  
 
-### Create Access Key 
+#### Create Access Key 
 
 1. click on the user you just created. 
 ![](images/click%20into%20user.png)  
@@ -69,7 +69,7 @@ Create a new user and set the proper IAM policy.
 
 ---
 
-## Step 2: Create an SNS topic 
+### Step 2: Create an SNS topic 
 
 1. Navigate to the **Simple Notification Service** page by typing **SNS** in the search bar and selecting it from the drop down menu. 
 ![](images/sns%20search.png)  
@@ -91,7 +91,7 @@ Create a new user and set the proper IAM policy.
 
 ---
 
-## Step 3: Amazon SNS Connection Settings 
+### Step 3: Amazon SNS Connection Settings 
 
 1. Write a connection name without any spaces.  
 ![](images/Name%20connection.png)  

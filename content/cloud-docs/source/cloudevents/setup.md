@@ -3,15 +3,15 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 - A CloudEvent HTTP Client.
 
 ---
 
-**Perform the following steps to configure your CloudEvents Source**
+**Perform the following steps to configure your CloudEvents Source.**
 
-## CloudEvents Connection Settings
+### CloudEvents Connection Settings
 
 1. Write a name for your connection in Vanus Cloud.
     ![](images/1.png)

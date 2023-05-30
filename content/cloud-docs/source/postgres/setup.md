@@ -13,9 +13,9 @@ hide_title: true
 
 **Perform the following steps to configure your Amazon RDS PostGreSQL Source**
 
-## Step 1: Setup PostGreSQL Server in AWS (Optional)
+### Step 1: Setup PostGreSQL Server in AWS (Optional)
 
-### Creating an RDS account
+#### Creating an RDS account
 
 1. Log in to the [AWS Management Console](https://aws.amazon.com/)   
 
@@ -27,7 +27,7 @@ hide_title: true
 ![](images/4.png)   
 
 
-### Create Database
+#### Create Database
 
 Now you have options to select your engine.  
 
@@ -41,7 +41,7 @@ Now you have options to select your engine.
 
 >**Note** Multi-AZ deployment is not available for the free tier, you will have to pay for it. Using a Multi-AZ deployment automatically provisions and maintains a synchronous standby replica in a different Availability Zone.
 
-### Settings
+#### Settings
 
 1. 
     - DB Instance Identifier: Type a name unique to the region your DB instance has been set in.  
@@ -54,7 +54,7 @@ Now you have options to select your engine.
     ![](images/7.png)   
 
 
-### Instance configuration and storage
+#### Instance configuration and storage
 
 2. 
     - Leave the default Instance configuration.  
@@ -65,7 +65,7 @@ Now you have options to select your engine.
     ![](images/8.png)   
 
 
-### Connectivity
+#### Connectivity
 
 3. 
     - Leave the default VPC and subnet group.  
@@ -110,7 +110,7 @@ Now you have options to select your engine.
 
 ---
 
-## Step 2: PostGreSQL Connection Settings
+### Step 2: PostGreSQL Connection Settings
 1. Write a name for your connection in Vanus Cloud.
 ![](images/name.png)
 2. Provide the following credentials: 

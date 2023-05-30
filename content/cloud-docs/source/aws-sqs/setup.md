@@ -3,29 +3,25 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
-- An [AWS Account](https://aws.amazon.com) 
-- An AWS SQS Queue 
-- AWS IAM Access Key 
-- AWS permission for the IAM user: 
-  - AmazonSQSFullAccess
+- An [AWS Account](https://aws.amazon.com)
 
 
 ---
 
-**Perform the following steps to configure your Amazon SQS Source**
+**Perform the following steps to configure your Amazon SQS Source.**
 
-## Step 1: Create a new AWS user 
+### Step 1: Create a new AWS user 
 
 Create a new user and set the proper IAM policy. 
 
-### Create a user 
+#### Create a user 
 
 1. Log in to the [AWS Management Console](https://aws.amazon.com/) using your root account credentials. 
 
 
-2. Navigate to the IAM service by typing **IAM** in the search bar and selecting it from the drop down menu. 
+2. Navigate to the IAM service by typing **IAM** in the search bar and selecting it from the drop-down menu. 
 ![](images/iam.png)  
 
 3. Click on the Users tab in the left navigation menu. 
@@ -46,9 +42,9 @@ Create a new user and set the proper IAM policy.
 8. Review and click on **Create user**. 
 ![](images/create%20user.png)  
 
-### Create Access Key 
+#### Create Access Key 
 
-1. click on the user you just created. 
+1. Click on the user you just created. 
 ![](images/click%20user.png)  
 
 2. Click on **Security credentials**. 
@@ -57,7 +53,7 @@ Create a new user and set the proper IAM policy.
 3. Click on **Create access key**. 
 ![](images/create%20access%20key.png)  
 
-4. Select Command line interface (CLI), accept recommendations and click **Next**. 
+4. Select the Command line interface (CLI), accept recommendations and click **Next**. 
 ![](images/CLI%20access.png)  
 
 5. Click on **Create access key**.  
@@ -74,9 +70,9 @@ Create a new user and set the proper IAM policy.
 
 ---
 
-## Step 2: Create an SQS Queue on AWS 
+### Step 2: Create an SQS Queue on AWS 
 
-1. Navigate to the **Simple Queue Service** page by typing **SQS** in the search bar and selecting it from the drop down menu. 
+1. Navigate to the **Simple Queue Service** page by typing **SQS** in the search bar and selecting it from the drop-down menu. 
 ![](images/sqs%20search.png)  
 
 2. Click on **Create queue**. 
@@ -85,7 +81,7 @@ Create a new user and set the proper IAM policy.
 3. Select the type of queue you want to create and name your queue. 
 ![](images/name%20q.png)  
 
-4. Leave the configuration on default setting, or change them to suit your needs. 
+4. Leave the configuration on the default setting, or change them to suit your needs. 
 ![](images/config%20settings.png)  
 
 - **Visibility timeout:** This is a setting that determines how long a message received from a queue will remain hidden from other consumers. When a message is received from an Amazon SQS queue by a consumer, the visibility timeout starts. If the consumer fails to process and delete the message before the visibility timeout expires, the message becomes visible to other consumers. 
@@ -105,17 +101,17 @@ Create a new user and set the proper IAM policy.
 7. Click on **Create queue**.  
 ![](images/create%20queue%20final.png)  
 
-8. Copy your SQS Arn, it would be needed when creating your connection in Vanus. 
+8. Copy your SQS Arn, it will be needed when creating your connection in Vanus. 
 ![](images/copy%20arn.png)  
 
 ---
 
-## Step 3: Amazon SQS Connection Settings   
+### Step 3: Amazon SQS Connection Settings   
 
 1. Write a connection name without any spaces.  
 ![](images/Name%20connection.png)  
 
-2. Enter your Access Key ID, Secret Access key, SQS ARN and click **Next** to continue the configuration.  
+2. Enter your Access Key ID, Secret Access key and SQS ARN, and click **Next** to continue the configuration.  
 ![](images/SQS%20source%20config.png)  
 
 ---

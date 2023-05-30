@@ -9,9 +9,9 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your WhatsApp Source**
+**Perform the following steps to configure your WhatsApp Source.**
 
-## whatsApp Connection Settings
+## WhatsApp Connection Settings
 
 1. Write a name for your connection in Vanus Cloud.
 ![](image/name.png)
