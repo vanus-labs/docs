@@ -85,9 +85,10 @@ But, if you're using some **Vanus Templates** like `Send a custom greeting messa
 ## Step 6: Slack Connection Settings
 
 1. Write a name for your connection in Vanus Cloud.
-   ![](images/name%20connection.png)
-
-2. Click **next** and finish the configurations.  
+![](images/name%20connection.png)
+2. After creating the connection, there are a few more steps. Simply click the link to open a new page with all the details on how to complete the connection.
+![](images/2.png)
+3. Click **next** and finish the configurations.  
 
 ---
 

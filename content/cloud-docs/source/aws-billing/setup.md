@@ -57,7 +57,7 @@ hide_title: true
 
 1. Write a name for your connection in Vanus Cloud.
       ![img.png](images/16.png)
-2. Provide your Access Key ID and Secret Key, set the desired hour for event fetching.
+2. Provide your Access Key ID and Secret Key, and set the desired hour according to UTC time that you want your billing information to be fetch.
 ![](images/17.png)
 3. Click **Next** and continue the configuration.
 

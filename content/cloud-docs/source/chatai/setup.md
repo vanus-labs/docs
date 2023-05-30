@@ -22,7 +22,7 @@ hide_title: true
     - **Basic Auth Username (optional):** A method for an HTTP user agent to provide a username when making a request.
     - **Basic Auth Password (optional):** A method for an HTTP user agent to provide a password when making a request.  
       ![img.png](images/chatai-config.png)
-3. There will be more steps Once you finish creating the connection. Click on the link to open a new page with the details on completing the connection.
+3. After creating the connection, there are a few more steps. Simply click the link to open a new page with all the details on how to complete the connection.
    ![](images/warning.png)
 
 4. Click **Next** and continue the configuration.

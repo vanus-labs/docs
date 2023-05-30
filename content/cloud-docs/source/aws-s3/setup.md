@@ -16,9 +16,9 @@ hide_title: true
 1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
 2. Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by searching for IAM and click the IAM service.
    ![](images/1.png)
-3. Click on the **Users tab** in the left navigation menu, and then click the **Add user** button.
+3. Click on the **Users tab** in the left navigation menu, and then click on the **Add user** button.
    ![](images/2.png)
-4. Write the name for your user and click **next**.
+4. Write a name for your user and click **next**.
    ![img.png](images/3.png)
 5. Select **Attach policy directly**, and **Create policy**.
    ![](images/4.png)
