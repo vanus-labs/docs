@@ -21,7 +21,7 @@
   ![](images/img_4.png)
 3. Don't close this page but continue in Vanus Cloud
 4. Paste the two credentials from Slack as configurations.
-   ![](images/token%20and%20secret.png)
+   ![](images/img_19.png)
 
 ---
 
@@ -54,9 +54,9 @@ But, if you're using some **Vanus Templates** like `Send a custom greeting messa
 1. Scroll down, click **Subscribe to bot events** and after you will be able to click **Add Bot User Event**.
    ![](images/img_9.png)
 2. Select the events you would like to receive, for example you can select `member_joined_channel` to receive events whenever a new member joins your Slack Channel.
-   ![](images/member_joined.png)
+   ![](images/img_17.png)
 3. Finally you can **Save Changes** to complete your configuration.
-   ![](images/save%20changes.png)
+   ![](images/img_18.png)
 
 ---
 
