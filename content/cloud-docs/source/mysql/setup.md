@@ -3,7 +3,7 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 Before forwarding events to MySQL, you must have:
 
@@ -14,7 +14,7 @@ Before forwarding events to MySQL, you must have:
 
 **Perform the following steps to configure your MySQL Source**
 
-## MySQL Connection Settings
+### MySQL Connection Settings
 1. Write a name for your connection in Vanus Cloud.
 ![](images/name.png)
 2. Enter all the following information in Vanus Cloud.

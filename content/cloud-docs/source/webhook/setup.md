@@ -3,13 +3,13 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
-- Have a HTTP client.
+- Have an HTTP client.
 
-**Perform the following steps to configure your Webhook Source**
+**Perform the following steps to configure your Webhook Source.**
 
-## Webhook Connection Settings
+### Webhook Connection Settings
 
 1. Write a name for your connection in Vanus Cloud.
    ![img.png](images/1.png)

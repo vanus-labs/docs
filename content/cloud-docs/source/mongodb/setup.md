@@ -3,7 +3,7 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites  
+### Prerequisites  
 
 - A [MongoDB account](https://account.mongodb.com/account/register)   
 - A database 
@@ -12,9 +12,9 @@ hide_title: true
 
 **Perform the following steps to configure your MongoDB Source**
 
-## Step 1: Setup a MongoDB database  
+### Step 1: Setup a MongoDB database  
 
-### Create a MongoDB account (Optional)
+#### Create a MongoDB account (Optional)
 
 1. Go to the [official MongoDB website](https://www.mongodb.com/) and click on **start free** to create a free account. 
 ![](images/mongodb%20start%20free.png)   
@@ -36,7 +36,7 @@ hide_title: true
 ![](images/verified%20email.png)   
 
 
-### Project details information
+#### Project details information
 
 ![](images/wwelcome%20to%20atlass.png)   
 
@@ -50,7 +50,7 @@ hide_title: true
 Select your preferred programming language. 
 
 
-### Setting up your MongoDB database
+#### Setting up your MongoDB database
 
 ![](images/create%20database.png)   
 
@@ -72,7 +72,7 @@ A cluster provides high availability and scalability to a MongoDB deployment, en
 5. Click on create to create your database.  
 
 
-### Security Setup
+#### Security Setup
 
 ![](images/security%20quick%20start.png)   
 
@@ -83,7 +83,7 @@ A cluster provides high availability and scalability to a MongoDB deployment, en
 3. Click on **create user** to create the user.  
 
 
-### Setting up the host
+#### Setting up the host
 
 We are going to be using an EC2 instance running the Ubuntu AMI to connect to our DynamoDB database. We need to set that up before moving to the next step.  
 
@@ -96,7 +96,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 3. Click on the **Launch Instance** button.  
 ![](images/launch%20instance.png)   
 
-### Name and AMI setting
+#### Name and AMI setting
 
 1. Give your instance a name and select an Amazon machine image for the instance.  
 ![](images/server%20name%20and%20ami.png)   
@@ -108,7 +108,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 3. Select an instance type that is free tier eligible to prevent extra cost.  
 
 
-### Key pair setting
+#### Key pair setting
 
 1. Create a key pair, to enable you SSH into your server.  
 ![](images/create%20keypair.png)   
@@ -118,7 +118,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 3. Click on **create key pair** to finish the creation of the key pair.  
 ![](images/create%20keypair2.png)   
 
-### Network setting
+#### Network setting
 
 1. Leave the default VPC and subnet.  
 
@@ -141,7 +141,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 ![](images/copy%20instance%20IP.png)   
 
 
-### MongoDB connection setting
+#### MongoDB connection setting
 
 1. Choose a connection point, you can choose to connect from your local environment, or a cloud environment.  
 
@@ -156,7 +156,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 5. Your database is ready to be used. Click on "Go to Database" to be taken to your database page.  
 ![](images/go%20to%20database.png)   
 
-### SSH Into your EC2 Instance
+#### SSH Into your EC2 Instance
 
 Now we want to SSH into our EC2 instance to enable us connect to our database host.  
 
@@ -175,7 +175,7 @@ Now we want to SSH into our EC2 instance to enable us connect to our database ho
 5. You've been connected to your instance.  
 
 
-### MongoDB cluster Connection
+#### MongoDB cluster Connection
 
 1. Click on the **connect** button.  
 ![](images/connect%20to%20mongodb.png)   
@@ -211,7 +211,7 @@ wget https://downloads.mongodb.com/compass/mongodb-mongosh_1.8.1_amd64.deb
 You are now connected to your MongoDB database.  
 
 
-### Get the information needed for the Vanus source connection
+#### Get the information needed for the Vanus source connection
 
 1. To find your **Host**, run the command `db.runCommand({whatsmyuri:1})` and it'll be outputed to the terminal.  
 
@@ -230,7 +230,7 @@ You are now connected to your MongoDB database.
 
 ---
 
-## Step 2: MongoDB Connection Settings
+#### Step 2: MongoDB Connection Settings
 
 1. Write a name for your connection in Vanus Cloud.
 ![](images/vanus%20source.png)   

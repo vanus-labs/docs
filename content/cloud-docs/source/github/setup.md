@@ -3,21 +3,21 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 - GitHub Account with proper permissions(`Admin` or `Owner`) to your repository
 - GitHub Repositories
 
 ---
 
-**Perform the following steps to configure your Github Source**
+**Perform the following steps to configure your GitHub Source.**
 
-## GitHub Connection Settings
+### GitHub Connection Settings
 
 1. Write a name for your connection in Vanus Cloud.
    ![img.png](images/1.png)  
 
-2. Click `Authorize` to authorize to your GitHub account.
+2. Click `Authorize` to authorize your GitHub account.
 ![img.png](images/authorise.png)  
 
 3. **Install and Authorize** Vanus to read repos and create webhooks.

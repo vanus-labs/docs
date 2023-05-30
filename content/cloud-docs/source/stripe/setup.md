@@ -3,15 +3,15 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 - A Stripe Account
 
 ---
 
-**Perform the following steps to configure your Stripe Source**
+**Perform the following steps to configure your Stripe Source.**
 
-## Stripe Connection Settings
+### Stripe Connection Settings
 
 1. Write a name for your connection in Vanus Cloud.
    ![img.png](images/1.png)

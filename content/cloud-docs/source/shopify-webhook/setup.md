@@ -3,15 +3,15 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 - A Shopify Account
 
 ---
 
-**Perform the following steps to configure your Shopify Webhook Source**
+**Perform the following steps to configure your Shopify Webhook Source.**
 
-## Shopify Webhook Connection Settings
+### Shopify Webhook Connection Settings
 
 1. Write a name for your connection in Vanus Cloud.
    ![img.png](images/1.png)

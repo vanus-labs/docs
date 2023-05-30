@@ -3,7 +3,7 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 - A [feishu account](https://www.feishu.cn).
 
@@ -11,7 +11,7 @@ hide_title: true
 
 **Perform the following steps to configure your ChatGPT Source**
 
-## ChatGPT Connection Settings
+### ChatGPT Connection Settings
 
 1. Write a name for your connection in Vanus Cloud.
 ![img.png](images/1.png)
