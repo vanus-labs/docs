@@ -3,7 +3,7 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-#### Prerequisites
+### Prerequisites
 
 - An [AWS Account](https://aws.amazon.com)
 
@@ -11,7 +11,7 @@ hide_title: true
 
 **Perform the following steps to configure your Amazon S3 Source.**
 
-#### Step 1: Create a new AWS user
+### Step 1: Create a new AWS user
 
 1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
 2.   Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by searching for IAM and clicking the **IAM service**.
@@ -53,7 +53,7 @@ hide_title: true
 
 ---
 
-#### Step 2: Create an Access Key
+### Step 2: Create an Access Key
 
 1. Now click on the user you just created.
    ![img.png](images/14.png)
@@ -68,7 +68,7 @@ hide_title: true
 
 ---
 
-#### Step 3: Amazon S3 Connection Settings
+### Step 3: Amazon S3 Connection Settings
 
 1. Write a name for your connection in Vanus Cloud.
    ![img.png](images/19.png)
