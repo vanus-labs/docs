@@ -3,7 +3,7 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 - Have an Elasticsearch cluster. 
 
@@ -11,7 +11,7 @@ hide_title: true
 
 **Perform the following steps to configure your elasticsearch Sink**
 
-## Step 1: Setup an Elasticsearch cluster 
+### Step 1: Setup an Elasticsearch cluster 
 
 1. Got to the [Elasticsearch](https://www.elastic.co/) official website and sign up for an account.  
 ![](images/1.png)   
@@ -46,7 +46,7 @@ hide_title: true
 ![](images/5.png)   
 
 
-### Getting your server endpoint
+#### Getting your server endpoint
 
 1. Click on the **settings** icon at the right side of your deployment.  
 ![](images/6.png)   
@@ -62,7 +62,7 @@ hide_title: true
 ![](images/9.png)   
 
 
-### Creating an Index
+#### Creating an Index
 
 1. Click on API Console  
 ![](images/10.png)   
@@ -78,7 +78,7 @@ hide_title: true
 
 ---
 
-## Step 2: Elastic Search Connection Settings
+### Step 2: Elastic Search Connection Settings
 
 1. Provide the following credentials
    - Server Endpoint: The endpoint of your elasticsearch cluster.  

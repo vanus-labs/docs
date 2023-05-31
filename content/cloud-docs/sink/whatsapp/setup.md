@@ -3,13 +3,13 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 - A [WhatsApp account](https://www.whatsapp.com)
 
 **Perform the following steps to configure your WhatsApp Sink**
 
-## WhatsApp Connection Settings
+### WhatsApp Connection Settings
 
 1. Write a connection name without any spaces.
 

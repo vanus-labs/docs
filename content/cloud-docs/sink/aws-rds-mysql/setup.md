@@ -3,7 +3,7 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 Before forwarding events to MySQL, you must have:
 
@@ -13,61 +13,49 @@ Before forwarding events to MySQL, you must have:
 
 **Perform the following steps to configure your Amazon RDS MySQL Sink**
 
-## Step 1: Setup A Mysql server in AWS using RDS 
-
-### Create an RDS account
+### Step 1: Setup A Mysql server in AWS using RDS
 
 1. Log in to the [AWS Management Console](https://aws.amazon.com/) using your root account credentials.  
 ![3](images/1.png)
 
-2. Type "RDS" in the search box and select it from the results.   
+2. Type "[RDS](https://console.aws.amazon.com/rds/)" in the search box and select it from the results.   
 ![5](images/2.png)
 
 3. In the top right corner of the Amazon RDS console, select the Region in which you want to create the DB instance.   
 ![6](images/3.png)
 
-4. Click on **Create database** in the **Create Database** section.  
+4. Click **Create database** in the **Create Database** section.  
 ![7](images/4.png)
 
-
-### Create database
-
-Now you have options to select your engine.  
-
-1. Select **standard create** and choose the MySQL icon.  
+5. Select **standard create** and choose the MySQL icon.  
 ![8](images/5.png)
 
-2. Leave the default value for edition, and select the **Free Tier Template** for testing or **Production Template** for production.   
+6. Leave the default value for edition, and select the **Free Tier Template** for testing or **Production Template** for production.   
 ![9](images/6.png)   
 
->**Note** 
-Multi-AZ deployment is not available for the free tier, you will have to pay for it. Using a Multi-AZ deployment automatically provisions and maintains a synchronous standby replica in a different Availability Zone.  
+:::note
+Multi-AZ deployment is only available for paid tier. A Multi-AZ deployment automatically provisions and maintains a synchronous standby replica in a different Availability Zone.
+:::
 
 ![10](images/7.png)
 
+7. Enter the following information
+![11](images/8.png)
+- **DB Instance Identifier:** Give a unique name to your instant.
 
-### Settings
+- **Master Username:** This is the username that will be used to log in to your DB instance.
 
-![11](images/8.png)   
+- **Master Password:** This is the password that will be use to log in with the username.
 
-- **DB Instance Identifier:** Type a name unique to the region your DB instance has been set in.  
+- **Confirm password:** Write the password again.
 
-- **Master Username:** This is the username that would be used to log in to your DB instance.  
+8. Leave the default Instance configuration. 
 
-- **Master Password:** Type a password that takes the given constraints into consideration.  
-
-- **Confirm password:** Type the password again.  
-
-
-### Instance configuration and storage
-
-1. Leave the default Instance configuration. 
-
-2. Select the gp2 storage type, it's efficient and cost effective for our intended use.  
+9. Select the gp2 storage type, it's efficient and cost effective for our intended use.  
 ![12](images/9.png)   
 
 
-### Connectivity
+### Step 2: Connectivity
 
 1. Leave the default subnet group.  
 
@@ -99,7 +87,7 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 ![19](images/16.png)   
 
 
-### Modify your VPC security groups
+#### Modify your VPC security groups
 
 1. Click on the server you just created in AWS RDS.
 ![](images/17.png)
@@ -116,7 +104,7 @@ Now you can connect to your server and create a table and database.
 
 ---
 
-## Step 2: Amazon RDS MySQL Connection Settings
+### Step 3: Amazon RDS MySQL Connection Settings
 
 **To set up rds-mysql Sink in Vanus Cloud:**
 

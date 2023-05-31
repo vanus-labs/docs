@@ -3,7 +3,7 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 - A running MySQL server.
 - A Database and Table created.
@@ -12,7 +12,7 @@ hide_title: true
 
 **Perform the following steps to configure your MySQL Sink**
 
-## MySQL Connection Settings
+### MySQL Connection Settings
 
 Enter all the following information in Vanus Cloud.
 - Host - The IP address of your MySQL Server.

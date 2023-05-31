@@ -3,7 +3,7 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 - A Discord Account
 
@@ -11,7 +11,7 @@ hide_title: true
 
 **Perform the following steps to configure your discord Sink**
 
-## Step 1: Create a Server
+### Step 1: Create a Server
 
 1. Go to the Discord application.
 
@@ -30,7 +30,7 @@ hide_title: true
 
 ---
 
-## Step 2: Get a webhook url
+### Step 2: Get a webhook url
 
 1. Go to **Server Settings**.
     ![img_2.png](images/3.png)
@@ -45,7 +45,7 @@ hide_title: true
 
 ---
 
-## Step 3: Discord Connection Settings
+### Step 3: Discord Connection Settings
 
 1. Go back to Vanus Cloud.
 2. Paste your webhook URL in the `URL` field.
