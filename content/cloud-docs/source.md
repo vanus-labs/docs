@@ -2,11 +2,13 @@
 hide_table_of_contents: true
 hide_title: true
 ---
-#   
+
+### Create a Custom Connection
 
 The Source connector is a tool to connect Vanus core with other applications and services. It removes the complication of integration by converting the data and sending it to Vanus.
 
-### Create a Custom Connection
+
+### Setup
 
 Write a name for your connection, and select a Source connector in the menu.
 ![img.png](images/img.png)
