@@ -5,13 +5,11 @@ hide_title: true
 
 ### Prerequisites
 
-To set up HTTP Sink, you must have:
-
 - A payload URL.
 
 ---
 
-**Perform the following steps to configure your http Sink** 
+**Perform the following steps to configure your HTTP Sink.** 
 
 
 ### HTTP Connection Settings

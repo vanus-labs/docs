@@ -53,7 +53,7 @@ Multi-AZ deployment is only available for paid tier. A Multi-AZ deployment autom
 
 - **Master Username:** This is the username that will be used to log in to your DB instance.
 
-- **Master Password:** This is the password that will be use to log in with the username.
+- **Master Password:** This is the password that will be used to log in with the username.
 
 - **Confirm password:** Write the password again.
 

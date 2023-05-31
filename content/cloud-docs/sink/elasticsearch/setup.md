@@ -5,15 +5,15 @@ hide_title: true
 
 ### Prerequisites
 
-- Have an Elasticsearch cluster. 
+- Have an ElasticSearch cluster. 
 
 ---
 
-**Perform the following steps to configure your elasticsearch Sink**
+**Perform the following steps to configure your ElasticSearch Sink.**
 
 ### Step 1: Setup an Elasticsearch cluster 
 
-1. Got to the [Elasticsearch](https://www.elastic.co/) official website and sign up for an account.  
+1. Go to the [Elasticsearch](https://www.elastic.co/) official website and sign up for an account.  
 ![](images/1.png)   
 
 
@@ -21,7 +21,7 @@ hide_title: true
 ![](images/2.png)   
 
 
-3. Create your deployment,  a deployment includes Elasticsearch, kibana, and other elastic stack features
+3. Create your deployment. A deployment includes Elasticsearch, Kibana, and other elastic stack features
 ![](images/3.png)    
 
 - Name your deployment.  
@@ -35,20 +35,20 @@ hide_title: true
 - Click on **create deployment** to finish creating your deployment.  
 
 
-4. Download your deployment credentials, you will need them to log in to your endpoint, and they would also be needed for your Vanus connection.  
+4. Download your deployment credentials, you will need them to log in to your endpoint, and they will also be needed for your Vanus connection.  
 ![](images/4.png)   
 
 
 5. Wait for the creation of your deployment to be completed.     
 
 
-6. Your deployment has been successfully created, click **continue**  
+6. Your deployment has been successfully created, now click **continue**.
 ![](images/5.png)   
 
 
 #### Getting your server endpoint
 
-1. Click on the **settings** icon at the right side of your deployment.  
+1. Click on the **settings** icon on the right side of your deployment.  
 ![](images/6.png)   
 
 
@@ -67,21 +67,21 @@ hide_title: true
 1. Click on API Console  
 ![](images/10.png)   
 
-2. Select the **PUT** option, write the name of your index, and click submit. For this tutorial we named our index **"my_index".** 
+2. Select the **PUT** option, write the name of your index, and click submit. For this tutorial, we named our index **"my_index".** 
 ![](images/11.png)   
 
     
 ![](images/11.1.png) 
 
-3. Add a backslash and your index name to your endpoint, to see the content of your index. 
+3. Add a backslash and your index name to your endpoint to see the content of your index. 
 ![](images/12.png)   
 
 ---
 
-### Step 2: Elastic Search Connection Settings
+### Step 2: ElasticSearch Connection Settings
 
 1. Provide the following credentials
-   - Server Endpoint: The endpoint of your elasticsearch cluster.  
+   - Server Endpoint: The endpoint of your ElasticSearch cluster.  
    - Index: The name of the index you created.  
    - Username: The username you downloaded during the creation of your deployment.   
    - Password: The password you downloaded during the creation of your deployment.  

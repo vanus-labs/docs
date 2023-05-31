@@ -10,20 +10,20 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your feishu Sink**
+**Perform the following steps to configure your feishu Sink.**
 
 ### Step 1: Setup a Feishu bot 
 
 1. Create a new Group chat
 ![img_1.png](images/img_1.png)
-2. In the feishu group click `...` and then **settings**.
+2. In the feishu group, click `...` and then **settings**.
 ![img.png](images/feishu-settings.png)
 3. Now click **Bots**.
    ![img_1.png](images/feishu-bot.png)
-4. Click on **Add Bot** and select **Custom bot**.
+4. Click on **Add Bot** and select **Custom Bot**.
    ![img_3.png](images/feishu-add-custom-bot.png)
 5. Enter a name for your bot and click **Continue**.
-6. Copy the **Webhook URL** and keep it safely.
+6. Copy the **Webhook URL** and keep it safe.
 7. (Optionally) you can also set a **Signature verification** for added security.
    ![img.png](images/feishu-signature.png)
 
