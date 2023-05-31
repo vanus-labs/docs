@@ -3,7 +3,7 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 Before forwarding events to Google Sheets, you must have:
 
@@ -13,7 +13,7 @@ Before forwarding events to Google Sheets, you must have:
 
 **Perform the following steps to configure your google-sheets Sink**
 
-## Step 1: Create a Google Spreadsheet
+### Step 1: Create a Google Spreadsheet
 
 1. Go to [Google Sheets](https://docs.google.com/spreadsheets/u/0/) and **Sign in**.
 2. Create a new blank spreadsheet.
@@ -23,7 +23,7 @@ Before forwarding events to Google Sheets, you must have:
 
 ---
 
-## Step 2: Create a Connection
+### Step 2: Create a Connection
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

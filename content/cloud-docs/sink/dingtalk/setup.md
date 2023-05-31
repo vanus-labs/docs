@@ -3,7 +3,7 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 - A Ding Talk account with administrative privileges
 
@@ -11,7 +11,7 @@ hide_title: true
 
 **Perform the following steps to configure your dingtalk Sink**
 
-## Step 1: Create a Group
+### Step 1: Create a Group
 
 1. Log in to your Ding Talk account.
 2. Create a **new group** go to the `+` and select **New Chat**.
@@ -25,7 +25,7 @@ hide_title: true
 
 ---
 
-## Step 2: Add Bot to Ding Talk Group
+### Step 2: Add Bot to Ding Talk Group
 
 1. In the top navigation pane, click **Robot Management**.
 ![](images/img_4.png)
@@ -45,7 +45,7 @@ hide_title: true
 
 ---
 
-## Step 3: DingTalk Connection Settings
+### Step 3: DingTalk Connection Settings
 
 1. **Webhook URL**: The webhook address that message sent to, you can get it when you create Chat Bot. You retrieved above.
 2. **Signature Verification**: The signature to sign request, you can get it when you create Chat Bot. You retrieved above.

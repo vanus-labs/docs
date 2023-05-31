@@ -3,7 +3,7 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 - A Doris cluster.
 
@@ -11,7 +11,7 @@ hide_title: true
 
 **Perform the following steps to configure your doris Sink**
 
-## Doris Connection Settings
+### Doris Connection Settings
 
 1. Provide the following credentials
 

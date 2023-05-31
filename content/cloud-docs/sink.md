@@ -11,6 +11,7 @@ The Sink connector is a tool to connect Vanus core with other applications and s
 
 Select a sink connector from the list to complete your connection.
 ![img_1.png](images/img_1.png)
+
 ---
 
 ### List of Sink connectors

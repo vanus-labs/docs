@@ -3,7 +3,7 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 - A [Feishu](https://www.feishu.cn) account.
 
@@ -12,7 +12,7 @@ hide_title: true
 
 **Perform the following steps to configure your feishu Sink**
 
-## Step 1: Setup a Feishu bot 
+### Step 1: Setup a Feishu bot 
 
 1. Create a new Group chat
 ![img_1.png](images/img_1.png)
@@ -29,7 +29,7 @@ hide_title: true
 
 ---
 
-## Step 2: Feishu Connection Settings
+### Step 2: Feishu Connection Settings
 
 1. Paste the ** Feishu Webhook URL** into the "URL" field.
 ![img_2.png](images/img_2.png)

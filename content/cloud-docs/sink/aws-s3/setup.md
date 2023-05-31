@@ -4,7 +4,7 @@ hide_title: true
 ---
 
 
-## Prerequisites
+### Prerequisites
 
 - An [Amazon Web Services](https://aws.amazon.com) account.
 
@@ -12,7 +12,7 @@ hide_title: true
 
 **Perform the following steps to configure your Amazon S3 Sink**
 
-## Step 1: Create an AWS User
+### Step 1: Create an AWS User
 
 1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
 2. Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by searching for IAM and click the IAM service.
@@ -45,7 +45,7 @@ hide_title: true
 
 ---
 
-## Step 2: Get your Access and secret key
+### Step 2: Get your Access and secret key
 
 1. Now click on the user you just created.
    ![img.png](images/11.png)
@@ -60,7 +60,7 @@ hide_title: true
 
 ---
 
-## Step 3: Amazon S3 Connection Settings
+### Step 3: Amazon S3 Connection Settings
 
 **To set up S3 Sink in Vanus Cloud:**
 

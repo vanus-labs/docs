@@ -3,7 +3,7 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 To set up HTTP Sink, you must have:
 
@@ -14,7 +14,7 @@ To set up HTTP Sink, you must have:
 **Perform the following steps to configure your http Sink** 
 
 
-## HTTP Connection Settings
+### HTTP Connection Settings
 
 1. Select the **HTTP** Sink connector.
 2. Get a Payload URL from your application. (The EndPoint URL to send the HTTP requests)
