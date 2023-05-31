@@ -5,7 +5,7 @@ hide_title: true
 
 ### Prerequisites
 
-- Have a CloudEvents HTTP client.
+- Have a HTTP client.
 
 ---
 
