@@ -3,7 +3,7 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-## Prerequisites
+### Prerequisites
 
 - A [WhatsApp account](https://www.whatsapp.com)
 
@@ -11,7 +11,7 @@ hide_title: true
 
 **Perform the following steps to configure your WhatsApp Source.**
 
-## WhatsApp Connection Settings
+### WhatsApp Connection Settings
 
 1. Write a name for your connection in Vanus Cloud.
 ![](image/name.png)

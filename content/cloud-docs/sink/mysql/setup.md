@@ -10,7 +10,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your MySQL Sink**
+**Perform the following steps to configure your MySQL Sink.**
 
 ### MySQL Connection Settings
 
@@ -21,7 +21,7 @@ Enter all the following information in Vanus Cloud.
 - Password - The user password.
 - Database - The database name.
 - Table - The table name.
-- Chose the insertion mode.
+- Choose the insertion mode.
 
 ---
 

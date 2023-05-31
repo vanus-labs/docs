@@ -9,18 +9,18 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your dingtalk Sink**
+**Perform the following steps to configure your DingTalk Sink.**
 
 ### Step 1: Create a Group
 
 1. Log in to your Ding Talk account.
-2. Create a **new group** go to the `+` and select **New Chat**.
+2. Create a **new group**, go to the `+`, and select **New Chat**.
    ![img.png](images/img.png)
 3. Now click **发起群聊**.
    ![](images/img_1.png)
 4. Click **外部群**.
    ![](images/img_2.png)
-5. Select **minimum 2 members** of your team to create a group, set a group name and press **Ok**.
+5. Select **minimum two members** of your team to create a group, set a group name and press **Ok**.
    ![](images/img_3.png)
 
 ---
@@ -37,18 +37,18 @@ hide_title: true
 ![](images/img_7.png)
    - In the **Chatbot name** field, provide a name for the robot.
    - In the **Add to Group** field, select the target group in which the Robot will create.
-   - In the **Security Settings** field, selected the **Additional Signature**, copy the signature and paste it Vanus Cloud.
+   - In the **Security Settings** field, select the **Additional Signature**, copy the signature and paste it to Vanus Cloud.
    - Accept the Terms of Service.
    - Click **Finished**.
-5. Now click **Copy**, keep the Webhook URL safely and click **Finished**.
+5. Now click **Copy**, keep the Webhook URL safe and click **Finished**.
 ![](images/img_8.png)
 
 ---
 
 ### Step 3: DingTalk Connection Settings
 
-1. **Webhook URL**: The webhook address that message sent to, you can get it when you create Chat Bot. You retrieved above.
-2. **Signature Verification**: The signature to sign request, you can get it when you create Chat Bot. You retrieved above.
+1. **Webhook URL**: The webhook address you've received previously from DingTalk.
+2. **Signature Verification**: The signature, you've also received previously from DingTalk.
 ![](images/img_9.png)
 
 Click **Next** to continue.

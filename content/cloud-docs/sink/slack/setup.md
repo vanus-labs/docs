@@ -6,10 +6,11 @@ hide_title: true
 ## Prerequisites
 
 - A [slack account](https://slack.com)
+- A slack[ Workspace](https://slack.com/help/articles/206845317-Create-a-Slack-workspace)
 
 ---
 
-**Perform the following steps to configure your slack Sink**
+**Perform the following steps to configure your Slack Sink.**
 
 ### Step 1: Create a Slack App
 1. Create an [App on Slack](https://api.slack.com/apps).
@@ -21,10 +22,10 @@ hide_title: true
 
 ---
 
-### Step 2: Create a Incoming Webhook
-1. select **Incoming Webhooks** in the sidebar menu.
+### Step 2: Create an Incoming Webhook
+1. Select **Incoming Webhooks** in the sidebar menu.
 ![img.png](images/4.png)
-2. Turn on Webhooks and scroll down and click **Add New Webhook to Workspace** to add new webhook.
+2. Turn on Webhooks, scroll down, and click **Add New Webhook to Workspace** to add a new one.
 ![](images/5.png)
 3. Select the channel to receive messages.
 ![img.png](images/6.png)

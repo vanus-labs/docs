@@ -9,7 +9,7 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your discord Sink**
+**Perform the following steps to configure your discord Sink.**
 
 ### Step 1: Create a Server
 
@@ -30,13 +30,13 @@ hide_title: true
 
 ---
 
-### Step 2: Get a webhook url
+### Step 2: Get a webhook URL
 
 1. Go to **Server Settings**.
     ![img_2.png](images/3.png)
 2. Click **integration** in the sidebar under APPS.
     ![img_3.png](images/4.png)
-3. Click **create Webhook**.
+3. Click **Create Webhook**.
     ![img_3.png](images/4.1.png)
 4. Click on the webhook you just created.
     ![img_5.png](images/5.png)
