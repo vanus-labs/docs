@@ -34,7 +34,7 @@ hide_title: true
 
 1. Go to **Server Settings**.
     ![img_2.png](images/3.png)
-2. Click **integration** in the sidebar under APPS.
+2. Click **integrations** in the sidebar under APPS.
     ![img_3.png](images/4.png)
 3. Click **Create Webhook**.
     ![img_3.png](images/4.1.png)
