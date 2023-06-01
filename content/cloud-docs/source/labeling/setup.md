@@ -5,7 +5,7 @@ hide_title: true
 
 ### Prerequisites
 
-- Have a HTTP client.
+- Have a HTTP client
 
 ---
 

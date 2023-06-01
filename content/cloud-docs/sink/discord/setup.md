@@ -50,7 +50,7 @@ hide_title: true
 1. Go back to Vanus Cloud.
 2. Paste your webhook URL in the `URL` field.
 
-    ![img_7.png](images/7.png)
+    ![img_7.png](images/source%20config.png)
 3. Click "Next" to continue.
 
 ---

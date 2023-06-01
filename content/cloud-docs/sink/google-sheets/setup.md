@@ -59,7 +59,7 @@ import TabItem from '@theme/TabItem';
 9. Choose **JSON** and **CREATE**.
 ![](images/11.png)
 10. It will trigger the download of a JSON file copy the whole content and paste it in Vanus Cloud.
-![](images/img_12.png)
+![](images/source%20config.png)
 
 
 </TabItem>
@@ -72,7 +72,7 @@ import TabItem from '@theme/TabItem';
 
 1. Paste the string from the sheet URL Example: `1i9b80jHcKzkUSOUDE9RAjnGevdWKScq_6Jnpofvb4CU` from Step 1.
 2. Obtain the name of the sheet at the bottom of the spreadsheet.
-   ![img_2.png](images/12.png)
+   ![img_2.png](images/sheet1.png)
 3. Paste the sheet name default: `Sheet1`.
 4. Click **Next** to continue.
 
