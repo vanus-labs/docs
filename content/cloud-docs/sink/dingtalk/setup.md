@@ -49,7 +49,7 @@ hide_title: true
 
 1. **Webhook URL**: The webhook address you've received previously from DingTalk.
 2. **Signature Verification**: The signature, you've also received previously from DingTalk.
-![](images/img_9.png)
+![](images/source%20config.png)
 
 Click **Next** to continue.
 
