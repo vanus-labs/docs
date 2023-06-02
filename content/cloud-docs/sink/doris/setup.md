@@ -72,6 +72,45 @@ Before installing Apache Doris, ensure that your system meets the minimum requir
 `java --version`
 ![Alt text](images/dep1.png)
 
+6. Set the JAVA_HOME environment variable. This is to make JAVA available system-wide as well as specify the JAVA location in the system. Begin by checking the installation location of JAVA by this command below.
+`sudo update-alternatives --config java`
+
+From my system, JAVA is installed on `/usr/lib/jvm/java-11-openjdk-amd64/bin/java` path.
+
+7. Configure the Java environment with this command `sudo vim /etc/environment` using your preferred text editor and add the following line. 
+```
+JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+```
+8. Save your file and exit from your editor. Source your profile file.
+
+`source /etc/environment`
+
+9. Verify that the environment variable is set:
+
+```shell
+$ echo $JAVA_HOME
+
+/usr/lib/jvm/java-11-openjdk-amd64
+```
+
+10.  Run the code below to add the Apache Doris apt repository. This is because it is not available on the Ubuntu repository.
+
+`sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test`
+
+20. Once you have added the apt repository, update your system to refresh your apt cache.
+
+`sudo apt update`
+
+21. Install GCC - GCC refers to the C (and C++) compiler offered by the GNU toolchain of compilers. It is an essential tool to compile Apache Doris in Ubuntu.
+This is installed by running the following commands.
+
+`sudo apt install build-essential`
+![Alt text](images/dep3.png)
+
+`sudo apt install gcc g++`
+![Alt text](images/dep4.png)
+
+22. 
 ## Doris Connection Settings
 
 1. Provide the following credentials
