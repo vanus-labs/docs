@@ -66,7 +66,7 @@ Select your preferred programming language.
 4. Choose a name for your Cluster.  
 
 >**Note** A cluster in MongoDB is a group of servers or nodes that work together to store and manage data. It typically consists of multiple instances of the MongoDB database, which communicate with each other to ensure data consistency and availability.
-A cluster provides high availability and scalability to a MongoDB deployment, enabling it to handle large amounts of data and traffic. By distributing data across multiple nodes, it ensures that data remains accessible even if some nodes fail
+A cluster provides high availability and scalability to a MongoDB deployment, enabling it to handle large amounts of data and traffic. By distributing data across multiple nodes, it ensures that data remains accessible even if some nodes fail.
 
 
 5. Click on create to create your database.  
@@ -89,7 +89,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 
 1. Log in to the [AWS Management Console](https://aws.amazon.com/)   
 
-2. Click on the left navigation pane called **Services** and select compute. A list of all compute services would be listed out, select **EC2**. 
+2. Click on the left navigation pane called **Services** and select compute. A list of all compute services will be listed out, select **EC2**. 
 ![](images/create%20ec2%20server.png)   
 
 
@@ -113,7 +113,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 1. Create a key pair, to enable you SSH into your server.  
 ![](images/create%20keypair.png)   
 
-2. Give the key pair a name. Leave the key pair type on the default selection.  for the Private key file format, select the **.pem** if you plan on using your terminal to SSH into your instance, or select **.ppk** if you want to use putty.  
+2. Give the key pair a name. Leave the key pair type on the default selection. For the Private key file format, select the **.pem** if you plan on using your terminal to SSH into your instance, or select **.ppk** if you want to use putty.  
 
 3. Click on **create key pair** to finish the creation of the key pair.  
 ![](images/create%20keypair2.png)   
@@ -143,7 +143,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 
 #### MongoDB connection setting
 
-1. Choose a connection point, you can choose to connect from your local environment, or a cloud environment.  
+1. Choose a connection point; you can choose to connect from your local environment, or a cloud environment.  
 
 2. Set your network security and input the IP of the created EC2 instance.  
 
@@ -184,14 +184,14 @@ Now we want to SSH into our EC2 instance to enable us connect to our database ho
 ![](images/add%20current%20ip.png)   
 
 
-3. Select the means through which you would connect to your database.  
+3. Select the means through which you will connect to your database.  
 For the purpose of this tutorial, we chose the **shell**.  
 ![](images/mongo%20shell.png)   
 
 4. Select your operating system and download the MongoDB shell **mongosh**  
 ![](images/connect%20to%20cluster%201.png)   
 
-5. We're presently running an ubuntu server on our instance so we would copy the download url and paste it in our terminal with the download command.  
+5. We're presently running an ubuntu server on our instance so we will copy the download url and paste it in our terminal with the download command.  
 ```
 wget https://downloads.mongodb.com/compass/mongodb-mongosh_1.8.1_amd64.deb
 ```   
@@ -204,7 +204,7 @@ wget https://downloads.mongodb.com/compass/mongodb-mongosh_1.8.1_amd64.deb
 
 7. Copy the connection string provided in step3 of the **Connect to Cluster** page.  
 
-8. Paste the command in your terminal, you would be prompted for your password. Type the password you set for database authentication.  
+8. Paste the command in your terminal; you will be prompted for your password. Type the password you set for database authentication.  
 
 ![](images/successful%20mongosh%20connection.png)   
 
@@ -213,7 +213,7 @@ You are now connected to your MongoDB database.
 
 #### Get the information needed for the Vanus source connection
 
-1. To find your **Host**, run the command `db.runCommand({whatsmyuri:1})` and it'll be outputed to the terminal.  
+1. To find your **Host**, run the command `db.runCommand({whatsmyuri:1})` in the terminal and the output will display the corresponding details.  
 
 ![](images/mongodb%20host.png)   
 
@@ -222,7 +222,7 @@ You are now connected to your MongoDB database.
 ![](images/auth%20source.png)   
 
 
-3. Go to Atlas Database page and click on **Browse collections** to see your collections and get the name of the one you plan on making the Vanus Cloud Source connection with.  
+3. Go to Atlas Database page and click on **Browse collections** to see your collections, and get the name of the one you plan on making the Vanus Cloud Source connection with.  
 ![](images/collection%20set.png)   
 
 4. Take note of your collection name.  

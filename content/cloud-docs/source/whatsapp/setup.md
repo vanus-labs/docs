@@ -14,13 +14,14 @@ hide_title: true
 ### WhatsApp Connection Settings
 
 1. Write a name for your connection in Vanus Cloud.
-![](image/name.png)
+![](images/name.png)
 2. Click `Verify` to authorize Vanus to establish a connection with your WhatsApp account. 
 
-3. Choose to enable ChatAI to use OpenAI. 
+3. Enable ChatAI to use OpenAI. 
+![](images/whatsapp.png)
 
-4. Scan the QR Code with your mobile WhatsApp 
-![img.png](image/img.png)
+4. Scan the QR Code with your mobile WhatsApp. 
+![img.png](images/whatsapp%20qrcode.png)
 5. Click **Next** and continue the configuration. 
 
 

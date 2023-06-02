@@ -21,11 +21,11 @@ hide_title: true
    ![](images/click%20document.png)  
 
 3. Fill in the various required configurations
-    - **Chat Mode:** Select Chat Mode (ChatGPT or Ernie Bot); default is ChatGPT
+    - **Chat Mode:** Select Chat Mode (ChatGPT or Ernie Bot); default is ChatGPT.
     - **Context (optional):** set Context to on if you would like for ChatGPT to remember previous messages.
     - **Unique Identifier (optional):** The unique identifier differentiates among multiple conversations using the same Connection. Example identifier: conv1 identifier: conv2, etc.
-    - **Basic Auth Username (optional):** A method for an HTTP user agent to provide a username when making a request.
-    - **Basic Auth Password (optional):** A method for an HTTP user agent to provide a password when making a request.  
+    - **Basic Auth Username (optional):** A method for a HTTP user agent to provide a username when making a request.
+    - **Basic Auth Password (optional):** A method for a HTTP user agent to provide a password when making a request.  
       ![img.png](images/source%20config2.png)
 
 4. Click **Next** and continue the configuration.

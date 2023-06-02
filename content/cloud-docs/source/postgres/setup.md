@@ -6,28 +6,28 @@ hide_title: true
 ### Prerequisites
 
 - An SQL client
-- A running PostgresSQL server
+- A running PostgreSQL server
 - A database, schema and Table
 
 ---
 
-**Perform the following steps to configure your Amazon RDS PostgresSQL Source.**
+**Perform the following steps to configure your Amazon RDS PostgreSQL Source.**
 
-### Step 1: Setup PostgresSQL Server in AWS (Optional)
+### Step 1: Setup PostgreSQL Server in AWS (Optional)
 
-1. Log in to the [AWS Management Console](https://aws.amazon.com/)   
+1. Log in to the [AWS Management Console](https://aws.amazon.com/).  
 
-2. Navigate to the [RDS](https://console.aws.amazon.com/rds/) service by searching for RDS and clicking the **RDs service**. 
+2. Navigate to the [RDS](https://console.aws.amazon.com/rds/) service by searching for RDS and clicking the **RDS service**. 
 ![](images/3.png)
 
 3. Click on **Create database** in the Create Database section.  
 ![](images/4.png)
 
-4. Select standard create and choose the PostgresSQL icon.   
+4. Select standard create and choose the PostgreSQL icon.   
 ![](images/5.png)   
 
-5. Select a tier template that better suit your needs.   
-![](images/6.png)   
+5. Select a tier template that suits your needs.   
+![](images/6.png)  
 
 :::note
 Multi-AZ deployment is only available for paid tier. A Multi-AZ deployment automatically provisions and maintains a synchronous standby replica in a different Availability Zone.
@@ -36,7 +36,7 @@ Multi-AZ deployment is only available for paid tier. A Multi-AZ deployment autom
 6. 
     - DB Instance Identifier: Type a name unique to the region your DB instance has been set in.  
 
-    - Master Username: This is the username that would be used to log in to your DB instance.  
+    - Master Username: This is the username that you will use to log in to your DB instance.  
 
     - Master Password: Type a password that takes the given constraints into consideration.  
 
@@ -82,7 +82,7 @@ Multi-AZ deployment is only available for paid tier. A Multi-AZ deployment autom
     ![](images/12.png)   
 
 
-12. Leave Deletion protection unchecked. Checking the box prevents you from being able to delete the database.  
+12. Leave Deletion protection unchecked; checking the box prevents you from being able to delete the database.  
 ![](images/13.png)   
 
 
@@ -99,6 +99,7 @@ Multi-AZ deployment is only available for paid tier. A Multi-AZ deployment autom
 1. Write a name for your connection in Vanus Cloud.
 ![](images/name.png)
 2. Provide the following credentials: 
+![](images/source%20config.png)
 - Host 
 - Port 
 - Username 

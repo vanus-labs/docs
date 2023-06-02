@@ -12,9 +12,8 @@ hide_title: true
 **Perform the following steps to configure your labeling Source.**
 
 ### Labeling Connection Settings
-![](images/name.png)
-![img.png](images/name%20connection.png)
 1. Write a name for your connection in Vanus Cloud.
+![](images/name.png)
 
 2. Insert the following:
     - **Source Path:** A Source path refers to JSON path origin.

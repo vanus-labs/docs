@@ -29,7 +29,7 @@ Let's get started:
 3. Select the Snowflake edition you want to use.
 
 
-Note: that Snowflake offers multiple editions, each tailored to specific organizational requirements. To ensure you select the most suitable edition for your needs, we recommend that you read through the [Snowflake Editions](https://docs.snowflake.com/en/user-guide/intro-editions.html) documentation to explore the various options available.
+Note: Snowflake offers multiple editions, each tailored to specific organizational requirements. To ensure you select the most suitable edition for your needs, we recommend that you read through the [Snowflake Editions](https://docs.snowflake.com/en/user-guide/intro-editions.html) documentation to explore the various options available.
 ![](images/img_1.png)
 4. Select the desired cloud platform. You can choose to host your Snowflake account on any of the following cloud platforms.
    - Amazon Web Services (AWS)
@@ -131,7 +131,7 @@ The values for `role_name`, `user_name`, `warehouse_name`, `database_name` and `
 
 1. Get your account URL by going to **Admin** and **Accounts** from the side menu, and clicking the button to copy the link.
 ![](images/img_3.png)
-2. Write the following information from the previously steps.
+2. Write the following information from the previous steps.
    - **Role**: This is the name of the role that has the necessary privileges to perform operations on the Snowflake table.
    - **Warehouse**: This is the name of the warehouse that will execute queries for the Snowflake table.
    - **Database**: This is the name of the database that contains the Snowflake table.

@@ -5,9 +5,8 @@ hide_title: true
 
 ### Prerequisites
 
+- Have an [AWS Account ](https://aws.amazon.com)
 - An SQL client 
-- A running MySQL server
-- A database and Table
 
 ---
 
@@ -49,7 +48,7 @@ Multi-AZ deployment is only available for paid tier. A Multi-AZ deployment autom
 #### Settings
 
 ![11](images/8.png)   
-- **DB Instance Identifier:** Give a unique name to your instant.  
+- **DB Instance Identifier:** Give a unique name to your instance.  
 
 - **Master Username:** This is the username that will be used to log in to your DB instance.
 
@@ -122,18 +121,22 @@ Now you can connect to your server and create a table and database.
 ### Step 2: Amazon RDS MySQL Connection Settings
 1. Write a name for your connection in Vanus Cloud.
 ![img.png](images/name.png)
+
 2. Click on the server you just created in AWS RDS.
 ![](images/23.png)
+
 3. Now copy and paste your **Endpoint** and **Port** into vanus.
 ![](images/24.png)
 - **Host:** This is your RDS endpoint.
-- **Port:** Enter the port number on which your MySQL server is listening. The default port for MySQL is 3306.
-4. Enter the rest of your credentials
+- **Port:** Enter the port number on which your MySQL server is listening; the default port for MySQL is 3306.
+
+4. Enter the rest of your credentials.
 - **Username:** Master username selected during the database creation.
 - **Password:** User password.
 - **Databases:** The initial database name.
 - **Tables:** The name of the table you want to get your events from.
 - Choose the insertion mode.
+
 5. Click **Next** and continue the configuration.
 
 ---

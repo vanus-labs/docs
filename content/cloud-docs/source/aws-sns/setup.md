@@ -6,11 +6,6 @@ hide_title: true
 ### Prerequisites
 
 - An [AWS Account](https://aws.amazon.com) 
-- An AWS SNS Topic 
-- AWS IAM Access Key 
-- AWS permission for the IAM user: 
-  - AmazonSNSFullAccess
-
 
 ---
 
@@ -39,7 +34,7 @@ Create a new user and set the proper IAM policy.
 6. Select **attach policies directly**. 
 ![](images/attach%20policies%20directly.png)  
 
-7. Search for **AmazonSNS**, select `AmazonSNSFullAccess` and click **next** 
+7. Search for **AmazonSNS**; select `AmazonSNSFullAccess` and click **next** 
 ![](images/sns%20full%20access.png)  
 
 8. Review and click on **Create user**. 
