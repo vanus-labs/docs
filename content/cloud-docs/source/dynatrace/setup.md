@@ -14,8 +14,10 @@ hide_title: true
 ### Dynatrace Connection Settings
 
 1. Write a name for your connection in Vanus Cloud.
+   
    ![](images/1.png)
 2. After creating the connection, there are a few more steps. Click the link to open a new page with all the details on completing the connection.
+    
     ![](images/2.png)
 3. Click **Next** and continue the configuration.
 
