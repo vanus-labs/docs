@@ -73,7 +73,7 @@ import TabItem from '@theme/TabItem';
 1. Paste the string from the sheet URL Example: `1i9b80jHcKzkUSOUDE9RAjnGevdWKScq_6Jnpofvb4CU` from Step 1.
 2. Obtain the name of the sheet at the bottom of the spreadsheet.
    ![img_2.png](images/sheet1.png)
-3. Paste the sheet name default: `Sheet1`.
+3. Paste the default sheet name: `Sheet1`.
 4. Click **Next** to continue.
 
 ---

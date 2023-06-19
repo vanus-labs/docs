@@ -11,7 +11,7 @@ hide_title: true
 
 **Perform the following steps to configure your Amazon RDS MySQL Sink.**
 
-### Step 1: Setup A Mysql server in AWS using RDS
+### Step 1: Setup A MySQL server in AWS using RDS
 
 1. Log in to the [AWS Management Console](https://aws.amazon.com/) using your root account credentials.  
 ![3](images/1.png)
@@ -39,7 +39,7 @@ Multi-AZ deployment is only available for paid tier. A Multi-AZ deployment autom
 
 7. Enter the following information.
 ![11](images/8.png)
-- **DB Instance Identifier:** Give a unique name to your instant.
+- **DB Instance Identifier:** Give a unique name to your instance.
 
 - **Master Username:** This is the username that will be used to log in to your DB instance.
 
@@ -81,7 +81,7 @@ Multi-AZ deployment is only available for paid tier. A Multi-AZ deployment autom
 10. Click on **Create database**.
 ![18](images/15.png)   
 
-11. the DB is now in the process of creation. This could take a few minutes. 
+11. The DB is now in the process of being created. This could take a few minutes. 
 ![19](images/16.png)   
 
 
@@ -93,7 +93,7 @@ Multi-AZ deployment is only available for paid tier. A Multi-AZ deployment autom
 ![](images/18.png)
 3. Under the **Inbound rules**, click **Edit inbound rules**.
 ![](images/19.png)
-4. We will need to add a new rule to be able to connect to server by clicking **Add rule**.
+4. To be able to connect to the server, we will need to add a new rule by clicking on the **Add rule** button.
 ![](images/20.png)
 5. Change the type to 'All traffic', Source 'Anywhere-IPv4' and click **Save rules**.
 ![](images/21.png)
@@ -114,7 +114,8 @@ Now you can connect to your server and create a table and database.
 - **Username:** Master username selected during the database creation.
 - **Password:** User password.
 - **Database Name:** The initial database name.
-- **Table Name:** The name of the table you want your events to be sent to chose the insertion mode.
+- **Table Name:** The name of the table you want your events to be sent to. 
+- choose the insertion mode.
 4. Click `Next` and finish the configurations.
 
 ---

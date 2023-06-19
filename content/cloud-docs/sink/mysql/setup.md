@@ -16,7 +16,7 @@ hide_title: true
 
 Enter all the following information in Vanus Cloud.
 - Host - The IP address of your MySQL Server.
-- Port - The Port of your MySQL Server default: 3306.
+- Port - The Port of your MySQL Server: 3306.
 - Username - A Username with the following permissions INSERT, UPDATE, DELETE.
 - Password - The user password.
 - Database - The database name.

@@ -62,13 +62,13 @@ Select your preferred programming language.
 
 >**Note** Atlas MongoDB asks users to choose a cloud provider to host their MongoDB deployment. This is because Atlas is a cloud-based database service that needs to know which provider the user wants to use to optimize performance, security, and cost-effectiveness within that provider's environment. Different cloud providers offer different features and capabilities, so Atlas MongoDB can provide customized recommendations and resources based on the user's chosen provider. Choosing a cloud provider is an essential step to set up the MongoDB deployment properly and ensure optimal performance and security.
 
-3. Select your preferred region. The region you want your resources to be deployed in.   
+3. Select your preferred region.   
 
 
 4. Choose a name for your Cluster.  
 
 >**Note** A cluster in MongoDB is a group of servers or nodes that work together to store and manage data. It typically consists of multiple instances of the MongoDB database, which communicate with each other to ensure data consistency and availability.
-A cluster provides high availability and scalability to a MongoDB deployment, enabling it to handle large amounts of data and traffic. By distributing data across multiple nodes, it ensures that data remains accessible even if some nodes fail
+A cluster provides high availability and scalability to a MongoDB deployment, enabling it to handle large amounts of data and traffic. By distributing data across multiple nodes, it ensures that data remains accessible even if some nodes fail.
 
 
 5. Click on create to create your database.  
@@ -89,7 +89,7 @@ A cluster provides high availability and scalability to a MongoDB deployment, en
 
 We are going to be using an EC2 instance running the Ubuntu AMI to connect to our DynamoDB database. We need to set that up before moving to the next step.  
 
-1. Log in to the [AWS Management Console](https://aws.amazon.com/)   
+1. Log in to the [AWS Management Console](https://aws.amazon.com/).  
 
 2. Click on the left navigation pane called **Services** and select compute. A list of all compute services would be listed out, select **EC2**. 
 ![](images/create%20ec2%20server.png)   
@@ -116,7 +116,7 @@ We are going to be using an EC2 instance running the Ubuntu AMI to connect to ou
 1. Create a key pair, to enable you SSH into your server.  
 ![](images/create%20keypair.png)   
 
-2. Give the key pair a name. Leave the key pair type on the default selection.  for the Private key file format, select the **.pem** if you plan on using your terminal to SSH into your instance, or select **.ppk** if you want to use putty.  
+2. Give the key pair a name. Leave the key pair type on the default selection. For the Private key file format, select the **.pem** if you plan on using your terminal to SSH into your instance, or select **.ppk** if you want to use putty.  
 
 3. Click on **create key pair** to finish the creation of the key pair.  
 ![](images/create%20keypair2.png)   
@@ -195,7 +195,7 @@ For the purpose of this tutorial, we chose the **shell**.
 ![](images/mongo%20shell.png)   
 
 
-4. Select your operating system and download the MongoDB shell **mongosh**  
+4. Select your operating system and download the MongoDB shell **mongosh**.  
 ![](images/connect%20to%20cluster%201.png)   
 
 

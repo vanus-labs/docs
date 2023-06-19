@@ -16,11 +16,11 @@ hide_title: true
 1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
 2.   Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by searching for IAM and clicking the **IAM service**.
 ![](images/1.png)
-3. Click on the **Users tab** in the left navigation menu, and then click on the **Add user** button.
+3. Click on the **Users tab** in the left navigation menu, and then click on the **Add users** button.
    ![](images/2.png)
 4. Write a name for your user and click **next**.
    ![img.png](images/3.png)
-5. Select **Attach policy directly**, and **Create policy**.
+5. Select **Attach policies directly**, and **Create policy**.
    ![](images/4.png)
 6. Search for s3 and select it.
 ![](images/5.png)   
@@ -57,13 +57,13 @@ hide_title: true
 
 1. Now click on the user you just created.
    ![img.png](images/14.png)
-2. Under **Security and credential**, scroll down the page to `Access Key`, and Click **Create access key**.
+2. Under **Security credentials**, scroll down the page to `Access Key`, and Click **Create access key**.
    ![](images/15.png)
 3. Select Command line interface CLI, and press **Next**.
    ![img.png](images/16.png)
 4. Click **Create access key**.
    ![img.png](images/17.png)
-5. Save your `Access key` and `Secret key` safely.
+5. Save your `Access key` and `Secret access key`.
    ![](images/18.png)
 
 ---
@@ -72,7 +72,7 @@ hide_title: true
 
 1. Write a name for your connection in Vanus Cloud.
    ![img.png](images/19.png)
-2. Enter your `Access Key` and `Secret Key` in Vanus Cloud.
+2. Enter your `Access Key` and `Secret access Key` in Vanus Cloud.
    ![img.png](images/20.png)
 3. Now let's go back to AWS under the [Amazon S3 service](https://s3.console.aws.amazon.com/s3/buckets).
    ![img_1.png](images/21.png)
@@ -80,7 +80,7 @@ hide_title: true
 ![](images/22.png)
 5. Once selected or created, go to your bucket property and copy and paste the **ARN** to Vanus Cloud.
    ![img_2.png](images/23.png)
-6. Specify the kind of event you want to receive from the list
+6. Specify the kind of event you want to receive from the list.
    ![img_3.png](images/24.png)
 7. Under SQS config, you can choose to create a new SQS by selecting region, or if you already have an SQS, provide the ARN.
    ![img_4.png](images/25.png)

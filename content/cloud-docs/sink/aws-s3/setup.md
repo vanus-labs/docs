@@ -45,17 +45,17 @@ hide_title: true
 
 ---
 
-### Step 2: Get your Access and secret key
+### Step 2: Get your Access key and Secret access key
 
 1. Now click on the user you just created.
    ![img.png](images/11.png)
-2. Under **Security and credential**, scroll down the page to `Access Key`, and Click **Create access key**.
+2. Under **Security credentials**, scroll down the page to `Access Key`, and Click **Create access key**.
    ![](images/12.png)
 3. Select Command line interface CLI, and press **Next**.
    ![img.png](images/13.png)
-4. Click **Create sccess key**.
+4. Click **Create access key**.
    ![img.png](images/14.png)
-5. Save your `Access key` and `Secret key` safely.
+5. Save your `Access key` and `Secret access key` safely.
    ![](images/15.png)
 
 ---
@@ -64,7 +64,7 @@ hide_title: true
 
 **To set up S3 Sink in Vanus Cloud:**
 
-1. Enter your `Access Key` and `Secret Key` in Vanus Cloud from the previous steps.
+1. Enter your `Access Key` and `Secret access Key` in Vanus Cloud from the previous steps.
 2. Now let's go back to Amazon Web Services under the [Amazon S3 service](https://s3.console.aws.amazon.com).
 3. At this point, you can either **create a new bucket** or **select an existing** bucket.
 4. Once you've chosen or created a bucket, keep in mind your bucket name and region.

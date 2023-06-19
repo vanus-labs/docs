@@ -15,7 +15,7 @@ hide_title: true
 
 1. Go to [Slack API](https://api.slack.com/apps), and click **Create New App**.
    ![](images/img.png)
-2. Select From Scratch.
+2. Select **From Scratch.**
 ![](images/img_1.png)
 3. Set the app name and Workspace.
 ![](images/img_2.png)
@@ -26,13 +26,14 @@ hide_title: true
 
 1. Go to **Basic Information**.
 ![](images/img_3.png)
-2. Scroll down to **App Credentials** and copy the two following credentials.
+2. Scroll down to **App Credentials** and copy the following credentials.
  - Verification Token
  - Signing Secret
 ![](images/img_4.png)
-3. Don't close this page but continue in Vanus Cloud
+3. Don't close this page but continue in Vanus Cloud.
 4. Paste the two credentials from Slack as configurations.
       ![](images/token%20and%20secret.png)
+5. Click **Next** and continue the configuration.   
 
 ---
 
@@ -45,7 +46,7 @@ hide_title: true
 ![](images/img_6.png)
 4. **Enable Events** by turning on the switch.
 ![](images/img_7.png)
-5. Use the URL we've previously **copied and paste** it into **Request URL**. You should see a green `Verified`, indicating our Source is verified by Slack.
+5. Use the URL we've previously copied and paste it into **Request URL**. You should see a green `Verified`, indicating our Source is verified by Slack.
 ![](images/img_8.png)
 
 ---
@@ -60,7 +61,7 @@ But, if you're using some **Vanus Templates** like `Send a custom greeting messa
 
 1. Scroll down, click **Subscribe to bot events** and after, you will be able to click **Add Bot User Event**.
 ![](images/img_9.png)
-2. Select the events you would like to receive.
+2. Select the events you will like to receive.
 ![](images/member_joined.png)
 3. Finally, you can **Save Changes** to complete your configuration.
 ![](images/save%20changes.png)

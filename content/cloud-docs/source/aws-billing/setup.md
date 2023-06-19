@@ -20,9 +20,9 @@ hide_title: true
 ![](images/create%20a%20user.png)
 4. Write a name for your user and click **next**.
 ![img.png](images/3.png)
-5. Select **Attach policy directly**, and **Create policy**.
+5. Select **Attach policies directly**, and **Create policy**.
 ![](images/4..png)
-6. Search and select the Service `Cost Explore Service`
+6. Search and select the Service `Cost Explorer Service`
 ![img.png](images/5..png)
 7. Next, search for the following policy.
    - "GetCostAndUsage", 
@@ -39,16 +39,16 @@ hide_title: true
 
 ---
 
-### Step 2: Create an Access and Secret Key
+### Step 2: Create an Access key and Secret access Key
 1. Now click on the user you've just created.
 ![img.png](images/11.png)
-2. Under **Security and credential**, scroll down the page to `Access Key`, and Click **Create access key**.
+2. Under **Security credentials**, scroll down the page to `Access Key`, and Click **Create access key**.
 ![](images/12.png)
 3. Select Command line interface CLI, and press **Next**.
 ![img.png](images/13.png)
 4. Click **Create access key**.
 ![img.png](images/14.png)
-5. Save your `Access key` and `Secret key` safely. Download the .csv file.
+5. Save your `Access key` and `Secret access key`. Download the .csv file.
     ![](images/15.png)
 
 ---
@@ -57,7 +57,7 @@ hide_title: true
 
 1. Write a name for your connection in Vanus Cloud.
       ![img.png](images/16.png)
-2. Provide your Access Key ID and Secret Key, and set the desired hour according to the UTC you want your billing information fetched.
+2. Provide your Access Key ID and Secret access Key, and set the desired hour according to the UTC you want your billing information fetched.
 ![](images/17.png)
 3. Click **Next** and continue the configuration.
 

@@ -6,7 +6,7 @@ hide_title: true
 ### Prerequisites
 
 - A [slack account](https://slack.com)
-- A slack[ Workspace](https://slack.com/help/articles/206845317-Create-a-Slack-workspace)
+- A slack [Workspace](https://slack.com/help/articles/206845317-Create-a-Slack-workspace)
 
 ---
 
@@ -26,7 +26,7 @@ hide_title: true
 ### Step 2: Configure your App
 1. Add **Permissions** feature for your app.
 ![img_3.png](images/permissions.png)
-2. Scroll down to `Scopes/Bot` Token Scopes, and click **Add an OAuth Scope**.
+2. Scroll down to `Scopes/Bot Token Scopes`, and click **Add an OAuth Scope**.
 ![img_4.png](images/add%20auth%20scope.png)
 3. Add `chat:write` permission to your app.
 ![img_5.png](images/img_5.png)

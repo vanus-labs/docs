@@ -5,7 +5,7 @@ hide_title: true
 
 ### Prerequisites
 
-- Have an HTTP client.
+- Have a HTTP client.
 
 **Perform the following steps to configure your Webhook Source.**
 
@@ -16,7 +16,7 @@ hide_title: true
 2. After creating the connection, there are a few more steps. Simply click the link to open a new page with all the details on how to complete the connection.
    ![](images/warning.png)
 
-3. Press **next**.
+3. Click **next** and finish the configurations.  
 
 ---
 
