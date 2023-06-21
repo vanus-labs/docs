@@ -28,7 +28,7 @@
 9. Click on the name of the **Instance** that was just created.
 ![Alt text](images/9.png)
 
-10. CLick on **Actions**.
+10. Click on **Actions**.
 ![Alt text](images/10.png)
 
 11. Click on **Create**.
