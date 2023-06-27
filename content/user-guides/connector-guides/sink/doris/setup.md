@@ -17,19 +17,35 @@ Before forwarding events to Feishu, you must have:
 
 ## Getting Started
 
-**To set up Doris Sink in Vanus Cloud:**
+**To set up Doris Sink in Vanus Cloud:** 
 
-1. In Vanus Cloud, go to "Sinks" and select "Doris".
-2. Provide the following credentials
+1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
+![3](images/go%20to%20vanuscloud.png)  
 
-   - Fenodes: Enter the comma-separated list of FQDNs or IP addresses of the nodes that make up your Doris cluster.
-   - Database Name: Enter the name of the database that you want to use for the sink.
-   - Table Name: Enter the name of the table that you want to use for the sink.
-   - Username: Enter the username that you want to use to connect to your Doris database.
-   - Password: Enter the password that corresponds to the username you entered in the previous step.
-     ![](images/doris.png)
+2. Click on **Create Connections**  
+![3](images/click%20create%20connection.png)  
 
-3. Click `Next`
+3. Name your connection, Choose your source and click next 
+![3](images/choose%20source.png) 
+
+4. Click on **Sink** and choose **doris** 
+![3](images/choose%20sink.png) 
+
+5. Provide the following credentials
+- **Fenodes:** Enter the comma-separated list of FQDNs or IP addresses of the nodes that make up your Doris cluster.
+- **Database Name:** Enter the name of the database that you want to use for the sink.
+- **Table Name:** Enter the name of the table that you want to use for the sink.
+- **Username:** Enter the username that you want to use to connect to your Doris database.
+- **Password:** Enter the password that corresponds to the username you entered in the previous step. 
+  ![](images/doris.png)
+
+6. Click `Next`  
+
+7. Click on submit to finish the configuration. 
+![](images/submit.png)  
+
+8. You've successfully created your Vanus doris sink connection.  
+![](images/created.png)  
 
 ## Custom Connection
 

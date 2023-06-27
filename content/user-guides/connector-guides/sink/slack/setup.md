@@ -38,12 +38,32 @@ Before forwarding events to Slack, you must have:
 4. Now copy the webhook URL.
 ![](images/7.png)
 
-Check out this detail [**Article**](https://www.vanus.ai/blog/get-your-slack-webhook-url/) on how to get a Slack Webhook URL.
+Check out this detailed [**Article**](https://www.vanus.ai/blog/get-your-slack-webhook-url/) on how to get a Slack Webhook URL.
 
-### Step 3: Finish the Connection
-1. In Vanus Cloud, paste the Webhook URL into the `URL` field. 
-![img_2.png](images/8.png)
-2. Click **Next** to continue.
+### Step 3: Set up your Connection in Vanus cloud 
+
+1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
+![3](images/go%20to%20vanuscloud.png)  
+
+2. Click on **Create Connections**  
+![3](images/click%20create%20connection.png)  
+
+3. Name your connection, Choose your source and click next 
+![3](images/choose%20source.png) 
+
+4. Click on **Sink** and choose **slack** 
+![3](images/choose%20sink.png) 
+
+5. Paste the Webhook URL into the `URL` field. 
+![img_2.png](images/8.png) 
+
+6. Click **Next** to continue.  
+
+7. Click on submit to finish the configuration. 
+![](images/submit.png)  
+
+8. You've successfully created your Vanus slack sink connection.  
+![](images/created.png)  
 
 ## Required Data Format
 

@@ -17,16 +17,30 @@ To set up HTTP Sink, you must have:
 
 ## Getting Started
 
-In Vanus Cloud,
+1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
+![3](images/go%20to%20vanuscloud.png)  
 
-1. Select the **HTTP** Sink connector.
-2. Get a Payload URL from your application. (The EndPoint URL to send the HTTP requests)
-3. Paste the payload URL into the `URL` field and press **Next**
-![](images/http.png)
+2. Click on **Create Connections**  
+![3](images/click%20create%20connection.png)  
 
-You can also select the URL Method (`POST`, `GET`, `PATCH`, `DELETE`, `PUT`)
+3. Name your connection, Choose your source and click next 
+![3](images/choose%20source.png) 
 
-4. Click `Next` and finish the configurations.
+4. Click on **Sink** and choose **http** 
+![3](images/choose%20sink.png) 
+
+5. Get a Payload URL from your application. (The EndPoint URL to send the HTTP requests) 
+
+6. Paste the payload URL into the `URL` field and press **Next**
+![](images/http.png) 
+
+*You can also select the URL Method (`POST`, `GET`, `PATCH`, `DELETE`, `PUT`)*   
+
+7. Click on submit to finish the configuration. 
+![](images/submit.png)  
+
+8. You've successfully created your Vanus http sink connection.  
+![](images/created.png)  
 
 ## Required Data Format
 

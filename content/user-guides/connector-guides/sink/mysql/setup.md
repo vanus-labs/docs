@@ -15,17 +15,36 @@ Before forwarding events to MySQL, you must have:
 - Have a Database and Table created.
 
 
-### Setup your connection in Vanus Cloud
+### Setup your connection in Vanus Cloud 
 
-Enter all the following information in Vanus Cloud.
-- Host - The IP address of your MySQL Server.
-- Port - The Port of your MySQL Server default: 3306.
-- Username - A Username with the following permissions INSERT, UPDATE, DELETE.
-- Password - The user password.
-- Database - The database name.
-- Table - The table name.
+1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
+![3](images/go%20to%20vanuscloud.png)  
+
+2. Click on **Create Connections**  
+![3](images/click%20create%20connection.png)  
+
+3. Name your connection, Choose your source and click next 
+![3](images/choose%20source.png) 
+
+4. Click on **Sink** and choose **MySQL** 
+![3](images/choose%20sink.png) 
+
+5. Enter all the following information in Vanus Cloud and click **Next**. 
+![3](images/sink%20config.png)
+
+- **Host:**  The IP address of your MySQL Server.
+- **Port:** The Port of your MySQL Server default: 3306.
+- **Username:** A Username with the following permissions INSERT, UPDATE, DELETE.
+- **Password:** The user password.
+- **Database:** The database name.
+- **Table:** The table name.
 - Chose the insertion mode.
 
+6. Click on submit to finish the configuration. 
+![](images/submit.png)  
+
+7. You've successfully created your Vanus MySQL sink connection.  
+![](images/created.png)  
 
 ## Custom Connection
 

@@ -173,17 +173,30 @@ a.header-twitter-link:hover {
   line-height: 44px;
 }
 
-// .codeBlockContent_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module,
 .theme-code-block div[class^="codeBlockContent"] {
   display: flex;
   justify-content: space-between;
 }
 
-// .buttonGroup_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module,
 .theme-code-block div[class^="buttonGroup"] {
   display: block !important;
   position: relative !important;
   margin-top: 5px;
+}
+
+html[class*="docs-doc-id-reference"] nav,
+html[class*="docs-doc-id-reference"] footer {
+  display: none;
+}
+
+html[class*="docs-doc-id-cloud-docs"] nav,
+html[class*="docs-doc-id-cloud-docs"] footer,
+html[class*="docs-doc-id-cloud-docs"] .theme-doc-toc-mobile {
+  display: none;
+}
+
+html[class*="docs-doc-id-cloud-docs"] p {
+  font-size: 14px;
 }
 
 .main-wrapper div[class^="expandButton"] {

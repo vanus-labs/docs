@@ -20,18 +20,15 @@ Before forwarding events to Elasticsearch, you must have:
 ### Step 1: Setup an Elasticsearch cluster 
 
 1. Got to the [Elasticsearch](https://www.elastic.co/) official website and sign up for an account.  
-![](images/signup.png)   
+![](images/1.png)   
 
 
 2. Input your name and company, select your interest and reason for using Elastic search, and click next.  
-![](images/signup%20info.png)   
+![](images/2.png)   
 
 
-3. Create your deployment  
-![](images/create%20deployment2.png)   
-
-4. A deployment includes Elasticsearch, kibana, and other elastic stack features.  
-![](images/create%20deployment.png)   
+3. Create your deployment,  a deployment includes Elasticsearch, kibana, and other elastic stack features
+![](images/3.png)    
 
 - Name your deployment.  
 
@@ -44,55 +41,73 @@ Before forwarding events to Elasticsearch, you must have:
 - Click on **create deployment** to finish creating your deployment.  
 
 
-5. Download your deployment credentials, you will need them to log in to your endpoint, and they would also be needed for your Vanus connection.  
-![](images/download%20login%20details.png)   
+4. Download your deployment credentials, you will need them to log in to your endpoint, and they would also be needed for your Vanus connection.  
+![](images/4.png)   
 
 
-6. Wait for the creation of your deployment to be completed.  
-![](images/deployment%20wait.png)   
+5. Wait for the creation of your deployment to be completed.     
 
 
-7. Your deployment has been successfully created, click **continue**  
-![](images/continue%20deployment.png)   
+6. Your deployment has been successfully created, click **continue**  
+![](images/5.png)   
 
 ### Getting your server endpoint 
 1. Click on the **settings** icon at the right side of your deployment.  
-![](images/enter%20deployment.png)   
+![](images/6.png)   
 
 
 2. Copy your Elasticsearch endpoint.  
-![](images/copy%20endpoint.png)   
+![](images/7.png)   
 
 
 3. Paste the copied endpoint in your browser, fill in the credentials you downloaded while creating your deployment and click on sign in. 
-![](images/endpoint%20signin.png)   
+![](images/8.png)   
 
-![](images/endpoint%20stuff.png)   
+
+    ![](images/9.png)   
 
 ### Creating an Index 
 1. Click on API Console  
-![](images/enter%20API%20console.png)   
+![](images/10.png)   
 
 2. Select the **PUT** option, write the name of your index, and click submit. For this tutorial we named our index **"my_index".** 
-![](images/create%20index.png)   
+![](images/11.png)   
 
+    
+    ![](images/11.1.png) 
 
 3. Add a backslash and your index name to your endpoint, to see the content of your index. 
-![](images/my%20index.png)   
+![](images/12.png)   
 
 
-**To set up Elasticsearch Sink in Vanus Cloud:**
+### Step 2: Configure your connection on Vanus cloud 
 
-1. In Vanus Cloud, go to "Sinks" and select "Elasticsearch".  
+**To set up Elasticsearch Sink in Vanus Cloud:**  
 
+1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
+![3](images/go%20to%20vanuscloud.png)  
 
-2. Provide the following credentials
-   - Server Endpoint: The endpoint of your elasticsearch cluster.  
-   - Index: The name of the index you created.  
-   - Username: The username you downloaded during the creation of your deployment.   
-   - Password: The password you downloaded during the creation of your deployment.  
-    
-3. Click `Next` and finish the configurations.
+2. Click on **Create Connections**  
+![3](images/click%20create%20connection.png)  
+
+3. Name your connection, Choose your source and click next 
+![3](images/choose%20source.png) 
+
+4. Click on **Sink** and choose **ElasticSearch** 
+![3](images/choose%20sink.png)   
+
+5. Provide the following credentials and click **Next**  
+![3](images/sink%20config.png)  
+- **Server Endpoint:** The endpoint of your elasticsearch cluster.  
+- **Index:** The name of the index you created.  
+- **Username:** The username you downloaded during the creation of your deployment.   
+- **Password:** The password you downloaded during the creation of your deployment.   
+
+6. Click on submit to finish the configuration. 
+![](images/submit.png)  
+
+7. You've successfully created your Vanus Elasticsearch sink connection.  
+![](images/created.png)  
 
 ## Custom Connection
 

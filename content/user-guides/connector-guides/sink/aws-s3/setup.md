@@ -62,18 +62,41 @@ Before forwarding events to an S3 bucket, you must have:
 5. Save your `Access key` and `Secret key` safely.
    ![](images/15.png)
 
-### Step 3: Config your connection
-**To set up S3 Sink in Vanus Cloud:**
+### Step 3: Set up your connection in Vanus cloud 
+**To set up S3 Sink in Vanus Cloud:**  
 
-1. Enter your `Access Key` and `Secret Key` in Vanus Cloud from previous steps.
-2. Now let go back to Amazon Web Services under the [Amazon S3 service](https://s3.console.aws.amazon.com).
-3. At this point you can either **create a new bucket** or **select a existent** bucket.
-4. Once you've chosen or created a bucket keep in my your bucket name and region.
-![img.png](images/16.png)
-5. Write you `bucket name` and select your `region` in Vanus Cloud.
-![](images/17.png)
-6. Select the interval time of upload; `HOURLY` or `DAILY`
-7. Click **Next** to continue.
+1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
+![3](images/go%20to%20vanuscloud.png)  
+
+2. Click on **Create Connections**  
+![3](images/click%20create%20connection.png)  
+
+3. Name your connection, Choose your source and click next 
+![3](images/choose%20source.png) 
+
+4. Click on **Sink** and choose **Amazon s3** 
+![3](images/choose%20sink.png) 
+
+5. Enter your `Access Key` and `Secret Key` in Vanus Cloud from previous steps.  
+![3](images/sink%20config.png) 
+
+6. Now let go back to Amazon Web Services under the [Amazon S3 service](https://s3.console.aws.amazon.com).  
+
+7. At this point you can either **create a new bucket** or **select a existent** bucket.  
+
+8. Once you've chosen or created a bucket keep in my your bucket name and region.
+![img.png](images/16.png)  
+
+9. Write you `bucket name` and select your `region` in Vanus Cloud.
+![](images/17.png) 
+
+10. Select the interval time of upload; `HOURLY` or `DAILY` and click **Next** to continue.  
+
+11. Click on submit to finish the configuration. 
+![](images/submit.png)  
+
+You've successfully created your Vanus Amazon-s3 sink connection.  
+![](images/successful%20connection.png)  
 
 ## Required Data Format
 

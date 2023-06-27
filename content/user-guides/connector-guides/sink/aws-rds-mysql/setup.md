@@ -13,6 +13,7 @@ Vanus Cloud's AWS MySQL sink connector simplifies the process of transferring da
 Before forwarding events to MySQL, you must have:
 
 - A [Vanus Cloud account](https://cloud.vanus.ai) 
+- A running MySQL server 
 
 ## Getting Started 
 ### Step 1: Setup A Mysql server in AWS using RDS
@@ -107,23 +108,43 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 
 Now you can connect to your server and create a table and database. 
 
-### Step 2: Setup your connection in Vanus Cloud
+### Step 2: Set up your connection in Vanus Cloud 
 
-1. In Vanus Cloud, go to **"Sink"** and select **"MySQL"**.   
-![29](images/22.png)
-2. Click on the server you just created in AWS RDS.
-![](images/23.png)
-3. Now copy and paste your **Endpoint** and **Port** into vanus.
-![](images/24.png)
+1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
+![3](images/go%20to%20vanuscloud.png)  
+
+2. Click on **Create Connections**  
+![3](images/click%20create%20connection.png)  
+
+3. Name your connection, Choose your source and click next 
+![3](images/choose%20source.png) 
+
+4. Click on **"Sink"** and select **"Amazon RDS (MySQL)"**.   
+![29](images/choose%20sink.png)  
+
+5. Click on the server you just created in AWS RDS.
+![](images/23.png) 
+
+6. Now copy and paste your **Endpoint** and **Port** into vanus.
+![](images/24.png) 
+
 - **Host:** This is your RDS endpoint.
-- **Port:** Enter the port number on which your MySQL server is listening. The default port for MySQL is 3306.
-4. Enter the rest of your credentials
+- **Port:** Enter the port number on which your MySQL server is listening. The default port for MySQL is 3306. 
+
+7. Enter the rest of your credentials  
+![](images/sink%20config.png)
+
 - **Username:** Master username selected during the database creation.
 - **Password:** User password.
 - **Database Name:** The initial database name.
 - **Table Name:** The name of the table you want your events to be sent to.
-- Chose the insertion mode.
-3. Click `Next` and finish the configurations.
+- Chose the insertion mode and click next. 
+
+8. Click on submit to finish the configuration. 
+![](images/submit.png)  
+
+You've successfully created your Vanus aws-mysql sink connection.  
+![](images/created.png)  
 
 ## Custom Connection
 
