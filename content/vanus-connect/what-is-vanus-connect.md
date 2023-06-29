@@ -1,6 +1,6 @@
 ---
 title: What is Vanus Cloud
-id: what-is-vanus-cloud
+id: what-is-vanus-connect
 ---
 
 # What is Vanus Cloud?

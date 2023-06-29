@@ -98,8 +98,7 @@ const sidebars = {
       type: "category",
       label: "User Guides",
       items: [
-            "user-guides/how-to-guides/get-webhook-url",
-            "user-guides/how-to-guides/add-sections-in-slack-sink",
+            "vanus-connect/user-guides/get-webhook-url",
           ],
     },
     {
@@ -107,7 +106,7 @@ const sidebars = {
       label: "Template Guides",
       link: {
         type: "doc",
-        id: "user-guides/template-guides",
+        id: "vanus-connect/template-guides",
       },
       items: [
           "vanus-connect/template-guides/github-starred-feishu",
@@ -199,7 +198,7 @@ const sidebars = {
       label: "How to",
       link: {
         type: "doc",
-        id: "how-to",
+        id: "vanus-os/how-to",
       },
       items: [
         {

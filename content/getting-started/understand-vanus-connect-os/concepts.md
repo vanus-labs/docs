@@ -1,7 +1,7 @@
 ---
 title: Concepts
 id: concepts
-slug: /understand-vanus/concepts
+slug: /understand-vanus-connect-os/concepts
 ---
 
 # Concepts

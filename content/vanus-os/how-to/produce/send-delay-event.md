@@ -11,8 +11,8 @@ The following document will teach you how to build a simple producer with a time
 **Prerequisites**
 
 To send events to Vanus, you must meet the following prerequisites:
-1. Have a running [Vanus](/vanus-open-source/installation) cluster.
-2. Have [vsctl](/how-to/vsctl).
+1. Have a running [Vanus](../../installation) cluster.
+2. Have [vsctl](../vsctl).
 3. Have created an [Eventbus](https://github.com/vanus-labs/docs/blob/main/concepts/eventbus.md) named quick-start.
 4. Have exported the environment variable by running this command: `export VANUS_GATEWAY=127.0.0.1:8080`.
 
