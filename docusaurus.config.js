@@ -31,7 +31,7 @@ const config = {
         name: "source", // used by CLI, must be path safe
         sourceBaseUrl:
           "https://raw.githubusercontent.com/vanus-labs/vanus-connect/main/connectors/", // the base url for the markdown (gets prepended to all of the documents when fetching)
-        outDir: "content/connectors/source/", // the base directory to output to.
+        outDir: "content/vanus-os/connectors/source/", // the base directory to output to.
         documents: [
           "source-alicloud-billing/README.md",
           "source-aws-billing/README.md",
@@ -55,7 +55,7 @@ const config = {
         name: "sink", // used by CLI, must be path safe
         sourceBaseUrl:
           "https://raw.githubusercontent.com/vanus-labs/vanus-connect/main/connectors/", // the base url for the markdown (gets prepended to all of the documents when fetching)
-        outDir: "content/connectors/sink/", // the base directory to output to.
+        outDir: "content/vanus-os/connectors/sink/", // the base directory to output to.
         documents: [
           "sink-aws-s3/README.md",
           "sink-display/README.md",

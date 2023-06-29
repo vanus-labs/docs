@@ -1,6 +1,6 @@
 ---
-title: Vanus Cloud vs Open Source
-id: cloud-vs-os
+title: Vanus Connect vs Open Source
+id: connect-vs-os
 ---
 
 #  Vanus Cloud vs Open Source

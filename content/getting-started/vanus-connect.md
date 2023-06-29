@@ -1,6 +1,6 @@
 ---
-title: Vanus Cloud
-id: vanus-cloud
+title: Vanus Connect
+id: vanus-connect
 ---
 # Vanus Cloud
 Vanus Cloud is a cloud-based service that makes it easy for users to create event-driven applications without the hassle of setting up and managing their own Vanus server. With Vanus Cloud, you can quickly and easily build connections between SaaS, cloud services, and databases, allowing you to easily automate, notify, and streamline your processes.
