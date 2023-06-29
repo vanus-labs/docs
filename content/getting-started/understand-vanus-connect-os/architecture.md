@@ -30,25 +30,18 @@ and resource scheduling. Regarding the metadata, it primarily includes event sto
 
 ### Segment Server
 
-Within the stateless gateway service, events that adhere to the CloudEvents standard sent by Source Connector or 
-Microservices are received and sent to Segment Server.
+Within the stateless gateway service, events that adhere to the CloudEvents standard sent by Source Connector or Microservices are received and sent to Segment Server.
 
-Segment Server provides multiple copies capacity by implementing multi-raft. It can automatically and elastically 
-scale according to the event storage traffic. When there are more event storage requests, the Controller will start more Segment Servers to process them in a balanced manner.
+Segment Server provides multiple copies capacity by implementing multi-raft. It can automatically and elastically scale according to the event storage traffic. When there are more event storage requests, the Controller will start more Segment Servers to process them in a balanced manner.
 
 ### Trigger
 
-A trigger fetch, process, and dispatch events to the user workload or Sink Connector. After a user creates a 
-subscription, the Controller assigns the subscription with a trigger to a specific Trigger Worker, a container that 
-runs Triggers. The Trigger fetches the events in the specified Eventbus, completes the events filter and transformation, 
-and then delivers the events.
+A trigger fetches, processes, and dispatches events to the user workload or Sink Connector. After a user creates a subscription, the Controller assigns the subscription with a trigger to a specific Trigger Worker, container that runs Triggers. The Trigger fetches the events in the specified Eventbus, completes the events filter and transformation, and then delivers the events.
 
 ### Timer
 
-
 The Timing service implements the Delay and Schedule Event feature with the help of the Hierarchical Timing Wheels.
 Vanus supports seconds-precision and unlimited future-time delivery. For more information, visit our [Special Events](understand-vanus-connect-os/concepts#special-events).
-
 
 ## Vanus Connect
 
@@ -56,9 +49,7 @@ Vanus Connect is a set of producers and consumers out-of-box to provide interope
 
 ### Source Connector
 
-A source connector obtains data from an underlying data producer and delivers it to targets, after the original data 
-has been transformed into CloudEvents. It doesn't limit the way a source retrieves data. (e.g., A source may pull 
-data from a message queue or act as an HTTP server waiting for data to be sent to it).
+A source connector obtains data from an underlying data producer and delivers it to targets, after the original data has been transformed into CloudEvents. It doesn't limit the way a source retrieves data. (e.g., A source may pull data from a message queue or act as an HTTP server waiting for data to be sent to it).
 
 ### Sink Connector
 
@@ -70,9 +61,7 @@ It receives events with CloudEvents format, processes the events, and routes the
 Each connector is constructed with Docker and can work independently without SCE. SCE provides extra availability and scalability to connectors.
 :::
 
-SCE(Serverless Connector Engine) is the coordinator responsible for the auto-scaling of the Source Connector and Sink 
-Connector, which supports automatically scaling up from 0 to n and scales down from n to 0 according to event traffic 
-or other user conditions.
+SCE(Serverless Connector Engine) is the coordinator responsible for the auto-scaling of the Source Connector and Sink Connector, which supports automatically scaling up from 0 to n and scales down from n to 0 according to event traffic or other user conditions.
 
 ## Vanus Workflow
 
