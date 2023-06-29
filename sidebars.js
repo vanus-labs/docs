@@ -85,6 +85,7 @@ const sidebars = {
       value: "<h2>Vanus Connect</h2>",
       defaultStyle: true,
     },
+
     {
       type: "doc",
       id: "vanus-connect/what-is-vanus-connect",
@@ -175,6 +176,7 @@ const sidebars = {
         },
       ],
     },
+
     {
       type: "html",
       value: "<h2>Vanus Open Source</h2>",
@@ -204,56 +206,56 @@ const sidebars = {
           type: "category",
           label: "Upgrade Vanus",
           items: [
-            "how-to/maintain/upgrade/using-vanus-operator",
-            "how-to/maintain/upgrade/using-vsctl",
+            "vanus-os/how-to/maintain/upgrade/using-vanus-operator",
+            "vanus-os/how-to/maintain/upgrade/using-vsctl",
           ],
         },
         {
           type: "category",
           label: "Produce",
           items: [
-            "how-to/produce/using-sdk",
-            "how-to/produce/send-delay-event",
+            "vanus-os/how-to/produce/using-sdk",
+            "vanus-os/how-to/produce/send-delay-event",
           ],
         },
         {
           type: "category",
           label: "Consume",
-          items: ["how-to/consume/using-sdk"],
+          items: ["vanus-os/how-to/consume/using-sdk"],
         },
-        "how-to/manage-eventbus",
+        "vanus-os/how-to/manage-eventbus",
         {
           type: "category",
           label: "Manage subscriptions",
           link: {
             type: "doc",
-            id: "how-to/manage-subscription",
+            id: "vanus-os/how-to/manage-subscription",
           },
           items: [
-            "how-to/manage-subscription/filters",
-            "how-to/manage-subscription/transformer",
+            "vanus-os/how-to/manage-subscription/filters",
+            "vanus-os/how-to/manage-subscription/transformer",
             {
               type: "category",
               label: "Function reference",
               link: {
                 type: "doc",
-                id: "how-to/manage-subscription/function-reference",
+                id: "vanus-os/how-to/manage-subscription/function-reference",
               },
               items: [
-                "how-to/manage-subscription/function-reference/structure",
-                "how-to/manage-subscription/function-reference/string",
-                "how-to/manage-subscription/function-reference/date-time",
-                "how-to/manage-subscription/function-reference/mathematical",
-                "how-to/manage-subscription/function-reference/conditional",
-                "how-to/manage-subscription/function-reference/array",
+                "vanus-os/how-to/manage-subscription/function-reference/structure",
+                "vanus-os/how-to/manage-subscription/function-reference/string",
+                "vanus-os/how-to/manage-subscription/function-reference/date-time",
+                "vanus-os/how-to/manage-subscription/function-reference/mathematical",
+                "vanus-os/how-to/manage-subscription/function-reference/conditional",
+                "vanus-os/how-to/manage-subscription/function-reference/array",
               ],
             },
           ],
         },
-        "how-to/manage-dlq",
-        "how-to/vsctl",
-        "how-to/use-lambda",
-        "how-to/use-gcloud-functions",
+        "vanus-os/how-to/manage-dlq",
+        "vanus-os/how-to/vsctl",
+        "vanus-os/how-to/use-lambda",
+        "vanus-os/how-to/use-gcloud-functions",
       ],
     },
     {
@@ -261,7 +263,7 @@ const sidebars = {
       label: "Connectors",
       link: {
         type: "doc",
-        id: "connectors",
+        id: "vanus-os/connectors",
       },
       items: [
         {
@@ -269,7 +271,7 @@ const sidebars = {
           label: "Source",
           link: {
             type: "doc",
-            id: "connectors/source",
+            id: "vanus-os/connectors/source",
           },
           items: [
             "vanus-os/connectors/source/source-alicloud-billing/README",
@@ -292,7 +294,7 @@ const sidebars = {
           label: "Sink",
           link: {
             type: "doc",
-            id: "connectors/sink",
+            id: "vanus-os/connectors/sink",
           },
           items: [
             "vanus-os/connectors/sink/sink-aws-s3/README",
