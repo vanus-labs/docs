@@ -12,19 +12,19 @@ Here are some popular use cases for Vanus; please refer to the blogs for detaile
 
 Vanus makes it easy for developers to build data pipelines from event sources to data lakes, enabling real-time data analysis for a wide range of use cases, including:
 
-- **Optimize Ad Campaign**: Sync customer data from snowflake to google ads to optimize campaigns.
+- **Optimize Ad Campaign**: Sync customer data from Snowflake to Google ads to optimize campaigns.
 - **Dynamic Customer 360**: Get data from websites and social media to build dynamic customer 360.
 - **Business Opportunity Mining**: Sync customer leads obtained from Linkedin and Twitter to Snowflake.
 - **User Behavior Analysis**: Sync user websites' click data to Snowflake to optimize user journeys.
 - **Optimize User Experience**: Send emails based on specific events: registration, birthday, or product trial ends.
-- **Slack Data Analysis**: Obtain messages in Slack customer community and sync them to BigQuery.
+- **Slack Data Analysis**: Obtain messages in the Slack customer community and sync them to BigQuery.
 
 ## Integration
 
 Vanus offers a variety of ways for developers to quickly establish connections between SaaS applications. including:
 
 - **GitHub to Slack**: Receive notifications in Slack on any GitHub events.
-- **LinkedIn to Salesforce**: Synchronize potential users data on LinkedIn to Salesforce.
+- **LinkedIn to Salesforce**: Synchronize potential users' data on LinkedIn to Salesforce.
 - **Facebook Ads to Google Sheets**: Create a new row on Google Sheets for each Facebook Ads lead.
 - **Connect the Webhook to Email**: Send emails with newly caught webhooks.
 - **MySQL to Google Sheets**: Create a new row on Google Sheets for each MySQL record.

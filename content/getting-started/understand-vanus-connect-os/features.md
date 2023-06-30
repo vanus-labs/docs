@@ -14,7 +14,7 @@ Vanus offers an extensive range of features that help users accomplish their obj
 
 ## Lightweight & Kubertenes native:
 * One-click deployment, 10s to complete the installation.
-* No external dependencies, no need for zookeeper.
+* No external dependencies, no need for a zookeeper.
 * Limited resource usage, each pod in the cluster can run with 0.5 core and 500M memory.
 
 ## Separation of storage and computing:
@@ -31,6 +31,3 @@ Vanus offers an extensive range of features that help users accomplish their obj
 * Real push mode.
 * Native support for CloudEvents specification.
 * Seamlessly integrate cloud functions such as AWS Lambda, Google Cloud Function, and Knative.
-
-
-
