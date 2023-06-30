@@ -53,7 +53,13 @@ const sidebars = {
 
     {
       type: "html",
-      value: "<h2>Vanus AI</h2>",
+      value: "<h2>Vanus Cloud</h2>",
+      defaultStyle: true,
+    },
+
+    {
+      type: "html",
+      value: "<h3>Vanus AI</h3><hr>",
       defaultStyle: true,
     },
     {
@@ -82,7 +88,7 @@ const sidebars = {
 
     {
       type: "html",
-      value: "<h2>Vanus Connect</h2>",
+      value: "<h3>Vanus Connect</h3><hr>",
       defaultStyle: true,
     },
 
