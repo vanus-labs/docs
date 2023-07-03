@@ -35,16 +35,9 @@ Users have the ability to incorporate predefined prompts into their AI applicati
 
 ![](../../static/img/jay_tech_prompt_reply.png)
 
-**Here's another scenario to illustrate the functionality of the prompt feature:**
-Let's say you own an e-commerce store that sells a wide range of products. You want to guide your customers towards your special offers and promotions. With the prompt feature, you can save a specific instruction such as "Inform customers about our ongoing 20% discount on all electronics."
-
-Now, when a customer asks a question related to discounts or electronics, your AI application will be ready to provide a prompt-driven response. For instance, if a customer asks, "Are there any current discounts on electronics?", the AI application will instantly retrieve the predefined prompt and direct the customer to the ongoing 20% discount on electronics.
-
-By strategically incorporating tailored prompts, users can tailor the behaviour of their AI application to cater to their specific business objectives and customer engagement strategies. Thereby proactively promoting engagement and fostering connections between the business and its audience.
-
 ## Integration
 
-Vanus AI allows users to effortlessly integrate their AI application with a wide array of third-party apps while also establishing connections with external services.
+Vanus AI allows users to effortlessly integrate their AI applications with a wide array of third-party apps while also establishing connections with external services.
 
 With the Vanus AI plugin, you gain the capability to establish seamless connections between your AI application and external services. This empowers you to link your application with various platforms such as WordPress, e-commerce websites, or any other preferred external systems that are essential to your business operations.
 
