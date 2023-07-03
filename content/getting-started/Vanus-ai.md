@@ -14,9 +14,6 @@ The created AI Applications can interact with many existing apps, databases and 
 
 With Vanus AI, users have the option to either have the Vanus AI team handle the hosting and management of their data, or they can choose to self-host and retain complete control over their data. It's important to note that all data is hosted on an AWS server. You can freely choose your cloud service platform and deployment region. Vanus AI currently supports AWS and Alibaba Cloud, with plans to add more platforms in the future.
 Vanus AI offers a wide range of application possibilities across various business fields and purposes. Your AI application could be trained to serve as an intelligent customer service application, investment research assistant, translator, health Q&A bot, and much more. The possibilities are endless.
-![](../../static/img/uses%201.jpg)
-
-![](../../static/img/uses%202.jpg)
 
 Users can further streamline their AI application to meet their specific business requirements by integrating predefined prompts. These prompts can be configured to guide users to a designated customer care agent in case of errors or gently steer website visitors towards a specific product. Discover more about the remarkable capabilities of the prompt feature and other features by visiting our [features page](../vanus-ai/features.md)
 ## Getting Started
