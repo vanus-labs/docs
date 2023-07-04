@@ -83,6 +83,7 @@ const sidebars = {
       label: "How to",
       items: [
           "vanus-ai/how-to/create-AI-bot",
+          "vanus-ai/how-to/api",
       ],
     },
 
