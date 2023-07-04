@@ -6,45 +6,41 @@ Users can choose from various large models when building their AI application. V
 
 ## Knowledge Base
 
-Vanus AI's knowledge base is a versatile and powerful repository that plays a vital role in training and enhancing the capabilities of your personal assistant, chatbot, or AI-powered application. It serves as a centralized hub, containing essential data and information to strengthen your AI system. 
+Vanus AI's knowledge base is a versatile and powerful repository that plays a vital role in training and enhancing the capabilities of your personal assistant, chatbot, or AI-powered application. It serves as a centralized hub, containing essential data and information to strengthen your AI system.
 Users can upload a wide range of file types to the knowledge base, including PDF documents, CSV, traditional text-based files, images, videos, and website URLs and the application extracts relevant information from these files.
-![](../../static/img/upload-files.png) 
+![](../../static/img/upload-files.png)
 
-![](../../static/img/enter-url.png) 
+![](../../static/img/enter-url.png)
 
-By integrating your AI application with relevant third-party apps such as databases or business chat groups, you can ensure a continuous update of the knowledge base. Through real-time streaming, your AI application receives updates and learns from interactions with these third-party applications, enabling it to enhance its knowledge base dynamically.
+In addition to the initial training received upon uploading your valuable resource content, the knowledge base of Vanus AI maintains a continuous cycle of updates and self-training through interactions with customers and content from connected external platforms. By establishing connections between your AI application and relevant external platforms like databases or informative websites such as investment blogs, you can ensure a constant flow of updated knowledge. Through real-time streaming, your AI application receives timely updates and learns from its interactions with these external sources, resulting in a dynamic enhancement of its knowledge base.
 
-## Dual Hosting Mode
+## Real-time learning Data Streaming
 
-The concept of dual hosting mode pertains to the location and manner in which you host your knowledge base. Vanus AI supports 2 hosting modes, namely:
+The AI application seamlessly and continuously enhances its knowledge base by actively acquiring new information from its data source. This process occurs effortlessly whenever users interact with the application, along with third-party applications and services. Consequently, the AI application swiftly adapts and learns from the newly generated data, enabling it to stay updated and provide intelligent responses based on the latest information.
 
-- **Knowledge Base Hosting:** In this mode, the users or enterprises can fully host their data on the knowledge base and Vanus AI will maintain their data for them.
+**Consider this scenario:** suppose your AI application is integrated with your trading website through a plugin or connected to your database. In such cases, whenever fresh data is added to the database, it synchronizes with the knowledge base and contributes to the training of the AI application. This synchronization ensures that the application stays up-to-date with real-time updates, gaining insights into all the activities taking place on your website. The AI application actively learns from various user interactions, including comments, reviews, customer engagements, and any available information on the connected site or platform. By continuously assimilating and analyzing this data, the AI application becomes more knowledgeable and capable, offering an improved user experience and better-informed responses. This dynamic learning capability ensures that the AI application evolves and improves its performance over time, delivering enhanced results and valuable insights to users and stakeholders alike.
 
-- **Cloud Database Hosting:** In this mode of hosting, users or enterprises can store their data on their preferred cloud database. This comes in handy for enterprises that want to be solely in charge of their data.
+## Multi-Cloud deployment
 
-In the future, a new feature called "Data Migration" would be made available. This feature enables users to migrate data from their knowledge base to a cloud database, and vice versa.
+With Vanus AI, users have the freedom to select the ideal cloud service platform that aligns with their unique preferences. At present, Vanus AI provides seamless deployment support on two widely recognized and trusted cloud service platforms: Amazon Web Services (AWS) and Alibaba Cloud. However, the commitment to user satisfaction extends further as Vanus AI envisions expanding its support to encompass other popular cloud platforms in the near future, broadening the array of choices available.
 
-## Real-time learning
+The flexibility bestowed upon users extends beyond platform selection, as they also have the liberty to choose the specific region in which they wish to deploy their applications. This strategic decision can be based on the distinct requirements and objectives of their enterprise. By allowing users to pinpoint their desired deployment region, Vanus AI ensures that applications are optimally situated to serve their intended audience and operate with maximum efficiency.
 
-The AI application automatically acquires new knowledge from its data source. Whenever users, as well as third-party applications and services, engage with your application, the AI application instantly learns from the newly generated data.
+Vanus AI goes above and beyond in catering to the diverse needs of users by offering two data management options. Those seeking convenience and expert management can entrust the Vanus AI team to handle the hosting and administration of their data. On the other hand, users who prioritize maintaining complete control over their valuable data can opt for self-hosting. This empowers them with full authority and oversight, guaranteeing that their data remains securely hosted on the chosen cloud service platform.
 
 ## Prompt
 
-Users have the ability to incorporate predefined prompts into their AI application to align its services with their business needs. For example, a user can save a prompt such as "Encourage users to also connect with us on our Instagram handle @jay_tech" When a customer asks a question related to contacting the business, the AI application will direct them towards the Instagram handle mentioned in the saved prompt.
+Users have the ability to incorporate predefined prompts into their AI application to align its services with their business needs. As an illustrative example, consider a user who saves a predefined prompt that states, "Encourage users to also connect with us on our Instagram handle @jay_tech." Now, when a customer raises a query related to contacting the business, the AI application springs into action and intelligently guides them towards the mentioned Instagram handle.
 ![](../../static/img/jay_tech_prompt.png)
 
 ![](../../static/img/jay_tech_prompt_reply.png)
 
-The utilization of this feature can vary based on the specific needs of users. Users have the flexibility to save multiple prompts for different scenarios, and the AI application will employ them appropriately during customer interactions.
+## Integration
 
-## MultiCloud Deployment
+Vanus AI allows users to effortlessly integrate their AI applications with a wide array of third-party apps while also establishing connections with external services.
 
-Users have the freedom to select the cloud service platform on which they want to deploy their applications. Currently, Vanus AI supports deployment on Amazon Web Services (AWS) and Alibaba Cloud, with plans to include support for other popular cloud platforms in the future. Users can also choose the specific region where they want to deploy their applications, based on the specific requirements of their enterprise.
+With the Vanus AI plugin, you gain the capability to establish seamless connections between your AI application and external services. This empowers you to link your application with various platforms such as WordPress, e-commerce websites, or any other preferred external systems that are essential to your business operations.
 
-## Third-Party SAAS Integration
+For instance, let's consider an investment and trading website. By connecting your AI applications to your website, you can enhance its functionality by transforming it into an intelligent investment research bot. As visitors interact with your website, the AI application learns and improves its capabilities by actively absorbing information from real-time events, user questions, comments, and interactions. This enables the AI application to provide visitors with relevant details and valuable insights related to investments.
 
-Customers have the capability to integrate their created AI applications with various third-party SAAS apps and services using Vanus Connect. For instance, if a customer is training their AI application to function as an investment research bot, they can connect it to a Slack investment group. This enables the AI application to learn and improve its abilities as an investment research bot by leveraging real-time events and information shared within the group.
-
-## Plugin Mechanism
-
-By utilizing the Vanus AI plugin, you have the ability to establish connections between your application and external services. This allows you to link your AI application with platforms like WordPress, e-commerce websites, and any other preferred external systems.
+Furthermore, leveraging the power of Vanus Connect, you can establish a connection between your AI application and your Slack trading group. This integration allows you to share important trade updates, ensuring that both your website and trading group are kept up to date with the necessary information. This seamless flow of real-time updates enhances communication and collaboration within your trading community, enabling members to make informed decisions based on the latest market trends and insights provided by the AI application.
