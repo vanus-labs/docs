@@ -1,4 +1,4 @@
-# Vanus AI Features
+# Features
 Vanus AI is an AI platform that enables enterprises to build AI applications quickly and easily without the need for code development. It offers a range of features and benefits that empower users to harness the power of large models and create AI applications for various business fields. Here is an in-depth list of Vanus AI features:
 
 ## Multi-model selection:

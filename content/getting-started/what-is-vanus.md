@@ -5,8 +5,6 @@ id: what-is-vanus
 
 # What is Vanus
 
-# Vanus
-
 Vanus is a forward-thinking company dedicated to revolutionizing the way applications interact and exchange information.
 
 We offer a comprehensive suite of services designed to empower businesses and developers. Our expertise lies in connecting and building AI applications.
