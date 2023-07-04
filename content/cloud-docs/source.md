@@ -44,5 +44,5 @@ If you cannot find a connector that meets your needs, please feel free to send u
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
 

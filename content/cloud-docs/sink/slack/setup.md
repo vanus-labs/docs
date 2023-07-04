@@ -35,10 +35,10 @@ hide_title: true
 ---
 
 ### Step 3: Slack Connection Settings
-1. In Vanus Cloud, paste the Webhook URL into the `URL` field. 
+1. In Vanus Connect, paste the Webhook URL into the `URL` field. 
 ![img_2.png](images/sink%20config.png)
 2. Click **Next** to continue.
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

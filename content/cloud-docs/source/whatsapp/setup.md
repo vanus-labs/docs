@@ -13,7 +13,7 @@ hide_title: true
 
 ### WhatsApp Connection Settings
 
-1. Write a name for your connection in Vanus Cloud.
+1. Write a name for your connection in Vanus Connect.
 ![](images/name.png)
 2. Click `Verify` to authorize Vanus to establish a connection with your WhatsApp account. 
 
@@ -24,7 +24,6 @@ hide_title: true
 ![img.png](images/whatsapp%20qrcode.png)
 5. Click **Next** and continue the configuration. 
 
-
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

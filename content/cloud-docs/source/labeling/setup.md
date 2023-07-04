@@ -12,7 +12,7 @@ hide_title: true
 **Perform the following steps to configure your labeling Source.**
 
 ### Labeling Connection Settings
-1. Write a name for your connection in Vanus Cloud.
+1. Write a name for your connection in Vanus Connect.
 ![](images/name.png)
 
 2. Insert the following:
@@ -54,4 +54,4 @@ By following this path, you can access the value of the title attribute within t
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

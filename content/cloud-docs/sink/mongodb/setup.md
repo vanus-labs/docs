@@ -235,4 +235,4 @@ You are now connected to your MongoDB database.
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

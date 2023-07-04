@@ -47,7 +47,7 @@ hide_title: true
 
 ### Step 3: Discord Connection Settings
 
-1. Go back to Vanus Cloud.
+1. Go back to Vanus Connect.
 2. Paste your webhook URL in the `URL` field.
 
     ![img_7.png](images/source%20config.png)
@@ -55,4 +55,4 @@ hide_title: true
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

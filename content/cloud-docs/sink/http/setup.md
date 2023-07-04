@@ -25,5 +25,4 @@ You can also select the URL Method (`POST`, `GET`, `PATCH`, `DELETE`, `PUT`)
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
-
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

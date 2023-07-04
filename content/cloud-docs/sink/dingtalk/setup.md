@@ -37,7 +37,7 @@ hide_title: true
 ![](images/img_7.png)
    - In the **Chatbot name** field, provide a name for the robot.
    - In the **Add to Group** field, select the target group in which the Robot will create.
-   - In the **Security Settings** field, select the **Additional Signature**, copy the signature and paste it to Vanus Cloud.
+   - In the **Security Settings** field, select the **Additional Signature**, copy the signature and paste it to Vanus Connect.
    - Accept the Terms of Service.
    - Click **Finished**.
 5. Now click **Copy**, keep the Webhook URL safe and click **Finished**.
@@ -55,4 +55,4 @@ Click **Next** to continue.
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

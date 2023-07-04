@@ -119,7 +119,7 @@ Now you can connect to your server and create a table and database.
 ---
 
 ### Step 2: Amazon RDS MySQL Connection Settings
-1. Write a name for your connection in Vanus Cloud.
+1. Write a name for your connection in Vanus Connect.
 ![img.png](images/name.png)
 
 2. Click on the server you just created in AWS RDS.
@@ -141,4 +141,4 @@ Now you can connect to your server and create a table and database.
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)

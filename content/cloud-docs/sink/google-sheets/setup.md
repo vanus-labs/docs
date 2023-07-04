@@ -58,7 +58,7 @@ import TabItem from '@theme/TabItem';
 ![](images/10.png)
 9. Choose **JSON** and **CREATE**.
 ![](images/11.png)
-10. It will trigger the download of a JSON file copy the whole content and paste it in Vanus Cloud.
+10. It will trigger the download of a JSON file copy the whole content and paste it in Vanus Connect.
 ![](images/source%20config.png)
 
 
@@ -78,4 +78,4 @@ import TabItem from '@theme/TabItem';
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

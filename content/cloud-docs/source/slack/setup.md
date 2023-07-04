@@ -30,7 +30,7 @@ hide_title: true
  - Verification Token
  - Signing Secret
 ![](images/img_4.png)
-3. Don't close this page but continue in Vanus Cloud.
+3. Don't close this page but continue in Vanus Connect.
 4. Paste the two credentials from Slack as configurations.
       ![](images/token%20and%20secret.png)
 5. Click **Next** and continue the configuration.   
@@ -81,7 +81,7 @@ But, if you're using some **Vanus Templates** like `Send a custom greeting messa
 
 ### Step 6: Slack Connection Settings
 
-1. Write a name for your connection in Vanus Cloud.
+1. Write a name for your connection in Vanus Connect.
 ![](images/name%20connection.png)
 2. After creating the connection, there are a few more steps. Simply click the link to open a new page with all the details on how to complete the connection.
 ![](images/2.png)
@@ -89,4 +89,4 @@ But, if you're using some **Vanus Templates** like `Send a custom greeting messa
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

@@ -96,7 +96,7 @@ Multi-AZ deployment is only available for paid tier. A Multi-AZ deployment autom
 ---
 
 ### Step 2: PostgresSQL Connection Settings
-1. Write a name for your connection in Vanus Cloud.
+1. Write a name for your connection in Vanus Connect.
 ![](images/name.png)
 2. Provide the following credentials: 
 ![](images/source%20config.png)
@@ -112,4 +112,4 @@ Multi-AZ deployment is only available for paid tier. A Multi-AZ deployment autom
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus).

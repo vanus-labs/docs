@@ -14,7 +14,7 @@ hide_title: true
 
 ### MySQL Connection Settings
 
-Enter all the following information in Vanus Cloud.
+Enter all the following information in Vanus Connect.
 - Host - The IP address of your MySQL Server.
 - Port - The Port of your MySQL Server: 3306.
 - Username - A Username with the following permissions INSERT, UPDATE, DELETE.
@@ -25,4 +25,4 @@ Enter all the following information in Vanus Cloud.
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

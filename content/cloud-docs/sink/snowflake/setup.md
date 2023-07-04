@@ -145,4 +145,4 @@ The values for `role_name`, `user_name`, `warehouse_name`, `database_name` and `
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

@@ -222,7 +222,7 @@ You are now connected to your MongoDB database.
 ![](images/auth%20source.png)   
 
 
-3. Go to Atlas Database page and click on **Browse collections** to see your collections, and get the name of the one you plan on making the Vanus Cloud Source connection with.  
+3. Go to Atlas Database page and click on **Browse collections** to see your collections, and get the name of the one you plan on making the Vanus Connect Source connection with.  
 ![](images/collection%20set.png)   
 
 4. Take note of your collection name.  
@@ -232,7 +232,7 @@ You are now connected to your MongoDB database.
 
 #### Step 2: MongoDB Connection Settings
 
-1. Write a name for your connection in Vanus Cloud.
+1. Write a name for your connection in Vanus Connect.
 ![](images/vanus%20source.png)   
 
 3. Input the required credentials in the source configuration.   
@@ -247,4 +247,4 @@ You are now connected to your MongoDB database.
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)
