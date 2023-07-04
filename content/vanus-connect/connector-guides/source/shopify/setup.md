@@ -1,12 +1,12 @@
 # Shopify
 
-This guide contains information to set up a Shopify Source in Vanus Cloud.
+This guide contains information to set up a Shopify Source in Vanus Connect.
 
 ## Introduction
 
 Shopify is a popular e-commerce platform that allows businesses to sell their products online. 
 
-With the Shopify source connector in Vanus Cloud, you can obtain real-time updates on all customer and order activity in your Shopify store.
+With the Shopify source connector in Vanus Connect, you can obtain real-time updates on all customer and order activity in your Shopify store.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ Before obtaining Shopify events, you must have:
 
 ## Getting Started
 
-To obtain Shopify events using the Shopify source connector in Vanus Cloud, follow these steps:
+To obtain Shopify events using the Shopify source connector in Vanus Connect, follow these steps:
 
 1. Write a connection name without any spaces.
    ![img.png](images/connection.png)
@@ -26,4 +26,4 @@ To obtain Shopify events using the Shopify source connector in Vanus Cloud, foll
 3. Click next and finish the configurations.
 
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

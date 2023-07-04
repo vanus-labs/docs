@@ -1,12 +1,12 @@
 # Doris
 
-This guide contains information to set up a Doris Sink in Vanus Cloud.
+This guide contains information to set up a Doris Sink in Vanus Connect.
 
 ## Introduction
 
 Doris is an open-source, distributed data management and analytics system developed by Alibaba. It provides real-time processing and analysis for large-scale data sets, supports diverse data sources, and is scalable and fault-tolerant for big data applications.
 
-The Doris sink receive Cloudevents and insert them into your Doris database. In order to do this you need to give access to Vanus Cloud to insert rows of data.
+The Doris sink receive Cloudevents and insert them into your Doris database. In order to do this you need to give access to Vanus Connect to insert rows of data.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ Before forwarding events to Feishu, you must have:
 
 ## Getting Started
 
-**To set up Doris Sink in Vanus Cloud:** 
+**To set up Doris Sink in Vanus Connect:** 
 
 1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
 ![3](images/go%20to%20vanuscloud.png)  

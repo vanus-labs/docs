@@ -1,6 +1,6 @@
 # MongoDB  
 
-This guide contains information to set up a MongoDB Source in Vanus Cloud.  
+This guide contains information to set up a MongoDB Source in Vanus Connect.  
 
 ## Introduction  
 
@@ -12,7 +12,7 @@ One of the key features of MongoDB is its support for dynamic queries and indexi
 MongoDB is also designed to be easy to use and developer-friendly. It has a powerful query language and a variety of APIs for interacting with the database, and it is often used in conjunction with popular programming languages like JavaScript and Python.
 
 ##### MongoDB Source   
-The Vanus MongoDB source connector is a connector provided by Vanus, that extracts data from the users MongoDB database, converts it into CloudEvents, and streams it to their selected system/sink connector. The connector continuously monitors the MongoDB database for changes and captures those changes in real-time. To use the Vanus cloud mongodb source connector, you need to provide a host, username, password, Auth Source, Database, and Collection, which are required to authenticate and authorize access to your MongoDB account. 
+The Vanus MongoDB source connector is a connector provided by Vanus, that extracts data from the users MongoDB database, converts it into CloudEvents, and streams it to their selected system/sink connector. The connector continuously monitors the MongoDB database for changes and captures those changes in real-time. To use the Vanus Connect mongodb source connector, you need to provide a host, username, password, Auth Source, Database, and Collection, which are required to authenticate and authorize access to your MongoDB account. 
 
 
 ## Prerequisites   
@@ -235,13 +235,13 @@ You are now connected to your MongoDB database.
 ![](images/auth%20source.png)   
 
 
-3. Go to Atlas Database page and click on **Browse collections** to see your collections and get the name of the one you plan on making the Vanus Cloud Source connection with.  
+3. Go to Atlas Database page and click on **Browse collections** to see your collections and get the name of the one you plan on making the Vanus Connect Source connection with.  
 ![](images/collection%20set.png)   
 
 4. Take note of your collection name.  
 ![](images/collection%20name.png)   
 
-### Step 2: Configure your MongoDB Vanus Cloud Source Connection  
+### Step 2: Configure your MongoDB Vanus Connect Source Connection  
 1. return to your Vanus Connection page.  
 
 2. Give your connection a name, and choose MongoDB as the source.  
@@ -251,4 +251,4 @@ You are now connected to your MongoDB database.
 ![](images/complete%20mongo%20source.png)   
 
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)

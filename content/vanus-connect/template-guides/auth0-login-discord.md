@@ -12,7 +12,7 @@ This guide will help you get a Discord notification message whenever someone log
 
 ### Step 1: Configure the Source
 
-- Log in to [Vanus Cloud](https://cloud.vanus.ai/) and choose the **Auth0 login event triggers a Discord message** template.
+- Log in to [Vanus Connect](https://cloud.vanus.ai/) and choose the **Auth0 login event triggers a Discord message** template.
 
 ### Step 2: Configure Sink - Get the Discord Webhook URL
 
@@ -28,7 +28,7 @@ This guide will help you get a Discord notification message whenever someone log
 
 - Paste the copied URL in the "Webhook URL" in Sink Configuration and click Submit
 
-- Your connection has been succesfully setup
+- Your connection has been successfully setup
 
 ### Step 3: Create a Custom Webhook in Auth0
 

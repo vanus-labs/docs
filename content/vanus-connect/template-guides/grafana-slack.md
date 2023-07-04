@@ -2,7 +2,7 @@
 
 GitHub is the largest web-based platform that provides developers with a place to host and manage their software projects.
 
-You can receive notifications when specific events occur in a repository by adding a GitHub Source on Vanus Cloud.
+You can receive notifications when specific events occur in a repository by adding a GitHub Source on Vanus Connect.
 
 This guide will help you get a Discord notification whenever someone open a new pull request in your repository.
 
@@ -12,7 +12,7 @@ This guide will help you get a Discord notification whenever someone open a new 
 
 ### Step 1: Configure the Source
 
-- Log in to [Vanus Cloud](https://cloud.vanus.ai/) and choose the **Grafana resource utilization threshold event triggers a Slack message** template.
+- Log in to [Vanus Connect](https://cloud.vanus.ai/) and choose the **Grafana resource utilization threshold event triggers a Slack message** template.
 
 ![1.png](imgs/github-issue-discord-1.PNG)
 

@@ -2,7 +2,7 @@
 
 GitHub is the largest web-based platform that provides developers with a place to host and manage their software projects.
 
-You can receive data on Google Sheets when specific events occur in a repository by adding a GitHub Source on Vanus Cloud.
+You can receive data on Google Sheets when specific events occur in a repository by adding a GitHub Source on Vanus Connect.
 
 This guide will help you create a connection between Google Sheets and Github to recieve notification whenever someone does an action in your repository.
 
@@ -20,7 +20,7 @@ This guide will help you create a connection between Google Sheets and Github to
 
 ### Step 1: Configure the Source - Authorize GitHub and select a GitHub repo
 
-- Log in to [Vanus Cloud](https://cloud.vanus.ai/) and choose the **Real-time GitHub Developer 360** template.
+- Log in to [Vanus Connect](https://cloud.vanus.ai/) and choose the **Real-time GitHub Developer 360** template.
 
 - Find the **Sign in with GitHub** button and authorize GitHub. Then, select the repo you want to configure.
 
@@ -36,4 +36,4 @@ This guide will help you create a connection between Google Sheets and Github to
 
 - Add your sheet name in the Default Sheet Name
 
-- Click Submit. Your connection is now succesfully setup
+- Click Submit. Your connection is now successfully setup

@@ -28,7 +28,7 @@
     ![img_9.png](images/img_9.png)
 2. Now select create new **Create a new API destination** under API destination.
    - Write a connection **Name**.
-   - Set the **API destination endpoint** to the URL from Vanus Cloud from **[step 1](#configuring-amazon-eventbridge)**.
+   - Set the **API destination endpoint** to the URL from Vanus Connect from **[step 1](#configuring-amazon-eventbridge)**.
    - Set the **HTTP method** as `POST`.
        ![img_10.png](images/img_10.png)
 3. Next, select **Create a new connection**.

@@ -1,6 +1,6 @@
 # Webhook
 
-This guide contains information to set up a Webhook Source in Vanus Cloud.
+This guide contains information to set up a Webhook Source in Vanus Connect.
 
 ## Introduction
 
@@ -17,7 +17,7 @@ Before obtaining Webhook server to receive events, you must have:
 
 ## Getting Started
 
-To obtain a unique Webhook URL in Vanus Cloud, follow these steps:
+To obtain a unique Webhook URL in Vanus Connect, follow these steps:
 
 ### Create a Connection
 
@@ -28,4 +28,4 @@ To obtain a unique Webhook URL in Vanus Cloud, follow these steps:
 3. Press **next**.
 
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

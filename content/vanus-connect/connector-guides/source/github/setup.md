@@ -1,6 +1,6 @@
 # GitHub
 
-This guide contains information to set up a GitHub Source in Vanus Cloud.
+This guide contains information to set up a GitHub Source in Vanus Connect.
 
 ## Introduction
 
@@ -19,7 +19,7 @@ The GitHub Source enables you to get specific CloudEvents when particular events
    ![img.png](images/connection.png)
 2. Click `Authorize` to authorize to your GitHub account.
 ![img.png](images/img.png)
-3. Configure Vanus cloud with your account.
+3. Configure Vanus Connect with your account.
 ![](images/selconfig.png)
 4. **Install and Authorize** Vanus to read repos and create webhooks.
 ![](images/authorizw.png)
@@ -27,4 +27,4 @@ The GitHub Source enables you to get specific CloudEvents when particular events
 ![](images/selectrepo.png)
 
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

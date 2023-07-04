@@ -1,12 +1,12 @@
 # MySQL
 
-This guide contains information required in setting up an MySQL Sink in Vanus Cloud.  
+This guide contains information required in setting up an MySQL Sink in Vanus Connect.  
 
 ## Introduction  
 
 MySQL is a popular open-source relational database management system used to store, organize, and retrieve data for websites, applications, and other software.
 
-Vanus Cloud's MySQL sink connector simplifies the process of transferring data/events from various sources to a MySQL database/table, with configurable filters and upsert/insert modes.
+Vanus Connect's MySQL sink connector simplifies the process of transferring data/events from various sources to a MySQL database/table, with configurable filters and upsert/insert modes.
 ## Prerequisites
 Before forwarding events to MySQL, you must have:
 
@@ -15,7 +15,7 @@ Before forwarding events to MySQL, you must have:
 - Have a Database and Table created.
 
 
-### Setup your connection in Vanus Cloud 
+### Setup your connection in Vanus Connect 
 
 1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
 ![3](images/go%20to%20vanuscloud.png)  
@@ -29,7 +29,7 @@ Before forwarding events to MySQL, you must have:
 4. Click on **Sink** and choose **MySQL** 
 ![3](images/choose%20sink.png) 
 
-5. Enter all the following information in Vanus Cloud and click **Next**. 
+5. Enter all the following information in Vanus Connect and click **Next**. 
 ![3](images/sink%20config.png)
 
 - **Host:**  The IP address of your MySQL Server.

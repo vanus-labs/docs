@@ -3,7 +3,7 @@ title: What is Vanus Connect?
 id: what-is-vanus-connect
 ---
 
-# What is Vanus COnnect?
+# What is Vanus Connect?
 
 Vanus Connect is a cloud-based service that makes it easy for users to create event-driven applications without the hassle of setting up and managing their own Vanus server. With Vanus Connect, you can quickly and easily build connections between SaaS, cloud services, and databases, allowing you to easily automate, notify, and streamline your processes.
 
@@ -19,7 +19,7 @@ We're passionate about helping our users save time and resources while enjoying 
 Vanus Connect offers a wide range of connectors that can be used to integrate with popular SaaS applications, cloud services, and databases. Some of the most commonly used connectors include:
 
 - Amazon Web Services (AWS)
-- Auth0 
+- Auth0
 - ChatGPT
 - GitHub
 - Slack
@@ -49,4 +49,3 @@ Our platform is designed to simplify the process of building connections between
 We also provide extensive documentation and support resources to help you every step of the way. Our documentation includes step-by-step guides, video tutorials, and frequently asked questions to help you get started and troubleshoot any issues you may encounter.
 
 If you require additional support, our support team is always available to assist you. We're dedicated to ensuring a seamless experience for our users, and we'll work with you to ensure that you can use Vanus Connect effectively, regardless of your technical background.
-

@@ -1,6 +1,6 @@
 # Amazon Billing
 
-This guide contains information to set up a Amazon Billing Source in Vanus Cloud.
+This guide contains information to set up a Amazon Billing Source in Vanus Connect.
 
 ## Introduction
 
@@ -63,4 +63,4 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 ![](images/17.png)
 3. Click **Next** and continue the configuration.
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai)
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai)

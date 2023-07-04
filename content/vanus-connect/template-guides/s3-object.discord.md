@@ -12,7 +12,7 @@ This guide will help you get a Discord notification whenever a new object gets u
 
 ### Step 1: Configure the Source
 
-- Log in to [Vanus Cloud](https://cloud.vanus.ai/) and choose the **S3 Upload Object Event triggers a Discord message** template.
+- Log in to [Vanus Connect](https://cloud.vanus.ai/) and choose the **S3 Upload Object Event triggers a Discord message** template.
 
 ### Step 2: Get Access key
 

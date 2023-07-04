@@ -1,6 +1,6 @@
 # Slack
 
-This guide contains information to set up a Slack Source in Vanus Cloud.
+This guide contains information to set up a Slack Source in Vanus Connect.
 
 ## Introduction
 
@@ -33,9 +33,9 @@ Before obtaining Slack events, you must have:
  - Verification Token
  - Signing Secret
 ![](images/img_4.png)
-3. Don't close this page but continue in Vanus Cloud
+3. Don't close this page but continue in Vanus Connect
 
-### Step 3: Connection in Vanus Cloud
+### Step 3: Connection in Vanus Connect
 
 1. Write a name for your connection.
 ![](images/img_22.png)

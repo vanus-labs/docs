@@ -1,12 +1,12 @@
 # S3
 
-This guide contains information to set up S3 Sink in Vanus Cloud.
+This guide contains information to set up S3 Sink in Vanus Connect.
 
 ## Introduction
 
 Amazon S3 (Simple Storage Service) is a highly scalable and durable object storage service provided by Amazon Web Services (AWS). It is designed to store and retrieve any amount of data from anywhere on the internet, making it ideal for a wide range of use cases such as backup and restore, disaster recovery, data archiving, content delivery, and big data analytics.
 
-With Amazon S3 Sink in Vanus Cloud, you can easily forward data or events to your S3 bucket automatically. The S3 Sink connector lets you save the events you need to any bucket of your choosing.
+With Amazon S3 Sink in Vanus Connect, you can easily forward data or events to your S3 bucket automatically. The S3 Sink connector lets you save the events you need to any bucket of your choosing.
 
 
 ## Prerequisites
@@ -62,8 +62,8 @@ Before forwarding events to an S3 bucket, you must have:
 5. Save your `Access key` and `Secret key` safely.
    ![](images/15.png)
 
-### Step 3: Set up your connection in Vanus cloud 
-**To set up S3 Sink in Vanus Cloud:**  
+### Step 3: Set up your connection in Vanus Connect 
+**To set up S3 Sink in Vanus Connect:**  
 
 1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
 ![3](images/go%20to%20vanuscloud.png)  
@@ -77,7 +77,7 @@ Before forwarding events to an S3 bucket, you must have:
 4. Click on **Sink** and choose **Amazon s3** 
 ![3](images/choose%20sink.png) 
 
-5. Enter your `Access Key` and `Secret Key` in Vanus Cloud from previous steps.  
+5. Enter your `Access Key` and `Secret Key` in Vanus Connect from previous steps.  
 ![3](images/sink%20config.png) 
 
 6. Now let go back to Amazon Web Services under the [Amazon S3 service](https://s3.console.aws.amazon.com).  
@@ -87,7 +87,7 @@ Before forwarding events to an S3 bucket, you must have:
 8. Once you've chosen or created a bucket keep in my your bucket name and region.
 ![img.png](images/16.png)  
 
-9. Write you `bucket name` and select your `region` in Vanus Cloud.
+9. Write you `bucket name` and select your `region` in Vanus Connect.
 ![](images/17.png) 
 
 10. Select the interval time of upload; `HOURLY` or `DAILY` and click **Next** to continue.  

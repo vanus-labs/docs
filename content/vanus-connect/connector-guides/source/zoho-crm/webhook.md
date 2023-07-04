@@ -22,7 +22,7 @@
 7. Name your Webhook.
 ![wh name](images/name-webhook.png)
 
-8. Provide the payload URL copied from your Zoho CRM source connector in Vanus Cloud and select **General** authorization type.
+8. Provide the payload URL copied from your Zoho CRM source connector in Vanus Connect and select **General** authorization type.
 ![add url](images/add-url.png)
 
 9. Select the event you want to receive notification for.
