@@ -1,3 +1,0 @@
-# Vanus Documentation
-
-Coming soon.

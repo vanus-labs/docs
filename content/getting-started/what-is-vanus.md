@@ -5,22 +5,35 @@ id: what-is-vanus
 
 # What is Vanus
 
-**Vanus is an open-source serverless event streaming platform with built-in event processing capabilities.**  It connects SaaS, cloud services, and databases to help users build next-generation event-driven applications. Vanus separates storage and computing resources and offers modern development features such as CloudEvents Specification, FaaS Integration, built-in Connectors, data filtering, and transformation.
+At Vanus, our mission is to transform the way applications interact and exchange information. We provide a wide range of empowering services tailored for businesses and developers alike. With a focus on connecting and constructing AI applications, we bring expertise and innovation to the forefront of application development.
+## Vanus  Cloud
 
-#### Build the event-driven application
-* Send SaaS-generated events to the data lake for analysis.
-* Deliver cloud services events to cloud functions for processing.
-* Real-time transmission of events between SaaS.
-* Synchronize data between databases in real-time.
+Vanus Cloud is the main product of Vanus. It is a cloud-based system made up of two parts that work together. Its purpose is to facilitate the creation of AI applications and help integrate these AI applications with 3rd party services and external platforms.
 
-#### Out-of-the-box event computing capabilities
-* Provides 100+ built-in functions to help developers process events in real-time.
-* Provides general and flexible filtering rules, and developers can easily filter events.
-* Supports event processing through cloud functions such as aws lambda.
+### Vanus AI
 
-#### Serverless, a simple and effortless process
-* Automatically scale up or down clusters based on event traffic, reducing costs by up to 90%.
-* Seamlessly integrate mainstream cloud functions and open-source FaaS platforms.
-* One-click deployment, the installation is done in seconds with 0 operations needed.
+Vanus AI is a cloud-based platform that simplifies AI application development. It allows users to create powerful AI applications without writing any code. The platform offers advanced language models like GPT-3.5, GPT-4.0, and ERNIE Bot, which provide context-aware responses for the applications.
 
-Vanus is an open-source project publicly available under the Apache 2.0 License. You can find Vanus on [GitHub](https://github.com/vanus-labs/vanus).
+One of the key features of Vanus AI is its comprehensive knowledge base. This feature enhances the training process for AI applications by serving as a repository of essential data. Users can train their AI application by uploading various types of content, such as website URLs, PDFs, and images. The AI application continuously learns from this data source and gains new knowledge through user interactions and engagement with third-party applications and services.
+
+Vanus AI also allows users to connect their AI applications to different services and platforms through its integration and plugging mechanism.
+
+The platform offers various application possibilities across all industries, including intelligent customer service, research, translation, and health Q&A bots.
+
+Vanus AI  is the leading platform for developing AI applications. With its seamless integration capabilities, extensive knowledge base, real-time streaming and learning, versatile hosting options, and diverse application possibilities.
+
+### Vanus Connect
+
+Vanus Connect is a cloud-based service that enables easy communication and exchange of information between different software applications, databases, and cloud services.
+
+For instance, you can connect Shopify to MySQL, enabling real-time updates from your Shopify app to your database. This proves beneficial in storing and instantly updating specific fields within your database.
+
+One of the notable advantages of Vanus Connect is its extensive collection of templates, offering a wide range of pre-existing connections for various applications and services. These templates provide a convenient starting point, enabling you to set up connections between popular platforms quickly.
+
+With Vanus Connect, you can unlock the potential of your software applications by establishing seamless connections, enabling efficient data exchange, and ensuring your systems are always up-to-date.
+
+Experience the simplicity and effectiveness of Vanus Connect in streamlining your workflows and enhancing your data management capabilities.
+
+## Vanus Open Source
+
+Vanus Open Source is a valuable part of Vanus. Developers and enthusiasts can work together to grow the open-source community. Vanus Connect core has always been open source for all to use. At Vanus, we believe in the greater cooperation of developers worldwide. We want to foster a place for people to build applications that solve real-life problems. Vanus Core is only the start of that greater goal.
