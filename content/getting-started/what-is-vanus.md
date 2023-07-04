@@ -5,10 +5,7 @@ id: what-is-vanus
 
 # What is Vanus
 
-Vanus is a forward-thinking company dedicated to revolutionizing the way applications interact and exchange information.
-
-We offer a comprehensive suite of services designed to empower businesses and developers. Our expertise lies in connecting and building AI applications.
-
+At Vanus, our mission is to transform the way applications interact and exchange information. We provide a wide range of empowering services tailored for businesses and developers alike. With a focus on connecting and constructing AI applications, we bring expertise and innovation to the forefront of application development.
 ## Vanus  Cloud
 
 Vanus Cloud is the main product of Vanus. It is a cloud-based system made up of two parts that work together. Its purpose is to facilitate the creation of AI applications and help integrate these AI applications with 3rd party services and external platforms.
