@@ -19,7 +19,7 @@
 - Verification Token
 - Signing Secret
   ![](images/img_4.png)
-3. Don't close this page but continue in Vanus Cloud
+3. Don't close this page but continue in Vanus Connect
 4. Paste the two credentials from Slack as configurations.
    ![](images/img_19.png)
 

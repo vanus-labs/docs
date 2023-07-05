@@ -39,7 +39,7 @@
 10. Select **HTTP Request**.
 ![](images/http-request.png)
 
-11. Provide the payload URL copied from your Jenkins source connector in Vanus Cloud and select HTTP mode.
+11. Provide the payload URL copied from your Jenkins source connector in Vanus Connect and select HTTP mode.
 ![](images/input-webhook-url.png)
 
 12. Click on **Advanced** to see more settings.
@@ -62,7 +62,7 @@
 4. Click on **Execute Shell**.
 ![](images/execute-shell.png)
 
-5. Write your code in the command field; ensure you include the payload URL copied from your Jenkins source connector in Vanus Cloud.
+5. Write your code in the command field; ensure you include the payload URL copied from your Jenkins source connector in Vanus Connect.
 ![](images/add-vanus-url.png)
 
 6. Click on save.

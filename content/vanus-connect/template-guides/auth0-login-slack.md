@@ -12,7 +12,7 @@ This guide will help you get a Slack notification message whenever someone login
 
 ### Step 1: Configure the Source
 
-- Log in to [Vanus Cloud](https://cloud.vanus.ai/) and choose the **Auth0 login event triggers a Slack message** template.
+- Log in to [Vanus Connect](https://cloud.vanus.ai/) and choose the **Auth0 login event triggers a Slack message** template.
 
 ### Step 2: Configure Sink - Get the Slack Webhook URL
 

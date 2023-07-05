@@ -2,7 +2,7 @@
 
 GitHub is the largest web-based platform that provides developers with a place to host and manage their software projects.
 
-You can receive notifications when specific events occur in a repository by adding a GitHub Source on Vanus Cloud.
+You can receive notifications when specific events occur in a repository by adding a GitHub Source on Vanus Connect.
 
 This guide will help you get a FeiShu notification whenever someone stars your repository.
 
@@ -12,7 +12,7 @@ This guide will help you get a FeiShu notification whenever someone stars your r
 
 ### Step 1: Configure the Source - Authorize GitHub and select a GitHub repo
 
-- Log in to [Vanus Cloud](https://cloud.vanus.ai/) and choose the "**GitHub star event triggers a** **Feishu** **message**" template.
+- Log in to [Vanus Connect](https://cloud.vanus.ai/) and choose the "**GitHub star event triggers a** **Feishu** **message**" template.
 - Find the "**Sign in with GitHub**" button and authorize GitHub. Then, select the repo you want to configure.
 
 ![Vanus-github-feishu](./imgs/Vanus-github-feishu.png)

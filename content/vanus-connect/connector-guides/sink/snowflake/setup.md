@@ -1,6 +1,6 @@
 # Snowflake
 
-This guide contains information to set up a Snowflake Sink in Vanus Cloud.
+This guide contains information to set up a Snowflake Sink in Vanus Connect.
 
 ## Introduction
 
@@ -129,7 +129,7 @@ Note that you should replace the sample values given in lines 2-7 of the script 
 The values for `role_name`, `user_name`, `warehouse_name`, `database_name` and `schemaName` must be in upper case.
 :::
 
-### Step 3: Set up your connection in Vanus Cloud.
+### Step 3: Set up your connection in Vanus Connect.
 ---
 1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
 ![3](images/go%20to%20vanuscloud.png)  

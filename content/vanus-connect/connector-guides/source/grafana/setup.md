@@ -1,6 +1,6 @@
 # Grafana
 
-This guide contains information to set up a Grafana Source in Vanus Cloud.
+This guide contains information to set up a Grafana Source in Vanus Connect.
 
 ## Introduction
 
@@ -15,7 +15,7 @@ The Grafana Source is a webhook server that enables you to establish an endpoint
 
 ## Getting Started
 
-To obtain all Grafana events using Vanus Cloud, follow these steps:
+To obtain all Grafana events using Vanus Connect, follow these steps:
 
 ### Create a Connection
 
@@ -27,4 +27,4 @@ To obtain all Grafana events using Vanus Cloud, follow these steps:
    ![img.png](images/2..png)
 4. Click **`Next`** to save the Grafana Source.
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

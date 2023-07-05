@@ -12,7 +12,7 @@ This guide will help you get a Slack notification whenever a new object gets upl
 
 ### Step 1: Configure the Source
 
-- Log in to [Vanus Cloud](https://cloud.vanus.ai/) and choose the **S3 Upload Object Event triggers a Slack message** template.
+- Log in to [Vanus Connect](https://cloud.vanus.ai/) and choose the **S3 Upload Object Event triggers a Slack message** template.
 
 ### Step 2: Get Access key
 

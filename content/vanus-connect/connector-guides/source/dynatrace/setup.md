@@ -1,6 +1,6 @@
 # Dynatrace
 
-This guide contains information to set up a Dynatrace Source in Vanus Cloud.
+This guide contains information to set up a Dynatrace Source in Vanus Connect.
 
 ## Introduction
 
@@ -17,9 +17,9 @@ Before obtaining Dynatrace events, you must have:
 
 ## Getting Started
 
-### Create your connection in Vanus Cloud
+### Create your connection in Vanus Connect
 
-1. Write a name for your connection in Vanus Cloud.
+1. Write a name for your connection in Vanus Connect.
    
    ![](images/1.png)
 2. After creating the connection, there are a few more steps. Click the link to open a new page with all the details on completing the connection.
@@ -28,4 +28,4 @@ Before obtaining Dynatrace events, you must have:
 3. Click **Next** and continue the configuration.
 
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

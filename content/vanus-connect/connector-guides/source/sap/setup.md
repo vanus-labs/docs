@@ -1,6 +1,6 @@
 # SAP BTP
 
-This guide contains information to set up a SAP BTP Source in Vanus Cloud.
+This guide contains information to set up a SAP BTP Source in Vanus Connect.
 
 ## Introduction
 
@@ -17,7 +17,7 @@ Before obtaining SAP BTP events, you must have:
 
 ## Getting Started
 
-### Create your connection in Vanus Cloud
+### Create your connection in Vanus Connect
 
 1. Write a name for your connection.
 ![](images/1.png)
@@ -26,4 +26,4 @@ Before obtaining SAP BTP events, you must have:
 3. Click **Next** and continue the configuration.
 
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

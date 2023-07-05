@@ -1,12 +1,12 @@
 # Shopify App
 
-This guide contains information to set up a Shopify App Source in Vanus Cloud.
+This guide contains information to set up a Shopify App Source in Vanus Connect.
 
 ## Introduction
 
 Shopify is a popular e-commerce platform that allows businesses to sell their products online. 
 
-With the Shopify App source connector in Vanus Cloud, you can create an Shopify App to obtain real-time updates on all customer and order activity in your Shopify store.
+With the Shopify App source connector in Vanus Connect, you can create an Shopify App to obtain real-time updates on all customer and order activity in your Shopify store.
 
 ## Prerequisites
 
@@ -42,14 +42,14 @@ Before obtaining Shopify events, you must have:
 12. Reveal the **Admin API access token** and copy the token.
 
 
-### Step 2: Finish the connection in Vanus Cloud
-1. Paste the **Admin API access token** into Vanus Cloud.
+### Step 2: Finish the connection in Vanus Connect
+1. Paste the **Admin API access token** into Vanus Connect.
 ![](images/img_11.png)
 2. Go to your store home page and copy the name of your store.
 ![](images/img_12.png)
-3. Paste your shop name into Vanus Cloud.
+3. Paste your shop name into Vanus Connect.
 ![](images/img_13.png)
 4. Choose from what moment you would like to start receive the events,
     select how often do you want to receive updates and press **Next**.
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

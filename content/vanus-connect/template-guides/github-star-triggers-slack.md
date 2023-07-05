@@ -2,7 +2,7 @@
 
 GitHub is the largest web-based platform that provides developers with a place to host and manage their software projects.
 
-You can receive notifications when specific events occur in a repository by adding a GitHub Source on Vanus Cloud.
+You can receive notifications when specific events occur in a repository by adding a GitHub Source on Vanus Connect.
 
 This guide will help you get a Discord notification whenever a user Star your Github repository.
 
@@ -12,7 +12,7 @@ This guide will help you get a Discord notification whenever a user Star your Gi
 
 ### Step 1: Configure the Source - Authorize GitHub and select a GitHub repo
 
-- Log in to [Vanus Cloud](https://cloud.vanus.ai/) and choose the **GitHub Star event triggers a Slack message** template.
+- Log in to [Vanus Connect](https://cloud.vanus.ai/) and choose the **GitHub Star event triggers a Slack message** template.
 
 - Find the **Sign in with GitHub** button and authorize GitHub. Then, select the repo you want to configure.
 
@@ -28,7 +28,7 @@ Tip: For detailed steps on how to obtain the Slack Webhook URL, refer to the blo
 
 ### Step 3: Configure Subscription
 
-- Go back to Vanus Cloud webiste and scroll down to Sink Configuration
+- Go back to Vanus Connect webiste and scroll down to Sink Configuration
 
 - Paste the copied URL in the Webhook URL section and click Submit
 
@@ -38,7 +38,7 @@ Tip: For detailed steps on how to obtain the Slack Webhook URL, refer to the blo
 
 Note: You can customize the display format and content of the notifications by configuring the **Subscription**.
 
-- After submission, the status will show as **running**. Now everytime users Star your repository, you will instantly recieve a customized notification message
+- After submission, the status will show as **running**. Now every time users Star your repository, you will instantly recieve a customized notification message
 
 ### Result Display
 

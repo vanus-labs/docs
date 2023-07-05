@@ -1,6 +1,6 @@
 # AWS-PostgreSQL   
 
-This guide contains information required in setting up an Amazon PostgreSQL Source in Vanus Cloud.  
+This guide contains information required in setting up an Amazon PostgreSQL Source in Vanus Connect.  
 
 
 ## Introduction  
@@ -194,7 +194,7 @@ In this step you would connect to the database you just created, using SQL Workb
 ![](images/table%20exists%20with%20content.png)   
 
 
-### Step 2: Finish Your Connection in Vanus Cloud  
+### Step 2: Finish Your Connection in Vanus Connect  
 1. Write a name for your connection, and from the list of sources, choose PostgreSQL CDC.    
 ![](images/name%20connection.png)   
 
@@ -203,4 +203,4 @@ In this step you would connect to the database you just created, using SQL Workb
 ![](images/source%20config.png)   
 
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)

@@ -2,7 +2,7 @@
 
 GitHub is the largest web-based platform that provides developers with a place to host and manage their software projects.
 
-You can receive notifications when specific events occur in a repository by adding a GitHub Source on Vanus Cloud.
+You can receive notifications when specific events occur in a repository by adding a GitHub Source on Vanus Connect.
 
 This guide will help you get a Discord notification whenever someone comments in your repository.
 
@@ -12,7 +12,7 @@ This guide will help you get a Discord notification whenever someone comments in
 
 ### Step 1: Configure the Source - Authorize GitHub and select a GitHub repo
 
-- Log in to [Vanus Cloud](https://cloud.vanus.ai/) and choose the **GitHub issue comment event triggers a Discord message** template.
+- Log in to [Vanus Connect](https://cloud.vanus.ai/) and choose the **GitHub issue comment event triggers a Discord message** template.
 
 - Find the **Sign in with GitHub** button and authorize GitHub. Then, select the repo you want to configure.
 
@@ -32,11 +32,11 @@ This guide will help you get a Discord notification whenever someone comments in
 
 ### Step 3: Configure Subscription
 
-- Go back to Vanus Cloud website and scroll down to Sink Configuration
+- Go back to Vanus Connect website and scroll down to Sink Configuration
 
 - Paste the copied URL in the Webhook URL section and click Submit
 
-- Your connection has been succesfully created
+- Your connection has been successfully created
 
 Note: You can customize the display format and content of the notifications by configuring the **Subscription**.
 

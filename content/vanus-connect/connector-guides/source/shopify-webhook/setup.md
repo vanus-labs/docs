@@ -1,6 +1,6 @@
 # Stripe
 
-This guide contains information to set up a Stripe Source in Vanus Cloud.
+This guide contains information to set up a Stripe Source in Vanus Connect.
 
 ## Introduction
 
@@ -23,4 +23,4 @@ The Shopify webhook Source is a webhook server that enables you to establish an 
    ![img.png](images/webhook_setup.png)
 3. Click **next** and finish the configurations.
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

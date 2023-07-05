@@ -2,7 +2,7 @@
 
 AWS is the one of the largest cloud service platform that provides developers with a place to host and manage their software projects and much more
 
-You can receive notifications on Google Sheets when Billing on AWS happens with the help of Vanus Cloud.
+You can receive notifications on Google Sheets when Billing on AWS happens with the help of Vanus Connect.
 
 This guide will help you get a record of AWS billings directly on Google Sheets.
 
@@ -20,7 +20,7 @@ This guide will help you get a record of AWS billings directly on Google Sheets.
 
 ### Step 1: Configure the Source
 
-- Log in to [Vanus Cloud](https://cloud.vanus.ai/) and choose the **Send AWS billing to Google Sheets** template.
+- Log in to [Vanus Connect](https://cloud.vanus.ai/) and choose the **Send AWS billing to Google Sheets** template.
 
 - Open AWS Management Console on browser and login with your root userid
 
@@ -78,7 +78,7 @@ This guide will help you get a record of AWS billings directly on Google Sheets.
 
 ### Step 3: Connection Configuration
 
-- Go back to Vanus Cloud website and add a name for your connection
+- Go back to Vanus Connect website and add a name for your connection
 
 - Copy and paste the Access key ID and Secret Access key and set the desired fetching time in the Source configuration
 
@@ -86,7 +86,7 @@ This guide will help you get a record of AWS billings directly on Google Sheets.
 
 ### Step 4: Sink Configuration
 
-- Select the Service Account Credentials in the Authencation Method
+- Select the Service Account Credentials in the Authentication Method
 
   ![13.png](imgs/aws-to-sheets-13.PNG)
 
@@ -110,18 +110,18 @@ This guide will help you get a record of AWS billings directly on Google Sheets.
 
   ![17.png](imgs/aws-to-sheets-17.PNG)
 
-- Open that file and copy the credientals mentioned in it
+- Open that file and copy the credentials mentioned in it
 
 - Go back to Setup and paste the copied credentials in the Credentials section
 
 - For the spreadsheet Id we will create a go to Google Sheets and create a new sheet
 
-- Copy the sheet id from the URL and paste it in the spreadhseet ID section
+- Copy the sheet id from the URL and paste it in the spreadsheet ID section
 
   ![18.png](imgs/aws-to-sheets-18.PNG)
 
 - Add the sheet name and click on Submit
 
-- Your connection has been succesfully setup
+- Your connection has been successfully setup
 
 - Now all your AWS billings will get recorded in the Google Sheet automatically

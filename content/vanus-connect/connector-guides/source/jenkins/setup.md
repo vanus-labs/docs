@@ -8,7 +8,7 @@
 
 ### Jenkins Connection Settings
 
-1. Write a name for your connection in Vanus Cloud.
+1. Write a name for your connection in Vanus Connect.
    ![connection](images/1.png)
 
 2. After creating the connection, there are a few more steps. Click the link to open a new page with all the details on completing the connection.
@@ -18,4 +18,4 @@
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

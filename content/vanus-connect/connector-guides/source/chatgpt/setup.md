@@ -1,6 +1,6 @@
 # ChatGPT
 
-This guide contains information to set up a ChatGPT Source in Vanus Cloud.
+This guide contains information to set up a ChatGPT Source in Vanus Connect.
 
 ## Introduction
 
@@ -25,4 +25,4 @@ Before obtaining ChatGPT events, you must have:
    ![img.png](images/2.png)
 3. Click **`Next`** to save the ChatGPT Source.
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

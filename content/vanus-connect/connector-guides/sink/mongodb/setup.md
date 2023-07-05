@@ -1,6 +1,6 @@
 # MongoDB
 
-This guide contains information to set up a MongoDB Sink in Vanus Cloud.
+This guide contains information to set up a MongoDB Sink in Vanus Connect.
 
 ## Introduction
 
@@ -214,7 +214,7 @@ wget https://downloads.mongodb.com/compass/mongodb-mongosh_1.8.1_amd64.deb
 
 You are now connected to your MongoDB database.  
 
-### Step 2: Set up MongoDB Sink in Vanus Cloud  
+### Step 2: Set up MongoDB Sink in Vanus Connect  
 
 1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
 ![3](images/go%20to%20vanuscloud.png)  

@@ -1,12 +1,12 @@
 # Amazon RDS MySQL
 
-This guide contains information required in setting up an Amazon MySQL Sink in Vanus Cloud.  
+This guide contains information required in setting up an Amazon MySQL Sink in Vanus Connect.  
 
 ## Introduction  
 
 MySQL is a popular open-source relational database management system used to store, organize, and retrieve data for websites, applications, and other software.
 
-Vanus Cloud's AWS MySQL sink connector simplifies the process of transferring data/events from various sources to a MySQL database/table, with configurable filters and upsert/insert modes.
+Vanus Connect's AWS MySQL sink connector simplifies the process of transferring data/events from various sources to a MySQL database/table, with configurable filters and upsert/insert modes.
 
 ## Prerequisites
 
@@ -58,11 +58,11 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 
 
 ##### Instance configuration and storage   
+
 1. Leave the default Instance configuration. 
 
 2. Select the gp2 storage type, it's efficient and cost effective for our intended use.  
 ![12](images/9.png)   
-
 
 ##### Connectivity   
 1. Leave the default subnet group.  
@@ -70,9 +70,9 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 2. Enable public access, this allocates an IP to your database instance and allows direct connection to the database from your own device.  
 ![13](images/10.png)
 
-3. Select **Create new VPC security group**. This would create a security group that allows connection from the IP address of the device that you are currently using, to the database you created.  
+3. Select **Create new VPC security group**. This will create a security group that allows connection from the IP address of the device that you are currently using, to the database you created.  
 
-4. Leave **Database port** on 3306   
+4. Leave **Database port** on 3306.   
 ![14](images/11.png)
 
 5. Select the password method of authentication.   
@@ -108,7 +108,7 @@ Multi-AZ deployment is not available for the free tier, you will have to pay for
 
 Now you can connect to your server and create a table and database. 
 
-### Step 2: Set up your connection in Vanus Cloud 
+### Step 2: Set up your connection in Vanus Connect
 
 1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
 ![3](images/go%20to%20vanuscloud.png)  

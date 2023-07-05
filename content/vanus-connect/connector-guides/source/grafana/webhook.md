@@ -7,5 +7,5 @@
 ![img.png](images/1.png)
 4. Click on the **Contact Points**, and click on **Add contact point**.
 ![img_1.png](images/2.png)
-5. Name your contact point, click on integration, select webhook, provide the payload URL from Vanus Cloud, and **Save contact point**.
+5. Name your contact point, click on integration, select webhook, provide the payload URL from Vanus Connect, and **Save contact point**.
 ![img_2.png](images/3.png)

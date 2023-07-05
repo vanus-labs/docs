@@ -1,12 +1,12 @@
 # Amazon S3
 
-This guide contains information to set up a S3 Source in Vanus Cloud.
+This guide contains information to set up a S3 Source in Vanus Connect.
 
 ## Introduction
 
 S3 is Amazon's cloud storage service that offers scalable and durable storage for various data types. It provides easy management and retrieval of data from anywhere with high availability and low latency.
 
-Vanus Cloud provides the Amazon S3 Source connector, which retrieves S3 events from a designated bucket and converts them into CloudEvents. With this connector, users can also set up an SQS queue to receive S3 event notifications. If a queue isn't specified, the connector will create one automatically.
+Vanus Connect provides the Amazon S3 Source connector, which retrieves S3 events from a designated bucket and converts them into CloudEvents. With this connector, users can also set up an SQS queue to receive S3 event notifications. If a queue isn't specified, the connector will create one automatically.
 
 ## Prerequisites
 
@@ -71,18 +71,18 @@ Before obtaining S3 events, you must have:
 
 ### Step 3: Config your connection
 
-To obtain S3 Bucket events using the S3 source connector in Vanus Cloud, follow these steps:
+To obtain S3 Bucket events using the S3 source connector in Vanus Connect, follow these steps:
 
 
 1. Write a connection name without any spaces.
    ![img.png](images/19.png)
-2. Enter your `Access Key` and `Secret Key` in Vanus Cloud.
+2. Enter your `Access Key` and `Secret Key` in Vanus Connect.
    ![img.png](images/20.png)
 3. Now let go back to AWS under the [Amazon S3 service](https://s3.console.aws.amazon.com/s3/buckets).
    ![img_1.png](images/21.png)
 4. At this point you can either **Create a new bucket** or **select a existent bucket**.
 ![](images/22.png)
-5. Once selected or created go to your bucket property and copy and paste the **ARN** to Vanus Cloud.
+5. Once selected or created go to your bucket property and copy and paste the **ARN** to Vanus Connect.
    ![img_2.png](images/23.png)
 6. Specify the kind of event you want to receive from the list
    ![img_3.png](images/24.png)
@@ -91,4 +91,4 @@ To obtain S3 Bucket events using the S3 source connector in Vanus Cloud, follow 
 8. Click **Next** to continue.
 
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

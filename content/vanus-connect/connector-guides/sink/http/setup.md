@@ -1,6 +1,6 @@
 # HTTP
 
-This guide contains information to set up a HTTP Sink in Vanus Cloud.
+This guide contains information to set up a HTTP Sink in Vanus Connect.
 
 ## Introduction
 

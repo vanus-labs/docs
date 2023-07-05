@@ -1,6 +1,6 @@
 # CloudEvents
 
-This guide contains information to set up a CloudEvents Source in Vanus Cloud.
+This guide contains information to set up a CloudEvents Source in Vanus Connect.
 
 ## Introduction
 
@@ -16,9 +16,9 @@ Before obtaining Payload URL to receive events, you must have:
 
 ## Getting Started
 
-### Create your connection in Vanus Cloud
+### Create your connection in Vanus Connect
 
-To set up CloudEvents in Vanus Cloud, follow these steps:
+To set up CloudEvents in Vanus Connect, follow these steps:
 
 1.  Write a name for your connection.
 ![](images/connection.png) 
@@ -26,4 +26,4 @@ To set up CloudEvents in Vanus Cloud, follow these steps:
 ![img.png](images/webhook_setup.png)
 3. Click **`Next`** to save the Grafana Source.
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

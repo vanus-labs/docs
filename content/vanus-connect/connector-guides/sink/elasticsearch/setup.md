@@ -1,6 +1,6 @@
 # Elasticsearch
 
-This guide contains information to set up a Elasticsearch Sink in Vanus Cloud.
+This guide contains information to set up a Elasticsearch Sink in Vanus Connect.
 
 ## Introduction
 
@@ -80,9 +80,9 @@ Before forwarding events to Elasticsearch, you must have:
 ![](images/12.png)   
 
 
-### Step 2: Configure your connection on Vanus cloud 
+### Step 2: Configure your connection on Vanus Connect 
 
-**To set up Elasticsearch Sink in Vanus Cloud:**  
+**To set up Elasticsearch Sink in Vanus Connect:**  
 
 1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
 ![3](images/go%20to%20vanuscloud.png)  

@@ -1,6 +1,6 @@
 # Labeling
 
-This guide contains information to set up a Labeling Source in Vanus Cloud.
+This guide contains information to set up a Labeling Source in Vanus Connect.
 
 ## Introduction
 
@@ -14,7 +14,7 @@ The Labeling Source is a webhook, it receives http requests with json data as th
 
 ## Getting Started
 
-### Create your connection in Vanus Cloud
+### Create your connection in Vanus Connect
 
 ![img.png](images/img2.png)
 
@@ -52,4 +52,4 @@ By following this path, you can access the value of the title attribute within t
 
 2. Click **Next** and finish the configurations.
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

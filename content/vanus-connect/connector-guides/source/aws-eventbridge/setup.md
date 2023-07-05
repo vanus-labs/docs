@@ -1,6 +1,6 @@
 # Amazon Eventbridge
 
-This guide contains information to set up a Amazon Eventbridge Source in Vanus Cloud.
+This guide contains information to set up a Amazon Eventbridge Source in Vanus Connect.
 
 ## Introduction
 
@@ -15,9 +15,9 @@ The Amazon EventBridge Source is a webhook server that enables you to establish 
 
 ## Getting Started
 
-### Create your connection in Vanus Cloud
+### Create your connection in Vanus Connect
 
-To obtain all Amazon Eventbridge events in Vanus Cloud, follow these steps:
+To obtain all Amazon Eventbridge events in Vanus Connect, follow these steps:
 
 1. Write a name for your connection.
 ![img.png](images/1.png)  
@@ -27,4 +27,4 @@ To obtain all Amazon Eventbridge events in Vanus Cloud, follow these steps:
 
 3. Click **Next** and continue the configuration.
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

@@ -1,6 +1,6 @@
 # ChatAI
 
-This guide contains information to set up a ChatAI Source in Vanus Cloud.
+This guide contains information to set up a ChatAI Source in Vanus Connect.
 
 ## Introduction
 
@@ -16,7 +16,7 @@ Before obtaining ChatAI events, you must have:
 
 ## Getting Started
 
-### Set up your connection in Vanus Cloud
+### Set up your connection in Vanus Connect
 
 1. Write a name for your connection.
     ![img.png](images/connection.png)
@@ -31,4 +31,4 @@ Before obtaining ChatAI events, you must have:
    ![img.png](images/webhook_setup.png)
 4. Click **`Next`** to save the ChatAI Source.
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

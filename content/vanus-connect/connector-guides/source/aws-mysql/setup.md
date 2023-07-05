@@ -1,6 +1,6 @@
 # AWS-MySQL  
 
-This guide contains information required in setting up an Amazon MySQL Source in Vanus Cloud.  
+This guide contains information required in setting up an Amazon MySQL Source in Vanus Connect.  
 
 ## Introduction   
 
@@ -157,7 +157,7 @@ Within the MySQL Workbench, there are multiple schema objects that can be access
 ![26](images/edit%20inbound%20rule.png)   
 
 
-### Step 2: Finish Your connection in Vanus cloud   
+### Step 2: Finish Your connection in Vanus Connect   
 1. Write a name for your connection, and from the list of sources, choose **Mysql**. 
 ![27](images/vanus%20cloud%20connection.png)   
 
@@ -165,4 +165,4 @@ Within the MySQL Workbench, there are multiple schema objects that can be access
 ![28](images/source%20configuration.png)  
 
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)

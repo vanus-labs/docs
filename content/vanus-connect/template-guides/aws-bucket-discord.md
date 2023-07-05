@@ -2,7 +2,7 @@
 
 GitHub is the largest web-based platform that provides developers with a place to host and manage their software projects.
 
-You can receive notifications when specific events occur in a repository by adding a GitHub Source on Vanus Cloud.
+You can receive notifications when specific events occur in a repository by adding a GitHub Source on Vanus Connect.
 
 This guide will help you get a Discord notification whenever someone open a new pull request in your repository.
 
@@ -12,7 +12,7 @@ This guide will help you get a Discord notification whenever someone open a new 
 
 ### Step 1: Configure the Source
 
-- Log in to [Vanus Cloud](https://cloud.vanus.ai/) and choose the **Amazon EventBridge CreateBucket | DeleteBucket event triggers a Discord message** template.
+- Log in to [Vanus Connect](https://cloud.vanus.ai/) and choose the **Amazon EventBridge CreateBucket | DeleteBucket event triggers a Discord message** template.
 
 ### Step 2: Configure Sink - Get the Discord Webhook URL
 
@@ -86,4 +86,4 @@ This guide will help you get a Discord notification whenever someone open a new 
 
 - Review the whole rule and click Create rule
 
-- Your connection in the Vanus Cloud is not working perfectly
+- Your connection in the Vanus Connect is not working perfectly

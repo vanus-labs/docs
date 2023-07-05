@@ -15,4 +15,4 @@ A list of application that can send HTTP request to our webhook server.
 - Trello
 - more
 
-Vanus Cloud webhook can receive any kind of HTTP request.
+Vanus Connect webhook can receive any kind of HTTP request.
