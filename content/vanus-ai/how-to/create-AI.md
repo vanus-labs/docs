@@ -1,4 +1,4 @@
-# Create an AI bot
+# Create an AI Application
 
 Example document
 
