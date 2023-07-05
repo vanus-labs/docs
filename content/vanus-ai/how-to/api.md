@@ -1,4 +1,5 @@
-﻿# use the API
+﻿
+# Vanus AI API Documentation
 
 ## API Endpoint
 
@@ -41,78 +42,101 @@ Body:
 
 The server responds with an event stream where each event is a JSON object representing the AI-generated response.
 
+
 ## Examples
 
-       curl -i https://app.ai.vanus.ai/api/v1/{application_id} -d'{"prompt": "{message}", "stream": true}' -H"Content-Type:application/json" -H"x-vanusai-model:{model}" -H"x-vanusai-sessionid:{id}"
+```bash
+curl -i https://app.ai.vanus.ai/api/v1/{application_id} -d'{"prompt": "{message}", "stream": true}' -H"Content-Type:application/json" -H"x-vanusai-model:{model}" -H"x-vanusai-sessionid:{id}"
+```
 
-### Python
 
-    import requests
-    import json
-    import uuid
-    
-    application_id = "your_application_id"
-    model = "gpt-4"
-    message = "your_message"
-    
-    headers = {
-        "Content-Type": "application/json",
-        "x-vanusai-model": model,
-        "x-vanusai-sessionid": str(uuid.uuid4()),
-    }
-    
-    data = {
-        "prompt": message,
-        "stream": True
-    }
-    
-    response = requests.post(
-        f"https://app.ai.vanus.ai/api/v1/{application_id}",
-        headers=headers,
-        data=json.dumps(data),
-        stream=True
-    )
-    
-    for line in response.iter_lines():
-        if line:
-            decoded_line = line.decode('utf-8')
-            print(json.loads(decoded_line))
+### Python Example
 
-### Node.Js
+You will need the `requests` package which can be installed via `pip install requests`.
 
-    const axios = require('axios');
-    const uuid = require('uuid');
-    
-    let application_id = "your_application_id";
-    let model = "gpt-4";
-    let message = "your_message";
-    
-    let headers = {
-        "Content-Type": "application/json",
-        "x-vanusai-model": model,
-        "x-vanusai-sessionid": uuid.v4(),
-    }
-    
-    let data = {
-        "prompt": message,
-        "stream": true
-    }
-    
-    axios({
-        method: 'post',
-        url: `https://app.ai.vanus.ai/api/v1/${application_id}`,
-        data: data,
-        headers: headers,
-        responseType: 'stream'
-    })
-    .then(function (response) {
-        response.data.on('data', (chunk) => {
-            console.log(JSON.parse(chunk.toString()));
-        });
-    })
-    .catch(function (error) {
-        console.log(error);
+```python
+import requests
+import json
+import uuid
+
+application_id = "<your_application_id>"  # Replace with your Application ID
+model = "<your_model>"  # Replace with your model, for example "gpt-3.5-turbo", "ernie-3.0-bot", "gpt-4"
+message = "<your_prompt>"  # Replace with your prompt
+
+headers = {
+    "Content-Type": "application/json",
+    "x-vanusai-model": model,
+    "x-vanusai-sessionid": str(uuid.uuid4()),  # Generate a random UUID
+}
+
+data = {
+    "prompt": message,
+    "stream": True
+}
+
+response = requests.post(
+    f"https://app.ai.vanus.ai/api/v1/{application_id}",
+    headers=headers,
+    data=json.dumps(data),
+    stream=True
+)
+
+for line in response.iter_lines():
+    if line:
+        decoded_line = line.decode('utf-8')
+        if decoded_line.startswith('data:'):
+            json_line = decoded_line[6:]
+            print(json.loads(json_line))
+
+```
+
+### Node.js Example
+
+You will need the `axios` and `uuid` packages for this. They can be installed with `npm install axios uuid`.
+
+```javascript
+import axios from 'axios';
+import { v4 as uuidv4 } from 'uuid';
+
+let application_id = "<Your Application ID>";  // Replace with your Application ID
+let model = "<Your Model>";  // Replace with your model, e.g., "gpt-3.5-turbo", "ernie-3.0-bot", "gpt-4"
+let message = "<Your Message>";  // Replace with your prompt message
+
+let headers = {
+    "Content-Type": "application/json",
+    "x-vanusai-model": model,
+    "x-vanusai-sessionid": uuidv4(),  // Generates a random UUID
+}
+
+let data = {
+    "prompt": message,
+    "stream": true
+}
+
+axios({
+    method: 'post',
+    url: `https://app.ai.vanus.ai/api/v1/${application_id}`,
+    data: data,
+    headers: headers,
+    responseType: 'stream'
+})
+.then(function (response) {
+    response.data.on('data', (chunk) => {
+        const lines = chunk.toString().split('\n');
+
+        for (let line of lines) {
+            if (line.startsWith('data: ')) {
+                const jsonString = line.replace('data: ', '');
+                console.log(JSON.parse(jsonString));
+            }
+        }
     });
+})
+.catch(function (error) {
+    console.log(error);
+});
+
+```
 
 ## Status Codes
 
@@ -124,6 +148,3 @@ The API returns the following status codes:
 - `403`: Forbidden - authentication succeeded but authenticated user does not have access to the requested resource.
 - `404`: Not Found - resource could not be found.
 - `500`: Internal Server Error - a generic error occurred on the server.
-
-
-

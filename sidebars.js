@@ -41,7 +41,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Understand Vanus Connect & OS",
+      label: "Understand Vanus Connect Core",
       items: [
         "getting-started/understand-vanus-connect-os/architecture",
         "getting-started/understand-vanus-connect-os/concepts",
