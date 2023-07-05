@@ -1,9 +1,9 @@
 ---
-title: What is Vanus Connect?
+title: What is Vanus Connect
 id: what-is-vanus-connect
 ---
 
-# What is Vanus Connect?
+# What is Vanus Connect
 
 Vanus Connect is a cloud-based service that makes it easy for users to create event-driven applications without the hassle of setting up and managing their own Vanus server. With Vanus Connect, you can quickly and easily build connections between SaaS, cloud services, and databases, allowing you to easily automate, notify, and streamline your processes.
 
