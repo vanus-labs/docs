@@ -13,7 +13,7 @@ hide_title: true
 
 ### Shopify Connection Settings
 
-1. Write a name for your connection in Vanus Cloud.
+1. Write a name for your connection in Vanus Connect.
    ![img.png](images/1.png)
 2. Provide the name of your shop.
 ![](images/2.png)
@@ -21,4 +21,4 @@ hide_title: true
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

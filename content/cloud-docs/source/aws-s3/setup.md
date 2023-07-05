@@ -70,15 +70,15 @@ hide_title: true
 
 ### Step 3: Amazon S3 Connection Settings
 
-1. Write a name for your connection in Vanus Cloud.
+1. Write a name for your connection in Vanus Connect.
    ![img.png](images/19.png)
-2. Enter your `Access Key` and `Secret access Key` in Vanus Cloud.
+2. Enter your `Access Key` and `Secret access Key` in Vanus Connect.
    ![img.png](images/20.png)
 3. Now let's go back to AWS under the [Amazon S3 service](https://s3.console.aws.amazon.com/s3/buckets).
    ![img_1.png](images/21.png)
 4. At this point, you can either **Create a new bucket** or **select an existing bucket**.
 ![](images/22.png)
-5. Once selected or created, go to your bucket property and copy and paste the **ARN** to Vanus Cloud.
+5. Once selected or created, go to your bucket property and copy and paste the **ARN** to Vanus Connect.
    ![img_2.png](images/23.png)
 6. Specify the kind of event you want to receive from the list.
    ![img_3.png](images/24.png)
@@ -88,4 +88,4 @@ hide_title: true
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

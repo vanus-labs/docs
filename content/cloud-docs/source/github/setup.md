@@ -14,7 +14,7 @@ hide_title: true
 
 ### GitHub Connection Settings
 
-1. Write a name for your connection in Vanus Cloud.
+1. Write a name for your connection in Vanus Connect.
    ![img.png](images/1.png)  
 
 2. Click `Authorize` to authorize your GitHub account.
@@ -30,4 +30,4 @@ hide_title: true
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

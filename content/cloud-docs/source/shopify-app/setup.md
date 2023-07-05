@@ -38,17 +38,17 @@ hide_title: true
 ---
 
 ### Step 2: Shopify App Connection Settings
-1. Write a name for your connection in Vanus Cloud.
+1. Write a name for your connection in Vanus Connect.
 ![](images/name.png)
-2. Paste the **Admin API access token** into Vanus Cloud.
+2. Paste the **Admin API access token** into Vanus Connect.
 ![](images/img_11.png)
 3. Go to your store home page and copy the name of your store.
 ![](images/img_12.png)
-4. Paste your shop name into Vanus Cloud.
+4. Paste your shop name into Vanus Connect.
 ![](images/img_13.png)
 5. Choose from what moment you would like to start receiving the events,
     select how often you want to receive updates and press **Next**.
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

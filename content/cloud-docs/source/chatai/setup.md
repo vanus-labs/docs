@@ -13,7 +13,7 @@ hide_title: true
 
 ### ChatAI Connection Settings
 
-1. Write a name for your connection in Vanus Cloud.
+1. Write a name for your connection in Vanus Connect.
    ![img.png](images/1.png) 
 
 2. After creating the connection, there are a few more steps. Click the link to open a new page with all the details on how to complete the connection. 
@@ -32,4 +32,4 @@ hide_title: true
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).

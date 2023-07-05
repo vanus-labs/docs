@@ -62,18 +62,18 @@ hide_title: true
 
 ### Step 3: Amazon S3 Connection Settings
 
-**To set up S3 Sink in Vanus Cloud:**
+**To set up S3 Sink in Vanus Connect:**
 
-1. Enter your `Access Key` and `Secret access Key` in Vanus Cloud from the previous steps.
+1. Enter your `Access Key` and `Secret access Key` in Vanus Connect from the previous steps.
 2. Now let's go back to Amazon Web Services under the [Amazon S3 service](https://s3.console.aws.amazon.com).
 3. At this point, you can either **create a new bucket** or **select an existing** bucket.
 4. Once you've chosen or created a bucket, keep in mind your bucket name and region.
 ![img.png](images/16.png)
-5. Write your `bucket name` and select your `region` in Vanus Cloud.
+5. Write your `bucket name` and select your `region` in Vanus Connect.
 ![](images/17.png)
 6. Select the interval time of upload; `HOURLY` or `DAILY`
 7. Click **Next** to continue.
 
 ---
 
-Learn more about Vanus and Vanus Cloud in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
