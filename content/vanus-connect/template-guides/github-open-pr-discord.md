@@ -20,28 +20,30 @@ This guide will help you get a Discord notification whenever someone open a new 
 
 ### Step 2: Configure Sink - Get the Discord Webhook URL
 
-- Open Discord in your browser and go to your desired Discord Server
+- Open Discord in your browser and go to your desired Discord Server.
 
-- Go to the Server settings and click on Integrations
+- Go to the Server settings and click on **Integrations**.
 
-- Click on New Webhook. Open the newly created Webhook and Copy the Webhook URL
+- Click on **New Webhook**. 
 
 ![2.png](imgs/github-issue-discord-2.PNG)
 
 ![3.png](imgs/github-issue-discord-3.PNG)
 
+- Open the newly created Webhook and Copy the Webhook URL.
+
 ### Step 3: Configure Subscription
 
-- Go back to Vanus Connect website and scroll down to Sink Configuration
+- Go back to the Vanus Connect website and scroll down to Sink Configuration.
 
-- Paste the copied URL in the Webhook URL section and click Submit
+- Paste the copied URL in the Webhook URL section and click **Submit**.
 
-- Your connection has been succesfully created
+- Your connection has been successfully created.
 
 Note: You can customize the display format and content of the notifications by configuring the **Subscription**.
 
-- After submission, the status will show as **running**
+- After submission, the status will show as **running**.
 
 ### Result Display
 
-- When a user will open a pull request on your repository, you will receive a real-time GitHub Issue Notification on Discord.
+- When a user opens a pull request on your repository, you will receive a real-time GitHub Issue Notification on Discord.

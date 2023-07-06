@@ -4,7 +4,7 @@ GitHub is the largest web-based platform that provides developers with a place t
 
 You can receive notifications when specific events occur in a repository by adding a GitHub Source on Vanus Connect.
 
-This guide will help you get a Discord notification whenever a user Star your Github repository.
+This guide will help you get a Discord notification whenever a user Stars your GitHub repository.
 
 <iframe width="800" height="450" src="https://www.youtube.com/watch?v=rdVSI0yRrUo" title="YouTube video player" frameBorder="0" allowFullScreen={true} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 
@@ -20,7 +20,7 @@ This guide will help you get a Discord notification whenever a user Star your Gi
 
 ### Step 2: Configure Sink - Get the Slack Webhook URL
 
-- Open Slack API in your browser, create a Webhook URL and copy it
+- Open Slack API in your browser, create a Webhook URL and copy it.
 
 Tip: For detailed steps on how to obtain the Slack Webhook URL, refer to the blog [Get Your Slack Webhook URL - A Quick Integration Guide](https://www.vanus.ai/blog/get-your-slack-webhook-url/).
 
@@ -28,17 +28,17 @@ Tip: For detailed steps on how to obtain the Slack Webhook URL, refer to the blo
 
 ### Step 3: Configure Subscription
 
-- Go back to Vanus Connect webiste and scroll down to Sink Configuration
+- Go back to the Vanus Connect website and scroll down to Sink Configuration.
 
-- Paste the copied URL in the Webhook URL section and click Submit
+- Paste the copied URL in the Webhook URL section and click **Submit**.
 
-- Your connection has been succesfully created
+- Your connection has been successfully created.
 
 ![3.png](imgs/github-star-slack-3.PNG)
 
 Note: You can customize the display format and content of the notifications by configuring the **Subscription**.
 
-- After submission, the status will show as **running**. Now every time users Star your repository, you will instantly recieve a customized notification message
+- After submission, the status will show as **running**. Now, every time users Star your repository, you will instantly receive a customized notification message.
 
 ### Result Display
 

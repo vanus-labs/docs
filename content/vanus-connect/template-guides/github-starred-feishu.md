@@ -19,7 +19,7 @@ This guide will help you get a FeiShu notification whenever someone stars your r
 
 ### Step 2: Configure Sink - Get the Feishu Webhook URL
 
-- Add a bot to the specified group in Feishu settings and copy the Webhook URL to paste into the Sink configuration.
+- Add a bot to the specified group in Feishu settings, and copy the Webhook URL to paste into the Sink configuration.
 
 ![feishu-webhook](./imgs/feishu-webhook.png)
 
@@ -41,7 +41,7 @@ Note: You can customize the display format and content of the notifications by c
 
 ## Result Display
 
-- When someone stars your open-source GitHub repo, you will receive a real-time GitHub Star Notify in Feishu. 
+- When someone stars your open-source GitHub repo, you will receive a real-time GitHub Star Notification in Feishu. 
 
 ![feishu-notify](./imgs/feishu-notify.png)
 
