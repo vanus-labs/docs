@@ -3,9 +3,9 @@
 
 ## API Endpoint
 
-```
-POST https://app.ai.vanus.ai/api/v1/{application_id}
-```
+HTTP Method: `Post`
+
+Copy the API URL from your App dashboard. The endpoint for each App is unique.
 
 ## Request Body
 
@@ -33,7 +33,6 @@ Body:
 
 ## Parameters
 
-- `{application_id}`: Replace with your application ID.
 - `{message}`: Replace with the message text.
 - `{model}`: Replace with the model name.
 - `{id}`: Replace with a randomly generated UUID.
@@ -42,13 +41,11 @@ Body:
 
 The server responds with an event stream where each event is a JSON object representing the AI-generated response.
 
-
 ## Examples
 
 ```bash
-curl -i https://app.ai.vanus.ai/api/v1/{application_id} -d'{"prompt": "{message}", "stream": true}' -H"Content-Type:application/json" -H"x-vanusai-model:{model}" -H"x-vanusai-sessionid:{id}"
+curl -i <URL from App dashboard> -d'{"prompt": "{message}", "stream": true}' -H"Content-Type:application/json" -H"x-vanusai-model:{model}" -H"x-vanusai-sessionid:{id}"
 ```
-
 
 ### Python Example
 
@@ -59,7 +56,6 @@ import requests
 import json
 import uuid
 
-application_id = "<your_application_id>"  # Replace with your Application ID
 model = "<your_model>"  # Replace with your model, for example "gpt-3.5-turbo", "ernie-3.0-bot", "gpt-4"
 message = "<your_prompt>"  # Replace with your prompt
 
@@ -75,7 +71,7 @@ data = {
 }
 
 response = requests.post(
-    f"https://app.ai.vanus.ai/api/v1/{application_id}",
+    f"<URL from your App dashboard in API Access>",
     headers=headers,
     data=json.dumps(data),
     stream=True
@@ -98,7 +94,6 @@ You will need the `axios` and `uuid` packages for this. They can be installed wi
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 
-let application_id = "<Your Application ID>";  // Replace with your Application ID
 let model = "<Your Model>";  // Replace with your model, e.g., "gpt-3.5-turbo", "ernie-3.0-bot", "gpt-4"
 let message = "<Your Message>";  // Replace with your prompt message
 
@@ -115,7 +110,7 @@ let data = {
 
 axios({
     method: 'post',
-    url: `https://app.ai.vanus.ai/api/v1/${application_id}`,
+    url: // <URL from your App dashboard in API Access>,
     data: data,
     headers: headers,
     responseType: 'stream'
@@ -148,3 +143,76 @@ The API returns the following status codes:
 - `403`: Forbidden - authentication succeeded but authenticated user does not have access to the requested resource.
 - `404`: Not Found - resource could not be found.
 - `500`: Internal Server Error - a generic error occurred on the server.
+
+
+## Q&A
+
+### Q1: What is the HTTP method for accessing the API?
+
+A1: The HTTP method is `POST`.
+
+### Q2: What is the structure of the request body?
+
+A2: The request body should be a JSON object with the following structure:
+
+```json
+{
+    "prompt": "{message}",
+    "stream": true
+}
+```
+
+### Q3: What headers are required in the request?
+
+A3: The following headers are required:
+
+- `Content-Type`: application/json
+- `x-vanusai-model`: The model to use for the interaction (options include `gpt-3.5-turbo`, `ernie-3.0-bot`, `gpt-4`).
+- `x-vanusai-sessionid`: A randomly generated UUID. Different ids represent different dialogues.
+
+### Q4: How do I replace the parameters in the examples?
+
+A4: The `{message}`, `{model}`, and `{id}` placeholders in the examples should be replaced with your message text, model name, and a randomly generated UUID, respectively.
+
+### Q5: How are responses from the server structured?
+
+A5: The server responds with an event stream where each event is a JSON object representing the AI-generated response.
+
+### Q6: What status codes can the API return?
+
+A6: The API can return the following status codes:
+
+- `200`: Successful request
+- `400`: Bad request - the request could not be understood or was missing required parameters.
+- `401`: Unauthorized - authentication failed or user does not have permissions for the requested operation.
+- `403`: Forbidden - authentication succeeded but authenticated user does not have access to the requested resource.
+- `404`: Not Found - resource could not be found.
+- `500`: Internal Server Error - a generic error occurred on the server.
+
+### Q7: How can I use this API with Python?
+
+A7: Here is a basic example using Python's `requests` library.
+
+[See Python Example in the documentation above]
+
+Remember to replace the placeholders with your application's specific details.
+
+### Q8: How can I use this API with Node.js?
+
+A8: Here is a basic example using Node.js with the `axios` library.
+
+[See Node.js Example in the documentation above]
+
+Remember to replace the placeholders with your application's specific details.
+
+### Q9: What is the purpose of the `stream` parameter in the request body?
+
+A9: The `stream` parameter, when set to `True`, specifies that the server should respond with a stream of events, each event being a JSON object representing the AI-generated response. This allows you to get responses as they are available instead of waiting for all responses to be generated before they are sent.
+
+### Q10: What does the `x-vanusai-model` header specify?
+
+A10: The `x-vanusai-model` header specifies the model that will be used for the interaction. The options include `gpt-3.5-turbo`, `ernie-3.0-bot`, `gpt-4`, and these are related to the application.
+
+### Q11: What does the `x-vanusai-sessionid` header specify?
+
+A11: The `x-vanusai-sessionid` is a randomly generated UUID. Different ids represent different dialogues. This is used to maintain the state of a conversation with the AI model across multiple requests.
