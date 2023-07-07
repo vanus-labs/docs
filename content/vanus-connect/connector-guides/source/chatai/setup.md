@@ -21,12 +21,12 @@ Before obtaining ChatAI events, you must have:
 1. Write a name for your connection.
     ![img.png](images/connection.png)
 2. Fill in the various required configurations
-    - Chat Mode: Select Chat Mode (ChatGPT or Ernie Bot), Default is ChatGPT
+    - Chat Mode: Select Chat Mode (ChatGPT, Ernie Bot or Vanus AI), Default is ChatGPT
     - Context (optional): Select Context as on if you want the AI to remember previous conversations
     - Unique Identifier (optional): The unique identifier differentiates among multiple conversations using the same Connection. Example identifier:convo1 identifier:convo2...
     - Basic Auth Username (optional): A method for an HTTP user agent to provide a username when making a request.
     - Basic Auth Password (optional): A method for an HTTP user agent to provide a password when making a request.
-    ![img.png](images/chatai-config.png)
+    ![img.png](images/new-pic-with-vanus-ai.png)
 3. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction.
    ![img.png](images/webhook_setup.png)
 4. Click **`Next`** to save the ChatAI Source.
