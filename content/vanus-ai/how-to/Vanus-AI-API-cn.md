@@ -14,11 +14,15 @@ POST https://app.ai.vanus.ai/api/v1/{application_id}
 
 ```json
 {
-    "prompt": "{message}",
+    "prompt": "hello",
     "stream": true,
     "no_search": false
 }
 ```
+
+- `prompt`: 发送的消息文本
+- `stream`: 是否使用流式输出，true表示使用流式输出，false表示不使用流式输出
+- `no_search`: 是否搜索知识库，true表示不搜索知识库，false表示搜索知识库
 
 ## 请求头
 
@@ -31,16 +35,9 @@ POST https://app.ai.vanus.ai/api/v1/{application_id}
 - `x-vanusai-model`: 此为与应用相关的模型，可选项包括`gpt-3.5-turbo`, `ernie-3.0-bot`, `gpt-4`。
 - `x-vanusai-sessionid`: 此为随机生成的UUID，不同的id代表不同的对话。
 
-## 请求体参数
-
-- `prompt`: 发送的消息文本
-- `stream`: 是否使用流式输出，true表示使用流式输出，false表示不使用流式输出
-- `no_search`: 是否搜索知识库，true表示不搜索知识库，false表示搜索知识库
-
-## 其他参数
+## 参数
 
 - `{application_id}`: 使用您的应用ID替换。
-- `{message}`: 用消息文本替换。
 - `{model}`: 用模型名称替换。
 - `{id}`: 用随机生成的UUID替换。
 

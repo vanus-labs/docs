@@ -15,10 +15,15 @@ Body:
 
 ```json
 {
-    "prompt": "{message}",
-    "stream": true
+    "prompt": "hello",
+    "stream": true,
+    "no_search": false
 }
 ```
+
+- `prompt`: Message text sent
+- `stream`: Whether to use streaming output, true means using streaming output, false means not using streaming output
+- `no_search`: Whether to search the knowledge base, true means not to search the knowledge base, false means to search the knowledge base
 
 ## Headers
 
@@ -33,7 +38,6 @@ Body:
 
 ## Parameters
 
-- `{message}`: Replace with the message text.
 - `{model}`: Replace with the model name.
 - `{id}`: Replace with a randomly generated UUID.
 
@@ -44,7 +48,7 @@ The server responds with an event stream where each event is a JSON object repre
 ## Examples
 
 ```bash
-curl -i <URL from App dashboard> -d'{"prompt": "{message}", "stream": true}' -H"Content-Type:application/json" -H"x-vanusai-model:{model}" -H"x-vanusai-sessionid:{id}"
+curl -i <URL from App dashboard> -d'{"prompt": "{message}", "stream": true}' -H"Content-Type:application/json" -H"Accept:*/*" -H"x-vanusai-model:{model}" -H"x-vanusai-sessionid:{id}"
 ```
 
 ### Python Example
@@ -67,7 +71,8 @@ headers = {
 
 data = {
     "prompt": message,
-    "stream": True
+    "stream": True,
+    "no_search": False
 }
 
 response = requests.post(
@@ -105,7 +110,8 @@ let headers = {
 
 let data = {
     "prompt": message,
-    "stream": true
+    "stream": true,
+    "no_search": false,
 }
 
 axios({
@@ -157,8 +163,9 @@ A2: The request body should be a JSON object with the following structure:
 
 ```json
 {
-    "prompt": "{message}",
-    "stream": true
+    "prompt": "hello",
+    "stream": true,
+    "no_search": false
 }
 ```
 
