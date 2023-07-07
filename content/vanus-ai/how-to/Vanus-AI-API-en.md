@@ -14,11 +14,15 @@ Body:
 
 ```json
 {
-    "prompt": "{message}",
+    "prompt": "hello",
     "stream": true,
     "no_search": false
 }
 ```
+
+- `prompt`: Message text sent
+- `stream`: Whether to use streaming output, true means using streaming output, false means not using streaming output
+- `no_search`: Whether to search the knowledge base, true means not to search the knowledge base, false means to search the knowledge base
 
 ## Headers
 
@@ -31,16 +35,9 @@ Body:
 - `x-vanusai-model`: This is the model being used for the interaction. It is related to the application. Options include `gpt-3.5-turbo`, `ernie-3.0-bot`, `gpt-4`.
 - `x-vanusai-sessionid`: This is a randomly generated UUID. Different ids represent different dialogues.
 
-## Request Body Parameters
-
-- `prompt`: Message text sent
-- `stream`: Whether to use streaming output, true means using streaming output, false means not using streaming output
-- `no_search`: Whether to search the knowledge base, true means not to search the knowledge base, false means to search the knowledge base
-
-## Other Parameters
+## Parameters
 
 - `{application_id}`: Replace with your application ID.
-- `{message}`: Replace with the message text.
 - `{model}`: Replace with the model name.
 - `{id}`: Replace with a randomly generated UUID.
 
