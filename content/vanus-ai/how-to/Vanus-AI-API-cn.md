@@ -15,7 +15,8 @@ POST https://app.ai.vanus.ai/api/v1/{application_id}
 ```json
 {
     "prompt": "{message}",
-    "stream": true
+    "stream": true,
+    "no_search": false
 }
 ```
 
@@ -30,7 +31,13 @@ POST https://app.ai.vanus.ai/api/v1/{application_id}
 - `x-vanusai-model`: 此为与应用相关的模型，可选项包括`gpt-3.5-turbo`, `ernie-3.0-bot`, `gpt-4`。
 - `x-vanusai-sessionid`: 此为随机生成的UUID，不同的id代表不同的对话。
 
-## 参数
+## 请求体参数
+
+- `prompt`: 发送的消息文本
+- `stream`: 是否使用流式输出，true表示使用流式输出，false表示不使用流式输出
+- `no_search`: 是否搜索知识库，true表示不搜索知识库，false表示搜索知识库
+
+## 其他参数
 
 - `{application_id}`: 使用您的应用ID替换。
 - `{message}`: 用消息文本替换。
@@ -44,7 +51,7 @@ POST https://app.ai.vanus.ai/api/v1/{application_id}
 ## 示例
 
 ```bash
-curl -i https://app.ai.vanus.ai/api/v1/{application_id} -d'{"prompt": "{message}", "stream": true}' -H"Content-Type:application/json" -H"x-vanusai-model:{model}" -H"x-vanusai-sessionid:{id}"
+curl -i https://app.ai.vanus.ai/api/v1/{application_id} -d'{"prompt": "{message}", "stream": true, "no_search": false}' -H"Content-Type:application/json" -H"Accept:*/*" -H"x-vanusai-model:{model}" -H"x-vanusai-sessionid:{id}"
 ```
 
 ### Python 示例
@@ -68,7 +75,8 @@ headers = {
 
 data = {
     "prompt": message,
-    "stream": True
+    "stream": True,
+    "no_search": False
 }
 
 response = requests.post(
@@ -107,7 +115,8 @@ let headers = {
 
 let data = {
     "prompt": message,
-    "stream": true
+    "stream": true,
+    "no_search": false,
 }
 
 axios({
