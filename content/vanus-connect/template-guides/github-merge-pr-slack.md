@@ -20,12 +20,12 @@ This guide will help you get a Slack notification whenever someone merges your p
 
 ### Step 2: Configure Sink - Get the Slack Webhook URL
 
-- Open Slack API in your browser, create a Webhook URL and copy it
+- Open Slack API in your browser, create a Webhook URL and copy it.
 
 Tip: For detailed steps on how to obtain the Slack Webhook URL, refer to the blog [Get Your Slack Webhook URL - A Quick Integration Guide](https://www.vanus.ai/blog/get-your-slack-webhook-url/).
 
 ![2.png](imgs/github-star-slack-2.PNG)
 
-- Click submit and your connection is ready
+- Click submit and your connection is ready.
 
-Note: Now every time your pull request gets merged, you will instantly recieve a notification message on Slack Channel. You can totally customize this notification message in the Sink Configuration.
+Note: Now every time your pull request gets merged, you will instantly receive a notification message on Slack Channel. You can customize this notification message in the Sink Configuration.

@@ -20,18 +20,22 @@ This guide will help you get a Discord notification whenever someone merges your
 
 ### Step 2: Configure Sink - Get the Discord Webhook URL
 
-- Open Discord in your browser and go to your desired Discord Server
+- Open Discord in your browser and go to your desired Discord Server.
 
-- Go to the Server settings and click on Integrations
+- Go to the Server settings and click on **Integrations**.
 
-- Click on New Webhook. Open the newly created Webhook and Copy the Webhook URL
+- Click on **New Webhook**. 
 
 ![2.png](imgs/github-issue-discord-2.PNG)
 
 ![3.png](imgs/github-issue-discord-3.PNG)
 
-- Paste the copied URL in the "Webhook URL" in Sink Configuration and click Submit
+- Open the newly created Webhook and Copy the Webhook URL.
 
-- Your connection has been successfully setup
+- Go back to the Vanus Connect website and scroll down to Sink Configuration.
 
-Note: Now every time your pull request gets merged, you will instantly receive a notification message on Discord Channel. You can totally customize this notification message in the Sink Configuration.
+- Paste the copied URL in the Webhook URL section and click **Submit**.
+
+- Your connection has been successfully set up.
+
+Note: Now every time your pull request gets merged, you will instantly receive a notification message on Discord Channel. You can customize this notification message in the Sink Configuration.

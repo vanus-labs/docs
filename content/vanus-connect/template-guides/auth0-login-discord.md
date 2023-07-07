@@ -1,10 +1,10 @@
 # Auth0 login event triggers a Discord message
 
-Auth0 is one of the largest authorization service provider which helps you add authorization page in your projects
+Auth0 is one of the largest authorization service providers which helps you add an authorization page to your projects
 
-You can receive notifications when specific events occur in a your Auth0 account.
+You can receive notifications when specific events occur in your Auth0 account.
 
-This guide will help you get a Discord notification message whenever someone login in your Auth0 setup.
+This guide will help you get a Discord notification message whenever someone logs in to your Auth0 setup.
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/2sW2pmJlQfI" title="YouTube video player" frameBorder="0" allowFullScreen={true} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 
@@ -28,7 +28,7 @@ This guide will help you get a Discord notification message whenever someone log
 
 - Paste the copied URL in the "Webhook URL" in Sink Configuration and click Submit
 
-- Your connection has been successfully setup
+- Your connection has been successfully set up
 
 ### Step 3: Create a Custom Webhook in Auth0
 
@@ -36,11 +36,11 @@ This guide will help you get a Discord notification message whenever someone log
 
 ![3.png](imgs/auth0-login-slack-3.PNG)
 
-- Go to Auth0 and login with your account
+- Go to Auth0 and log in with your account
 
 ![4.png](imgs/auth0-login-slack-4.PNG)
 
-- Go to Montioring on the left sidebar and click on Streams
+- Go to Monitoring on the left sidebar and click on Streams
 
 ![5.png](imgs/auth0-login-slack-5.PNG)
 
