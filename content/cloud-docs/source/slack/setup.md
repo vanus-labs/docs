@@ -20,6 +20,27 @@ hide_title: true
 3. Set the app name and Workspace.
 ![](images/img_2.png)
 
+4. Add **Permissions** feature to your App.
+![](images/permissions.png)
+
+5. Scroll down to **Scopes/Bot Token Scopes**, and click on **Add an OAuth Scope**.
+![](images/add-oauth-scope.png)
+
+6. Add **chat:write** permission to your App.
+![](images/chat-write-permission.png)
+
+7. **Notice:** we only need a **chat:write** permission in Bot Token Scopes.
+![](images/permission-saved.png)
+
+8. Scroll up to the top of the page, and click **install to Workspace** to install your app.
+![](images/install-to-workspace.png)
+
+9. Click **allow** to install the app.
+![](images/allow-app.png)
+
+10. There will be a Bot User OAuth Token which will be used later.
+![](images/copy-user-oauth-token.png)
+
 ---
 
 ### Step 2: Get App Credentials
@@ -75,18 +96,9 @@ But, if you're using some **Vanus Templates** like `Send a custom greeting messa
 2. Allow it to be installed into your Workspace.
       ![](images/img_14.png)
 3. Mention your bot in Slack and invite it to the channel.
-   ![](images/img_15.png)
+   ![](images/add-to-channel.png)
 
----
-
-### Step 6: Slack Connection Settings
-
-1. Write a name for your connection in Vanus Connect.
-![](images/name%20connection.png)
-2. After creating the connection, there are a few more steps. Simply click the link to open a new page with all the details on how to complete the connection.
-![](images/2.png)
-3. Click **next** and finish the configurations.  
-
+   ![](images/message-sent.png)
 ---
 
 Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
