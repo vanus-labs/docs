@@ -1,12 +1,12 @@
 # Amazon RDS MySQL
 
-This guide contains information required in setting up an Amazon MySQL Sink in Vanus Connect.  
+This guide contains the required information to set up an Amazon MySQL Sink in Vanus Connect.   
 
 ## Introduction  
 
-MySQL is a popular open-source relational database management system used to store, organize, and retrieve data for websites, applications, and other software.
+MySQL is a popular open-source relational database management system to store, organizes, and retrieves data for websites, applications, and other software.
 
-Vanus Connect's AWS MySQL sink connector simplifies the process of transferring data/events from various sources to a MySQL database/table, with configurable filters and upsert/insert modes.
+Vanus Connect's AWS MySQL sink connector simplifies transferring data/events from various sources to a MySQL database/table, with configurable filters and upsert/insert modes.
 
 ## Prerequisites
 
