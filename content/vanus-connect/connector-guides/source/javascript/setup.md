@@ -1,9 +1,6 @@
---- 
-hide_table_of_contents: true
-hide_title: true
----
+# Javascript
 
-### Prerequisites
+## Prerequisites
 
 - Basic JavaScript Knowledge
 - npm Installed
@@ -12,7 +9,7 @@ hide_title: true
 
 **Perform the following steps to configure your JavaScript Source.**
 
-### JavaScript Connection Settings
+## JavaScript Connection Settings
 
 1. Write a name for your connection in Vanus Connect.
    ![img.png](images/1.png)
