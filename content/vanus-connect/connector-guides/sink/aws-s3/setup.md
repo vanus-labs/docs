@@ -1,6 +1,6 @@
 # S3
 
-This guide contains information to set up S3 Sink in Vanus Connect.
+This guide contains the required information to set up S3 Sink in Vanus Connect.
 
 ## Introduction
 
@@ -62,7 +62,7 @@ Before forwarding events to an S3 bucket, you must have:
 5. Save your `Access key` and `Secret key` safely.
    ![](images/15.png)
 
-### Step 3: Set up your connection in Vanus Connect 
+### Step 3: Set up your connection in Vanus Connect
 **To set up S3 Sink in Vanus Connect:**  
 
 1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
