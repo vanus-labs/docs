@@ -1,4 +1,6 @@
-### Prerequisites
+# Jenkins
+
+## Prerequisites
 
 - A Jenkins account
 
@@ -6,7 +8,7 @@
 
 **Perform the following steps to configure your Jenkins Source**
 
-### Jenkins Connection Settings
+## Jenkins Connection Settings
 
 1. Write a name for your connection in Vanus Connect.
    ![connection](images/1.png)

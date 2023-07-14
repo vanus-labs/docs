@@ -1,4 +1,6 @@
-### Prerequisites
+# Zoho CRM
+
+## Prerequisites
 
 - A Zoho CRM account
 
@@ -6,7 +8,7 @@
 
 **Perform the following steps to configure your Zoho CRM Source**
 
-### Zoho CRM Connection Settings
+## Zoho CRM Connection Settings
 
 1. Write a name for your connection in Vanus Connect.
    ![](images/1.png)
