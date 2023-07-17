@@ -6,7 +6,7 @@ This guide contains information to set up a WhatsApp Source in Vanus Connect.
 
 WhatsApp is a widely-used messaging application that allows users to send messages, make calls, share files, and participate in group chats. It offers a user-friendly interface, cross-platform compatibility, and features like end-to-end encryption. With its popularity and regular updates, WhatsApp has become a primary communication tool for individuals, families, friends, and businesses worldwide.
 
-The WhatsApp source connector enables users to transmit events from their WhatsApp number to external sources. Moreover, it facilitates the seamless integration of ChatGPT with WhatsApp, allowing for effortless communication and interaction with ChatGPT directly from your WhatsApp account.
+The WhatsApp source connector enables users to transmit events from their WhatsApp account to external sources. Moreover, it facilitates the seamless integration of ChatGPT with WhatsApp, allowing for effortless communication and interaction with ChatGPT directly from your WhatsApp account.
 
 ## Prerequisites
 
