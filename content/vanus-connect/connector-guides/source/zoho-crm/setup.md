@@ -1,5 +1,13 @@
 # Zoho CRM
 
+This guide contains information to set up a Zoho CRM Source in Vanus Connect.
+
+## Introduction
+
+Zoho CRM is a robust customer relationship management solution that streamlines business processes and enhances customer interactions. With its user-friendly interface, comprehensive functionality, and customization options, Zoho CRM enables efficient management of sales, marketing, and customer support. Trusted by organizations of all sizes, Zoho CRM is a reliable choice for cultivating meaningful customer relationships and driving business growth.
+
+The Zoho CRM Source enables you to establish an endpoint for receiving events from your Zoho CRM application. To achieve this, it is necessary to establish a connection within Zoho CRM.
+
 ## Prerequisites
 
 - A Zoho CRM account

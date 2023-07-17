@@ -1,5 +1,13 @@
 # Javascript
 
+This guide contains information to set up a Javascript Source in Vanus Connect.
+
+## Introduction
+
+JavaScript is a versatile programming language that empowers developers to create dynamic websites. With its ability to manipulate web elements, handle user inputs, and facilitate server communication, JavaScript is an essential tool for crafting engaging online experiences. Its widespread adoption and flexibility make it a fundamental component of web development.
+
+The JavaScript source connector allows you to configure JavaScript code to send webhook events. It provides a function that sends HTTP requests to the specified Webhook URL, allowing you to handle events or trigger actions based on the received webhook data.
+
 ## Prerequisites
 
 - Basic JavaScript Knowledge
