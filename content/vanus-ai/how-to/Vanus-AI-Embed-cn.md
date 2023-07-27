@@ -15,6 +15,27 @@
 
 3. 复制集成代码，将代码集成至需要使用的网站代码里   
 ![step-3](images/step-3.png)
+```html
+<!-- index.html -->
+<html>
+    <head>
+        <!-- 你的头文件 -->
+        <script src="https://www.vanus.cn/js/ai.embed.js"></script>  
+
+        <script>
+            const config = {
+                id: '<!-- 你的应用 ID -->',
+                lang: 'cn',
+            };
+            setVanusConfig(config);
+        </script>
+    </head>
+
+    <body>
+        <!-- 你的代码 -->
+    </body>
+</html>
+```
 
 4. 最终效果如图 4 所示   
 ![step-4](images/step-4.png)
