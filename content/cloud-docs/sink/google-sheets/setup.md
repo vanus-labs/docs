@@ -17,7 +17,7 @@ hide_title: true
 2. Create a new blank spreadsheet.
 ![img.png](images/1.png)
 3. Copy the `ID` of the spreadsheet found in the link.
-![img_1.png](images/2.png)
+![img_1.png](images/link-update.png)
 
 ---
 
@@ -70,7 +70,7 @@ import TabItem from '@theme/TabItem';
 
 ## Step 3: Google Sheets Connection Settings
 
-1. Paste the string from the sheet URL Example: `1i9b80jHcKzkUSOUDE9RAjnGevdWKScq_6Jnpofvb4CU` from Step 1.
+1. Paste the string from the sheet URL Example: `1miWjo-YqLy_vkrVxxj9Zloksegqp1GA4636VreHf__M` from Step 1.
 2. Obtain the name of the sheet at the bottom of the spreadsheet.
    ![img_2.png](images/sheet1.png)
 3. Paste the default sheet name: `Sheet1`.
