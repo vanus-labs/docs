@@ -5,28 +5,38 @@
 
 HTTP Method: `Post`
 
-Copy the API URL from your App dashboard. The endpoint for each App is unique.
+Please copy the API URL from your App dashboard. The endpoint for each App is unique. 
 
 ## Request Body
 
-Content-Type: `application/json`
-
-Body:
+Body for event stream responses:
 
 ```json
 {
-    "prompt": "hello",
-    "stream": true,
-    "no_search": false
+    "prompt": "{message}",
+    "stream": true
+}
+```
+Body for plain text responses:
+
+```json
+{
+    "prompt": "{message}",
+    "stream": false
 }
 ```
 
-- `prompt`: Message text sent
-- `stream`: Whether to use streaming output, true means using streaming output, false means not using streaming output
-- `no_search`: Whether to search the knowledge base, true means not to search the knowledge base, false means to search the knowledge base
-
 ## Headers
 
+ For event stream responses:
+ 
+- `Content-Type`: application/json
+- `x-vanusai-model`: {model}
+- `x-vanusai-sessionid`: {id}
+- `Accept`: "text/event-stream"
+
+ For plain text responses:
+ 
 - `Content-Type`: application/json
 - `x-vanusai-model`: {model}
 - `x-vanusai-sessionid`: {id}
@@ -35,25 +45,35 @@ Body:
 
 - `x-vanusai-model`: This is the model being used for the interaction. It is related to the application. Options include `gpt-3.5-turbo`, `ernie-3.0-bot`, `gpt-4`.
 - `x-vanusai-sessionid`: This is a randomly generated UUID. Different ids represent different dialogues.
-
-## Parameters
-
-- `{model}`: Replace with the model name.
-- `{id}`: Replace with a randomly generated UUID.
+- `Accept`: This defines the response would be in the form of event stream or plain text.
 
 ## Responses
 
-The server responds with an event stream where each event is a JSON object representing the AI-generated response.
+The server responds with an event stream or plain text. 
+- If it is a series of event stream, each event is a JSON object representing the AI-generated response.
+- If it is a plain text, the text would be encapsulated in a JSON obejct.
+
+## Parameters
+
+- `{message}`: Replace with the message text.
+- `{model}`: Replace with the model name.
+- `{id}`: Replace with a randomly generated UUID.
 
 ## Examples
 
+For event stream:
 ```bash
-curl -i <URL from App dashboard> -d'{"prompt": "{message}", "stream": true}' -H"Content-Type:application/json" -H"Accept:*/*" -H"x-vanusai-model:{model}" -H"x-vanusai-sessionid:{id}"
+curl -i <URL from App dashboard> -d'{"prompt": "{message}", "stream": true}' -H"Content-Type:application/json" -H"x-vanusai-model:{model}" -H"x-vanusai-sessionid:{id}" -H"Accept:text/event-stream"
+```
+
+For plain text:
+```bash
+curl -i <URL from App dashboard> -d'{"prompt": "{message}", "stream": true}' -H"Content-Type:application/json" -H"x-vanusai-model:{model}" -H"x-vanusai-sessionid:{id}"
 ```
 
 ### Python Example
 
-You will need the `requests` package which can be installed via `pip install requests`.
+You will need the `requests` package which can be installed via command `pip install requests`.
 
 ```python
 import requests
@@ -67,21 +87,22 @@ headers = {
     "Content-Type": "application/json",
     "x-vanusai-model": model,
     "x-vanusai-sessionid": str(uuid.uuid4()),  # Generate a random UUID
+    "Accept": "text/event-stream" # Remove if need plain text responses
 }
 
 data = {
     "prompt": message,
-    "stream": True,
-    "no_search": False
+    "stream": True # False if need plain text responses
 }
 
 response = requests.post(
     f"<URL from your App dashboard in API Access>",
     headers=headers,
     data=json.dumps(data),
-    stream=True
+    stream=True # False if need plain text responses
 )
 
+# This for loop handles event stream only
 for line in response.iter_lines():
     if line:
         decoded_line = line.decode('utf-8')
@@ -93,11 +114,11 @@ for line in response.iter_lines():
 
 ### Node.js Example
 
-You will need the `axios` and `uuid` packages for this. They can be installed with `npm install axios uuid`.
+You will need the `axios` and `uuid` packages for this. They can be installed with command `npm install axios uuid`.
 
 ```javascript
-import axios from 'axios';
-import { v4 as uuidv4 } from 'uuid';
+import axios from "axios";
+import { v4 as uuidv4 } from "uuid";
 
 let model = "<Your Model>";  // Replace with your model, e.g., "gpt-3.5-turbo", "ernie-3.0-bot", "gpt-4"
 let message = "<Your Message>";  // Replace with your prompt message
@@ -106,21 +127,23 @@ let headers = {
     "Content-Type": "application/json",
     "x-vanusai-model": model,
     "x-vanusai-sessionid": uuidv4(),  // Generates a random UUID
+    "Accept": "text/event-stream" // Remove if need plain text responses
 }
 
 let data = {
     "prompt": message,
-    "stream": true,
-    "no_search": false,
+    "stream": true // False if need plain text responses
 }
 
 axios({
-    method: 'post',
+    method: "post",
     url: // <URL from your App dashboard in API Access>,
     data: data,
     headers: headers,
-    responseType: 'stream'
+    responseType: "stream" // Remove if need plain text responses
+}
 })
+// This function handles event stream only
 .then(function (response) {
     response.data.on('data', (chunk) => {
         const lines = chunk.toString().split('\n');
@@ -163,9 +186,8 @@ A2: The request body should be a JSON object with the following structure:
 
 ```json
 {
-    "prompt": "hello",
-    "stream": true,
-    "no_search": false
+    "prompt": "{message}",
+    "stream": true // False if need plain text responses
 }
 ```
 
@@ -198,7 +220,7 @@ A6: The API can return the following status codes:
 
 ### Q7: How can I use this API with Python?
 
-A7: Here is a basic example using Python's `requests` library.
+A7: Here is a basic example using Python's `requests` library. 
 
 [See Python Example in the documentation above]
 
