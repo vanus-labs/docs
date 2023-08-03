@@ -10,7 +10,7 @@ Integration is a paid user feature. Therefore, only users with subscriptions or 
 ![](images/discord-createapp.png)
 3. Enter a name, the model, upload to the knowledge base, and click **Create**.
 ![](images/discord-enterNameModelKnownledge.png)
-4. Go to the **integration** TAB and click on the discord integration.
+4. Go to the **Integration** tab and click on the Discord integration.
 ![](images/discord-integration.png)
 
 ### Step 2: Create a Discord Channel
