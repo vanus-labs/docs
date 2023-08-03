@@ -6,7 +6,7 @@ Integration is a paid user feature. Therefore, only users with subscriptions or 
 
 ### Step 1: Create an AI Application
 1. Go to [ai.vanus.ai](https://ai.vanus.ai) and sign in.
-2. Create an new AI app by clicking **Create AI**.
+2. Create a new AI App by clicking **Create App** button.
 ![](images/discord-createapp.png)
 3. Enter a name, the model, upload to the knowledge base, and click **Create**.
 ![](images/discord-enterNameModelKnownledge.png)
