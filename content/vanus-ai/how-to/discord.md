@@ -29,7 +29,7 @@ Integration is a paid user feature. Therefore, only users with subscriptions or 
 ![](images/discord-sidemenuclickbot.png)
 5. Click **Reset token** and **Copy**.
 ![](images/discord-resettoken.png)
-6. Go back to Vanus AI paste the Token, give the integration a name and press Create.
+6. Go back to Vanus AI, paste the token, give the integration a name, and press **Create**.
 ![](images/discord-gobacktovanusai.png)
 7. Lastly, to add an AI bot to a channel, go back to the application inside the developer portal.
 8. Under the sidemenu 0Auth2 and URL Generator.
