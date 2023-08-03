@@ -2,7 +2,7 @@
 This documentation will teach you how to integrate an AI into Discord.
 Integration is a paid user feature. Therefore, only users with subscriptions or 14 days trials can use this feature.
 
-## how to Setup a Discord Integration
+## How to Setup a Discord Integration
 
 ### Step 1: Create an AI Application
 1. Go to [ai.vanus.ai](https://ai.vanus.ai) and sign in.
