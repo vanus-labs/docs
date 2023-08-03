@@ -14,7 +14,7 @@ Integration is a paid user feature. Therefore, only users with subscriptions or 
 ![](images/discord-integration.png)
 
 ### Step 2: Create a Discord Channel
-1. Go to the discord App or website at [discord](https://discord.com)
+1. Go to the Discord App or Website at [Discord](https://discord.com)
 2. Once logged in you can click on the **`+`** button to create a new channel.
 ![](images/discord-createChannel.png)
 3. Click **Create my own** and complete the creation of your channel.
