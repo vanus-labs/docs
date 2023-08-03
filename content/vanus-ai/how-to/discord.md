@@ -38,7 +38,7 @@ Integration is a paid user feature. Therefore, only users with subscriptions or 
 
 10. Under Bot Permission (ReadMessages/ViewChannel, Send Messages, Mention Everyone, Use External Emojis, Send TTS Messages, Send Messages In threads,Create public, threads Create private threads) or Administrator.
 ![](images/discord-underbotpermission.png)
-11. Copy the URL and visit it from another tab..
+11. Copy the URL and open it in a new tab.
 ![](images/discord-copytheurl.png)
 12. Select your Server and click **Continue**.
 ![](images/discord-selectyourserver.png)
