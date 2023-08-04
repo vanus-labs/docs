@@ -31,11 +31,11 @@ Before obtaining Slack events, you must have:
 5. Scroll down to **Scopes/Bot Token Scopes**, and click on **Add an OAuth Scope**.
 ![](images/add-oauth-scope.png)
 
-6. Add **chat:write** permission to your App.
-![](images/chat-write-permission.png)
+6. Add **app_mentions:read** permission to your App.
+![](images/app-read.png)
 
-7. **Notice:** we only need a **chat:write** permission in Bot Token Scopes.
-![](images/permission-saved.png)
+7. **Notice:** we only need a **app_mentions:read** permission in Bot Token Scopes.
+![](images/app-read-saved.png)
 
 8. Scroll up to the top of the page, and click **install to Workspace** to install your app.
 ![](images/install-to-workspace.png)
