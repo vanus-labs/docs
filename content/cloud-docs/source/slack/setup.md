@@ -51,9 +51,10 @@ hide_title: true
  - Verification Token
  - Signing Secret
 ![](images/img_4.png)
-3. Don't close this page but continue in Vanus Connect.
 4. Paste the two credentials from Slack as configurations.
-      ![](images/token%20and%20secret.png)
+![](images/token%20and%20secret.png)
+5. Once the connection is established there will be more steps. Click on the link in the yellow note. 
+![](images/2.png)
 5. Click **Next** and continue the configuration.   
 
 ---
