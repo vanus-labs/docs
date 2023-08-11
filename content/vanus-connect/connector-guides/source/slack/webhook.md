@@ -20,9 +20,10 @@ Generally speaking, Slack Source can subscribe any events you need from Slack.
 
 But, if you're using some **Vanus Templates** like `Send a custom greeting message when new members join the Slack channel`, then you've to subscribe to some specific events.
 
-| Templates                                                              | Events need to subscribe |
-|------------------------------------------------------------------------|:------------------------:|
-| Send a custom greeting message when new members join the Slack channel | `member_joined_channel`  |
+| Templates                                                                |  Events need to subscribe  |
+|--------------------------------------------------------------------------|:--------------------------:|
+| Send a custom greeting message when new members join the Slack channel   |  `member_joined_channel`   |
+| Chat with ChatGPT via Slack bot                                          |       `app_mention`        |
 
 #### How to subscribe
 
