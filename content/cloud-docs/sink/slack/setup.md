@@ -10,7 +10,9 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your Slack Sink.**
+Perform the following steps to configure your Slack Sink.
+
+**Note: If you already have created a Slack App, you can skip Step 1 and directly go to [Step 2](#step-2-create-an-incoming-webhook).**
 
 ### Step 1: Create a Slack App
 1. Create an [App on Slack](https://api.slack.com/apps).
@@ -35,9 +37,12 @@ hide_title: true
 ---
 
 ### Step 3: Slack Connection Settings
-1. In Vanus Connect, paste the previously copied Webhook URL into the `URL` field. 
-![img_2.png](images/sink%20config.png)
-2. Click **Next** to continue.
+
+1. Paste the Webhook URL into the `URL` field, and Click on submit to finish the configuration.
+   ![img_2.png](images/submit-slack.png)
+
+2. You've successfully created your Vanus slack sink connection.  
+   ![](images/finish-slack-connection.png)
 
 ---
 
