@@ -40,10 +40,3 @@ Perform the following steps to configure your Slack Sink.
 
 1. Paste the Webhook URL into the `URL` field, and Click on submit to finish the configuration.
    ![img_2.png](images/submit-slack.png)
-
-2. You've successfully created your Vanus slack sink connection.  
-   ![](images/finish-slack-connection.png)
-
----
-
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
