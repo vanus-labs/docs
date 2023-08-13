@@ -23,8 +23,8 @@ You need to subscribe to specific events based on connection templates you chose
 
 | Templates                                                                |  Events need to subscribe  |
 |--------------------------------------------------------------------------|:--------------------------:|
-| Send a custom greeting message when new members join the Slack channel   |  `member_joined_channel`   |
 | Chat with ChatGPT via Slack bot                                          |       `app_mention`        |
+| Send a custom greeting message when new members join the Slack channel   |  `member_joined_channel`   |
 
 <Tabs>
 
@@ -60,6 +60,10 @@ You need to subscribe to specific events based on connection templates you chose
 
 ### Step 3: Install the Slack App to your Slack Workspace
 
+<Tabs>
+
+<TabItem label="app_mention" value="app_mention">
+
 1. Go to **Install Apps** from the side menu and click **Install to Workspace**.
    ![](images/img_13.png)
 2. Allow it to be installed into your Workspace.
@@ -68,6 +72,21 @@ You need to subscribe to specific events based on connection templates you chose
    ![](images/add-to-channel.png)
 
    ![](images/message-sent.png)
+
+</TabItem>
+<TabItem label="member_joined_channel" value="member_joined_channel">
+
+1. Go to **Install Apps** from the side menu and click **Install to Workspace**.
+   ![](images/img_13.png)
+2. Allow it to be installed into your Workspace.
+      ![](images/img_14.png)
+3. Mention your bot in Slack and invite it to the channel.
+   ![](images/add-to-channel.png)
+
+   ![](images/message-sent.png)
+
+</TabItem>
+</Tabs>
 ---
 
 Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
