@@ -48,6 +48,16 @@ To use ChatGPT on WhatsApp for personal use:
  - Simply type any question you like to ask, ChatGPT will respond to you on the chat.
 ![](images/chat-whatsapp.png)
 
+
+## Using *WhatsApp with ChatGPT Interactive AI Conversations for Incoming Messages* Template
+
+This template has two features:
+- ChatGPT can be used on WhatsApp Groups by tagging the contact used to make the ChatGPT to WhatsApp connection. To tag the contact, use the `@` symbol.
+![](images/chat-whatsapp-group.png)
+
+
+- Other people can ask questions in the contact message privately and they will get answers.
+
 </TabItem>
 
 </Tabs>
