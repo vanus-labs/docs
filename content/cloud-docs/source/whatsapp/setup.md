@@ -15,13 +15,15 @@ hide_title: true
 
 1. Write a name for your connection in Vanus Connect.
 ![](images/name.png)
-2. Click `Verify` to authorize Vanus to establish a connection with your WhatsApp account. 
+2. Click `Authorize` to authorize Vanus to establish a connection with your WhatsApp account.
+![](images/img_1.png)
+3. Scan the QR Code with your mobile WhatsApp.
+  ![](images/img_2.png)
+4. Utilizing the "Click Toggle On" Function for a ChatGPT connection only. When creating non related ChatGPT connection toggle it off.
+![](images/chat-ai-on.png)
 
-3. (optional) Utilizing the "Click Toggle On" Function for a ChatGPT connection.
-![](images/whatsapp.png)
 
-4. Scan the QR Code with your mobile WhatsApp. 
-![img.png](images/whatsapp%20qrcode.png)
+
 
 5. Click **Next** and continue the configuration. 
 

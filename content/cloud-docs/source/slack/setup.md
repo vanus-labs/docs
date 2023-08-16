@@ -46,15 +46,23 @@ hide_title: true
 ### Step 2: Get App Credentials
 
 1. Go to **Basic Information**.
+
 ![](images/img_3.png)
+
 2. Scroll down to **App Credentials** and copy the following credentials.
  - Verification Token
  - Signing Secret
+
 ![](images/img_4.png)
+
 4. Paste the two credentials from Slack as configurations.
+
 ![](images/token%20and%20secret.png)
-5. Once the connection is established there will be more steps. Click on the link in the yellow note. 
+
+5. Once the connection is established there will be more steps. Click on the link in the yellow note.
+
 ![](images/2.png)
+
 5. Click **Next** and continue the configuration.   
 
 ---
