@@ -17,7 +17,7 @@ hide_title: true
 ![](images/name.png)
 2. Click `Verify` to authorize Vanus to establish a connection with your WhatsApp account. 
 
-3. If you want ChatGPT on your WhatsApp, click on the `Enable Chat AI` button to turn it on. If you don't want ChatGPT, do not turn it on.
+3. (optional) Utilizing the "Click Toggle On" Function for a ChatGPT connection.
 ![](images/whatsapp.png)
 
 4. Scan the QR Code with your mobile WhatsApp. 
