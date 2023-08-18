@@ -24,20 +24,14 @@ The WhatsApp sink connector facilitates the reception of events from external so
 3. Scan the QR Code with your mobile WhatsApp
 ![img_1.png](images/img_3.png)
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+**Note**: *If you did not turn on `Enable Chat AI` on the WhatsApp Source Connector, the WhatsApp Sink connection will not use ChatGPT on WhatsApp.*
 
-<Tabs>
+To use ChatGPT on WhatsApp, you can use the ChatGPT on WhatsApp Templates. 
 
-<TabItem label="Standard" value="chat-ai-off">
+- Visit [Vanus Cloud](https://cloud.vanus.ai) and sign-in
 
-If you did not `Enable Chat AI` on the WhatsApp Source Connector, you have the standard connection.
-
-</TabItem>
-
-<TabItem label="ChatGPT" value="chat-ai-on">
-
-Here's a brief tutorial on utilizing ChatGPT once you've established the connection.
+- Select any of the ChatGPT on WhatsApp Template you want to use.
+![](images/whatsapp-template.png)
 
 ## Using *Personal Usage of ChatGPT within WhatsApp* Template
 
@@ -85,15 +79,8 @@ This template has two features:
 
     ![](images/chat-whatsapp-group.png)
 
-
 - Other people can ask questions in the contact message privately and they will get answers.
 
-</TabItem>
-
-</Tabs>
-
-
-4. Click **Next** and finish the configuration.
 
 ---
 
