@@ -122,7 +122,12 @@ There are some examples below that demonstrate vanus can do.
 1. **create an [eventbus](../getting-started/understand-vanus-connect-os/concepts.md#eventbus)**
 
 ```shell
-vsctl eventbus create --name quick-start
+vsctl eventbus create --name quick-start --namespace default
+```
+
+To check if the default namespace exists
+```shell
+vsctl namespace list
 ```
 
 2. **send an event to the eventbus**
