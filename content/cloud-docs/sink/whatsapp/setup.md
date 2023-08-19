@@ -33,25 +33,25 @@ Personal usage of ChatGPT within WhatsApp can be on Mobile Devices (Android & iO
 On WhatsApp Android, do the following:
 
 - Click on the `Chat` icon at the bottom-right corner to open the contact list.
-![](images/mobile-1.jpg)
+![](images/mobile-1.png)
 
 - In the contact list, click on the contact with your profile display. It is usually identified as the first contact on the list and also has the word `You` attached to it.
-![](images/mobile-2.jpg)
+![](images/mobile-2.png)
 
 - Simply type a message or ask a question and you will get a response.
-![](images/mobile-3.jpg)
+![](images/mobile-3.png)
 
 ### WhatsApp Mobile (iOS)
 On WhatsApp iOS, do the following:
 
 - - Click on the `Chats` icon at the bottom menu to open the contact list.
-![](images/mobile-1-ios.jpg)
+![](images/mobile-1-ios.png)
 
 - In the contact list, click on the contact with your profile display. It is usually identified as the first contact on the list and also has the word `You` attached to it.
-![](images/mobile-2-ios.jpg)
+![](images/mobile-2-ios.png)
 
 - Simply type a message or ask a question and you will get a response.
-![](images/mobile-3-ios.jpg)
+![](images/mobile-3-ios.png)
 
 
 ### WhatsApp Desktop & WhatsApp Web
