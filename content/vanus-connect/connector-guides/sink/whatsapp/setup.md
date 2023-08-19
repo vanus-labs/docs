@@ -24,11 +24,9 @@ The WhatsApp sink connector facilitates the reception of events from external so
 3. Scan the QR Code with your mobile WhatsApp
 ![img_1.png](images/img_3.png)
 
-**Note**: *If you did not turn on `Enable Chat AI` on the WhatsApp Source Connector, the WhatsApp Sink connection will not use ChatGPT on WhatsApp.*
+**Note**: *If you did not turn on `Enable Chat AI` on the WhatsApp Source Connector, the WhatsApp connection will not use ChatGPT.*
 
 To use ChatGPT on WhatsApp, you can use the ChatGPT on WhatsApp Templates. 
-
-- Visit [Vanus Cloud](https://cloud.vanus.ai) and sign-in
 
 - Select any of the ChatGPT on WhatsApp Template you want to use.
 ![](images/whatsapp-template.png)
