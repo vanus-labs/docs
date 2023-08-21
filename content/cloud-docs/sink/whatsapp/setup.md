@@ -29,6 +29,13 @@ If you wish to utilize ChatGPT in WhatsApp, you can go back to the template tab 
 
 Using ChatGPT for personal purposes within WhatsApp is possible on both mobile devices (Android & iOS) and desktop/web platforms.
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+
+<TabItem label="Android" value="authentication-via-google">
+
 ### WhatsApp Mobile (Android)
 For WhatsApp on Android, follow these steps:
 
@@ -40,6 +47,9 @@ For WhatsApp on Android, follow these steps:
 
 - Just enter a message or pose a question, and you'll receive a response.
 ![](images/mobile-3.png)
+  </TabItem>
+
+<TabItem label="iOS" value="i-os">
 
 ### WhatsApp Mobile (iOS)
 For WhatsApp on iOS, follow these steps:
@@ -53,6 +63,8 @@ For WhatsApp on iOS, follow these steps:
 - Simply type a message or ask a question and you will get a response.
 ![](images/mobile-3-ios.png)
 
+  </TabItem>
+<TabItem label="Web" value="web">
 
 ### WhatsApp Desktop & WhatsApp Web
 - On WhatsApp Desktop/Web, The contact button show the users contact list. The Contact button has been identified with the number `1` in the screenshot. Click on the button and a list of all your contacts will be displayed. Select the one with your contact profile, it has been identified with the number `2` and also has the word `You`. This way, you chat with ChatGPT by chatting with yourself.
@@ -63,6 +75,9 @@ For WhatsApp on iOS, follow these steps:
 
     ![](images/chat-whatsapp.png)
 
+  </TabItem>
+
+</Tabs>
 
 ## Using *Interact on WhatsApp Groups and with Other Users using ChatGPT* Template
 
