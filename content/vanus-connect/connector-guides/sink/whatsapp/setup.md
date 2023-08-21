@@ -24,26 +24,44 @@ The WhatsApp sink connector facilitates the reception of events from external so
 3. Scan the QR Code with your mobile WhatsApp
 ![img_1.png](images/img_3.png)
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+**Note**: *If you did not turn on `Enable Chat AI` on the WhatsApp Source Connector, the WhatsApp connection will not use ChatGPT.*
 
-<Tabs>
+To use ChatGPT on WhatsApp, you can use the ChatGPT on WhatsApp Templates. 
 
-<TabItem label="Standard" value="chat-ai-off">
-
-If you did not `Enable Chat AI` on the WhatsApp Source Connector, you have the standard connection.
-
-</TabItem>
-
-<TabItem label="ChatGPT" value="chat-ai-on">
-
-Here's a brief tutorial on utilizing ChatGPT once you've established the connection.
+- Select any of the ChatGPT on WhatsApp Template you want to use.
+![](images/whatsapp-template.png)
 
 ## Using *Personal Usage of ChatGPT within WhatsApp* Template
 
-To use ChatGPT on WhatsApp for personal use:
+Personal usage of ChatGPT within WhatsApp can be on Mobile Devices (Android & iOS) or Desktop/Web.
 
-- On WhatsApp, Click on the Contact button, a list of all your contacts will be displayed. Select the one with your contact profile. This way, you chat with ChatGPT by chatting with yourself.
+### WhatsApp Mobile (Android)
+On WhatsApp Android, do the following:
+
+- Click on the `Chat` icon at the bottom-right corner to open the contact list.
+![](images/mobile-1.png)
+
+- In the contact list, click on the contact with your profile display. It is usually identified as the first contact on the list and also has the word `You` attached to it.
+![](images/mobile-2.png)
+
+- Simply type a message or ask a question and you will get a response.
+![](images/mobile-3.png)
+
+### WhatsApp Mobile (iOS)
+On WhatsApp iOS, do the following:
+
+- - Click on the `Chats` icon at the bottom menu to open the contact list.
+![](images/mobile-1-ios.png)
+
+- In the contact list, click on the contact with your profile display. It is usually identified as the first contact on the list and also has the word `You` attached to it.
+![](images/mobile-2-ios.png)
+
+- Simply type a message or ask a question and you will get a response.
+![](images/mobile-3-ios.png)
+
+
+### WhatsApp Desktop & WhatsApp Web
+- On WhatsApp Desktop/Web, The contact button show the users contact list. The Contact button has been identified with the number `1` in the screenshot. Click on the button and a list of all your contacts will be displayed. Select the one with your contact profile, it has been identified with the number `2` and also has the word `You`. This way, you chat with ChatGPT by chatting with yourself.
 
     ![](images/chat-whatsapp-connect.png)
 
@@ -59,16 +77,8 @@ This template has two features:
 
     ![](images/chat-whatsapp-group.png)
 
-
 - Other people can ask questions in the contact message privately and they will get answers.
-4. Click **Next** and continue the configuration.
 
-</TabItem>
-
-</Tabs>
-
-
-4. Click **Next** and continue the configuration.
 
 ---
 
