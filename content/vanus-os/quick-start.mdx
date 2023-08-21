@@ -39,7 +39,7 @@ docker run -d --rm \
 
 <TabItem label="China Mainland" value="china">
 
-```
+```bash
 docker run -d --rm \
     --network vanus-quickstart \
     --pull always \
@@ -91,17 +91,17 @@ sudo mv vsctl /usr/local/bin
 
 Verify the installation
 
-```shell
+```bash
 vsctl version
 ```
 
 ```buttonless
 +-----------+----------------------------------+
-|  Version  | v0.7.0                           |
-|  Platform | linux/amd64                      |
-| GitCommit | 0f7b4f71                         |
-| BuildDate | 2023-03-23_11:31:20+0800         |
-| GoVersion | go version go1.18.3 darwin/arm64 |
+|  Version  | v0.8.0                           |
+|  Platform | darwin/arm64                     |
+| GitCommit | d35053c3                         |
+| BuildDate | 2023-04-18_17:05:53+0800         |
+| GoVersion | go version go1.20.3 darwin/arm64 |
 +-----------+----------------------------------+
 ```
 
@@ -122,7 +122,7 @@ There are some examples below that demonstrate vanus can do.
 1. **create an [eventbus](../getting-started/understand-vanus-connect-os/concepts.md#eventbus)**
 
 ```shell
-vsctl eventbus create --name quick-start --namespace default
+vsctl eventbus create --namespace default --name quick-start
 ```
 
 To check if the default namespace exists
@@ -158,7 +158,7 @@ the result should look like
 |     |   type: examples                       |
 |     |   source: quick-start                  |
 |     |   id: 1                                |
-|  0  |   time: 2022-06-27T10:50:15.265787384Z |
+|  0  |   time: 2023-08-18T07:42:07.80423Z     |
 |     |   datacontenttype: text/plain          |
 |     | Extensions,                            |
 |     |   xvanuseventbus: quick-start          |
@@ -178,12 +178,27 @@ docker run -d --rm \
   --pull always \
   --name display public.ecr.aws/vanus/connector/sink-display:latest
 ```
+:::tip
+**make sure the container is properly started**
+```shell
+docker ps
+```
+
+output should like below
+
+```shell
+CONTAINER ID   IMAGE                                                COMMAND                  CREATED         STATUS         PORTS                              NAMES
+5b87170c039a   public.ecr.aws/vanus/connector/sink-display:latest   "/vanus-connect/run.…"   5 seconds ago   Up 3 seconds   8080/tcp                           display
+1beac3127c0c   public.ecr.aws/vanus/all-in-one:latest               "/vanus/run.sh"          2 minutes ago   Up 2 minutes   0.0.0.0:8080-8081->8080-8081/tcp   vanus-all-in-one
+```
+:::
 
 2. **create a subscription**
 
 ```shell
 vsctl subscription create \
   --name quick-start-filter \
+  --namespace default \
   --eventbus quick-start \
   --sink 'http://display:8080' \
   --filters '[
@@ -201,7 +216,7 @@ output should like below
 +------------------+-------------------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
 |        ID        |        NAME       | DISABLE |   EVENTBUS  |           SINK          | DESCRIPTION | PROTOCOL | SINKCREDENTIAL | CONFIG | OFFSETS | FILTER | TRANSFORMER |      CREATED_AT      |      UPDATED_AT      |
 +------------------+-------------------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
-| 0000004644000010 | quick-start-filter |  false  | quick-start | http://quick-display:80 |             |   http   |      null      |   {}   |   null  | ...    | null        | 2022-12-01T04:19:05Z | 2022-12-01T04:19:05Z |
+| 0000004644000010 | quick-start-filter |  false  | quick-start | http://quick-display:8080 |             |   http   |      null      |   {}   |   null  | ...    | null        | 2023-08-18T15:48:08+08:00 | 2023-08-18T15:48:08+08:00 |
 +------------------+-------------------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
 ```
 
@@ -238,37 +253,39 @@ docker logs display
 the output should look like below, the two events whose source are matched are displayed.
 
 ```shell
-time="2022-12-15T16:36:18.398115664Z" level=info msg="logger level is set" log_level=INFO
-time="2022-12-15T16:36:18.496779299Z" level=info msg="the connector started" connector-name="Display Sink" listening=8080
-time="2022-12-15T16:37:01.827921574Z" level=info msg="receive a new event" in_total=1
+2023-08-18T08:55:27Z INF go/pkg/mod/github.com/vanus-labs/cdk-go@v0.7.5/runtime/sink/worker.go:98 > add a connector connector_id=
+2023-08-18T08:55:27Z INF go/pkg/mod/github.com/vanus-labs/cdk-go@v0.7.5/runtime/sink/worker.go:108 > connector start connector_id=
+2023-08-18T08:55:27Z INF go/pkg/mod/github.com/vanus-labs/cdk-go@v0.7.5/runtime/util/http_receiver.go:44 > http server is ready to start port=8080
+2023-08-18T09:07:26Z INF build/vanus-connect/connectors/sink-display/internal/server.go:65 > receive a new event total=1
 {
   "specversion": "1.0",
   "id": "1st",
   "source": "quick-start-filter-section",
   "type": "cmd",
   "datacontenttype": "application/json",
-  "time": "2022-12-15T16:37:01.811162299Z",
+  "time": "2023-08-18T09:07:26.186771Z",
   "data": {
     "msg": "1st event, DISPLAY: YES"
   },
-  "xvanusstime": "2022-12-15T16:37:01.811Z",
-  "xvanuseventbus": "quick-start"
+  "xvanuseventbus": "0000002961000010",
+  "xvanusstime": "2023-08-18T09:07:26.192Z"
 }
 
-time="2022-12-15T16:37:05.938040794Z" level=info msg="receive a new event" in_total=2
 {
   "specversion": "1.0",
   "id": "3rd",
   "source": "quick-start-filter-section",
   "type": "cmd",
   "datacontenttype": "application/json",
-  "time": "2022-12-15T16:37:02.931335386Z",
+  "time": "2023-08-18T09:07:26.304917Z",
   "data": {
     "msg": "3rd event, DISPLAY: YES"
   },
-  "xvanuseventbus": "quick-start",
-  "xvanusstime": "2022-12-15T16:37:02.931Z"
+  "xvanuseventbus": "0000002961000010",
+  "xvanusstime": "2023-08-18T09:07:26.308Z"
 }
+
+2023-08-18T09:07:26Z INF build/vanus-connect/connectors/sink-display/internal/server.go:65 > receive a new event total=2
 ```
 
 for more about `filter`, you can find in [how to manage subscription](how-to/manage-subscription.md)
@@ -280,6 +297,7 @@ for more about `filter`, you can find in [how to manage subscription](how-to/man
 ```shell
 vsctl subscription create \
   --name quick-start-transformer \
+  --namespace default \
   --eventbus quick-start \
   --sink 'http://display:8080' \
   --transformer '{
@@ -294,11 +312,11 @@ vsctl subscription create \
 output looks like:
 
 ```shell
-+------------------+-------------------------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
-|        ID        |           NAME          | DISABLE |   EVENTBUS  |           SINK          | DESCRIPTION | PROTOCOL | SINKCREDENTIAL | CONFIG | OFFSETS | FILTER | TRANSFORMER |      CREATED_AT      |      UPDATED_AT      |
-+------------------+-------------------------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
-| 0000007DB8000010 | quick-start-transformer |  false  | quick-start | http://quick-display:80 |             |   http   |      null      |   {}   |   null  | ...    | null        | 2022-12-01T04:19:05Z | 2022-12-01T04:19:05Z |
-+------------------+-------------------------+---------+-------------+-------------------------+-------------+----------+----------------+--------+---------+--------+-------------+----------------------+----------------------+
++------------------+-------------------------+---------+------------------+------------------+---------------------+-------------+----------+----------------+--------+---------+--------+-------------+---------------------------+---------------------------+
+|        ID        |           NAME          | DISABLE |     EVENTBUS     |     NAMESPACE    |         SINK        | DESCRIPTION | PROTOCOL | SINKCREDENTIAL | CONFIG | OFFSETS | FILTER | TRANSFORMER |         CREATED_AT        |         UPDATED_AT        |
++------------------+-------------------------+---------+------------------+------------------+---------------------+-------------+----------+----------------+--------+---------+--------+-------------+---------------------------+---------------------------+
+| 000001BCC2000010 | quick-start-transformer |  false  | 0000002961000010 | 000000006E000010 | http://display:8080 |             |   http   |      null      |   {}   |   null  | null   | ...         | 2023-08-18T17:11:56+08:00 | 2023-08-18T17:11:56+08:00 |
++------------------+-------------------------+---------+------------------+------------------+---------------------+-------------+----------+----------------+--------+---------+--------+-------------+---------------------------+---------------------------+
 ```
 
 2. **send events to `quick-start`**
@@ -320,21 +338,23 @@ the transformed event has been displayed.
 
 ```shell
 ...
-time="2023-01-06T18:15:16.153678086Z" level=info msg="receive a new event" in_total=..
+2023-08-18T09:13:05Z INF build/vanus-connect/connectors/sink-display/internal/server.go:65 > receive a new event total=...
 {
   "specversion": "1.0",
   "id": "1st",
   "source": "quick-start-filter-section",
   "type": "cmd",
   "datacontenttype": "application/json",
-  "time": "2023-01-06T18:15:13.123033Z",
+  "time": "2023-08-18T09:13:05.236907Z",
   "data": {
     "transKey": "1st event, DISPLAY: YES",
     "transSource": "quick-start-filter-section"
   },
-  "xvanusstime": "2023-01-06T18:15:13.124Z",
-  "xvanuseventbus": "quick-start"
+  "xvanuseventbus": "0000002961000010",
+  "xvanusstime": "2023-08-18T09:13:05.242Z"
 }
+
+2023-08-18T09:13:05Z INF build/vanus-connect/connectors/sink-display/internal/server.go:65 > receive a new event total=...
 ...
 ```
 
