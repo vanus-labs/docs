@@ -7,47 +7,47 @@ hide_title: true
 
 - A [WhatsApp account](https://www.whatsapp.com)
 
+---
+
 **Perform the following steps to configure your WhatsApp Sink.**
 
 ### WhatsApp Connection Settings
 
-1. Write a connection name without any spaces.
+1. Write a connection name.
 
-2. Click `Authorize` to authorize Vanus to establish a connection with your WhatsApp account. 
+2. Please click the "Authorize" button to generate a QR code for connecting with your WhatsApp account. 
 ![img.png](images/img.png)
-3. Scan the QR Code with your mobile WhatsApp 
+3. Scan the QR code using your mobile WhatsApp application.
 ![img_1.png](images/img_3.png)
 
-**Note**: *If you did not turn on `Enable Chat AI` on the WhatsApp Source Connector, the WhatsApp connection will not use ChatGPT.*
+**Note**: *If you haven't activated the "Enable Chat AI" option within the WhatsApp Source Connector, the WhatsApp connection won't utilize the capabilities of ChatGPT.*
 
-To use ChatGPT on WhatsApp, you can use the ChatGPT on WhatsApp Templates. 
-
-- Select any of the ChatGPT on WhatsApp Templates you want to use.
+If you wish to utilize ChatGPT in WhatsApp, you can go back to the template tab and select one of the two ChatGPT template.
 ![](images/whatsapp-template.png)
 
 ## Using *Personal Usage of ChatGPT within WhatsApp* Template
 
-Personal usage of ChatGPT within WhatsApp can be on Mobile Devices (Android & iOS) or Desktop/Web.
+Using ChatGPT for personal purposes within WhatsApp is possible on both mobile devices (Android & iOS) and desktop/web platforms.
 
 ### WhatsApp Mobile (Android)
-On WhatsApp Android, do the following:
+For WhatsApp on Android, follow these steps:
 
 - Click on the `Chat` icon at the bottom-right corner to open the contact list.
 ![](images/mobile-1.png)
 
-- In the contact list, click on the contact with your profile display. It is usually identified as the first contact on the list and also has the word `You` attached to it.
+- In the contact list, click on the contact with your profile display. It is usually identified as the first contact on the list and also has the tag `You` attached to it.
 ![](images/mobile-2.png)
 
-- Simply type a message or ask a question and you will get a response.
+- Just enter a message or pose a question, and you'll receive a response.
 ![](images/mobile-3.png)
 
 ### WhatsApp Mobile (iOS)
-On WhatsApp iOS, do the following:
+For WhatsApp on iOS, follow these steps:
 
 - - Click on the `Chats` icon at the bottom menu to open the contact list.
 ![](images/mobile-1-ios.png)
 
-- In the contact list, click on the contact with your profile display. It is usually identified as the first contact on the list and also has the word `You` attached to it.
+- In the contact list, click on the contact with your profile display. It is usually identified as the first contact on the list and also has the tag `You` attached to it.
 ![](images/mobile-2-ios.png)
 
 - Simply type a message or ask a question and you will get a response.
