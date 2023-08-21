@@ -47,7 +47,7 @@ For WhatsApp on Android, follow these steps:
 - Just enter a message or pose a question, and you'll receive a response.
 ![](images/mobile-3.png)
 
-  </TabItem>
+</TabItem>
 <TabItem label="iOS" value="i-os">
 
 ### WhatsApp Mobile (iOS)
@@ -62,7 +62,7 @@ For WhatsApp on iOS, follow these steps:
 - Simply type a message or ask a question and you will get a response.
 ![](images/mobile-3-ios.png)
 
-  </TabItem>
+</TabItem>
 <TabItem label="Web" value="web">
 
 ### WhatsApp Desktop & WhatsApp Web
@@ -74,7 +74,7 @@ For WhatsApp on iOS, follow these steps:
 
     ![](images/chat-whatsapp.png)
 
-  </TabItem>
+</TabItem>
 </Tabs>
 
 ## Using *Interact on WhatsApp Groups and with Other Users using ChatGPT* Template
