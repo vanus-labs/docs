@@ -33,7 +33,6 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-
 <TabItem label="Android" value="authentication-via-google">
 
 ### WhatsApp Mobile (Android)
@@ -47,8 +46,8 @@ For WhatsApp on Android, follow these steps:
 
 - Just enter a message or pose a question, and you'll receive a response.
 ![](images/mobile-3.png)
-  </TabItem>
 
+  </TabItem>
 <TabItem label="iOS" value="i-os">
 
 ### WhatsApp Mobile (iOS)
@@ -76,7 +75,6 @@ For WhatsApp on iOS, follow these steps:
     ![](images/chat-whatsapp.png)
 
   </TabItem>
-
 </Tabs>
 
 ## Using *Interact on WhatsApp Groups and with Other Users using ChatGPT* Template
