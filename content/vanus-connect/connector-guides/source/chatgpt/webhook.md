@@ -1,27 +1,25 @@
 # **How to setup ChatGPT in Feishu**
 
-1. Click the copy icon to copy the webhook url.
-   ![img.png](images/img_1.png)
-2. Return into Feishu and search for `flow` or `飞书捷径` and click on it.
-   ![img.png](images/chatimg.png)
-3. Press **create**.
-   ![img_1.png](images/chatimg_1.png)
-4. Select the Trigger and choose **Message**.
-   ![img_2.png](images/img_2.png)
-5. Select `New message that mentioned BOT in the group chat`.
-   ![img_3.png](images/img_3.png)
-6. In group select **specific groups** Search for the group you've previously created, select your ChatGPT bot under bot and press **confirm**.
-   ![img_5.png](images/img_5.png)
-7. Select the action and choose webhook as the action.
-   ![img_6.png](images/img_6.png)
-8. Select Custom Request.
-   ![img_7.png](images/img_7.png)
-9. Select the method `POST`, set the URL using the URL from step 1, Select the Data `Message: Message content without the @ part`, and press **Confirm**.
-   ![img_8.png](images/img_8.png)
-10. press **Create**.
-    ![img_9.png](images/img_9.png)
-11. Name your flow and Confirm.
-    ![img_10.png](images/img_10.png)
-12. Now send a message in the group tagging the bot.
-    ![img_11.png](images/img_11.png)
-   
+1.  Click the copy icon to copy the **Webhook URL**❶.
+    ![11.png](images/11.png)
+2.  Return into Feishu and search for **Feishu Flow**❷❸ or **飞书捷径** and click on it.
+    ![12.png](images/12.png)
+3.  Press **Create** **Bot Command**❹.
+    ![13.png](images/13.png)
+4.  **Select a Trigger**❺.
+    ![14.png](images/14.png)
+5.  **Select** `When a New message that mentioned BOT in the group chat`❻.
+    ![15.png](images/15.png)
+6.  In group select **Specific groups**❼ Search for the group you've previously created, select your ChatGPT bot under **Bot**❽ , select **All of my contacts**❾ and click the **Done**❿.
+    ![16.png](images/16.png)
+7.  **Select an action**⓫ and choose `Webhook(Send HTTP request)`⓬ as the action.
+    ![17.png](images/17.png)
+    ![18.png](images/18.png)
+8.  Select the **Method** `POST`⓭. Set the URL⓮ using the URL from step 1❶. Select the **Data type** `plain`⓯, Select the **Body** `When a new message mentions BOT in group chat/Source content(mention @ part remove)`⓰, and press **Done**⓱.&#x20;
+    ![19.png](images/19.png)
+9.  Press **Enable**⓲, And name your flow and **Confirm**⓳.
+    ![20.png](images/20.png)
+10. Press **My commands**⓴, and make sure your bot is open.
+    ![21.png](images/21.png)
+11. Now send a message in the group tagging the bot.
+    ![22.png](images/22.png)
