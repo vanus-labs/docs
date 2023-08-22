@@ -10,32 +10,34 @@ hide_title: true
 
 ---
 
-**Perform the following steps to configure your feishu Sink.**
+**Perform the following steps to configure your Feishu Sink.**
 
 ### Step 1: Setup a Feishu bot 
 
-1. Create a new Group chat
-![img_1.png](images/img_1.png)
-2. In the feishu group, click `...` and then **settings**.
-![img.png](images/feishu-settings.png)
-3. Now click **Bots**.
-   ![img_1.png](images/feishu-bot.png)
-4. Click on **Add Bot** and select **Custom Bot**.
-   ![img_3.png](images/feishu-add-custom-bot.png)
-5. Enter a name for your bot and click **Continue**.
-6. Copy the **Webhook URL** and keep it safe.
-7. (Optionally) you can also set a **Signature verification** for added security.
-   ![img.png](images/feishu-signature.png)
+1.  Create a **New Group**❶❷ chat.
+![1.png](images/1.png)
+2.  In the Feishu group click `...`❸  and then **Settings**❹.
+![2.png](images/2.png)
+3.  Now click **Bots**❺.
+![3.png](images/3.png)
+4.  Click on **Add Bot**❻ and select **Custom Bot**❼.
+![4.png](images/4.png)
+![5.png](images/5.png)
+5.  Enter a name for your bot and click **Add**❽.
+![6.png](images/6.png)
+6.  Copy the **Webhook URL**❾, and click **Finish**❿.
+![7.png](images/7.png)
 
 ---
 
 ### Step 2: Feishu Connection Settings
 
-1. Paste the ** Feishu Webhook URL** into the "URL" field.
-![img_2.png](images/img_2.png)
-2. (Optionally) add your **Signature Verification**.
-![img_3.png](images/img_3.png)
-3. Click "Next" to continue.
+1.  Paste the step **Feishu Webhook URL**❶ into the "URL" field.&#x20;
+2.  ⚠Don't forget the next step❗Click your **Connection**❷ , and then click **How to Use this URL**❸ to setup ChatGPT in Feishu.&#x20;
+3.  Now click **Submit** to continue.
+![8.png](images/8.png)
+![9.png](images/9.png)
+![10.png](images/10.png)
 
 ---
 
