@@ -24,4 +24,4 @@
     ![img_10.png](images/img_10.png)
 12. Now send a message in the group tagging the bot.
     ![img_11.png](images/img_11.png)
-   
+    
