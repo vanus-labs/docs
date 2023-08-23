@@ -18,46 +18,37 @@ Before forwarding events to Feishu, you must have:
 ## Getting Started
 
 ### Step 1: Setup a Feishu bot
-1. Create a new Group chat
-![img_1.png](images/img_1.png)
-2. In the feishu group click `...` and then **settings**.
-![img.png](images/feishu-settings.png)
-3. Now click **Bots**.
-   ![img_1.png](images/feishu-bot.png)
-4. Click on **Add Bot** and select **Custom bot**.
-   ![img_3.png](images/feishu-add-custom-bot.png)
-5. Enter a name for your bot and click **Continue**.
-6. Copy the **Webhook URL** and keep it safely.
-7. (Optionally) you can also set a **Signature verification** for added security.
-   ![img.png](images/feishu-signature.png)
+1.  Create a **New Group**❶❷ chat.
+![1.png](images/1.png)
+2.  In the Feishu group click `...`❸  and then **Settings**❹.
+![2.png](images/2.png)
+3.  Now click **Bots**❺.
+![3.png](images/3.png)
+4.  Click on **Add Bot**❻ and select **Custom Bot**❼.
+![4.png](images/4.png)
+![5.png](images/5.png)
+5.  Enter a name for your bot and click **Add**❽.
+![6.png](images/6.png)
+6.  Copy the **Webhook URL**❾, and click **Finish**❿.
+![7.png](images/7.png)
+
 
 ### Step 2: Set up your Connection in Vanus Connect  
 
-1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
-![3](images/go%20to%20vanuscloud.png)  
-
-2. Click on **Create Connections**  
-![3](images/click%20create%20connection.png)  
-
-3. Name your connection, Choose your source and click next 
-![3](images/choose%20source.png) 
-
-4. Click on **Sink** and choose **feishu** 
-![3](images/choose%20sink.png) 
-
-5. Paste the ** Feishu Webhook URL** into the "URL" field.
-![img_2.png](images/img_2.png) 
-
-6. (Optionally) add your **Signature Verification**.
-![img_3.png](images/img_3.png) 
-
-7. Click "Next" to continue.  
-
-8. Click on submit to finish the configuration. 
-![](images/submit.png)  
-
-9. You've successfully created your Vanus feishu sink connection.  
-![](images/created.png)  
+1.  **Log in** to your [Vanus](https://cloud.vanus.ai "Vanus") account❶ and click on **connections**❷, and click on **Create Connections**❸. Or you can **Choose a template to start**❷—`Chat with ChatGPT via Feishu bot`.
+    ![322.png](images/322.png)
+    ![32.png](images/32.png)
+2.  **Name** your connection❹, Choose your **Source**❺ and click next.
+    ![33.png](images/33.png)
+3.  Click on **Sink** and choose **Feishu**❻. Paste the \*\* Feishu Webhook URL\*\*❼ into the "URL" field. Click **Next** to continue.
+    ![344.png](images/344.png)
+4.  Click on **Submit** to finish the configuration.
+    ![355.png](images/355.png)
+5.  You've successfully created your Vanus feishu sink connection.
+    ![36.png](images/36.png)
+6.  ⚠Don't forget the next step❗ Click your **Connection**❿ , and then click **How to Use this URL**⓫ to setup ChatGPT in Feishu.&#x20;
+    ![554.png](images/554.png)
+    ![553.png](images/553.png)
 
 Check out this article on how to get a [Feishu Webhook](https://www.vanus.ai/blog/retrieve-feishu-webhook-url/) for more details.
 
