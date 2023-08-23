@@ -19,10 +19,9 @@ Before obtaining ChatGPT events, you must have:
 
 ### Create a Connection
 
-1. Write a name for your connection.
-![img.png](images/1.png)
-2. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction.
-   ![img.png](images/2.png)
-3. Click **`Next`** to save the ChatGPT Source.
+1.  **Write a name**❶ for your connection in Vanus Connect.
+2.  After creating the connection, there are a few more steps. Simply click the link ⚠**this document**❷ to open a new page with all the details on **how to complete the connection**.
+![23.png](images/23.png)
+3.  Click **Next** to save the ChatGPT Source.
 
 Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
