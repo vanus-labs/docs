@@ -84,7 +84,14 @@ const sidebars = {
       items: [
           "vanus-ai/how-to/create-AI",
           "vanus-ai/how-to/api",
-        "vanus-ai/how-to/discord",
+      ],
+    },
+    {
+      type: "category",
+      label: "Integrations",
+      items: [
+          "vanus-ai/integrations/discord",
+          "vanus-ai/integrations/whatsapp",
       ],
     },
 

@@ -5,11 +5,11 @@ Integration is a paid user feature. Therefore, only users with subscriptions or 
 ## How to Setup a Discord Integration
 
 ### Step 1: Create an AI Application
-1. Go to [ai.vanus.ai](https://ai.vanus.ai) and sign in.
+1. Go to [Vanus AI](https://ai.vanus.ai) and sign in.
 2. Create a new AI App by clicking **Create App** button.
-![](images/discord-createapp.png)
+![](images/1.png)
 3. Enter a name, the model, upload to the knowledge base, and click **Create**.
-![](images/discord-enterNameModelKnownledge.png)
+![](images/2.png)
 4. Go to the **Integration** tab and click on the Discord integration.
 ![](images/discord-integration.png)
 
