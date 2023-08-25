@@ -1,4 +1,4 @@
-# WhatsApp Integration
+# WhatsApp 
 This documentation will teach you how to integrate an AI into WhatsApp.
 Integration is a paid user feature. Therefore, only users with professional subscriptions and above can use integrations.
 
