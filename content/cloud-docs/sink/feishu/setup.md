@@ -36,8 +36,8 @@ hide_title: true
 2.  ⚠Don't forget the next step❗Click your **Connection**❷ , and then click **How to Use this URL**❸ to setup ChatGPT in Feishu.&#x20;
 3.  Now click **Submit** to continue.
 ![8.png](images/8.png)
-![9.png](images/9.png)
 ![10.png](images/10.png)
+![9.png](images/9.png)
 
 ---
 
