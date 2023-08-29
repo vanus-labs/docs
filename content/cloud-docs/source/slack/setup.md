@@ -26,10 +26,10 @@ hide_title: true
 5. Scroll down to **Scopes/Bot Token Scopes**, and click on **Add an OAuth Scope**.
 ![](images/add-oauth-scope.png)
 
-6. Add **chat:write** permission to your App.
+6. Add **chat:write** and **chat:write.public** permission to your App.
 ![](images/chat-write-permission.png)
 
-7. **Notice:** we only need a **chat:write** permission in Bot Token Scopes.
+7. **Notice:** we only need a **chat:write** and **chat:write.public** permission in Bot Token Scopes.
 ![](images/permission-saved.png)
 
 8. Scroll up to the top of the page, and click **install to Workspace** to install your app.
