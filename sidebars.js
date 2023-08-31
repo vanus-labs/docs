@@ -91,6 +91,7 @@ const sidebars = {
       label: "Integrations",
       items: [
           "vanus-ai/integrations/discord",
+          "vanus-ai/integrations/slack",
           "vanus-ai/integrations/whatsapp",
       ],
     },
