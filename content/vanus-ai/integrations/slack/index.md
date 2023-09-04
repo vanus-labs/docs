@@ -57,7 +57,6 @@ In the next steps, we will go to Slack API website to create our Slack App and g
 13. Scroll down to **Event Subscriptions** tab, enable Event Subscription
 ![](images/event-sub.png)
 14. Click on Subscribe to bot events, click on the **Add Bot User Event** and add `app_mention` & `message.im`. Click on **Save Changes** button.
-![](images/event-sub.png)
 ![](images/event-sub2.png)
 
 

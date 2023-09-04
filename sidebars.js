@@ -90,9 +90,9 @@ const sidebars = {
       type: "category",
       label: "Integrations",
       items: [
-          "vanus-ai/integrations/discord",
-          "vanus-ai/integrations/slack",
-          "vanus-ai/integrations/whatsapp",
+         "vanus-ai/integrations/discord/index",
+          "vanus-ai/integrations/slack/index",
+          "vanus-ai/integrations/whatsapp/index",
           "vanus-ai/integrations/feishu/feishu",
       ],
     },
