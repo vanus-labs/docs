@@ -93,6 +93,7 @@ const sidebars = {
           "vanus-ai/integrations/discord",
           "vanus-ai/integrations/slack",
           "vanus-ai/integrations/whatsapp",
+          "vanus-ai/integrations/feishu/feishu",
       ],
     },
 
