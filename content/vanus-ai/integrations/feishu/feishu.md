@@ -8,14 +8,14 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 **Prerequisites:**
 
-- Have a [Feishu Account](https://feishu.cn).
+- Have a [**Feishu Account**](https://feishu.cn).
 
-- Have a [Vanus AI account](https://ai.vanus.ai).
+- Have a [**Vanus AI account**](https://ai.vanus.ai).
 
 
 ### Step 1: Create an AI Application
 
-1. Navigate to [Vanus AI](https://ai.vanus.ai) and Sign up with your **Github, Google, Microsoft Account**① or click **Sign up**②.  
+1. Navigate to [**Vanus AI**](https://ai.vanus.ai) and Sign up with your **Github, Google, Microsoft Account**① or click **Sign up**②.  
 
 ![](images/vanusai1-signup.webp)  
 
@@ -33,7 +33,7 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 # step 2: Create a Feishu App
 
-- Visit the following website [Feishu App](https://open.feishu.cn/app) 
+- Visit the following website [**Feishu App**](https://open.feishu.cn/app) 
 1. Click on **Create Custom App**①.
 
 ![](images/feishu0-website.webp)
