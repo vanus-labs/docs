@@ -31,7 +31,7 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 ![](images/vnausai4-integration.webp)
 
-# step 2: Create a Feishu App
+### step 2: Create a Feishu App
 
 - Visit the following website [**Feishu App**](https://open.feishu.cn/app) 
 1. Click on **Create Custom App**①.
@@ -117,7 +117,7 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 ![](images/feishu19-app-approved.webp)
 
-# step 3: Invite Feishu Bot
+### step 3: Invite Feishu Bot
 
 1.  Create a **New Group**①② chat.
 
