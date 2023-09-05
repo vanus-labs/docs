@@ -103,7 +103,7 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 ⚠ Verify that you have these 2 events.❗
 
-![](images/feishu16-confirm.png)
+![](images/feishu16-confirm.webp)
 
 17. Now click **Create Version** ㉝  to publish your app.
 
@@ -115,7 +115,7 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 19. Your Feishu admin will need to approve the release request.
 
-![](images/feishu19-app-approved.png)
+![](images/feishu19-app-approved.webp)
 
 # step 3: Invite Feishu Bot
 
