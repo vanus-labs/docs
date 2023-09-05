@@ -15,7 +15,7 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 ### Step 1: Create an AI Application
 
-1. Navigate to [Vanus AI](https://ai.vanus.ai) and Sign up with your **Github, Google, Microsoft Account**① or click **Signup**②.  
+1. Navigate to [Vanus AI](https://ai.vanus.ai) and Sign up with your **Github, Google, Microsoft Account**① or click **Sign up**②.  
 
 ![](images/vanusai1-signup.webp)  
 
