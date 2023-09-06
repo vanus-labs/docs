@@ -81,7 +81,8 @@ import TabItem from '@theme/TabItem';
 
 </Tabs>
 
-To use in WhatsApp groups just tag the AI account using `@`.
+To use in WhatsApp groups just tag the AI account using `@`.  
+
 ![Image13](images/whatsapp_groups_1.webp)
 
 
