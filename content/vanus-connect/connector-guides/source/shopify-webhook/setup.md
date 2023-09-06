@@ -1,6 +1,6 @@
-# Stripe
+# Shopify Webhook
 
-This guide contains information to set up a Stripe Source in Vanus Connect.
+This guide contains information to set up a Shopify Webhook Source in Vanus Connect.
 
 ## Introduction
 
