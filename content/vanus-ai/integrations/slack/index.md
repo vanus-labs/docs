@@ -53,8 +53,9 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 ![](images/integration_slack_9.webp)
 
-3. Add `chat:write`⑧, `chat:write:public`⑨, `app_mentions:read`⑩ & `im:history`⑪ permission to your app.
+3. Type the name of the permission and click on it to add the permission. Add `chat:write`⑧, `chat:write:public`⑨, `app_mentions:read`⑩ & `im:history`⑪ permission to your app.
 
+![](images/integration_slack_27.webp)
 ![](images/integration_slack_10.webp)
 
 4. Scroll up to the top of the page, and click **Install to Workspace**⑫ to install your app.
@@ -69,12 +70,13 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 ![](images/integration_slack_13.webp)
 
-7. Paste the Bot User OAuth Token in the `Bot Token`⑮ field in Vanus AI
+7. Paste the Bot User OAuth Token in the **Bot Token**⑮ field in Vanus AI
 
 ![](images/integration_slack_14.webp)
 
 8. Click on the **Basic Information** tab, scroll down to **App-Level Tokens** and click on **Generate Tokens and Scopes**⑯.
 
+![](images/integration_slack_26.webp)
 ![](images/integration_slack_15.webp)
 
 9. Write the **Token Name**⑰ and click on the **Add Scope** button, Select **connections:write**⑱ and click on the **Generate**⑲ button.
@@ -84,11 +86,11 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 ![](images/integration_slack_18.webp)
 
-11. Paste in the `App Token`㉒ field in Vanus AI and click on the **Create**㉓ button.
+11.The **Bot Token**㉑ is the same as credentials in ⑮. Paste in the **App Token**㉒ field in Vanus AI and click on the **Create**㉓ button.
 
 ![](images/integration_slack_19.webp)
 
-12. The connection will show the `Running`㉔ status.
+12. The connection will show the **Running**㉔ status.
 
 ![](images/integration_slack_20.webp)
 
@@ -103,7 +105,7 @@ Integration is a paid user feature. Therefore, only users with professional subs
 15. Click on Subscribe to bot events drop-down, click on the **Add Bot User Event**㉙.
 ![](images/integration_slack_23.webp)
 
-16. Add `app_mention`㉚ & `message.im`㉛. Click on **Save Changes**㉜ button.
+16. Add **app_mention**㉚ & **message.im**㉛. Click on **Save Changes**㉜ button.
 
 ![](images/integration_slack_24.webp)
 
