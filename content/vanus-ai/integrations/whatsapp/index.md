@@ -1,5 +1,5 @@
 # WhatsApp 
-This documentation will teach you how to use the WhatsApp integration to turn your WhatsApp acount into an AI able to respond to your contacts.
+This documentation will teach you how to use the WhatsApp integration to turn your WhatsApp account into an AI able to respond to your contacts.
 
 Integration is a paid user feature. Therefore, only users with professional subscriptions and above can use integrations.
 
