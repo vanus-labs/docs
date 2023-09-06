@@ -126,7 +126,7 @@ In the next steps, we will go to Discord website or Application to create our Di
 
     ![ai_integration_discord25](images/ai_integration_discord25.webp)
 
-### Communicate with the AI.
+### Communicate with the AI
 
 - To Send a message in a channel, you need to **mention the AI**①.
 
