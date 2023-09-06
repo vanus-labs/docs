@@ -9,12 +9,11 @@ Integration is a paid user feature. Therefore, only users with professional subs
 **Prerequisites:**
 
 - Have a [**Discord account**](https://discord.com).
-
 - Have a [**Vanus AI account**](https://ai.vanus.ai).
 
 ### Step 1: Create an AI Application
 
-1. Navigate to [**Vanus AI**](​https://ai.vanus.ai) and sign in with **Github**, **Google**, **Microsoft Account**① or click **Sign up**②.
+1. Navigate to [**Vanus AI**](https://ai.vanus.ai) and sign in with **Github**, **Google**, **Microsoft Account**① or click **Sign up**②.
 
    ![ai_integration_discord1](images/ai_integration_discord1.webp)
 
