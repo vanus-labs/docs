@@ -3,7 +3,7 @@ This documentation will teach you how to use the WhatsApp integration to turn yo
 
 Integration is a paid user feature. Therefore, only users with professional subscriptions and above can use integrations.
 
-learn how to set a personal GPT AI at [**WhatsApp GPT**](https://www.vanus.ai/blog/how-to-setup-chatgpt-on-whatsapp-with-vanus-connect/).
+Learn how to set a personal GPT AI at [**WhatsApp GPT**](https://www.vanus.ai/blog/how-to-setup-chatgpt-on-whatsapp-with-vanus-connect/).
 
 ## How to Setup a WhatsApp Integration
 
@@ -21,11 +21,11 @@ learn how to set a personal GPT AI at [**WhatsApp GPT**](https://www.vanus.ai/bl
 
 ![Image](images/vanusai2-create-app.webp)
 
-3. Input an **App Name**④, select an **App Model**⑤, upload to the Knowledge Base⑥, then click **Create**⑦.
+3. Input an **App Name**④, select an **App Model**⑤, upload to the **Knowledge Base**⑥, then click **Create**⑦.
 
 ![Image](images/vanusai3-app-config.webp)
 
-4. Select the **Integrations Tab**⑧ and select the **WhatsApp Integration**⑨.
+4. Select the **Integrations Tab**⑧ and click the **WhatsApp Integration**⑨.
 
 ![Image3](images/vanusai4.webp)
 
@@ -81,7 +81,7 @@ import TabItem from '@theme/TabItem';
 
 </Tabs>
 
-To use in WhatsApp groups just tag the AI account using `@`.  
+To use in WhatsApp groups just tag the AI account using `@`. 
 
 ![Image13](images/whatsapp_groups_1.webp)
 
