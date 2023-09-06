@@ -1,65 +1,89 @@
 # WhatsApp 
-This documentation will teach you how to integrate an AI into WhatsApp.
+This documentation will teach you how to use the WhatsApp integration to turn your WhatsApp acount into an AI able to respond to your contacts.
+
 Integration is a paid user feature. Therefore, only users with professional subscriptions and above can use integrations.
+
+learn how to set a personal GPT AI at [**WhatsApp GPT**](https://www.vanus.ai/blog/how-to-setup-chatgpt-on-whatsapp-with-vanus-connect/).
 
 ## How to Setup a WhatsApp Integration
 
 **Prerequisites:**
 
-- Have a [WhatsApp account](https://www.whatsapp.com).
-- Have a [Vanus AI account](https://ai.vanus.ai).
+- Have a [**WhatsApp account**](https://www.whatsapp.com).
+- Have a [**Vanus AI account**](https://ai.vanus.ai).
 
 ### Step 1: Establish an AI Application
-1. Navigate to [Vanus AI](https://ai.vanus.ai) and log in.
-2. Initiate a new AI App by hitting the **Create App** button.
-   ![Image1](images/1.png)
-3. Input a name, select the model, upload to the knowledge base, then click **Create**.
-   ![Image2](images/2.png)
-4. Direct yourself to the **Integration** tab and select the WhatsApp integration.
-   ![Image3](images/whatsapp-integration.png)
+1. Navigate to [**Vanus AI**](https://ai.vanus.ai) and Sign up with your **Github, Google, Microsoft Account**① or click **Sign up**②.
+
+![](images/vanusai1-signup.webp)
+
+2. Initiate a new AI App by hitting the **Create App**③ button.
+
+![Image](images/vanusai2-create-app.webp)
+
+3. Input an **App Name**④, select an **App Model**⑤, upload to the Knowledge Base⑥, then click **Create**⑦.
+
+![Image](images/vanusai3-app-config.webp)
+
+4. Select the **Integrations Tab**⑧ and select the **WhatsApp Integration**⑨.
+
+![Image3](images/vanusai4.webp)
 
 ### Step 2: Connect WhatsApp to Vanus AI
-1. Input a connection name.
-2. Press `Authorize` to permit Vanus to form a connection with your WhatsApp account.
-3. Use your mobile WhatsApp to scan the QR Code.
-4. After successful authorisation, hit the `Create` button.
-   ![Image4](images/whatsapp-scan.png)
+1. Enter a **Name**① for your integration and click **Authorize**②.
 
-### Step 3: Utilizing Your AI on WhatsApp
-The AI you've crafted is applicable on WhatsApp through an Android device, an iOS device, WhatsApp Web, and WhatsApp Desktop. In essence, your account now operates as the AI, automatically responding to messages from your contacts. Nevertheless, this setup isn't intended for personal AI usage. Please navigate [here](https://docs.vanus.ai/vanus-connect/connector-guides/source/whatsapp/setup) for instructions on setting up a personal AI in WhatsApp.
+![](images/whatsapp_1.webp)
 
-#### WhatsApp Mobile (Android)
-On WhatsApp Android, execute the following steps:
+3. Use your mobile WhatsApp to scan the **QR code**③.
 
-- Tap on the `Chat` icon at the bottom-right corner to display the contact list.
-  ![Image5](images/mobile-1.png)
+![](images/whatsapp_2.webp)  
 
-- Within the contact list, select the contact with your profile display. It's typically the first contact on the list and has the word `You` attached to it.
-  ![Image6](images/mobile-2.png)
+4. Once authorization is successful, click **Create**④.  
 
-- Simply write a message or pose a question and you'll receive a response.
-  ![Image7](images/mobile-3.png)
+![](images/whatsapp_3.webp)
 
-#### WhatsApp Mobile (iOS)
-On WhatsApp iOS, execute the following steps:
 
-- Tap the `Chats` icon at the bottom menu to open the contact list.
-  ![Image8](images/mobile-1-ios.png)
+### Step 3: How to use Vanus AI on WhatsApp
 
-- Within the contact list, select the contact with your profile display. It's typically the first contact on the list and has the word `You` attached to it.
-  ![Image9](images/mobile-2-ios.png)
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-- Simply write a message or pose a question and you'll receive a response.
-  ![Image10](images/mobile-3-ios.png)
+<Tabs>
 
-#### WhatsApp Desktop & WhatsApp Web
-- On WhatsApp Desktop/Web, the contact button will display your contact list. The Contact button has been marked as `1` in the screenshot. Press on the button and your contacts will be displayed. Select the one with your contact profile, it's marked as `2` and also has the word `You`. This way, you chat with your AI by chatting with yourself.
-  ![Image11](images/chat-whatsapp-connect.png)
+<TabItem label="Android" value="android">
 
-- Simply type any question you like to ask, the AI will respond to you on the chat.
-  ![Image12](images/chat-whatsapp.png)
+1. Tap on the 💬① icon at the bottom-right corner to display the contact list.
 
-#### Utilizing your AI in a Group
-Your AI can be used on WhatsApp Groups by tagging the contact used to establish the connection on Vanus AI. To tag the contact, use the `@` symbol.
-![Image13](images/chat-whatsapp-group.png)
+
+2. Within the contact list, select the **contact**② with your profile display. It's typically the first contact on the list and has the word `You` attached to it.
+
+
+3.  Send a message or pose a question and you'll receive a response.
+  
+![](images/whatsapp_android_1.webp)
+
+
+</TabItem>
+
+<TabItem label="iOS" value="ios">
+
+1. Tap the 💬①  icon at the bottom menu and tap the 📝② icon at the top.
+
+
+2. Within the contact list, select the **contact**③ with your profile display. It's typically the first contact on the list and has the word `You` attached to it.
+
+
+3. Send a message or pose a question and you'll receive a response.
+  
+![](images/whatsapp_ios_1.webp)
+
+</TabItem>
+
+</Tabs>
+
+To use in WhatsApp groups just tag the AI account using `@`.
+![Image13](images/whatsapp_groups_1.webp)
+
+
+
 
