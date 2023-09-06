@@ -8,13 +8,13 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 **Prerequisites:**
 
-- Have a **[Discord account](https://discord.com).**
+- Have a [**Discord account**](https://discord.com).
 
-- Have a **[Vanus AI account](https://ai.vanus.ai).**
+- Have a [**Vanus AI account**](https://ai.vanus.ai).
 
 ### Step 1: Create an AI Application
 
-1. Navigate to **[Vanus AI](​https://ai.vanus.ai)** and sign in with **Github**, **Google**, **Microsoft Account**① or click **Sign up**②.
+1. Navigate to [**Vanus AI**](​https://ai.vanus.ai) and sign in with **Github**, **Google**, **Microsoft Account**① or click **Sign up**②.
 
    ![ai_integration_discord1](images/ai_integration_discord1.webp)
 
@@ -38,7 +38,7 @@ In the next steps, we will go to Discord website or Application to create our Di
 
 ### Step 2: Create a Discord Server
 
-1. Access the Discord App or Webpage at **[Discord](https://discord.com)**.
+1. Access the Discord App or Webpage at [**Discord**](https://discord.com).
 
 2. After signing in, you can press the **`+`** button to establish a new channel①.
 
@@ -58,7 +58,7 @@ In the next steps, we will go to Discord website or Application to create our Di
 
 ### Step 3: Develop a Discord Application
 
-1. Go to **[Discord Developer Portal](https://discord.com/developers/applications)**.
+1. Go to [**Discord Developer Portal**](https://discord.com/developers/applications).
 
 2. Press **New Application**①.
 
