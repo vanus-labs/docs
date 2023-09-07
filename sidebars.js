@@ -94,7 +94,7 @@ const sidebars = {
           "vanus-ai/integrations/slack/index",
           "vanus-ai/integrations/whatsapp/index",
           "vanus-ai/integrations/feishu/feishu",
-          "vanus-ai/integrations/dingtalk/index"
+          "vanus-ai/integrations/dingtalk/index",
       ],
     },
 
