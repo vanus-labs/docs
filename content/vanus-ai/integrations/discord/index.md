@@ -9,6 +9,7 @@ Integration is a paid user feature. Therefore, only users with professional subs
 **Prerequisites:**
 
 - Have a [**Discord account**](https://discord.com).
+
 - Have a [**Vanus AI account**](https://ai.vanus.ai).
 
 ### Step 1: Create an AI Application
@@ -33,7 +34,7 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 ![ai_integration_discord5](images/ai_integration_discord5.webp)
 
-In the next steps, we will go to Discord website or Application to create our Discord Server and get the required credentials to make the connection.
+In the next steps, we will go to the Discord website or Application to create our Discord Server and get the required credentials to make the connection.
 
 ### Step 2: Create a Discord Server
 
@@ -57,17 +58,17 @@ In the next steps, we will go to Discord website or Application to create our Di
 
 ### Step 3: Develop a Discord Application
 
-1. Go to [**Discord Developer Portal**](https://discord.com/developers/applications).
+1. Go to the [**Discord Developer Portal**](https://discord.com/developers/applications).
 
 2. Press **New Application**①.
 
 ![ai_integration_discord10](images/ai_integration_discord10.webp)
 
-3. Assign a **Name**② to your bot, agree to the **Developer terms of service and Developer Policy**③, then hit **Create**④.
+3. Assign a **Name**② to your bot, agree to the **Developer Terms of Service and Developer Policy**③, then hit **Create**④.
 
 ![ai_integration_discord11](images/ai_integration_discord11.webp)
 
-4. From the side menu, select **bot**⑤, and under Privileged Gateway Intents, enable **MESSAGE CONTENT INTENT**⑥.
+4. From the sidebar menu, select **Bot**⑤, and under Privileged Gateway Intents, enable **MESSAGE CONTENT INTENT**⑥.
 
 ![ai_integration_discord12](images/ai_integration_discord12.webp)
 
@@ -75,7 +76,7 @@ In the next steps, we will go to Discord website or Application to create our Di
 
 ![ai_integration_discord13](images/ai_integration_discord13.webp)
 
-6. Press **Reset token**⑧.
+6. Press **Reset Token**⑧.
 
 ![ai_integration_discord14](images/ai_integration_discord14.webp)
 
@@ -83,11 +84,11 @@ In the next steps, we will go to Discord website or Application to create our Di
 
 ![ai_integration_discord15](images/ai_integration_discord15.webp)
 
-8. Return to Vanus AI, **Name**⑩ the integration, paste the **Bot token**⑪, and hit **Create**⑫.
+8. Return to Vanus AI, **Name**⑩ the integration, paste the **Bot Token**⑪, and hit **Create**⑫.
 
 ![ai_integration_discord16](images/ai_integration_discord16.webp)
 
-9. Your integration has been successfully created and is now **running**⑬.
+9. Your integration has been successfully created and is now **Running**⑬.
 
 ![ai_integration_discord17](images/ai_integration_discord17.webp)
 
@@ -105,11 +106,11 @@ In the next steps, we will go to Discord website or Application to create our Di
 
 ![ai_integration_discord20](images/ai_integration_discord20.webp)
 
-14. **Copy** the URL⑰.
+14. **Copy**⑰ the URL.
 
 ![ai_integration_discord21](images/ai_integration_discord21.webp)
 
-15. Choose your Server⑱ and press **Continue**⑲.
+15. Choose your **Server**⑱ and press **Continue**⑲.
 
 ![ai_integration_discord22](images/ai_integration_discord22.webp)
 
