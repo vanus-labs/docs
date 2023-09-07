@@ -73,6 +73,43 @@ const config = {
       },
     ],
   ],
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com'
+      }
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+      }
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap',
+      }
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'stylesheet',
+        href: 'https://assets.calendly.com/assets/external/widget.css',
+      }
+    },
+    {
+      tagName: 'script',
+      attributes: {
+        rel: 'text/javascript',
+        src: 'https://assets.calendly.com/assets/external/widget.js',
+      }
+    },
+  ],
   scripts: [
     // Object format.
     {
@@ -139,7 +176,7 @@ const config = {
       },
       docs: {
         sidebar: {
-          hideable: true,
+          hideable: false,
           autoCollapseCategories: false
         },
       },
@@ -153,18 +190,27 @@ const config = {
 
         hideOnScroll: true,
         items: [
+          // {
+          //   type: "doc",
+          //   docId: "getting-started/what-is-vanus",
+          //   position: "left",
+          //   label: "Docs",
+          // },
           {
-            type: "doc",
-            docId: "getting-started/what-is-vanus",
+            href: "https://cloud.vanus.ai",
             position: "left",
-            label: "Docs",
+            label: "Vanus Connect",
           },
           {
-            href: url_github,
-            position: "right",
-            className: "header-github-link",
-            "aria-label": "GitHub",
+            href: "https://ai.vanus.ai",
+            position: "left",
+            label: "Vanus AI",
           },
+          // {
+          //   type: 'html',
+          //   position: 'right',
+          //   value: `<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yuanchi-wang'});return false;"><button class="book-demo-btn">Book a demo</button></a>`
+          // },
           {
             href: url_slack,
             position: "right",

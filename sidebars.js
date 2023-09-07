@@ -84,7 +84,16 @@ const sidebars = {
       items: [
           "vanus-ai/how-to/create-AI",
           "vanus-ai/how-to/api",
-        "vanus-ai/how-to/discord",
+      ],
+    },
+    {
+      type: "category",
+      label: "Integrations",
+      items: [
+         "vanus-ai/integrations/discord/index",
+          "vanus-ai/integrations/slack/index",
+          "vanus-ai/integrations/whatsapp/index",
+          "vanus-ai/integrations/feishu/feishu",
       ],
     },
 
@@ -193,6 +202,7 @@ const sidebars = {
             "vanus-connect/connector-guides/sink/mongodb/setup",
             "vanus-connect/connector-guides/sink/mysql/setup",
             "vanus-connect/connector-guides/sink/slack/setup",
+            "vanus-connect/connector-guides/sink/slack-app/setup",
             "vanus-connect/connector-guides/sink/snowflake/setup",
             "vanus-connect/connector-guides/sink/whatsapp/setup",
           ],
