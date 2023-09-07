@@ -53,9 +53,10 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 ![](images/integration_slack_9.webp)
 
-3. Type the name of the permission and click on it to add the permission. Add `chat:write`⑧, `chat:write:public`⑨, `app_mentions:read`⑩ & `im:history`⑪ permission to your app.
+3. Search the name of the permission and click on it to add the permission. Search and add the following permissions `chat:write:public`⑧, `chat:write`⑨, `im:history`⑩, `app_mentions:read`⑪ permission to your app.
 
 ![](images/integration_slack_27.webp)
+
 ![](images/integration_slack_10.webp)
 
 4. Scroll up to the top of the page, and click **Install to Workspace**⑫ to install your app.
@@ -74,38 +75,41 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 ![](images/integration_slack_14.webp)
 
-8. Click on the **Basic Information** tab, scroll down to **App-Level Tokens** and click on **Generate Tokens and Scopes**⑯.
+8. Click on the **Basic Information**⑯ tab, scroll down to **App-Level Tokens** and click on **Generate Tokens and Scopes**⑰.
 
 ![](images/integration_slack_26.webp)
+
 ![](images/integration_slack_15.webp)
 
-9. Write the **Token Name**⑰ and click on the **Add Scope** button, Select **connections:write**⑱ and click on the **Generate**⑲ button.
+9. Write the **Token Name**⑱ and click on the **Add Scope** button, Select **connections:write**⑲ and click on the **Generate**⑳ button.
+
 ![](images/integration_slack_17.webp)
 
-10. **Copy**⑳ the App-Level Tokens 
+10. **Copy**㉑ the App-Level Tokens 
 
 ![](images/integration_slack_18.webp)
 
-11.The **Bot Token**㉑ is the same as credentials in ⑮. Paste in the **App Token**㉒ field in Vanus AI and click on the **Create**㉓ button.
+11.Give the Integration a **Name**㉒. The **Bot Token**㉓ is the same as credentials in ⑮. Paste in the **App Token**㉔ field in Vanus AI and click on the **Create**㉕ button.
 
 ![](images/integration_slack_19.webp)
 
-12. The connection will show the **Running**㉔ status.
+12. The connection will show the **Running**㉖ status.
 
 ![](images/integration_slack_20.webp)
 
-13. Scroll up to **Socket Mode**㉕ tab and **Enable**㉖ Socket Mode.
+13. Scroll up to **Socket Mode**㉗ tab and **Enable**㉘ Socket Mode.
 
 ![](images/integration_slack_21.webp)
 
-14. Scroll down to **Event Subscriptions**㉗ tab, **Enable**㉘ Event Subscription.
+14. Scroll down to **Event Subscriptions**㉙ tab, **Enable**㉚ Event Subscription.
 
 ![](images/integration_slack_22.webp)
 
-15. Click on Subscribe to bot events drop-down, click on the **Add Bot User Event**㉙.
+15. Click on Subscribe to bot events drop-down, click on the **Add Bot User Event**㉛.
+
 ![](images/integration_slack_23.webp)
 
-16. Add **app_mention**㉚ & **message.im**㉛. Click on **Save Changes**㉜ button.
+16. Add **app_mention**㉜ & **im_history_changed**㉝. Click on **Save Changes**㉞ button.
 
 ![](images/integration_slack_24.webp)
 
