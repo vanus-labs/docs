@@ -49,11 +49,11 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 ![](images/integration_slack_8.webp)
 
-2. Scroll down to `Scopes/Bot Token Scopes`, and click **Add an OAuth Scope**⑦.
+2. Scroll down to **Scopes/Bot Token Scopes**, and click **Add an OAuth Scope**⑦.
 
 ![](images/integration_slack_9.webp)
 
-3. Search the name of the permission and click on it to add the permission. Search and add the following permissions `chat:write:public`⑧, `chat:write`⑨, `im:history`⑩, `app_mentions:read`⑪ permission to your app.
+3. Search the name of the permission and click on it to add the permission. Search and add the following permissions **chat:write:public**⑧, **chat:write**⑨, **im:history**⑩, **app_mentions:read**⑪ permission to your app.
 
 ![](images/integration_slack_27.webp)
 
@@ -116,7 +116,7 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 ### Communicate with the AI.
 
-To communicate with the AI in a channel, you need to mention the AI using the `@` and the AI name, then ask your question.
+To communicate with the AI in a channel, you need to mention the AI using the **@** and the AI name, then ask your question.
 
 ![](images/integration_slack_25.webp)
 
