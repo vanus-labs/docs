@@ -22,10 +22,6 @@ docker network create --driver bridge vanus-quickstart
 
 2. Start Vanus **all-in-one** container.
 
-<Tabs >
-
-<TabItem label="Default" value="default">
-
 ```bash
 docker run -d --rm \
     --network vanus-quickstart \
@@ -34,23 +30,6 @@ docker run -d --rm \
     -p 8081:8081 \
     --name vanus-all-in-one public.ecr.aws/vanus/all-in-one:latest
 ```
-
-</TabItem>
-
-<TabItem label="China Mainland" value="china">
-
-```bash
-docker run -d --rm \
-    --network vanus-quickstart \
-    --pull always \
-    -p 8080:8080 \
-    -p 8081:8081 \
-    --name vanus-all-in-one linkall.tencentcloudcr.com/vanus/all-in-one:latest
-```
-
-</TabItem>
-
-</Tabs>
 
 ### Command Line Tool
 

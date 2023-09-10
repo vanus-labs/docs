@@ -7,8 +7,6 @@ The document will teach you how to install Vanus in a Kubernetes environment.
 If you want to run Vanus locally, we suggest that you use [minikube](https://minikube.sigs.k8s.io/docs/start).
 We also provide an [interactive Kubernetes environment](https://play.linkall.com) to simply deploy and try Vanus in your browser.
 :::
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 Before installing Vanus, you must meet the following prerequisites:
 
@@ -19,31 +17,16 @@ Before installing Vanus, you must meet the following prerequisites:
 
 Install Vanus by running the command:
 
-<Tabs >
-
-<TabItem label="Default" value="default">
-
 ```bash
 kubectl apply -f https://dl.vanus.ai/all-in-one/v0.6.0.yml
 ```
-
-</TabItem>
-
-<TabItem label="China Mainland" value="china">
-
-```bash
-kubectl apply -f https://dl.vanus.ai/all-in-one/v0.6.0.cn.yml
-```
-
-</TabItem>
-
-</Tabs>
 
 After using kubectl apply, vanus namespace is created
 
 ```bash
 kubectl get ns
 ```
+
 ```bash
 NAME 			STATUS		AGE
 default			Active		6m35s
@@ -65,7 +48,6 @@ Now, you can easily see the pods in the namespace
 ```shell
 kubectl get pods
 ```
-
 
 The output:
 
