@@ -20,7 +20,7 @@ The website embedding feature is a paid user feature. Therefore, only users with
 
 ## Step 2: Website Embedding
 
-1. Navigate to the Knowledge Base①.
+1. Navigate to the **Knowledge Base**①.
 
 ![website-embedding-4](images/website-embedding-4.webp)
 
