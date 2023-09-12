@@ -17,128 +17,127 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 1. Navigate to [**Vanus AI**](https://ai.vanus.ai) and Sign up with your **Github, Google, Microsoft Account**① or click **Sign up**②.  
 
-![](images/vanusai1-signup.webp)  
+![](images/integration_vanus_1.webp)
 
 2. Initiate a new AI App by hitting the **Create App**③ button.  
 
-![Image](images/vanusai2-create-app.webp)  
+![](images/integration_vanus_2.webp)
 
 3. Input an **App Name**④, select an **App Model**⑤, upload to the Knowledge Base⑥, then click **Create**⑦.
 
-![Image](images/vanusai3-app-config.webp)
+![](images/integration_vanus_3.webp)
 
 4. Select the **Integrations Tab**⑧ and select the **Feishu Integration**⑨.
 
-![](images/vnausai4-integration.webp)
+![](images/integration_vanus_4.webp)
 
 ### Step 2: Create a Feishu App
 
 - Visit the following website [**Feishu App**](https://open.feishu.cn/app) 
 1. Click on **Create Custom App**①.
 
-![](images/feishu0-website.webp)
+![](images/integration_feishu_1.webp)
 
 2. Give your app a **Name**②  & **Description**③ and click **Create**④.
 
-![](images/feishu1-create-custom-app.webp)
+![](images/integration_feushu_2.webp)
 
 3. Under **Credentials & Basic Info**⑤, copy the **App ID**⑥ and **App Secret**⑦.
 
-![](images/feishu2-copy-app-id-secret.webp)
+![](images/integration_feushu_3.webp)
 
 4. Paste **App ID**⑧ and **App Secret**⑨ into each field.
 
-![](images/feishu3-paste-key-id.webp)
+![](images/integration_feushu_4.webp)
 
 5. Go to **Add Features**⑩ and click **+ Add**⑪ bot.
 
-![](images/feishu4-add-bot.webp)
+![](images/integration_feushu_5.webp)
 
 6. Now go to **Permissions & Scopes**⑫ and select **Messenger**⑬.
 
-![](images/feishu5-permission.webp)
+![](images/integration_feushu_6.webp)
 
 7. Scroll down and select **Read and send messages in private and group chats**⑭ and click **Add in Bulk**⑮.
 
-![](images/feishu6-add-read-write.webp)
-![](images/feishu6.2-add-in-bulk.webp)
+![](images/integration_feushu_7.webp)
+![](images/integration_feushu_8.webp)
 
-8. Now go to **Event Subscriptions**⑯ and copy **Verification Token**⑰.
+8. Now go to **Event Subscriptions**⑯ and copy **Verification Token**⑰. Optionally reset **Encrypt Key**⑱ for added security and copy it also.
 
-![](images/feishu7-verification-token.webp)
+![](images/integration_feushu_9.webp)
 
-9. Optionally reset **Encrypt Key**⑱ for added security and copy it also.
+9. Paste the **Verification Token**⑲. **Encrypt Key**⑳ into Vanus AI and press **Create**㉑.
 
-![](images/feishu7.2-optional-encryptkey.webp)
+![](images/integration_feushu_10.webp)
 
-10. Paste the **Verification Token**⑲. **Encrypt Key**⑳ into Vanus AI and press **Create**㉑.
+10. Copy the **Webhook Url**㉒ in Vanus AI.
 
-![](images/feishu8-paste-token.webp)
+![](images/integration_feushu_11.webp)
 
-11. Copy the **Webhook Url**㉒ in Vanus AI.
+11. Click the icon of **Request URL configuration** 📝㉓, paste the **Webhook Url**㉔ and press Save㉕.
 
-![](images/feishu9-webhook-copy.webp)
+![](images/integration_feushu_12.webp)
+![](images/integration_feushu_13.webp)
 
-12. Click the icon of **Request URL configuration** 📝㉓, paste the **Webhook Url**㉔ and press Save㉕.
+12. Now click **Add Events**㉖.
 
-![](images/feishu10-clickurl.webp)
-![](images/feishu10.2-save.webp)
+![](images/integration_feushu_14.webp)
 
-13. Now click **Add Events**㉖.
+13. Select **Messenger**㉗, **Message received**㉘ and press **Confirm**㉙.
 
-![](images/feishu12-add-events.webp)
+![](images/integration_feushu_15.webp)
 
-14. Select **Messenger**㉗, **Message received**㉘ and press **Confirm**㉙.
+14. Now add **Read private messages sent to the bot**㉚ and **Read group chat messages mentioning the bot**㉛ by clicking on them both.
 
-![](images/feishu13-message-received.webp)
+![](images/integration_feushu_16.webp)
 
-15. Now add **Read private messages sent to the bot**㉚ and **Read group chat messages mentioning the bot**㉛ by clicking on them both.
+15. Press **Add**㉜ for each of them.
 
-![](images/feishu14-add-permissions.webp)
-
-16. Press **Add**㉜ for each of them.
-
-
-![](images/feishu15-click-add.webp)
+![](images/integration_feushu_17.webp)
 
 ⚠ Verify that you have these 2 events.❗
 
-![](images/feishu16-confirm.webp)
+![](images/integration_feushu_18.webp)
 
-17. Now click **Create Version** ㉝  to publish your app.
+16. Now go to **Version Management & Release**㉝ and click **Create Version**㉞   to publish your app.
 
-![](images/feishu17-publish%20app.webp)
+![](images/integration_feushu_19.webp)
 
-18. Set **App version**㉞ to `1.0.0`, add **Update note**㉟  and click **Save**㊱.
+17. Set **App version**㉟ to `1.0.0`, add **Update note**㊱  and click **Save**㊲.
 
-![](images/feishu18-finish-publish-app.webp)
+![](images/integration_feushu_20.webp)
 
-19. Your Feishu admin will need to approve the release request.
+18. Your Feishu admin will need to approve the release request.
 
-![](images/feishu19-app-approved.webp)
+![](images/integration_feushu_21.webp)
 
 ### Step 3: Invite Feishu Bot
 
-1.  Create a **New Group**①② chat.
+1.  Create a **New Group**① chat.
 
-![1.png](images/feishu-1.webp)
+![](images/integration_feushu_22.webp)
 
-2.  In the Feishu group click `...`③  and then **Settings**④.
+2.  In the Feishu group click `...`②  and then **Settings**③.
 
-![2.png](images/feishu-2.webp)
+![](images/integration_feushu_23.webp)
 
-3.  Now click **Bots**⑤.
+3.  Now click **Bots**④.
 
-![](images/feishu-3.webp)
+![](images/integration_feushu_24.webp)
 
-4.  Search for your app name `Vanus AI`⑥ and Click on **Vanus AI**⑦.
+4. Click **Add Bot**⑤.
 
-![](images/feishu-4.webp)
+![](images/integration_feushu_25.webp)
 
-5. Invite your bot by clicking **Add**⑧.
+5.  Search for your app name `Vanus AI`⑥ and Click on **Vanus AI**⑦.
 
-![](images/feishu-5.webp)
+![](images/integration_feushu_26.webp)
 
-6. Send a question to your bot by tagging him using `@`.
+6. Invite your bot by clicking **Add**⑧.
 
-![](images/feishu-6.webp)
+![](images/integration_feushu_27.webp)
+
+7. Send a question to your bot by tagging him using `@`.
+
+![](images/integration_feushu_28.webp)
