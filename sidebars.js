@@ -84,6 +84,7 @@ const sidebars = {
       items: [
           "vanus-ai/how-to/create-AI",
           "vanus-ai/how-to/api",
+          "vanus-ai/how-to/website-embedding",
       ],
     },
     {
