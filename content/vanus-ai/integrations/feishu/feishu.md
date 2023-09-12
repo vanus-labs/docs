@@ -114,19 +114,19 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 ### Step 3: Invite Feishu Bot
 
-1.  Create a **New Group**①② chat.
+1.  Create a **New Group**① chat.
 
 ![](images/integration_feushu_22.webp)
 
-2.  In the Feishu group click `...`③  and then **Settings**④.
+2.  In the Feishu group click `...`②  and then **Settings**③.
 
 ![](images/integration_feushu_23.webp)
 
-3.  Now click **Bots**⑤.
+3.  Now click **Bots**④.
 
 ![](images/integration_feushu_24.webp)
 
-4. Click **Add Bot**.
+4. Click **Add Bot**⑤.
 
 ![](images/integration_feushu_25.webp)
 
