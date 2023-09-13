@@ -80,7 +80,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      id: "vanus-ai/how-to/api",
+      id: "vanus-ai/how-to/Vanus-AI-API-en",
     },
     {
       type: "doc",
