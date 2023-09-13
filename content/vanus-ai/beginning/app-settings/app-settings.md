@@ -1,4 +1,4 @@
-# Vanus AI App Settings
+# App Settings
 
 This documentation provides comprehensive instructions for effectively configuring your AI application and tailoring it to your preferences.
 

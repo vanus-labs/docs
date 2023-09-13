@@ -1,4 +1,4 @@
-# Large Language Models
+# Large Language Models(LLM)
 
 ## What is Large Language Model?
 
