@@ -84,6 +84,8 @@ const sidebars = {
       items: [
           "vanus-ai/how-to/create-AI",
           "vanus-ai/how-to/api",
+          "vanus-ai/how-to/website-embedding",
+          "vanus-ai/how-to/app-settings",
       ],
     },
     {
@@ -94,6 +96,7 @@ const sidebars = {
           "vanus-ai/integrations/slack/index",
           "vanus-ai/integrations/whatsapp/index",
           "vanus-ai/integrations/feishu/feishu",
+          "vanus-ai/integrations/dingtalk/index",
       ],
     },
 
