@@ -87,7 +87,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "Optimizing Basic Prompt",
+      label: "Optimizing Vanus AI Responses",
       items: [
           "vanus-ai/Optimizing Vanus AI Responses/Select Appropriate LLM",
       ],
