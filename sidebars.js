@@ -101,7 +101,7 @@ const sidebars = {
       label: "Optimizing Responses",
       items: [
         "vanus-ai/optimizing-responses/optimizing-your-prompt/optimizing-your-prompt",
-        "vanus-ai/optimizing-responses/optimizing-your-prompt/data-cleaning",
+        "vanus-ai/optimizing-responses/data-cleaning/data-cleaning",
       ],
     },
     {
