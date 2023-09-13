@@ -78,14 +78,7 @@ const sidebars = {
       type: "doc",
       id: "vanus-ai/features",
     },
-    {
-      type: "doc",
-      id: "vanus-ai/how-to/Vanus-AI-API-en",
-    },
-    {
-      type: "doc",
-      id: "vanus-ai/how-to/website-embedding",
-    },
+
     {
       type: "category",
       label: "Beginning",
@@ -104,6 +97,15 @@ const sidebars = {
         "vanus-ai/optimizing-responses/data-cleaning/data-cleaning",
       ],
     },
+    {
+      type: "doc",
+      id: "vanus-ai/how-to/Vanus-AI-API-en",
+    },
+    {
+      type: "doc",
+      id: "vanus-ai/how-to/website-embedding",
+    },
+
     {
       type: "category",
       label: "Integrations",
