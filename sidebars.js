@@ -79,6 +79,20 @@ const sidebars = {
       id: "vanus-ai/features",
     },
     {
+      type: "doc",
+      label: "Beginning",
+      items: [
+          "vanus-ai/Beginning/Large Language Models",
+      ],
+    },
+    {
+      type: "doc",
+      label: "Optimizing Basic Prompt",
+      items: [
+          "vanus-ai/optimizing-Basic-Prompt/Select Appropriate LLM",
+      ],
+    },
+    {
       type: "category",
       label: "How to",
       items: [
