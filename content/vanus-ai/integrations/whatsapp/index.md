@@ -15,33 +15,32 @@ Learn how to set a personal GPT AI at [**WhatsApp GPT**](https://www.vanus.ai/bl
 ### Step 1: Establish an AI Application
 1. Navigate to [**Vanus AI**](https://ai.vanus.ai) and Sign up with your **Github, Google, Microsoft Account**① or click **Sign up**②.
 
-![](images/vanusai1-signup.webp)
+![](images/integration_vanus_1.webp)
 
 2. Initiate a new AI App by hitting the **Create App**③ button.
 
-![Image](images/vanusai2-create-app.webp)
+![](images/integration_vanus_2.webp)
 
 3. Input an **App Name**④, select an **App Model**⑤, upload to the **Knowledge Base**⑥, then click **Create**⑦.
 
-![Image](images/vanusai3-app-config.webp)
+![](images/integration_vanus_3.webp)
 
 4. Select the **Integrations Tab**⑧ and click the **WhatsApp Integration**⑨.
 
-![Image3](images/vanusai4.webp)
+![](images/integration_whatsapp_1.webp)
 
 ### Step 2: Connect WhatsApp to Vanus AI
 1. Enter a **Name**① for your integration and click **Authorize**②.
 
-![](images/whatsapp_1.webp)
+![](images/integration_whatsapp_2.webp)
 
 3. Use your mobile WhatsApp to scan the **QR code**③.
 
-![](images/whatsapp_2.webp)  
+![](images/integration_whatsapp_3.webp)
 
 4. Once authorization is successful, click **Create**④.  
 
-![](images/whatsapp_3.webp)
-
+![](images/integration_whatsapp_4.webp)
 
 ### Step 3: How to use Vanus AI on WhatsApp
 

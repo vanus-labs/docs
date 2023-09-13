@@ -79,11 +79,27 @@ const sidebars = {
       id: "vanus-ai/features",
     },
     {
+      type: "doc",
+      label: "Beginning",
+      items: [
+          "vanus-ai/Beginning/Large Language Models",
+      ],
+    },
+    {
+      type: "doc",
+      label: "Optimizing Basic Prompt",
+      items: [
+          "vanus-ai/optimizing-Basic-Prompt/Select Appropriate LLM",
+      ],
+    },
+    {
       type: "category",
       label: "How to",
       items: [
           "vanus-ai/how-to/create-AI",
           "vanus-ai/how-to/api",
+          "vanus-ai/how-to/website-embedding",
+          "vanus-ai/how-to/app-settings",
       ],
     },
     {
@@ -94,6 +110,7 @@ const sidebars = {
           "vanus-ai/integrations/slack/index",
           "vanus-ai/integrations/whatsapp/index",
           "vanus-ai/integrations/feishu/feishu",
+          "vanus-ai/integrations/dingtalk/index",
       ],
     },
 
