@@ -79,20 +79,6 @@ const sidebars = {
       id: "vanus-ai/features",
     },
     {
-      type: "doc",
-      label: "Beginning",
-      items: [
-          "vanus-ai/Beginning/Large Language Models",
-      ],
-    },
-    {
-      type: "doc",
-      label: "Optimizing Vanus AI Responses",
-      items: [
-          "vanus-ai/Optimizing Vanus AI Responses/Select Appropriate LLM",
-      ],
-    },
-    {
       type: "category",
       label: "How to",
       items: [
