@@ -1,5 +1,5 @@
 
-# Vanus AI API Documentation
+# API Documentation
 
 ## API Endpoint
 
