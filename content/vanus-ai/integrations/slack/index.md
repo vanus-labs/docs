@@ -12,6 +12,7 @@ Integration is a paid user feature. Therefore, only users with professional subs
 - Have a **[Vanus AI account](https://ai.vanus.ai)**.
 
 ### Step 1: Create an AI Application
+
 1. Navigate to **[Vanus AI](https://ai.vanus.ai)** and **Github**, **Google**, **Microsoft Account**① or click **Sign up**②.
 
 ![](images/integration_slack_1.webp)
@@ -23,6 +24,8 @@ Integration is a paid user feature. Therefore, only users with professional subs
 3. Input an **App Name**④, select an **App Model**⑤, upload to the **Knowledge Base**⑥, then click **Create**⑦.
 
 ![](images/integration_slack_3.webp)
+
+If you find yourself uncertain about which app model to select, please refer to the [**Large Language Models (LLM) Documentation**](https://docs.vanus.ai/vanus-ai/beginning/large-language-models/) for clear guidance on choosing the most suitable LLM for your requirements.
 
 4. Select the **Integrations Tab**⑧ and select the **Slack Integration**⑨.
 

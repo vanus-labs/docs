@@ -18,6 +18,8 @@ The website embedding feature is a paid user feature. Therefore, only users with
 
 ![website-embedding-3](images/website-embedding-3.webp)
 
+If you find yourself uncertain about which app model to select, please refer to the [**Large Language Models (LLM) Documentation**](https://docs.vanus.ai/vanus-ai/beginning/large-language-models/) for clear guidance on choosing the most suitable LLM for your requirements.
+
 ## Step 2: Website Embedding
 
 1. Navigate to the **Knowledge Base**①.
@@ -32,6 +34,8 @@ The website embedding feature is a paid user feature. Therefore, only users with
 
 ![website-embedding-6](images/website-embedding-6.webp)
 
+For comprehensive guidance on configuring your knowledge base, kindly refer to the [**Knowledge Base Documentation**](https://docs.vanus.ai/vanus-ai/beginning/knowledge-base/). Additionally, to enhance the accuracy of your results through data cleaning, explore the [**Data Cleaning Documentation**](https://docs.vanus.ai/vanus-ai/optimizing-responses/data-cleaning/).
+
 4. In the **Settings**④ tab, You can change your **App logo**⑤, **App Name**⑥, and **App Greeting**⑦.
 
 ![website-embedding-7](images/website-embedding-7.webp)
@@ -43,6 +47,8 @@ Remember to click **Confirm**⑧ after making any changes. If you don't, your se
 5. Set your preferred **Quick Question**⑨, and then click **confirm**⑩.
 
 ![website-embedding-8](images/website-embedding-8.webp)
+
+For more detailed instructions on configuring your AI Application correctly, please refer to the [**App Settings Documentation**](https://docs.vanus.ai/vanus-ai/beginning/app-settings/).
 
 6. Go to the **Dashboard**⑪ page and copy the Code in **Method 2**⑫.
 

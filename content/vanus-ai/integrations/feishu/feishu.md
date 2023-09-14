@@ -27,6 +27,8 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 ![](images/integration_vanus_3.webp)
 
+If you find yourself uncertain about which app model to select, please refer to the [**Large Language Models (LLM) Documentation**](https://docs.vanus.ai/vanus-ai/beginning/large-language-models/) for clear guidance on choosing the most suitable LLM for your requirements.
+
 4. Select the **Integrations Tab**⑧ and select the **Feishu Integration**⑨.
 
 ![](images/integration_vanus_4.webp)

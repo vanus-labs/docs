@@ -16,6 +16,8 @@ This documentation provides comprehensive instructions for effectively configuri
 
 ![app-settings-3](images/app-settings-3.webp)
 
+If you find yourself uncertain about which app model to select, please refer to the [**Large Language Models (LLM) Documentation**](https://docs.vanus.ai/vanus-ai/beginning/large-language-models/) for clear guidance on choosing the most suitable LLM for your requirements.
+
 ## Step 2: App Settings
 
 1. Click on the **Settings**① tab.

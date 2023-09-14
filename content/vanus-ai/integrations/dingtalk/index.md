@@ -26,6 +26,8 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 ![Image](images/image_step_1_4-7.webp)
 
+If you find yourself uncertain about which app model to select, please refer to the [**Large Language Models (LLM) Documentation**](https://docs.vanus.ai/vanus-ai/beginning/large-language-models/) for clear guidance on choosing the most suitable LLM for your requirements.
+
 4. Select the **Integrations Tab**⑧ and select the **DingTalk Integration**⑨.
 
 ![Image](images/image_step_1_8-9.webp)

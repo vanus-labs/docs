@@ -13,6 +13,7 @@ Learn how to set a personal GPT AI at [**WhatsApp GPT**](https://www.vanus.ai/bl
 - Have a [**Vanus AI account**](https://ai.vanus.ai).
 
 ### Step 1: Establish an AI Application
+
 1. Navigate to [**Vanus AI**](https://ai.vanus.ai) and Sign up with your **Github, Google, Microsoft Account**① or click **Sign up**②.
 
 ![](images/integration_vanus_1.webp)
@@ -25,11 +26,14 @@ Learn how to set a personal GPT AI at [**WhatsApp GPT**](https://www.vanus.ai/bl
 
 ![](images/integration_vanus_3.webp)
 
+If you find yourself uncertain about which app model to select, please refer to the [**Large Language Models (LLM) Documentation**](https://docs.vanus.ai/vanus-ai/beginning/large-language-models/) for clear guidance on choosing the most suitable LLM for your requirements.
+
 4. Select the **Integrations Tab**⑧ and click the **WhatsApp Integration**⑨.
 
 ![](images/integration_whatsapp_1.webp)
 
 ### Step 2: Connect WhatsApp to Vanus AI
+
 1. Enter a **Name**① for your integration and click **Authorize**②.
 
 ![](images/integration_whatsapp_2.webp)
