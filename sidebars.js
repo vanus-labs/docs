@@ -78,16 +78,34 @@ const sidebars = {
       type: "doc",
       id: "vanus-ai/features",
     },
+
     {
       type: "category",
-      label: "How to",
+      label: "Beginning",
       items: [
-          "vanus-ai/how-to/create-AI",
-          "vanus-ai/how-to/api",
-          "vanus-ai/how-to/website-embedding",
-          "vanus-ai/how-to/app-settings",
+        "vanus-ai/beginning/prompt-setting/prompt-setting",
+        "vanus-ai/beginning/large-language-models/large-language-models",
+        "vanus-ai/beginning/knowledge-base/knowledge-base",
+        "vanus-ai/beginning/app-settings/app-settings",
       ],
     },
+    {
+      type: "category",
+      label: "Optimizing Responses",
+      items: [
+        "vanus-ai/optimizing-responses/optimizing-your-prompt/optimizing-your-prompt",
+        "vanus-ai/optimizing-responses/data-cleaning/data-cleaning",
+      ],
+    },
+    {
+      type: "doc",
+      id: "vanus-ai/how-to/Vanus-AI-API-en",
+    },
+    {
+      type: "doc",
+      id: "vanus-ai/how-to/website-embedding",
+    },
+
     {
       type: "category",
       label: "Integrations",

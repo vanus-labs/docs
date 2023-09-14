@@ -1,4 +1,4 @@
-# Vanus AI Website Embedding
+# Website Embedding
 
 This documentation will teach you how to integrate Vanus AI into your website.
 
