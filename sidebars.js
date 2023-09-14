@@ -83,6 +83,7 @@ const sidebars = {
       type: "category",
       label: "Beginning",
       items: [
+        "vanus-ai/beginning/create-ai/create-ai",
         "vanus-ai/beginning/prompt-setting/prompt-setting",
         "vanus-ai/beginning/large-language-models/large-language-models",
         "vanus-ai/beginning/knowledge-base/knowledge-base",
