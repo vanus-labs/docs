@@ -25,7 +25,7 @@ GPT-4 excels in the realm of innovation, demonstrating a superior ability to und
 ### 3. Handling Long Texts: 
 GPT-4 can process texts exceeding 25,000 words, making it suitable for creating long-form content, extending conversations, and conducting document search and analysis. On the other hand, ChatGPT 3.5 might face constraints when dealing with lengthy content.
 
-While the cost in message credits for ChatGPT-4 is higher, it can produce more accurate and context-aware responses, [Pricing- Frequently Asked Questions]((https://www.vanus.ai/pricing/)) can address your queries.
+While the cost in message credits for ChatGPT-4 is higher, it can produce more accurate and context-aware responses, [Pricing- Frequently Asked Questions](https://www.vanus.ai/pricing/) can address your queries.
 
 :::note
 **If you need high-quality responses, the ChatGPT-4 model is recommended.** This model excels in language skills, knowledge capacity, reasoning abilities, and understanding.
