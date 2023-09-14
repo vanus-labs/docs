@@ -97,7 +97,7 @@ const sidebars = {
         "vanus-ai/optimizing-responses/optimizing-your-prompt/optimizing-your-prompt",
         "vanus-ai/optimizing-responses/data-cleaning/data-cleaning",
         "vanus-ai/optimizing-responses/tuning-parameter/tuning-parameter",
-        "vanus-ai/optimizing-responses/select-appropriate-LLM/select-appropriate-LLM",
+        "vanus-ai/optimizing-responses/select-appropriate-llm/select-appropriate-llm",
       ],
     },
     {
