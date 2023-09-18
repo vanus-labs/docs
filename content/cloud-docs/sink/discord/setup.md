@@ -5,7 +5,7 @@ hide_title: true
 
 ### Prerequisites
 
-- A Discord Account
+- [**A Discord Account**](https://discord.com/)
 
 ---
 
@@ -15,43 +15,59 @@ hide_title: true
 
 1. Go to the Discord application.
 
-2. Create a new server by clicking the `+`.
+2. Create a new server by clicking the `+`① icon.
 
-    ![img.png](images/1.png)
-3. Choose a template or create your own.
+![discord-sink-1](images/discord-sink-1.webp)
 
-    ![img.png](images/2.png)
+3. Choose a template or create your own, by selecting **Create My Own**②.
 
-    ![img.png](images/2.1.png)
+![discord-sink-2](images/discord-sink-2.webp)
 
-4. Finish setting up your server.
+4. Click on **Skip this question**③ to move to the next step of your configuration.
 
-    ![img.png](images/2.2.png)
+![discord-sink-3](images/discord-sink-3.webp)
+
+5. Input a **Server Name**④ and click on **Create**⑤.
+
+![discord-sink-4](images/discord-sink-4.webp)
 
 ---
 
 ### Step 2: Get a webhook URL
 
-1. Go to **Server Settings**.
-    ![img_2.png](images/3.png)
-2. Click **integrations** in the sidebar under APPS.
-    ![img_3.png](images/4.png)
-3. Click **Create Webhook**.
-    ![img_3.png](images/4.1.png)
-4. Click on the webhook you just created.
-    ![img_5.png](images/5.png)
-5. Copy and save your payload URL
-    ![img_6.png](images/6.png)
+1. Bring out the drop down settings menu by clicking `⌄`①.
+
+![discord-sink-5](images/discord-sink-5.webp)
+
+2. Select **Server Settings**②.
+
+![discord-sink-6](images/discord-sink-6.webp)
+
+3. Click on **Integrations**③ in the sidebar menu under APPS.
+
+![discord-sink-7](images/discord-sink-7.webp)
+
+4. Click **Create Webhook**④.
+
+![discord-sink-8](images/discord-sink-8.webp)
+
+5. Click on **Spidey Bot**⑤, the webhook you just created.
+
+![discord-sink-9](images/discord-sink-9.webp)
+
+6. Tap the **Copy Webhook URL**⑥ button.
+
+![discord-sink-10](images/discord-sink-10.webp)
 
 ---
 
 ### Step 3: Discord Connection Settings
 
 1. Go back to Vanus Connect.
-2. Paste your webhook URL in the `URL` field.
 
-    ![img_7.png](images/source%20config.png)
-3. Click "Next" to continue.
+2. Paste your webhook URL in the **Webhook URL**① field, and click **Next**② to continue.
+
+![discord-sink-11](images/discord-sink-11.webp)
 
 ---
 
