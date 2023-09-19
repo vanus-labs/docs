@@ -17,7 +17,7 @@ Before forwarding events to Google Sheets, you must have:
 
 ### Step 1: Create a Google Spreadsheet
 
-1. Go to [Google Sheets](https://docs.google.com/spreadsheets/u/0/) and **Sign in**.
+1. Go to [**Google Sheets**](https://docs.google.com/spreadsheets/u/0/) and **Sign in**.
 
 2. Create a new **Blank**① spreadsheet.
 
@@ -50,7 +50,7 @@ import TabItem from '@theme/TabItem';
 
 <TabItem label="Service Account Credentials" value="service-account-credentials">
 
-1. Go to the Google [Service account](https://console.cloud.google.com/iam-admin/serviceaccounts) and click **Create Project**①.
+1. Go to the Google [**Service account**](https://console.cloud.google.com/iam-admin/serviceaccounts) and click **Create Project**①.
 
 ![google-sheets-4](images/google-sheets-4.webp)
 
@@ -118,4 +118,4 @@ import TabItem from '@theme/TabItem';
 
 ---
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).
