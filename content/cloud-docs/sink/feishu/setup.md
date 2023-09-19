@@ -14,19 +14,31 @@ hide_title: true
 
 ### Step 1: Setup a Feishu bot
 
-1.  Create a **New Group**❶❷ chat.
-![1.png](images/1.png)
-2.  In the Feishu group click `...`❸  and then **Settings**❹.
-![2.png](images/2.png)
-3.  Now click **Bots**❺.
-![3.png](images/3.png)
-4.  Click on **Add Bot**❻ and select **Custom Bot**❼.
-![4.png](images/4.png)
-![5.png](images/5.png)
-5.  Enter a name for your bot and click **Add**❽.
-![6.png](images/6.png)
-6.  Copy the **Webhook URL**❾, and click **Finish**❿.
-![7.png](images/7.png)
+1.  Create a **New Group**① chat.
+
+![](images/cloud_feishu_1.webp)
+
+2.  In the Feishu group click `...`②  and then **Settings**③.
+
+![](images/cloud_feishu_2.webp)
+
+3.  Now click **Bots**④.
+
+![](images/cloud_feishu_3.webp)
+
+4.  Click on **Add Bot**⑤ and select **Custom Bot**⑥.
+
+![](images/cloud_feishu_4.webp)
+
+![](images/cloud_feishu_5.webp)
+
+5.  Enter a **name**⑦ for your bot and click **Add**⑧.
+
+![](images/cloud_feishu_6.webp)
+
+6.  Copy the **Webhook URL**⑨, and click **Finish**⑩.
+
+![](images/cloud_feishu_7.webp)
 
 ---
 
@@ -35,9 +47,12 @@ hide_title: true
 1.  Paste the step **Feishu Webhook URL**❶ into the "URL" field.&#x20;
 2.  ⚠Don't forget the next step❗Click your **Connection**❷ , and then click **How to Use this URL**❸ to setup ChatGPT in Feishu.&#x20;
 3.  Now click **Submit** to continue.
-![8.png](images/8.png)
-![10.png](images/10.png)
-![9.png](images/9.png)
+
+![](images/cloud_feishu_8.webp)
+
+![](images/cloud_feishu_9.webp)
+
+![](images/cloud_feishu_10.webp)
 
 ---
 

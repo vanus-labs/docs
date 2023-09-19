@@ -18,37 +18,44 @@ Before forwarding events to Feishu, you must have:
 ## Getting Started
 
 ### Step 1: Setup a Feishu bot
-1.  Create a **New Group**❶❷ chat.
-![1.png](images/1.png)
-2.  In the Feishu group click `...`❸  and then **Settings**❹.
-![2.png](images/2.png)
-3.  Now click **Bots**❺.
-![3.png](images/3.png)
-4.  Click on **Add Bot**❻ and select **Custom Bot**❼.
-![4.png](images/4.png)
-![5.png](images/5.png)
-5.  Enter a name for your bot and click **Add**❽.
-![6.png](images/6.png)
-6.  Copy the **Webhook URL**❾, and click **Finish**❿.
-![7.png](images/7.png)
+1.  Create a **New Group**① chat.
+
+![](images/cloud_feishu_1.webp)
+
+2.  In the Feishu group click `...`②  and then **Settings**③.
+
+![](images/cloud_feishu_2.webp)
+
+3.  Now click **Bots**④.
+
+![](images/cloud_feishu_3.webp)
+
+4.  Click on **Add Bot**⑤ and select **Custom Bot**⑥.
+
+![](images/cloud_feishu_4.webp)
+
+![](images/cloud_feishu_5.webp)
+
+5.  Enter a **name**⑦ for your bot and click **Add**⑧.
+
+![](images/cloud_feishu_6.webp)
+
+6.  Copy the **Webhook URL**⑨, and click **Finish**⑩.
+
+![](images/cloud_feishu_7.webp)
 
 
 ### Step 2: Set up your Connection in Vanus Connect  
 
-1.  **Log in** to your [Vanus](https://cloud.vanus.ai "Vanus") account❶ and click on **connections**❷, and click on **Create Connections**❸. Or you can **Choose a template to start**❷—`Chat with ChatGPT via Feishu bot`.
-    ![322.png](images/322.png)
-    ![32.png](images/32.png)
-2.  **Name** your connection❹, Choose your **Source**❺ and click next.
-    ![33.png](images/33.png)
-3.  Click on **Sink** and choose **Feishu**❻. Paste the \*\* Feishu Webhook URL\*\*❼ into the "URL" field. Click **Next** to continue.
-    ![344.png](images/344.png)
-4.  Click on **Submit** to finish the configuration.
-    ![355.png](images/355.png)
-5.  You've successfully created your Vanus feishu sink connection.
-    ![36.png](images/36.png)
-6.  ⚠Don't forget the next step❗ Click your **Connection**❿ , and then click **How to Use this URL**⓫ to setup ChatGPT in Feishu.&#x20;
-    ![554.png](images/554.png)
-    ![553.png](images/553.png)
+1.  Paste the step **Feishu Webhook URL**❶ into the "URL" field.&#x20;
+2.  ⚠Don't forget the next step❗Click your **Connection**❷ , and then click **How to Use this URL**❸ to setup ChatGPT in Feishu.&#x20;
+3.  Now click **Submit** to continue.
+
+![](images/cloud_feishu_8.webp)
+
+![](images/cloud_feishu_9.webp)
+
+![](images/cloud_feishu_10.webp)
 
 Check out this article on how to get a [Feishu Webhook](https://www.vanus.ai/blog/retrieve-feishu-webhook-url/) for more details.
 
