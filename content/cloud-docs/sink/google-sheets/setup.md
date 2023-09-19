@@ -28,7 +28,7 @@ Before forwarding events to Google Sheets, you must have:
 ![google-sheets-2](images/google-sheets-2.webp)
 
 :::note
-The spreadsheet's ID consists of the alphanumeric characters located between `d/` and `/edit` in the URL: `179S9nzv4xaRtI07lPw1tYRP9l65IZLF5zDN6C8r30oM`.
+The spreadsheet's ID consists of the alphanumeric characters located between `d/` and `/edit` in the URL.
 :::
 
 ---
