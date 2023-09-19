@@ -13,9 +13,11 @@ hide_title: true
 
 ### ChatGPT Source Settings
 
-1.  **Write a name**❶ for your connection in Vanus Connect.
-2.  After creating the connection, there are a few more steps. Simply click the link ⚠**this document**❷ to open a new page with all the details on **how to complete the connection**.
-![23.png](images/23.png)
+1.  **Write a name**① for your connection in Vanus Connect.
+2.  After creating the connection, there are a few more steps. Simply click the link ⚠**this document**② to open a new page with all the details on **how to complete the connection**.
+
+![](images/cloud_feishu_22.webp)
+
 3.  Click **Next** to save the ChatGPT Source.
 
 ---
