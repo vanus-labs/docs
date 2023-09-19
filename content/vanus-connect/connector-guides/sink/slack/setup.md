@@ -14,7 +14,7 @@ Before forwarding events to Slack, you must have:
 
 - A [**Slack Account**](https://slack.com)
 
-- A [**slack Workspace**](https://slack.com/help/articles/206845317-Create-a-Slack-workspace)
+- A [**Slack Workspace**](https://slack.com/help/articles/206845317-Create-a-Slack-workspace)
 
 - A [**Vanus Cloud account**](https://cloud.vanus.ai)
 
