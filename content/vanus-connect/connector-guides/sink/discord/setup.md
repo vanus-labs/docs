@@ -20,54 +20,62 @@ Before forwarding events to Slack, you must have:
 **To set up an app for receiving events in your Discord server:**
 
 ### Step 1: Create a Server 
+
 1. Go to the Discord application.
-2. Create a new server by clicking the `+`.
 
-    ![img.png](images/1.png)
-3. Choose a template or create your own.
+2. Create a new server by clicking the `+`① icon.
 
-    ![img.png](images/2.png)
+![discord-sink-1](images/discord-sink-1.webp)
 
-    ![img.png](images/2.1.png)
+3. Choose a template or create your own, by selecting **Create My Own**②.
 
-4. Finish setting up your server.
+![discord-sink-2](images/discord-sink-2.webp)
 
-    ![img.png](images/2.2.png)
+4. Click on **Skip this question**③ to move to the next step of your configuration.
 
-### Step 2: Get a webhook url
-1. Go to **Server Settings**.
-    ![img_2.png](images/3.png)
-2. Click **integration** in the sidebar under APPS.
-    ![img_3.png](images/4.png)
-3. Click **create Webhook**.
-    ![img_3.png](images/4.1.png)
-4. Click on the webhook you just created.
-    ![img_5.png](images/5.png)
-5. Copy and save your payload URL
-    ![img_6.png](images/6.png)
+![discord-sink-3](images/discord-sink-3.webp)
 
-### Step 3: Set up your Connection in Vanus Connect 
+5. Input a **Server Name**④ and click on **Create**⑤.
 
-1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
-![3](images/go%20to%20vanuscloud.png)  
+![discord-sink-4](images/discord-sink-4.webp)
 
-2. Click on **Create Connections**  
-![3](images/click%20create%20connection.png)  
 
-3. Name your connection, Choose your source and click next 
-![3](images/choose%20source.png) 
+### Step 2: Get a webhook URL
 
-4. Click on **Sink** and choose **discord** 
-![3](images/choose%20sink.png) 
+1. Bring out the drop down settings menu by clicking `⌄`①.
 
-5. Paste your webhook URL in the `URL` field and click next to continue.  
-![img_7.png](images/7.png)  
+![discord-sink-5](images/discord-sink-5.webp)
 
-6. Click on submit to finish the configuration. 
-![](images/submit.png)  
+2. Select **Server Settings**②.
 
-7. You've successfully created your Vanus discord sink connection.  
-![](images/created.png)  
+![discord-sink-6](images/discord-sink-6.webp)
+
+3. Click on **Integrations**③ in the sidebar menu under APPS.
+
+![discord-sink-7](images/discord-sink-7.webp)
+
+4. Click **Create Webhook**④.
+
+![discord-sink-8](images/discord-sink-8.webp)
+
+5. Click on **Spidey Bot**⑤, the webhook you just created.
+
+![discord-sink-9](images/discord-sink-9.webp)
+
+6. Tap the **Copy Webhook URL**⑥ button.
+
+![discord-sink-10](images/discord-sink-10.webp)
+
+---
+
+### Step 3: Discord Connection Settings
+
+1. Go back to Vanus Connect.
+
+2. Paste your webhook URL in the **Webhook URL**① field, and click **Next**② to continue.
+
+![discord-sink-11](images/discord-sink-11.webp)
+
 
 ## Required Data Format
 
