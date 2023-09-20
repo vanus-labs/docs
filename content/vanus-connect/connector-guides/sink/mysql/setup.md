@@ -8,43 +8,34 @@ MySQL is a popular open-source relational database management system used to sto
 
 Vanus Connect's MySQL sink connector simplifies the process of transferring data/events from various sources to a MySQL database/table, with configurable filters and upsert/insert modes.
 ## Prerequisites
+
 Before forwarding events to MySQL, you must have:
 
-- A [Vanus Cloud account](https://cloud.vanus.ai)
+- A [**Vanus Cloud account**](https://cloud.vanus.ai)
+
 - Have a running MySQL server.
+
 - Have a Database and Table created.
 
+**Perform the following steps to configure your MySQL Sink.**
 
-### Setup your connection in Vanus Connect 
+### MySQL Connection Settings
 
-1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
-![3](images/go%20to%20vanuscloud.png)  
+Enter all the following information in Vanus Connect.
 
-2. Click on **Create Connections**  
-![3](images/click%20create%20connection.png)  
+- **Host** - The IP address of your MySQL Server.
 
-3. Name your connection, Choose your source and click next 
-![3](images/choose%20source.png) 
+- **Port** - The Port of your MySQL Server: 3306.
 
-4. Click on **Sink** and choose **MySQL** 
-![3](images/choose%20sink.png) 
+- **Username** - A Username with the following permissions INSERT, UPDATE, DELETE.
 
-5. Enter all the following information in Vanus Connect and click **Next**. 
-![3](images/sink%20config.png)
+- **Password** - The user password.
 
-- **Host:**  The IP address of your MySQL Server.
-- **Port:** The Port of your MySQL Server default: 3306.
-- **Username:** A Username with the following permissions INSERT, UPDATE, DELETE.
-- **Password:** The user password.
-- **Database:** The database name.
-- **Table:** The table name.
-- Chose the insertion mode.
+- **Database** - The database name.
 
-6. Click on submit to finish the configuration. 
-![](images/submit.png)  
+- **Table** - The table name.
 
-7. You've successfully created your Vanus MySQL sink connection.  
-![](images/created.png)  
+- Choose the insertion mode.
 
 ## Custom Connection
 
