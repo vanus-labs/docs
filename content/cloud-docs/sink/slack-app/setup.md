@@ -5,45 +5,65 @@ hide_title: true
 
 ### Prerequisites
 
-- A [slack account](https://slack.com)
-- A slack [Workspace](https://slack.com/help/articles/206845317-Create-a-Slack-workspace)
+- A [**Slack Account**](https://slack.com)
+- A [**Slack Workspace**](https://slack.com/help/articles/206845317-Create-a-Slack-workspace)
 
 ---
 
 **Perform the following steps to configure your Slack Sink.**
 
 ### Step 1: Create a Slack App
-1. Go to [Slack API](https://api.slack.com/apps), and click **Create New App**.
-![img.png](images/create%20app.png)
-2. Select From scratch.
-![img_1.png](images/from%20scratch.png)
-3. Set the app name and Workspace.
-![img_2.png](images/create%20app2.png)
 
+1. Go to [**Slack API**](https://api.slack.com/apps), and click **Create New App**①.
+
+![slack-app-sink-1](images/slack-app-sink-1.webp)
+
+2. Select **From scratch**②.
+
+![slack-app-sink-2](images/slack-app-sink-2.webp)
+
+3. Set the **App name**③ and **Workspace**④, then click **Create App**⑤.
+
+![slack-app-sink-3](images/slack-app-sink-3.webp)
 
 ---
 
 ### Step 2: Configure your App
-1. Add **Permissions** feature for your app.
-![img_3.png](images/permissions.png)
-2. Scroll down to `Scopes/Bot Token Scopes`, and click **Add an OAuth Scope**.
-![img_4.png](images/add%20auth%20scope.png)
-3. Add `chat:write`, `chat:write:public` permission to your app.
-![](images/chat-write-public.png)
-4. Scroll up to the top of the page, and click **Install to Workspace** to install your app.
-![img_7.png](images/install%20to%20workspace.png)
-5. Click **Allow** to install the app.
-![img_8.png](images/allow.png)
-6. Copy the Bot User OAuth Token.
- ![img_9.png](images/copy%20token.png)
+
+1. Add the **Permissions**① feature for your app.
+
+![slack-app-sink-4](images/slack-app-sink-4.webp)
+
+2. Scroll down to `Scopes/Bot Token Scopes`, and click **Add an OAuth Scope**②.
+
+![slack-app-sink-5](images/slack-app-sink-5.webp)
+
+3. Add `chat:write`③ and `chat:write:public`④ permission to your app.
+
+![slack-app-sink-6](images/slack-app-sink-6.webp)
+
+4. Scroll up to the top of the page, and click **Install to Workspace**⑤.
+
+![slack-app-sink-7](images/slack-app-sink-7.webp)
+
+5. Click **Allow**⑥ to install the app.
+
+![slack-app-sink-8](images/slack-app-sink-8.webp)
+
+6. **Copy**⑦ the Bot User OAuth Token.
+
+![slack-app-sink-9](images/slack-app-sink-9.webp)
 
 ---
 
 ### Step 3: Slack App Connection Settings
-1. Paste the Bot User OAuth Token.
-![img_10.png](images/input%20token.png)
-2. Click **Next** to continue.
+
+1. Paste the **Bot User OAuth Token**①.
+
+![slack-app-sink-10](images/slack-app-sink-10.webp)
+
+2. Click **Next**② to continue.
 
 ---
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).
