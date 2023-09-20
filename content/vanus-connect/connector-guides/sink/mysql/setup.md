@@ -12,9 +12,7 @@ Vanus Connect's MySQL sink connector simplifies the process of transferring data
 Before forwarding events to MySQL, you must have:
 
 - A [**Vanus Cloud account**](https://cloud.vanus.ai)
-
 - Have a running MySQL server.
-
 - Have a Database and Table created.
 
 **Perform the following steps to configure your MySQL Sink.**
@@ -24,17 +22,11 @@ Before forwarding events to MySQL, you must have:
 Enter all the following information in Vanus Connect.
 
 - **Host** - The IP address of your MySQL Server.
-
 - **Port** - The Port of your MySQL Server: 3306.
-
 - **Username** - A Username with the following permissions INSERT, UPDATE, DELETE.
-
 - **Password** - The user password.
-
 - **Database** - The database name.
-
 - **Table** - The table name.
-
 - Choose the insertion mode.
 
 ## Custom Connection
