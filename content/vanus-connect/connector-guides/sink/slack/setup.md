@@ -1,4 +1,4 @@
-# Slack
+# Slack Webhook
 
 This guide contains information to set up a Slack Sink in Vanus Connect.
 
