@@ -13,90 +13,132 @@ With Amazon S3 Sink in Vanus Connect, you can easily forward data or events to y
 
 Before forwarding events to an S3 bucket, you must have:
 
-- A [Vanus Cloud account](https://cloud.vanus.ai).
-- An [Amazon Web Services](https://aws.amazon.com) account.
+- A [**Vanus Cloud account**](https://cloud.vanus.ai).
+- An [**Amazon Web Services**](https://aws.amazon.com) account.
 
 ## Getting Started
 
 ### Step 1: Create an AWS User
 
-1. Log in to the AWS [Management Console](https://aws.amazon.com) using your root account credentials.
-2. Navigate to the [IAM](https://console.aws.amazon.com/iam/) service by searching for IAM and click the IAM service.
-   ![](images/1.png)
-3. Click on the **Users tab** in the left navigation menu, and then click the **Add user** button.
-   ![](images/2.png)
-4. Write the name for your user and click **next**.
-   ![img.png](images/3.png)
-5. Select **Attach policy directly**, and **Create policy**.
-   ![](images/4.png)
-6. Search for s3 and select it.
-   ![](images/5.png)
-7. Next search for the following policy.
-    - "PutObject",
-    - "GetObject",
-    - "GetObjectVersion",
-    - "DeleteObject",
-    - "DeleteObjectVersion"
-      ![](images/6.png)
-8. Press **Next** and proceed to the next page.
-   ![](images/7.png)
-9. Name your policy and click **Create policy**.
-   ![](images/8.png)
-10. Return back to your previous `TAB`.
-    ![img.png](images/8.1.png)
-11. Search for your custom policy and add it to your account, and press **Next**.
-    ![img.png](images/9.png)
-12. Review and press **Create user**.
-    ![img.png](images/10.png)
+1. Log in to the AWS [**Management Console**](https://aws.amazon.com) using your root account credentials.
 
-### Step 2: Get your Access and secret key
+2. Navigate to the [**IAM**](https://console.aws.amazon.com/iam/) service by searching for **IAM**① and clicking the **IAM**② service.
 
-1. Now click on the user you just created.
-   ![img.png](images/11.png)
-2. Under **Security and credential** scroll down the page to `Access Key`, and Click **Create access key**.
-   ![](images/12.png)
-3. Select Command line interface CLI, and press **Next**.
-   ![img.png](images/13.png)
-4. Click **Create sccess key**.
-   ![img.png](images/14.png)
-5. Save your `Access key` and `Secret key` safely.
-   ![](images/15.png)
+![aws-s3-sink-1](images/aws-s3-sink-1.webp)
 
-### Step 3: Set up your connection in Vanus Connect
-**To set up S3 Sink in Vanus Connect:**  
+3. Click on the **Users tab**③ in the left navigation menu, and then click the **Create user**④ button.
 
-1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
-![3](images/go%20to%20vanuscloud.png)  
+![aws-s3-sink-2](images/aws-s3-sink-2.webp)
 
-2. Click on **Create Connections**  
-![3](images/click%20create%20connection.png)  
+4. Write your **User name**⑤ and click **Next**⑥.
 
-3. Name your connection, Choose your source and click next 
-![3](images/choose%20source.png) 
+![aws-s3-sink-3](images/aws-s3-sink-3.webp)
 
-4. Click on **Sink** and choose **Amazon s3** 
-![3](images/choose%20sink.png) 
+5. Select **Attach policies directly**⑦, and click on **Create policy**⑧.
 
-5. Enter your `Access Key` and `Secret Key` in Vanus Connect from previous steps.  
-![3](images/sink%20config.png) 
+![aws-s3-sink-4](images/aws-s3-sink-4.webp)
 
-6. Now let go back to Amazon Web Services under the [Amazon S3 service](https://s3.console.aws.amazon.com).  
+6. **Search for s3**⑨ and **select s3**⑩.
 
-7. At this point you can either **create a new bucket** or **select a existent** bucket.  
+![aws-s3-sink-5](images/aws-s3-sink-5.webp)
 
-8. Once you've chosen or created a bucket keep in my your bucket name and region.
-![img.png](images/16.png)  
+7. **Search**⑪ and select the required Actions.
 
-9. Write you `bucket name` and select your `region` in Vanus Connect.
-![](images/17.png) 
+![aws-s3-sink-6](images/aws-s3-sink-6.webp)
 
-10. Select the interval time of upload; `HOURLY` or `DAILY` and click **Next** to continue.  
+- **`PutObject`⑫**
+- **`GetObject`**
+- **`GetObjectVersion`**
+- **`DeleteObject`**
+- **`DeleteObjectVersion`**
 
-11. Click on submit to finish the configuration. 
-![](images/submit.png)  
+![aws-s3-sink-7](images/aws-s3-sink-7.webp)
 
-You've successfully created your Vanus Amazon-s3 sink connection.  
-![](images/successful%20connection.png)  
+8. Select **Any**⑬ and click **Next**⑭ to proceed to the next page.
+
+![aws-s3-sink-8](images/aws-s3-sink-8.webp)
+
+9. Specify a **Policy name**⑮.
+
+![aws-s3-sink-9](images/aws-s3-sink-9.webp)
+
+10. Click **Create policy**⑯.
+
+![aws-s3-sink-10](images/aws-s3-sink-10.webp)
+
+11. Return to your previous **`TAB`**.
+
+12. **Refresh**⑰ the policy list, **search**⑱ for your custom policy, **select your created policy**⑲, and click **Next**⑳.
+
+![aws-s3-sink-11](images/aws-s3-sink-11.webp)
+
+13. Review and click **Create user**㉑.
+
+![aws-s3-sink-12](images/aws-s3-sink-12.webp)
+
+---
+
+### Step 2: Get your Access key and Secret access key
+
+1. Now click on the **User**① you just created.
+
+![aws-s3-sink-13](images/aws-s3-sink-13.webp)
+
+2. Under **Security credentials**②, scroll down the page to **`Access Keys`**, and Click **Create access key**③.
+
+![aws-s3-sink-14](images/aws-s3-sink-14.webp)
+
+3. Select **Command line interface (CLI)④**, tick the **confirmation box**⑤ and click **Next**⑥.
+
+![aws-s3-sink-15](images/aws-s3-sink-15.webp)
+
+4. Click **Create access key**⑦.
+
+![aws-s3-sink-16](images/aws-s3-sink-16.webp)
+
+5. Download your **`Access key`** and **`Secret access key`** by clicking the **Download .csv file**⑧ button, and then click **Done**⑨.
+
+![aws-s3-sink-17](images/aws-s3-sink-17.webp)
+
+---
+
+### Step 3: Amazon S3 Connection Settings
+
+**To set up S3 Sink in Vanus Connect:**
+
+1. Enter your **Access Key**① and **Secret access Key**② in Vanus Connect from the previous steps.
+
+![aws-s3-sink-18](images/aws-s3-sink-18.webp)
+
+2. Now let's go back to Amazon Web Services under the [**Amazon S3 service**](https://s3.console.aws.amazon.com).
+
+3. At this point, you can either **create a new bucket** or **select an existing** bucket.
+
+4. Create a new bucket by clicking the **Create bucket**③ button.
+
+![aws-s3-sink-19](images/aws-s3-sink-19.webp)
+
+5. Specify a **Bucket name**④ and select your desired **AWS Region**⑤.
+
+![aws-s3-sink-20](images/aws-s3-sink-20.webp)
+
+6. Click on **Create bucket**⑥ to finish creating your bucket.
+
+![aws-s3-sink-21](images/aws-s3-sink-21.webp)
+
+7. After selecting or creating a bucket, remember to take note of your **bucket name**⑦ and the **AWS Region**⑧.
+
+![aws-s3-sink-22](images/aws-s3-sink-22.webp)
+
+8. Select your **Region**⑨ and write your **Bucket**⑩ name in Vanus Connect.
+
+![aws-s3-sink-23](images/aws-s3-sink-23.webp)
+
+9. Select the upload interval time: **`HOURLY`⑪** or **`DAILY`⑫** and then click **Next**⑬ to continue.
+
+![aws-s3-sink-24](images/aws-s3-sink-24.webp)
+
+---
 
 ## Required Data Format
 
