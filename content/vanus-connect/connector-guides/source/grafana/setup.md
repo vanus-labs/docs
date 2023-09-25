@@ -10,21 +10,23 @@ The Grafana Source is a webhook server that enables you to establish an endpoint
 
 ## Prerequisites
 
-- A [Vanus Cloud account](https://cloud.vanus.ai)
-- A Grafana instance or an account in Grafana cloud
+- A [**Vanus Cloud account**](https://cloud.vanus.ai)
+- A Grafana instance or an [**account in the Grafana cloud**](https://grafana.com/)
 
 ## Getting Started
 
 To obtain all Grafana events using Vanus Connect, follow these steps:
 
-### Create a Connection
+### Grafana Connection Settings
 
-1.  Write a name for your connection.
-   ![img.png](images/1..png)
-2. From the list of sources, choose **Grafana**.
-![img.png](images/source.png)
-3. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction. 
-   ![img.png](images/2..png)
-4. Click **`Next`** to save the Grafana Source.
+1. Write a **Name**① for your connection in Vanus Connect.
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
+![](images/grafana-source-1.webp)
+
+2. After creating the connection, there are a few more steps. Simply click the **document**② link to open a new page with all the details on how to complete the connection.
+
+![](images/grafana-source-2.webp)
+
+3. Click **Next**③ and continue the configuration.
+
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).
