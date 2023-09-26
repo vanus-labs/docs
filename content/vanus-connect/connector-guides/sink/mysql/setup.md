@@ -21,13 +21,16 @@ Before forwarding events to MySQL, you must have:
 
 Enter all the following information in Vanus Connect.
 
-- **Host** - The IP address of your MySQL Server.
-- **Port** - The Port of your MySQL Server: 3306.
-- **Username** - A Username with the following permissions INSERT, UPDATE, DELETE.
-- **Password** - The user password.
-- **Database** - The database name.
-- **Table** - The table name.
-- Choose the insertion mode.
+![](images/mysql-sink-1.webp)
+
+- **Host**① - The IP address of your MySQL Server.
+- **Port**② - The Port of your MySQL Server: 3306.
+- **Username**③ - A Username with the following permissions INSERT, UPDATE, DELETE.
+- **Password**④ - The user password.
+- **Database**⑤ - The database name.
+- **Table**⑥ - The table name.
+- Choose the **insertion mode**⑦.
+- Click on **Next**⑧ to continue the configuration.
 
 ## Custom Connection
 
