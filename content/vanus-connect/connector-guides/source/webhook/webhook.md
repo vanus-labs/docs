@@ -1,5 +1,20 @@
 # Webhook server
-When a webhook is triggered, the webhook server receives an HTTP request with a payload of data related to the event. 
+
+1. Copy the **Webhook URL**①.
+
+![](images/cloud_webhook_2.webp)
+
+2. Use the Webhook URL to send HTTP request from an app or from a **Command Line**②.
+
+![](images/cloud_webhook_3.webp)
+
+```shell
+curl --location --request POST 'YOUR_WEBHOOK_URL' \
+--header 'Content-Type: text/plain' \
+--data-raw '{
+"test":"demo"
+}'
+```
 
 ## 3rd Party Services
 A list of application that can send HTTP request to our webhook server.

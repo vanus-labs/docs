@@ -14,14 +14,13 @@ hide_title: true
 
 ### HTTP Connection Settings
 
-1. Select the **HTTP** Sink connector.
-2. Get a Payload URL from your application. (The EndPoint URL to send the HTTP requests)
-3. Paste the payload URL into the `URL` field and press **Next**
-![](images/http.png)
+1. Obtain a Payload URL from your application. This should be the EndPoint URL where you want to receive the HTTP requests.
+2. Paste the obtained payload URL into the **URL field**①.
+3. Choose the desired **HTTP Method**② (`POST`, `GET`, `PATCH`, `DELETE`, `PUT`).
+4. If needed, click on the plus **+Add More**③ icon in the Request Headers section to add key-value pairs for custom headers.
+5. Click **Next**④.
 
-You can also select the URL Method (`POST`, `GET`, `PATCH`, `DELETE`, `PUT`)
-
-4. Click `Next` and finish the configurations.
+![](images/cloud_http_1.webp)
 
 ---
 
