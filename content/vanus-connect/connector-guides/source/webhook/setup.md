@@ -17,15 +17,13 @@ Before obtaining Webhook server to receive events, you must have:
 
 ## Getting Started
 
-To obtain a unique Webhook URL in Vanus Connect, follow these steps:
+### Webhook Connection Settings
 
-### Create a Connection
+1. Write a **connection name**①.
+2. You'll need to obtain the Webhook URL after completing the connection. To do this, simply click the **link**② to open a new tab with instructions on how to retrieve the URL.
+3. Click **next**③ to continue.
 
-1. Write a name for your connection.
-   ![img.png](images/1.png)
-2. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction.
-![img.png](images/2.png)
-3. Press **next**.
+![](images/cloud_webhook_1.webp)
 
 
 Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
