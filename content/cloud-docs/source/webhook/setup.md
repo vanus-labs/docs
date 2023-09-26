@@ -11,12 +11,11 @@ hide_title: true
 
 ### Webhook Connection Settings
 
-1. Write a name for your connection in Vanus Connect.
-   ![img.png](images/1.png)
-2. After creating the connection, there are a few more steps. Simply click the link to open a new page with all the details on how to complete the connection.
-   ![](images/warning.png)
+1. Write a **connection name**①.
+2. You'll need to obtain the Webhook URL after completing the connection. To do this, simply click the **link**② to open a new tab with instructions on how to retrieve the URL.
+3. Click **next**③ to continue.
 
-3. Click **next** and finish the configurations.  
+![](images/cloud_webhook_1.webp)
 
 ---
 
