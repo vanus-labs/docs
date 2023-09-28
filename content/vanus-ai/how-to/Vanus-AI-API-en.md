@@ -43,7 +43,7 @@ Body for plain text responses:
 
 ### Header Definitions
 
-- `x-vanusai-model`: This is the model being used for the interaction. It is related to the application. Options include `gpt-3.5-turbo`, `ernie-3.0-bot`, `gpt-4`.
+- `x-vanusai-model`: This is the model being used for the interaction. It is related to the application. Options include `gpt-3.5-turbo`, `gpt-3.5-turbo-16k`, `azure-gpt-35-turbo`, `abab5.5-chat`, `ernie-bot`, `ernie-bot-turbo`, `gpt-4`.
 - `x-vanusai-sessionid`: This is a randomly generated UUID. Different ids represent different dialogues.
 - `Accept`: This defines the response would be in the form of event stream or plain text.
 
@@ -80,7 +80,7 @@ import requests
 import json
 import uuid
 
-model = "<your_model>"  # Replace with your model, for example "gpt-3.5-turbo", "ernie-3.0-bot", "gpt-4"
+model = "<your_model>"  # Replace with your model, for example "gpt-3.5-turbo", "gpt-3.5-turbo-16k", "azure-gpt-35-turbo", "abab5.5-chat", "ernie-bot", "ernie-bot-turbo", "gpt-4"
 message = "<your_prompt>"  # Replace with your prompt
 
 headers = {
@@ -120,7 +120,7 @@ You will need the `axios` and `uuid` packages for this. They can be installed wi
 import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 
-let model = "<Your Model>";  // Replace with your model, e.g., "gpt-3.5-turbo", "ernie-3.0-bot", "gpt-4"
+let model = "<Your Model>";  // Replace with your model, e.g., "gpt-3.5-turbo", "gpt-3.5-turbo-16k", "azure-gpt-35-turbo", "abab5.5-chat", "ernie-bot", "ernie-bot-turbo", "gpt-4"
 let message = "<Your Message>";  // Replace with your prompt message
 
 let headers = {
@@ -196,7 +196,7 @@ A2: The request body should be a JSON object with the following structure:
 A3: The following headers are required:
 
 - `Content-Type`: application/json
-- `x-vanusai-model`: The model to use for the interaction (options include `gpt-3.5-turbo`, `ernie-3.0-bot`, `gpt-4`).
+- `x-vanusai-model`: The model to use for the interaction (options include `gpt-3.5-turbo`, `gpt-3.5-turbo-16k`, `azure-gpt-35-turbo`, `abab5.5-chat`, `ernie-bot`, `ernie-bot-turbo`, `gpt-4`).
 - `x-vanusai-sessionid`: A randomly generated UUID. Different ids represent different dialogues.
 
 ### Q4: How do I replace the parameters in the examples?
@@ -240,7 +240,7 @@ A9: The `stream` parameter, when set to `True`, specifies that the server should
 
 ### Q10: What does the `x-vanusai-model` header specify?
 
-A10: The `x-vanusai-model` header specifies the model that will be used for the interaction. The options include `gpt-3.5-turbo`, `ernie-3.0-bot`, `gpt-4`, and these are related to the application.
+A10: The `x-vanusai-model` header specifies the model that will be used for the interaction. The options include `gpt-3.5-turbo`, `gpt-3.5-turbo-16k`, `azure-gpt-35-turbo`, `abab5.5-chat`, `ernie-bot`, `ernie-bot-turbo`, `gpt-4`, and these are related to the application.
 
 ### Q11: What does the `x-vanusai-sessionid` header specify?
 
