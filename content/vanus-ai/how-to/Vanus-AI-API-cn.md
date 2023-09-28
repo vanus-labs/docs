@@ -32,7 +32,7 @@ POST https://app.ai.vanus.ai/api/v1/{application_id}
 
 ### 请求头定义
 
-- `x-vanusai-model`: 此为与应用相关的模型，可选项包括`gpt-3.5-turbo`, `ernie-3.0-bot`, `gpt-4`。
+- `x-vanusai-model`: 此为与应用相关的模型，可选项包括`gpt-3.5-turbo`, `gpt-3.5-turbo-16k`, `azure-gpt-35-turbo`, `abab5.5-chat`, `ernie-bot`, `ernie-bot-turbo`, `gpt-4`。
 - `x-vanusai-sessionid`: 此为随机生成的UUID，不同的id代表不同的对话。
 
 ## 参数
@@ -61,7 +61,7 @@ import json
 import uuid
 
 application_id = "<你的应用 ID>";  # 用你的应用 ID 替换
-model = "<你的模型>";  # 用你的模型替换，例如 "gpt-3.5-turbo", "ernie-3.0-bot", "gpt-4"
+model = "<你的模型>";  # 用你的模型替换，例如 "gpt-3.5-turbo", "gpt-3.5-turbo-16k", "azure-gpt-35-turbo", "abab5.5-chat", "ernie-bot", "ernie-bot-turbo", "gpt-4"
 message = "<你的信息>";  # 用你的提示信息替换
 
 headers = {
@@ -101,7 +101,7 @@ import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 
 let application_id = "<你的应用 ID>";  // 用你的应用 ID 替换
-let model = "<你的模型>";  // 用你的模型替换，例如 "gpt-3.5-turbo", "ernie-3.0-bot", "gpt-4"
+let model = "<你的模型>";  // 用你的模型替换，例如 "gpt-3.5-turbo", "gpt-3.5-turbo-16k", "azure-gpt-35-turbo", "abab5.5-chat", "ernie-bot", "ernie-bot-turbo", "gpt-4"
 let message = "<你的信息>";  // 用你的提示信息替换
 
 let headers = {
