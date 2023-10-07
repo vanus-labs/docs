@@ -12,18 +12,19 @@ The SAP BTP Source is a webhook server that enables you to establish an endpoint
 
 Before obtaining SAP BTP events, you must have:
 
-- An SAP BTP account with administrative privileges
-- A [Vanus Cloud account](https://cloud.vanus.ai)
+- A SAP BTP account with administrative privileges
+- A [**Vanus Cloud account**](https://cloud.vanus.ai)
 
 ## Getting Started
 
 ### Create your connection in Vanus Connect
 
-1. Write a name for your connection.
-![](images/1.png)
-2. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction.
-![](images/2.png)
-3. Click **Next** and continue the configuration.
+![sap-btp-source-1](images/sap-btp-source-1.webp)
 
+- Write a **Name**① for your connection in Vanus Connect.
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
+- After creating the connection, there are a few more steps. Simply click the **document**② link to open a new page with all the details on how to complete the connection.
+
+- Click **Next**③ and continue the configuration.
+
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).
