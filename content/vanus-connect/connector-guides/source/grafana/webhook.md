@@ -1,11 +1,23 @@
-# **Configuring Grafana to send Events**
+# Configuring Grafana to send Events
 
-1. Click the copy icon to copy the Webhook URL.
-   ![](images/getlink.png)
-2. Log in to your [Grafana](https://grafana.com) account.
-3. Navigate to the **Alert & IRM** menu in the **Menu** Tab, and click on **Alerting**.
-![img.png](images/1.png)
-4. Click on the **Contact Points**, and click on **Add contact point**.
-![img_1.png](images/2.png)
-5. Name your contact point, click on integration, select webhook, provide the payload URL from Vanus Connect, and **Save contact point**.
-![img_2.png](images/3.png)
+1. Click on your **created connection**①.
+
+![](images/grafana-source-2.webp)
+
+2. Click the **copy**② icon to copy the Webhook URL.
+
+![](images/grafana-source-3.webp)
+
+3. Log in to your [**Grafana Account**](https://grafana.com).
+
+4. Click on the **hamburger button**③, navigate to **Alerts & IRM**④, and select **Alerting**⑤.
+
+![](images/grafana-source-4.webp)
+
+5. Select **Contact points**⑥, and click on **Add contact point**⑦.
+
+![](images/grafana-source-5.webp)
+
+6. **Name**⑧ your contact point, click on integration and select **webhook**⑨, provide the payload **URL**⑩ from Vanus Connect, and **Save contact point**⑪.
+
+![](images/grafana-source-6.webp)
