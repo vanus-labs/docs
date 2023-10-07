@@ -65,4 +65,4 @@ If you have created a Slack App already, you can skip Step 1 and directly go to 
 
 ---
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).

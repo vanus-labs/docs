@@ -58,11 +58,9 @@ hide_title: true
 
 ### Step 3: Slack App Connection Settings
 
-1. Paste the **Bot User OAuth Token**①.
+1. Paste the **Bot User OAuth Token**① and click **Next**② to continue.
 
 ![slack-app-sink-10](images/slack-app-sink-10.webp)
-
-2. Click **Next**② to continue.
 
 ---
 
