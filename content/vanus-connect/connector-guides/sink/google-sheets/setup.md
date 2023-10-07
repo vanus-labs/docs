@@ -109,17 +109,19 @@ import TabItem from '@theme/TabItem';
 
 ### Step 3: Google Sheets Connection Settings
 
-1. Paste the string from the sheet URL Example: `179S9nzv4xaRtI07lPw1tYRP9l65IZLF5zDN6C8r30oM` from Step 1.
-
-2. Obtain the name of the **Sheet**① at the bottom of the spreadsheet.
+1. Obtain the name of the **Sheet**① at the bottom of the spreadsheet.
 
 ![google-sheets-14](images/google-sheets-14.webp)
 
-3. Paste the **Default Sheet Name**: `Sheet1`②.
+2. Return to Vanus Cloud and complete your configuration.
+
+- Paste the **Spreadsheet ID**② `179S9nzv4xaRtI07lPw1tYRP9l65IZLF5zDN6C8r30oM` that was copied from Step 1.
+
+- Paste the **Default Sheet Name**③: `Sheet1`.
+
+- Click **Next**④ to continue.
 
 ![google-sheets-15](images/google-sheets-15.webp)
-
-4. Click **Next**③ to continue.
 
 ---
 
