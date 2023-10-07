@@ -125,13 +125,9 @@ hide_title: true
 
 ![aws-s3-sink-22](images/aws-s3-sink-22.webp)
 
-8. Select your **Region**⑨ and write your **Bucket**⑩ name in Vanus Connect.
+8. In Vanus Connect, choose your **Region**⑨ and enter your **Bucket**⑩ name, select the upload interval time (**HOURLY**⑪ or **DAILY**⑫), and then click **Next**⑬ to proceed.
 
 ![aws-s3-sink-23](images/aws-s3-sink-23.webp)
-
-9. Select the upload interval time: **`HOURLY`⑪** or **`DAILY`⑫** and then click **Next**⑬ to continue.
-
-![aws-s3-sink-24](images/aws-s3-sink-24.webp)
 
 ---
 
