@@ -63,23 +63,6 @@ const sidebars = {
       defaultStyle: true,
     },
     {
-      type: "doc",
-      id: "vanus-ai/what-is-vanus-ai",
-    },
-    {
-      type: "doc",
-      id: "vanus-ai/language-models",
-    },
-    {
-      type: "doc",
-      id: "vanus-ai/use-cases",
-    },
-    {
-      type: "doc",
-      id: "vanus-ai/features",
-    },
-
-    {
       type: "category",
       label: "Beginning",
       items: [
