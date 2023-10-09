@@ -1,4 +1,4 @@
-# AWS-MySQL  
+# Amazon MySQL RDS
 
 This guide contains information required in setting up an Amazon MySQL Source in Vanus Connect.  
 
