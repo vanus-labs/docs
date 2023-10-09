@@ -1,4 +1,4 @@
-# AWS-PostgreSQL   
+# Amazon PostgreSQL  
 
 This guide contains information required in setting up an Amazon PostgreSQL Source in Vanus Connect.  
 

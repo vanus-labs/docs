@@ -1,4 +1,4 @@
-# S3
+# Amazon S3
 
 This guide contains the required information to set up S3 Sink in Vanus Connect.
 
