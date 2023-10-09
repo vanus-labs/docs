@@ -1,45 +1,78 @@
 # **Configuring Amazon Eventbridge**
 
-1. Click the **copy icon** to copy the webhook url.
-   ![](images/getlink.png)
-2. Navigate to the [EventBridge console](https://console.aws.amazon.com/events/home).
+1. Click the **copy icon**① to copy the webhook url.
+
+![amazon-eventbridge-source-2](images/amazon-eventbridge-source-2.webp)
 
 ## Step 1: Create an Event Bus
 
-1. In the side menu click **Event buses**.
-   ![img_3.png](images/img_3.png)
-2. Create a **new event bus** if you haven't already.
-   ![img_4.png](images/img_4.png)
-3. Write a name and press **create**.
-   ![img_5.png](images/img_5.png)
+1. Search for **Eventbridge**① and select **Amazon EventBridge**② from the results.
 
-## Step 2: Create a Rule.
-1. Go to **Rules** from the side menu and click **Create rule**.
-   ![img_6.png](images/img_6.png)
-2. Name your rule, select your **Event bus** and press **Next**.
-   ![img_7.png](images/img_7.png)
-3. Select **all events**.
-   ![img_8.png](images/img_8.png)
-4. Press **Next** to continue.
-![img.png](images/img_14.png)
+![amazon-eventbridge-source-3](images/amazon-eventbridge-source-3.webp)
+
+2. In the side menu click **Event buses**③.
+
+![amazon-eventbridge-source-4](images/amazon-eventbridge-source-4.webp)
+
+3. Click on **Create event bus**④ to create a new event bus, if you haven't already.
+
+![amazon-eventbridge-source-5](images/amazon-eventbridge-source-5.webp)
+
+4. Write a **Name**⑤ and press **Create**⑥.
+
+![amazon-eventbridge-source-6](images/amazon-eventbridge-source-6.webp)
+
+## Step 2: Create a Rule
+
+1. Go to **Rules**① from the side menu and click **Create rule**②.
+
+![amazon-eventbridge-source-7](images/amazon-eventbridge-source-7.webp)
+
+2. **Name**③ your rule, select your **Event bus**④ and press **Next**⑤.
+
+![amazon-eventbridge-source-8](images/amazon-eventbridge-source-8.webp)
+
+3. Select **all events**⑥.
+
+![amazon-eventbridge-source-9](images/amazon-eventbridge-source-9.webp)
+
+4. Press **Next**⑦ to continue.
+
+![amazon-eventbridge-source-10](images/amazon-eventbridge-source-10.webp)
 
 ## Step 3: Create an API Destination and Connection
-1. Select EventBridge API destination.
-    ![img_9.png](images/img_9.png)
-2. Now select create new **Create a new API destination** under API destination.
-   - Write a connection **Name**.
-   - Set the **API destination endpoint** to the URL from Vanus Connect from **[step 1](#configuring-amazon-eventbridge)**.
-   - Set the **HTTP method** as `POST`.
-       ![img_10.png](images/img_10.png)
-3. Next, select **Create a new connection**.
-![](images/img_15.png)
-4. Write a name for you connection and select **Basic (Username/Password)** under Authorization type.
-    ![img_12.png](images/img_12.png)
-5. Create a **Username** and a **Password** of your choice, this won't be needed in this scenario but it is required and press **Next**.
-    ![img_13.png](images/img_13.png)
-6. Under Configure tags - optional press **Next**.
-![](images/img_16.png)
-7. Review and press **Create rule**.
-![](images/img_17.png)
 
-Now every event sent to your Event Bus will be send to your Vanus connection.
+1. Set your API destination
+
+![amazon-eventbridge-source-11](images/amazon-eventbridge-source-11.webp)
+
+- Select **EventBridge API destination**①.
+- Select **Create a new API destination**② under API destination.
+- Write a connection **Name**③.
+- Set the **API destination endpoint**④ to the URL from Vanus Connect from **[step 1](#configuring-amazon-eventbridge)**.
+- Set the **HTTP method**⑤ as `POST`.
+
+2. Create a connection
+
+![amazon-eventbridge-source-12](images/amazon-eventbridge-source-12.webp)
+
+- Select **Create a new connection**⑥.
+- Write a **Connection name**⑦.
+- Select **Basic (Username/Password)⑧** under Authorization type.
+
+3. Authorization
+
+![amazon-eventbridge-source-13](images/amazon-eventbridge-source-13.webp)
+
+- Create a **Username**⑨ and a **Password**⑩ of your choice, this won't be needed in this scenario but it is required.
+- Press **Next**⑪.
+
+4. Under Configure tags - optional press **Next**⑫.
+
+![amazon-eventbridge-source-14](images/amazon-eventbridge-source-14.webp)
+
+5. Review and press **Create rule**⑬.
+
+![amazon-eventbridge-source-15](images/amazon-eventbridge-source-15.webp)
+
+Now every event sent to your Event Bus will be sent to your Vanus connection.
