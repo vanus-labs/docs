@@ -2,53 +2,72 @@
 
 ### Step 1: Configure webhook
 
-1. Click the copy icon to copy the webhook url
-![copy url](images/2.1.png)
+1. Click the **copy**① icon to copy the webhook url.
 
-2. Log in to your [SAP BTP account](https://accounts.sap.com/)
+![sap-btp-source-2](images/sap-btp-source-2.webp)
 
-3. Navigate to the **Subaccount** page by clicking on it.
-![Alt text](images/3.png)
+2. Log in to your [**SAP BTP account**](https://accounts.sap.com/).
 
-4. Click on **Instances and Subscriptions**.
-![Alt text](images/4.png)
+3. Navigate to the **Subaccounts**② page by clicking on it.
 
-5. Click on the **Create** button at the top right.
-![Alt text](images/5.png)
+![sap-btp-source-3](images/sap-btp-source-3.webp)
 
-6. Under the **Service** section select the **Alert Notifications** and choose an **Instance Name** of your choice and click on **Next**.
-![Alt text](images/6.png)
+4. Click on **Services**③ and select **Instances and Subscriptions**④.
 
-7. Leave the **Parameters** as default and click **Next**.
-![Alt text](images/7.png)
+![sap-btp-source-4](images/sap-btp-source-4.webp)
 
-8. Click **Create**.
-![Alt text](images/8.png)
+5. Click on the **Create**⑤ button at the top right.
 
-9. Click on the name of the **Instance** that was just created.
-![Alt text](images/9.png)
+![sap-btp-source-5](images/sap-btp-source-5.webp)
 
-10. Click on **Actions**.
-![Alt text](images/10.png)
+6. Click on **Select Service**⑥ to reveal the dropdown menu.
 
-11. Click on **Create**.
-![Alt text](images/11.png)
+![sap-btp-source-6](images/sap-btp-source-6.webp)
 
-12. Scroll down and select **Webhook** as the action type and click on **Next**.
-![Alt text](images/12.png)
+7. Select **Alert Notification**⑦, choose an **Instance Name**⑧ of your choice and click on **Next**⑨.
 
-13. Insert a desired **Name** for your webhook and **Description** or **Labels** if any.
-![Alt text](images/13.png)
+![sap-btp-source-7](images/sap-btp-source-7.webp)
 
-14. Scroll down, paste the webhook URL you copied earlier in the **URL Address** section and tick the **Accept any SSL certificate** checkbox.
-![Alt text](images/14.png)
+8. Leave the Instance parameters as default and click **Next**⑩.
 
-15. Click on **Close**.
-![Alt text](images/15.png)
+![sap-btp-source-8](images/sap-btp-source-8.webp)
 
-16. A successful webhook integration would look like this.
-![Alt text](images/16.png)
+9. Click **Create**⑪.
+
+![sap-btp-source-9](images/sap-btp-source-9.webp)
+
+10. Click on the **name of the Instance**⑫ that was just created.
+
+![sap-btp-source-10](images/sap-btp-source-10.webp)
+
+11. Click on **Actions**⑬.
+
+![sap-btp-source-11](images/sap-btp-source-11.webp)
+
+12. Click on **Create**⑭.
+
+![sap-btp-source-12](images/sap-btp-source-12.webp)
+
+13. Scroll down and select **Webhook**⑮ as the action type and click on **Next**⑯.
+
+![sap-btp-source-13](images/sap-btp-source-13.webp)
 
 :::note
 Do not select the **Webhook with Authorization Token** or **Webhook with Basic Authentication** as they would need extra level of authentication.
 :::
+
+14. Insert a desired **Name**⑰ for your webhook and **Description**⑱ or **Labels**⑲ if any.
+
+![sap-btp-source-14](images/sap-btp-source-14.webp)
+
+15. Scroll down, paste the webhook URL you copied earlier in the **URL Address**⑳ section, tick the **Accept any SSL certificate**㉑ checkbox and click **Create**㉒.
+
+![sap-btp-source-15](images/sap-btp-source-15.webp)
+
+16. Click on **Close**㉓.
+
+![sap-btp-source-16](images/sap-btp-source-16.webp)
+
+17. A successful webhook integration would look like **this**㉔.
+
+![sap-btp-source-17](images/sap-btp-source-17.webp)
