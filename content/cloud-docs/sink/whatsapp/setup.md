@@ -13,80 +13,68 @@ hide_title: true
 
 ### WhatsApp Connection Settings
 
-1. Write a connection name.
+1. Click **Authorize**①  to create a QR code to establish a connection with your WhatsApp account.
 
-2. Please click the "Authorize" button to generate a QR code for connecting with your WhatsApp account. 
-![img.png](images/img.png)
-3. Scan the QR code using your mobile WhatsApp application.
-![img_1.png](images/img_3.png)
+![](images/cloud_whatsapp_1.webp)
+
+2. On your phone go to **Settings**② and click **Linked Devices**③.
+ 
+3. Click **Link a Device**④
+
+![](images/cloud_whatsapp_3.webp)
+
+4. Scan the **QR Code**⑤ ⑥ with your mobile WhatsApp.
+
+![](images/cloud_whatsapp_5.webp)
+
+### How to use ChatGPT
 
 **Note**: *If you haven't activated the "Enable Chat AI" option within the WhatsApp Source Connector, the WhatsApp connection won't utilize the capabilities of ChatGPT.*
 
 If you wish to utilize ChatGPT in WhatsApp, you can go back to the template tab and select one of the two ChatGPT template.
-![](images/whatsapp-template.png)
 
-## Using *Personal Usage of ChatGPT within WhatsApp* Template
+![](images/cloud_whatsapp_4.webp)
 
-Using ChatGPT for personal purposes within WhatsApp is possible on both mobile devices (Android & iOS) and desktop/web platforms.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem label="Android" value="authentication-via-google">
 
-### WhatsApp Mobile (Android)
-For WhatsApp on Android, follow these steps:
+<TabItem label="Android" value="android">
 
-- Click on the `Chat` icon at the bottom-right corner to open the contact list.
-![](images/mobile-1.png)
+1. Tap on the 💬① icon at the bottom-right corner to display the contact list.
 
-- In the contact list, click on the contact with your profile display. It is usually identified as the first contact on the list and also has the tag `You` attached to it.
-![](images/mobile-2.png)
 
-- Just enter a message or pose a question, and you'll receive a response.
-![](images/mobile-3.png)
+2. Within the contact list, select the **contact**② with your profile display. It's typically the first contact on the list and has the word `You` attached to it.
 
-</TabItem>
-<TabItem label="iOS" value="i-os">
 
-### WhatsApp Mobile (iOS)
-For WhatsApp on iOS, follow these steps:
+3.  Send a message or pose a question and you'll receive a response.
 
-- - Click on the `Chats` icon at the bottom menu to open the contact list.
-![](images/mobile-1-ios.png)
+![](images/whatsapp_android_1.webp)
 
-- In the contact list, click on the contact with your profile display. It is usually identified as the first contact on the list and also has the tag `You` attached to it.
-![](images/mobile-2-ios.png)
-
-- Simply type a message or ask a question and you will get a response.
-![](images/mobile-3-ios.png)
 
 </TabItem>
-<TabItem label="Web" value="web">
 
-### WhatsApp Desktop & WhatsApp Web
-- On WhatsApp Desktop/Web, The contact button show the users contact list. The Contact button has been identified with the number `1` in the screenshot. Click on the button and a list of all your contacts will be displayed. Select the one with your contact profile, it has been identified with the number `2` and also has the word `You`. This way, you chat with ChatGPT by chatting with yourself.
+<TabItem label="iOS" value="ios">
 
-    ![](images/chat-whatsapp-connect.png)
+1. Tap the 💬①  icon at the bottom menu and tap the 📝② icon at the top.
 
-- Simply type any question you like to ask, ChatGPT will respond to you on the chat.
 
-    ![](images/chat-whatsapp.png)
+2. Within the contact list, select the **contact**③ with your profile display. It's typically the first contact on the list and has the word `You` attached to it.
+
+
+3. Send a message or pose a question and you'll receive a response.
+
+![](images/whatsapp_ios_1.webp)
 
 </TabItem>
+
 </Tabs>
 
-## Using *Interact on WhatsApp Groups and with Other Users using ChatGPT* Template
+To use in WhatsApp groups just tag the AI account using `@`.
 
-This template has two features:
-- ChatGPT can be used on WhatsApp Groups by tagging the contact used to make the ChatGPT to WhatsApp connection. To tag the contact, use the `@` symbol.
-
-    ![](images/chat-whatsapp-group.png)
-
-- Other people can ask questions in the contact message privately and they will get answers.
-
-
+![Image13](images/whatsapp_groups_1.webp)
 
 ---
 
