@@ -131,7 +131,7 @@ Before obtaining S3 events, you must have:
 
 3. Navigate to the [**Amazon S3 service**](https://s3.console.aws.amazon.com/s3/buckets).
 
-:::Note
+:::note
 At this point, you can either Create a new bucket or select an existing bucket.
 :::
 
@@ -159,7 +159,7 @@ At this point, you can either Create a new bucket or select an existing bucket.
 
 ![aws-s3-source-29](images/aws-s3-source-29.webp)
 
-:::Note
+:::note
 Under **SQS config**⑬, you can choose to create a new SQS by selecting region, or if you already have an SQS, provide the ARN.
 :::
 
