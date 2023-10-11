@@ -40,7 +40,7 @@ When you complete the prompt settings, you can click the **Save Draft** button, 
 
 You can find all saved prompt drafts under **Prompt Draft**. By clicking the prompt title, the system will **automatically put** the prompt draft into the text box of the Basic Prompt without having to fill it out again.  
 
-![Prompt Draft](images/prompt_draft.webpp)
+![Prompt Draft](images/prompt_draft.webp)
 
 ## Step 4：Preview the Prompt
 When you have completed the basic prompt, you can click the **Preview** button to enter the **Test Preview**.  
