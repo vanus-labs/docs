@@ -8,58 +8,77 @@ import TabItem from '@theme/TabItem';
 
 ### Prerequisites
 
-- Schedule has no prerequisites
+- A [**Vanus Cloud account**](https://cloud.vanus.ai).
 
 ---
 
 **Perform the following steps to configure your Schedule Source**
 
 ### Step 1: Schedule Connection Settings
-1. Write a name for your connection in Vanus Connect.
-![](images/connection_name.png)
-2. Choose your schedule type.
 
+1. Write a **Name**① for your connection in Vanus Connect.
+
+![schedule-source-1](images/schedule-source-1.webp)
+
+2. Click on **Schedule Type**② to choose your schedule type.
+
+![schedule-source-2](images/schedule-source-2.webp)
 
 <Tabs>
 
 <TabItem label="Hourly" value="hourly">
 
-3. If you opt for an **Hourly** schedule, you can choose the specific minute and second within every hour when the event will be sent. This means that the event will be dispatched at the same minute and second within every subsequent hour that it is scheduled to run.
+3. If you opt for an **Hourly schedule**③, you can choose the specific **Minutes and Seconds of the hour**④ when the event will be sent.
 
-![](images/hourly.png)
+:::note
+This means that the event will be dispatched at the same minute and second within every subsequent hour that it is scheduled to run.
+:::
+
+![schedule-source-3](images/schedule-source-3.webp)
+
+- Click **Next**⑤ and continue the configuration.
 
 </TabItem>
 <TabItem label="Daily" value="daily">
 
-3. If you opt for a **Daily** schedule, you have the flexibility to select both the hour and the minute/second at which the event should be sent every day. This allows you to specify the exact time of day when the event will be dispatched, and it will recur at the same time on subsequent days according to the schedule you set.
+3. Choosing a **Daily schedule**③ provides the freedom to pick the precise **Time of the Day**④, down to the hour, minute, and second, when the event will be sent each day.
 
-![](images/daily.png)
+:::note
+This enables you to specify the event's exact dispatch time, and it will continue to occur at that chosen time on all following days based on your schedule.
+:::
+
+![schedule-source-4](images/schedule-source-4.webp)
+
+- Click **Next**⑤ and continue the configuration.
 
 </TabItem>
 <TabItem label="Weekly" value="weekly">
 
-3. If you opt for a **Weekly** schedule.
-    - The first step is to choose the day of the week or multiple days when you want the event to be sent.
-    - Once you have selected the day or days, you can move on to the second step, which is to specify the hour, minute, and second at which the event should be dispatched on that particular day.
+3. If you opt for a **Weekly schedule**③.
 
-![](images/weekly.png)
+- The first step is to choose the **Day of the Week**④ or multiple days when you want the event to be sent.
+- After you've chosen the day or days, you can proceed to the second step, where you'll specify the precise **Time of the Day**⑤ when the event should be dispatched on that specific day.
+
+![schedule-source-5](images/schedule-source-5.webp)
+
+- Click **Next**⑥ and continue the configuration.
 
 </TabItem>
 <TabItem label="Monthly" value="monthly">
 
-3. If you opt for a **Monthly** schedule.
-    - The first step is to choose the day or days of the month when you want the event to be sent. You can select a specific day of the month (e.g., the 15th) or multiple days of the month (e.g., the 1st and the 15th).
-    - The second step is to specify the time of day when the event should be dispatched. You can choose the hour, minute, and second at which the event should be sent on the selected day(s) of the month.
+3. If you opt for a **Monthly**③ schedule.
 
-![](images/monthly.png)
+- The first step is to choose the **Day of the Month**④ (or days, based on your preferences) on which you desire the event to be sent. You can select a specific day of the month (such as the 15th) or multiple days of the month (like the 1st and the 15th).
+- The second step is to specify the specify the precise **Time of the Day**⑤ when the event should be dispatched on the selected day(s) of the month.
+
+![schedule-source-6](images/schedule-source-6.webp)
+
+- Click **Next**⑥ and continue the configuration.
 
 </TabItem>
 
 </Tabs>
 
-4. Click **Next** and continue the configuration.
-
 ---
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus)
-
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai/getting-started/what-is-vanus)

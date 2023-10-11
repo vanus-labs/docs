@@ -46,4 +46,4 @@ hide_title: true
 
 ---
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).
