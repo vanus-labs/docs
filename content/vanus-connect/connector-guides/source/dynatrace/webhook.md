@@ -2,36 +2,40 @@
 
 ### Step 1: Configure webhook
 
-1. Click the copy icon to copy the webhook url
-![](images/3.png)
+1. Click the **copy icon**① to copy the webhook url.
 
-2. Log in to your [Dynatrace account](https://sso.dynatrace.com/).
+![dynatrace-source-2](images/dynatrace-source-2.webp)
 
-3. Navigate to the **Settings** page by first clicking on the **Manage** icon.
-![](images/4.png)
+2. Log in to your [**Dynatrace account**](https://sso.dynatrace.com/).
 
-4. Scroll downwards and click on **Integration** then select **Problen notifications**.
-![](images/5.png)
+3. Navigate to the Settings page by first clicking on the **gear icon**②.
 
-5. Click on **Add notification**.
-![](images/6.png)
+![dynatrace-source-3](images/dynatrace-source-3.webp)
 
-6. Select **Custom Integration** as the **Notification Type**, choose your preferred **Display name**, and paste the webhook URL you copied previously into the **Webhook URL** field.
-![](images/7.png)
+4. Scroll downwards and click on **Integration**③ then select **Problem notifications**④.
 
-7. Toggle the buttons as shown below to **Accept any SSL certificate, Call webhook if new events merge into existing problems** and **Call webhook if problem is closed**.
-![Alt text](images/6.1.png)
+![dynatrace-source-4](images/dynatrace-source-4.webp)
 
-8. Leave the **Additional HTTP Header** section just the way it is.
-![Alt text](images/6.2.png)
+5. Click on **Add notification**⑤.
 
-9. If the "Custom Integration test was successful" message appears after pressing the **Send test notification** button, continue by clicking the **Save changes** button to save the adjustments.
+![dynatrace-source-5](images/dynatrace-source-5.webp)
 
-![Alt text](images/6.3.png)
+6. Select **Custom Integration**⑥ as the Notification type, choose your preferred **Display name**⑦, and paste the Webhook URL you copied previously into the **Webhook URL**⑧ field.
 
-8. If succesful you should see this.
-![](images/8.png)
+![dynatrace-source-6](images/dynatrace-source-6.webp)
 
-:::note
-At this time you can only Integrate three **Problem notifications**.
-:::
+7. Toggle the buttons as shown below to **Accept any SSL certificate (including self-signed and valid certificates)⑨**, **Call webhook if new events merge into existing problems**⑩ and **Call webhook if problem is closed**⑪.
+
+![dynatrace-source-7](images/dynatrace-source-7.webp)
+
+8. Leave the **Additional HTTP headers**⑫ section just the way it is.
+
+![dynatrace-source-8](images/dynatrace-source-8.webp)
+
+9. If the **`Custom Integration test successful`⑬** message appears after pressing the **Send test notification**⑭ button, continue by clicking the **Save changes**⑮ button to save the adjustments.
+
+![dynatrace-source-9](images/dynatrace-source-9.webp)
+
+8. If successful, you should see **this**⑯.
+
+![dynatrace-source-10](images/dynatrace-source-10.webp)

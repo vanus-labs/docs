@@ -13,19 +13,21 @@ The Dynatrace Source is a webhook server that enables you to establish an endpoi
 Before obtaining Dynatrace events, you must have:
 
 - A Dynatrace account with administrative privileges.
-- A [Vanus Cloud account](https://cloud.vanus.ai).
+- A [**Vanus Cloud account**](https://cloud.vanus.ai).
 
 ## Getting Started
 
 ### Create your connection in Vanus Connect
 
-1. Write a name for your connection in Vanus Connect.
-   
-   ![](images/1.png)
-2. After creating the connection, there are a few more steps. Click the link to open a new page with all the details on completing the connection.
-    
-    ![](images/2.png)
-3. Click **Next** and continue the configuration.
+To obtain all Dynatrace events in Vanus Connect, follow these steps:
+
+![dynatrace-source-1](images/dynatrace-source-1.webp)
+
+- Write a **Name**① for your connection in Vanus Connect.
+
+- After creating the connection, there are a few more steps. Simply click the **document**② link to open a new page with all the details on how to complete the connection.
+
+- Click **Next**③ and continue the configuration.
 
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).
