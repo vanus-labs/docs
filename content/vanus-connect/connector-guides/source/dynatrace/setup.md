@@ -29,5 +29,4 @@ To obtain all Dynatrace events in Vanus Connect, follow these steps:
 
 - Click **Next**③ and continue the configuration.
 
-
 Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).
