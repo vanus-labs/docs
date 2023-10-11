@@ -5,115 +5,119 @@ hide_title: true
 
 ### Prerequisites
 
-- An [AWS Account](https://aws.amazon.com)
-
+- An [**AWS Account**](https://aws.amazon.com)
+- A [**Vanus Cloud account**](https://cloud.vanus.ai)
 
 ---
 
 **Perform the following steps to configure your Amazon SQS Source.**
 
-### Step 1: Create a new AWS user 
+### Step 1: Create a new AWS user
 
-Create a new user and set the proper IAM policy. 
+1. Log in to the AWS [**Management Console**](https://aws.amazon.com) using your root account credentials.
 
-#### Create a user 
+2. Navigate to the [**IAM**](https://console.aws.amazon.com/iam/) service by searching for **IAM**① and click the **IAM**② service.
 
-1. Log in to the [AWS Management Console](https://aws.amazon.com/) using your root account credentials. 
+![aws-sqs-source-1](images/aws-sqs-source-1.webp)
 
+3. Click the **Users**③ tab in the left navigation menu, then click the **Create user**④ button.
 
-2. Navigate to the IAM service by typing **IAM** in the search bar and selecting it from the drop-down menu. 
-![](images/iam.png)  
+![aws-sqs-source-2](images/aws-sqs-source-2.webp)
 
-3. Click on the Users tab in the left navigation menu. 
-![](images/select%20users.png)  
+4. Write your **User name**⑤ and click **Next**⑥.
 
-4. Click on the **Add users** button. 
-![](images/add%20users.png)  
+![aws-sqs-source-3](images/aws-sqs-source-3.webp)
 
-5. Write the name of your user and click **Next**. 
-![](images/name%20user.png)  
+5. Select **Attach policies directly**⑦.
 
-6. Select **attach policies directly**. 
-![](images/attach%20policies%20directly.png)  
+![aws-sqs-source-4](images/aws-sqs-source-4.webp)
 
-7. Search for `AmazonSQSFullAccess`, select it and click **next** 
-![](images/permission%20policy.png)  
+6. Search for **`AmazonSQSFullAccess`⑧**, **select it**⑨ and click **Next**⑩.
 
-8. Review and click on **Create user**. 
-![](images/create%20user.png)  
+![aws-sqs-source-5](images/aws-sqs-source-5.webp)
 
-#### Create Access Key 
+7. Review and click on **Create user**⑪.
 
-1. Click on the user you just created. 
-![](images/click%20user.png)  
+![aws-sqs-source-6](images/aws-sqs-source-6.webp)
 
-2. Click on **Security credentials**. 
-![](images/security%20credentials.png)  
+### Step 2: Create an Access key and Secret access Key
 
-3. Click on **Create access key**. 
-![](images/create%20access%20key.png)  
+1. Now click on the **user**① you just created.
 
-4. Select the Command line interface (CLI), accept recommendations and click **Next**. 
-![](images/CLI%20access.png)  
+![aws-sqs-source-7](images/aws-sqs-source-7.webp)
 
-5. Click on **Create access key**.  
-![](images/create%20access%20key2.png)  
+2. Under **Security credentials**② scroll down the page to `Access Keys`, and Click **Create access key**③.
 
-6. Copy your **access key** and **secret access key** and keep them safe. Additionally, you can click on **Download.csv file** to download the file containing your credentials as a backup in case you misplace or lose the copied keys. 
-![](images/download%20csv.png)  
+![aws-sqs-source-8](images/aws-sqs-source-8.webp)
 
-7. Click on **Done**. 
+3. Select **Command line interface (CLI)④**, tick the **confirmation box**⑤ and click **Next**⑥.
 
-8. Your Access Key has been created and is active.  
-![](images/created%20access%20key.png)  
+![aws-sqs-source-9](images/aws-sqs-source-9.webp)
 
+4. Click **Create access key**⑦.
+
+![aws-sqs-source-10](images/aws-sqs-source-10.webp)
+
+5. Download your **`Access key`** and **`Secret access key`** by clicking the **Download .csv file**⑧ button, and then click **Done**⑨.
+
+![aws-sqs-source-11](images/aws-sqs-source-11.webp)
 
 ---
 
-### Step 2: Create an SQS Queue on AWS 
+### Step 3: Create an SQS Queue on AWS
 
-1. Navigate to the **Simple Queue Service** page by typing **SQS** in the search bar and selecting it from the drop-down menu. 
-![](images/sqs%20search.png)  
+1. Navigate to the Simple Queue Service page by typing **SQS**① in the search bar and selecting **Simple Queue Service**② from the drop-down menu.
 
-2. Click on **Create queue**. 
-![](images/create%20queue.png)  
+![aws-sqs-source-12](images/aws-sqs-source-12.webp)  
 
-3. Select the type of queue you want to create and name your queue. 
-![](images/name%20q.png)  
+2. Click on **Create queue**③.
 
-4. Leave the configuration on the default setting, or change them to suit your needs. 
-![](images/config%20settings.png)  
+![aws-sqs-source-13](images/aws-sqs-source-13.webp)
 
-- **Visibility timeout:** This is a setting that determines how long a message received from a queue will remain hidden from other consumers. When a message is received from an Amazon SQS queue by a consumer, the visibility timeout starts. If the consumer fails to process and delete the message before the visibility timeout expires, the message becomes visible to other consumers. 
+3. Select **FIFO**④ and **Name**⑤ your queue.
 
-- **Message retention period:** This refers to the length of time a message is kept in a queue if it is not deleted. Messages that exceed the maximum message retention period are automatically deleted by Amazon SQS. 
+![aws-sqs-source-14](images/aws-sqs-source-14.webp)
 
-- **Delivery Delay:** This determines the amount of time before the first delivery of each message added to the queue. During the delay period, any messages sent to the queue are not visible to consumers. 
+4. Leave the configuration on the default setting, or change them to suit your needs.
 
-- **Receive message wait time:** This refers to the maximum duration that polling will wait for messages to become available for receiving. 
+![aws-sqs-source-15](images/aws-sqs-source-15.webp)
 
-5. Enable encryption and select your preferred encryption key type. 
-![](images/encryption.png)  
+- **Visibility timeout⑥:** This is a setting that determines how long a message received from a queue will remain hidden from other consumers. When a message is received from an Amazon SQS queue by a consumer, the visibility timeout starts. If the consumer fails to process and delete the message before the visibility timeout expires, the message becomes visible to other consumers.
 
-6. Choose your preferred Access Policy method, define who can send messages to the queue, and define who can receive messages from the queue.  
-![](images/access%20policy.png)  
+- **Message retention period⑦ :** This refers to the length of time a message is kept in a queue if it is not deleted. Messages that exceed the maximum message retention period are automatically deleted by Amazon SQS.
 
-7. Click on **Create queue**.  
-![](images/create%20queue%20final.png)  
+- **Delivery Delay⑧:** This determines the amount of time before the first delivery of each message added to the queue. During the delay period, any messages sent to the queue are not visible to consumers.
 
-8. Copy your SQS Arn, it will be needed when creating your connection in Vanus. 
-![](images/copy%20arn.png)  
+- **Receive message wait time⑨:** This refers to the maximum duration that polling will wait for messages to become available for receiving.
 
----
+5. **Enable encryption**⑩ and select your preferred **Encryption key type**⑪.
 
-### Step 3: Amazon SQS Connection Settings   
+![aws-sqs-source-16](images/aws-sqs-source-16.webp) 
 
-1. Write a connection name without any spaces.  
-![](images/Name%20connection.png)  
+6. Choose your preferred Access Policy **method**⑫, **Define who can send messages to the queue**⑬, and **Define who can receive messages from the queue**⑭.
 
-2. Enter your Access Key ID, Secret Access key and SQS ARN, and click **Next** to continue the configuration.  
-![](images/SQS%20source%20config.png)  
+![aws-sqs-source-17](images/aws-sqs-source-17.webp)
+
+7. Click on **Create queue**⑮.
+
+![aws-sqs-source-18](images/aws-sqs-source-18.webp)
+
+8. **Copy your SQS Arn**⑯, it will be needed when creating your connection in Vanus.
+
+![aws-sqs-source-19](images/aws-sqs-source-19.webp) 
 
 ---
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
+### Step 4: Amazon SQS Connection Settings
+
+1. Write a connection **Name**① without any spaces.
+
+![aws-sqs-source-20](images/aws-sqs-source-20.webp)
+
+2. Enter your **Access Key ID**②, **Secret Access key**③ and **SQS ARN**④, and click **Next**⑤ to continue the configuration.
+
+![aws-sqs-source-21](images/aws-sqs-source-21.webp)
+
+---
+
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).
