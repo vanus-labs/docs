@@ -10,7 +10,7 @@ The Labeling Source is a webhook, it receives http requests with json data as th
 
 ## Prerequisites
 
-- A [Vanus Cloud account](https://cloud.vanus.ai)
+- A [**Vanus Cloud account**](https://cloud.vanus.ai)
 
 ## Getting Started
 
