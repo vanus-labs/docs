@@ -103,7 +103,7 @@ Leave **Enable Enhanced monitoring**⑲ unchecked to stay within the free tier l
 
 ![aws-mysql-sink-15](images/aws-mysql-sink-15.webp)
 
-4. Click on the **sink field**⑥ and choose **My IP**⑦ to allow connectivity exclusively from your IP address, then click **Save rules**⑧ to save your settings.
+4. Click on the **source field**⑥ and choose **My IP**⑦ to allow connectivity exclusively from your IP address, then click **Save rules**⑧ to save your settings.
 
 ![aws-mysql-sink-16](images/aws-mysql-sink-16.webp)
 
