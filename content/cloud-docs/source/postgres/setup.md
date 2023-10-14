@@ -5,111 +5,112 @@ hide_title: true
 
 ### Prerequisites
 
-- An SQL client
-- A running PostgreSQL server
-- A database, schema and Table
+- An [**Amazon Web Services**](https://aws.amazon.com) account.
+- A [**Vanus Cloud Account**](https://cloud.vanus.ai).
 
 ---
 
 **Perform the following steps to configure your Amazon RDS PostgreSQL Source.**
 
-### Step 1: Setup PostgreSQL Server in AWS (Optional)
+### Step 1: Set Up a PostgreSQL Server in AWS Using RDS (Optional)
 
-1. Log in to the [AWS Management Console](https://aws.amazon.com/).  
+1. Log in to the [**AWS Management Console**](https://aws.amazon.com/) using your root account credentials.
 
-2. Navigate to the [RDS](https://console.aws.amazon.com/rds/) service by searching for RDS and clicking the **RDS service**. 
-![](images/3.png)
+2. Type **RDS**① in the search box and select **RDS**② from the results.
 
-3. Click on **Create database** in the Create Database section.  
-![](images/4.png)
+![aws-postgres-source-1](images/aws-postgres-source-1.webp)
 
-4. Select standard create and choose the PostgreSQL icon.   
-![](images/5.png)   
+3. Click the **Region name**③ to open the dropdown menu and select the particular **Region**④ in which you want to create the DB instance.
 
-5. Select a tier template that suits your needs.   
-![](images/6.png)  
+![aws-postgres-source-2](images/aws-postgres-source-2.webp)
+
+4. Click **Create database**⑤.
+
+![aws-postgres-source-3](images/aws-postgres-source-3.webp)
+
+5. Select **Standard create**⑥ and choose the **PostgreSQL**⑦ icon.
+
+![aws-postgres-source-4](images/aws-postgres-source-4.webp)
+
+6. Select the **Free tier**⑧ Template for testing, or opt for one of the other available options based on your specific use case.
+
+![aws-postgres-source-5](images/aws-postgres-source-5.webp)
 
 :::note
-Multi-AZ deployment is only available for paid tier. A Multi-AZ deployment automatically provisions and maintains a synchronous standby replica in a different Availability Zone.
+**Multi-AZ DB**⑨ deployment is only available for the paid tier. A Multi-AZ deployment automatically provisions and maintains a synchronous standby replica in a different Availability Zone.
 :::
 
-6. 
-    - DB Instance Identifier: Type a name unique to the region your DB instance has been set in.  
+7. Enter the following information.
 
-    - Master Username: This is the username that you will use to log in to your DB instance.  
+![aws-postgres-source-6](images/aws-postgres-source-6.webp)
 
-    - Master Password: Type a password that takes the given constraints into consideration.  
+- **DB instance identifier⑩:** Give a unique name to your instance.
 
-    - Confirm password: Type the password again.   
-    ![](images/7.png)   
+- **Master username⑪:** This is the username that will be used to log in to your DB instance.
 
+- **Master password⑫:** This is the password that will be used to log in with the username.
 
-7. 
-    - Leave the default Instance configuration.  
+- **Confirm master password⑬:** Write the password again.
 
-    - Select the GP2 storage type. It's efficient and cost-effective for our intended use.  
+8. Select the **General Purpose SSD (gp2)⑭** storage type. *It's efficient and cost-effective for our intended use*.
 
-    - Turn off autoscaling to avoid extra costs. Unless your use case requires it.   
-    ![](images/8.png)
+![aws-postgres-source-7](images/aws-postgres-source-7.webp)
 
-8. 
-    - Leave the default VPC and subnet group.  
+9. Enable **Public access**⑮.
 
-    - Enable public access. This allocates an IP to your database instance and allows direct connection to the database from your own device.  
-    ![](images/9.png)   
+![aws-postgres-source-8](images/aws-postgres-source-8.webp)
 
+:::note
+This allocates an IP to your database instance and allows direct connection to the database from the internet.
+:::
 
-9. 
-   - Your DB is in the process of being created. This will take a few minutes, so move on to the next step while waiting.
+10. Select **Create new**⑯ to create a new VPC security group, then specify your **New VPC security group name**⑰.
 
-   - Leave the database port on 5432
+![aws-postgres-source-9](images/aws-postgres-source-9.webp)
 
-   - Select the password method of authentication.
-   ![](images/10.png)   
+11. Select **Password authentication**⑱.
 
+![aws-postgres-source-10](images/aws-postgres-source-10.webp)
 
-10. 
-    - Enable or disable performance insight depending on your database needs. We disabled it for this tutorial.  
+:::note
+Leave **Performance Insights**⑲ checked, or uncheck it if you have no use for it.
+:::
 
-    - Set a database name. If you do not provide one, Amazon RDS will not create a database on the instance being created.   
-    ![](images/11.png)   
+12. Input an **Initial database name**⑳, and set your preferred **Backup retention period**㉑.
 
+![aws-postgres-source-11](images/aws-postgres-source-11.webp)
 
-11. 
-    - Set your preferred backup retention period.  
+13. Click the **Create database**㉒ button to complete the process of creating your database.
 
-    - Enable or disable backup replication, based on your database needs. 
-    ![](images/12.png)   
-
-
-12. Leave Deletion protection unchecked; checking the box prevents you from being able to delete the database.  
-![](images/13.png)   
-
-
-13. Click on **Create Database**  
-![](images/14.png)
-
-14. Your DB is in the process of being created. This will take a few minutes, so move on to the next step while waiting.
-
-![](images/15.png)  
+![aws-postgres-source-12](images/aws-postgres-source-12.webp)
 
 ---
 
-### Step 2: PostgresSQL Connection Settings
-1. Write a name for your connection in Vanus Connect.
-![](images/name.png)
-2. Provide the following credentials: 
-![](images/source%20config.png)
-- Host 
-- Port 
-- Username 
-- Password 
-- Database 
-- Schemas 
-- Tables   
+### Step 2: Amazon RDS PostgreSQL Connection Settings
 
-3. Click **Next** and continue the configuration.
+**To set up Amazon RDS PostgreSQL Source in Vanus Connect:**
+
+1. Return to the [**RDS page**](https://console.aws.amazon.com/rds/) and click on the **database**① you just created.
+
+![aws-postgres-source-13](images/aws-postgres-source-13.webp)
+
+2. Copy your **Endpoint & port**②.
+
+![aws-postgres-source-14](images/aws-postgres-source-14.webp)
+
+3. Navigate to the Vanus Cloud platform and fill in the following credentials.
+
+![aws-postgres-source-15](images/aws-postgres-source-15.webp)
+
+- **Host③:** This is your RDS endpoint.
+- **Port④:** Enter the port number on which your PostgreSQL server is listening. The default port for PostgreSQL is 5432.
+- **Username⑤:** Master username selected during the database creation.
+- **Password⑥:** User password.
+- **Database⑦:** The initial database name.
+- **Schemas⑧:** PostgreSQL schema
+- **Tables⑨:** The name of the table you want your events to be sent to.
+- Click **Next**⑩ and finish the configurations.
 
 ---
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai/getting-started/what-is-vanus).
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai/getting-started/what-is-vanus).
