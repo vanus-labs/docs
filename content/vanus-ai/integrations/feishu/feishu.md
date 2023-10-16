@@ -60,7 +60,7 @@ If you find yourself uncertain about which app model to select, please refer to 
 
 ![](images/integration_feushu_6.webp)
 
-7. Scroll down and select **Read and send messages in private and group chats**⑭ and click **Add in Bulk**⑮.
+7. Scroll down and select **Read and send messages in private and group chats**⑭ and click **Add in bulk**⑮.
 
 ![](images/integration_feushu_7.webp)
 ![](images/integration_feushu_8.webp)
@@ -106,7 +106,7 @@ If you find yourself uncertain about which app model to select, please refer to 
 
 ![](images/integration_feushu_19.webp)
 
-17. Set **App version**㉟ to `1.0.0`, add **Update note**㊱  and click **Save**㊲.
+17. Set **App version**㉟ to `1.0.0`, add **Update Notes**㊱  and click **Save**㊲.
 
 ![](images/integration_feushu_20.webp)
 
