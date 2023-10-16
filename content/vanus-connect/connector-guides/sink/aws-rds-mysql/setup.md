@@ -1,6 +1,6 @@
 # Amazon RDS MySQL
 
-This guide contains the required information to set up an Amazon MySQL Sink in Vanus Connect.   
+This guide contains the required information to set up an Amazon MySQL Sink in Vanus Connect.
 
 ## Introduction  
 
@@ -12,139 +12,135 @@ Vanus Connect's AWS MySQL sink connector simplifies transferring data/events fro
 
 Before forwarding events to MySQL, you must have:
 
-- A [Vanus Cloud account](https://cloud.vanus.ai) 
-- A running MySQL server 
+- An [**Amazon Web Services**](https://aws.amazon.com) account.
+- A [**Vanus Cloud Account**](https://cloud.vanus.ai).
 
-## Getting Started 
-### Step 1: Setup A Mysql server in AWS using RDS
+## Getting Started
 
-#### Create an RDS account  
-1. Log in to the [AWS Management Console](https://aws.amazon.com/) using your root account credentials.  
-![3](images/1.png)
+### Step 1: Set Up a MySQL Server in AWS Using RDS
 
-2. Type "RDS" in the search box and select it from the results.   
-![5](images/2.png)
+1. Log in to the [**AWS Management Console**](https://aws.amazon.com/) using your root account credentials.
 
-3. In the top right corner of the Amazon RDS console, select the Region in which you want to create the DB instance.   
-![6](images/3.png)
+2. Type **RDS**① in the search box and select **RDS**② from the results.
 
-4. Click on **Create database** in the **Create Database** section.  
-![7](images/4.png)
+![aws-mysql-sink-1](images/aws-mysql-sink-1.webp)
 
-#### Create Database   
-Now you have options to select your engine.  
+3. Click the **Region name**③ to open the dropdown menu and select the particular **Region**④ in which you want to create the DB instance.
 
-1. Select **standard create** and choose the MySQL icon.  
-![8](images/5.png)
+![aws-mysql-sink-2](images/aws-mysql-sink-2.webp)
 
-2. Leave the default value for edition, and select the **Free Tier Template** for testing or **Production Template** for production.   
-![9](images/6.png)   
+4. Click **Create database**⑤.
 
->**Note** 
-Multi-AZ deployment is not available for the free tier, you will have to pay for it. Using a Multi-AZ deployment automatically provisions and maintains a synchronous standby replica in a different Availability Zone.  
+![aws-mysql-sink-3](images/aws-mysql-sink-3.webp)
 
-![10](images/7.png)
+5. Select **Standard create**⑥ and choose the **MySQL**⑦ icon.
 
-##### Settings   
-![11](images/8.png)   
+![aws-mysql-sink-4](images/aws-mysql-sink-4.webp)
 
-- **DB Instance Identifier:** Type a name unique to the region your DB instance has been set in.  
+6. Select the **Free tier**⑧ Template for testing, or opt for one of the other available options based on your specific use case.
 
-- **Master Username:** This is the username that would be used to log in to your DB instance.  
+![aws-mysql-sink-5](images/aws-mysql-sink-5.webp)
 
-- **Master Password:** Type a password that takes the given constraints into consideration.  
+:::note
+**Multi-AZ DB**⑨ deployment is only available for the paid tier. A Multi-AZ deployment automatically provisions and maintains a synchronous standby replica in a different Availability Zone.
+:::
 
-- **Confirm password:** Type the password again.  
+7. Enter the following information.
 
+![aws-mysql-sink-6](images/aws-mysql-sink-6.webp)
 
-##### Instance configuration and storage   
+- **DB instance identifier⑩:** Give a unique name to your instance.
 
-1. Leave the default Instance configuration. 
+- **Master username⑪:** This is the username that will be used to log in to your DB instance.
 
-2. Select the gp2 storage type, it's efficient and cost effective for our intended use.  
-![12](images/9.png)   
+- **Master password⑫:** This is the password that will be used to log in with the username.
 
-##### Connectivity   
-1. Leave the default subnet group.  
+- **Confirm master password⑬:** Write the password again.
 
-2. Enable public access, this allocates an IP to your database instance and allows direct connection to the database from your own device.  
-![13](images/10.png)
+8. Select the **General Purpose SSD (gp2)⑭** storage type. *It's efficient and cost-effective for our intended use*.
 
-3. Select **Create new VPC security group**. This will create a security group that allows connection from the IP address of the device that you are currently using, to the database you created.  
+![aws-mysql-sink-7](images/aws-mysql-sink-7.webp)
 
-4. Leave **Database port** on 3306.   
-![14](images/11.png)
+9. Enable **Public access**⑮.
 
-5. Select the password method of authentication.   
+![aws-mysql-sink-8](images/aws-mysql-sink-8.webp)
 
-6. Leave **enabled monitoring** unchecked, to stay within the free tier limit.  
-![15](images/12.png)
- 
-7. Set a database name. If you do not provide one, Amazon RDS will not create a database on your instance being created.  
+:::note
+This allocates an IP to your database instance and allows direct connection to the database from the internet.
+:::
 
-8. Set your preferred backup retention period.  
-![16](images/13.png)
+10. Select **Create new**⑯ to create a new VPC security group, then specify your **New VPC security group name**⑰.
 
-9. Leave **Deletion protection** unchecked, checking the box prevents you from being able to delete the database.  
-![17](images/14.png)
+![aws-mysql-sink-9](images/aws-mysql-sink-9.webp)
 
-10. Click on **create database**  
-![18](images/15.png)   
+11. Select **Password authentication**⑱.
 
-11. Your DB is now being created. This could take a few minutes. 
-![19](images/16.png)   
+![aws-mysql-sink-10](images/aws-mysql-sink-10.webp)
 
-##### Modify your VPC security groups
-1. Click on the server you just created in AWS RDS.
-![](images/17.png)
-2. Now, Click on your **VPC Security Group**.
-![](images/18.png)
-3. Under the **Inbound rules** click **Edit inbound rules**.
-![](images/19.png)
-4. We will need to add a new rule to be able to connect to server, by clicking **Add rule**.
-![](images/20.png)
-5. Change the type to 'All traffic', Source 'Anywhere-IPv4' and click **Save rules**
-![](images/21.png)
+:::note
+Leave **Enable Enhanced monitoring**⑲ unchecked to stay within the free tier limit.
+:::
 
-Now you can connect to your server and create a table and database. 
+12. Input an **Initial database name**⑳, and set your preferred **Backup retention period**㉑.
 
-### Step 2: Set up your connection in Vanus Connect
+![aws-mysql-sink-11](images/aws-mysql-sink-11.webp)
 
-1. Log in to your [Vanus](https://cloud.vanus.ai) account and click on **connections**  
-![3](images/go%20to%20vanuscloud.png)  
+13. Click the **Create database**㉒ button to complete the process of creating your database.
 
-2. Click on **Create Connections**  
-![3](images/click%20create%20connection.png)  
+![aws-mysql-sink-12](images/aws-mysql-sink-12.webp)
 
-3. Name your connection, Choose your source and click next 
-![3](images/choose%20source.png) 
+### Step 2: Modify Your VPC Security Groups
 
-4. Click on **"Sink"** and select **"Amazon RDS (MySQL)"**.   
-![29](images/choose%20sink.png)  
+1. Click on the **Database**① you just created in AWS RDS.
 
-5. Click on the server you just created in AWS RDS.
-![](images/23.png) 
+![aws-mysql-sink-13](images/aws-mysql-sink-13.webp)
 
-6. Now copy and paste your **Endpoint** and **Port** into vanus.
-![](images/24.png) 
+2. Within the **Connectivity & security**② section, click on your **VPC security group**③.
 
-- **Host:** This is your RDS endpoint.
-- **Port:** Enter the port number on which your MySQL server is listening. The default port for MySQL is 3306. 
+![aws-mysql-sink-14](images/aws-mysql-sink-14.webp)
 
-7. Enter the rest of your credentials  
-![](images/sink%20config.png)
+3. Within the **Inbound rules**④ section, click the **Edit inbound rules**⑤ button.
 
-- **Username:** Master username selected during the database creation.
-- **Password:** User password.
-- **Database Name:** The initial database name.
-- **Table Name:** The name of the table you want your events to be sent to.
-- Chose the insertion mode and click next. 
+![aws-mysql-sink-15](images/aws-mysql-sink-15.webp)
 
-8. Click on submit to finish the configuration. 
-![](images/submit.png)  
+4. Click on the **source field**⑥ and choose **My IP**⑦ to allow connectivity exclusively from your IP address, then click **Save rules**⑧ to save your settings.
 
-You've successfully created your Vanus aws-mysql sink connection.  
-![](images/created.png)  
+![aws-mysql-sink-16](images/aws-mysql-sink-16.webp)
+
+:::note
+Alternatively, you can opt for `Anywhere-IPv4` to enable traffic from any IPv4 address.
+:::
+
+Now you can connect to your server and create a table.
+
+---
+
+### Step 3: Amazon RDS MySQL Connection Settings
+
+**To set up Amazon RDS MySQL Sink in Vanus Connect:**
+
+1. Return to the [**RDS page**](https://console.aws.amazon.com/rds/) and click on the **database**① you just created.
+
+![aws-mysql-sink-17](images/aws-mysql-sink-17.webp)
+
+2. Copy your **Endpoint & port**②.
+
+![aws-mysql-sink-18](images/aws-mysql-sink-18.webp)
+
+3. Navigate to the Vanus Cloud platform and fill in the following credentials.
+
+![aws-mysql-sink-19](images/aws-mysql-sink-19.webp)
+
+- **Host③:** This is your RDS endpoint.
+- **Port④:** Enter the port number on which your MySQL server is listening. The default port for MySQL is 3306.
+- **Username⑤:** Master username selected during the database creation.
+- **Password⑥:** User password.
+- **Database⑦:** The initial database name.
+- **Table⑧:** The name of the table you want your events to be sent to.
+- Choose the **Insertion Mode**⑨.
+- Click **Next**⑩ and finish the configurations.
+
+---
 
 ## Custom Connection
 
