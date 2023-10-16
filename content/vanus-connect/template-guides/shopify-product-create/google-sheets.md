@@ -21,6 +21,7 @@ This guide is designed to assist you in setting up a system where you can add ne
 ![shopify_google-sheets_2](images/shopify_google-sheets_2.webp)
 
 4. Click **Next**③.
+
 ![shopify_google-sheets_3](images/shopify_google-sheets_3.webp)
 
 
