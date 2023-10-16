@@ -38,11 +38,11 @@ If you find yourself uncertain about which app model to select, please refer to 
 
 ![](images/integration_slack_5.webp)
 
-2. Select **From Scratch**②.
+2. Select **From scratch**②.
 
 ![](images/integration_slack_6.webp)
 
-3. Set the **App Name**③ and **Workspace**④, then click the **Create App**⑤ button.
+3. Set the **App Name**③ and **workspace**④, then click the **Create App**⑤ button.
 
 ![](images/integration_slack_7.webp)
 
