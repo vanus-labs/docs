@@ -134,7 +134,7 @@ const sidebars = {
       },
       items: [
           "vanus-connect/template-guides/github-star/discord",
-          "vanus-connect/template-guides/github-issue/discord",
+          "vanus-connect/template-guides/github-issue-open/discord",
           "vanus-connect/template-guides/github-issue-comment/discord",
           "vanus-connect/template-guides/github-starred-feishu",
           "vanus-connect/template-guides/github-issue-created-feishu",
@@ -144,9 +144,7 @@ const sidebars = {
           "vanus-connect/template-guides/github-issue-event-slack",
           "vanus-connect/template-guides/github-comment-slack",
           "vanus-connect/template-guides/github-pull-request-opened-slack",
-          "vanus-connect/template-guides/github-open-issue-discord",
           "vanus-connect/template-guides/github-open-pr-discord",
-          "vanus-connect/template-guides/github-issue-discord",
           "vanus-connect/template-guides/github-developer-360",
           "vanus-connect/template-guides/github-merge-pr-slack",
           "vanus-connect/template-guides/auth0-login-slack",

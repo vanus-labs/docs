@@ -22,9 +22,9 @@ This guide is designed to assist you in setting up a system where you receive Di
 
 ![](images/template_github_discord_5.webp)
 
-- Select the repo you want to configure, and click **Next**④.
+- Select the repo④ you want to configure, and click **Next**⑤.
 
-![](images/template_github_discord_2.webp)
+![](images/template_github_discord.webp)
 
 
 ### Step 2: Create a Discord Server 

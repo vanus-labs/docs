@@ -1,4 +1,4 @@
-# # GitHub issue event triggers a Discord message
+# GitHub issue open event triggers a Discord message
 
 GitHub is the largest web-based platform that provides developers with a place to host and manage their software projects.
 
