@@ -1,12 +1,12 @@
-# GitHub star event triggers a Discord message
+# GitHub issue comment event triggers a Discord message
 
-GitHub is a prominent web-based platform that offers developers a space to host and oversee their software projects. 
+GitHub is the largest web-based platform that provides developers with a place to host and manage their software projects.
 
-By employing Vanus Connect, you have the capability to obtain notifications for particular occurrences within a repository. 
+You can receive notifications when specific events occur in a repository by adding a GitHub Source on Vanus Connect.
 
-This guide is designed to assist you in setting up a system where you receive Discord notifications each time someone stars your Github repository.
+This guide will help you get a Discord notification whenever someone leaves a comment on an issue in your repository.
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/RFSzJmkPa8Y" title="YouTube video player" frameBorder="0" allowFullScreen={true} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/GarKp84BeOI" title="YouTube video player" frameBorder="0" allowFullScreen={true} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 
 ## Getting Started
 
@@ -14,9 +14,9 @@ This guide is designed to assist you in setting up a system where you receive Di
 
 - Log in to [Vanus Connect](https://cloud.vanus.ai/) 
 
-- Choose the **GitHub star event triggers a Discord message** template. Click on **Try it now**①.
+- Choose the **GitHub issue comment event triggers a Discord message** template. Click on **Try it now**①.
 
-![](images/template_github_discord_1.webp)
+![](images/template_github_discord_comment_1.webp)
 
 - Give the Conncection a **Name**②, scroll to **Authorize Github Account** and click the **Authorize**③ button.
 
@@ -87,6 +87,6 @@ This guide is designed to assist you in setting up a system where you receive Di
 
 ### Result Display
 
-When a user stars your repository, you will receive a real-time GitHub Issue Notification on Discord.
+When a user comments on an issue in your repository, you will receive a real-time GitHub Notification on Discord.
 
-![](images/template_github_discord_4.webp)
+![](images/template_github_discord_comment_2.webp)
