@@ -28,15 +28,9 @@ Integration is a paid user feature. Therefore, only users with professional subs
 
 If you find yourself uncertain about which app model to select, please refer to the [**Large Language Models (LLM) Documentation**](https://docs.vanus.ai/vanus-ai/beginning/large-language-models/) for clear guidance on choosing the most suitable LLM for your requirements.
 
-4. Select the **Integrations Tab**⑧ and select the **Discord Integration**⑨.
-
-![ai_integration_discord4](images/ai_integration_discord4.webp)
-
-5. A dialog box will be displayed on the screen, featuring two blank fields: one for a **Name** and one for a **Bot Token**⑩.
-
-![ai_integration_discord5](images/ai_integration_discord5.webp)
-
+:::note
 In the next steps, we will go to the Discord website or Application to create our Discord Server and get the required credentials to make the connection.
+:::
 
 ### Step 2: Create a Discord Server
 
@@ -44,19 +38,19 @@ In the next steps, we will go to the Discord website or Application to create ou
 
 2. After signing in, you can press the **`+`** button to establish a new channel①.
 
-![ai_integration_discord6](images/ai_integration_discord6.webp)
+![ai_integration_discord4](images/ai_integration_discord4.webp)
 
-3. Hit **Create my own**②.
+3. Hit **Create My Own**②.
 
-![ai_integration_discord7](images/ai_integration_discord7.webp)
+![ai_integration_discord5](images/ai_integration_discord5.webp)
 
 4. Select **For me and my friends**③.
 
-![ai_integration_discord8](images/ai_integration_discord8.webp)
+![ai_integration_discord6](images/ai_integration_discord6.webp)
 
-5. Input a **Server Name**④ and click **Create**⑤.
+5. Input a **SERVER NAME**④ and click **Create**⑤.
 
-![ai_integration_discord9](images/ai_integration_discord9.webp)
+![ai_integration_discord7](images/ai_integration_discord7.webp)
 
 ### Step 3: Develop a Discord Application
 
@@ -64,67 +58,75 @@ In the next steps, we will go to the Discord website or Application to create ou
 
 2. Press **New Application**①.
 
-![ai_integration_discord10](images/ai_integration_discord10.webp)
+![ai_integration_discord8](images/ai_integration_discord8.webp)
 
-3. Assign a **Name**② to your bot, agree to the **Developer Terms of Service and Developer Policy**③, then hit **Create**④.
+3. Assign a **NAME**② to your bot, agree to the **Developer Terms of Service and Developer Policy**③, then hit **Create**④.
 
-![ai_integration_discord11](images/ai_integration_discord11.webp)
+![ai_integration_discord9](images/ai_integration_discord9.webp)
 
 4. From the sidebar menu, select **Bot**⑤, and under Privileged Gateway Intents, enable **MESSAGE CONTENT INTENT**⑥.
 
-![ai_integration_discord12](images/ai_integration_discord12.webp)
+![ai_integration_discord10](images/ai_integration_discord10.webp)
 
 5. Click on **Save Changes**⑦.
 
-![ai_integration_discord13](images/ai_integration_discord13.webp)
+![ai_integration_discord11](images/ai_integration_discord11.webp)
 
 6. Press **Reset Token**⑧.
 
-![ai_integration_discord14](images/ai_integration_discord14.webp)
+![ai_integration_discord12](images/ai_integration_discord12.webp)
 
 7. **Copy**⑨ the generated token.
 
+![ai_integration_discord13](images/ai_integration_discord13.webp)
+
+8. Return to Vanus AI, click on the **Integrations**⑩ tab and select **Discord Integration**⑪.
+
+![ai_integration_discord14](images/ai_integration_discord14.webp)
+
+9. A **dialog box**⑫ will be displayed on the screen, featuring two blank fields: for a Name and Bot Token.
+
 ![ai_integration_discord15](images/ai_integration_discord15.webp)
 
-8. Return to Vanus AI, **Name**⑩ the integration, paste the **Bot Token**⑪, and hit **Create**⑫.
+10. **Name**⑬ the integration, paste the **Bot Token**⑭, and hit **Create**⑮.
 
 ![ai_integration_discord16](images/ai_integration_discord16.webp)
 
-9. Your integration has been successfully created and is now **Running**⑬.
+11. Your integration has been successfully created and is now **Running**⑯.
 
 ![ai_integration_discord17](images/ai_integration_discord17.webp)
 
-10. Finally, to add an AI bot to a channel, return to the application within the developer portal.
+12. Finally, to add an AI bot to a channel, return to the application within the developer portal.
 
-11. In the sidebar menu, find **0Auth2**⑭ and **URL Generator**⑮.
+13. In the sidebar menu, find **OAuth2**⑰ and **URL Generator**⑱.
 
 ![ai_integration_discord18](images/ai_integration_discord18.webp)
 
-12. Choose **bot**⑯ under scopes.
+14. Choose **bot**⑲ under SCOPES.
 
 ![ai_integration_discord19](images/ai_integration_discord19.webp)
 
-13. Under Bot Permission **(ReadMessages/ViewChannel, Send Messages, Mention Everyone, Use External Emojis, Send TTS Messages, Send Messages In threads, Create public, threads Create private threads)** or Administrator.
+15. Under BOT PERMISSION **(ReadMessages/ViewChannel, Send Messages, Mention Everyone, Use External Emojis, Send TTS Messages, Send Messages In threads, Create public, threads Create private threads)** or Administrator.
 
 ![ai_integration_discord20](images/ai_integration_discord20.webp)
 
-14. **Copy**⑰ the URL.
+16. **Copy**⑳ the URL, and then insert it into a web browser to access the authentication page.
 
 ![ai_integration_discord21](images/ai_integration_discord21.webp)
 
-15. Choose your **Server**⑱ and press **Continue**⑲.
+17. Choose your **Server**㉑ and press **Continue**㉒.
 
 ![ai_integration_discord22](images/ai_integration_discord22.webp)
 
-16. Click on **Authorize**⑳.
+18. Click on **Authorize**㉓.
 
 ![ai_integration_discord23](images/ai_integration_discord23.webp)
 
-17. Your Bot has been successfully authorized㉑.
+19. Your Bot has been successfully **authorized**㉔.
 
 ![ai_integration_discord24](images/ai_integration_discord24.webp)
 
-18. Return to your Discord Application or website.
+20. Return to your Discord Application or website.
 
 ![ai_integration_discord25](images/ai_integration_discord25.webp)
 
