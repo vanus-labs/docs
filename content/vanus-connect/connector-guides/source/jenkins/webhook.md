@@ -1,8 +1,5 @@
 # Configuring Jenkins to Send Webhook Events
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 ## Step 1: Configure webhook
 
 1. Click the **copy icon**① to copy the webhook url
@@ -12,6 +9,9 @@ import TabItem from '@theme/TabItem';
 2. Log in to your Jenkins account.
 
 ## Step 2: Send Jenkins Event
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 <Tabs>
 

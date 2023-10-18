@@ -3,9 +3,6 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 ### Prerequisites
 
 - A Jenkins account
@@ -40,6 +37,9 @@ To obtain all Jenkins events in Vanus Connect, follow these steps:
 2. Log in to your Jenkins account.
 
 ### Step 2: Send Jenkins Event
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 <Tabs>
 
