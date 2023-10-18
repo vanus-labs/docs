@@ -61,6 +61,7 @@ import TabItem from '@theme/TabItem';
 
 ![](images/integration_whatsapp_4.webp)
 
+
 </TabItem>
 
 <TabItem label="iOS" value="ios">
@@ -83,7 +84,7 @@ import TabItem from '@theme/TabItem';
 
 ![](images/integration_whatsapp_6.webp)
 
-### Step 3: How to use Vanus AI on WhatsApp
+### Step 4: How to use Vanus AI on WhatsApp
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -125,6 +126,6 @@ To use in WhatsApp groups just tag the AI account using `@`.
 
 ![Image13](images/whatsapp_groups_1.webp)
 
-
-
-
+:::note
+WhatsApp does not allow users to assign a universal name to a contact. The name you have saved for that contact in your own phone's address book is what you will see, and the name other group members have saved for that contact is what they will see. Therefore, it's important to inform your group members to choose a memorable name for the contact used in the integration to avoid confusion when mentioning the AI.
+:::
