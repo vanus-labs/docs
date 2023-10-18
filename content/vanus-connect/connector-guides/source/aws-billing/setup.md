@@ -78,7 +78,7 @@ Amazon Billing Source is a connector provided by Vanus that retrieves daily or h
 
 ![aws-billing-source-14](images/aws-billing-source-14.webp)
 
-3. Select **Command line interface (CLI)④**, tick the **confirmation box**⑤ and click **Next**⑥.
+3. Select **Command Line Interface (CLI)④**, tick the **Confirmation box**⑤ and click **Next**⑥.
 
 ![aws-billing-source-15](images/aws-billing-source-15.webp)
 

@@ -100,7 +100,7 @@ hide_title: true
 
 ![aws-s3-source-18](images/aws-s3-source-18.webp)
 
-3. Select **Command line interface (CLI)④**, tick the **confirmation box**⑤ and click **Next**⑥.
+3. Select **Command Line Interface (CLI)④**, tick the **Confirmation box**⑤ and click **Next**⑥.
 
 ![aws-s3-source-19](images/aws-s3-source-19.webp)
 

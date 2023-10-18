@@ -21,7 +21,7 @@ Before obtaining Webhook server to receive events, you must have:
 
 1. Write a **connection name**①.
 2. You'll need to obtain the Webhook URL after completing the connection. To do this, simply click the **link**② to open a new tab with instructions on how to retrieve the URL.
-3. Click **next**③ to continue.
+3. Click **Next**③ to continue.
 
 ![](images/cloud_webhook_1.webp)
 
