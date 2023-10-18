@@ -44,9 +44,6 @@ If you find yourself uncertain about which app model to select, please refer to 
 
 **Scanning the QR Code**
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs>
 
 <TabItem label="Android" value="android">
@@ -60,7 +57,6 @@ import TabItem from '@theme/TabItem';
 7. Align your phone's camera with the QR code so that the QR code is completely within the **camera frame**④.
 
 ![](images/integration_whatsapp_4.webp)
-
 
 </TabItem>
 
