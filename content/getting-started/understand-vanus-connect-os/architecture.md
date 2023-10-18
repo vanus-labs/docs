@@ -5,7 +5,7 @@ title: Architecture
 
 This article introduces Vanus architecture from the business perspective and will teach you about the components of Vanus.
 
-![vanus-architecture](images/arch.png)
+![vanus-architecture](images/arch.webp)
 
 Vanus aims to automatically and transparently scale up or down and meet near-zero administration, maintenance, 
 or scaling burden. Its principle of design follows the Service Oriented Architecture(SOA). SOA helps us to resolve many

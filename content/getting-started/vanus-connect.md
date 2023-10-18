@@ -14,10 +14,10 @@ Join our rapidly expanding community of businesses and developers who leverage *
 - Join Vanus Connect by visiting [cloud.vanus.ai](https://cloud.vanus.ai)
 - Sign up to Vanus Connect using one of the following methods, GitHub login, Google login, Microsoft login, or by email.
 
-![](../../static/img/vanuscloud_loginin.png)
+![](../../static/img/vanuscloud_loginin.webp)
 
 - Please provide some information about yourself. Thank you for providing us with the required information to create your account.
 
-![](../../static/img/user-info.png)
+![](../../static/img/user-info.webp)
 
 - Signing up is a breeze! Now that you have registered successfully, you can create a new connection effortlessly. Let's get started on establishing your new connection right away!

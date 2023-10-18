@@ -83,7 +83,7 @@ This section will show you how to use Amazon S3 Source to converts S3 events to 
   machine. You can run Connectors directly and safely on the [Playground](https://play.linkall.com/).
    
    We've already exposed webhook to the internet if you're using the Playground. Go to GitHub-Twitter Scenario under Payload URL.
-   ![Payload img](https://raw.githubusercontent.com/vanus-labs/vanus-connect/main/connectors/source-github/payload.png)
+  ![Payload img](payload.webp)
 
 ### Create the config file
 

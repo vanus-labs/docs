@@ -83,7 +83,7 @@ the `data` will be as payload to invoke function
 
 you can see logs in [SCF console](https://console.cloud.tencent.com/scf)
 
-![log.png](https://github.com/vanus-labs/vanus-connect/blob/main/connectors/sink-tencentcloud-scf/scf-log.png?raw=true)
+![log.png](scf-log.webp)
 
 ### Clean resource
 

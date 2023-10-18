@@ -56,18 +56,18 @@ In this section we will show you how to use Slack Sink to send a message to a Sl
 ### Create an App in Slack
 
 1. Create an app on slack.
-   ![message.png](https://github.com/vanus-labs/vanus-connect/blob/main/connectors/sink-slack/createApp.png?raw=true)
+   ![message.png](createApp.webp)
 2. Select `From scratch`.
-   ![message.png](https://github.com/vanus-labs/vanus-connect/blob/main/connectors/sink-slack/selectFromScratch.png?raw=true)
+   ![message.png](selectFromScratch.webp)
 3. Set the bot name and Workspace.
 4. Click on permissions in the central menu.
-   ![message.png](https://github.com/vanus-labs/vanus-connect/blob/main/connectors/sink-slack/clickPerm.png?raw=true)
+   ![message.png](clickPerm.webp)
 5. Scopes 'Add OAuth Scope' `chat:write` and `chat:write.public`.
-   ![message.png](https://github.com/vanus-labs/vanus-connect/blob/main/connectors/sink-slack/setPerm.png?raw=true)
+   ![message.png](setPerm.webp)
 6. Install to workspace.
-   ![message.png](https://github.com/vanus-labs/vanus-connect/blob/main/connectors/sink-slack/installWorkspace.png?raw=true)
+   ![message.png](installWorkspace.webp)
 7. Set your configurations with the `Bot User OAuth Token` in OAuth & Permissions.
-   ![message.png](https://github.com/vanus-labs/vanus-connect/blob/main/connectors/sink-slack/oath.png?raw=true)
+   ![message.png](oath.webp)
 
 ### Create the config file
 
@@ -135,7 +135,7 @@ curl --location --request POST 'localhost:31080' \
 ```
 
 Now, you should see in your slack channel your message.
-![message.png](https://github.com/vanus-labs/vanus-connect/blob/main/connectors/sink-slack/message.png?raw=true)
+![message.png](message.webp)
 
 ### Clean
 
