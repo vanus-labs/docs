@@ -1,5 +1,8 @@
 # Configuring Jenkins to Send Webhook Events
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 ## Step 1: Configure webhook
 
 1. Click the **copy icon**① to copy the webhook url
@@ -8,7 +11,11 @@
 
 2. Log in to your Jenkins account.
 
-## Step 2: Send Jenkins Event Using HTTP Request Plugin
+## Step 2: Send Jenkins Event
+
+<Tabs>
+
+<TabItem label="Plugin" value="plugin">
 
 1. Click on **Manage Jenkins**①.
 
@@ -62,7 +69,9 @@
 
 ![jenkins-source-15](images/jenkins-source-15.webp)
 
-## Step 3: Send Jenkins Event Using a Simple Script
+</TabItem>
+
+<TabItem label="Script" value="script">
 
 1. Click on **Manage Jenkins**①.
 
@@ -83,6 +92,10 @@
 5. Compose your code in the command field, including the Jenkins source connector's copied payload **URL**⑥, and click on **save**⑦.
 
 ![jenkins-source-20](images/jenkins-source-20.webp)
+
+</TabItem>
+
+</Tabs>
 
 :::note
 If you are employing a custom script to transmit events, there is no requirement to install the HTTP Request plugin.
