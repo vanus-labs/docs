@@ -43,7 +43,7 @@ To obtain all Jenkins events in Vanus Connect, follow these steps:
 
 <Tabs>
 
-<TabItem label="Plugin" value="Plugin">
+<TabItem label="Plugin" value="plugin">
 
 1. Click on **Manage Jenkins**①.
 
@@ -99,7 +99,7 @@ To obtain all Jenkins events in Vanus Connect, follow these steps:
 
 </TabItem>
 
-<TabItem label="Script" value="Script">
+<TabItem label="Script" value="script">
 
 1. Click on **Manage Jenkins**①.
 

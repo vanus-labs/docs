@@ -15,7 +15,7 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
 
-<TabItem label="Plugin" value="Plugin">
+<TabItem label="Plugin" value="plugin">
 
 1. Click on **Manage Jenkins**①.
 
@@ -71,7 +71,7 @@ import TabItem from '@theme/TabItem';
 
 </TabItem>
 
-<TabItem label="Script" value="Script">
+<TabItem label="Script" value="script">
 
 1. Click on **Manage Jenkins**①.
 
