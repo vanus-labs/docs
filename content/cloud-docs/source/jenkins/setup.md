@@ -3,6 +3,9 @@ hide_table_of_contents: true
 hide_title: true
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 ### Prerequisites
 
 - A Jenkins account
@@ -26,10 +29,7 @@ To obtain all Jenkins events in Vanus Connect, follow these steps:
 
 ---
 
-### Configuring Jenkins to Send Webhook Events
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+**Configuring Jenkins to Send Webhook Events**
 
 ### Step 1: Configure webhook
 
