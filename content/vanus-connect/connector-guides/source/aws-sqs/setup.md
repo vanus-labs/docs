@@ -93,7 +93,7 @@ Before obtaining SQS events, you must have:
 
 - **Message retention period⑦ :** This refers to the length of time a message is kept in a queue if it is not deleted. Messages that exceed the maximum message retention period are automatically deleted by Amazon SQS.
 
-- **Delivery Delay⑧:** This determines the amount of time before the first delivery of each message added to the queue. During the delay period, any messages sent to the queue are not visible to consumers.
+- **Delivery delay⑧:** This determines the amount of time before the first delivery of each message added to the queue. During the delay period, any messages sent to the queue are not visible to consumers.
 
 - **Receive message wait time⑨:** This refers to the maximum duration that polling will wait for messages to become available for receiving.
 
@@ -109,7 +109,7 @@ Before obtaining SQS events, you must have:
 
 ![aws-sqs-source-18](images/aws-sqs-source-18.webp)
 
-8. **Copy your SQS Arn**⑯, it will be needed when creating your connection in Vanus.
+8. **Copy your SQS ARN**⑯, it will be needed when creating your connection in Vanus.
 
 ![aws-sqs-source-19](images/aws-sqs-source-19.webp) 
 
