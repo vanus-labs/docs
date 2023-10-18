@@ -36,14 +36,7 @@ To obtain all Jenkins events in Vanus Connect, follow these steps:
 
 2. Log in to your Jenkins account.
 
-### Step 2: Send Jenkins Event
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-<Tabs>
-
-<TabItem label="Plugin" value="plugin">
+### Step 2: Send Jenkins Event Using HTTP Request Plugin
 
 1. Click on **Manage Jenkins**①.
 
@@ -97,9 +90,7 @@ import TabItem from '@theme/TabItem';
 
 ![jenkins-source-15](images/jenkins-source-15.webp)
 
-</TabItem>
-
-<TabItem label="Script" value="script">
+### Step 2: Send Jenkins Event Using a Simple Script
 
 1. Click on **Manage Jenkins**①.
 
@@ -120,10 +111,6 @@ import TabItem from '@theme/TabItem';
 5. Compose your code in the command field, including the Jenkins source connector's copied payload **URL**⑥, and click on **save**⑦.
 
 ![jenkins-source-20](images/jenkins-source-20.webp)
-
-</TabItem>
-
-</Tabs>
 
 :::note
 If you are employing a custom script to transmit events, there is no requirement to install the HTTP Request plugin.
