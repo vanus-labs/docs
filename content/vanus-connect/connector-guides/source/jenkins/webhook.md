@@ -11,11 +11,11 @@ import TabItem from '@theme/TabItem';
 
 2. Log in to your Jenkins account.
 
-## Step 2: Send Events
+## Step 2: Send Jenkins Event
 
 <Tabs>
 
-<TabItem label="Sending Events Using HTTP Request Plugin" value="Sending Events Using HTTP Request Plugin">
+<TabItem label="Plugin" value="Plugin">
 
 1. Click on **Manage Jenkins**①.
 
@@ -71,7 +71,7 @@ import TabItem from '@theme/TabItem';
 
 </TabItem>
 
-<TabItem label="Sending Events Using a Simple Script" value="Sending Events Using a Simple Script">
+<TabItem label="Script" value="Script">
 
 1. Click on **Manage Jenkins**①.
 
