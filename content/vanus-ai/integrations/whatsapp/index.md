@@ -42,9 +42,46 @@ If you find yourself uncertain about which app model to select, please refer to 
 
 ![](images/integration_whatsapp_3.webp)
 
-4. Once authorization is successful, click **Create**④.  
+**Scanning the QR Code**
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+
+<TabItem label="Android" value="android">
+
+4. Tap on the **kebab icon**① to reveal the menu.
+
+5. Select **Linked devices**②.
+
+6. Tap on the **Link a device**③ button.
+
+7. Align your phone's camera with the QR code so that the QR code is completely within the **camera frame**④.
 
 ![](images/integration_whatsapp_4.webp)
+
+</TabItem>
+
+<TabItem label="iOS" value="ios">
+
+4. Tap on the **gear icon**① to reveal the settings menu.
+
+5. Select **Linked Devices**②.
+
+6. Tap on the **Link a Device**③ button.
+
+7. Align your phone's camera with the QR code so that the QR code is completely within the **camera frame**④.
+
+![](images/integration_whatsapp_5.webp)
+
+</TabItem>
+
+</Tabs>
+
+8. Once authorization is successful, click **Create**⑤.  
+
+![](images/integration_whatsapp_6.webp)
 
 ### Step 3: How to use Vanus AI on WhatsApp
 
