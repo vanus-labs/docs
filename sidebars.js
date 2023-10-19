@@ -138,6 +138,7 @@ const sidebars = {
           "vanus-connect/template-guides/github-star/discord",
           "vanus-connect/template-guides/github-issue-open/discord",
           "vanus-connect/template-guides/github-issue-comment/discord",
+          "vanus-connect/template-guides/github-pr-open/discord",
           "vanus-connect/template-guides/shopify-customers-create/mailchimp",
           "vanus-connect/template-guides/github-starred-feishu",
           "vanus-connect/template-guides/github-issue-created-feishu",
