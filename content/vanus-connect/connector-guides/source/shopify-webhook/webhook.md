@@ -1,17 +1,29 @@
 # **Configuring Shopify to Send Webhook Events**
 
-1. Click the copy icon to copy the webhook url.
-![](images/getlink.png)
-2. go to the [Shopify](https://shopify.com) website, sign in to your shop dashboard, and click **settings**.
-![](images/img.png)
-3. From the side menu click on **Notifications**.
-![](images/img_1.png)
-4. Now scroll down to the very bottom of the page and click on **Create webhook**.
-![](images/img_2.png)
-5. Paste the Webhook URL from Vanus Connect that we copied at the beginning. 
-![](images/img_3.png)
-6. Select the **event** you'd like to send to Vanus Connect and set the format to `JSON`.
-![](images/img_4.png)
-7. Finally select the **Latest** version of the webhook API and press **Save**.
+1. Click the **copy icon**① to copy the webhook url.
 
-Note: If you'd like to receive multiple events you can create more webhooks using the same URL.
+![shopify-webhook-source-3](images/shopify-webhook-source-3.webp)
+
+2. go to the [**Shopify**](https://shopify.com) website, sign in to your shop dashboard, and click **Settings**②.
+
+![shopify-webhook-source-4](images/shopify-webhook-source-4.webp)
+
+3. From the side menu click on **Notifications**③.
+
+![shopify-webhook-source-5](images/shopify-webhook-source-5.webp)
+
+4. Now scroll down to the very bottom of the page and click on **Create webhook**④.
+
+![shopify-webhook-source-6](images/shopify-webhook-source-6.webp)
+
+5. Click on the **Event field**⑤ and select the **Event**⑥ you'd like to send to Vanus Connect.
+
+![shopify-webhook-source-7](images/shopify-webhook-source-7.webp)
+
+6. Confirm that the Format is configured as **`JSON`⑦**, paste the Webhook **URL**⑧ that was initially copied from Vanus Connect, choose the **Latest Webhook API version**⑨, and then press **Save**⑩.
+
+![shopify-webhook-source-8](images/shopify-webhook-source-8.webp)
+
+:::note
+If you'd like to receive multiple events you can create more webhooks using the same URL.
+:::

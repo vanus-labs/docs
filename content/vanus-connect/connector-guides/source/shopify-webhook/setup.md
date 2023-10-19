@@ -10,17 +10,25 @@ The Shopify webhook Source is a webhook server that enables you to establish an 
 
 ## Prerequisites
 
-- A [Vanus Cloud account](https://cloud.vanus.ai)
-- A Stripe Account
+- A [**Vanus Cloud account**](https://cloud.vanus.ai)
+- A Shopify Account
 
 ## Getting Started
 
 ### Create a Connection
 
-1. Write a name for your connection.
-   ![img.png](images/connection.png)
-2. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction.
-   ![img.png](images/webhook_setup.png)
-3. Click **next** and finish the configurations.
+To obtain all Shopify Webhook events in Vanus Connect, follow these steps:
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
+![shopify-webhook-source-1](images/shopify-webhook-source-1.webp)
+
+- Write a **Name**① for your connection in Vanus Connect.
+
+- After creating the connection, there are a few more steps. Simply click the **document**② link to open a new page with all the details on how to complete the connection.
+
+![shopify-webhook-source-2](images/shopify-webhook-source-2.webp)
+
+- Select the Event or **Events**③ you wish to forward.
+
+- Click **Next**④ and continue the configuration.
+
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).
