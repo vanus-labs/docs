@@ -31,7 +31,7 @@ https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxxxxxxxxxxx
 
 > ⚠️ Please keep this webhook address properly. Do not publish it on GitHub, blogs, and other publicly accessible sites to avoid it being maliciously called to send spam messages.
 
-![bot-config](https://github.com/vanus-labs/vanus-connect/blob/main/connectors/sink-feishu/feishu-config.png?raw=true)
+![bot-config](feishu-config.webp)
 
 > ⚠️ You must set your signature verification to make sure push messages work.
 
@@ -90,7 +90,7 @@ curl --location --request POST 'localhost:31080' \
 ```
 
 now, you can see a notification from your bot in your group chat.
-![received-notification](https://github.com/vanus-labs/vanus-connect/blob/main/connectors/sink-feishu/received-message.png?raw=true)
+![received-notification](received-message.webp)
 
 ### Clean
 

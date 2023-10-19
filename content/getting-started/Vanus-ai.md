@@ -19,7 +19,7 @@ Become part of our thriving community of businesses and developers who harness t
 
 - Join Vanus AI by visiting [ai.vanus.ai](https://ai.vanus.ai)
 - Sign up to Vanus AI using one of the following methods, GitHub login, Google login, Microsoft login, or by email.
-![](../../static/img/vanuscloud_loginin.png)
+![](../../static/img/vanuscloud_loginin.webp)
 
 - Please provide some information about yourself. Thank you for providing us with the required information to create your account.
-![](../../static/img/user-info.png)
+![](../../static/img/user-info.webp)

@@ -10,4 +10,4 @@ Vanus Open Source (Vanus OSS) is a community-driven, open-source version of Vanu
 ## Getting Started
 
 To install Vanus OSS on your own infrastructure, please refer to the [installation guide instructions](https://docs.vanus.ai/vanus-open-source/installation).
-![](../../static/img/vanusoss.png)
+![](../../static/img/vanusoss.webp)

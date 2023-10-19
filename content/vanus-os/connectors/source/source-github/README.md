@@ -116,7 +116,7 @@ directly and safely on the [Playground](https://play.linkall.com/).
 
 1. We've already exposed the GitHub Source to the internet if you're using the Playground. Go to GitHub-Twitter Scenario
    under Payload
-   URL. ![Payload img](https://raw.githubusercontent.com/vanus-labs/vanus-connect/main/connectors/source-github/payload.png)
+   URL. ![Payload img](payload.webp)
 
 2. Create a GitHub webhook for your repository.
 
