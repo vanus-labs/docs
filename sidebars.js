@@ -47,7 +47,6 @@ const sidebars = {
         "getting-started/understand-vanus-connect-os/concepts",
         "getting-started/understand-vanus-connect-os/features",
         "getting-started/understand-vanus-connect-os/use-cases",
-        "getting-started/understand-vanus-connect-os/roadmap",
       ],
     },
 
