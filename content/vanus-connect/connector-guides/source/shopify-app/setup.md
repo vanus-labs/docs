@@ -75,7 +75,7 @@ Before obtaining Shopify events, you must have:
 
 ### Step 2: Finish the connection in Vanus Connect
 
-1. Write a connection **Name**① without any spaces, input your **Shop Name**② and paste the **Admin API access token**③ into Vanus Connect.
+1. Write a connection **Name**① without any spaces, input your **Shop Name**② and paste the **API Token**③ into Vanus Connect.
 
 ![shopify-app-source-13](images/shopify-app-source-13.webp)
 
