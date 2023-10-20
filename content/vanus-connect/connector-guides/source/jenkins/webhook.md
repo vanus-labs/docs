@@ -1,72 +1,101 @@
-### Configuring Jenkins to Send Webhook Events 
+# Configuring Jenkins to Send Webhook Events
 
-### Step 1: Configure webhook
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-1. Click the copy icon to copy the webhook url
-![copy url](images/copy-webhook-url.png)
+## Step 1: Configure webhook
+
+1. Click the **copy icon**① to copy the webhook url
+
+![jenkins-source-2](images/jenkins-source-2.webp)
 
 2. Log in to your Jenkins account.
 
-#### Sending events using http request plugin
+## Step 2: Send Jenkins Event
 
-1. Click on **Manage Jenkins**.
-![](images/manage%20jenkins.png)
+<Tabs>
 
-2. Navigate to the **Plugins** section.
-![](images/plugins.png)
+<TabItem label="Plugin" value="plugin">
 
-3. Click on **Available plugins**.
-![](images/available%20plugins.png)
+1. Click on **Manage Jenkins**①.
 
-4. Search for **HTTP request**.
-![](images/search-http-plugin.png)
+![jenkins-source-3](images/jenkins-source-3.webp)
 
-5. Select the plugin and click on **Install without restart**.
-![](images/install-http-plugin.png)
+2. Navigate to the **Plugins**② section.
 
-6. Click on **Go back to the top page**.
-![](images/back-to-page.png)
+![jenkins-source-4](images/jenkins-source-4.webp)
 
-7. Access your project by clicking on it.
-![](images/click-into-project.png)
+3. Click on **Available plugins**③.
 
-8. Click on **Configure**.
-![](images/configure%20project.png)
+![jenkins-source-5](images/jenkins-source-5.webp)
 
-9. Scroll down to **Build Steps** and click on **Add build steps**.
-![](images/add-build-step.png)
+4. Search for **http request**④.
 
-10. Select **HTTP Request**.
-![](images/http-request.png)
+![jenkins-source-6](images/jenkins-source-6.webp)
 
-11. Provide the payload URL copied from your Jenkins source connector in Vanus Connect and select HTTP mode.
-![](images/input-webhook-url.png)
+5. **Select**⑤ the plugin and click on **Install without restart**⑥.
 
-12. Click on **Advanced** to see more settings.
-![](images/click-advanced.png)
+![jenkins-source-7](images/jenkins-source-7.webp)
 
-13. Set your desired parameters and click on **Save**.
-![](images/save-settings2.png)
+6. Click on **Go back to the top page**⑦.
 
-#### Sending events using a simple script
+![jenkins-source-8](images/jenkins-source-8.webp)
 
-1. Click on **Manage Jenkins**.
-![](images/manage%20jenkins.png)
+7. Access your **project**⑧ by clicking on it.
 
-2. Click into your project.
-![](images/click-into-project.png)
+![jenkins-source-9](images/jenkins-source-9.webp)
 
-3. Scroll down to **Build Step** and click on **Add build steps**.
-![](images/add-build-step.png)
+8. Click on **Configure**⑨.
 
-4. Click on **Execute Shell**.
-![](images/execute-shell.png)
+![jenkins-source-10](images/jenkins-source-10.webp)
 
-5. Write your code in the command field; ensure you include the payload URL copied from your Jenkins source connector in Vanus Connect.
-![](images/add-vanus-url.png)
+9. Scroll down to **Build Steps**⑩ and click on **Add build step**⑪.
 
-6. Click on save.
-![](images/save-settings3.png)
+![jenkins-source-11](images/jenkins-source-11.webp)
+
+10. Select **HTTP Request**⑫.
+
+![jenkins-source-12](images/jenkins-source-12.webp)
+
+11. Provide the payload **URL**⑬ copied from your Jenkins source connector in Vanus Connect and choose **POST**⑭ as the HTTP mode.
+
+![jenkins-source-13](images/jenkins-source-13.webp)
+
+12. Click on **Advanced**⑮ to see more settings.
+
+![jenkins-source-14](images/jenkins-source-14.webp)
+
+13. Set your desired parameters and click on **Save**⑯.
+
+![jenkins-source-15](images/jenkins-source-15.webp)
+
+</TabItem>
+
+<TabItem label="Script" value="script">
+
+1. Click on **Manage Jenkins**①.
+
+![jenkins-source-16](images/jenkins-source-16.webp)
+
+2. Click into your **project**②.
+
+![jenkins-source-17](images/jenkins-source-17.webp)
+
+3. Scroll down to **Build Steps**③ and click on **Add build step**④.
+
+![jenkins-source-18](images/jenkins-source-18.webp)
+
+4. Click on **Execute shell**⑤.
+
+![jenkins-source-19](images/jenkins-source-19.webp)
+
+5. Compose your code in the command field, including the Jenkins source connector's copied payload **URL**⑥, and click on **save**⑦.
+
+![jenkins-source-20](images/jenkins-source-20.webp)
+
+</TabItem>
+
+</Tabs>
 
 :::note
 If you are employing a custom script to transmit events, there is no requirement to install the HTTP Request plugin.

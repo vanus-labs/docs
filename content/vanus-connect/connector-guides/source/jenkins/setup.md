@@ -11,21 +11,24 @@ The Jenkins source connector enables the retrieval of build information through 
 ## Prerequisites
 
 - A Jenkins account
+- A [**Vanus Cloud account**](https://cloud.vanus.ai).
 
 ---
 
 **Perform the following steps to configure your Jenkins Source**
 
-## Jenkins Connection Settings
+### Jenkins Connection Settings
 
-1. Write a name for your connection in Vanus Connect.
-   ![connection](images/1.png)
+To obtain all Jenkins events in Vanus Connect, follow these steps:
 
-2. After creating the connection, there are a few more steps. Click the link to open a new page with all the details on completing the connection.
-   ![click link](images/warning.png)
+![jenkins-source-1](images/jenkins-source-1.webp)
 
-3. Click **Next** and continue the configuration.
+- Write a **Name**① for your connection in Vanus Connect.
+
+- After creating the connection, there are a few more steps. Simply click the **document**② link to open a new page with all the details on how to complete the connection.
+
+- Click **Next**③ and continue the configuration.
 
 ---
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [***documentation**](https://docs.vanus.ai).
