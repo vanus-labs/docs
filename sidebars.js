@@ -133,6 +133,7 @@ const sidebars = {
         id: "vanus-connect/template-guides",
       },
       items: [
+          "vanus-connect/template-guides/shopify-orders-paid/discord",
           "vanus-connect/template-guides/shopify-orders-paid/google-sheets",
           "vanus-connect/template-guides/shopify-product-create/google-sheets",
           "vanus-connect/template-guides/github-star/discord",
