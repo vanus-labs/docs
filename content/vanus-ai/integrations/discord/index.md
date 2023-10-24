@@ -114,15 +114,19 @@ In the next steps, we will go to the Discord website or Application to create ou
 
 ![ai_integration_discord21](images/ai_integration_discord21.webp)
 
-17. Choose your **Server**㉑ and press **Continue**㉒.
+:::note
+The **URL**㉑ is a website link that directs you to a page where you need to authorize your newly created bot to access a Discord server.
+:::
+
+17. Choose your **Server**㉒ and press **Continue**㉓.
 
 ![ai_integration_discord22](images/ai_integration_discord22.webp)
 
-18. Click on **Authorize**㉓.
+18. Click on **Authorize**㉔.
 
 ![ai_integration_discord23](images/ai_integration_discord23.webp)
 
-19. Your Bot has been successfully **authorized**㉔.
+19. Your Bot has been successfully **authorized**㉕.
 
 ![ai_integration_discord24](images/ai_integration_discord24.webp)
 
