@@ -23,12 +23,14 @@ To obtain all Shopify Webhook events in Vanus Connect, follow these steps:
 
 - Write a **Name**① for your connection in Vanus Connect.
 
-- After creating the connection, there are a few more steps. Simply click the **document**② link to open a new page with all the details on how to complete the connection.
+- Open the **How to use this URL**② document in a new tab to see all the details on how to complete the connection.
+
+- Copy the Webhook URL by clicking on the **copy icon**③
 
 ![shopify-webhook-source-2](images/shopify-webhook-source-2.webp)
 
-- Select the Event or **Events**③ you wish to forward.
+- Select the Event or **Events**④ you wish to forward.
 
-- Click **Next**④ and continue the configuration.
+- Click **Next**⑤ and continue the configuration.
 
 Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).
