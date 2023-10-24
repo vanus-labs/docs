@@ -20,41 +20,39 @@ To obtain all Shopify Webhook events in Vanus Connect, follow these steps:
 
 - Write a **Name**① for your connection in Vanus Connect.
 
-- After creating the connection, there are a few more steps. Simply click the **document**② link to open a new page with all the details on how to complete the connection.
+- Open the **How to use this URL**② document in a new tab to see all the details on how to complete the connection.
+
+- Copy the Webhook URL by clicking on the **copy icon**③
 
 ![shopify-webhook-source-2](images/shopify-webhook-source-2.webp)
 
-- Select the Event or **Events**③ you wish to forward.
+- Select the Event or **Events**④ you wish to forward.
 
-- Click **Next**④ and continue the configuration.
+- Click **Next**⑤ and continue the configuration.
 
 ---
 
 ### Configuring Shopify to Send Webhook Events
 
-1. Click the **copy icon**① to copy the webhook url.
+1. go to the [**Shopify**](https://shopify.com) website, sign in to your shop dashboard, and click **Settings**①.
 
 ![shopify-webhook-source-3](images/shopify-webhook-source-3.webp)
 
-2. go to the [**Shopify**](https://shopify.com) website, sign in to your shop dashboard, and click **Settings**②.
+2. From the side menu click on **Notifications**②.
 
 ![shopify-webhook-source-4](images/shopify-webhook-source-4.webp)
 
-3. From the side menu click on **Notifications**③.
+3. Now scroll down to the very bottom of the page and click on **Create webhook**③.
 
 ![shopify-webhook-source-5](images/shopify-webhook-source-5.webp)
 
-4. Now scroll down to the very bottom of the page and click on **Create webhook**④.
+4. Click on the **Event field**④ and select the **Event**⑤ you'd like to send to Vanus Connect.
 
 ![shopify-webhook-source-6](images/shopify-webhook-source-6.webp)
 
-5. Click on the **Event field**⑤ and select the **Event**⑥ you'd like to send to Vanus Connect.
+5. Confirm that the Format is configured as **`JSON`⑥**, paste the Webhook **URL**⑦ that was initially copied from Vanus Connect, choose the **Latest Webhook API version**⑧, and then press **Save**⑨.
 
 ![shopify-webhook-source-7](images/shopify-webhook-source-7.webp)
-
-6. Confirm that the Format is configured as **`JSON`⑦**, paste the Webhook **URL**⑧ that was initially copied from Vanus Connect, choose the **Latest Webhook API version**⑨, and then press **Save**⑩.
-
-![shopify-webhook-source-8](images/shopify-webhook-source-8.webp)
 
 :::note
 If you'd like to receive multiple events you can create more webhooks using the same URL.
