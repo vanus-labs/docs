@@ -6,8 +6,6 @@ You can receive notifications when specific events occur in a repository by addi
 
 This guide will help you get a Discord notification whenever an issue is opened in your repository.
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/3hJlhDUsOYY" title="YouTube video player" frameBorder="0" allowFullScreen={true} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-
 ## Getting Started
 
 ### Step 1: Configure the Source - Authorize GitHub and select a GitHub repo
