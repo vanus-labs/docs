@@ -1,89 +1,89 @@
-### Configuring Zoho CRM to Send Webhook Events 
+# Configuring Zoho CRM to Send Webhook Events 
 
 ### Step 1: Configure webhook
 
-1. Click the copy icon to copy the webhook url
-![copy url](images/copy-webhook.png)
+1. Log in to your [**Zoho CRM account**](https://crm.zoho.com/crm/org813836165/tab/Home/begin)
 
-2. Log in to your [Zoho CRM account](https://crm.zoho.com/crm/org813836165/tab/Home/begin)
+2. Navigate to the Setup page by clicking on the **gear icon**①.
 
-3. Navigate to the **Setup** page by clicking on the gear icon.
-![setup](images/settings.png)
+![zohocrm-source-2](images/zohocrm-source-2.webp)
 
-4. Click on **Actions**.
-![actions](images/actions.png)
+3. Click on **Actions**②.
 
-5. Click on **Webhooks**.
-![webhooks](images/webhooks.png)
+![zohocrm-source-3](images/zohocrm-source-3.webp)
 
-6. Click on the **Configure Webhook** button.
-![wh config](images/configure-webhook.png)
+4. Click on **Webhooks**③.
 
-7. Name your Webhook.
-![wh name](images/name-webhook.png)
+![zohocrm-source-4](images/zohocrm-source-4.webp)
 
-8. Provide the payload URL copied from your Zoho CRM source connector in Vanus Connect and select **General** authorization type.
-![add url](images/add-url.png)
+5. Click on the **Configure Webhook**④ button.
 
-9. Select the event you want to receive notification for.
-![module](images/choose-module.png)
+![zohocrm-source-5](images/zohocrm-source-5.webp)
 
-10. Specify the necessary parameters.
-![param](images/add-parameter.png)
+6. **Name**⑤ your Webhook, paste the payload URL retrieved from Vanus Connect into the **URL to Notify**⑥ field, and make your **Module**⑦.
 
-11. Specify the body type.
-![body type](images/body-type.png)
+![zohocrm-source-6](images/zohocrm-source-6.webp)
 
-*You can choose to use **Form-Data** or **Raw** from the picklist, to configure the body session*
+7. Click on **Add parameter**⑧ to specify the necessary parameters.
 
-#### Raw
+![zohocrm-source-7](images/zohocrm-source-7.webp)
 
-![raw data](images/raw-data-option.png)
+8. Specify the **Body Type**⑨.
 
-If you choose the Raw Data option as the body type in the text editor, you have the flexibility to write your own data values. You can input data in various formats such as XML, JSON, HTML, or plain text. Additionally, you can utilize the # merge field feature to reference specific field values within the script.
+![zohocrm-source-8](images/zohocrm-source-8.webp)
 
-#### Form Data
+:::note
+You can choose to use **Form-Data** or **Raw** from the picklist, to configure the body session.
+:::
 
-![form data](images/form-data-option.png)
+- **Raw:** If you choose the Raw Data option as the body type in the text editor, you have the flexibility to write your own data values. You can input data in various **Format**⑩ such as XML, JSON, HTML, or plain text. Additionally, you can utilize the # merge field feature to reference specific field values within the script.
 
-This feature enables you to construct the body section of the URL by seamlessly appending the parameter name, parameter type, or parameter value. You can create Form-Data in three distinct ways: **Module Parameters**, **Custom Parameters**, and **User-Defined Parameters**.
+![zohocrm-source-9](images/zohocrm-source-9.webp)
 
-12. Save your settings.
-![save settings](images/save-settings.png)
+- **Form Data:** This feature enables you to construct the body section of the URL by seamlessly appending the parameter name, parameter type, or parameter value. You can create Form-Data in three distinct ways: **Module Parameters**⑪, **Custom Parameters**⑫, and **User defined Format**⑬.
+
+![zohocrm-source-10](images/zohocrm-source-10.webp)
+
+9. Once you have configured your settings, remember to **Save**⑭ them.
+
+![zohocrm-source-11](images/zohocrm-source-11.webp)
 
 ---
 
 ### Step 2: Associate webhook to a workflow rule
 
-1. Select **Workflow Rules**.
-![workflow rules](images/workflow-rules-1.png)
+1. Select **Workflow Rules**①.
 
-2. Click on **Create Rule**.
-![create rule](images/create-rule.png)
+![zohocrm-source-12](images/zohocrm-source-12.webp)
 
-3. Select the appropriate event. Name your rule and click **Next**.
-![next](images/create-rule-1.png)
+2. Click on **Create Rule**②.
 
-4. Specify workflow rule parameters.
-![sp](images/workflow-rule-parameter.png)
+![zohocrm-source-13](images/zohocrm-source-13.webp)
 
-5. Click **Next**.
-![wp](images/set-workflow-param.png)
+3. Choose your **Module**③, provide a **Rule Name**④, and proceed by selecting **Next**⑤.
 
-6. Specify the conditions to be met for the event to be triggered.
-![conditions](images/complete-workflow-setup.png)
+![zohocrm-source-14](images/zohocrm-source-14.webp)
 
-7. Click on **Instant Actions** and select **Webhook**.
-![IA](images/select-webhook.png)
+4. Select **Record action**⑥.
 
-8. Select the required webhook and click on **Associate**.
-![associate](images/select-webhook-url.png)
+![zohocrm-source-15](images/zohocrm-source-15.webp)
 
-9. Click **Save**.
-![final setting](images/save-final-settings.png)
+5. Select the **action**⑦ to record and click **Next**⑧.
 
-:::note
-You can navigate to **Webhooks** to monitor webhooks that have been successfully sent.
-:::
+![zohocrm-source-16](images/zohocrm-source-16.webp)
 
-![monitor webhook](images/monitor-sent-webhook.png)
+6. Specify the **CONDITION**⑨ to be met for the event to be triggered, and then click **Next**⑩.
+
+![zohocrm-source-17](images/zohocrm-source-17.webp)
+
+7. Select **Webhook**⑪.
+
+![zohocrm-source-18](images/zohocrm-source-18.webp)
+
+8. **Select**⑫ the created webhook and click on **Associate**⑬.
+
+![zohocrm-source-19](images/zohocrm-source-19.webp)
+
+9. Click **Save**⑭.
+
+![zohocrm-source-20](images/zohocrm-source-20.webp)

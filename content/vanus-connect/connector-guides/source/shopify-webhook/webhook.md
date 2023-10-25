@@ -23,7 +23,3 @@
 :::note
 If you'd like to receive multiple events you can create more webhooks using the same URL.
 :::
-
----
-
-Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).
