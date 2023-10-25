@@ -92,11 +92,11 @@ You can structure your events to suit your specific requirements, create connect
 
 <TabItem label="Stripe" value="stripe">
 
-1. Paste the Webhook URL into the **Webhook URL**① field, and click on **Display sample events**②.
+1. Paste the Webhook URL into the **Webhook URL**① field, and click on **Display sample events**② for reference.
 
 ![slack-sink-13](images/slack-sink-13.webp)
 
-2. Compose your preferred message, then type **`$`③** followed by the desired event to access a **list of associated event values**④, and choose the one you prefer.
+2. Compose your preferred message, then type **`$` followed by the desired event③** to access a **list of associated event values**④, and choose the one you prefer.
 
 ![slack-sink-14](images/slack-sink-14.webp)
 

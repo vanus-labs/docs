@@ -75,11 +75,11 @@ import TabItem from '@theme/TabItem';
 
 <TabItem label="Shopify" value="shopify">
 
-1. Paste the Webhook URL into the **Webhook URL**① field, and click on **Display sample events**②.
+1. Paste the Webhook URL into the **Webhook URL**① field, and click on **Display sample events**② for reference.
 
 ![slack-sink-9](images/slack-sink-9.webp)
 
-2. Compose your preferred message, then type **`$`③** followed by the desired event to access a **list of associated event values**④, and choose the one you prefer.
+2. Compose your preferred message, then type **`$` followed by the desired event③** to access a **list of associated event values**④, and choose the one you prefer.
 
 ![slack-sink-10](images/slack-sink-10.webp)
 
