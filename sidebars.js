@@ -212,6 +212,7 @@ const sidebars = {
             "vanus-connect/connector-guides/sink/http/setup",
             "vanus-connect/connector-guides/sink/mongodb/setup",
             "vanus-connect/connector-guides/sink/mysql/setup",
+            "vanus-connect/connector-guides/sink/outlook/setup",
             "vanus-connect/connector-guides/sink/slack/setup",
             "vanus-connect/connector-guides/sink/slack-app/setup",
             "vanus-connect/connector-guides/sink/snowflake/setup",
