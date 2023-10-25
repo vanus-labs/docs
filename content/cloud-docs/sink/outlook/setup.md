@@ -25,7 +25,7 @@ Before forwarding events to Outlook, you must have:
 
 ![outlook-sink-2](images/outlook-sink-2.webp)
 
-3. Type in your **Password**④ and click **Next**⑤.
+3. Type in your **Password**④ and click **Sign in**⑤.
 
 ![outlook-sink-3](images/outlook-sink-3.webp)
 
@@ -70,7 +70,7 @@ You can structure your events to suit your specific requirements, create connect
 
 ![outlook-sink-9](images/outlook-sink-9.webp)
 
-2. Click **Display sample events**④ to see a **Sample Event**⑤ for reference. Then input **`$` followed by the desired event⑥** to access a **list of corresponding events and values**⑦.
+2. Click **Display sample events**④ to see a **Sample Event**⑤ for reference. Then input **`$` followed by the desired event⑥** to access a **list of corresponding event values**⑦.
 
 ![outlook-sink-10](images/outlook-sink-10.webp)
 

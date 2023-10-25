@@ -6,7 +6,7 @@ This guide contains information to set up an Outlook Sink in Vanus Connect.
 
 Outlook is a Microsoft email application and productivity tool that helps users manage their emails and offers additional features such as calendar management, contact organization, task tracking, note-taking, and web browsing. It's widely used for efficient communication and time management in both personal and professional settings.
 
-The Outlook Sink Connector allows you to send events from your Outlook account to external sources.
+The Outlook Sink Connector allows you to utilize your Outlook account in sending events to external sources, and also receive events from external sources into your Outlook account.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ Before forwarding events to Outlook, you must have:
 
 ![outlook-sink-2](images/outlook-sink-2.webp)
 
-3. Type in your **Password**④ and click **Next**⑤.
+3. Type in your **Password**④ and click **Sign in**⑤.
 
 ![outlook-sink-3](images/outlook-sink-3.webp)
 
@@ -75,7 +75,7 @@ You can structure your events to suit your specific requirements, create connect
 
 ![outlook-sink-9](images/outlook-sink-9.webp)
 
-2. Click **Display sample events**④ to see a **Sample Event**⑤ for reference. Then input **`$` followed by the desired event⑥** to access a **list of corresponding events and values**⑦.
+2. Click **Display sample events**④ to see a **Sample Event**⑤ for reference. Then input **`$` followed by the desired event⑥** to access a **list of corresponding event values**⑦.
 
 ![outlook-sink-10](images/outlook-sink-10.webp)
 
