@@ -66,9 +66,62 @@ If you have created a Slack App already, you can skip Step 1 and directly go to 
 
 ### Step 3: Slack Connection Settings
 
-1. Paste the Webhook URL into the **Webhook URL**① field, and click on **Next**② to finish the configuration.
+**Complete SetUp Based On Source Connector**
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+
+<TabItem label="Shopify" value="shopify">
+
+1. Paste the Webhook URL into the **Webhook URL**① field, and click on **Display sample events**②.
 
 ![slack-sink-9](images/slack-sink-9.webp)
+
+2. Compose your preferred message, then type **`$`③** followed by the desired event to access a **list of associated event values**④, and choose the one you prefer.
+
+![slack-sink-10](images/slack-sink-10.webp)
+
+3. You can structure the content as you prefer and fill in as many **values**⑤ as you wish to receive.
+
+![slack-sink-11](images/slack-sink-11.webp)
+
+4. Click **Submit**⑥ to finish the configuration process.
+
+![slack-sink-12](images/slack-sink-12.webp)
+
+:::note
+You can structure your events to suit your specific requirements, create connections for different scenarios, or take advantage of our pre-existing connection templates for a more organized approach to sending events.
+:::
+
+</TabItem>
+
+<TabItem label="Stripe" value="stripe">
+
+1. 1. Paste the Webhook URL into the **Webhook URL**① field, and click on **Display sample events**② for reference.
+
+![slack-sink-13](images/slack-sink-13.webp)
+
+2. Compose your preferred message, then type **`$` followed by the desired event③** to access a **list of associated event values**④, and choose the one you prefer.
+
+![slack-sink-14](images/slack-sink-14.webp)
+
+3. You can structure the content as you prefer and fill in as many **values**⑤ as you wish to receive.
+
+![slack-sink-15](images/slack-sink-15.webp)
+
+4. Click **Submit**⑥ to finish the configuration process.
+
+![slack-sink-16](images/slack-sink-16.webp)
+
+:::note
+You can structure your events to suit your specific requirements, create connections for different scenarios, or take advantage of our pre-existing connection templates for a more organized approach to sending events.
+:::
+
+</TabItem>
+
+</Tabs>
 
 ---
 
