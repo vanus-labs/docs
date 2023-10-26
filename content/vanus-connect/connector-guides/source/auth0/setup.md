@@ -13,7 +13,6 @@ The Auth0 Source is a webhook server that enables you to establish an endpoint f
 Before obtaining Auth0 events, you must have:
 
 - An Auth0 account with administrative privileges
-
 - A [Vanus Cloud account](https://cloud.vanus.ai)
 
 ## Getting Started

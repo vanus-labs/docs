@@ -6,7 +6,7 @@ hide_title: true
 ### Prerequisites
 
 - An Auth0 account with administrative privileges
-
+- A [**Vanus Cloud account**](https://cloud.vanus.ai).
 ---
 
 **Perform the following steps to configure your Auth0 Source**
