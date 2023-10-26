@@ -30,6 +30,7 @@
 
 ![auth0_webhook_6.webp](images/auth0_webhook_6.webp)
 
->  **Caution** <br>
+**Caution**
+
 At this time you can only select one event. 
 
