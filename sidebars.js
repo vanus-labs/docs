@@ -203,6 +203,7 @@ const sidebars = {
           items: [
             "vanus-connect/connector-guides/sink/aws-rds-mysql/setup",
             "vanus-connect/connector-guides/sink/aws-s3/setup",
+            "vanus-connect/connector-guides/sink/cloudevents/setup",
             "vanus-connect/connector-guides/sink/dingtalk/setup",
             "vanus-connect/connector-guides/sink/discord/setup",
             "vanus-connect/connector-guides/sink/doris/setup",

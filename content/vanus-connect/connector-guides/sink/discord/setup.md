@@ -10,7 +10,7 @@ Using Discord Sink connector in Vanus Connect, you can easily forward real-time 
 
 ## Prerequisites
 
-Before forwarding events to Slack, you must have:
+Before forwarding events to Discord, you must have:
 
 - A Discord Account
 - A [Vanus Cloud account](https://cloud.vanus.ai)

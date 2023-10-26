@@ -20,10 +20,12 @@ Before obtaining Payload URL to receive events, you must have:
 
 To set up CloudEvents in Vanus Connect, follow these steps:
 
-1.  Write a name for your connection.
-![](images/connection.png) 
-2. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction.
-![img.png](images/webhook_setup.png)
-3. Click **`Next`** to save the Grafana Source.
+- Write a **Name**① for your connection in Vanus Connect. 
+
+- After creating the connection, there are a few more steps. Simply click the **Link**② to open a new page with all the details on how to complete the connection. 
+
+- Click **Next**③ and continue the configuration.
+
+![](images/cloudevents_1.webp)
 
 Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
