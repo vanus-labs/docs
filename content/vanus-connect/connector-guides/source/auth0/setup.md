@@ -13,17 +13,21 @@ The Auth0 Source is a webhook server that enables you to establish an endpoint f
 Before obtaining Auth0 events, you must have:
 
 - An Auth0 account with administrative privileges
+
 - A [Vanus Cloud account](https://cloud.vanus.ai)
 
 ## Getting Started
 
 ### Create your connection in Vanus Connect
 
-1. Write a name for your connection.
-![](images/1.png)
-2. After you finish creating the connection, there will be more steps. Please click the link to open a new tab with the following instruction.
-![](images/2.png)
-3. Click **Next** and continue the configuration.
+- Write a **Name**① for your connection.
 
+- After you finish creating the connection, there will be more steps. Please click the **Link**② to open a new tab with the following instruction.
+
+- Select the **Events**③ you want to receive.
+
+- Click **Next**④ and continue the configuration.
+
+![auth0_1.webp](images/auth0_1.webp)
 
 Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
