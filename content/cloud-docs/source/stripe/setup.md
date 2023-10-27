@@ -13,12 +13,13 @@ hide_title: true
 
 ### Stripe Connection Settings
 
-1. Write a name for your connection in Vanus Connect.
-   ![img.png](images/1.png)
-2. After creating the connection, there are a few more steps. Simply click the link to open a new page with all the details on how to complete the connection.
-   ![](images/warning.png)
+1. Write a **Name**① for your connection.
 
-3. Click **next** and finish the configurations.
+![stripe_source_1.webp](images/stripe_source_1.webp)
+
+2. Select the **Events**② you want and click **Next**③.
+
+![stripe_source_2.webp](images/stripe_source_2.webp)
 
 ---
 
