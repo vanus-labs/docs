@@ -28,13 +28,9 @@ Before forwarding events to Google Sheets, you must have:
 
 ![google-sheets-1](images/google-sheets-1.webp)
 
-3. Copy the `ID`② of the spreadsheet found in the link.
+3. Copy the **Spreadsheet URL**②.
 
 ![google-sheets-2](images/google-sheets-2.webp)
-
-:::note
-The spreadsheet's ID consists of the alphanumeric characters located between `d/` and `/edit` in the URL.
-:::
 
 ---
 
@@ -115,13 +111,65 @@ import TabItem from '@theme/TabItem';
 
 2. Return to Vanus Cloud and complete your configuration.
 
-- Paste the **Spreadsheet ID**② `179S9nzv4xaRtI07lPw1tYRP9l65IZLF5zDN6C8r30oM` that was copied from Step 1.
+- Paste the **Spreadsheet URL**② that was copied from Step 1.
 
 - Paste the **Default Sheet Name**③: `Sheet1`.
 
-- Click **Next**④ to continue.
-
 ![google-sheets-15](images/google-sheets-15.webp)
+
+### Complete SetUp Based On Source Connector
+
+<Tabs>
+
+<TabItem label="AWS" value="aws">
+
+1. Click on **Display sample events**① for reference and click on **Add More**② to add events.
+
+![google-sheets-16](images/google-sheets-16.webp)
+
+2. **Input key**③ and search for the corresponding **value**④ for the event you want.
+
+![google-sheets-17](images/google-sheets-17.webp)
+
+3. You can fill in as many **key-value pairs**⑤ as you wish to receive.
+
+![google-sheets-18](images/google-sheets-18.webp)
+
+4. Click **Submit**⑥ to finish the configuration process.
+
+![google-sheets-19](images/google-sheets-19.webp)
+
+:::note
+You can structure your events to suit your specific requirements, create connections for different scenarios, or take advantage of our pre-existing connection templates for a more organized approach to sending events.
+:::
+
+</TabItem>
+
+<TabItem label="Shopify" value="shopify">
+
+1. Click on **Display sample events**① for reference and click on **Add More**② to add events.
+
+![google-sheets-20](images/google-sheets-20.webp)
+
+2. **Input key**③ and search for the corresponding **value**④ for the event you want.
+
+![google-sheets-21](images/google-sheets-21.webp)
+
+3. You can fill in as many **key-value pairs**⑤ as you wish to receive.
+
+![google-sheets-22](images/google-sheets-22.webp)
+
+4. Click **Submit**⑥ to finish the configuration process.
+
+![google-sheets-23](images/google-sheets-23.webp)
+
+:::note
+You can structure your events to suit your specific requirements, create connections for different scenarios, or take advantage of our pre-existing connection templates for a more organized approach to sending events.
+:::
+
+</TabItem>
+
+</Tabs>
 
 ---
 
