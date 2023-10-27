@@ -6,20 +6,22 @@ hide_title: true
 ### Prerequisites
 
 - An Auth0 account with administrative privileges
-
+- A [**Vanus Cloud account**](https://cloud.vanus.ai).
 ---
 
 **Perform the following steps to configure your Auth0 Source**
 
 ### Auth0 Connection Settings
 
-1. Write a name for your connection in Vanus Connect.
-   ![](images/1.png)
+- Write a **Name**① for your connection.
 
-2. After creating the connection, there are a few more steps. Click the link to open a new page with all the details on completing the connection.
-![](images/warning.png)
+- After you finish creating the connection, there will be more steps. Please click the **Link**② to open a new tab with the following instruction.
 
-3. Click **Next** and continue the configuration.
+- Select the **Events**③ you want to receive.
+
+- Click **Next**④ and continue the configuration.
+
+![auth0_1.webp](images/auth0_1.webp)
 
 ---
 
