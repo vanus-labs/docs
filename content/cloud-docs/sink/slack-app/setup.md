@@ -38,7 +38,7 @@ hide_title: true
 
 ![slack-app-sink-5](images/slack-app-sink-5.webp)
 
-3. Add `chat:write`③ and `chat:write:public`④ permission to your app.
+3. Add **chat:write**③ and **chat:write:public**④ permission to your app.
 
 ![slack-app-sink-6](images/slack-app-sink-6.webp)
 
@@ -56,11 +56,57 @@ hide_title: true
 
 ---
 
-### Step 3: Slack App Connection Settings
 
-1. Paste the **Bot User OAuth Token**① and click **Next**② to continue.
+### Step 3: Slack Connection Settings
 
-![slack-app-sink-10](images/slack-app-sink-10.webp)
+**Complete SetUp Based On Source Connector**
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+
+<TabItem label="Shopify" value="shopify">
+
+1. Paste the **Bot User OAuth Token**① field, and click on **Display sample events**② for reference.
+
+![slack-sink](images/slack_app_sink.webp)
+
+2. Compose your preferred message, then type **`$` followed by the desired event**③ to access a **list of associated event values**④, and choose the one you prefer.
+
+![slack_app_sink](images/slack_app_sink_2.webp)
+
+3. You can structure the content as you prefer and fill in as many **values**⑤ as you wish to receive.Click **Submit**⑥ to finish the configuration process.
+
+![slack_app_sink](images/slack_app_sink_3.webp)
+
+:::note
+You can structure your events to suit your specific requirements, create connections for different scenarios, or take advantage of our pre-existing connection templates for a more organized approach to sending events.
+:::
+
+</TabItem>
+
+<TabItem label="Stripe" value="stripe">
+
+1. Paste the **Bot User OAuth Token**① field, and click on **Display sample events**② for reference.
+
+![slack-sink](images/slack_app_sink.webp)
+
+2. Compose your preferred message, then type **`$` followed by the desired event③** to access a **list of associated event values**④, and choose the one you prefer.
+
+![slack_app_sink](images/slack_app_sink_2.webp)
+
+3. You can structure the content as you prefer and fill in as many **values**⑤ as you wish to receive. Click **Submit**⑥ to finish the configuration process.
+
+![slack_app_sink](images/slack_app_sink_3.webp)
+
+:::note
+You can structure your events to suit your specific requirements, create connections for different scenarios, or take advantage of our pre-existing connection templates for a more organized approach to sending events.
+:::
+
+</TabItem>
+
+</Tabs>
 
 ---
 

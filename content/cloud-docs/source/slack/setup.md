@@ -13,36 +13,32 @@ hide_title: true
 
 ### Step 1: Create and Install an App in Slack
 
-1. Go to [Slack API](https://api.slack.com/apps), and click **Create New App**.
-   ![](images/img.png)
-2. Select **From Scratch.**
-![](images/img_1.png)
-3. Set the app name and Workspace.
-![](images/img_2.png)
+1. Go to [Slack API](https://api.slack.com/apps), and click **Create New App**①.
 
----
+![slack_source_1.webp](./images/slack_source_1.webp) 
+
+2. Select **From Scratch**②.
+
+![slack_source_2.webp](./images/slack_source_2.webp) 
+
+3. Set the **App Name**③, **Workspace**④, and click the **Create App**⑤ button.
+
+![slack_source_3.webp](./images/slack_source_3.webp) 
 
 ### Step 2: Get App Credentials
 
-1. Go to **Basic Information**.
+1. Go to **Basic Information**①.
 
-![](images/img_3.png)
+![slack_source_4.webp](./images/slack_source_4.webp) 
 
-2. Scroll down to **App Credentials** and copy the following credentials.
- - Verification Token
- - Signing Secret
+2. Scroll down to **App Credentials** and copy the **Verification Token**②, and **Signing Secret**③.
 
-![](images/img_4.png)
+![slack_source_5.webp](./images/slack_source_5.webp) 
 
-4. Paste the two credentials from Slack as configurations.
+3. Go to your Vanus Connection, Give the connection a **Name**④, paste the **Verification Token**⑤ and **Signing Secret**⑥ from Slack as configurations, select the **Events**⑦, and click **Next**⑧.
 
-![](images/token%20and%20secret.png)
+![slack_source_6.webp](./images/slack_source_6.webp) 
 
-5. Once the connection is established there will be more steps. Click on the link in the yellow note.
-
-![](images/2.png)
-
-5. Click **Next** and continue the configuration.   
 
 ---
 

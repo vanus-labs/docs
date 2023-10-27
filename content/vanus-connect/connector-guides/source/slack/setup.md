@@ -6,7 +6,7 @@ This guide contains information to set up a Slack Source in Vanus Connect.
 
 Slack is a cloud-based team collaboration platform that allows users to communicate, share files, and integrate with other tools and services.
 
-Our Slack Source connector, lets you receive events when users join, message, react etc... 
+Our Slack Source connector, lets you receive events when users join, message, react etc.
 
 ## Prerequisites
 
@@ -18,68 +18,74 @@ Before obtaining Slack events, you must have:
 
 ### Step 1: Create an app in Slack
 
-1. Go to [Slack API](https://api.slack.com/apps), and click **Create New App**.
-   ![](images/img.png)
-2. Select **From Scratch.**
-![](images/img_1.png)
-3. Set the app name and Workspace.
-![](images/img_2.png)
+1. Go to [Slack API](https://api.slack.com/apps), and click **Create New App**①.
 
----
+![slack_source_1.webp](./images/slack_source_1.webp) 
+
+2. Select **From Scratch**②.
+
+![slack_source_2.webp](./images/slack_source_2.webp) 
+
+3. Set the **App Name**③, **Workspace**④, and click the **Create App**⑤ button.
+
+![slack_source_3.webp](./images/slack_source_3.webp) 
 
 ### Step 2: Get App Credentials
 
-1. Go to **Basic Information**.
-![](images/img_3.png)
-2. Scroll down to **App Credentials** and copy the following credentials.
- - Verification Token
- - Signing Secret
-![](images/img_4.png)
-3. Don't close this page but continue in Vanus Connect.
-4. Paste the two credentials from Slack as configurations.
-      ![](images/token%20and%20secret.png)
-5. Click **Next** and continue the configuration. 
+1. Go to **Basic Information**①.
+
+![slack_source_4.webp](./images/slack_source_4.webp) 
+
+2. Scroll down to **App Credentials** and copy the **Verification Token**②, and **Signing Secret**③.
+
+![slack_source_5.webp](./images/slack_source_5.webp) 
+
+3. Go to your Vanus Connection, Give the connection a **Name**④, paste the **Verification Token**⑤ and **Signing Secret**⑥ from Slack as configurations, select the **Events**⑦, and click **Next**⑧.
+
+![slack_source_6.webp](./images/slack_source_6.webp) 
 
 ---
 
 ### Step 3: Configure Event Subscription
-1. Click the **copy icon** to copy the webhook URL.
-![](images/img_10.png)
-2. Go back to **Slack API**.
-![](images/img_5.png)
-3. Now click on **Event Subscriptions** in the side menu.
-![](images/img_6.png)
-4. **Enable Events** by turning on the switch.
-![](images/img_7.png)
-5. Use the URL we've previously copied and paste it into **Request URL**. You should see a green `Verified`, indicating our Source is verified by Slack.
-![](images/img_8.png)
 
----
+1. Click on the **Connection Name**①.
 
-### Step 4: Subscribe to bot events
+![slack_sheets_12.webp](./images/slack_sheets_12.webp)
 
-Generally speaking, Slack Source can subscribe to any events you need from Slack.
+2. Click the **copy icon**② to copy the webhook URL.
 
-But, if you're using some **Vanus Templates** like `Send a custom greeting message when new members join the Slack channel`, then subscribe to `member_joined_channel`.
+![slack_sheets_13.webp](./images/slack_sheets_13.webp)
 
-#### How to subscribe
+3. Go back to your Slack App, and click on **Event Subscriptions**③ in the side menu.
 
-1. Scroll down, click **Subscribe to bot events** and after, you will be able to click **Add Bot User Event**.
-![](images/img_9.png)
-2. Select the events you will like to receive.
-![](images/member_joined.png)
-3. Finally, you can **Save Changes** to complete your configuration.
-![](images/save%20changes.png)
+![slack_sheets_14.webp](./images/slack_sheets_14.webp)
 
----
+4. **Enable Events**④ by turning on the switch, and use the URL we've previously copied and paste it into **Request URL**⑤. You should see a green `Verified`, indicating our Source is verified by Slack.
 
-### Step 5: Install the Slack App to your Slack Workspace
+![slack_sheets_15.webp](./images/slack_sheets_15.webp)
 
-1. Go to **Install Apps** from the side menu and click **Install to Workspace**.
-   ![](images/img_13.png)
-2. Allow it to be installed into your Workspace.
-      ![](images/img_14.png)
-3. Mention your bot in Slack and invite it to the channel.
-   ![](images/add-to-channel.png)
+5. Scroll down, click **Subscribe to bot events**⑥ and after, you will be able to click **Add Bot User Event**⑦.
 
----
+![slack_sheets_16.webp](./images/slack_sheets_16.webp)
+
+6. Select the event **message.channels**⑧.
+
+![slack_sheets_17.webp](./images/slack_sheets_17.webp)
+
+7. Click on **Save Changes**⑨ to complete your configuration.
+
+![slack_sheets_18.webp](./images/slack_sheets_18.webp)
+
+8. Go to **Install App**⑩ from the side menu and click **Install to Workspace**⑪.
+
+![slack_sheets_19.webp](./images/slack_sheets_19.webp)
+
+9. Click on **Allow**⑫.
+
+![slack_sheets_20.webp](./images/slack_sheets_20.webp)
+
+10. Go to your Slack workspace, invite the bot to the channel by clicking **Add to Channel**⑬ button.
+
+![slack_sheets_22.webp](./images/slack_sheets_22.webp)
+
+
