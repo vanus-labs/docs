@@ -10,21 +10,30 @@ The GitHub Source enables you to get specific CloudEvents when particular events
 
 ## Prerequisites
 
+- A [**Vanus Cloud account**](https://cloud.vanus.ai)
 - GitHub Account with proper permissions(`Admin` or `Owner`) to your repository
 - GitHub Repositories
 
+---
+
 ## Getting Started
 
-1. Write a connection name without any spaces.
-   ![img.png](images/connection.png)
-2. Click `Authorize` to authorize to your GitHub account.
-![img.png](images/img.png)
-3. Configure Vanus Connect with your account.
-![](images/selconfig.png)
-4. **Install and Authorize** Vanus to read repos and create webhooks.
-![](images/authorizw.png)
-5. Select a repository to connect and click **`Next`** to save the GitHub Source.
-![](images/selectrepo.png)
+1. Write a connection **Name**① without any spaces and click **`Authorize`②** to authorize to your GitHub account.
 
+![github-source-1](images/github-source-1.webp)
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
+2. Click on **Authorize vanus-labs**③ to grant Vanus permission to access repositories and create webhooks.
+
+![github-source-2](images/github-source-2.webp)
+
+3. Return to the **Vanus Connect**④ page.
+
+![github-source-3](images/github-source-3.webp)
+
+4. Choose a **GitHub Repository**⑤, select the Event or **Events**⑥ you want to receive, and then press **`Next`⑦** to save the GitHub Source.
+
+![github-source-4](images/github-source-4.webp)
+
+---
+
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).
