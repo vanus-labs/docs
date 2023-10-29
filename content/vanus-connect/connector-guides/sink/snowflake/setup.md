@@ -18,6 +18,10 @@ Before forwarding events to Snowflake, you must have:
 
 ## Getting Started
 
+:::note
+If you have a Snowflake account already, you can skip Step 1 and directly go to [**Step 2**](#step-2-obtain-essential-snowflake-data).
+:::
+
 ### Step 1: (Optional) Creating a Snowflake Account
 
 When you sign up for an account on Snowflake, you'll receive 30 days of free access and $400 credits. However, any usage beyond this limit will be charged. The free trial begins once you complete the sign-up process and activate your account.
