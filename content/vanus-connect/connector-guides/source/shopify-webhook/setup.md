@@ -19,19 +19,9 @@ The Shopify webhook Source is a webhook server that enables you to establish an 
 
 To obtain all Shopify Webhook events in Vanus Connect, follow these steps:
 
+- Write a **Name**① for your connection in Vanus Connect, select the Event or **Events**② you wish to forward and click on the **copy icon**③ to copy the Webhook URL.
+
 ![shopify-webhook-source-1](images/shopify-webhook-source-1.webp)
-
-- Write a **Name**① for your connection in Vanus Connect.
-
-- Open the **How to use this URL**② document in a new tab to see all the details on how to complete the connection.
-
-- Copy the Webhook URL by clicking on the **copy icon**③
-
-![shopify-webhook-source-2](images/shopify-webhook-source-2.webp)
-
-- Select the Event or **Events**④ you wish to forward.
-
-- Click **Next**⑤ and continue the configuration.
 
 ---
 
