@@ -14,28 +14,32 @@ hide_title: true
 
 ### Labeling Connection Settings
 
-1. Write a name for your connection in Vanus Connect.
+1. Write a **Name**① for your connection in Vanus Connect.
 
-![](images/name.png)
+![labelling-source-1](images/labelling-source-1.webp)
 
 2. Insert the following:
 
-- **Source Path:** A Source path refers to JSON path origin.
-- **Target Path:** A Target path refers JSON path where the output is placed. The output is a list of labels.
-    
+- **Source Path②:** A Source path refers to a field in the body for labeling.
+- **Target Path③:** A Target path refers to a field in the body where the output, which is a list of labels, is placed.
+
+![labelling-source-2](images/labelling-source-2.webp)
+
 **Example of a Path**
 
-A JSON path would be structured in this format; `$.data.body.title`
+A JSON path is structured in this format: `$.data.body.title`.
 
-In this example, the JSON path specifies the location of the title attribute within the body object of a CloudEvent's data attribute. The path consists of several components, separated by the dot (.) operator:
+In this example, the JSON path designates the location of the title attribute within the body object of a CloudEvent's data attribute. The path comprises multiple components, which are separated by the dot (.) operator:
 
-- `$`: The root object of the JSON document.
-- `data`: The key of a property within the root object.
-- `body`: The key of a property within the data object.
-- `title`: The key of a property within the body object.
-By following this path, you can access the value of the title attribute within the body object of a CloudEvent's data attribute.
+- `$`: Represents the root object of the JSON document.
+- `data`: Refers to the key of a property within the root object.
+- `body`: Signifies the key of a property within the data object.
+- `title`: Indicates the key of a property within the body object.
 
-- Label: The configuration of a label, example below:
+By following this path, you can retrieve the value of the title attribute within the body object of a CloudEvent's data attribute.
+
+- Label: The label configuration is defined as shown in the example below:
+
 ```json
 {
     "label1": {
@@ -46,16 +50,12 @@ By following this path, you can access the value of the title attribute within t
     }
 }
 ```
-If "key1" or "key2" is present in the value of  the `Source Path`, the `Target Path` will have the "label1".
-If "key3" or "key4" or "key5" is present in the value of the `Source Path`, the `Target Path` will have the "label2".
-    
-![img.png](images/source.png)
 
-3. After creating the connection, there are a few more steps. Simply click the link to open a new page with all the details on how to complete the connection.
+If either "key1" or "key2" is found in the field specified by the `Source Path`, the `Target Path` will be set to "label1." Similarly, if "key3," "key4," or "key5" is detected in the `Source Path` field, the `Target Path` will be assigned the value "label2."
 
-![](images/warning.png)
+3. Input your **Label**④  and then click **Next**⑤ to complete the setup.
 
-4. Click **Next** and continue the configuration.
+![labelling-source-3](images/labelling-source-3.webp)
 
 ---
 
