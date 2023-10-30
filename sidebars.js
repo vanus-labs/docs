@@ -211,6 +211,7 @@ const sidebars = {
             "vanus-connect/connector-guides/sink/feishu/setup",
             "vanus-connect/connector-guides/sink/google-sheets/setup",
             "vanus-connect/connector-guides/sink/http/setup",
+            "vanus-connect/connector-guides/sink/mailchimp/setup",
             "vanus-connect/connector-guides/sink/mongodb/setup",
             "vanus-connect/connector-guides/sink/mysql/setup",
             "vanus-connect/connector-guides/sink/outlook/setup",
