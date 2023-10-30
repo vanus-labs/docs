@@ -117,11 +117,11 @@ import TabItem from '@theme/TabItem';
 
 ![google-sheets-15](images/google-sheets-15.webp)
 
-### Complete SetUp Based On Source Connector
+### Complete Set Up
 
-<Tabs>
-
-<TabItem label="AWS" value="aws">
+:::note
+This is a general instruction on how to complete event subscription and configure your connection settings in Vanus AI, which can be applied to any source pairing.
+:::
 
 1. Click on **Display sample events**① for reference and click on **Add More**② to add events.
 
@@ -142,34 +142,6 @@ import TabItem from '@theme/TabItem';
 :::note
 You can structure your events to suit your specific requirements, create connections for different scenarios, or take advantage of our pre-existing connection templates for a more organized approach to sending events.
 :::
-
-</TabItem>
-
-<TabItem label="Shopify" value="shopify">
-
-1. Click on **Display sample events**① for reference and click on **Add More**② to add events.
-
-![google-sheets-20](images/google-sheets-20.webp)
-
-2. **Input key**③ and search for the corresponding **value**④ for the event you want.
-
-![google-sheets-21](images/google-sheets-21.webp)
-
-3. You can fill in as many **key-value pairs**⑤ as you wish to receive.
-
-![google-sheets-22](images/google-sheets-22.webp)
-
-4. Click **Submit**⑥ to finish the configuration process.
-
-![google-sheets-23](images/google-sheets-23.webp)
-
-:::note
-You can structure your events to suit your specific requirements, create connections for different scenarios, or take advantage of our pre-existing connection templates for a more organized approach to sending events.
-:::
-
-</TabItem>
-
-</Tabs>
 
 ---
 
