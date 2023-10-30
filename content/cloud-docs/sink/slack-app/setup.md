@@ -61,7 +61,7 @@ hide_title: true
 **Complete Set Up**
 
 :::note
-This is a general instruction on how to complete event subscription and configure your connection settings in Vanus AI, which can be applied to any source pairing.
+This is a general instruction on how to complete event subscription and configure your connection settings in Vanus Connect, which can be applied to any source pairing.
 :::
 
 1. Paste the **Bot User OAuth Token**① field, and click on **Display sample events**② for reference.

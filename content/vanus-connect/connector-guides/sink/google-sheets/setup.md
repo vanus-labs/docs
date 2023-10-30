@@ -120,7 +120,7 @@ import TabItem from '@theme/TabItem';
 ### Complete Set Up
 
 :::note
-This is a general instruction on how to complete event subscription and configure your connection settings in Vanus AI, which can be applied to any source pairing.
+This is a general instruction on how to complete event subscription and configure your connection settings in Vanus Connect, which can be applied to any source pairing.
 :::
 
 1. Click on **Display sample events**① for reference and click on **Add More**② to add events.
