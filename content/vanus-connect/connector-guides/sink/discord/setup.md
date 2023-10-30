@@ -21,7 +21,7 @@ Before forwarding events to Discord, you must have:
 
 ### Step 1: Create a Server 
 
-1. Go to the Discord application.
+1. Go to the [Discord application](https://discord.com/download).
 
 2. Create a new server by clicking the `+`① icon.
 
@@ -68,13 +68,26 @@ Before forwarding events to Discord, you must have:
 
 ---
 
-### Step 3: Discord Connection Settings
+### Step 3: Personalise Event Structure
 
-1. Go back to Vanus Connect.
+- Go back to Vanus Connect.
 
-2. Paste your webhook URL in the **Webhook URL**① field, and click **Next**② to continue.
+- Paste your webhook URL in the **Webhook URL**① field.
 
-![discord-sink-11](images/discord-sink-11.webp)
+:::note
+This is a general instruction on how to complete event subscription and configure your connection settings in Vanus Connect, which can be applied to any source pairing.
+:::
+
+- Click on **Display sample events**② to see the events. **Select**③ the event field you like to receive on Discord.
+
+![discord-sink-12](images/discord_sink_12.webp)
+
+- **Customise**④ the events as you like and the click **Submit**⑤ button.
+
+![discord-sink-13](images/discord_sink_13.webp)
+
+---
+
 
 
 ## Required Data Format

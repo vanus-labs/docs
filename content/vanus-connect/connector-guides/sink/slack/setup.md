@@ -69,7 +69,7 @@ If you have created a Slack App already, you can skip Step 1 and directly go to 
 **Complete Set Up**
 
 :::note
-This is a general instruction on how to complete event subscription and configure your connection settings in Vanus AI, which can be applied to any source pairing.
+This is a general instruction on how to complete event subscription and configure your connection settings in Vanus Connect, which can be applied to any source pairing.
 :::
 
 1. Paste the Webhook URL into the **Webhook URL**① field, and click on **Display sample events**② for reference.

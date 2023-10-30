@@ -43,7 +43,7 @@ Before forwarding events to Outlook, you must have:
 ### Complete Set Up
 
 :::note
-This is a general instruction on how to complete event subscription and configure your connection settings in Vanus AI, which can be applied to any source pairing.
+This is a general instruction on how to complete event subscription and configure your connection settings in Vanus Connect, which can be applied to any source pairing.
 :::
 
 1. Compose your **Subject**①, specify the recipient's **email address**②, and type in the **Content**③ you want to send.
