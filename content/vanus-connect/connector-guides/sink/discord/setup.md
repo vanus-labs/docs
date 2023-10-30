@@ -68,27 +68,27 @@ Before forwarding events to Discord, you must have:
 
 ---
 
-### Step 3: Personalise Event Structure
+### Step 3: Discord Connection Settings
 
-- Go back to Vanus Connect.
+**To set up Discord Sink in Vanus Connect:**
 
-- Paste your webhook URL in the **Webhook URL**① field.
+1. Go back to Vanus Connect.
+
+### Personalize Event Structure
 
 :::note
-This is a general instruction on how to complete event subscription and configure your connection settings in Vanus Connect, which can be applied to any source pairing.
+This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
 :::
 
-- Click on **Display sample events**② to see the events. **Select**③ the event field you like to receive on Discord.
+1. Paste your webhook URL in the **Webhook URL**① field, click on **Display sample events**② to see the events. And then **Select**③ the event field you like to receive on Discord.
+
+![discord-sink-11](images/discord_sink_11.webp)
+
+2. **Customize**④ the events as you like and the click **Submit**⑤ button.
 
 ![discord-sink-12](images/discord_sink_12.webp)
 
-- **Customise**④ the events as you like and the click **Submit**⑤ button.
-
-![discord-sink-13](images/discord_sink_13.webp)
-
 ---
-
-
 
 ## Required Data Format
 

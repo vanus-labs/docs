@@ -7,9 +7,8 @@ hide_title: true
 
 Before forwarding events to Google Sheets, you must have:
 
-- A Google account with administrative privileges.
-
 - A [**Vanus Cloud Account**](https://cloud.vanus.ai).
+- A Google account with administrative privileges.
 
 ---
 
@@ -112,10 +111,10 @@ import TabItem from '@theme/TabItem';
 
 ![google-sheets-15](images/google-sheets-15.webp)
 
-### Complete Set Up
+### Personalize Event Structure
 
 :::note
-This is a general instruction on how to complete event subscription and configure your connection settings in Vanus Connect, which can be applied to any source pairing.
+This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
 :::
 
 1. Click on **Display sample events**① for reference and click on **Add More**② to add events.
@@ -133,10 +132,6 @@ This is a general instruction on how to complete event subscription and configur
 4. Click **Submit**⑥ to finish the configuration process.
 
 ![google-sheets-19](images/google-sheets-19.webp)
-
-:::note
-You can structure your events to suit your specific requirements, create connections for different scenarios, or take advantage of our pre-existing connection templates for a more organized approach to sending events.
-:::
 
 ---
 
