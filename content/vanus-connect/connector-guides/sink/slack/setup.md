@@ -23,7 +23,7 @@ Before forwarding events to Slack, you must have:
 To set up an app for receiving events in your Slack channel:
 
 :::note
-If you have created a Slack App already, you can skip Step 1 and directly go to [**Step 2**](#step-2-create-an-incoming-webhook).
+If you have created a Slack App already, you can skip Step 1 and directly go to [**Step 2**](#step-2-create-an-incoming-webhook). But ensure that you avoid using the same Slack app for both your Slack source and Slack webhook connections.
 :::
 
 ### Step 1: Create a Slack App
