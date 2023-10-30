@@ -16,234 +16,201 @@ hide_title: true
 
 #### Create a MongoDB account (Optional)
 
-1. Go to the [official MongoDB website](https://www.mongodb.com/) and click on **start free** to create a free account. 
-![](images/mongodb%20start%20free.png)   
+1. Go to the [official MongoDB website](https://www.mongodb.com/) and click on **Start free**① to create a free account. 
 
-2. You can choose to Sign up with google or Create your Atlas account with your preferred username and password. For the purpose of this tutorial, we created our Atlas account.   
-![](images/mongodb%20signup.png)   
-
-> **Note** MongoDB Atlas is a cloud-based and fully-managed version of the MongoDB database. It is designed to simplify the process of deploying and managing MongoDB in the cloud. It includes features such as automatic scaling, backup and recovery, and performance optimization. The MongoDB website refers to Atlas as it is one of the primary ways to use the MongoDB database in a cloud environment.
-
-3. You'll receive a verification email.  
-![](images/verify%20your%20email%20message.png)   
+![mongodb_1.webp](images/mongodb_1.webp)   
 
 
-4. Go to your inbox and verify the email by clicking on **verify**.  
-![](images/verify%20mongodb%20email.png)   
+2. Sign up with your preferred **authentication method**②.   
+
+![mongodb_2.webp](images/mongodb_2.webp)   
 
 
-5. Congratulations. Your email has been successfully verified, click **continue** to be taken to the Atlas setup page.  
-![](images/verified%20email.png)   
+>**Note** MongoDB Atlas is a cloud-based and fully-managed version of the MongoDB database. It is designed to simplify the process of deploying and managing MongoDB in the cloud. It includes features such as automatic scaling, backup and recovery, and performance optimization. The MongoDB website refers to Atlas as it is one of the primary ways to use the MongoDB database in a cloud environment.
+
+##### Project details information   
+
+Answer some few questions like:
+
+- **What is your goal today?:**③ These are questions designed to help MongoDB Inc understand the users goals and requirements for using the MongoDB database in the cloud. The questions are designed to understand the user's specific needs and use case. Based on their responses, MongoDB Inc. can provide personalized guidance and resources to maximize the benefits of their MongoDB deployment, ensuring a successful implementation in the cloud.
 
 
-#### Project details information
+- **What is your preferred language?:**④ This section is a way for MongoDB Inc. to gather information about the user's technical skills and preferences, and to provide customized support to ensure a successful MongoDB deployment. Select your preferred programming language.
 
-![](images/wwelcome%20to%20atlass.png)   
+- Click the **Finish**⑤ button.
 
-- **What is your goal today? :** These are questions designed to help MongoDB Inc understand the users goals and requirements for using the MongoDB database in the cloud. The questions are designed to understand the user's specific needs and use case. Based on their responses, MongoDB Inc. can provide personalized guidance and resources to maximize the benefits of their MongoDB deployment, ensuring a successful implementation in the cloud.
-  
+![mongodb_3.webp](images/mongodb_3.webp)
 
-- **What application are you building? :** This section on the Atlas MongoDB information collection page aims to gather information about the user's specific project to understand their needs and offer customized guidance and resources. This section helps MongoDB Inc. identify trends and patterns in customers' MongoDB use cases to develop new features and functionality to better support them.
+#### Setting up your MongoDB database      
+
+- Select the **M0**⑥ template for a free deployment.  
+
+- **Select**⑦ your preferred cloud provider, we selected AWS, but you have the option to go with google cloud or azure.  
 
 
-- **What is your preferred language? :** This section is a way for MongoDB Inc. to gather information about the user's technical skills and preferences, and to provide customized support to ensure a successful MongoDB deployment. 
-Select your preferred programming language. 
-
-
-#### Setting up your MongoDB database
-
-![](images/create%20database.png)   
-
-1. select the M0 template for a free deployment.  
-
-2. Select your preferred cloud provider, we selected AWS, but you have the option to go with google cloud or azure.  
 
 >**Note** Atlas MongoDB asks users to choose a cloud provider to host their MongoDB deployment. This is because Atlas is a cloud-based database service that needs to know which provider the user wants to use to optimize performance, security, and cost-effectiveness within that provider's environment. Different cloud providers offer different features and capabilities, so Atlas MongoDB can provide customized recommendations and resources based on the user's chosen provider. Choosing a cloud provider is an essential step to set up the MongoDB deployment properly and ensure optimal performance and security.
 
-3. Select your preferred region. The region you want your resources to be deployed in.   
+- Select your preferred **Region**⑧. The region you want your resources to be deployed in.   
 
-
-4. Choose a name for your Cluster.  
+- Choose a **Name**⑨ for your Cluster.  
 
 >**Note** A cluster in MongoDB is a group of servers or nodes that work together to store and manage data. It typically consists of multiple instances of the MongoDB database, which communicate with each other to ensure data consistency and availability.
-A cluster provides high availability and scalability to a MongoDB deployment, enabling it to handle large amounts of data and traffic. By distributing data across multiple nodes, it ensures that data remains accessible even if some nodes fail.
+A cluster provides high availability and scalability to a MongoDB deployment, enabling it to handle large amounts of data and traffic. By distributing data across multiple nodes, it ensures that data remains accessible even if some nodes fail
+
+- Click on **Create**⑩ to create your database.  
+
+![mongodb_4.webp](images/mongodb_4.webp)
 
 
-5. Click on create to create your database.  
+##### Security Setup   
 
+- **Select**⑪ your preferred means of authentication. 
 
-#### Security Setup
+- For the users who chose **Username and Password**⑫, type your username in the username field. You can choose to either type your password or have Atlas autogenerate a secure password for you.  
 
-![](images/security%20quick%20start.png)   
+- Click on **Create User**⑬ to create the user.  
 
-1. Select your preferred means of authentication. 
+![mongodb_5.webp](images/mongodb_5.webp)
 
-2. For the users who chose **Username and password**, type your username in the username field. You can choose to either type your password or have Atlas autogenerate a secure password for you.  
-
-3. Click on **create user** to create the user.  
-
-
-#### Setting up the host
+##### Setting up the host
 
 We are going to be using an EC2 instance running the Ubuntu AMI to connect to our DynamoDB database. We need to set that up before moving to the next step.  
 
 1. Log in to the [AWS Management Console](https://aws.amazon.com/)   
 
-2. Click on the left navigation pane called **Services** and select compute. A list of all compute services will be listed out, select **EC2**. 
-![](images/create%20ec2%20server.png)   
+2. Click on the left navigation pane called **Services**① and select **Compute**②. A list of all compute services would be listed out, select **EC2**③.
+
+![mongodb_6.webp](images/mongodb_6.webp)   
 
 
-3. Click on the **Launch Instance** button.  
-![](images/launch%20instance.png)   
+3. Click on the **Launch Instance**④ button.
 
-#### Name and AMI setting
+![mongodb_7.webp](images/mongodb_7.webp)   
 
-1. Give your instance a name and select an Amazon machine image for the instance.  
-![](images/server%20name%20and%20ami.png)   
+###### Name and AMI setting
 
-2.. Click on the AMI button to select your preferred server. Select a server that is free tier eligible to prevent extra cost.  
+4. Give your instance a **Name**⑤ and **Select**⑥ an Amazon machine image for the instance. Click on the AMI button to select your preferred server. Select a server that is **free tier eligible**⑦ to prevent extra cost.
 
-![](images/ami%20and%20instance%20type.png)   
+![mongodb_8.webp](images/mongodb_8.webp)   
 
-3. Select an instance type that is free tier eligible to prevent extra cost.  
+5. **Create new key pair**⑧, to enable you SSH into your server. 
 
+![mongodb_9.webp](images/mongodb_9.webp)
 
-#### Key pair setting
+6. Provide the **Key pair name**⑨. Leave the **key pair type**⑩ on the default selection. For the Private key file format, select the **.pem**⑪ if you plan on using your terminal to SSH into your instance, or select **.ppk**⑫ if you want to use putty. Click on **Create key pair**⑬ to finish the creation of the key pair. 
 
-1. Create a key pair, to enable you SSH into your server.  
-![](images/create%20keypair.png)   
+![mongodb_10.webp](images/mongodb_10.webp)    
 
-2. Give the key pair a name. Leave the key pair type on the default selection. For the Private key file format, select the **.pem** if you plan on using your terminal to SSH into your instance, or select **.ppk** if you want to use putty.  
+7. Leave the default VPC and subnet.  
 
-3. Click on **create key pair** to finish the creation of the key pair.  
-![](images/create%20keypair2.png)   
+8. **Create Security group**⑭. We allowed SSH traffic from **Anywhere**⑮ because we intend to terminate the instance immediately after the test, it's best practice to set the specific IP you want to have access to your instance. Leave the storage section in its default setting. Click on **Launch Instance**⑯ when you're done with the required settings.  
 
-#### Network setting
+![mongodb_11.webp](images/mongodb_11.webp) 
 
-1. Leave the default VPC and subnet.  
+9. Check the box before the instance name, to see the drop down menu. **Copy**⑰ your public IP, it would be needed to set a host for MongoDb.
 
-2. Create security group. We allowed SSH traffic from anywhere because we intend to terminate the instance immediately after the test, it's best practice to set the specific IP you want to have access to your instance.  
-
-![](images/network%20setting.png)   
-
-3. Leave the storage section in its default setting. Click on **Launch Instance** when you're done with the required settings.  
+![mongodb_12.webp](images/mongodb_12.webp)   
 
 
-4. Click on Instance to be taking to the instance page where you can see the status of your recently launched instance.  
-![](images/check%20instance.png)   
+#### MongoDB connection setting.
 
+1. Choose a connection point, select **Cloud Environment**①.  
 
-5. Wait until the instance state is **running** and its status check is **2/2 checks passed.**   
-![](images/instance%20running.png)   
+2. Set your network security and input the **IP Address**② of the created EC2 instance.  
 
+3. Click **Add Entry**③ to save the IP.  
 
-6. Check the box before the instance name, to see the drop down menu. Copy your public IP, it would be needed to set a host for MongoDb.  
-![](images/copy%20instance%20IP.png)   
+4. Click **Finish and Close**④ to complete setup.  
 
+![mongodb_13.webp](images/mongodb_13.webp)      
 
-#### MongoDB connection setting
+5. Your database is ready to be used. Click on **Go to Overview**⑤ to access to your database page.  
 
-1. Choose a connection point; you can choose to connect from your local environment, or a cloud environment.  
+![mongodb_14.webp](images/mongodb_14.webp)      
 
-2. Set your network security and input the IP of the created EC2 instance.  
-
-3. Click **add entry** to save the IP.  
-![](images/ec2%20ip%20in%20mongodb.png)   
-
-4. Click **Finish and Close** to complete setup.  
-![](images/DB%20setup%20finished.png)   
-
-5. Your database is ready to be used. Click on "Go to Database" to be taken to your database page.  
-![](images/go%20to%20database.png)   
-
-#### SSH Into your EC2 Instance
+###### SSH Into your EC2 Instance
 
 Now we want to SSH into our EC2 instance to enable us connect to our database host.  
 
-1. Click the **Connect button**.  
-![](images/connect.png)   
+1. Click the **Connect button**⑥.
+
+![mongodb_15.webp](images/mongodb_15.webp)      
 
 
-2. On the **Connect to instance** page, select **"SSH Client"**. 
+2. On the Connect to instance page, select **SSH Client**⑦ and **Copy**⑧ the example command given.
 
-3. Copy the example command given.  
-![](images/copy%20ssh%20example.png)   
-
-4. Open up your terminal and paste the code in the same folder/directory your key pair was downloaded into.  
-![](images/terminal%20access.png)   
-
-5. You've been connected to your instance.  
+![mongodb_16.webp](images/mongodb_16.webp)      
 
 
-#### MongoDB cluster Connection
+3. Open up your terminal and paste the code in the same folder/directory your key pair was downloaded into. You have successfully connected to your instance.
 
-1. Click on the **connect** button.  
-![](images/connect%20to%20mongodb.png)   
-
-2. Click on **Add current IP Address** to add your current devices IP to the Access list. 
-![](images/add%20current%20ip.png)   
+![mongodb_17.webp](images/mongodb_17.webp)  
 
 
-3. Select the means through which you will connect to your database.  
-For the purpose of this tutorial, we chose the **shell**.  
-![](images/mongo%20shell.png)   
+#### MongoDB cluster Connection 
 
-4. Select your operating system and download the MongoDB shell **mongosh**  
-![](images/connect%20to%20cluster%201.png)   
+1. Go to your MongoDB Database page and click on the **Connect**⑨ button.
 
-5. We're presently running an ubuntu server on our instance so we will copy the download url and paste it in our terminal with the download command.  
+![mongodb_18.webp](images/mongodb_18.webp)   
+
+2. Select the means through which you would connect to your database. We chose the **Shell**⑩.  
+
+![mongodb_19.webp](images/mongodb_19.webp)  
+
+3. Select your **operating system**⑪ and **copy download URL**⑫. 
+
+![mongodb_20.webp](images/mongodb_20.webp)
+
+4. **Paste**⑬ it in our terminal with the download command.
+
 ```
-wget https://downloads.mongodb.com/compass/mongodb-mongosh_1.8.1_amd64.deb
-```   
+wget https://downloads.mongodb.com/compass/mongodb-mongosh_1.10.6_amd64.deb
+```
 
-![](images/downloaded%20mongodb%20shell.png)   
+![mongodb_21.webp](images/mongodb_21.webp)   
+   
+5. Return to the Atlas page, click on the **[How to](https://www.mongodb.com/docs/mongodb-shell/install/)**⑭ link to get step by step instructions on how to add your mongosh directory to your $PATH variable. **Copy**⑮ the connection string provided in **Step 3** of the **Connect to Cluster** page. 
 
-6. Return to the Atlas page, click on the [How to](https://www.mongodb.com/docs/mongodb-shell/install/) link to get step by step instructions on how to add your mongosh directory to your $PATH variable.  
+![mongodb_22.webp](images/mongodb_22.webp)   
 
-![](images/connect%20with%20mongo%20shell.png)   
+6. Paste the command in your terminal, you would be prompted for your password. Type the password you set for database authentication.  
 
-7. Copy the connection string provided in step3 of the **Connect to Cluster** page.  
-
-8. Paste the command in your terminal; you will be prompted for your password. Type the password you set for database authentication.  
-
-![](images/successful%20mongosh%20connection.png)   
+![mongodb_23.webp](images/mongodb_23.webp)  
 
 You are now connected to your MongoDB database.  
 
+#### Get the information needed for the Vanus source connection.
 
-#### Get the information needed for the Vanus source connection
+1. To find your Host, run the command **db.runCommand({whatsmyuri:1})**① and it'll be outputed to the terminal.  
 
-1. To find your **Host**, run the command `db.runCommand({whatsmyuri:1})` in the terminal and the output will display the corresponding details.  
-
-![](images/mongodb%20host.png)   
-
-
-2. To find your **AuthSource**, run `db.runCommand({whatsmyuri: 1})` on your terminal and it'll output your AuthSource. It's usually **admin**, but can be changed by users, so it's better to confirm it.  
-![](images/auth%20source.png)   
+![mongodb_24.webp](images/mongodb_24.webp)  
 
 
-3. Go to Atlas Database page and click on **Browse collections** to see your collections, and get the name of the one you plan on making the Vanus Connect Source connection with.  
-![](images/collection%20set.png)   
+2. To find your **AuthSource**, run **db.runCommand({connectionStatus: 1})**② on your terminal and it'll output your AuthSource. It's usually **admin**, but can be changed by users, so it's better to confirm it. 
 
-4. Take note of your collection name.  
-![](images/collection%20name.png)   
+![mongodb_25.webp](images/mongodb_25.webp)  
 
----
 
-#### Step 2: MongoDB Connection Settings
+3. Go to Atlas Database page and click on **Browse collections**③ to see your collections. 
 
-1. Write a name for your connection in Vanus Connect.
-![](images/vanus%20source.png)   
+![mongodb_26.webp](images/mongodb_26.webp) 
 
-3. Input the required credentials in the source configuration.   
-- Hosts 
-- Username 
-- Password 
-- Auth Source 
-- Databases 
-- Collections 
+4. **Copy**④ the name of the one you plan on making the Vanus Connect Source connection with.  
 
-4. Click **Next** and continue the configuration.
+![mongodb_27.webp](images/mongodb_27.webp)     
+
+### Step 2: Configure your MongoDB Vanus Connect Source Connection 
+
+1. Return to your Vanus Connection page.  
+
+2. Give the connection a **Name**①, and **input**② the required details in the source configuration.
+
+![mongodb_28.webp](images/mongodb_28.webp)  
+
+3. Click on the **Fetch Schema**③ button to fetch the schema of your MongoDb and click **Next**④.  
+
+![mongodb_29.webp](images/mongodb_29.webp)   
 
 ---
 
