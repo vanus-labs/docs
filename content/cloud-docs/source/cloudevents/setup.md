@@ -15,7 +15,7 @@ hide_title: true
 
 - Write a **Name**① for your connection in Vanus Connect. 
 
-- After creating the connection, there are a few more steps. Simply click the **Link**② to open a new page with all the details on how to complete the connection. 
+- Click on the **copy**② icon to copy the Webhook URL. Use the Webhook URL to receive events. 
 
 - Click **Next**③ and continue the configuration.
 
