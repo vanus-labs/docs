@@ -44,7 +44,7 @@ hide_title: true
 
 ---
 
-### Step 2: Mailchimp Audience Id
+### Step 2: Mailchimp Audience ID
 
 1. At the left sidebar of your Mailchimp Dashboard, Click on the **Audience**① dropdown menu, then click on **All contacts**②.
 
@@ -58,13 +58,13 @@ hide_title: true
 
 ![Step 10](images/vanus-connect_mailchimp_api_9.webp)
 
-4. Paste the Audience ID in the **Audience Id**⑥ field.
+4. Paste the Audience ID in the **Audience ID**⑥ field.
 
 ![Step 11](images/vanus-connect_mailchimp_api_10.webp)
 
 ---
 
-### Personalize Event Structure
+### Step 3: Personalize Event Structure
 
 :::note
 This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
@@ -74,7 +74,7 @@ This is a general instruction on how to personalize your event structure. You ca
 
 ![Step 12](images/vanus-connect_mailchimp_api_11.webp)
 
-2. **Customize**③ the events as you like and the click **Submit**④ button.
+2. **Customize**③ the events as you like and then click the **Submit**④ button.
 
 ![Step 13](images/vanus-connect_mailchimp_api_12.webp)
 
