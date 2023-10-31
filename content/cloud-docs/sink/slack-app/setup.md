@@ -56,7 +56,7 @@ hide_title: true
 
 ---
 
-### Personalize Event Structure
+### Step 3: Personalize Event Structure
 
 :::note
 This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.

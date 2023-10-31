@@ -20,7 +20,7 @@ Before forwarding events to Outlook, you must have:
 
 **Perform the following steps to configure your Outlook Sink.**
 
-### Outlook Connection Settings
+### Step 1: Outlook Connection Settings
 
 1. Click **Authorize**① to establish a connection with your Outlook account.
 
@@ -40,7 +40,7 @@ Before forwarding events to Outlook, you must have:
 
 5. Return to Vanus Connect and complete your configuration.
 
-### Personalize Event Structure
+### Step 2: Personalize Event Structure
 
 :::note
 This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.

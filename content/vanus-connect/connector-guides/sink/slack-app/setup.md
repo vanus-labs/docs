@@ -61,7 +61,7 @@ With Slack Sink connector in Vanus Connect, you can easily forward real-time upd
 
 ---
 
-### Personalize Event Structure
+### Step 3: Personalize Event Structure
 
 :::note
 This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.

@@ -111,7 +111,7 @@ import TabItem from '@theme/TabItem';
 
 ![google-sheets-15](images/google-sheets-15.webp)
 
-### Personalize Event Structure
+### Step 4: Personalize Event Structure
 
 :::note
 This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.

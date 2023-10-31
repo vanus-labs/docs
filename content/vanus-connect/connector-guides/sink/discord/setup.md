@@ -66,15 +66,11 @@ Before forwarding events to Discord, you must have:
 
 ![discord-sink-10](images/discord-sink-10.webp)
 
+7. Return to the Vanus Connect page.
+
 ---
 
-### Step 3: Discord Connection Settings
-
-**To set up Discord Sink in Vanus Connect:**
-
-1. Go back to Vanus Connect.
-
-### Personalize Event Structure
+### Step 3: Personalize Event Structure
 
 :::note
 This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
