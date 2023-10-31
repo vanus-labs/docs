@@ -2,7 +2,7 @@
 
 1. Copy the **Webhook URL**①.
 
-![](images/cloud_webhook_2.webp)
+![](images/cloud-webhook_1.webp)
 
 2. Use the Webhook URL to send HTTP request from an app or from a **Command Line**②.
 
