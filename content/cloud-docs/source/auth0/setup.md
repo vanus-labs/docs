@@ -15,13 +15,13 @@ hide_title: true
 
 - Write a **Name**① for your connection.
 
-- After you finish creating the connection, there will be more steps. Please click the **Link**② to open a new tab with the following instruction.
+- Select the **Events**② you want to receive.
 
-- Select the **Events**③ you want to receive.
+- Click on the **copy**③ icon to copy the Webhook URL. Use the Webhook URL to receive events.
 
 - Click **Next**④ and continue the configuration.
 
-![auth0_1.webp](images/auth0_1.webp)
+![auth0_source_1.webp](images/auth0_source_1.webp)
 
 ---
 
