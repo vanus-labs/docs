@@ -14,7 +14,7 @@ hide_title: true
 Perform the following steps to configure your Slack Sink.
 
 :::note
-If you have created a Slack App already, you can skip Step 1 and directly go to [**Step 2**](#step-2-create-an-incoming-webhook).
+If you have created a Slack App already, you can skip Step 1 and directly go to [**Step 2**](#step-2-create-an-incoming-webhook). But ensure that you avoid using the same Slack app for both your Slack source and Slack webhook connections.
 :::
 
 ### Step 1: Create a Slack App
@@ -57,12 +57,10 @@ If you have created a Slack App already, you can skip Step 1 and directly go to 
 
 ---
 
-### Step 3: Slack Connection Settings
-
-**Complete Set Up**
+### Personalize Event Structure
 
 :::note
-This is a general instruction on how to complete event subscription and configure your connection settings in Vanus Connect, which can be applied to any source pairing.
+This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
 :::
 
 1. Paste the Webhook URL into the **Webhook URL**① field, and click on **Display sample events**② for reference.
@@ -80,10 +78,6 @@ This is a general instruction on how to complete event subscription and configur
 4. Click **Submit**⑥ to finish the configuration process.
 
 ![slack-sink-12](images/slack-sink-12.webp)
-
-:::note
-You can structure your events to suit your specific requirements, create connections for different scenarios, or take advantage of our pre-existing connection templates for a more organized approach to sending events.
-:::
 
 ---
 

@@ -6,6 +6,7 @@ hide_title: true
 ### Prerequisites
 
 - [**A Discord Account**](https://discord.com/)
+- A [**Vanus Cloud Account**](https://cloud.vanus.ai).
 
 ---
 
@@ -30,7 +31,6 @@ hide_title: true
 5. Input a **Server Name**④ and click on **Create**⑤.
 
 ![discord-sink-4](images/discord-sink-4.webp)
-
 
 ### Step 2: Get a webhook URL
 
@@ -60,23 +60,26 @@ hide_title: true
 
 ---
 
-### Step 3: Personalise Event Structure
-- Go back to Vanus Connect.
+### Step 3: Discord Connection Settings
 
-- Paste your webhook URL in the **Webhook URL**① field.
+**To set up Discord Sink in Vanus Connect:**
+
+1. Go back to Vanus Connect.
+
+### Personalize Event Structure
 
 :::note
-This is a general instruction on how to complete event subscription and configure your connection settings in Vanus Connect, which can be applied to any source pairing.
+This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
 :::
 
-- Click on **Display sample events**② to see the events. **Select**③ the event field you like to receive on Discord.
+1. Paste your webhook URL in the **Webhook URL**① field, click on **Display sample events**② to see the events. And then **Select**③ the event field you like to receive on Discord.
+
+![discord-sink-11](images/discord_sink_11.webp)
+
+2. **Customise**④ the events as you like and the click **Submit**⑤ button.
 
 ![discord-sink-12](images/discord_sink_12.webp)
 
-- **Customise**④ the events as you like and the click **Submit**⑤ button.
-
-![discord-sink-13](images/discord_sink_13.webp)
-
 ---
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).

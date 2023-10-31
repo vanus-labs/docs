@@ -56,12 +56,10 @@ hide_title: true
 
 ---
 
-### Step 3: Slack App Connection Settings
-
-**Complete Set Up**
+### Personalize Event Structure
 
 :::note
-This is a general instruction on how to complete event subscription and configure your connection settings in Vanus Connect, which can be applied to any source pairing.
+This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
 :::
 
 1. Paste the **Bot User OAuth Token**① field, and click on **Display sample events**② for reference.
@@ -75,10 +73,6 @@ This is a general instruction on how to complete event subscription and configur
 3. You can structure the content as you prefer and fill in as many **values**⑤ as you wish to receive. And then click **Submit**⑥ to finish the configuration process.
 
 ![slack-app-sink-12](images/slack-app-sink-12.webp)
-
-:::note
-You can structure your events to suit your specific requirements, create connections for different scenarios, or take advantage of our pre-existing connection templates for a more organized approach to sending events.
-:::
 
 ---
 

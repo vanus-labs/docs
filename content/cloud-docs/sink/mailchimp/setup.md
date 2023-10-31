@@ -5,15 +5,16 @@ hide_title: true
 
 ### Prerequisites
 
+- A [**Vanus Cloud Account**](https://cloud.vanus.ai).
 - A Mailchimp account.
 
 ---
 
-**Perform the following steps to configure your Mailchimp Sink.** 
-
+**Perform the following steps to configure your Mailchimp Sink.**
 
 ### Step 1: Mailchimp API Key
-1. **Sign in** to your [Mailchimp](https://mailchimp.com) account.
+
+1. **Sign in** to your [**Mailchimp**](https://mailchimp.com) account.
    
 ![Step 1](images/vanus-connect_mailchimp_api_0.webp)
 
@@ -41,6 +42,8 @@ hide_title: true
    
 ![Step 7](images/vanus-connect_mailchimp_api_6.webp)
 
+---
+
 ### Step 2: Mailchimp Audience Id
 
 1. At the left sidebar of your Mailchimp Dashboard, Click on the **Audience**① dropdown menu, then click on **All contacts**②.
@@ -55,21 +58,26 @@ hide_title: true
 
 ![Step 10](images/vanus-connect_mailchimp_api_9.webp)
 
-4. Paste the Aduience ID in the **Audience Id**⑥ field.
+4. Paste the Audience ID in the **Audience Id**⑥ field.
 
-![Step 11](images/vanus-connect_mailchimp_api_10.webp) 
+![Step 11](images/vanus-connect_mailchimp_api_10.webp)
 
+---
 
-### Step 3: Subscription
+### Personalize Event Structure
+
+:::note
+This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
+:::
 
 1. Click on **Display sample events**① to see the events. **Select**② the event field you like to receive on Mailchimp.
 
 ![Step 12](images/vanus-connect_mailchimp_api_11.webp)
 
-2. **Customise**③ the events as you like and the click **Submit**④ button.
+2. **Customize**③ the events as you like and the click **Submit**④ button.
 
 ![Step 13](images/vanus-connect_mailchimp_api_12.webp)
 
 ---
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).

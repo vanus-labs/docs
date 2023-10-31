@@ -138,7 +138,24 @@ Now you can connect to your server and create a table.
 - **Database⑦:** The initial database name.
 - **Table⑧:** The name of the table you want your events to be sent to.
 - Choose the **Insertion Mode**⑨.
-- Click **Next**⑩ and finish the configurations.
+
+### Personalize Event Structure
+
+:::note
+This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
+:::
+
+1. Click on **Display sample events**① for reference and click on **Add More**② to add events.
+
+![aws-mysql-sink-20](images/aws-mysql-sink-20.webp)
+
+2. **Input key**③ and search for the corresponding **value**④ for the event you want.
+
+![aws-mysql-sink-21](images/aws-mysql-sink-21.webp)
+
+3. You can fill in as many **key-value pairs**⑤ as you wish to receive. And then click **Submit**⑥ to finish the configuration process.
+
+![aws-mysql-sink-22](images/aws-mysql-sink-22.webp)
 
 ---
 

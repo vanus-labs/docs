@@ -35,10 +35,10 @@ Before forwarding events to Outlook, you must have:
 
 5. Return to Vanus Connect and complete your configuration.
 
-### Complete Set Up
+### Personalize Event Structure
 
 :::note
-This is a general instruction on how to complete event subscription and configure your connection settings in Vanus Connect, which can be applied to any source pairing.
+This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
 :::
 
 1. Compose your **Subject**①, specify the recipient's **email address**②, and type in the **Content**③ you want to send.
@@ -56,10 +56,6 @@ This is a general instruction on how to complete event subscription and configur
 4. Click **Submit**⑨ to finish the configuration process.
 
 ![outlook-sink-8](images/outlook-sink-8.webp)
-
-:::note
-You can structure your events to suit your specific requirements, create connections for different scenarios, or take advantage of our pre-existing connection templates for a more organized approach to sending events.
-:::
 
 ---
 
