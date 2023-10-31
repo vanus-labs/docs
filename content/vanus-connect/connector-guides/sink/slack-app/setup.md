@@ -59,6 +59,10 @@ With Slack Sink connector in Vanus Connect, you can easily forward real-time upd
 
 ![slack-app-sink-9](images/slack-app-sink-9.webp)
 
+7. Return to the Vanus Connect page and paste your Bot User OAuth Token in the **Token**⑧ field.
+
+![slack-app-sink-10](images/slack-app-sink-10.webp)
+
 ---
 
 ### Step 3: Personalize Event Structure
@@ -67,17 +71,17 @@ With Slack Sink connector in Vanus Connect, you can easily forward real-time upd
 This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
 :::
 
-1. Paste the **Bot User OAuth Token**① field, and click on **Display sample events**② for reference.
-
-![slack-app-sink-10](images/slack-app-sink-10.webp)
-
-2. Compose your preferred message, then type **`$` followed by the desired event**③ to access a **list of associated event values**④, and choose the one you prefer.
+1. Click on **Display sample events**① for reference, compose your preferred message, then type **`$` followed by the desired event**② to access a **list of associated event values**③, and choose the one you prefer.
 
 ![slack-app-sink-11](images/slack-app-sink-11.webp)
 
-3. You can structure the content as you prefer and fill in as many **values**⑤ as you wish to receive. And then click **Submit**⑥ to finish the configuration process.
+2. You can structure the content as you prefer and fill in as many **values**④ as you wish to receive.
 
 ![slack-app-sink-12](images/slack-app-sink-12.webp)
+
+3. Click **Submit**⑤ to finish the configuration process.
+
+![slack-app-sink-13](images/slack-app-sink-13.webp)
 
 ---
 
