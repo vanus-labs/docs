@@ -30,7 +30,7 @@ Enter all the following information in Vanus Connect.
 - **Database**⑥ - The database name.
 - **Table**⑦ - The table name.
 
-![mysql_sink_1.webp](images/mysql_sink_1.webp)
+![mysql-sink-1.webp](images/mysql-sink-1.webp)
 
 ### Step 2: Personalize Event Structure
 
@@ -40,15 +40,19 @@ This is a general instruction on how to personalize your event structure. You ca
 
 1. Click on **Display sample events**① for reference and click on **Add More**② to add events.
 
-![mysql_sink_2.webp](images/mysql_sink_2.webp)
+![mysql-sink-2.webp](images/mysql-sink-2.webp)
 
 2. **Input key**③ and search for the corresponding **value**④ for the event you want.
 
-![mysql_sink_3.webp](images/mysql_sink_3.webp)
+![mysql-sink-3.webp](images/mysql-sink-3.webp)
 
-3. You can fill in as many **key-value pairs**⑤ as you wish to receive. Click **Submit**⑥ to finish the configuration process.
+3. You can fill in as many **key-value pairs**⑤ as you wish to receive.
 
-![mysql_sink_4.webp](images/mysql_sink_4.webp)
+![mysql-sink-4.webp](images/mysql-sink-4.webp)
+
+4. Click **Submit**⑥ to finish the configuration process.
+
+![mysql-sink-5.webp](images/mysql-sink-5.webp)
 
 ---
 
