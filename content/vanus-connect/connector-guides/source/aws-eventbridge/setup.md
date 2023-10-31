@@ -19,12 +19,12 @@ The Amazon EventBridge Source is a webhook server that enables you to establish 
 
 To obtain all Amazon Eventbridge events in Vanus Connect, follow these steps:
 
-![amazon-eventbridge-source-](images/amazon-eventbridge-source-1.webp)
-
 - Write a **Name**① for your connection in Vanus Connect.
 
-- After creating the connection, there are a few more steps. Simply click the **document**② link to open a new page with all the details on how to complete the connection.
+- Click on the **copy**② icon to copy the Webhook URL. Use the Webhook URL to receive events.
 
 - Click **Next**③ and continue the configuration.
+
+![amazon-eventbridge-source-](images/amazon-eventbridge-source-1.webp)
 
 Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).
