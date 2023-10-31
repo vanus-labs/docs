@@ -13,12 +13,13 @@ hide_title: true
 
 ### ChatGPT Source Settings
 
-1.  **Write a name**① for your connection in Vanus Connect.
-2.  After creating the connection, there are a few more steps. Simply click the link ⚠**this document**② to open a new page with all the details on **how to complete the connection**.
+- Write a **Name**① for your connection in Vanus Connect.
 
-![](images/cloud_feishu_22.webp)
+- Click on the **copy**② icon to copy the Webhook URL. Use the Webhook URL to receive events.
 
-3.  Click **Next** to save the ChatGPT Source.
+-  Click **Next**③ and continue the configuration.
+
+![chatgpt_source_1.webp](images/chatgpt_source_1.webp)
 
 ---
 
