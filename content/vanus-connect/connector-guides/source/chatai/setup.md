@@ -19,11 +19,11 @@ Before obtaining ChatAI events, you must have:
 
 ### Set up your connection in Vanus Connect
 
-1. "Write a **Name**① for your connection in Vanus Connect.
+1. Write a **Name**① for your connection in Vanus Connect.
+
+Click on the **copy**② icon to copy the Webhook URL. Use the Webhook URL to receive events.
 
 ![chatai-source-1](images/chatai-source-1.webp)
-
-After creating the connection, proceed to click the **document link**② to open a new page with all the details on how to complete the connection.
 
 2. Fill in the various required configurations.
 
