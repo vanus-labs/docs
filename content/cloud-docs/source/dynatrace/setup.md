@@ -14,19 +14,13 @@ hide_title: true
 
 ### Step 1: Create your connection in Vanus Connect
 
-![dynatrace-source-1](images/dynatrace-source-1.webp)
-
 - Write a **Name**① for your connection in Vanus Connect.
 
-- After creating the connection, there are a few more steps. Simply click the **document**② link to open a new page with all the details on how to complete the connection.
+![dynatrace-source-1](images/dynatrace-source-1.webp)
 
-- Click **Next**③ and continue the configuration.
+## Configuring Dynatrace to Send Webhook Events 
 
----
-
-**Configuring Dynatrace to Send Webhook Events** 
-
-### Step 2: Configure webhook
+### Step 1: Configure webhook
 
 1. Click the **copy icon**① to copy the webhook url.
 
@@ -65,6 +59,10 @@ hide_title: true
 8. If successful, you should see **this**⑯.
 
 ![dynatrace-source-10](images/dynatrace-source-10.webp)
+
+9. Go to Vanus Connect and click **Next**⑰ to continue the configuration.
+
+![dynatrace-source-11](images/dynatrace-source-11.webp)
 
 ---
 

@@ -1,6 +1,6 @@
 # **Configuring Shopify to Send Webhook Events**
 
-1. go to the [**Shopify**](https://shopify.com) website, sign in to your shop dashboard, and click **Settings**①.
+1. Go to the [**Shopify**](https://shopify.com) website, sign in to your shop dashboard, and click **Settings**①.
 
 ![shopify-webhook-source-2](images/shopify-webhook-source-2.webp)
 
