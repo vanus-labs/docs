@@ -19,11 +19,11 @@ Before obtaining ChatAI events, you must have:
 
 ### Set up your connection in Vanus Connect
 
-1. "Write a **Name**① for your connection in Vanus Connect.
+1. Write a **Name**① for your connection in Vanus Connect.
+
+    Click on the **copy**② icon to copy the Webhook URL.
 
 ![chatai-source-1](images/chatai-source-1.webp)
-
-After creating the connection, proceed to click the **document link**② to open a new page with all the details on how to complete the connection.
 
 2. Fill in the various required configurations.
 
@@ -50,6 +50,19 @@ By choosing "Vanus AI," you can harness the power of your custom AI application 
 - Select **Vanus AI**⑩, paste your **Vanus AI Application ID**⑪ in the provided field, fill in the remaining **configuration details⑫ (optional)**, and then proceed by clicking **Next**⑬.
 
 ![chatai-source-4](images/chatai-source-4.webp)
+
+### How to Use the Webhook URL to Send Message to ChatAI
+
+Ask a question to ChatAI by sending a POST Request to the Webhook URL. Below I will share with you how to send a simple curl Post Request to the address.
+
+Here is an Example of a curl Post Request of a CloudEvent.
+```shell
+curl \
+-H "unique_identifier:value"  \
+-H "Authorization: Basic base64(yourusername:yourpassword)"
+-XPOST 'https://YourWebbookURL' \
+-D'What is CloudEvents?'
+```
 
 ---
 
