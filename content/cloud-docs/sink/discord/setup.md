@@ -58,7 +58,9 @@ hide_title: true
 
 ![discord-sink-10](images/discord-sink-10.webp)
 
-7. Return to the Vanus Connect page.
+7. Return to the Vanus Connect page and paste your webhook URL in the **Webhook URL**⑦ field.
+
+![discord-sink-11](images/discord-sink-11.webp)
 
 ---
 
@@ -68,13 +70,17 @@ hide_title: true
 This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
 :::
 
-1. Paste your webhook URL in the **Webhook URL**① field, click on **Display sample events**② to see the events. And then **Select**③ the event field you like to receive on Discord.
+1. Click on **Display sample events**① for reference, compose your preferred message, then type **`$` followed by the desired event**② to access a **list of associated event values**③, and choose the one you prefer.
 
-![discord-sink-11](images/discord_sink_11.webp)
+![discord-sink-12](images/discord-sink-12.webp)
 
-2. **Customise**④ the events as you like and the click **Submit**⑤ button.
+2. You can structure the content as you prefer and fill in as many **values**④ as you wish to receive.
 
-![discord-sink-12](images/discord_sink_12.webp)
+![discord-sink-13](images/discord-sink-13.webp)
+
+3. Click **Submit**⑤ to finish the configuration process.
+
+![discord-sink-14](images/discord-sink-14.webp)
 
 ---
 
