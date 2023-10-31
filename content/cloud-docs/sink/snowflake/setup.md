@@ -109,9 +109,23 @@ We utilized the default role, warehouse, and schema, but you have the option to 
 
 ![snowflake-sink-15](images/snowflake-sink-15.webp)
 
-2. Create a **Table**⑧ by entering a name, and then click **Submit**⑨ to complete the configuration.
+### Personalize Event Structure
+
+:::note
+This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
+:::
+
+1. Create a **Table**① by entering a name, click on **Display sample events**② for reference and click on **Add More**③ to add events.
 
 ![snowflake-sink-16](images/snowflake-sink-16.webp)
+
+2. **Input key**④ and search for the corresponding **value**⑤ for the event you want.
+
+![snowflake-sink-17](images/snowflake-sink-17.webp)
+
+3. You can fill in as many **key-value pairs**⑥ as you wish to receive, and then click **Submit**⑦ to finish the configuration process.
+
+![snowflake-sink-18](images/snowflake-sink-18.webp)
 
 ---
 
