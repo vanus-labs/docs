@@ -48,7 +48,7 @@ Before forwarding events to Feishu, you must have:
 
 ### Step 2: Set up your Connection in Vanus Connect  
 
-Paste the step **Feishu Webhook URL**① into the "URL" field.
+**Paste**① the Feishu Webhook URL into the Webhook URL field.
 
 ![cloud_feishu_8.webp](images/cloud_feishu_8.webp)
 
