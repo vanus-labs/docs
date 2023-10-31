@@ -11,11 +11,37 @@ hide_title: true
 
 ### Webhook Connection Settings
 
-1. Write a **connection name**①.
-2. You'll need to obtain the Webhook URL after completing the connection. To do this, simply click the **link**② to open a new tab with instructions on how to retrieve the URL.
-3. Click **Next**③ to continue.
+1. Write a **connection name**① and Copy the **Webhook URL**②.
 
-![](images/cloud_webhook_1.webp)
+![](images/cloud-webhook_1.webp)
+
+2. Click **Next**③ to continue.
+
+```shell
+curl --location --request POST 'YOUR_WEBHOOK_URL' \
+--header 'Content-Type: text/plain' \
+--data-raw '{
+"test":"demo"
+}'
+```
+
+## 3rd Party Services
+A list of application that can send HTTP request to our webhook server.
+- Zapier
+- IFTTT (If This Then That)
+- GitHub
+- Bitbucket
+- GitLab
+- Stripe
+- Mailchimp
+- Shopify
+- Salesforce
+- Trello
+- more
+
+
+
+
 
 ---
 
