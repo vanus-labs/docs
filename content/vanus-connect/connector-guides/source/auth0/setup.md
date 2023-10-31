@@ -29,7 +29,7 @@ Before obtaining Auth0 events, you must have:
 
 2. Log in to your [Auth0 account](https://auth0.com/api/auth/login).
 
-3. Navigate to the **Monitoring**④ menu under **Streams**⑤.
+3. Navigate to the **Monitoring**④ menu and select **Streams**⑤.
 
 ![auth0_source_1a.webp](images/auth0_webhook_1a.webp)
 
