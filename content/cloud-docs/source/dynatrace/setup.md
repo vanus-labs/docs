@@ -14,13 +14,13 @@ hide_title: true
 
 ### Step 1: Create your connection in Vanus Connect
 
-![dynatrace-source-1](images/dynatrace-source-1.webp)
-
 - Write a **Name**① for your connection in Vanus Connect.
 
-- After creating the connection, there are a few more steps. Simply click the **document**② link to open a new page with all the details on how to complete the connection.
+- Click on the **copy**② icon to copy the Webhook URL. Use the Webhook URL to receive events.
 
 - Click **Next**③ and continue the configuration.
+
+![dynatrace-source-1](images/dynatrace-source-1.webp)
 
 ---
 
