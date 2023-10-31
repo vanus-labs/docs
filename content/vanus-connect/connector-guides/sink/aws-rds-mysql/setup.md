@@ -139,7 +139,7 @@ Now you can connect to your server and create a table.
 - **Table⑧:** The name of the table you want your events to be sent to.
 - Choose the **Insertion Mode**⑨.
 
-### Personalize Event Structure
+### Step 4: Personalize Event Structure
 
 :::note
 This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
