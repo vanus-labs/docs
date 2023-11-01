@@ -18,6 +18,7 @@ Before forwarding events to Feishu, you must have:
 ## Getting Started
 
 ### Step 1: Setup a Feishu bot
+
 1.  Create a **New Group**① chat.
 
 ![](images/cloud_feishu_1.webp)
@@ -47,17 +48,30 @@ Before forwarding events to Feishu, you must have:
 
 ### Step 2: Set up your Connection in Vanus Connect  
 
-1.  Paste the step **Feishu Webhook URL**❶ into the "URL" field.&#x20;
-2.  ⚠Don't forget the next step❗Click your **Connection**❷ , and then click **How to Use this URL**❸ to setup ChatGPT in Feishu.&#x20;
-3.  Now click **Submit** to continue.
+**Paste**① the Feishu Webhook URL into the Webhook URL field.
 
-![](images/cloud_feishu_8.webp)
+![cloud_feishu_8.webp](images/cloud_feishu_8.webp)
 
-![](images/cloud_feishu_9.webp)
 
-![](images/cloud_feishu_10.webp)
+### Step 3: Personalize Event Structure
 
-Check out this article on how to get a [Feishu Webhook](https://www.vanus.ai/blog/retrieve-feishu-webhook-url/) for more details.
+:::note
+This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
+:::
+
+1. Click on **Display sample events**① for reference.
+
+![cloud_feishu_9.webp](images/cloud_feishu_9.webp)
+
+2. Search for the **data**② of the event you want.
+
+![cloud_feishu_10.webp](images/cloud_feishu_10.webp)
+
+3. **Customize**③ the data as you wish to receive. Click **Submit**④ to finish the configuration process.
+
+![cloud_feishu_11.webp](images/cloud_feishu_11.webp)
+
+---
 
 :::caution
 **ChatGPT Source**
