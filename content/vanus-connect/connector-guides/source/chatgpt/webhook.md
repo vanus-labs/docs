@@ -30,7 +30,7 @@
 
 ![](images/cloud_feishu_17.webp)
 
-8.  Select the **Method** `POST`⑬. Set the URL⑭ using the URL from step 1❶. Select the **Data type** `plain`⑮, Select the **Body** `When a new message mentions BOT in group chat/Source content(mention @ part remove)`⑯, and press **Done**⑰.&#x20;
+8.  Select the **Method** `POST`⑬. Set the URL⑭ using the URL from step 1. Select the **Data type** `plain`⑮, Select the **Body** `When a new message mentions BOT in group chat/Source content(mention @ part remove)`⑯, and press **Done**⑰.&#x20;
 
 ![](images/cloud_feishu_18.webp)
 
