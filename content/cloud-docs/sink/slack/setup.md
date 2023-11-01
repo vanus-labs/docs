@@ -55,6 +55,10 @@ If you have created a Slack App already, you can skip Step 1 and directly go to 
 
 ![slack-sink-8](images/slack-sink-8.webp)
 
+6. Return to the Vanus Connect page and paste your webhook URL in the **Webhook URL**⑦ field.
+
+![slack-sink-9](images/slack-sink-9.webp)
+
 ---
 
 ### Step 3: Personalize Event Structure
@@ -63,19 +67,15 @@ If you have created a Slack App already, you can skip Step 1 and directly go to 
 This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
 :::
 
-1. Paste the Webhook URL into the **Webhook URL**① field, and click on **Display sample events**② for reference.
-
-![slack-sink-9](images/slack-sink-9.webp)
-
-2. Compose your preferred message, then type **`$` followed by the desired event③** to access a **list of associated event values**④, and choose the one you prefer.
+1. Click on **Display sample events**① for reference, compose your preferred message, then type **`$` followed by the desired event**② to access a **list of associated event values**③, and choose the one you prefer.
 
 ![slack-sink-10](images/slack-sink-10.webp)
 
-3. You can structure the content as you prefer and fill in as many **values**⑤ as you wish to receive.
+2. You can structure the content as you prefer and fill in as many **values**④ as you wish to receive.
 
 ![slack-sink-11](images/slack-sink-11.webp)
 
-4. Click **Submit**⑥ to finish the configuration process.
+3. Click **Submit**⑤ to finish the configuration process.
 
 ![slack-sink-12](images/slack-sink-12.webp)
 
