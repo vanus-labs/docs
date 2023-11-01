@@ -36,7 +36,7 @@ To obtain all Shopify Webhook events in Vanus Connect, follow these steps:
 
 ![shopify-webhook-source-4](images/shopify-webhook-source-4.webp)
 
-4. Click on the **Event field**④ and select the **Event**⑤ you'd like to send to Vanus Connect.
+4. Click on the **Event field**④ and select the **Event**⑤ you'd like to send to Vanus Connect, Ensuring that the event matches the one chosen previously in Vanus Connect.
 
 ![shopify-webhook-source-5](images/shopify-webhook-source-5.webp)
 
