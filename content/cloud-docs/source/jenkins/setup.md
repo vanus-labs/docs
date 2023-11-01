@@ -16,30 +16,24 @@ hide_title: true
 
 To obtain all Jenkins events in Vanus Connect, follow these steps:
 
-![jenkins-source-1](images/jenkins-source-1.webp)
-
 - Write a **Name**① for your connection in Vanus Connect.
 
-- After creating the connection, there are a few more steps. Simply click the **document**② link to open a new page with all the details on how to complete the connection.
+![jenkins-source-1](images/jenkins-source-1.webp)
 
-- Click **Next**③ and continue the configuration.
+### Configuring Jenkins to Send Webhook Events
 
----
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-**Configuring Jenkins to Send Webhook Events**
+## Step 1: Configure webhook
 
-### Step 1: Configure webhook
-
-1. Click the **copy icon**① to copy the webhook url
+1. Click the **copy icon**① to copy the webhook url.
 
 ![jenkins-source-2](images/jenkins-source-2.webp)
 
 2. Log in to your Jenkins account.
 
-### Step 2: Send Jenkins Event
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+## Step 2: Send Jenkins Event
 
 <Tabs>
 
@@ -97,9 +91,17 @@ import TabItem from '@theme/TabItem';
 
 ![jenkins-source-15](images/jenkins-source-15.webp)
 
+14. Go back to Vanus Connect and click **Next**⑰ to continue the configuration.
+
+![jenkins-source-21](images/jenkins-source-21.webp)
+
 </TabItem>
 
 <TabItem label="Script" value="script">
+
+:::note
+If you are employing a custom script to transmit events, there is no requirement to install the HTTP Request plugin.
+:::
 
 1. Click on **Manage Jenkins**①.
 
@@ -121,12 +123,14 @@ import TabItem from '@theme/TabItem';
 
 ![jenkins-source-20](images/jenkins-source-20.webp)
 
+6. Click **Next**⑧ and continue the configuration.
+
+![jenkins-source-22](images/jenkins-source-22.webp)
+
 </TabItem>
 
 </Tabs>
 
-:::note
-If you are employing a custom script to transmit events, there is no requirement to install the HTTP Request plugin.
-:::
+---
 
 Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).
