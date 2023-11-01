@@ -28,90 +28,25 @@ Before forwarding events to Google Sheets, you must have:
 
 ---
 
-### Step 2: Create a Connection
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-<Tabs>
-
-<TabItem label="Authentication via Google" value="authentication-via-google">
+### Step 2: Google Sheets Connection Settings
 
 1. Click on **Sign in with Google**① and follow the process to sign in to your Google account.
 
 ![google-sheets-3](images/google-sheets-3.webp)
 
-</TabItem>
-
-<TabItem label="Service Account Credentials" value="service-account-credentials">
-
-1. Go to the Google [**Service account**](https://console.cloud.google.com/iam-admin/serviceaccounts) and click **Create Project**①.
+2. Obtain the name of the **Sheet**② at the bottom of the spreadsheet.
 
 ![google-sheets-4](images/google-sheets-4.webp)
 
-2. Write your **Project name**② and click **CREATE**③.
+3. Return to Vanus Cloud and complete your configuration.
+
+- Paste the **Spreadsheet URL**③ that was copied from Step 1.
+
+- Paste the **Sheet Name**④: `Sheet1`.
 
 ![google-sheets-5](images/google-sheets-5.webp)
 
-3. Now click **+ CREATE SERVICE ACCOUNT**④.
-
-![google-sheets-6](images/google-sheets-6.webp)
-
-4. Create **Service account details**.
-
-- First, write a **Service account name**⑤, this can be any name you would like to give it.
-
-- Secondly, write a **Service account ID**⑥, this ID must be written in lowercase and needs to be at least 6 characters.
-
-- Now click **CREATE AND CONTINUE**⑦.
-
-![google-sheets-7](images/google-sheets-7.webp)
-
-5. The connection doesn't need to set specific roles you can press **DONE**⑧.
-
-![google-sheets-8](images/google-sheets-8.webp)
-
-6. Now click on your **Service Account**⑨.
-
-![google-sheets-9](images/google-sheets-9.webp)
-
-7. Click on **KEYS**⑩ in the TAB menu.
-
-![google-sheets-10](images/google-sheets-10.webp)
-
-8. Now click on **ADD KEY**⑪ and **Create new key**⑫.
-
-![google-sheets-11](images/google-sheets-11.webp)
-
-9. Choose **JSON**⑬ and **CREATE**⑭.
-
-![google-sheets-12](images/google-sheets-12.webp)
-
-10. It will trigger the download of a JSON file copy the whole content and paste it in the **Credentials**⑮ section in Vanus Connect.
-
-![google-sheets-13](images/google-sheets-13.webp)
-
-</TabItem>
-
-</Tabs>
-
----
-
-### Step 3: Google Sheets Connection Settings
-
-1. Obtain the name of the **Sheet**① at the bottom of the spreadsheet.
-
-![google-sheets-14](images/google-sheets-14.webp)
-
-2. Return to Vanus Cloud and complete your configuration.
-
-- Paste the **Spreadsheet URL**② that was copied from Step 1.
-
-- Paste the **Default Sheet Name**③: `Sheet1`.
-
-![google-sheets-15](images/google-sheets-15.webp)
-
-### Step 4: Personalize Event Structure
+### Step 3: Personalize Event Structure
 
 :::note
 This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
@@ -119,19 +54,19 @@ This is a general instruction on how to personalize your event structure. You ca
 
 1. Click on **Display sample events**① for reference and click on **Add More**② to add events.
 
-![google-sheets-16](images/google-sheets-16.webp)
+![google-sheets-6](images/google-sheets-6.webp)
 
 2. **Input key**③ and search for the corresponding **value**④ for the event you want.
 
-![google-sheets-17](images/google-sheets-17.webp)
+![google-sheets-7](images/google-sheets-7.webp)
 
 3. You can fill in as many **key-value pairs**⑤ as you wish to receive.
 
-![google-sheets-18](images/google-sheets-18.webp)
+![google-sheets-8](images/google-sheets-8.webp)
 
 4. Click **Submit**⑥ to finish the configuration process.
 
-![google-sheets-19](images/google-sheets-19.webp)
+![google-sheets-9](images/google-sheets-9.webp)
 
 ---
 
