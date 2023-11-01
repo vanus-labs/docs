@@ -14,11 +14,11 @@ hide_title: true
 
 ### ChatAI Connection Settings
 
-1. "Write a **Name**① for your connection in Vanus Connect.
+1. Write a **Name**① for your connection in Vanus Connect.
+
+    Click on the **copy**② icon to copy the Webhook URL.
 
 ![chatai-source-1](images/chatai-source-1.webp)
-
-After creating the connection, proceed to click the **document link**② to open a new page with all the details on how to complete the connection.
 
 2. Fill in the various required configurations.
 
@@ -47,10 +47,6 @@ By choosing "Vanus AI," you can harness the power of your custom AI application 
 ![chatai-source-4](images/chatai-source-4.webp)
 
 ### How to Use the Webhook URL to Send Message to ChatAI
-
-- Click the **copy icon**① to copy the webhook URL.
-
-![chatai-source-5](images/chatai-source-5.webp)
 
 Ask a question to ChatAI by sending a POST Request to the Webhook URL. Below I will share with you how to send a simple curl Post Request to the address.
 
