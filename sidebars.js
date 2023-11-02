@@ -187,6 +187,7 @@ const sidebars = {
             "vanus-connect/connector-guides/source/mysql/setup",
             "vanus-connect/connector-guides/source/sap/setup",
             "vanus-connect/connector-guides/source/schedule/setup",
+            "vanus-connect/connector-guides/source/shopify/setup",
             "vanus-connect/connector-guides/source/shopify-app/setup",
             "vanus-connect/connector-guides/source/shopify-webhook/setup",
             "vanus-connect/connector-guides/source/slack/setup",
