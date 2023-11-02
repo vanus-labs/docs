@@ -87,8 +87,6 @@ Before obtaining SQS events, you must have:
 
 4. Leave the configuration on the default setting, or change them to suit your needs.
 
-![aws-sqs-source-15](images/aws-sqs-source-15.webp)
-
 - **Visibility timeout⑥:** This is a setting that determines how long a message received from a queue will remain hidden from other consumers. When a message is received from an Amazon SQS queue by a consumer, the visibility timeout starts. If the consumer fails to process and delete the message before the visibility timeout expires, the message becomes visible to other consumers.
 
 - **Message retention period⑦ :** This refers to the length of time a message is kept in a queue if it is not deleted. Messages that exceed the maximum message retention period are automatically deleted by Amazon SQS.
@@ -96,6 +94,8 @@ Before obtaining SQS events, you must have:
 - **Delivery delay⑧:** This determines the amount of time before the first delivery of each message added to the queue. During the delay period, any messages sent to the queue are not visible to consumers.
 
 - **Receive message wait time⑨:** This refers to the maximum duration that polling will wait for messages to become available for receiving.
+
+![aws-sqs-source-15](images/aws-sqs-source-15.webp)
 
 5. **Enable encryption**⑩ and select your preferred **Encryption key type**⑪.
 

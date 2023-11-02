@@ -34,7 +34,7 @@ hide_title: true
 
 ![chatai-source-2](images/chatai-source-2.webp)
 
-:::Note
+:::note
 By choosing "Vanus AI," you can harness the power of your custom AI application within the Vanus AI platform, utilizing its extensive knowledge to enhance your chat experience.
 :::
 
