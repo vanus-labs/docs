@@ -183,7 +183,6 @@ const sidebars = {
             "vanus-connect/connector-guides/source/javascript/setup",
             "vanus-connect/connector-guides/source/jenkins/setup",
             "vanus-connect/connector-guides/source/labeling/setup",
-            "vanus-connect/connector-guides/source/mongodb/setup",
             "vanus-connect/connector-guides/source/mysql/setup",
             "vanus-connect/connector-guides/source/sap/setup",
             "vanus-connect/connector-guides/source/schedule/setup",
