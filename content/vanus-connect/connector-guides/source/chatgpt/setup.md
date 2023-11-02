@@ -21,18 +21,14 @@ Before obtaining ChatGPT events, you must have:
 
 - Write a **Name**① for your connection in Vanus Connect.
 
-- Click on the **copy**② icon to copy the Webhook URL. Use the Webhook URL to receive events.
-
-- Click **Next**③ and continue the connection.
-
 ![chatgpt_source_1.webp](images/chatgpt_source_1.webp)
 
 
 ### How to setup ChatGPT in Feishu
 
-1.   Click on the **copy**① icon to copy the Webhook URL.
+1. Click on the **copy**① icon to copy the Webhook URL.
 
-![](images/cloud_feishu_10.webp)
+![chatgpt_source_3.webp](images/chatgpt_source_3.webp)
 
 2.  Go to Feishu and search for **Feishu Flow**② ③ or **飞书捷径** and click on it.
 
@@ -72,7 +68,11 @@ Before obtaining ChatGPT events, you must have:
 
 ![](images/cloud_feishu_20.webp)
 
-11. Now send a message in the group tagging the bot.
+11. Click **Next**㉒ to continue and complete the configuration.
+
+![chatgpt_source_2.webp](images/chatgpt_source_2.webp)
+
+Now send a message in the group tagging the bot.
 
 ![](images/cloud_feishu_21.webp)
 
