@@ -193,6 +193,7 @@ const sidebars = {
             "vanus-connect/connector-guides/source/slack/setup",
             "vanus-connect/connector-guides/source/stripe/setup",
             "vanus-connect/connector-guides/source/webhook/setup",
+            "vanus-connect/connector-guides/source/webpage/setup",
             "vanus-connect/connector-guides/source/whatsapp/setup",
             "vanus-connect/connector-guides/source/zoho-crm/setup",
           ],
