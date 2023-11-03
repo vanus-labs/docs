@@ -11,7 +11,7 @@ hide_title: true
 
 **Perform the following steps to configure your WhatsApp Sink.**
 
-### WhatsApp Connection Settings
+### Step 1: WhatsApp Connection Settings
 
 1. Click **Authorize**①  to create a QR code to establish a connection with your WhatsApp account.
 
@@ -26,6 +26,16 @@ hide_title: true
 4. Scan the **QR Code**⑤ ⑥ with your mobile WhatsApp.
 
 ![](images/cloud_whatsapp_5.webp)
+
+### Step 2: Personalize Event Structure
+
+1. Click **Display sample events** for reference, and type in the **number** you want to send the even to.
+
+2. Type your message and **input `$` followed by the desired event** to access a **list of corresponding event values**.
+
+3. You can structure the content as you prefer and fill in as many **values** as you wish to receive.
+
+4. Click **Submit** to finish the configuration process.
 
 ### How to use ChatGPT
 
