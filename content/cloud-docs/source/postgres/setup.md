@@ -42,8 +42,6 @@ hide_title: true
 
 7. Enter the following information.
 
-![aws-postgres-source-6](images/aws-postgres-source-6.webp)
-
 - **DB instance identifier⑩:** Give a unique name to your instance.
 
 - **Master username⑪:** This is the username that will be used to log in to your DB instance.
@@ -51,6 +49,8 @@ hide_title: true
 - **Master password⑫:** This is the password that will be used to log in with the username.
 
 - **Confirm master password⑬:** Write the password again.
+
+![aws-postgres-source-6](images/aws-postgres-source-6.webp)
 
 8. Select the **General Purpose SSD (gp2)⑭** storage type. *It's efficient and cost-effective for our intended use*.
 
@@ -100,8 +100,6 @@ Leave **Performance Insights**⑲ checked, or uncheck it if you have no use for 
 
 3. Navigate to the Vanus Cloud platform and fill in the following credentials.
 
-![aws-postgres-source-15](images/aws-postgres-source-15.webp)
-
 - **Host③:** This is your RDS endpoint.
 - **Port④:** Enter the port number on which your PostgreSQL server is listening. The default port for PostgreSQL is 5432.
 - **Username⑤:** Master username selected during the database creation.
@@ -110,6 +108,8 @@ Leave **Performance Insights**⑲ checked, or uncheck it if you have no use for 
 - **Schemas⑧:** PostgreSQL schema
 - **Tables⑨:** The name of the table you want your events to be sent to.
 - Click **Next**⑩ and finish the configurations.
+
+![aws-postgres-source-15](images/aws-postgres-source-15.webp)
 
 ---
 

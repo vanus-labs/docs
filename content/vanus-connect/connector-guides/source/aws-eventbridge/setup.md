@@ -67,28 +67,28 @@ To obtain all Amazon Eventbridge events in Vanus Connect, follow these steps:
 
 1. Set your API destination
 
-![amazon-eventbridge-source-11](images/amazon-eventbridge-source-11.webp)
-
 - Select **EventBridge API destination**①.
 - Select **Create a new API destination**② under API destination.
 - Write a connection **Name**③.
 - Set the **API destination endpoint**④ to the URL from Vanus Connect.
 - Set the **HTTP method**⑤ as `POST`.
 
-2. Create a connection
+![amazon-eventbridge-source-11](images/amazon-eventbridge-source-11.webp)
 
-![amazon-eventbridge-source-12](images/amazon-eventbridge-source-12.webp)
+2. Create a connection
 
 - Select **Create a new connection**⑥.
 - Write a **Connection name**⑦.
 - Select **Basic (Username/Password)⑧** under Authorization type.
 
-3. Authorization
+![amazon-eventbridge-source-12](images/amazon-eventbridge-source-12.webp)
 
-![amazon-eventbridge-source-13](images/amazon-eventbridge-source-13.webp)
+3. Authorization
 
 - Create a **Username**⑨ and a **Password**⑩ of your choice, this won't be needed in this scenario but it is required.
 - Press **Next**⑪.
+
+![amazon-eventbridge-source-13](images/amazon-eventbridge-source-13.webp)
 
 4. Under Configure tags - optional press **Next**⑫.
 

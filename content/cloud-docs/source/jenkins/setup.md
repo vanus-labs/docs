@@ -93,7 +93,7 @@ import TabItem from '@theme/TabItem';
 
 14. Go back to Vanus Connect and click **Next**⑰ to continue the configuration.
 
-![jenkins-source-21](images/jenkins-source-21.webp)
+![jenkins-source-22](images/jenkins-source-22.webp)
 
 </TabItem>
 
@@ -125,7 +125,7 @@ If you are employing a custom script to transmit events, there is no requirement
 
 6. Click **Next**⑧ and continue the configuration.
 
-![jenkins-source-22](images/jenkins-source-22.webp)
+![jenkins-source-21](images/jenkins-source-21.webp)
 
 </TabItem>
 
