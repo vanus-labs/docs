@@ -33,6 +33,10 @@ The WhatsApp sink connector facilitates the reception of events from external so
 
 ### Step 2: Personalize Event Structure
 
+:::note
+This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
+:::
+
 1. Click **Display sample events**① for reference, and type in the **number**② you want to send the event to.
 
 ![](images/cloud_whatsapp_6.webp)
