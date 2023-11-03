@@ -125,9 +125,33 @@ hide_title: true
 
 ![aws-s3-sink-22](images/aws-s3-sink-22.webp)
 
-8. In Vanus Connect, choose your **Region**⑨ and enter your **Bucket**⑩ name, select the upload interval time (**HOURLY**⑪ or **DAILY**⑫), and then click **Next**⑬ to proceed.
+8. In Vanus Connect, choose your **Region**⑨ and enter your **Bucket**⑩ name, select the upload **interval time**⑪ (`HOURLY` or `DAILY`).
 
 ![aws-s3-sink-23](images/aws-s3-sink-23.webp)
+
+---
+
+### Step 4: Personalize Event Structure
+
+:::note
+This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
+:::
+
+1. Click on **Display sample events**① for reference and click on **Add More**② to add events.
+
+![aws-s3-sink-24](images/aws-s3-sink-24.webp)
+
+2. **Input key**③ and search for the corresponding **value**④ for the event you want.
+
+![aws-s3-sink-25](images/aws-s3-sink-25.webp)
+
+3. You can fill in as many **key-value pairs**⑤ as you wish to receive.
+
+![aws-s3-sink-26](images/aws-s3-sink-26.webp)
+
+4. Click **Submit**⑥ to finish the configuration process.
+
+![aws-s3-sink-27](images/aws-s3-sink-27.webp)
 
 ---
 
