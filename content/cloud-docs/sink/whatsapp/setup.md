@@ -5,7 +5,8 @@ hide_title: true
 
 ### Prerequisites
 
-- A [WhatsApp account](https://www.whatsapp.com)
+- A [**Vanus Cloud Account**](https://cloud.vanus.ai)
+- A [**WhatsApp account**](https://www.whatsapp.com)
 
 ---
 
@@ -29,15 +30,25 @@ hide_title: true
 
 ### Step 2: Personalize Event Structure
 
-1. Click **Display sample events** for reference, and type in the **number** you want to send the even to.
+1. Click **Display sample events**① for reference, and type in the **number**② you want to send the event to.
 
-2. Type your message and **input `$` followed by the desired event** to access a **list of corresponding event values**.
+![](images/cloud_whatsapp_6.webp)
 
-3. You can structure the content as you prefer and fill in as many **values** as you wish to receive.
+2. Type your message and **input `$` followed by the desired event**③ to access a **list of corresponding event values**④.
 
-4. Click **Submit** to finish the configuration process.
+![](images/cloud_whatsapp_7.webp)
 
-### How to use ChatGPT
+3. You can structure the content as you prefer and fill in as many **values**⑤ as you wish to receive.
+
+![](images/cloud_whatsapp_8.webp)
+
+4. Click **Submit**⑥ to finish the configuration process.
+
+![](images/cloud_whatsapp_9.webp)
+
+---
+
+### Step 3: How to use ChatGPT
 
 **Note**: *If you haven't activated the "Enable Chat AI" option within the WhatsApp Source Connector, the WhatsApp connection won't utilize the capabilities of ChatGPT.*
 
@@ -88,4 +99,4 @@ To use in WhatsApp groups just tag the AI account using `@`.
 
 ---
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).

@@ -10,11 +10,12 @@ The WhatsApp sink connector facilitates the reception of events from external so
 
 ## Prerequisites
 
-- A [WhatsApp account](https://www.whatsapp.com)
+- A [**Vanus Cloud Account**](https://cloud.vanus.ai)
+- A [**WhatsApp account**](https://www.whatsapp.com)
 
 **Perform the following steps to configure your WhatsApp Sink.**
 
-### WhatsApp Connection Settings
+### Step 1: WhatsApp Connection Settings
 
 1. Click **Authorize**①  to create a QR code to establish a connection with your WhatsApp account.
 
@@ -30,7 +31,25 @@ The WhatsApp sink connector facilitates the reception of events from external so
 
 ![](images/cloud_whatsapp_5.webp)
 
-### How to use ChatGPT
+### Step 2: Personalize Event Structure
+
+1. Click **Display sample events**① for reference, and type in the **number**② you want to send the event to.
+
+![](images/cloud_whatsapp_6.webp)
+
+2. Type your message and **input `$` followed by the desired event**③ to access a **list of corresponding event values**④.
+
+![](images/cloud_whatsapp_7.webp)
+
+3. You can structure the content as you prefer and fill in as many **values**⑤ as you wish to receive.
+
+![](images/cloud_whatsapp_8.webp)
+
+4. Click **Submit**⑥ to finish the configuration process.
+
+![](images/cloud_whatsapp_9.webp)
+
+### Step 3: How to use ChatGPT
 
 **Note**: *If you haven't activated the "Enable Chat AI" option within the WhatsApp Source Connector, the WhatsApp connection won't utilize the capabilities of ChatGPT.*
 
@@ -81,4 +100,4 @@ To use in WhatsApp groups just tag the AI account using `@`.
 
 ---
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).
