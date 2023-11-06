@@ -5,6 +5,7 @@ hide_title: true
 
 ### Prerequisites
 
+- A [**Vanus Cloud account**](https://cloud.vanus.ai).
 - [**Have an ElasticSearch account**](https://cloud.elastic.co/)
 
 ---
@@ -43,7 +44,6 @@ hide_title: true
 
 ![elasticsearch-sink-6](images/elasticsearch-sink-6.webp)
 
-
 #### Getting your server endpoint
 
 1. Navigate to the [**Deployment Page**](https://cloud.elastic.co/deployments/) to see your deployments.
@@ -51,7 +51,6 @@ hide_title: true
 2. Click on the the **created deployment**①.
 
 ![elasticsearch-sink-7](images/elasticsearch-sink-7.webp)
-
 
 3. Copy your Elasticsearch endpoint by clicking on **Copy endpoint**②.  
 
@@ -97,8 +96,30 @@ hide_title: true
 
 ![elasticsearch-sink-15](images/elasticsearch-sink-15.webp)
 
-2. Click **Next**⑤ and finish the configurations.
+---
+
+### Step 3: Personalize Event Structure
+
+:::note
+This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
+:::
+
+1. Click on **Display sample events**① for reference and click on **Add More**② to add events.
+
+![elasticsearch-sink-16](images/elasticsearch-sink-16.webp)
+
+2. **Input key**③ and search for the corresponding **value**④ for the event you want.
+
+![elasticsearch-sink-17](images/elasticsearch-sink-17.webp)
+
+3. You can fill in as many **key-value pairs**⑤ as you wish to receive.
+
+![elasticsearch-sink-18](images/elasticsearch-sink-18.webp)
+
+4. Click **Submit**⑥ to finish the configuration process.
+
+![elasticsearch-sink-19](images/elasticsearch-sink-19.webp)
 
 ---
 
-Learn more about Vanus and Vanus Connect in our [documentation](https://docs.vanus.ai).
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).
