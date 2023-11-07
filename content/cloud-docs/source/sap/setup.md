@@ -18,7 +18,7 @@ hide_title: true
 
 ![sap-btp-source-1](images/sap-btp-source-1.webp)
 
-### Configuring SAP BTP to Send Webhook Events
+### Configure SAP BTP to Send Webhook Events
 
 #### Step 1: Configure webhook
 
