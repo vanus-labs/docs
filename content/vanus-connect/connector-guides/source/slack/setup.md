@@ -40,7 +40,7 @@ Before obtaining Slack events, you must have:
 
 ![slack_source_5.webp](./images/slack_source_5.webp) 
 
-3. Go to your Vanus Connection, Give the connection a **Name**④, paste the **Verification Token**⑤ and **Signing Secret**⑥ from Slack as configurations, select the **Events**⑦, and click **Next**⑧.
+3. Go to your Vanus Connection, Give the connection a **Name**④, paste the **Verification Token**⑤ and **Signing Secret**⑥ from Slack as configurations.
 
 ![slack_source_6.webp](./images/slack_source_6.webp) 
 
@@ -48,44 +48,46 @@ Before obtaining Slack events, you must have:
 
 ### Step 3: Configure Event Subscription
 
-1. Click on the **Connection Name**①.
+1. Click the **copy icon**① to copy the webhook URL, select the **Events**② you want to receive. 
 
-![slack_sheets_12.webp](./images/slack_sheets_12.webp)
+![slack_source_7.webp](./images/slack_source_7.webp) 
 
-2. Click the **copy icon**② to copy the webhook URL.
-
-![slack_sheets_13.webp](./images/slack_sheets_13.webp)
-
-3. Go back to your Slack App, and click on **Event Subscriptions**③ in the side menu.
+2. Go back to your Slack App, and click on **Event Subscriptions**③ in the side menu.
 
 ![slack_sheets_14.webp](./images/slack_sheets_14.webp)
 
-4. **Enable Events**④ by turning on the switch, and use the URL we've previously copied and paste it into **Request URL**⑤. You should see a green `Verified`, indicating our Source is verified by Slack.
+3. **Enable Events**④ by turning on the switch, and use the URL we've previously copied and paste it into **Request URL**⑤. You should see a green `Verified`, indicating our Source is verified by Slack.
 
 ![slack_sheets_15.webp](./images/slack_sheets_15.webp)
 
-5. Scroll down, click **Subscribe to bot events**⑥ and after, you will be able to click **Add Bot User Event**⑦.
+4. Scroll down, click **Subscribe to bot events**⑥ and after, you will be able to click **Add Bot User Event**⑦.
 
 ![slack_sheets_16.webp](./images/slack_sheets_16.webp)
 
-6. Select the event **message.channels**⑧.
+5. Select the event **message.channels**⑧.
 
 ![slack_sheets_17.webp](./images/slack_sheets_17.webp)
 
-7. Click on **Save Changes**⑨ to complete your configuration.
+6. Click on **Save Changes**⑨ to complete your configuration.
 
 ![slack_sheets_18.webp](./images/slack_sheets_18.webp)
 
-8. Go to **Install App**⑩ from the side menu and click **Install to Workspace**⑪.
+7. Go to **Install App**⑩ from the side menu and click **Install to Workspace**⑪.
 
 ![slack_sheets_19.webp](./images/slack_sheets_19.webp)
 
-9. Click on **Allow**⑫.
+8. Click on **Allow**⑫.
 
 ![slack_sheets_20.webp](./images/slack_sheets_20.webp)
 
-10. Go to your Slack workspace, invite the bot to the channel by clicking **Add to Channel**⑬ button.
+9. Go to your Slack workspace, invite the bot to the channel by clicking **Add to Channel**⑬ button.
 
 ![slack_sheets_22.webp](./images/slack_sheets_22.webp)
 
+10. Click **Next**⑭ to continue the configuration.
 
+![slack_source_8.webp](./images/slack_source_8.webp) 
+
+---
+
+Learn more about Vanus and Vanus Connect in our [**documentation**](https://docs.vanus.ai).
