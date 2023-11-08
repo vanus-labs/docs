@@ -111,6 +111,7 @@ We utilized the default role, warehouse, and schema, but you have the option to 
 - **Schema⑤**: This is the name of the schema that contains the Snowflake table.
 - **Username⑥**: This is the username for your Snowflake account.
 - **Password⑦**: This is the password for your Snowflake account.
+- **Table⑧**: Generate a table by specifying the desired name for it, and the table will be set up with the required fields for your event.
 
 ![snowflake-sink-15](images/snowflake-sink-15.webp)
 
@@ -120,15 +121,15 @@ We utilized the default role, warehouse, and schema, but you have the option to 
 This is a general instruction on how to personalize your event structure. You can structure your events to suit your specific requirements and create connections for different scenarios.
 :::
 
-1. Create a **Table**① by entering a name, click on **Display sample events**② for reference and click on **Add More**③ to add events.
+1. Click on **Display sample events**① for reference and click on **Add More**② to add events.
 
 ![snowflake-sink-16](images/snowflake-sink-16.webp)
 
-2. **Input key**④ and search for the corresponding **value**⑤ for the event you want.
+2. **Input key**③ and search for the corresponding **value**④ for the event you want.
 
 ![snowflake-sink-17](images/snowflake-sink-17.webp)
 
-3. You can fill in as many **key-value pairs**⑥ as you wish to receive, and then click **Submit**⑦ to finish the configuration process.
+3. You can fill in as many **key-value pairs**⑤ as you wish to receive, and then click **Submit**⑥ to finish the configuration process.
 
 ![snowflake-sink-18](images/snowflake-sink-18.webp)
 
