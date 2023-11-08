@@ -91,7 +91,7 @@ Substitute `<databasename>` and `<collectionname>` with the names you prefer for
 
 ![mongodb-sink-13](images/mongodb-sink-13.webp)
 
-- **Connection Uri:** The URI to connect MongoDB, view [Connection String URI Format](https://www.mongodb.com/docs/manual/reference/connection-string/) for more details.
+- **Connection Uri:** The URI to connect MongoDB, view [**Connection String URI Format**](https://www.mongodb.com/docs/manual/reference/connection-string/) for more details.
 - **Username:** MongoDB username.
 - **Password:** MongoDB user's password.
 - **Database:** This is the database name, not to be confused with the cluster name.
