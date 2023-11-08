@@ -6,7 +6,7 @@ hide_title: true
 ### Prerequisites
 
 - A [**Vanus Cloud account**](https://cloud.vanus.ai)
-- A Zoho CRM account
+- A [Zoho CRM account](https://crm.zoho.com/crm/org813836165/tab/Home/begin)
 
 ---
 
