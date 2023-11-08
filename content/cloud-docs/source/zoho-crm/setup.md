@@ -6,7 +6,7 @@ hide_title: true
 ### Prerequisites
 
 - A [**Vanus Cloud account**](https://cloud.vanus.ai)
-- A Zoho CRM account
+- A [Zoho CRM account](https://crm.zoho.com/crm/org813836165/tab/Home/begin)
 
 ---
 
@@ -16,21 +16,16 @@ hide_title: true
 
 To obtain Zoho CRM events in Vanus Connect, follow these steps:
 
-![zohocrm-source-1](images/zohocrm-source-1.webp)
-
 - Write a **Name**① for your connection in Vanus Connect.
 
-- Open the **How to use this URL**② document in a new tab to see all the details on how to complete the connection.
+- Copy the Webhook URL by clicking on the **copy icon**②.
 
-- Copy the Webhook URL by clicking on the **copy icon**③
+![zohocrm-source-1](images/zohocrm-source-1.webp)
 
-- Click **Next**④ and continue the configuration.
 
----
+### Configure Zoho CRM to Send Webhook Events 
 
-**Configuring Zoho CRM to Send Webhook Events**
-
-### Step 1: Configure webhook
+#### Step 1: Configure webhook
 
 1. Log in to your [**Zoho CRM account**](https://crm.zoho.com/crm/org813836165/tab/Home/begin)
 
@@ -80,7 +75,7 @@ You can choose to use **Form-Data** or **Raw** from the picklist, to configure t
 
 ---
 
-### Step 2: Associate webhook to a workflow rule
+#### Step 2: Associate webhook to a workflow rule
 
 1. Select **Workflow Rules**①.
 
@@ -117,6 +112,10 @@ You can choose to use **Form-Data** or **Raw** from the picklist, to configure t
 9. Click **Save**⑭.
 
 ![zohocrm-source-20](images/zohocrm-source-20.webp)
+
+10. Click **Next**⑮ and continue the configuration.
+
+![zohocrm-source-21](images/zohocrm-source-21.webp)
 
 ---
 
