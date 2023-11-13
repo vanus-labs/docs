@@ -14,17 +14,13 @@ hide_title: true
 
 ### SAP BTP Connection Settings
 
-![sap-btp-source-1](images/sap-btp-source-1.webp)
-
 - Write a **Name**① for your connection in Vanus Connect.
 
-- After creating the connection, there are a few more steps. Simply click the **document**② link to open a new page with all the details on how to complete the connection.
+![sap-btp-source-1](images/sap-btp-source-1.webp)
 
-- Click **Next**③ and continue the configuration.
+### Configure SAP BTP to Send Webhook Events
 
----
-
-### Configuring SAP BTP to Send Webhook Events
+#### Step 1: Configure webhook
 
 1. Click the **copy**① icon to copy the webhook url.
 
@@ -95,6 +91,10 @@ Do not select the **Webhook with Authorization Token** or **Webhook with Basic A
 17. A successful webhook integration would look like **this**㉔.
 
 ![sap-btp-source-17](images/sap-btp-source-17.webp)
+
+18. Click **Next**㉕ and continue the configuration.
+
+![sap-btp-source-18](images/sap-btp-source-18.webp)
 
 ---
 
